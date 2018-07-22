@@ -193,35 +193,35 @@ def generate(w, a, p, e, en, b, t, j, f, g):
 if __name__ == '__main__':
     townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
     for _ in range(4):
-        w = create_store(create_person(create_variance()), [0, 2], randint(5, 15), 'Weapon')
+        w = create_weapon_shop(create_person(create_variance()), [0, 2], randint(5, 15), inflate=4)
         write_store(w)
 
-        w = create_store(create_person(create_variance()), [0, 2], randint(5, 15), 'Armor')
+        w = create_armor_shop(create_person(create_variance()), [0, 2], randint(5, 15), inflate=4)
         write_store(w)
 
-        w = create_store(create_person(create_variance()), [0, 9], randint(5, 15), 'Potion')
+        w = create_potion_shop(create_person(create_variance()), [0, 9], randint(5, 15), inflate=4)
         write_store(w)
 
-        w = create_store(create_person(create_variance()), [0, 9], randint(15, 25), 'Enchant')
+        w = create_enchantment_shop(create_person(create_variance()), [0, 9], randint(15, 25), inflate=4)
         write_store(w)
 
-        w = create_store(create_person(create_variance()), [0, 9], randint(15, 25), 'Enchanter')
+        w = create_enchanter_shop(create_person(create_variance()), [0, 9], randint(15, 25), inflate=4)
         write_store(w)
 
-        write_store(create_store(create_person(create_variance()),
-                                 choice(Books.Genres, randint(len(Books.Genres)), replace=False),
-                                 randint(15, 25), 'Books'), False)
+        write_store(create_book_shop(create_person(create_variance()),
+                                     choice(Books.Genres, randint(len(Books.Genres)), replace=False),
+                                     randint(15, 25), inflate=4), False)
 
         w = create_tavern(create_person(create_variance()), 0, 3, 15)
         write_store(w, False)
 
-        w = create_store(create_person(create_variance()), [0, 5], randint(15, 30), 'Jewel')
+        w = create_jewel_shop(create_person(create_variance()), [0, 5], randint(15, 30), inflate=4)
         write_store(w)
 
-        w = create_store(create_person(create_variance()), 0, randint(15, 30), 'Food')
+        w = create_restaurant(create_person(create_variance()), 0, randint(15, 30), inflate=4)
         write_store(w, False)
 
-        w = create_store(create_person(create_variance()), [0, 1], randint(10, 20), 'General')
+        w = create_general_store(create_person(create_variance()), [0, 1], randint(10, 20), inflate=4)
         write_store(w, False)
 
     townHTML += '<div style="page-break-after:always;"></div><h2 class="text-lg bold center">Notable People</h2>'
