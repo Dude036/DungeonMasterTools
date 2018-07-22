@@ -1,0 +1,3830 @@
+class Aasimer:
+    m1 = ["", "", "", "", "", "b", "c", "cr", "d", "gr", "k", "kr", "l", "m", "n", "p", "s", "t", "w", "z"]
+    m2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "y", "ai", "au", "ie", "ia", "ea"]
+    m3 = ["b", "b", "d", "d", "dr", "g", "g", "gr", "gn", "k", "k", "kw", "kr", "l", "l", "lw", "lr", "lm", "ln", "lg",
+          "lt", "m", "m", "mr", "ml", "mw", "n", "n", "nr", "nl", "ng", "nv", "nw", "r", "r", "rl", "rw", "rg", "rn",
+          "t", "t"]
+    m4 = ["l", "m", "n", "n", "n", "nt", "r"]
+    f1 = ["", "", "", "", "b", "br", "d", "dr", "h", "l", "m", "n", "p", "ph", "r", "rh", "v", "vh", "w"]
+    f2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "oe", "ou", "ua", "ea", "ia"]
+    f3 = ["d", "d", "dr", "dy", "gr", "j", "j", "l", "l", "ll", "lt", "ld", "lm", "ln", "ldr", "ls", "m", "m", "mr",
+          "mk", "ml", "n", "n", "ndr", "nd", "nk", "ng", "nd", "ny", "nm", "p", "p", "pr", "r", "r", "rk", "rl", "s",
+          "s", "v", "v", "y", "y", "z", "z"]
+    f4 = ["", "", "", "", "", "", "", "", "", "h", "l", "n", "r"]
+    s1 = ["", "", "", "", "b", "br", "d", "dr", "h", "k", "kr", "l", "m", "n", "p", "r", "s", "t", "v", "w", "z"]
+    s2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "y"]
+    s3 = ["b", "d", "g", "gr", "h", "k", "kr", "km", "l", "ll", "lr", "ls", "lg", "ldr", "lm", "lw", "m", "mr", "ml",
+          "n", "nm", "ng", "nv", "nk", "p", "pr", "r", "rl", "rg", "rv", "rw", "s", "v", "z"]
+    s4 = ["", "", "", "l", "m", "n", "r"]
+
+
+class Catfolk:
+    f1 = ["br", "c", "cr", "dr", "f", "g", "gr", "j", "k", "kr", "m", "n", "p", "pr", "q", "qr", "r", "t", "z"]
+    f2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "y", "y", "ou", "au", "ei"]
+    f3 = ["c", "cc", "cd", "cb", "g", "gg", "gt", "gb", "gd", "k", "kk", "kh", "kt", "mb", "mk", "mq", "nq", "nk", "ng",
+          "q", "qh", "r", "rr", "rq", "rk", "th", "w"]
+    f4 = ["", "m", "n", "r", "s", "th"]
+    m1 = ["", "", "", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "r", "s", "t", "v", "z"]
+    m2 = ["a", "e", "i", "o", "u"]
+    m3 = ["f", "ff", "l", "ly", "lh", "ls", "lr", "lm", "ln", "m", "my", "mh", "n", "ny", "nh", "ph", "phr", "r", "rr",
+          "ry", "rh", "sy", "sh", "sr", "sl", "th", "ty", "y"]
+    m4 = ["", "", "", "", "", "", "", "", "", "", "h", "s"]
+
+
+class Changeling:
+    n1 = ["", "", "", "b", "d", "f", "h", "j", "l", "m", "n", "p", "r", "s", "t", "v", "w", "y"]
+    n2 = ["a", "i", "o", "u", "a", "i", "o", "u", "a", "i", "o", "u", "a", "i", "o", "u", "ee", "ie", "ea", "ae", "ai",
+          "oo", "ou"]
+    n3 = ["c", "g", "gs", "k", "ks", "kt", "m", "n", "rx", "rt", "rs", "s", "sk", "t", "ts", "x", "z"]
+
+
+class Dhampir:
+    m1 = ["Quelii", "Zintius", "Fertuitus", "Dorlus", "Versum", "Zegrath", "Sebastian", "Christoph", "Kristoph",
+          "Thaddeus", "Abel", "Abraham", "Acheron", "Adam", "Adrian", "Alaric", "Alec", "Aleister", "Aleron",
+          "Alexander", "Alfred", "Aliester", "Angel", "Angelus", "Anton", "Arad", "Aramastus", "Archibald", "Armand",
+          "Arnold", "Arthur", "Asa", "Ascelin", "Asema", "Asmodeus", "Astaroth", "Astrophel", "Athanasius", "Auberon",
+          "Aubrey", "Aurel", "Azerrad", "Azriel", "Balthazar", "Barnabas", "Bartholomew", "Benedict", "Benjamin",
+          "Bertram", "Bjorn", "Blayze", "Boris", "Brander", "Brandyn", "Brendan", "Bryce", "Byron", "Cadell", "Cadogan",
+          "Caedmon", "Cain", "Caleb", "Cassius", "Cazimir", "Christian", "Church", "Ciaran", "Ciro", "Clarence",
+          "Cleon", "Cole", "Colin", "Constantine", "Corbett", "Corbin", "Creighton", "Cynfael", "Cyprian", "Cyran",
+          "D'Arcy", "Daire", "Damascus", "Damian", "Damien", "Damon", "Danag", "Daniel", "Dante", "Darick", "Darius",
+          "Darren", "Darrien", "Davon", "Davorin", "Demetrius", "Demidicus", "Demitri", "Desmond", "Deverell", "Devin",
+          "Dimitri", "Dommik", "Donovan", "Dorian", "Doru", "Dragon", "Dragos", "Drake", "Draven", "Dregan", "Dreven",
+          "Duncan", "Duradel", "Echo", "Edmund", "Edward", "Edwin", "Eldon", "Elijah", "Elwin", "Emery", "Emil",
+          "Enoch", "Eoghan", "Eoin", "Erasmus", "Etienne", "Everild", "Ezekiel", "Ezra", "Fabian", "Fane", "Florin",
+          "Francis", "Frank", "Frederick", "Frey", "Gabe", "Gabriel", "Gadiel", "Gair", "Gale", "Gareth", "Garrett",
+          "Garroway", "Garth", "Gattas", "Gawain", "Gdalicanu", "Gethin", "Ghislaine", "Gilbert", "Godfrey", "Gossom",
+          "Gregory", "Griffin", "Grimbald", "Griswold", "Hacan", "Hale", "Hannibal", "Harland", "Harold", "Heathcliffe",
+          "Hendrik", "Henry", "Heskel", "Holstein", "Horace", "Horatio", "Hunter", "Iancu", "Ichabod", "Idris",
+          "Ingram", "Isaac", "Isaiah", "Ishmael", "Jacob", "Jael", "Jagger", "Jairus", "James", "Jarlath", "Jarlen",
+          "Jasper", "Jedediah", "Jeffrey", "Jeremy", "Jett", "Jonas", "Jonathan", "Jorin", "Joseph", "Joshua", "Julian",
+          "Julien", "Julius", "Justin", "Kalon", "Kane", "Kapral", "Karpov", "Kayne", "Kazimir", "Keenan", "Keir",
+          "Keiran", "Kellam", "Kern", "Khalid", "Killian", "Kirnon", "Klyn", "Kozani", "Kragen", "Kristopher",
+          "Lafayette", "Lance", "Lancelot", "Lauden", "Laurent", "Lawrence", "Lazarus", "Leander", "Leandro", "Lennix",
+          "Leon", "Leopold", "Lestat", "Liam", "Lionel", "London", "Lothaire", "Louis", "Lucas", "Lucian", "Lucien",
+          "Luther", "Lycidas", "Lysander", "Mabon", "Maggard", "Maggart", "Magna", "Magnus", "Malachi", "Malik",
+          "Marcel", "Marcellus", "Marcus", "Marius", "Martel", "Mathias", "Maxius", "Maxwell", "Melchior", "Merle",
+          "Merlin", "Moldark", "Mordecai", "Mordred", "Morgan", "Mortas", "Mullo", "Nathan", "Nathaniel", "Neculai",
+          "Nehemiah", "Nelo", "Niall", "Nicholas", "Nicodemus", "Nicolai", "Nicu", "Nikolas", "Niles", "Nodin",
+          "Norrix", "Nostro", "Obediah", "Oberon", "Obsidian", "Octavian", "Odolff", "Oliver", "Orien", "Orion",
+          "Orsova", "Owen", "Ozul", "Paine", "Perseus", "Peter", "Phaeron", "Phelan", "Phoenix", "Qadir", "Quillan",
+          "Quillon", "Quinn", "Radomir", "Radu", "Randal", "Ransley", "Raoul", "Raphael", "Rapheal", "Raymond", "Remus",
+          "Renwick", "Reyes", "Rhain", "Rhazien", "Richard", "Riordan", "Riskel", "Roderick", "Roman", "Rufus", "Rune",
+          "Ruse", "Saber", "Sabien", "Salem", "Samuel", "Sandor", "Santiago", "Saxon", "Seain", "Sebastian", "Seskel",
+          "Seth", "Severn", "Seymour", "Silas", "Silvan", "Simon", "Sin", "Sirius", "Sliske", "Solomon", "Soran",
+          "Spencer", "Spike", "Star", "Stelian", "Sterling", "Strix", "Sullivan", "Sun", "Tallon", "Talon", "Tama",
+          "Taos", "Tearle", "Theron", "Thomas", "Thorin", "Thorne", "Tobias", "Treznor", "Ulfred", "Ulysses", "Urien",
+          "Valentine", "Valerian", "Vance", "Vasile", "Vernon", "Victor", "Viktor", "Vincent", "Virgil", "Viscardi",
+          "Vlad", "Vladimir", "Vorigan", "Waldron", "Walter", "Warren", "Wilfred", "William", "Wolf", "Wolfram",
+          "Xanthus", "Xavier", "Xenos", "Ywain", "Zachaeus", "Zachariah", "Zadicus", "Zadimus", "Zaff", "Zane", "Zaros",
+          "Zeidan", "Zeke", "Zoltan"]
+    f1 = ["Deyja", "Abby", "Abigale", "Ada", "Adriana", "Adrienne", "Aerin", "Aisling", "Akasha", "Aleron",
+          "Alessandra", "Alexandra", "Alexandria", "Alice", "Alvira", "Amalia", "Amaris", "Amber", "Amelia", "Amelie",
+          "Ana", "Anastasia", "Angelica", "Angelika", "Angelina", "Angelique", "Antoinette", "Arabella", "Arachne",
+          "Arora", "Artemia", "Asphodel", "Athena", "Aubrey", "Aurelia", "Aurora", "Austra", "Autumn", "Babylon",
+          "Badriyah", "Baptista", "Beatrice", "Beatrix", "Becca", "Bella", "Belladonna", "Bellatrix", "Bernia",
+          "Bianca", "Bijou", "Branwen", "Briallen", "Brienne", "Brigid", "Buffy", "Caera", "Calamity", "Calantha",
+          "Calista", "Callidora", "Calliope", "Carmilla", "Caroline", "Cassandra", "Cassara", "Ceiridwen", "Celeste",
+          "Celosia", "Chandra", "Chantrea", "Charity", "Charlotte", "Chaseleigh", "Chastity", "Circe", "Claire",
+          "Clara", "Claudia", "Clementine", "Constantia", "Cordelia", "Crimson", "Cristina", "Daniela", "Danika",
+          "Daria", "Darian", "Darla", "Dawn", "December", "Deidre", "Delia", "Deliliah", "Demelza", "Demetria",
+          "Denisa", "Desdemona", "Destiny", "Dominique", "Dru", "Druilla", "Drusilla", "Ebony", "Echo", "Edana", "Eden",
+          "Eirisse", "Eirlys", "Eldia", "Eleanor", "Electra", "Elena", "Elenor", "Elisabeta", "Elissa", "Elizabeth",
+          "Ellanora", "Ellanore", "Ellena", "Ellie", "Elvira", "Emberlynn", "Emerande", "Emilia", "Emily", "Emma",
+          "Emmanuelle", "Emmeranne", "Ennata", "Eranthe", "Erylis", "Esmeralda", "Esmeralde", "Esther", "Estrella",
+          "Ethelinda", "Eunice", "Eva", "Evangeline", "Eventide", "Fae", "Faine", "Faith", "Faline", "Fanchon", "Fawn",
+          "Felicia", "Fern", "Feronia", "Fleurdelice", "Florence", "Fortune", "Gabriela", "Gabrielle", "Galexialyn",
+          "Garnette", "Genevieve", "Gertrude", "Grace", "Gretchen", "Griselda", "Guinevere", "Gwendoline", "Gwendydd",
+          "Haera", "Hagar", "Hazelmere", "Hecate", "Hegna", "Helana", "Helen", "Helena", "Helga", "Henrietta", "Herma",
+          "Hesperia", "Hestia", "Hilda", "Hildegarde", "Ianira", "Ianthe", "Ileana", "Illythia", "Indigo", "Iolana",
+          "Iolanthe", "Iona", "Ione", "Irene", "Irina", "Isabella", "Isadora", "Isis", "Isolabella", "Ivory", "Ivy",
+          "Izora", "Jacqueline", "Jade", "Jane", "Janet", "Jett", "Jevera", "Jillian", "Jocasta", "Joliette",
+          "Joscelyn", "Josephine", "Julia", "Julianna", "Julienne", "Juliet", "Kafara", "Kairos", "Kala", "Kali",
+          "Kalonice", "Kamra", "Karlene", "Kat", "Katherine", "Kathryx", "Katrina", "Kavita", "Kenia", "Ketura",
+          "Khalida", "Kiara", "Kismet", "Kolfinna", "Krista", "Kristian", "Kynthia", "Lahmia", "Lamia", "Lamya",
+          "Lavinia", "Layla", "Leandra", "Lechsinska", "Lenora", "Lenore", "Leontine", "Leora", "Lethia", "Levana",
+          "Lien", "Lilah", "Liliana", "Lilith", "Lisa", "Lisha", "Loredana", "Lorelei", "Loren", "Lorraine", "Lucia",
+          "Lucilla", "Lucinda", "Lucretia", "Lucy", "Lullaby", "Luna", "Lupe", "Lycoris", "Lyllith", "Lynede",
+          "Lynexia", "Lyra", "Lysa", "Madeline", "Madison", "Maeve", "Magda", "Magdalena", "Magdelena", "Magena",
+          "Mallory", "Margaret", "Maria", "Mariana", "Marianne", "Marta", "Matilda", "Mehira", "Melantha", "Mercedes",
+          "Mercy", "Meredith", "Merle", "Mildred", "Minerva", "Mira", "Misty", "Monique", "Mora", "Morgan", "Morrisey",
+          "Morticia", "Morwenna", "Musette", "Myth", "Myvanwy", "Naida", "Narcisa", "Natalia", "Nebula", "Neferata",
+          "Nessa", "Nevada", "Nezera", "Niamh", "Nichole", "Nicole", "Nicolette", "Nirvana", "Nisha", "Nissa",
+          "Nokomis", "Nora", "Nyx", "Oana", "Odile", "Opal", "Ophelia", "Ordelia", "Orenda", "Osanna", "Pandora",
+          "Parthena", "Permelia", "Persephone", "Petra", "Phaelyn", "Phaidra", "Philomena", "Phoenix", "Pixie",
+          "Poison", "Prudence", "Psyche", "Purity", "Pythea", "Qadira", "Quintella", "Radella", "Raelinn", "Ramona",
+          "Raphaelle", "Raven", "Ravette", "Rebecca", "Renee", "Renita", "Rhapsody", "Rhiannon", "Rhodanthe", "Riah",
+          "River", "Rosalie", "Rosalyn", "Rowena", "Ruby", "Sabina", "Sabrione", "Samantha", "Sapphira", "Sapphire",
+          "Sarah", "SarahAnn", "Scarlett", "Seiran", "Selena", "Selene", "Selina", "Senna", "Seraphine", "Seren",
+          "Sierra", "Silvana", "Silver", "Silvia", "Simone", "Sky", "Skylar", "Sorcha", "Sorina", "Star", "Stefania",
+          "Stella", "Sylvia", "Tabitha", "Tanith", "Tatiana", "Tempesta", "Tereza", "Tessa", "Thalia", "Thelma",
+          "Thessalia", "Thora", "Thordis", "Tiana", "Tierney", "Timandra", "Tizane", "Topaz", "Tourmaline", "Trista",
+          "Turaya", "Ulva", "Urania", "Ursula", "Ursulette", "Ursuline", "Valaine", "Valenthia", "Valentina", "Valeria",
+          "Valerie", "Vanessa", "Vanita", "Vanity", "Vasilisa", "Velika", "Velorina", "Velvet", "Venette", "Venus",
+          "Vesper", "Vespera", "Victoire", "Victoria", "Viessa", "Viktoria", "Violet", "Violeta", "Wanette",
+          "Wilhelmina", "Willow", "Wilma", "Winnifred", "Wren", "Xanthe", "Xaverie", "Xena", "Xylia", "Yolanthe",
+          "Ysabelle", "Yvonne", "Zabrina", "Zada", "Zafrina", "Zakira", "Zaleria", "Zara", "Zella", "Zephirah", "Zetta",
+          "Zola"]
+    s1 = ['Abram', 'Acton', 'Addington', 'Adley', 'Ainsley', 'Ainsworth', 'Alby', 'Allerton', 'Alston', 'Altham',
+          'Alton', 'Anderton', 'Ansley', 'Appleton', 'Asheton', 'Ashley', 'Ashton', 'Astley', 'Atherton', 'Atterton',
+          'Axton', 'Badger', 'Barclay', 'Barlow', 'Barney', 'Barton', 'Beckwith', 'Benson', 'Bentham', 'Bentley',
+          'Berkeley', 'Beverly', 'Bing', 'Birkenhead', 'Blackwood', 'Blakeley', 'Blakely', 'Blankley', 'Blyth',
+          'Blythe', 'Bradford', 'Bradley', 'Bradly', 'Bradshaw', 'Brady', 'Brandon', 'Branson', 'Braxton', 'Breeden',
+          'Brent', 'Bristol', 'Brixton', 'Browning', 'Brownrigg', 'Budd', 'Burton', 'Byron', 'Camden', 'Carlisle',
+          'Carlton', 'Carlyle', 'Cason', 'Charlton', 'Chatham', 'Chester', 'Cholmondeley', 'Churchill', 'Clapham',
+          'Clare', 'Clayden', 'Clayton', 'Clifford', 'Clifton', 'Clinton', 'Clive', 'Colby', 'Colton', 'Compton',
+          'Coombs', 'Copeland', 'Cornish', 'Cotton', 'Crawford', 'Cromwell', 'Cumberbatch', 'Dalton', 'Darby',
+          'Darlington', 'Davenport', 'Dayton', 'Deighton', 'Denholm', 'Digby', 'Dryden', 'Dudley', 'Eastaughffe',
+          'Eastoft', 'Easton', 'Elton', 'Emsworth', 'Enfield', 'England', 'Everleigh', 'Everly', 'Fawcett', 'Fulton',
+          'Garfield', 'Garrick', 'Gladstone', 'Graeme', 'Graham', 'Gresham', 'Hackney', 'Hadlee', 'Hadleigh', 'Hadley',
+          'Hailey', 'Hale', 'Haley', 'Hallewell', 'Halsey', 'Hamilton', 'Hampton', 'Harlan', 'Harley', 'Harlow',
+          'Harrington', 'Hartford', 'Hastings', 'Hayden', 'Hayes', 'Hayhurst', 'Hayley', 'Holton', 'Home', 'Hornsby',
+          'Huckabee', 'Huxley', 'Kelsey', 'Kendal', 'Kendall', 'Kenley', 'Kensley', 'Kent', 'Kimberley', 'Kimberly',
+          'Kinsley', 'Kirby', 'Lancaster', 'Landon', 'Langdon', 'Langley', 'Langston', 'Law', 'Leighton', 'Lester',
+          'Lincoln', 'Lindsay', 'Lindsey', 'Livingstone', 'Marlee', 'Marleigh', 'Marley', 'Marlowe', 'Marston',
+          'Merton', 'Middleton', 'Milton', 'Mitchell', 'Morley', 'Morton', 'Myerscough', 'Nash', 'Nibley', 'Northcott',
+          'Norton', 'Oakes', 'Oakley', 'Ogden', 'Paxton', 'Payton', 'Perry', 'Peyton', 'Pickering', 'Pinkerton',
+          'Prescott', 'Presley', 'Preston', 'Quinton', 'Ramsay', 'Ramsey', 'Rayden', 'Read', 'Redfield', 'Reed', 'Reid',
+          'Remington', 'Ridley', 'Riley', 'Rodney', 'Roscoe', 'Rowley', 'Royal', 'Royston', 'Rutherford', 'Rutland',
+          'Rylan', 'Ryland', 'Ryley', 'Shelby', 'Sheldon', 'Shelley', 'Shelly', 'Sherwood', 'Shipley', 'Shirley',
+          'Snape', 'Snowdon', 'Soames', 'Southey', 'Spalding', 'Spaulding', 'Springfield', 'Stafford', 'Stanford',
+          'Stanley', 'Stansfield', 'Stanton', 'Stapleton', 'Stratford', 'Sutherland', 'Sutton', 'Sydney', 'Tattersall',
+          'Tatum', 'Tenley', 'Tewksbury', 'Thackeray', 'Thornton', 'Thorpe', 'Tickle', 'Tindall', 'Tinley', 'Trollope',
+          'Tyndall', 'Upton', 'Vance', 'Wade', 'Wakefield', 'Walcott', 'Wallace', 'Walpole', 'Warwick', 'Washington',
+          'Webley', 'Wedgwood', 'Weld', 'Wellington', 'Wentworth', 'Wesley', 'Westbrook', 'Westcott', 'Weston',
+          'Wharton', 'Wheatley', 'Whitby', 'Wilberforce', 'Willoughby', 'Winchester', 'Windsor', 'Winterbourne',
+          'Winthrop', 'Wordsworth', 'Yardley', 'Yeardley', 'York', 'Yorke']
+
+
+class Drow:
+    f1 = ["", "", "", "", "", "br", "bh", "c", "dh", "dr", "f", "g", "gr", "gh", "j", "k", "kr", "kh", "m", "n", "ph",
+          "q", "r", "s", "t", "v", "w", "x", "z"]
+    f2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "y", "y", "y", "io", "ae", "ou", "ie", "ui", "yi", "ey"]
+    f3 = ["bn", "bs", "bz", "c", "cn", "cm", "cr", "dr", "dn", "g", "gn", "gv", "gg", "k", "kr", "kz", "kn", "kq", "l",
+          "lf", "lm", "lr", "lq", "lc", "lv", "m", "mm", "mr", "mz", "ml", "mdr", "n", "ndr", "nd", "nz", "nc", "nq",
+          "r", "rc", "rn", "rr", "rz", "rdr", "rq", "t", "tr", "v", "vr", "vdr"]
+    f4 = ["", "", "", "c", "d", "g", "n", "r", "rn", "ss", "v", "x"]
+    m1 = ["", "", "", "", "", "b", "c", "d", "f", "g", "h", "j", "l", "m", "n", "p", "ph", "q", "r", "s", "sc", "t",
+          "th", "tr", "v", "w", "x", "z"]
+    m2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o",
+          "u", "y", "ia", "ae", "ie", "ei", "ya", "ee", "ai"]
+    m3 = ["b", "b", "b", "bv", "br", "c", "c", "c", "cr", "cs", "cn", "d", "d", "d", "dr", "dh", "dv", "fr", "h", "h",
+          "h", "kr", "kn", "kl", "kv", "ksh", "l", "l", "l", "ll", "ll", "lm", "lv", "lr", "lq", "lsh", "mbr", "mr",
+          "mv", "n", "n", "n", "nn", "nd", "nsh", "ns", "nz", "nv", "nr", "p", "p", "p", "ph", "phr", "r", "r", "r",
+          "rn", "rsh", "rq", "s", "s", "s", "ss", "sh", "shr", "sc", "str", "v", "v", "vvn", "vr"]
+    m4 = ["", "", "", "", "", "", "", "", "", "", "h", "l", "n", "nth", "s", "ss"]
+    s1 = ["", "", "", "", "b", "c", "d", "g", "j", "k", "m", "n", "p", "q", "r", "s", "shr", "t", "th", "v", "w", "x",
+          "z"]
+    s2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "y", "y", "y", "y", "ae", "iu", "ei", "ie", "ia", "ai", "ee"]
+    s3 = ["d", "dr", "g", "gn", "gr", "ld", "lr", "ldr", "lv", "lz", "m", "mr", "n", "nd", "nn", "ng", "nr", "ndr",
+          "nz", "nvr", "r", "rq", "rdr", "rz", "rv", "s", "sr", "shr", "str", "vr", "vn", "x", "xr", "zr", "z"]
+    s4 = ["", "", "", "", "", "c", "d", "h", "n", "rc", "s", "sh", "t", "th", "v", "x"]
+
+
+class Duergar:
+    m1 = ["Ad", "Am", "Arm", "Baer", "Daer", "Bal", "Ban", "Bar", "Bel", "Ben", "Ber", "Bhal", "Bhar", "Bhel", "Bram",
+          "Bran", "Brom", "Brum", "Bun", "Dal", "Dar", "Dol", "Dul", "Eb", "Em", "Erm", "Far", "Gal", "Gar", "Ger",
+          "Gim", "Gral", "Gram", "Gran", "Grem", "Gren", "Gril", "Gry", "Gul", "Har", "Hjal", "Hjol", "Hjul", "Hor",
+          "Hul", "Hur", "Kar", "Khar", "Kram", "Krom", "Krum", "Mag", "Mal", "Mel", "Mor", "Muir", "Mur", "Rag", "Ran",
+          "Reg", "Rot", "Thal", "Thar", "Thel", "Ther", "Tho", "Thor", "Thul", "Thur", "Thy", "Tor", "Ty", "Um", "Urm",
+          "Von"]
+    m2 = ["adin", "bek", "brek", "dahr", "dain", "dal", "dan", "dar", "dek", "dir", "dohr", "dor", "drak", "dram",
+          "dren", "drom", "drum", "drus", "duhr", "dur", "dus", "garn", "gram", "gran", "grim", "grom", "gron", "grum",
+          "grun", "gurn", "gus", "iggs", "kahm", "kam", "kohm", "kom", "kuhm", "kum", "kyl", "man", "mand", "mar",
+          "mek", "miir", "min", "mir", "mond", "mor", "mun", "mund", "mur", "mus", "myl", "myr", "nam", "nar", "nik",
+          "nir", "nom", "num", "nur", "nus", "nyl", "rak", "ram", "ren", "rig", "rigg", "rik", "rim", "rom", "ron",
+          "rum", "rus", "ryl", "tharm", "tharn", "thran", "thrum", "thrun"]
+    m3 = ['', '', ]
+    m4 = ['', '', ]
+    f1 = ["An", "Ar", "Baer", "Bar", "Bel", "Belle", "Bon", "Bonn", "Braen", "Bral", "Bralle", "Bran", "Bren", "Bret",
+          "Bril", "Brille", "Brol", "Bron", "Brul", "Bryl", "Brylle", "Bryn", "Bryt", "Byl", "Bylle", "Daer", "Dear",
+          "Dim", "Ed", "Ein", "El", "Gem", "Ger", "Gwan", "Gwen", "Gwin", "Gwyn", "Gym", "Ing", "Jen", "Jenn", "Jin",
+          "Jyn", "Kait", "Kar", "Kat", "Kath", "Ket", "Las", "Lass", "Les", "Less", "Lyes", "Lys", "Lyss", "Maer",
+          "Maev", "Mar", "Mis", "Mist", "Myr", "Mys", "Myst", "Naer", "Nal", "Nas", "Nass", "Nes", "Nis", "Nys", "Raen",
+          "Ran", "Red", "Reyn", "Run", "Ryn", "Sar", "Sol", "Tas", "Taz", "Tis", "Tish", "Tiz", "Tor", "Tys", "Tysh"]
+    f2 = ["belle", "bera", "delle", "deth", "dielle", "dille", "dish", "dora", "dryn", "dyl", "giel", "glia", "glian",
+          "gwyn", "la", "leen", "leil", "len", "lin", "linn", "lyl", "lyn", "lynn", "ma", "mera", "mora", "mura", "myl",
+          "myla", "nan", "nar", "nas", "nera", "nia", "nip", "nis", "niss", "nora", "nura", "nyl", "nys", "nyss", "ra",
+          "ras", "res", "ri", "ria", "rielle", "rin", "ris", "ros", "ryl", "ryn", "sael", "selle", "sora", "syl",
+          "thel", "thiel", "tin", "tyn", "va", "van", "via", "vian", "waen", "win", "wyn", "wynn"]
+    f3 = ['', '', ]
+    f4 = ['', '', ]
+    s1 = ["Amber", "Axe", "Battle", "Black", "Blaze", "Boulder", "Bright", "Bronze", "Cinder", "Cloud", "Cold",
+          "Common", "Crag", "Dark", "Deep", "Dew", "Earth", "Ember", "Fair", "Fire", "Fist", "Flame", "Flat", "Flint",
+          "Free", "Full", "Fuse", "Gold", "Grand", "Great", "Hammer", "Hard", "Heavy", "High", "Humble", "Iron", "Keen",
+          "Lone", "Low", "Molten", "Noble", "Plain", "Pride", "Proud", "Pyre", "Rock", "Rumble", "Shield", "Silent",
+          "Simple", "Single", "Soft", "Solid", "Steel", "Stern", "Stone", "Storm", "Stout", "Strong", "Terra",
+          "Thunder", "Titan", "True", "War", "Wild", "Winter", "Wise"]
+    s2 = ["arm", "bash", "beam", "beard", "belly", "bend", "blaze", "bluff", "bough", "brace", "brand", "breath",
+          "brew", "brow", "crest", "crusher", "dew", "fall", "fell", "flare", "flow", "force", "forge", "fury", "gaze",
+          "gem", "gleam", "glide", "glow", "grip", "guard", "gut", "hair", "hand", "heart", "helm", "hide", "horn",
+          "ingot", "mane", "mantle", "maul", "might", "more", "pelt", "punch", "ridge", "roar", "scar", "shade",
+          "shadow", "shard", "shot", "shout", "sky", "snow", "spark", "steam", "strength", "stride", "strike", "surge",
+          "sword", "thorn", "track", "ward"]
+    s3 = ['', '', ]
+    s4 = ['', '', ]
+
+
+class Dwarf:
+    f1 = ["", "", "", "", "", "b", "br", "d", "dr", "f", "g", "gr", "h", "j", "k", "m", "r", "sr", "st", "str", "t",
+          "tr", "v", "w", "z"]
+    f2 = ["a", "e", "i", "o", "u", "a", "e", "o", "u", "a", "o", "u", "a", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "o", "u", "y", "y", "aa", "ai", "oo", "uu", "io", "io"]
+    f3 = ["b", "br", "bm", "bn", "cr", "cd", "cn", "cm", "d", "dd", "dg", "dn", "dm", "g", "gr", "gn", "gm", "gr", "gg",
+          "gd", "k", "kk", "kl", "kn", "l", "ld", "lb", "lbr", "ldr", "lg", "lgr", "lm", "lk", "mg", "md", "n", "nf",
+          "nm", "nth", "ng", "ngr", "ndr", "nr", "r", "rg", "rgr", "rs", "rst", "rd", "rb", "v", "zm", "zb", "zd"]
+    f4 = ["c", "ck", "d", "dd", "g", "k", "l", "ls", "ld", "m", "n", "r", "rd", "rsk", "rg", "t"]
+    m1 = ["", "", "", "", "", "", "b", "bh", "d", "dr", "f", "g", "gr", "gh", "h", "k", "kh", "l", "m", "n", "r", "s",
+          "sr", "t", "thr", "y", "v", "w"]
+    m2 = ["a", "e", "i", "o", "u"]
+    m3 = ["bn", "bh", "bb", "b", "cw", "cn", "d", "dw", "dn", "dg", "dd", "dr", "dl", "h", "hn", "hl", "hg", "gn", "gl",
+          "gw", "gr", "gv", "k", "kk", "l", "ll", "ld", "lw", "lgr", "lgw", "lb", "lk", "m", "mm", "mw", "mgw", "mr",
+          "n", "nd", "ng", "ngr", "ngv", "nn", "nngv", "nw", "r", "rg", "rgw", "rl", "rb", "s", "ss", "tr", "v", "vr",
+          "vl", "z", "zl", "zw"]
+    m4 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "h", "l", "ll", "m", "n",
+          "mn", "s", "r", "t", "th"]
+    s1 = ["b", "br", "bh", "d", "dr", "f", "g", "gr", "gh", "h", "j", "k", "kh", "l", "m", "n", "r", "s", "sr", "st",
+          "str", "t", "thr", "tr", "v", "w", "y", "z"]
+    s2 = ["a", "e", "i", "o", "u", "a", "e", "o", "u", "a", "o", "u", "a", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "o", "u", "y", "y"]
+    s3 = ["b", "bb", "bh", "bm", "bn", "br", "cd", "cm", "cn", "cr", "cw", "d", "dd", "dg", "dl", "dm", "dn", "dr",
+          "dw", "g", "gd", "gg", "gl", "gm", "gn", "gr", "gv", "gw", "h", "hg", "hl", "hn", "k", "kk", "kl", "kn", "l",
+          "lb", "lbr", "ld", "ldr", "lg", "lgr", "lgw", "lk", "ll", "lm", "lw", "m", "md", "mg", "mgw", "mm", "mr",
+          "mw", "n", "nd", "ndr", "nf", "ng", "ngr", "ngv", "nm", "nn", "nngv", "nr", "nth", "nw", "r", "rb", "rd",
+          "rg", "rgr", "rgw", "rl", "rs", "rst", "s", "ss", "tr", "v", "vl", "vr", "z", "zb", "zd", "zl", "zm", "zw"]
+    s4 = ["b", "c", "ck", "d", "dd", "g", "h", "k", "l", "ll", "ls", "ld", "m", "n", "mn", "r", "rd", "rsk", "rg", "s",
+          "t", "th"]
+
+
+class Elf:
+    f1 = ["", "", "", "", "", "c", "d", "f", "g", "h", "k", "kr", "l", "m", "n", "s", "t", "th", "v", "z"]
+    f2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "a", "o", "o", "e", "e", "ae", "ia",
+          "ie", "ea", "ei", "io"]
+    f3 = ["ch", "cl", "cv", "dr", "dv", "g", "g", "g", "gl", "gr", "ghr", "ght", "h", "h", "h", "j", "j", "l", "l", "l",
+          "l", "l", "l", "lm", "ln", "ldr", "lvr", "ld", "ldl", "ll", "ls", "lth", "lv", "m", "m", "m", "m", "mr", "mv",
+          "n", "n", "n", "n", "nr", "nv", "nvr", "nth", "nd", "ndl", "ndr", "nl", "r", "r", "r", "r", "r", "rl", "rgr",
+          "rg", "rd", "rdl", "rdr", "s", "s", "s", "s", "sh", "shn", "st", "sv", "sr", "sth", "t", "t", "t", "th", "th",
+          "v", "v", "v", "vr", "y", "y", "y"]
+    f4 = ["", "l", "m", "n", "r", "s", "ss", "l", "m", "n", "r", "s", "ss"]
+    m1 = ["", "", "", "", "", "d", "f", "h", "j", "k", "l", "m", "n", "ph", "s", "sh", "t", "th", "v", "y"]
+    m2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "a", "o", "o",
+          "e", "e", "ie", "ia", "ea", "au", "aa", "ao", "eae", "ou", "ae"]
+    m3 = ["c", "c", "c", "cl", "cn", "cm", "d", "d", "d", "dr", "dn", "dm", "g", "g", "g", "gn", "gh", "gy", "h", "h",
+          "h", "h", "hh", "hh", "hn", "hl", "hr", "l", "l", "l", "l", "l", "ll", "ll", "lm", "ln", "lhr", "lhn", "lv",
+          "ls", "lsh", "ly", "ll", "m", "m", "m", "m", "mm", "mm", "mh", "mn", "mr", "n", "n", "n", "nn", "nn", "nd",
+          "ndl", "ndr", "nn", "nr", "nth", "ns", "nl", "nh", "ny", "r", "r", "r", "rr", "rr", "rdl", "rl", "rn", "rv",
+          "rs", "s", "s", "s", "ss", "ss", "sh", "shr", "sl", "th", "v", "v", "v", "y", "y", "y"]
+    m4 = ["", "", "", "", "", "", "", "", "", "", "", "h", "l", "n", "s", "ss"]
+    s1 = ["", "", "", "", "c", "d", "f", "g", "gr", "h", "j", "k", "l", "m", "n", "s", "sh", "t", "th", "v", "w", "y",
+          "z", "zh"]
+    s2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "a", "e", "e",
+          "o", "o", "ai", "ee", "ei", "ia", "ie", "ae", "io"]
+    s3 = ["cl", "d", "d", "d", "dn", "dr", "g", "g", "g", "gh", "gl", "gr", "h", "h", "h", "hh", "j", "k", "k", "k",
+          "l", "l", "l", "l", "l", "ll", "ll", "ll", "ld", "ldl", "ldr", "lf", "lhn", "lhr", "ll", "llm", "llv", "lm",
+          "ln", "ls", "lv", "lvr", "m", "m", "m", "mm", "mm", "mn", "mr", "mv", "n", "n", "n", "nn", "n", "nd", "ndl",
+          "ndr", "nl", "nn", "nr", "ns", "nth", "nv", "ph", "r", "r", "r", "rr", "rd", "rdl", "rg", "rl", "rm", "rr",
+          "s", "s", "s", "ss", "ss", "sh", "sl", "ss", "st", "th", "tl", "v", "v", "v", "y", "y", "y"]
+    s4 = ["", "", "h", "l", "m", "n", "r", "s"]
+
+
+class Fetchling:
+    f1 = ["", "", "", "br", "dr", "gr", "j", "m", "n", "q", "qr", "r", "s", "tr", "x", "y", "z"]
+    f2 = ["a", "e", "i", "o", "u"]
+    f3 = ["c", "d", "g", "h", "j", "k", "l", "m", "n", "r", "s", "t", "v", "z"]
+    f4 = ["", "", "", "c", "h", "l", "m", "n", "r", "t", "x"]
+    m1 = ["c", "f", "g", "h", "l", "m", "n", "q", "r", "s", "t", "th", "v", "y", "z"]
+    m2 = ["a", "e", "i", "o", "u"]
+    m3 = ["c", "fz", "fn", "g", "gv", "gn", "gz", "h", "hn", "hv", "hz", "l", "lv", "lr", "ls", "lz", "m", "mr", "mv",
+          "mz", "nv", "nz", "nr", "r", "rr", "rs", "rz", "rh", "rv", "sc", "sh", "sr", "sv", "th", "thr", "tv", "tn"]
+    m4 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "h", "l", "m", "n", "s", "x"]
+
+
+class Gillman:
+    m1 = ['Aqilus', 'Porcus', 'Nater', 'Filtys', 'Merpus ', 'Tertis', 'Osharus', 'Rimulus', 'Aberdeen', 'Aberforth',
+          'Adrian', 'Aeces', 'Aenon', 'Agual', 'Anchor', 'Andaman', 'Anenon', 'Aquarius', 'Aquor', 'Arroyo', 'Baltic',
+          'Barracudon', 'Bay', 'Beck', 'Bered', 'Bo', 'Bourne', 'Brendan', 'Brooke', 'Bruinen', 'Calder', 'Caol',
+          'Cari', 'Caspian', 'Cato', 'Chalakon', 'Clifford', 'Clyde', 'Coburn', 'Como', 'Conway', 'Cruise', 'Cyraenan',
+          'Cyraeneus', 'Cyraeni', 'Cyreus', 'Dathan', 'Davey', 'Deniz', 'Dewy', 'Dillon', 'Dorado', 'Douglas', 'Dover',
+          'Drake', 'Duff', 'Dune', 'Duxor', 'Dylan', 'Dylon', 'Earendil', 'Ecthelion', 'Ervin', 'Finn', 'Ford', 'Gal',
+          'Gar', 'Guadalupe', 'Hali', 'Hawkins', 'Hiro', 'Hurley', 'Indra', 'Irvin', 'Irving', 'Jabal', 'Jack',
+          'Jacques', 'Jafar', 'Jetty', 'Jonah', 'Jorah', 'Jordan', 'Jubal', 'Kae', 'Kaerio', 'Kaerius', 'Kai',
+          'Kailani', 'Kairius', 'Kawai', 'Keel', 'Kelvin', 'Kendall', 'Kenn', 'Krill', 'Kyle', 'Lachlan', 'Laekces',
+          'Laguna', 'Laiken', 'Leith', 'Leomaris', 'Leven', 'Ligurian', 'Lincoln', 'Llyr', 'Lusca', 'Lynn', 'Maggiore',
+          'Mako', 'Marin', 'Marinus', 'Marious', 'Marius', 'Marlin', 'Marlow', 'Marlowe', 'Marsh', 'Marshal',
+          'Marsious', 'Maxwell', 'Merrick', 'Mizuko', 'Moby', 'Monroe', 'Moor', 'Moore', 'Morcant', 'Morgan',
+          'Morrissey', 'Mortimer', 'Morven', 'Muir', 'Muiress', 'Muriel', 'Murphy', 'Murray', 'Murrissey', 'Naga',
+          'Nebraska', 'Neptune', 'Neres', 'Nereus', 'Nerio', 'Nerrocen', 'Noelani', 'Oceanus', 'Octopian', 'Orman',
+          'Orta', 'Paio', 'Pelagius', 'Peleg', 'Pike', 'Plato', 'Poseider', 'Poseidon', 'Queseon', 'Raen', 'Ran', 'Ray',
+          'Reif', 'Ren', 'Rio', 'Rip', 'Roan', 'Ronan', 'Ross', 'Santus', 'Seaton', 'Seirus', 'Shar', 'Skipper',
+          'Storm', 'Strom', 'Tack', 'Tad', 'Tamesis', 'Taron', 'Thames', 'Tide', 'Trent', 'Trenton', 'Tridenton',
+          'Triton', 'Tullius', 'Wade', 'Wyatt', 'Yarrow', 'Yuval', 'Zale', 'Zander']
+    f1 = ['Nadia', 'Vivia', 'Tyene', 'Meri', 'Riva', 'Kelby', 'Nixie', 'Doria', 'Nerissa', 'Kailani', 'Taila', 'Leena',
+          'Nami', 'Pavati', 'Aquina', 'Nyissa', 'Oshiera', 'Marina', 'Koia', 'Sebaysha', 'Larinia', 'Corrissa', 'Aban',
+          'Abenahir', 'Aberfa', 'Adella', 'Adra', 'Adrea', 'Adreanna', 'Adria', 'Adriana', 'Adriane', 'Adrianna',
+          'Adrianne', 'Adrie', 'Adrielle', 'Adriene', 'Adrienna', 'Adrienne', 'Adrina', 'Adva', 'Aedre', 'Aegaea',
+          'Aegates', 'Aerial', 'Aerwyna', 'Afshak', 'Afshaneh', 'Afshang', 'Alana', 'Allura', 'Allure', 'Amadahy',
+          'Amara', 'Amaria', 'Amphitrite', 'Anahita', 'Anat', 'Anath', 'Andrina', 'Aphrodite', 'Apulia', 'Aquarius',
+          'Aquata', 'Ara', 'Araxie', 'Ardvisura', 'Ariel', 'Arielle', 'Arista', 'Arva', 'Arvia', 'Assana', 'Assane',
+          'Assyria', 'Atargatis', 'Attina', 'Avalon', 'Avonmora', 'Azalea', 'Bayou', 'Beatrice', 'Beck', 'Beverlee',
+          'Beverley', 'Beverly', 'Bo', 'Brimlad', 'Briny', 'Brook', 'Brooke', 'Brooklyn', 'Brooklynn', 'Brooklynne',
+          'Bubbles', 'Calder', 'Callan', 'Camie', 'Cari', 'Caspian', 'Ceto', 'Charybdis', 'Chelsea', 'Chenelle',
+          'Cherith', 'Chumani', 'Coco', 'Cora', 'Coralia', 'Cordelia', 'Cotovatre', 'Coventina', 'Cragen', 'Creiddylad',
+          'Dalis', 'Dalit', 'Darya', 'Deema', 'Delma', 'Delmar', 'Delmara', 'Delmare', 'Delora', 'Deloras', 'Deloros',
+          'Deniz', 'Diana', 'Diona', 'Diondra', 'Dione', 'Dionna', 'Dionne', 'Dominique', 'Dorea', 'Doria', 'Dorian',
+          'Doriana', 'Dorianna', 'Dorianne', 'Dorien', 'Dorienne', 'Doris', 'Dwynwen', 'Dyesebel', 'Dylan', 'Earwine',
+          'Earwyn', 'Earwyna', 'Eathelin', 'Eathelyn', 'Ebba', 'Echo', 'Edlen', 'Edlin', 'Edlyn', 'Eirene', 'Eldoris',
+          'Emily', 'Ephyra', 'Erwina', 'Erwyna', 'Euadne', 'Fontanne', 'Gal', 'Galit', 'Geneva', 'Genevieve', 'Genna',
+          'Genny', 'Genoveva', 'Genowefa', 'Ginevra', 'Glan', 'Goldie', 'Guadalupe', 'Guinemere', 'Guinevere', 'Hali',
+          'Halimeda', 'Hama', 'Hamako', 'Hanon', 'Hecate', 'Hydra', 'Indra', 'Ingemar', 'Irvetta', 'Irvette', 'Isla',
+          'Itsaso', 'Jaleh', 'Jeevika', 'Jennifer', 'Jenny', 'Jennyfer', 'Jennyver', 'Jewel', 'Jharna', 'Jorah',
+          'Jordan', 'June', 'Jurmala', 'Kai', 'Kaia', 'Kailani', 'Kairi', 'Karen', 'Kawai', 'Kawthar', 'Kelby', 'Kelda',
+          'Kelde', 'Kendall', 'Kevser', 'Kishi', 'Kishiko', 'Kyla', 'Kyle', 'Lage', 'Laguna', 'Lagune', 'Laiken',
+          'Lamia', 'Lana', 'Laraine', 'Latine', 'Lausanne', 'Leena', 'Lethe', 'Leuconoe', 'Leucothea', 'Leucothia',
+          'Leven', 'Lily', 'Lin', 'Lola', 'Lorelei', 'Lorelie', 'Lorraine', 'Lucia', 'Lyn', 'Lynn', 'Lynna', 'Lynne',
+          'Madison', 'Malila', 'Mamia', 'Marea', 'Mareen', 'Mareena', 'Marella', 'Marena', 'Maressa', 'Maricia',
+          'Marilla', 'Marin', 'Marina', 'Marinda', 'Marine', 'Marinella', 'Marinelle', 'Marinna', 'Marinochka', 'Maris',
+          'Marisabel', 'Marissa', 'Maritza', 'Mariza', 'Marlin', 'Marlow', 'Marlowe', 'Marna', 'Martha', 'Maryn',
+          'Maryssa', 'Masika', 'Maya', 'Mayim', 'Melody', 'Meltem', 'Meredith', 'Meri', 'Meriel', 'Meris', 'Merise',
+          'Merissa', 'Mesi', 'Mica', 'Michal', 'Mira', 'Miranda', 'Mishell', 'Misty', 'Mizuko', 'Moana', 'Molly',
+          'Monroe', 'Moor', 'Morcan', 'Morgaine', 'Morgan', 'Morgana', 'Morgance', 'Morgane', 'Morgann', 'Morgant',
+          'Morgayne', 'Morwen', 'Morwenna', 'Moselle', 'Muiel', 'Muirgheal', 'Murel', 'Muriel', 'Murphy', 'Murray',
+          'Nadah', 'Nadia', 'Nagisa', 'Nahla', 'Naida', 'Nami', 'Nanami', 'Narissa', 'Naunet', 'Nautia', 'Nawfar',
+          'Nebraska', 'Nebula', 'Nebulia', 'Neha', 'Neith', 'Neptune', 'Nereida', 'Nereyda', 'Nerice', 'Nerida',
+          'Neried', 'Nerin', 'Nerina', 'Nerine', 'Neris', 'Nerissa', 'Nerita', 'Nimiane', 'Nimue', 'Nineve', 'Nireta',
+          'Nixie', 'Noelani', 'Noelle', 'Nyneve', 'Océane', 'Oceana', 'Oceane', 'Ondine', 'Oona', 'Orabel', 'Orabelle',
+          'Pamuya', 'Pasha', 'Pavati', 'Pearl', 'Peirene', 'Pelagia', 'Priscilla', 'Puakai', 'Raina', 'Raine', 'Rainey',
+          'Rainie', 'Ran', 'Rana', 'Reka', 'Ren', 'Rhode', 'Rhodos', 'Ria', 'Rilla', 'Rille', 'Rilletta', 'Rillette',
+          'Rillia', 'Rillie', 'Rina', 'Rio', 'Riva', 'Rive', 'River', 'Robeab', 'Rocio', 'Rudabeh', 'Sabrina', 'Sadaf',
+          'Sara', 'Scylla', 'Seira', 'Sereia', 'Serena', 'Serenna', 'Shabnan', 'Sheila', 'Shellina', 'Shizue', 'Siera',
+          'Sirena', 'Sokanon', 'Struana', 'Styx', 'Sybil', 'Tal', 'Talia', 'Talise', 'Tallulah', 'Talora', 'Talori',
+          'Talulah', 'Talya', 'Taura', 'Tefnut', 'Tethys', 'Thalassa', 'Thames', 'Thessalonike', 'Tishtar', 'Torlan',
+          'Tulia', 'Tyna', 'Tyne', 'Ula', 'Umiko', 'Una', 'Undina', 'Undine', 'Undinia', 'Vanora', 'Varina', 'Venilia',
+          'Venus', 'Vivian', 'Viviana', 'Viviane', 'Vivianna', 'Vivianne', 'Vivien', 'Wade', 'Waverly', 'Winnifred',
+          'Wynnifred', 'Yara', 'Yardenah', 'Yaritza', 'Yarrow', 'Yoki', 'Zhaleh']
+
+
+class Gnome:
+    m1 = ['b', 'c', 'cl', 'd', 'fr', 'g', 'gn', 'h', 'j', 'kn', 'kl', 'l', 'm', 'n', 'p', 'r', 'sc', 'sl', 'sn', 'sm',
+          't', 'w', 'z']
+    m2 = ['a', 'e', 'i', 'o', 'u', 'a', 'e', 'i', 'a', 'e', 'i', 'o', 'u', 'a', 'e', 'i', 'a', 'e', 'i', 'o', 'u', 'a',
+          'e', 'i', 'a', 'e', 'i', 'o', 'u', 'a', 'e', 'i', 'a', 'e', 'i', 'o', 'u', 'a', 'e', 'i', 'y', 'y', 'y', 'oo',
+          'ee', 'aa', 'ie', 'ai']
+    m3 = ['bbn', 'bk', 'bn', 'bbr', 'db', 'dd', 'ddw', 'dn', 'ddn', 'gn', 'gb', 'k', 'km', 'kn', 'kp', 'kw', 'lk', 'lb',
+          'llb', 'lv', 'mb', 'mj', 'mm', 'mp', 'mt', 'mw', 'mz', 'md', 'nb', 'nj', 'nk', 'nkk', 'nsb', 'nsm', 'nsn',
+          'nz', 'nzb', 'ngn', 'pn', 'pp', 'pr', 'r', 'rk', 'rb', 'rw', 'v']
+    m4 = ['c', 'ck', 'g', 'm', 'p', 'r', 'rt', 'ss', 'st', 't']
+    f1 = ['', '', '', 'bl', 'c', 'cl', 'f', 'fl', 'fn', 'g', 'gl', 'gn', 'h', 'l', 'm', 'n', 'p', 'ph', 'sh', 'sl',
+          'sn', 'sm', 't', 'th', 'w']
+    f2 = ['a', 'e', 'i', 'o', 'u', 'a', 'e', 'i', 'a', 'e', 'i', 'o', 'u', 'a', 'e', 'i', 'a', 'e', 'i', 'o', 'u', 'a',
+          'e', 'i', 'a', 'e', 'i', 'o', 'u', 'a', 'e', 'i', 'a', 'e', 'i', 'o', 'u', 'a', 'e', 'i', 'y', 'y', 'y', 'oo',
+          'ee', 'aa', 'ie', 'ai']
+    f3 = ['l', 'll', 'm', 'n', 'p', 'r', 's', 'ss', 't', 'th', 'b', 'bl', 'c', 'cl', 'd', 'f', 'fl', 'fn', 'g', 'gl',
+          'gn', 'h', 'j', 'kl', 'kn', 'l', 'm', 'n', 'p', 'ph', 'r', 'sc', 'sh', 'sl', 'sn', 'sm', 't', 'th', 'w', 'z']
+    f4 = ['bbl', 'bbn', 'bk', 'bn', 'bl', 'bbr', 'db', 'dd', 'ddl', 'dl', 'dw', 'ddw', 'dn', 'ddn', 'gn', 'gb', 'gl',
+          'k', 'kl', 'km', 'kn', 'kp', 'kw', 'lk', 'lm', 'lw', 'lb', 'llb', 'llm', 'ln', 'lln', 'lv', 'mb', 'mj', 'mm',
+          'mp', 'mt', 'mw', 'mz', 'md', 'nb', 'nj', 'nk', 'nkk', 'nkl', 'nsb', 'nsm', 'nsn', 'nz', 'nzb', 'ngl', 'ngn',
+          'pn', 'pp', 'pw', 'pr', 'r', 'rk', 'rb', 'rw', 'v']
+
+
+class Goblin:
+    m1 = ["", "", "", "", "b", "ch", "dr", "fl", "g", "gh", "j", "k", "kr", "l", "m", "n", "p", "r", "v", "w", "z"]
+    m2 = ["a", "e", "i", "o", "u", "a", "o", "u", "a", "e", "i", "o", "u", "a", "o", "u", "a", "e", "i", "o", "u", "a",
+          "o", "u", "oo", "ou", "oa"]
+    m3 = ["bb", "bbl", "bm", "br", "bn", "bz", "d", "dd", "dr", "dz", "dg", "ff", "g", "ggl", "gm", "gn", "gt", "gv",
+          "gb", "gd", "m", "md", "mb", "mz", "mg", "mk", "nth", "nz", "nd", "ng", "ngb", "ngl", "nd", "nv", "rg", "rk",
+          "rp", "rs", "rt", "rd", "rg", "tf", "tv", "tt", "tg", "v", "vg", "vd", "vn", "vm"]
+    m4 = ["", "", "", "", "", "b", "ff", "g", "k", "n", "nk", "rch", "rd", "rg", "rk", "rnk", "rt", "s", "sh", "t",
+          "wg", "z"]
+    f1 = ["", "", "", "", "", "ch", "f", "g", "gh", "gr", "h", "j", "kl", "l", "m", "n", "p", "r", "v", "vr", "y", "z"]
+    f2 = ["a", "e", "i", "o", "u", "e", "i", "o", "a", "e", "i", "o", "u", "e", "i", "o", "a", "e", "i", "o", "u", "e",
+          "i", "o", "ee", "ie", "oo"]
+    f3 = ["ck", "dl", "dg", "dr", "dn", "dk", "g", "gl", "gn", "gm", "gl", "k", "kk", "kl", "kn", "km", "kch", "kt",
+          "lk", "ld", "lg", "lv", "lb", "ll", "mb", "ml", "mp", "md", "mk", "mr", "nb", "nch", "nd", "ng", "nk", "p",
+          "ph", "phr", "phl", "rk", "rg", "rd", "rb", "rbl", "s", "sh", "ss", "sk", "st", "t", "tr", "tl", "tch", "vv",
+          "x"]
+    f4 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "b", "h", "l", "k", "n", "ns", "ms", "s", "sh",
+          "th"]
+    s1 = ["Amber", "Ash", "Bear", "Blade", "Blood", "Bone", "Boulder", "Cask", "Claw", "Crag", "Crow", "Crystal",
+          "Dead", "Dew", "Dog", "Doom", "Ear", "Earth", "Elf", "Ember", "Far", "Finger", "Fire", "Fist", "Flame",
+          "Flint", "Forest", "Frost", "Fuse", "Gloom", "Gold", "Gore", "Grass", "Gut", "Hallow", "Hard", "Haze",
+          "Heart", "Heavy", "Hell", "High", "Hill", "Hog", "Horse", "Ice", "Iron", "Keen", "Long", "Man", "Marble",
+          "Marsh", "Meadow", "Moon", "Moss", "Nettle", "Nose", "Orb", "Pine", "Plain", "Poke", "Rage", "Rain", "Raven",
+          "Rip", "River", "Rock", "Rough", "Shadow", "Silver", "Skull", "Snake", "Snow", "Spider", "Stab", "Star",
+          "Steel", "Stern", "Stone", "Storm", "Strong", "Stump", "Swamp", "Toe", "Tree", "Water", "Wild", "Wind",
+          "Wold", "Wood"]
+    s2 = ["bane", "bash", "basher", "belly", "bender", "binder", "bite", "biter", "blazer", "bleeder", "blight",
+          "brace", "brand", "breaker", "breath", "brew", "brook", "brow", "bumper", "caller", "chaser", "chew",
+          "chewer", "chopper", "cleaver", "cooker", "crag", "crest", "crusher", "cut", "cutter", "dancer", "draft",
+          "dreamer", "dust", "eye", "fall", "fang", "flaw", "flayer", "force", "fury", "gloom", "grip", "gripper",
+          "guard", "gut", "hammerer", "horn", "hunter", "jumper", "killer", "lasher", "mark", "mauler", "maw", "more",
+          "nugget", "part", "parts", "pike", "punch", "puncher", "rage", "rager", "reaper", "reaver", "rip", "ripper",
+          "roar", "rock", "scar", "scream", "seeker", "shard", "shield", "shooter", "shot", "singer", "slaver",
+          "slayer", "snacker", "snarl", "snouth", "spark", "spear", "splitter", "stalk", "stalker", "steel", "stick",
+          "stomper", "strike", "striker", "surge", "taker", "tracker", "trapper", "wad", "walker", "watcher", "wound"]
+    s3 = ['']
+    s4 = ['']
+
+
+class Grippli:
+    m1 = ["Alien", "Arrow", "Bazoo", "Beaker", "Belch", "Belcher", "Binky", "Bloats", "Blob", "Bob", "Bog", "Bogs",
+          "Booger", "Boogy", "Bubba", "Bubbles", "Buffle", "Buffles", "Bully", "Buster", "Charizard", "Charmander",
+          "Chubber", "Chubbles", "Chubbs", "Chubby", "Chunky", "Claw", "Clawde", "Clawdius", "Claws", "Cozmo",
+          "Cricket", "Croak", "Croaker", "Croaks", "Crook", "Cruncher", "Crunchy", "Curmet", "Dart", "Darts", "Doc",
+          "Fatty", "Fiddles", "Fire", "Flibbit", "Flippy", "Flips", "Flubber", "Flubs", "Flye", "Freak", "Freckles",
+          "Frogger", "Froggie", "Frogzilla", "Gobbles", "Goble", "Gobles", "Godzilla", "Golem", "Goliath", "Gooey",
+          "Grog", "Hobbit", "Hopkins", "Hopper", "Hopscotch", "Hudini", "Jabba", "JarJar", "Kermi", "Kermie", "Kermit",
+          "Leaps", "Leapy", "Mantis", "Marsh", "Mello", "Mellow", "Mog", "MrSticky", "Mud", "Muds", "Newt", "Newton",
+          "Orbit", "Patches", "Pickle", "Pickles", "Pogo", "Predator", "Prince", "Puddles", "Pudge", "Pug", "Quibbit",
+          "Ribbit", "Shmoo", "Shmooch", "Skippy", "Skittles", "Slick", "Slimes", "Slippy", "Slub", "Slug", "Slugg",
+          "Sluggs", "Slugs", "Smeagol", "Smudge", "Spot", "Sticky", "Stinky", "Stubby", "Stumper", "Swampie", "Swamps",
+          "Thor", "Toad", "Weirdo", "Whopper", "Wiggles", "Wobble", "Wobbles", "Yoda"]
+    f1 = ["Algee", "Amazone", "Amazonia", "Babe", "Belchy", "Blinks", "Blinky", "Bloats", "Bubble", "Bubbles", "Buffy",
+          "Bufonia", "Cherry", "Chops", "Chubbles", "Chubby", "Clawdia", "Cookie", "Cosmo", "Cricket", "Croaks",
+          "Daphne", "Dirty", "Faye", "Fern", "Fiddle", "Flubby", "Flye", "Freakey", "Freckles", "Frogzilla", "Fye",
+          "Fyre", "Geo", "Gobbles", "Gooey", "Hippity", "Hipscotch", "Hoppity", "Iggy", "Karma", "Kirby", "Kiss",
+          "Kisses", "Leaps", "Leapy", "Lilo", "Lily", "Lilypad", "Lips", "Mello", "Muddy", "Muds", "Mystique",
+          "Noodles", "Patches", "Peeps", "Penelope", "Pepper", "Pickle", "Pickles", "Princess", "Puds", "Pugs",
+          "Pumpkin", "Raisin", "Ribbit", "Ribbits", "Sally", "Shirly", "Shmoo", "Shmooches", "Slimey", "Slippy",
+          "Smiley", "Smooch", "Snaile", "Sparkle", "Sparkles", "Speckles", "Spot", "Spots", "Squee", "Squiggy",
+          "Stitch", "Stitches", "Teeny", "Tiggles", "Tiny", "Tootsie", "Trixie", "Twiggy", "Twinkle", "Waddle",
+          "Waddles", "Wiggle", "Wiggles", "Wobble", "Wobbles", "Xena"]
+
+
+class Halfling:
+    m1 = ["An", "Ar", "Bar", "Bel", "Con", "Cor", "Dan", "Dav", "El", "Er", "Fal", "Fin", "Flyn", "Gar", "Go", "Hal",
+          "Hor", "Ido", "Ira", "Jan", "Jo", "Kas", "Kor", "La", "Lin", "Mar", "Mer", "Ne", "Nor", "Ori", "Os", "Pan",
+          "Per", "Pim", "Quin", "Quo", "Ri", "Ric", "San", "Shar", "Tar", "Te", "Ul", "Uri", "Val", "Vin", "Wen", "Wil",
+          "Xan", "Xo", "Yar", "Yen", "Zal", "Zen"]
+    m2 = ["ace", "amin", "bin", "bul", "dak", "dal", "der", "don", "emin", "eon", "fer", "fire", "gin", "hace", "horn",
+          "kas", "kin", "lan", "los", "min", "mo", "nad", "nan", "ner", "orin", "os", "pher", "pos", "ras", "ret",
+          "ric", "rich", "rin", "ry", "ser", "sire", "ster", "ton", "tran", "umo", "ver", "vias", "von", "wan", "wrick",
+          "yas", "yver", "zin", "zor", "zu"]
+    m3 = ['']
+    m4 = ['']
+    f1 = ["An", "Ari", "Bel", "Bre", "Cal", "Chen", "Dar", "Dia", "Ei", "Eo", "Eli", "Era", "Fay", "Fen", "Fro", "Gel",
+          "Gra", "Ha", "Hil", "Ida", "Isa", "Jay", "Jil", "Kel", "Kith", "Le", "Lid", "Mae", "Mal", "Mar", "Ne", "Ned",
+          "Odi", "Ora", "Pae", "Pru", "Qi", "Qu", "Ri", "Ros", "Sa", "Shae", "Syl", "Tham", "Ther", "Tryn", "Una",
+          "Uvi", "Va", "Ver", "Wel", "Wi", "Xan", "Xi", "Yes", "Yo", "Zef", "Zen"]
+    f2 = ["alyn", "ara", "brix", "byn", "caryn", "cey", "da", "dove", "drey", "elle", "eni", "fice", "fira", "grace",
+          "gwen", "haly", "jen", "kath", "kis", "leigh", "la", "lie", "lile", "lienne", "lyse", "mia", "mita", "ne",
+          "na", "ni", "nys", "ola", "ora", "phina", "prys", "rana", "ree", "ri", "ris", "sica", "sira", "sys", "tina",
+          "trix", "ula", "vira", "vyre", "wyn", "wyse", "yola", "yra", "zana", "zira"]
+    f3 = ['']
+    f4 = ['']
+
+
+class Hobgoblin:
+    m1 = ["", "", "", "b", "d", "dr", "f", "g", "gr", "h", "k", "kr", "m", "n", "p", "pr", "r", "s", "t", "z"]
+    m2 = ["a", "e", "i", "o", "u"]
+    m3 = ["d", "dr", "gl", "gr", "gt", "gh", "kr", "kt", "kh", "kl", "l", "lgr", "lt", "ld", "ldr", "lg", "lb", "lbr",
+          "ll", "r", "rg", "rd", "rt", "rdr", "rgr", "rk", "rl", "th", "tt", "tr", "thr", "vl", "vr", "vt"]
+    m4 = ["", "d", "g", "k", "m", "n", "ng", "r", "t"]
+    f1 = ["", "", "", "", "b", "c", "d", "f", "h", "k", "m", "n", "ph", "r", "s", "t", "v", "w", "z"]
+    f2 = ["a", "e", "i", "o", "u"]
+    f3 = ["cl", "cn", "cm", "cd", "f", "ff", "fn", "fm", "fl", "kl", "kr", "kn", "km", "kd", "kt", "ks", "l", "lz",
+          "ln", "lm", "ld", "lg", "m", "mz", "ms", "mr", "md", "mg", "mk", "n", "ns", "nd", "nr", "ng", "ns", "nk", "r",
+          "rm", "rg", "rn", "rd", "rk", "s", "sm", "st", "ss", "sz", "sm", "sn", "sd", "sg", "th", "tr", "tn", "tz",
+          "ts", "yd", "yn", "yg", "yk", "yr", "yz"]
+    f4 = ["", "", "", "", "", "", "", "", "", "", "f", "h", "l", "m", "n", "s", "t"]
+
+
+class Human:
+    m1 = ["b", "br", "d", "dr", "g", "k", "kr", "p", "pr", "q", "r", "str", "t", "tr", "v", "", "b", "bh", "d", "dh",
+          "h", "kh", "l", "m", "n", "p", "r", "s", "t", "th", "v", "y"]
+    m2 = ["a", "e", "i", "o", "u"]
+    m3 = ["d", "l", "ld", "lb", "lk", "lr", "m", "ml", "n", "nd", "nk", "r", "rk", "rc", "rd", "rl", "d", "ll", "lb",
+          "ld", "lr", "l", "lk", "m", "n", "nn", "nr", "nd", "nk", "r", "rr", "rl", "rn", "rm", "rd"]
+    m4 = ["c", "d", "g", "k", "n", "t", "", "", "", "", "h", "n", "s", "t", "d", "ll", "lb", "ld", "lr", "l", "lk", "m",
+          "n", "nn", "nr", "nd", "nk", "r", "rr", "rl", "rn", "rm", "rd"]
+    f1 = ["", "", "", "", "", "b", "br", "d", "dr", "f", "fr", "g", "gr", "h", "j", "k", "l", "lj", "m", "n", "r", "s",
+          "sv", "th", "t", "v"]
+    f2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "y", "y", "au", "ie", "ae"]
+    f3 = ["bj", "d", "df", "dg", "dh", "dl", "dn", "dr", "fl", "g", "gd", "gn", "gv", "ld", "lk", "ll", "llg", "lv",
+          "m", "n", "nd", "nfr", "ng", "nj", "nng", "nnv", "r", "rd", "rf", "rg", "rgr", "rl", "rn", "sfr", "sg", "sl",
+          "str", "th", "thr"]
+    f4 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "d", "f", "g", "ld", "lf",
+          "n", "nn", "rd", "rg", "s", "th"]
+    s1 = ["Amber", "Arm", "Ash", "Autumn", "Battle", "Bear", "Black", "Blaze", "Blood", "Boar", "Boulder", "Brawl",
+          "Bright", "Bronze", "Bull", "Cinder", "Cloud", "Cold", "Common", "Dark", "Dawn", "Dead", "Doom", "Dream",
+          "Dusk", "Dust", "Ember", "Even", "Fine", "Forest", "Free", "Frost", "Frozen", "Gloom", "Gold", "Grand",
+          "Great", "Grim", "Grizzly", "Hallow", "Hell", "High", "Honey", "Horn", "Ice", "Iron", "Keen", "Light", "Lone",
+          "Long", "Mighty", "Mist", "Moss", "Mountain", "Night", "Noble", "Pale", "Plain", "Pride", "Proud", "Quick",
+          "Rage", "Rapid", "Raven", "River", "Rock", "Rune", "Shadow", "Sharp", "Silent", "Silver", "Smoke", "Snow",
+          "Soft", "Spirit", "Star", "Steel", "Stone", "Storm", "Strong", "Summer", "Swift", "Thunder", "Troll", "True",
+          "War", "Wild", "Wind", "Winter", "Wolf"]
+    s2 = ["arm", "arrow", "bane", "bash", "bear", "blade", "brace", "brand", "breaker", "breath", "brew", "caller",
+          "cleaver", "crest", "crusher", "cut", "cutter", "dream", "eye", "eyes", "fall", "fire", "fist", "flame",
+          "force", "forge", "fury", "gaze", "gleam", "grip", "guard", "hair", "hall", "hammer", "hand", "heart",
+          "hunter", "killer", "lash", "mane", "mantle", "mark", "maul", "rage", "reaper", "reaver", "rider", "ripper",
+          "roar", "rock", "root", "scar", "scream", "shield", "shout", "slayer", "snarl", "song", "spirit", "splitter",
+          "star", "stride", "sun", "sword", "thorn", "tongue", "walker", "ward", "watcher", "wind", "wine", "wolf"]
+    s3 = ['']
+    s4 = ['']
+
+
+class HalfElf:
+    m1 = ["", "", "", "", "", "b", "c", "d", "g", "h", "j", "jh", "k", "kh", "kr", "l", "m", "n", "p", "q", "r", "s",
+          "t", "tr", "v", "vr", "z", "zr"]
+    m2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o",
+          "u", "y", "y", "y", "ai", "ae", "ia", "ue", "ie", "ui"]
+    m3 = ["d", "d", "d", "dr", "dl", "dw", "g", "g", "g", "gr", "gl", "gg", "gw", "l", "l", "l", "l", "ld", "lv", "lgr",
+          "lbr", "lc", "ldr", "lg", "lgg", "lr", "lt", "lth", "m", "m", "m", "mr", "ml", "n", "n", "n", "nc", "nn",
+          "nr", "nd", "ngr", "nv", "nvr", "r", "r", "r", "rc", "rg", "rr", "rth", "rv", "rvr", "rl", "rd", "rdr", "rgr",
+          "rw", "s", "s", "s", "sh", "sl", "sr", "ss", "st", "str", "svr", "t", "t", "t", "th", "tt", "tr"]
+    m4 = ["", "", "", "c", "h", "k", "l", "n", "nn", "r", "s"]
+    f1 = ["", "", "", "", "c", "ch", "d", "j", "k", "kr", "l", "m", "n", "r", "s", "sh", "t", "thr", "th", "tr", "v",
+          "vr", "vh", "z", "zr", "zh"]
+    f2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o",
+          "u", "ia", "au", "ie", "ua", "oi", "ou", "ae"]
+    f3 = ["b", "b", "br", "cl", "cr", "d", "d", "gs", "gl", "gn", "gm", "gsh", "l", "l", "l", "lm", "lr", "lsr", "ltr",
+          "ly", "lly", "ld", "ll", "lsb", "lv", "m", "m", "m", "my", "mr", "n", "n", "n", "nd", "nr", "nw", "nn", "ns",
+          "nv", "ny", "pt", "pr", "r", "r", "r", "r", "rg", "rr", "rl", "rv", "ry", "s", "s", "s", "ss", "sy", "str",
+          "sw", "thr", "tr", "th", "y", "y", "y"]
+    f4 = ["", "", "", "", "", "", "", "", "", "", "h", "l", "n", "s", "ss", "th"]
+    s1 = ["", "", "", "", "b", "bl", "cl", "d", "dr", "f", "fl", "fr", "g", "gl", "gr", "h", "j", "k", "kl", "kr", "l",
+          "m", "n", "p", "pr", "s", "sl", "sk", "st", "t", "tr", "wr", "y", "z"]
+    s2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o",
+          "u", "aa", "io", "ei", "iu", "ai", "ea", "ee"]
+    s3 = ["d", "d", "d", "dr", "dw", "gr", "gw", "gn", "g", "g", "gg", "h", "h", "h", "j", "j", "j", "k", "k", "k",
+          "kr", "kl", "km", "kn", "l", "l", "ll", "l", "lr", "lg", "ld", "ldr", "lmr", "ly", "m", "mg", "mr", "m", "m",
+          "m", "n", "n", "n", "nn", "n", "nr", "ng", "ngr", "ndr", "nd", "nsh", "ntr", "r", "r", "r", "r", "rr", "rd",
+          "rdr", "rg", "rgr", "rl", "rm", "rt", "s", "s", "s", "sdr", "sgr", "sg", "sh", "ssr", "t", "tr", "t", "t",
+          "th", "v", "v", "vr", "vl", "w", "xh", "xt", "y", "yh", "zm"]
+    s4 = ["", "", "", "", "", "", "", "ht", "l", "m", "n", "nd", "nn", "r", "rks", "rt", "s", "th", "w", "ys"]
+
+
+class HalfOrc:
+    m1 = ["", "", "", "b", "br", "c", "cr", "d", "dr", "g", "gr", "h", "hr", "k", "m", "n", "p", "t", "th", "ts", "z"]
+    m2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "a", "o", "o", "aa", "au", "oa", "ia",
+          "ai", "uu"]
+    m3 = ["br", "b", "d", "dh", "dr", "dz", "g", "gr", "gd", "gh", "k", "kh", "kt", "kd", "kr", "lgr", "ltr", "ldr",
+          "lr", "lkr", "nd", "ng", "ngr", "ndr", "nv", "r", "rv", "rg", "rdr", "st", "sd", "str", "tr", "v", "zr", "zz",
+          "zv", "zvr"]
+    m4 = ["", "", "", "ch", "d", "g", "k", "l", "lm", "n", "r", "rg", "rm", "rv", "s", "sk", "t", "x", "zhg"]
+    f1 = ["", "", "", "", "", "b", "br", "c", "d", "dr", "g", "h", "k", "m", "n", "r", "rz", "s", "sh", "str", "t", "v",
+          "w", "z"]
+    f2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "a", "o", "o", "ay", "ou", "ai", "uo"]
+    f3 = ["b", "br", "bl", "c", "cl", "cr", "d", "dl", "dr", "g", "gh", "gr", "gl", "hg", "hk", "hr", "jk", "l", "ljk",
+          "ll", "ln", "lr", "lt", "m", "mr", "mg", "ml", "n", "ng", "nl", "nc", "r", "rg", "rl", "rd", "s", "sl", "sr",
+          "t", "tt", "tr", "v", "vr", "z", "zr"]
+    f4 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "h", "n", "sh", "th", "x"]
+    s1 = ["", "", "", "", "", "b", "c", "d", "g", "gn", "h", "j", "k", "m", "n", "r", "s", "sh", "t", "th", "v", "w",
+          "z"]
+    s2 = ["a", "e", "i", "o", "u"]
+    s3 = ["b", "br", "d", "dr", "dk", "g", "gr", "gh", "gl", "k", "kr", "l", "lk", "lgr", "ln", "lr", "lr", "m", "mk",
+          "n", "nr", "nk", "nd", "ndr", "ng", "rg", "rv", "rk", "r", "rr", "rsh", "shk", "st", "sk", "sr", "sv", "svr",
+          "tsk", "tk", "tr", "v", "xl", "xn", "z", "zr", "zk"]
+    s4 = ["", "", "", "", "", "ch", "d", "k", "ld", "lm", "m", "n", "r", "shky", "tsky", "v", "x", "z"]
+
+
+class Ifrit:
+    m1 = ["", "", "", "", "b", "d", "g", "j", "k", "m", "n", "r", "t", "v", "z"]
+    m2 = ["a", "e", "i", "u"]
+    m3 = ["c", "f", "g", "j", "k", "l", "m", "n", "q", "r", "v"]
+    m4 = ["", "", "", "d", "g", "h", "j", "l", "m", "n", "q", "t"]
+    f1 = ["", "", "", "c", "f", "g", "h", "l", "m", "n", "q", "s", "w", "z"]
+    f2 = ["a", "e", "i"]
+    f3 = ["d", "dw", "dr", "h", "l", "lr", "ly", "m", "ml", "mr", "n", "nr", "nl", "q", "qh", "qr", "r", "rh", "ry",
+          "rl", "t", "ty", "th", "tw", "tr", "w", "y"]
+    f4 = ["", "", "", "", "", "", "", "", "h", "n", "s"]
+
+
+class Kitsune:
+    f1 = ['', '', '', 'a', 'j', 'k', 'm', 'a', 'sh', 's', ]
+    f2 = ['y', 'i', 'u', 'a', ]
+    f3 = ['k', 'j', 'm', 'n', 'l', 'll', ]
+    f4 = ['', '', '', 'ki', 'li', 'ro', 'ra', 'ry', 'i', 'mi', 'mo', ]
+    m1 = ['', '', '', 'ch', 'im', 'k', 'n', 'm', 'ya', 'j', ]
+    m2 = ['y', 'i', 'u', 'a', 'o', 'oo', 'e', 'ee']
+    m3 = ['nk', 'n', 'k', 'rs', 's', 'r', 'm', 'mm', ]
+    m4 = ['', '', '', 'tu', 'ru', 'ku', 'su', 'ty', 'ky', 'sy', 'ry', ]
+
+
+class Kobold:
+    f1 = ["", "", "", "", "", "br", "cr", "dr", "d", "dh", "g", "gh", "gr", "j", "k", "m", "n", "q", "qr", "r", "rh",
+          "v", "vr", "vh", "z"]
+    f2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "i", "o", "a", "i", "o", "aa", "ea", "oo", "ee"]
+    f3 = ["d", "dd", "dr", "dz", "dh", "gn", "gm", "gr", "gz", "gh", "k", "kk", "kn", "kz", "km", "kr", "l", "lz", "ll",
+          "lr", "ld", "ln", "m", "mk", "mz", "n", "nz", "nr", "pm", "pz", "pr", "r", "rl", "rn", "rm", "rg", "rk", "rd",
+          "rz", "rr", "t", "tr", "tz", "x", "zh", "z", "zz", "zr", "zk"]
+    f4 = ["", "", "", "", "", "b", "d", "g", "k", "l", "ld", "lk", "lp", "n", "nk", "p", "rk", "s", "sk", "x"]
+    m1 = ["", "", "", "", "d", "f", "g", "h", "l", "m", "n", "p", "r", "s", "t", "v", "z"]
+    m2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "o", "a", "o", "a", "o", "aa", "ia", "ai", "ee"]
+    m3 = ["d", "dk", "dr", "gr", "gl", "g", "h", "hr", "k", "kr", "kkr", "ks", "l", "lr", "lk", "ls", "r", "rk", "rs",
+          "rg", "rl", "s", "ss", "sr", "sk", "sg", "sgr", "skr", "ssr", "tr", "th", "thr", "z", "zr", "zk", "zn", "zl"]
+    m4 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "h", "k", "l", "n", "m", "r", "s"]
+
+
+class Lizardfolk:
+    f1 = ["", "", "", "", "", "br", "cr", "dr", "d", "dh", "g", "gh", "gr", "j", "k", "m", "n", "q", "qr", "r", "rh",
+          "v", "vr", "vh", "z"]
+    f2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "i", "o", "a", "i", "o", "aa", "ea", "oo", "ee"]
+    f3 = ["d", "dd", "dr", "dz", "dh", "gn", "gm", "gr", "gz", "gh", "k", "kk", "kn", "kz", "km", "kr", "l", "lz", "ll",
+          "lr", "ld", "ln", "m", "mk", "mz", "n", "nz", "nr", "pm", "pz", "pr", "r", "rl", "rn", "rm", "rg", "rk", "rd",
+          "rz", "rr", "t", "tr", "tz", "x", "zh", "z", "zz", "zr", "zk"]
+    f4 = ["", "", "", "", "", "b", "d", "g", "k", "l", "ld", "lk", "lp", "n", "nk", "p", "rk", "s", "sk", "x"]
+    m1 = ["", "", "", "", "d", "f", "g", "h", "l", "m", "n", "p", "r", "s", "t", "v", "z"]
+    m2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "o", "a", "o", "a", "o", "aa", "ia", "ai", "ee"]
+    m3 = ["d", "dk", "dr", "gr", "gl", "g", "h", "hr", "k", "kr", "kkr", "ks", "l", "lr", "lk", "ls", "r", "rk", "rs",
+          "rg", "rl", "s", "ss", "sr", "sk", "sg", "sgr", "skr", "ssr", "tr", "th", "thr", "z", "zr", "zk", "zn", "zl"]
+    m4 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "h", "k", "l", "n", "m", "r", "s"]
+
+
+class Merfolk:
+    f1 = ["d", "g", "j", "n", "s", "t", "v", "z"]
+    f2 = ["a", "e", "i", "o", "a", "e", "i", "o", "u"]
+    f3 = ["d", "dd", "dr", "fr", "fl", "l", "ll", "lr", "ln", "n", "nn", "nd", "r", "rd", "rz", "rs", "rv", "t", "tt",
+          "tr", "y", "z", "zz"]
+    f4 = ["d", "g", "gg", "l", "n", "nd", "ng", "t"]
+    m1 = ["", "", "", "c", "g", "h", "j", "k", "l", "m", "n", "t", "th"]
+    m2 = ["a", "a", "i", "o", "o", "u"]
+    m3 = ["d", "l", "m", "n", "r", "s", "t", "z"]
+    m4 = ["d", "h", "l", "m", "n", "r", "y"]
+    s1 = ["Adept", "Ambassador", "Angler", "Apothecary", "Assassin", "Bouncer", "Commander", "Disciple", "Diver",
+          "Douser", "Drowner", "Elite", "Entangler", "Explorer", "Fighter", "Fluxmage", "Guard", "Guardian", "Guide",
+          "Harbinger", "Hero", "Hunter", "Hypnotist", "Illusionist", "Infiltrator", "Knight", "Legate", "Mage",
+          "Mentor", "Merchant", "Merfolk", "Mesmerist", "Mystic", "Patrol", "Pilferer", "Priest", "Prophet", "Raider",
+          "Rider", "Sage", "Scout", "Scryer", "Seer", "Selkie", "Sentinel", "Shaman", "Spy", "Stalker", "Summoner",
+          "Thief", "Tracker", "Trader", "Trapper", "Trasher", "Triton", "Visionary", "Warrior", "Watch", "Weaver",
+          "bar", "bend", "bender", "bind", "binder", "bough", "bow", "brand", "breath", "breeze", "brine", "brook",
+          "brooke", "brow", "caller", "channel", "crag", "crash", "creek", "crest", "dancer", "dew", "dream", "dreamer",
+          "fallow", "fathom", "fin", "flow", "front", "gabber", "gill", "glade", "glide", "helm", "line", "might",
+          "more", "rider", "ridge", "river", "sage", "scape", "seeker", "shaper", "shard", "shine", "sigh", "singer",
+          "soar", "spanner", "spout", "stand", "stream", "surge", "sworn", "tail", "tide", "trapper", "tread", "vigor",
+          "wake", "ward", "water", "weaver", "wine", "Abyss", "Abyssal", "Agile", "Arctic", "Atoll", "Azure", "Barrier",
+          "Basin", "Bay", "Brave", "Buoyant", "Cape", "Careful", "Careless", "Coral", "Coven", "Darting", "Defiant",
+          "Depth", "Diligent", "Diving", "Enclave", "Energetic", "Esteemed", "Exalted", "Expanse", "Experienced",
+          "Fearless", "Gifted", "Glorious", "Grand", "Gulf", "Harbor", "Hasty", "Intrepid", "Jolting", "Juvenile",
+          "Keen", "Lagoon", "Marine", "Maritime", "Nautical", "Nimble", "Oceanic", "Prime", "Prism", "Radiant",
+          "Reckless", "Reef", "Salty", "Shore", "Slippery", "Stark", "Storm", "Surf", "Surfing", "Surge", "Swift",
+          "Tidal", "Tide", "Turbulent", "Vicious", "Vigilant", "Void", "Wake", "Wave", "Webbed", "Wharf", "Whirlpool",
+          "Wild", "Zealous", "azure", "blue", "bright", "clear", "cloud", "coral", "coven", "crystal", "deep", "depth",
+          "down", "dream", "fallow", "fore", "grand", "gravel", "haze", "ink", "keen", "light", "low", "mellow", "mer",
+          "mild", "moon", "night", "ocean", "orb", "pale", "prism", "pure", "razor", "rip ", "root", "rough", "sand",
+          "sea", "shadow", "shore", "silver", "soft", "star", "storm", "strong", "surge", "swift", "tidal", "tide",
+          "void", "wake", "wander", "water", "wave", "well", "whit", "wild", "wind"]
+    s2 = ['']
+    s3 = ['']
+    s4 = ['']
+
+
+class Nagaji:
+    f1 = ["", "", "", "", "", "", "ch", "d", "dh", "dhr", "h", "hr", "j", "jy", "k", "kh", "kr", "ksh", "l", "m", "n",
+          "p", "pr", "s", "sr", "t", "v", "vr"]
+    f2 = ["a", "e", "i", "o", "u", "a", "a", "a", "a", "a", "a", "i", "i"]
+    f3 = ["bh", "d", "g", "h", "j", "k", "l", "m", "n", "p", "r", "s", "t", "v", "y", "bh", "d", "dg", "dh", "dhy",
+          "dm", "dr", "g", "h", "hl", "hy", "j", "k", "kh", "ksh", "ky", "l", "lm", "lw", "m", "mkh", "mv", "mvr", "n",
+          "nd", "ndh", "ng", "nj", "nkh", "nm", "nshtr", "nt", "nth", "p", "pt", "r", "rd", "rk", "rm", "rn", "rt",
+          "ry", "s", "sh", "shk", "shm", "shn", "shp", "shth", "shtr", "sr", "st", "sth", "sw", "t", "th", "tr", "tt",
+          "ttr", "ty", "v", "vy", "y", "yl"]
+    f4 = ["a", "a", "a", "a", "a", "a", "a", "a", "a", "i", "u", "as", "at"]
+    m1 = ["", "", "", "", "", "", "", "", "", "", "c", "cr", "ch", "d", "h", "k", "kr", "kh", "l", "r", "s", "s", "s",
+          "sh", "sz", "sc", "sy", "sz", "sh", "t", "th", "x", "y", "z", "zs", "zh"]
+    m2 = ["a", "e", "i", "o", "u", "a", "e", "i", "a", "e", "i", "o", "u", "a", "e", "i", "a", "e", "i", "o", "u", "a",
+          "e", "i", "a", "e", "i", "o", "u", "a", "e", "i", "aa", "ai", "ee", "ei", "ie"]
+    m3 = ["c", "d", "dh", "k", "kh", "l", "r", "s", "sh", "t", "th", "x", "xh", "z", "zh", "c", "d", "k", "l", "r", "s",
+          "t", "x", "z", "c", "d", "k", "l", "r", "s", "t", "x", "z", "s", "s", "sh", "sh", "cc", "ch", "ck", "cs",
+          "csh", "cz", "dh", "dj", "kk", "kh", "ks", "ksh", "kz", "ll", "lh", "lz", "ls", "rr", "rc", "rg", "rh", "rj",
+          "rs", "rsh", "rz", "rsz", "rt", "rth", "rc", "rk", "ss", "sc", "sh", "sk", "sz", "sy", "th", "tr", "ts", "tz",
+          "tsh", "xh", "xs", "xz", "zh", "zs", "zz", "zs"]
+    m4 = ["", "", "", "", "", "", "", "", "", "", "", "kh", "l", "r", "s", "sj", "ss", "sh", "sz", "t", "th", "x", "z",
+          "zs"]
+
+
+class Orc:
+    f1 = ["", "", "", "", "", "b", "br", "c", "cr", "dr", "f", "gr", "h", "kr", "kz", "m", "n", "pr", "r", "t", "tr",
+          "v", "vr"]
+    f2 = ["a", "e", "i", "o", "u"]
+    f3 = ["b", "br", "bd", "bz", "d", "dd", "dr", "dz", "g", "gh", "gr", "gn", "gz", "k", "kk", "kd", "kz", "kn", "l",
+          "ld", "lkz", "ll", "lz", "lr", "lg", "lk", "m", "mg", "mz", "mr", "n", "ng", "nr", "nk", "r", "rd", "rk",
+          "rn", "rr", "rg", "rz", "rv", "s", "sr", "sk", "sg", "sc", "v", "vr", "vk", "vz", "z", "zr", "zk", "zn", "zm",
+          "zc"]
+    f4 = ["", "", "", "ch", "g", "hn", "hk", "hm", "hd", "k", "kk", "lk", "lkk", "lt", "ld", "m", "n", "r", "rd", "rk",
+          "rg", "rn", "sh", "sk", "t"]
+    m1 = ["", "", "", "", "", "b", "c", "ch", "d", "g", "gr", "f", "g", "gr", "k", "kr", "l", "m", "n", "r", "t", "tr",
+          "v", "vr"]
+    m2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "y", "ya", "oa", "ia", "ua"]
+    m3 = ["b", "bb", "bg", "d", "dd", "dg", "dj", "dr", "ff", "gg", "gj", "gd", "gr", "gn", "gm", "hj", "hm", "hn",
+          "hr", "k", "kd", "kb", "kr", "kk", "l", "lb", "lg", "llg", "ld", "lld", "lk", "lr", "llr", "m", "mr", "mj",
+          "mg", "mk", "ng", "nj", "n", "nn", "nr", "r", "rg", "rj", "rr", "rv", "sgr", "sg", "sh", "sk", "z", "zn"]
+    m4 = ["", "", "", "", "", "", "", "", "", "", "c", "d", "g", "k", "m", "n", "ng", "s", "ss", "t"]
+    s1 = ["", "", "", "", "", "b", "br", "ch", "cr", "d", "dh", "f", "g", "gh", "gr", "k", "kr", "kh", "m", "n", "r",
+          "t", "th", "v", "vh", "z"]
+    s2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "uu", "aa", "ua"]
+    s3 = ["d", "dd", "dr", "fr", "fn", "g", "gg", "gd", "gn", "gm", "gz", "hm", "hj", "hm", "k", "kk", "kd", "kn", "ld",
+          "lb", "lk", "lz", "lg", "lk", "ll", "lr", "m", "mg", "mk", "n", "nn", "ng", "nr", "nk", "r", "rr", "rg", "rk",
+          "rn", "rm", "rv", "sg", "ss", "s", "sr", "sk", "sn", "v", "vr", "vn", "vk", "z", "zk", "zn", "zm"]
+    s4 = ["d", "hn", "hd", "k", "l", "m", "n", "r", "s", "sh", "t", "th"]
+
+
+class Oread:
+    f1 = ["", "", "", "b", "d", "g", "j", "l", "m", "n", "p", "r", "s", "t", "v"]
+    f2 = ["a", "e", "i", "o", "u", "a", "o", "u", "y"]
+    f3 = ["d", "dd", "f", "fd", "ft", "hd", "hn", "hv", "l", "ll", "ln", "lm", "ld", "lv", "lt", "lth", "lm", "m", "md",
+          "mt", "mh", "mv", "n", "nd", "nt", "nv", "nh", "nn", "nm", "nh", "nr", "r", "rt", "rh", "rn", "rm", "rl",
+          "rv", "rr", "rd", "th", "tr", "thr", "v", "vh", "vr"]
+    f4 = ["", "m", "n", "r", "s", "t"]
+    m1 = ["", "", "", "b", "bh", "d", "dh", "gh", "h", "l", "m", "n", "p", "r", "rh", "s", "sh", "t", "th", "v", "w"]
+    m2 = ["a", "e", "i", "o", "u", "a", "i", "e"]
+    m3 = ["c", "ch", "d", "dh", "f", "ff", "fh", "fth", "h", "hn", "hv", "hl", "hs", "l", "lh", "ln", "lm", "ls", "lsh",
+          "m", "mn", "mm", "mh", "my", "n", "nn", "nh", "ny", "ns", "nth", "nf", "r", "ry", "rh", "rs", "rsh", "rth",
+          "s", "sh", "sth", "sht", "sn", "sm", "sy", "sl", "t", "th", "ty", "thy", "y"]
+    m4 = ["d", "dd", "f", "fd", "ft", "hd", "hn", "hv", "l", "ll", "ln", "lm", "ld", "lv", "lt", "lth", "lm", "m", "md",
+          "mt", "mh", "mv", "n", "nd", "nt", "nv", "nh", "nn", "nm", "nh", "nr", "r", "rt", "rh", "rn", "rm", "rl",
+          "rv", "rr", "rd", "th", "tr", "thr", "v", "vh", "vr"]
+
+
+class Ratfolk:
+    f1 = ["", "", "", "", "", "", "", "b", "br", "c", "cr", "ch", "d", "dr", "dj", "g", "gr", "gn", "gl", "j", "k",
+          "kr", "kv", "kn", "m", "n", "p", "pr", "r", "s", "st", "sr", "skr", "sc", "scr", "sk", "t", "tr", "v", "vr",
+          "z", "zr"]
+    f2 = ["a", "e", "i", "o", "a", "e", "i"]
+    f3 = ["cc", "cd", "cr", "gg", "gr", "gk", "gv", "gd", "kk", "kr", "kv", "kz", "m", "mm", "md", "mk", "mv", "mz",
+          "n", "nn", "nd", "nv", "nk", "ng", "nz", "rr", "r", "rk", "rv", "rz", "rc", "rg", "rd", "vv", "v", "vd", "vk",
+          "vz"]
+    f4 = ["c", "g", "c", "g", "hl", "hz", "hk", "hn", "hc", "k", "m", "n", "q", "r", "s", "t", "z", "k", "m", "n", "q",
+          "r", "s", "t", "z"]
+    m1 = ["b", "bh", "c", "ch", "dh", "f", "fr", "fh", "gh", "j", "k", "m", "n", "nh", "p", "r", "s", "sh", "t", "th",
+          "v", "vh", "z", "zh"]
+    m2 = ["a", "e", "i", "o", "u", "e", "e", "e", "i", "i", "i"]
+    m3 = ["b", "bb", "c", "cc", "f", "ff", "g", "gg", "j", "k", "kk", "l", "ll", "m", "mm", "n", "nn", "p", "pp", "r",
+          "rr", "s", "ss", "t", "tt", "z", "zz"]
+    m4 = ["", "", "", "", "", "", "", "", "ch", "f", "hm", "hl", "ks", "l", "m", "n", "r", "s", "sh", "t", "th", "tch",
+          "x"]
+
+
+class Samsarans:
+    m1 = ["B", "Bl", "Cr", "Ch", "G", "Gl", "Gr", "H", "J", "K", "Kr", "L", "M", "S", "Sc", "Tr", "Z"]
+    m2 = ["o", "a", "a", "o", "e", "i", "u", "y"]
+    m3 = ["bd", "bs", "dr", "gl", "gn", "gm", "gr", "k", "kr", "kl", "ll", "nd", "nr", "ng", "r", "rg", "rk", "rc",
+          "sc", "st", "sk", "sh", "tr", "th", "q", "z"]
+    m4 = ["", "", "d", "g", "k", "l", "m", "n", "r", "s", "sh", "wr", "x"]
+
+
+class Strix:
+    m1 = ["Angler", "Baker", "Barker", "Basher", "Bather", "Beggar", "Biter", "Boiler", "Bomber", "Bonker", "Bouncer",
+          "Braker", "Brander", "Breaker", "Broiler", "Bruiser", "Bubbler", "Burner", "Butcher", "Buzzer", "Cackler",
+          "Carver", "Caster", "Chimer", "Chitter", "Chomper", "Chopper", "Clamor", "Clamper", "Clanger", "Clapper",
+          "Clawer", "Cleaver", "Clicker", "Clinger", "Clinker", "Clipper", "Clubber", "Clucker", "Cobbler", "Cooker",
+          "Cougher", "Crackler", "Crinkler", "Croaker", "Cruncher", "Crusher", "Cutter", "Dangler", "Deflater",
+          "Digger", "Dipper", "Doodler", "Dragger", "Drawer", "Dribbler", "Driller", "Dripper", "Drummer", "Duster",
+          "Enchanter", "Engraver", "Etcher", "Exploder", "Flapper", "Flipper", "Flopper", "Flusher", "Forger", "Fryer",
+          "Giggler", "Gnasher", "Gnawer", "Gouger", "Greaser", "Griller", "Grinder", "Growler", "Gusher", "Hammer",
+          "Hammerer", "Hiccup", "Hummer", "Impaler", "Inscriber", "Itcher", "Jangler", "Jingler", "Knocker", "Lasher",
+          "Locker", "Lugger", "Mangler", "Masher", "Mauler", "Mewer", "Mimer", "Molder", "Nailer", "Neigher", "Nestler",
+          "Nibbler", "Paddler", "Piercer", "Piper", "Plunger", "Presser", "Prodder", "Puffer", "Raker", "Rasper",
+          "Rattler", "Ripper", "Roarer", "Roaster", "Ruffler", "Rustler", "Scooper", "Scorcher", "Scratcher",
+          "Scribbler", "Scrubber", "Shaker", "Shaver", "Shearer", "Shoveler", "Shrieker", "Sifter", "Singer",
+          "Sketcher", "Slammer", "Slicer", "Smasher", "Snapper", "Sneezer", "Snorer", "Spitter", "Splasher", "Splitter",
+          "Squeaker", "Squealer", "Squisher", "Stamper", "Stomper", "Strangler", "Striker", "Strummer", "Swatter",
+          "Sweeper", "Swiper", "Tinkerer", "Trampler", "Walloper", "Whacker", "Whipper", "Whistler"]
+    f1 = ["Albatross Call", "Albatross Flap", "Alligator Hiss", "Alligator Roar", "Ape Call", "Ape Hoot", "Ape Scratch",
+          "Aper", "Badger Growl", "Badger Run", "Badger Scratch", "Barker", "Bat Flap", "Bat Screech", "Bat Swoop",
+          "Bear Growl", "Bear Roar", "Bear Rustle", "Bear Step", "Bear Stomp", "Beaver Call", "Beaver Chew",
+          "Beaver Nibble", "Beaver Rustle", "Bee Buzzer", "Bison Breath", "Bison Call", "Bison Stomp", "Bleater",
+          "Boar Charge", "Boar Grunt", "Boar Rustle", "Boar Squeal", "Boar Stamp", "Boarer", "Cackler", "Cat Call",
+          "Cat Hiss", "Cat Purr", "Cat Rustle", "Cat Scratch", "Catter", "Chirper", "Cow Moo", "Cow Step", "Cow Stomp",
+          "Cower", "Coyote Cackle", "Coyote Howl", "Coyote Yelp", "Coyote Yowl", "Cricket Chirp", "Cricketer",
+          "Croaker", "Crocodile Hiss", "Crocodile Roar", "Crocodiler", "Crow Call", "Crow Rustle", "Crower",
+          "Deer Clash", "Deer Rustle", "Deer Scratch", "Deer Stomp", "Dino Chew", "Dino Growl", "Dino Roar",
+          "Dino Snort", "Dino Stomp", "Dog Bark", "Dog Growl", "Dog Howl", "Dog Run", "Dog Sneeze", "Dog Step",
+          "Dog Wiggle", "Dog Yelp", "Dog Yip", "Dog Yowl", "Dogger", "Donkey Call", "Donkey Stomp", "Dove Rustle",
+          "Dove Swoop", "Dover", "Dragon Bite", "Dragon Breath", "Dragon Chew", "Dragon Roar", "Dragon Swoop",
+          "Duck Quacker", "Duck Rustle", "Ducker", "Eagle Screech", "Elephant Roar", "Elephant Stampede",
+          "Elephant Stomp", "Falcon Rustle", "Falcon Swoop", "Fox Rustle", "Fox Yelp", "Fox Yowl", "Foxer",
+          "Frog Croak", "Frog Splash", "Frogger", "Gecko Croak", "Giraffe Smash", "Giraffe Snort", "Giraffe Stomp",
+          "Goat Baa", "Goat Bleat", "Goat Chew", "Goater", "Goose Hiss", "Goose Honk", "Growler", "Hamster Squeak",
+          "Hee-Haw", "Hisser", "Hog Oink", "Hog Snort", "Honker", "Hooter", "Horse Blow", "Horse Neigh", "Horse Sneeze",
+          "Horse Snort", "Horse Stamp", "Horse Whinny", "Horser", "Howler", "Hyena Cackle", "Hyena Laugh",
+          "Jackal Call", "Jackal Laugh", "Jackal Rustle", "Lion Growl", "Lion Roar", "Monker", "Monkey Howl",
+          "Monkey Rustle", "Monkey Scream", "Mouse Peep", "Mouse Rustle", "Mouse Squeak", "Mouser", "Nightingale Song",
+          "Nightingaler", "Oinker", "Owl Call", "Owl Hoot", "Owl Rustle", "Owl Swoop", "Owler", "Panda Sneeze",
+          "Panther Growl", "Panther Roar", "Parrot", "Parrot Bite", "Parrot Call", "Parrot Nibble", "Parrot Rustle",
+          "Parrot Squawk", "Parroter", "Pheasant Call", "Pheasant Rustle", "Pig Snort", "Pigeon Coo", "Pigeon Rustle",
+          "Pigeoner", "Quacker", "Quail Call", "Quail Rustle", "Quailer", "Rabbit Scream", "Rabbit Yelp", "Ram Ram",
+          "Ram Stamp", "Rammer", "Rat", "Rat Rustle", "Rat Squeak", "Rat Yelp", "Ratter", "Raven Rustle", "Rhino Snort",
+          "Rhino Stamp", "Rook Rustle", "Rooker", "Screamer", "Screecher", "Seal Bark", "Seal Flop", "Sealer",
+          "Sheep Baa", "Sheep Bleat", "Singer", "Snake Hiss", "Snake Rattle", "Snake Slither", "Snaker", "Snorter",
+          "Squawker", "Squeaker", "Squirrel Chatter", "Squirrel Chitter", "Squirrel Nibble", "Squirrel Rustle",
+          "Squirreler", "Stampede", "Swan Cry", "Swan Flap", "Swan Hiss", "Swan Honk", "Swanner", "Toad Croak",
+          "Trumpet", "Trumpeter", "Turkey Call", "Turkey Gobble", "Tweeter", "Vulture Scream", "Warbler", "Whale Song",
+          "Wolf Growl", "Wolf Howl", "Wolf Yelp", "Wolfer", "Wolverine Growl", "Wolverine Yelp"]
+    s1 = ["Net Cast", "Net Splash", "Anchor Splash", "Anchor Chain", "Anchor Drop", "Leather Smack", "Leather Flick",
+          "Leather Drop", "Hide Smack", "Hide Flick", "Hide Drop", "Paint Drop", "Paint Stroke", "Paint Squeeze",
+          "Brush Stroke", "Brush Flick", "Hammer Crash", "Hammer Drop", "Hammer Clank", "Nail Drop", "Nail Tingle",
+          "Saw Drop", "Saw Wobble", "Saw Pull", "Spade Dig", "Spade Drop", "Hoe Dig", "Hoe Scrape", "Hoe Scratch",
+          "Mallet Crash", "Mallet Smash", "Mallet Drop", "Chisel Tick", "Chisel Cut", "Chisel Carve", "Armor Clank",
+          "Armor Crash", "Steel Clank", "Steel Crash", "Steel Drop", "Furnace Roar", "Furnace Door", "Hatchet Cut",
+          "Hatchet Drop", "Hatchet Split", "Hatchet Chop", "Wood Chop", "Wood Crack", "Wood Creak", "Wood Drop",
+          "Tree Fall", "Tree Creak", "Fire Crackle", "Fire Roar", "Potion Bubble", "Potion Crash", "Potion Gush",
+          "Potion Swirl", "Potion Splash", "Kettle Bubble", "Kettle Splash", "Kettle Bubble", "Cauldron Swirl",
+          "Cauldron Stir", "Cauldron Bubble", "Cauldron Splash", "Bell Ring", "Bell Drop", "Crier Bell",
+          "Bowstring Flick", "Bowstring Stretch", "Blacksmith Clank", "Lute Pluck", "Lute String", "Glass Shatter",
+          "Fruit Squish", "Crate Smash", "Crate Crack", "Crate Creak", "Ship Creak", "Sail Slap", "Rope Slap",
+          "Rope Whip", "Book Drop", "Book Slam", "Page Turn", "Grain Trash", "Grain Mill", "Cork Pop", "Wood Scrape",
+          "Sail Flick"]
+
+
+class Suli:
+    f1 = ["", "", "", "", "", "b", "bh", "d", "dh", "g", "gh", "h", "j", "k", "m", "n", "r", "s", "sh", "y", "z"]
+    f2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "aa",
+          "ee", "ua", "ai", "oo"]
+    f3 = ["b", "bb", "br", "d", "h", "k", "kh", "m", "n", "nq", "q", "s", "sh", "sm", "ss", "sf", "st", "t", "z", "zz"]
+    f4 = ["", "", "", "", "d", "f", "l", "m", "n", "sh", "z"]
+    m1 = ["", "", "", "", "", "", "", "", "f", "g", "gh", "h", "j", "k", "kh", "l", "m", "n", "ph", "r", "s", "sh", "t",
+          "th", "w", "y", "z"]
+    m2 = ["a", "e", "i", "o", "u", "a", "a", "i", "a", "e", "i", "o", "u", "a", "a", "i", "a", "e", "i", "o", "u", "a",
+          "a", "i", "aa", "ee", "ai", "ia"]
+    m3 = ["b", "d", "dh", "dr", "f", "ff", "l", "ll", "m", "mn", "r", "s", "sh", "ss", "t", "th", "w", "y", "z"]
+    m4 = ["", "", "", "", "", "", "", "", "h", "l", "n"]
+    s1 = ["", "", "", "", "", "bh", "d", "dh", "g", "gh", "h", "j", "k", "kh", "m", "n", "r", "s", "sh", "y", "z"]
+    s2 = ["a", "e", "i", "o", "u", "a", "a", "i", "a", "e", "i", "o", "u", "a", "a", "i", "a", "e", "i", "o", "u", "a",
+          "a", "i", "aa", "ee", "ai"]
+    s3 = ["b", "bb", "d", "h", "kh", "l", "ll", "m", "n", "r", "rr", "s", "sh", "ss", "t", "th", "z", "zz"]
+    s4 = ["", "", "", "h", "l", "m", "n", "s", "z"]
+    t1 = ["Accomplished", "Adored", "Adventurous", "Amazing", "Ancient", "Austere", "Beloved", "Better", "Bold",
+          "Bountiful", "Brilliant", "Carefree", "Courageous", "Creative", "Cruel", "Daring", "Devoted", "Dreamy",
+          "Elegant", "Enchanted", "Enlightened", "Exalted", "Extravagant", "Fair", "Fantastic", "Fearless", "Fesity",
+          "First", "Flawless", "Fortunate", "Friendly", "Generous", "Gentle", "Gifted", "Giving", "Glamorous",
+          "Glorious", "Gorgeous", "Graceful", "Gracious", "Grand", "Grandiose", "Great", "Handsome", "Happy",
+          "Harmonious", "Heavenly", "Honest", "Honored", "Humble", "Idolized", "Illustrious", "Impeccable",
+          "Incredible", "Intrepid", "Jolly", "Joyful", "Joyous", "Kind", "Kindhearted", "Light", "Lovable", "Loyal",
+          "Lucky", "Luminous", "Lustrous", "Luxurious", "Magnificent", "Majestic", "Marvelous", "Mighty", "Mysterious",
+          "Original", "Pleasant", "Pleasing", "Powerful", "Precious", "Proud", "Pure", "Radiant", "Rewarding", "Rich",
+          "Royal", "Sane", "Scented", "Serene", "Silent", "Simple", "Spectacular", "Stunning", "Superior", "Swift",
+          "Tender", "Terrific", "Treasured", "Tremendous", "Trustworthy", "Truthful", "Unequaled", "Venerated",
+          "Vibrant", "Victorious", "Virtuous", "Wealthy", "Wise", "Wonderful"]
+
+
+class Svirfneblin:
+    f1 = ["b", "br", "d", "dr", "fr", "g", "gh", "gr", "k", "kh", "kr", "sch", "schn", "sn", "sh", "t", "th", "w", "z",
+          "zh"]
+    f2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "ie", "ee", "ai", "aa", "ei"]
+    f3 = ["ck", "ckt", "ckh", "cn", "dg", "dl", "ddl", "dm", "g", "gg", "gn", "gl", "ggl", "kt", "kth", "kl", "kn",
+          "lsch", "lw", "lth", "lk", "lkr", "ltr", "ll", "ld", "ldr", "nth", "nt", "nd", "ndr", "ntr", "rbl", "rthm",
+          "rt", "rdr", "t", "tt", "tl", "ttl", "tr", "thr", "th"]
+    f4 = ["a", "e", "i", "u"]
+    m1 = ["", "", "", "c", "ck", "d", "g", "l", "ll", "ld", "n", "nd", "nk", "r", "rs", "t", "b", "d", "fr", "gh", "gr",
+          "h", "k", "kh", "kr", "l", "m", "n", "s", "sh", "sn", "sch", "schn", "t", "th", "y", "w", "z"]
+    m2 = ["a", "e", "i", "u"]
+    m3 = ["ckn", "d", "dl", "dd", "g", "gg", "gd", "gn", "gh", "l", "ll", "lg", "lm", "lv", "ls", "lsch", "lsh", "m",
+          "mk", "mg", "n", "nn", "nt", "ny", "ng", "nk", "rb", "rg", "rl", "rsh", "rv", "rt", "rth", "rs", "s", "ss",
+          "sh", "sn", "sk", "sg", "sl", "th", "t", "tr", "thr", "v", "vr", "vy", "z"]
+    m4 = ["a", "e", "i", "a", "e", "i", "a", "e", "i", "a", "e", "i", "ee", "ie", "ei", "ai", "ia"]
+    s1 = ["adamant", "agate", "alabaster", "alloy", "amethyst", "basalt", "bedrock", "block", "boulder", "brass",
+          "brick", "bronze", "clay", "cobalt", "cobble", "copper", "crag", "crystal", "deposit", "diamond", "dirt",
+          "dust", "emerald", "flint", "fossil", "garnet", "gem", "geo", "geode", "gold", "granite", "gravel", "grime",
+          "ground", "ingot", "iron", "jade", "jewel", "joint", "lapis", "lazuli", "lead", "lime", "lodge", "lump",
+          "marble", "mason", "metal", "mill", "mineral", "mold", "nickel", "nugget", "obsidian", "onyx", "opal", "ore",
+          "pebble", "pellet", "peridot", "pit", "quartz", "rock", "rough", "rubble", "ruby", "sand", "sapphire",
+          "scrap", "seam", "shelf", "silver", "slab", "slate", "smelt", "soil", "spinel", "steel", "stone", "stony",
+          "sturdy", "terra", "tile", "tin", "topaz", "turf", "wedge", "wire", "zinc", "zircon", "back", "basher",
+          "bender", "biter", "bleacher", "bone", "bones", "brander", "breaker", "bringer", "browser", "brusher",
+          "carrier", "carver", "catcher", "checker", "cheek", "chest", "chewer", "chin", "chiseler", "cleaner",
+          "cleanser", "collector", "counter", "crusher", "cutter", "designer", "digger", "duster", "ear", "eye", "eyes",
+          "face", "feet", "finder", "finger", "fingers", "fist", "foot", "forger", "gatherer", "gazer", "getter",
+          "grasper", "grinder", "hand", "head", "heart", "hewer", "holder", "knuckle", "leg", "legs", "lifter",
+          "loader", "maker", "marker", "mask", "melter", "mender", "merger", "molder", "moulder", "mug", "neck", "nose",
+          "packer", "presser", "pusher", "rater", "recorder", "rinser", "saver", "scanner", "scratcher", "sealer",
+          "searcher", "seeker", "seizer", "senser", "shaper", "shoveler", "skin", "smasher", "smelter", "snatcher",
+          "sniffer", "sorter", "splitter", "stamper", "stasher", "stocker", "surveyor", "sweeper", "switcher", "teeth",
+          "temperer", "tooth", "trader", "twirler", "twister", "vein", "viewer", "warper", "watcher"]
+    s2 = ['']
+    s3 = ['']
+    s4 = ['']
+
+
+class Sylph:
+    f1 = ["", "", "", "", "", "c", "d", "f", "g", "h", "j", "l", "m", "n", "s", "v", "w", "z"]
+    f2 = ["a", "e", "i", "u", "a", "e", "i", "u", "a", "e", "i", "u", "a", "e", "i", "u", "a", "e", "i", "u", "aa",
+          "uu", "ii"]
+    f3 = ["d", "f", "g", "j", "k", "l", "m", "n", "s", "v", "w", "z"]
+    f4 = ["d", "l", "m", "n", "sh"]
+    m1 = ["", "", "", "", "", "d", "f", "h", "k", "l", "m", "n", "r", "s", "t", "v", "w", "z"]
+    m2 = ["a", "e", "i", "a", "e", "i", "a", "e", "i", "a", "e", "i", "a", "e", "i", "a", "a", "a", "ee", "aa"]
+    m3 = ["d", "f", "ff", "h", "l", "ll", "m", "mm", "n", "nn", "s", "ss", "v", "y", "w"]
+    m4 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "h", "m", "n", "sh"]
+
+
+class Tian:
+    f1 = ["", "", "", "b", "c", "ch", "d", "dh", "g", "gh", "h", "j", "k", "kh", "l", "m", "n", "q", "s", "sh", "t",
+          "th", "ts", "x", "y", "z", "zh"]
+    f2 = ["aie", "aa", "ei", "aiu", "ua", "uu", "eio", "oi", "ai", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u",
+          "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u"]
+    f3 = ["b", "cch", "ch", "d", "dk", "dy", "g", "gh", "ght", "gm", "gs", "j", "k", "kh", "khg", "khj", "kt", "l",
+          "lb", "lch", "ld", "lg", "lgh", "lj", "lt", "lz", "m", "mb", "ml", "n", "nb", "ndj", "ng", "ngg", "ngs",
+          "nksh", "nt", "nz", "q", "r", "rch", "rd", "rg", "rgh", "rk", "rkh", "rt", "s", "sg", "sh", "sl", "t", "tb",
+          "tg", "tl", "ts", "y", "z", "zb", "zh"]
+    f4 = ["", "", "", "d", "g", "gh", "gt", "l", "ld", "m", "n", "nt", "r", "t", "y"]
+    m1 = ["b", "ch", "c", "d", "f", "g", "h", "j", "k", "kw", "l", "m", "n", "p", "q", "r", "sh", "s", "t", "w", "x",
+          "y", "zh", "z"]
+    m2 = ["ao", "ua", "ai", "ui", "ia", "ei", "ue", "iu", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e",
+          "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u"]
+    m3 = ["b", "c", "ch", "d", "f", "h", "hw", "j", "k", "l", "m", "n", "nd", "nf", "ng", "ngch", "ngg", "ngh", "ngj",
+          "ngl", "ngm", "ngt", "ngx", "ngy", "ngzh", "nh", "nl", "nm", "nq", "nr", "nt", "nx", "ny", "nzh", "q", "r",
+          "sh", "t", "w", "x", "y", "zh"]
+    m4 = ["b", "c", "ch", "d", "f", "g", "h", "hs", "hw", "j", "k", "kh", "kw", "l", "m", "n", "p", "q", "r", "s", "sh",
+          "sz", "t", "ts", "w", "x", "y", "zh", "z"]
+    s1 = ["a", "ba", "bai", "be", "bo", "bu", "chi", "da", "dai", "ei", "fu", "ga", "ge", "gi", "go", "ha", "hei", "hi",
+          "ho", "hyo", "i", "ie", "jo", "ju", "ka", "ke", "kei", "ki", "ko", "ku", "kyu", "ma", "mi", "mo", "mu", "na",
+          "nao", "ni", "no", "o", "ri", "ro", "ryo", "ryu", "sa", "se", "sei", "shi", "sho", "shu", "so", "su", "ta",
+          "te", "tei", "to", "tsu", "u", "wa", "ya", "yo", "yu"]
+    s2 = ["bumi", "buro", "buru", "chemon", "chi", "chiro", "chiyo", "chizo", "dayu", "deki", "do", "fu", "fumi",
+          "gobei", "goro", "hari", "haru", "hide", "hiko", "hira", "hiro", "hisa", "hito", "ji", "jio", "jiro", "juro",
+          "kado", "kan", "kao", "karu", "kazu", "kei", "ki", "kichi", "kin", "kio", "kira", "ko", "koto", "kuchu",
+          "kudo", "kumi", "kuni", "kusai", "kushi", "kusho", "kuzo", "mane", "maro", "masu", "matsu", "mei", "miaki",
+          "michi", "mio", "mitsu", "mon", "mori", "moru", "moto", "mune", "nabu", "naga", "nari", "nji", "njiro",
+          "nkei", "nko", "nobu", "nori", "noru", "noto", "noye", "npaku", "nshiro", "ntaro", "nzo", "rata", "rei", "ro",
+          "roji", "roshi", "ru", "sada", "sake", "saku", "sami", "samu", "sashi", "sato", "seki", "setsu", "shashi",
+          "shi", "shige", "shiko", "shiro", "sho", "shushu", "soshi", "su", "suke", "suki", "ta", "tada", "taka",
+          "tane", "tari", "taro", "taru", "toki", "toku", "tomo", "tora", "toshi", "tsu", "tsugu", "tsumi", "tsuna",
+          "tsune", "tsuta", "tsuyo", "tzumi", "wane", "yaki", "yasu", "yori", "yoshi", "yuki", "zane", "zo", "zuka",
+          "zuki", "zuko", "zuma", "zumi", "zumo", "zushi"]
+    s3 = ["a", "ai", "ba", "be", "chi", "e", "ei", "fu", "ge", "ha", "hai", "hi", "ho", "i", "jo", "ka", "kae", "ki",
+          "ko", "ku", "ma", "mae", "me", "mi", "mo", "mu", "na", "nao", "ni", "no", "o", "rai", "rei", "ri", "ro", "ru",
+          "sa", "sai", "se", "shi", "su", "ta", "te", "to", "tsu", "u", "wa", "ya", "yae", "yo", "yu"]
+    s4 = ["bari", "chi", "chiha", "chiho", "chiko", "cho", "deko", "doka", "fumi", "fuyu", "gino", "gusa", "haru",
+          "hiro", "ho", "hoko", "homi", "hori", "jiko", "ka", "kage", "kako", "kami", "kane", "kari", "karu", "kaze",
+          "ki", "kichi", "kiko", "kina", "kio", "kira", "ko", "koto", "kuko", "kuma", "kuro", "kyo", "maki", "mako",
+          "mari", "maya", "meka", "meko", "mi", "miho", "mika", "miki", "miko", "mina", "miri", "miya", "mugi", "na",
+          "nae", "nai", "nako", "nami", "natsu", "neka", "neko", "niko", "no", "noka", "nomi", "noue", "nu", "nuko",
+          "nuye", "nuyo", "ra", "rako", "rante", "rari", "rea", "ri", "rika", "riko", "rime", "rimi", "rino", "risa",
+          "risu", "rize", "ro", "roe", "roko", "romi", "roshi", "ru", "rui", "ruka", "ruko", "rumi", "sa", "sae",
+          "sahi", "saji", "saki", "sako", "sami", "samu", "sano", "sato", "se", "shi", "shiko", "shiyo", "soko", "sono",
+          "suka", "suki", "sumi", "suzu", "taba", "tako", "taru", "to", "tomi", "tomo", "tose", "toshi", "tsu", "tsue",
+          "tsuka", "tsuko", "tsumi", "tsune", "tsuyo", "yaka", "yako", "yame", "yano", "yeko", "yo", "yu", "yuka",
+          "yuki", "yuko", "yume", "yumi", "yuri", "zami", "zu", "zue", "zuki", "zuko", "zumi", "zuru", "zusa"]
+
+
+class Tengu:
+    f1 = ["", "", "", "", "", "b", "ch", "gr", "j", "k", "kr", "p", "pr", "q", "qr", "r", "s", "t", "tr", "tch", "x",
+          "v", "z"]
+    f2 = ["a", "e", "o", "u", "a", "e", "o", "u", "a", "e", "o", "u", "a", "e", "o", "u", "i", "i", "a", "e", "o", "u",
+          "au", "ai", "oi", "ou"]
+    f3 = ["ch", "j", "k", "kk", "l", "ll", "m", "n", "nn", "p", "pp", "q", "r", "rr", "s", "t", "v", "y", "x", "z",
+          "zz"]
+    f4 = ["", "", "", "", "", "", "", "", "", "", "ck", "gh", "k", "l", "n", "r"]
+    m1 = ["", "", "", "", "", "ch", "d", "g", "gh", "k", "kh", "m", "n", "p", "q", "r", "s", "sh", "t", "th", "v", "z",
+          "zh"]
+    m2 = ["a", "e", "o", "u", "a", "e", "o", "u", "a", "e", "o", "u", "a", "e", "o", "u", "i", "i", "a", "e", "o", "u",
+          "ai", "io", "ee", "ae"]
+    m3 = ["b", "ch", "g", "j", "k", "ky", "lk", "l", "ll", "ly", "m", "mk", "nk", "ny", "p", "py", "r", "rr", "rk", "s",
+          "t", "ty", "tch", "v", "vy", "z", "zz"]
+    m4 = ["", "", "", "", "", "", "", "", "", "", "k", "l", "n", "r"]
+    s1 = ["", "", "", "", "", "b", "ch", "d", "g", "j", "k", "kr", "m", "n", "p", "pr", "q", "r", "s", "t", "tch", "v",
+          "z"]
+    s2 = ["a", "e", "i", "o", "u", "a", "o", "e", "a", "o", "e", "u"]
+    s3 = ["ch", "g", "j", "k", "kk", "ky", "l", "ll", "m", "n", "ng", "nk", "p", "pp", "q", "r", "rr", "s", "t", "tch",
+          "v", "y", "z", "zz"]
+    s4 = ["", "", "ck", "k", "l", "n", "r", "t"]
+
+
+class Tiefling:
+    f1 = ["", "", "", "", "", "b", "cr", "d", "g", "h", "k", "kr", "m", "r", "s", "sh", "t", "v", "y", "z"]
+    f2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "y", "ia",
+          "io"]
+    f3 = ["c", "cr", "cn", "d", "dr", "g", "gr", "gg", "k", "kr", "l", "ldr", "lv", "ll", "m", "nst", "nv", "nr", "r",
+          "rn", "rd", "rk", "rrd", "rt", "rv", "s", "sr", "sk", "t", "tr", "v", "c", "d", "g", "k", "l", "m", "n", "r",
+          "s", "t", "v"]
+    f4 = ["", "", "", "c", "k", "n", "r", "s", "t", "th"]
+    m1 = ["d", "f", "h", "k", "kh", "l", "m", "n", "r", "s", "sh", "str", "t", "th", "v", "z"]
+    m2 = ["a", "e", "i", "o", "a", "a", "e", "a", "e", "i", "o", "a", "a", "e", "a", "o", "e", "a", "o", "e", "i", "i",
+          "ei", "ia", "ea", "ai"]
+    m3 = ["d", "dr", "f", "fr", "ff", "l", "ll", "ld", "ldr", "lr", "ln", "ls", "m", "mr", "mdr", "ms", "nd", "ndr",
+          "nn", "n", "nz", "r", "rdr", "rr", "rs", "rz", "s", "sh", "sz", "sr", "t", "tr", "v", "vr", "y", "zs", "d",
+          "f", "l", "m", "n", "r", "s", "t", "v", "y"]
+    m4 = ["h", "l", "n", "s", "th"]
+    s1 = ["", "", "", "", "b", "br", "d", "dr", "f", "g", "h", "l", "m", "n", "p", "r", "s", "sh", "t", "v", "z"]
+    s2 = ["a", "e", "i", "o", "a", "e", "i", "o", "a", "e", "i", "o", "a", "e", "i", "o", "a", "e", "i", "o", "a", "e",
+          "i", "o", "a", "a", "e", "e", "i", "aa", "ae", "ia", "ea"]
+    s3 = ["b", "br", "c", "d", "dr", "fr", "g", "gg", "gr", "gv", "k", "l", "ll", "lr", "lv", "ldr", "m", "mm", "mr",
+          "mdr", "n", "nd", "ng", "ndr", "nst", "nv", "nr", "r", "rh", "rv", "rr", "rz", "rd", "rdr", "s", "ss", "sr",
+          "sh", "st", "t", "tr", "v", "vr", "b", "c", "d", "g", "k", "l", "m", "n", "r", "s", "t", "v"]
+    s4 = ["", "", "", "", "", "", "", "", "", "", "d", "ld", "lt", "m", "n", "nd", "r", "rd", "s", "t", "th"]
+
+
+class Undine:
+    f1 = ["", "", "", "", "", "bh", "d", "dh", "g", "gh", "j", "kh", "m", "n", "r", "rh", "sh", "v", "z"]
+    f2 = ["a", "e", "i", "o", "a", "e", "i", "o", "a", "e", "i", "o", "a", "e", "i", "o", "a", "e", "i", "o", "a", "e",
+          "i", "o", "aa", "oo"]
+    f3 = ["b", "bd", "c", "cd", "d", "dd", "db", "g", "gd", "gv", "gn", "gm", "j", "k", "kb", "kd", "kn", "km", "kv",
+          "m", "md", "mm", "mb", "n", "nn", "nb", "nd", "r", "rd", "rg", "rv", "rz", "v", "b", "c", "d", "g", "j", "k",
+          "m", "n", "r", "v"]
+    f4 = ["d", "hz", "j", "k", "m", "n", "r", "sh", "v"]
+    m1 = ["", "", "", "b", "c", "d", "f", "h", "l", "m", "n", "p", "r", "s", "w", "z"]
+    m2 = ["a", "e", "i", "u", "a", "e", "i", "u", "a", "e", "i", "u", "a", "e", "i", "u", "a", "e", "i", "u", "y", "y",
+          "y", "ya", "aa"]
+    m3 = ["b", "bh", "d", "dz", "dh", "fd", "fn", "ff", "f", "fz", "hn", "hl", "hr", "hm", "h", "hh", "l", "lg", "ld",
+          "lb", "lf", "ln", "m", "mm", "mn", "mr", "mf", "n", "nn", "nr", "nd", "nf", "nh", "r", "rh", "rb", "rv", "rd",
+          "rz", "v", "vr", "b", "d", "f", "h", "l", "n", "m", "r", "v", "b", "d", "f", "h", "l", "n", "m", "r", "v"]
+    m4 = ["", "", "", "", "", "", "", "", "", "", "h", "n"]
+
+
+class Vanara:
+    n1 = ["Abder", "Absyr", "Abyd", "Acast", "Achat", "Achel", "Acher", "Achil", "Achl", "Acris", "Act", "Adelph",
+          "Adm", "Adon", "Adr", "Adras", "Aeg", "Aeol", "Aggel", "Alcin", "Ald", "Ambr", "Amyc", "Anast", "Anat", "Anc",
+          "And", "Andr", "Ant", "Apost", "Arc", "Arg", "Arist", "Ars", "Ast", "Aster", "Bacc", "Bas", "Bast", "Bauc",
+          "Ceph", "Cerb", "Ces", "Cet", "Char", "Cim", "Cir", "Corb", "Cyr", "Daem", "Dam", "Dar", "Darr", "Dem", "Dim",
+          "Dion", "Dor", "Dun", "Egid", "Elefth", "Eleuth", "Endr", "Eras", "Ereb", "Eum", "Eur", "Eust", "Ev", "Fan",
+          "Fed", "Feodr", "Gael", "Gal", "Gil", "Gor", "Greg", "Haem", "Hect", "Hel", "Ias", "Ic", "Idom", "Ignat",
+          "Inach", "Ivank", "Jas", "Kadm", "Kir", "Konst", "Korud", "Kost", "Krat", "Kyr", "Lad", "Lak", "Land", "Laz",
+          "Leand", "Lich", "Louk", "Lox", "Lyc", "Maur", "Ment", "Mich", "Myl", "Nark", "Nem", "Nik", "Nil", "Nill",
+          "Ocn", "Oen", "Oenom", "Or", "Orthr", "Pal", "Panag", "Par", "Pell", "Petr", "Pil", "Pirr", "Preb", "Prot",
+          "Rhod", "Sav", "Savv", "Sim", "Sot", "Stam", "Stavr", "Stel", "Sterg", "Tak", "Tal", "Than", "Thaum", "Tim",
+          "Timm", "Tit", "Tod", "Tol", "Tox", "Trit", "Vas", "Yan", "Yann", "Yor", "Yrig", "Zar", "Zen", "Zeph",
+          "Zolt"]
+    n2 = ["us", "ius", "os", "in", "as"]
+    n3 = ["ia", "ia", "a", "ia"]
+
+
+class Vishkanya:
+    f1 = ["Aakash", "Abhi", "Abhinav", "Acarya", "Aditya", "Ajatasatru", "Akshey", "Aman", "Amar", "Amara", "Amish",
+          "Amitabh", "Amitodana", "Amrit", "Anand", "Ananda", "Anguri", "Anil", "Anuraag", "Arjuna", "Arpit", "Arun",
+          "Aryabhata", "Aryabhatta", "Asha", "Ashtavakra", "Ashutosh", "Asvalayana", "Ayaan", "Ayush", "Baibhav",
+          "Bana", "Benegal", "Bhavabhuti", "Bhima", "Bhrigu", "Chakravarti", "Chand", "Chanda", "Chander", "Chandra",
+          "Chandrama", "Chatur", "Chettur", "Chhotu", "Chunder", "Cyavana", "Daas", "Dadabhvai", "Daksh", "Daksha",
+          "Dasra", "Daya", "Dayananda", "Dhani", "Dharya", "Dheeraj", "Dhirtarashtra", "Dhule", "Dhuleep", "Din",
+          "Dyal", "Gagan", "Ganesh", "Gopal", "Govind", "Govinda", "Gunadhya", "Hala", "Har", "Harsh", "Hira", "Ishwar",
+          "Jagadis", "Jamadagni", "Jaswant", "Jatayu", "Jawahar", "Jayadeva", "Jeet", "Jhanda", "Jwala", "Kahoda",
+          "Kanada", "Kapila", "Karam", "Katyayana", "Keshav", "Krishan", "Krishna", "Kusika", "Lakshmana", "MAdhava",
+          "Madhavacharta", "Maha", "Mahadaji", "Mahava", "Manas", "Megaduta", "Megh", "Mishri", "Mohun", "Motilal",
+          "Nakshatra", "Nakula", "Narayana", "Nasatya", "Navin", "Navneet", "Om", "Pandu", "Panini", "Patanjali",
+          "Peeyush", "Prakash", "Pramod", "Pranav", "Prashant", "Pravarasena", "Prem", "Purshottama", "Raghu", "Ragoba",
+          "Ragunath", "Rahul", "Rajendra", "Ramaeshwara", "Ranjan", "Ranjit", "Ravi", "Rhitanshu", "Rishu", "Roodra",
+          "Ruldu", "Rura", "Sackhcham", "Sahadeva", "Sandracottos", "Santosh", "Saurabh", "Savyaschin", "Sayana",
+          "Shackcham", "Shankaracharya", "Shanti", "Sharad", "Sharya", "Shudraka", "Sooraj", "Srijan", "Sumit",
+          "Sunder", "Surendranath", "Vaibhav", "Vakpati", "Varuni", "Vasishtha", "Veer", "Venkata", "Vijya", "Vikas",
+          "Vikramaditya", "Vinay", "Vineet", "Vinod", "Vishnu", "Viswamitra", "Viswarupa", "Vrikodara", "Waazir", "Yad",
+          "Yogarasa", "Yudhishthira", "Zalim"]
+    m1 = ["Aahana", "Aaina", "Aaliya", "Aasiya", "Aasmi", "Aditi", "Aishwarya", "Akshara", "Alia", "Amandara", "Ambika",
+          "Ananya", "Anarkali", "Anu", "Anushka", "Anushree", "Anya", "Archita", "Arpita", "Arya", "Ashia",
+          "Bhadrakali", "Bhageerathi", "Bhairavi", "Bumati", "Chambeli", "Chamunda", "Chandi", "Chandika", "Cheeno",
+          "Chhaya", "Chhotimai", "Dakini", "Damayanti", "Divya", "Draupati", "Durga", "Durgautti", "Durgawati", "Gauri",
+          "Indira", "Indu", "Jaya", "Jayanti", "Jindan", "Jyoti", "Kalpana", "Kalyani", "Kamala", "Kanak", "Kannagi",
+          "Kanti", "Kanwal", "Kareena", "Karnavati", "Karuna", "Kasturbai", "Kaumari", "Kavuri", "Komal", "Korravai",
+          "Krishna", "Krishnaa", "Kumari", "Kunti", "Kusum", "Lakshmi", "Lasya", "Lavanya", "Leela", "Lia", "Madri",
+          "Mahamai", "Mahi", "Mamta", "Manasa", "Manjistha", "Mataji", "Maya", "Mina", "Minakshi", "Minu", "Muskaanb",
+          "Nagini", "Neha", "Nehal", "Nupur", "Nutan", "Padmini", "Palak", "Paraminta", "Pari", "Parvati", "Phoolan",
+          "Praanvi", "Priya", "Priyanshi", "Radha", "Raktavati", "Rani", "Rati", "Rekha", "Rishabha", "Ruhi", "Rushpa",
+          "Saanvi", "Sadhana", "Salani", "Samarj", "Sambridhi", "Sanskriti", "Sarama", "Sarasvati", "Sarojini", "Saryu",
+          "Satya", "Saurandhri", "Sena", "Shakti", "Shakuntala", "Shalini", "Shambhavi", "Shanti", "Shinu", "Shitala",
+          "Shreya", "Shristi", "Shruti", "Siddhi", "Simron", "Sita", "Snigdha", "Sonamoni", "Sukanya", "Sulini",
+          "Sumati", "Surya", "Tarabai", "Tivra", "Ujali", "Uma", "Urvasi", "Usha", "Vaidehi", "Vayu", "Versha",
+          "Vijaya", "Zohana"]
+    s1 = ["Acharekar", "Achaval", "Adhya", "Adwani", "Ahuja", "Ajagavakar", "Anagal", "Ashtekar", "Ashtikar",
+          "Ayyangar", "Ayyar", "Badakar", "Bagchi", "Bajpai", "Bajpeyi", "Bakshi", "Banahatti", "Bandyopadhyay",
+          "Barigai", "Barvadekar", "Bhagat", "Bhardvaj", "Bhatavadekar", "Bhate", "Bhatta", "Bhattacharya", "Bhaumik",
+          "Bhavalakar", "Bhave", "Chadda", "Chakarvarti", "Chattarak", "Chaudhari", "Chetti", "Chipalunakar",
+          "Chitanis", "Chopade", "Choraghad", "Dalavi", "Dattachaudhuri", "Dayal", "Deshmukh", "Devadhikar",
+          "Devarukhkar", "Devdhar", "Dhavale", "Dhebar", "Dheer", "Dhibar", "Divakar", "Divekar", "Dongerkerry",
+          "Dvivedi", "Ganapuli", "Gandhi", "Gaur", "Gayakvad", "Gazdar", "Gharapure", "Ghoshal", "Goyal", "Gulati",
+          "Gupta", "Gurnani", "Haldar", "Haradas", "Harish", "Havaldar", "Hegadi", "Heravdakar", "Holkar", "Jadhav",
+          "Jagatap", "Jayavant", "Jogalekar", "Joshi", "Kamal", "Kamath", "Kanungo", "Kapadia", "Kapil", "Kapudia",
+          "Karamchand", "Kashyap", "Kayal", "Khamavant", "Kumar", "Kusari", "Lata", "Limbu", "Mahalanabis", "Mahanta",
+          "Mahanti", "Malhotra", "Mallaya", "Malviya", "Mandalik", "Marwah", "Mayadev", "Mehrotra", "Mirchandani",
+          "Misra", "Mudaliyar", "Mukhtar", "Munshi", "Munshif", "Muzumdar", "Naidu", "Nambisan", "Nambiyar", "Nan",
+          "Nancy", "Nandi", "Navathe", "Nayar", "Nijasure", "Ojha", "Padagavakar", "Padhi", "Padhya", "Panda", "Pande",
+          "Pandey", "Pandya", "Panikkar", "Panja", "Parachure", "Parekh", "Parikh", "Patel", "Patil", "Patvardhan",
+          "Pavagi", "Phadanis", "Phadatare", "Poddar", "Prabhu", "Punja", "Raj", "Rajavade", "Randhawa", "Ranganekary",
+          "Roychaudhuri", "Sabanis", "Sanyal", "Sardar", "Sarkar", "Satavelekar", "Seth", "Sharma", "Shevade",
+          "Shiravadakar", "Shree", "Shrivastav", "Shrivastava", "Singh", "Sinha", "Sirasikar", "Srivastav",
+          "Talavalakar", "Tamhanakar", "Tavade", "Thacker", "Thakore", "Thakre", "Thakur", "Tipanis", "Upadhyay",
+          "Upalekar", "Upandhye", "Upasani", "Vad", "Vadekar", "Vaikar", "Vaknis", "Valimbe", "Viswan", "Vyas"]
+
+
+class Wayangs:
+    f1 = ["Ahurei", "Aia", "Aiani", "Aifeuna", "Amo", "Arii-fataia", "Ariipaea", "Aru", "Auri", "Auriro", "Enometua",
+          "Farerohi", "Haamanemane", "Hama", "Hamau", "Haneti", "Hapai", "Haururu", "Hiro", "Hurimaavehi", "Itiiti",
+          "Mahine", "Mahui", "Mai", "Manea", "Manua", "Maoae", "Matafaahira", "Mauaihiti", "Mauaroa", "Moearu",
+          "Moemoe", "Namiro", "Niuhu", "Nohoraa", "Nuutere", "Ohatatama", "Omai", "Opuhara", "Oreo", "Ori", "Panee",
+          "Paofai", "Pati'i", "Pena", "Pihato", "Punua", "Punua-teraitua", "Taaroa", "Taaroa-manahune",
+          "Taauaitatanuurua", "Taino", "Tamatoa", "Tapoa", "Tati", "Tau", "Taua-i-taata", "Taura", "Taura-atua",
+          "Tauraatua", "Taute", "Tavi", "Tavihauroa", "Te-manutunuu", "Te-maui-ari'i", "Te-mooiapitia", "Teaatoro",
+          "Teaej", "Tefaaora", "Tehapai", "Teieie", "Teihotu", "Temoo", "Teohu", "Tepau", "Tepauarii", "Terii",
+          "Terii-maevarua", "Teriimana", "Teruru", "Tetohu", "Tetumanua", "Teu", "Teuira", "Teuira-arii", "Teuraiterai",
+          "Teva", "Tevahitua", "Tiaau", "Tiipaarii", "Toa", "Tuaroa", "Tuhei", "Tumoehamia", "Tunuieaiteatua", "Tupaia",
+          "Tutaha", "Tutahau", "Tuutini", "Uata", "Ui", "Uruumatata", "Vaetua", "Vairatoa", "Vanaama", "Vari",
+          "Vari-mataauhue", "Vavahiiteraa", "Vehiatua", "Veve"]
+    m1 = ["'Itea", "Ahurai", "Aimata", "Aironoana'a", "Airoro", "Airotua", "Arili-manihinihi", "Ariioehau",
+          "Ariitaimai", "Aroroerua", "Auau", "Fareahu", "Fetefeteui", "Hototu", "Ino Metua", "Maheanuu", "Marae-ura",
+          "Moe", "Murihau", "Ourahi", "Patea", "Pateamai", "Peutari", "Piharii", "Pipiri", "Poivai", "Purea", "Taaroa",
+          "Taia", "Tapuhote", "Taura", "Taura-atua", "Tauraatua", "Taurua", "Te-aropoanaa", "Te-fete-fete-ui", "Teeva",
+          "Teeva Pirioi", "Tefeau", "Tehaapapa", "Tehea", "Teihotu", "Temaehuata", "Teraha-tetua", "Teraiautia",
+          "Teraitua", "Teremoemoe", "Terero", "Teri'i", "Teri'itorai", "Teriitahi", "Teriitua", "Teriivau",
+          "Teriivua-iterai", "Terite", "Terito", "Teroroeora", "Teroroera", "Tetua", "Tetua-umeritini", "Tetuaehuri",
+          "Tetuahuri", "Tetuanui", "Tetuanuireia", "Tetuaraenui", "Tetuaunurau", "Tetunania", "Tetupaia", "Tetupua",
+          "Teuira", "Tevurua", "Tevurua-hoiatua", "Tevuruahoratua", "Tiipaarii", "Tupuetefa", "Ura", "Vavea"]
+
+
+# Store Generators
+from numpy.random import randint
+
+
+class Antiques(object):
+    n1 = ["A New View", "A Quiet Corner", "About Time", "Age of Vintage", "Aged Goodness", "Anecdotes",
+          "Another Man\'s Treasures", "Another Treasures", "Antique Appeal", "Antique Cache", "Antique Cuties",
+          "Antique Hut", "Antique Trove", "Antiques and Artifacts", "Antiquities", "Authentic Antiquities",
+          "Beautiful Salvage", "Blasts from the Past", "Bought Again", "Bygones", "Checkered Pasts",
+          "Cozy Collectibles", "Dinky and Dainty", "Discoveries", "Drab to Fab", "Echoes of the Past",
+          "Established Goods", "Focus of the Past", "Focus on the Past", "Forget Me Nots", "Forgotten Furnishings",
+          "Fortunes in Time", "Found in Time", "From Oblivion", "From Time Immemorial", "Frozen in Time",
+          "General Goods", "Good As New", "Good Goods", "Good Ol\' Days", "Hodge Podge Lodge", "Honest Heirlooms",
+          "In-Of-Date", "Joys For Forever", "Junk Deluxe", "Just in Time", "Knick-knack Paddywhack Shack",
+          "Legends of Their Time", "Little Collectibles", "Little House of Trinkets", "Live in the Past",
+          "Living Memories", "Long Time No See", "Lost and Found in Time", "Matters of Time", "Memory Lane",
+          "Miracles of the Past", "Mod Life", "Modern Memories", "Modern Vintage", "Needful Things", "Odd Types",
+          "Old Gold", "Old Roots", "Old Stuff", "Old and Bold", "Oldies and Goldies", "Once upon a time",
+          "One Time or Another", "Out of the Attic", "Pandora\'s Box", "Paragon Prizes", "Pass On the Past",
+          "Pass The Time", "Past Caring", "Past Meets Present", "Past On", "Past Over", "Past Passed On", "Past Repast",
+          "Pockets of Time", "Precious Past", "Precious Things", "Presents for the Present", "Presents of the Past",
+          "Preserved", "Primes of the Past", "Rags and Riches", "Recent Memories", "Recollect Them All",
+          "Recollectibles", "Relics and Rarities", "Relics and Riches", "Relics of Time", "Reliquary",
+          "Remains to be Seen", "Remember", "Remember This", "Remember, Remember", "Renewed Life", "Renewed Memories",
+          "Retro Relics", "Revered Relics", "Revival", "Salvage Garden", "Secrets of the Past", "Shared Memories",
+          "Stuff and Things", "Sweet Memories", "Taken for Granted", "Tales Resold", "Tales of the Past",
+          "Tales Retold", "Tales Untold", "Tests of Time", "The Antiki-Wiki", "The Antique Market", "The Salvage Beast",
+          "The Shuffle of Things", "The Time is Ripe", "The Treasure Chest", "The Treasure Trove", "Things Past",
+          "Things of the Past", "Thingymabobs", "Time Honored", "Time Not Forgotten", "Time Recovered",
+          "Time of One\'s Life", "Timeless Treasures", "Timeless Trinkets", "Times Remembered", "Top Drawer Antiques",
+          "Treasures and Trinkets", "Treasures of Time", "Treasure Trove", "Trinkets and Traditions",
+          "Trinkets of Time", "Twosided", "Utter Clutter", "Vagabond Vendor", "Vestiges of the Past", "Vintage",
+          "Vintage Baby", "Vintage Treasures", "Vintage Vogue", "Vintage Wares", "Warm Wares", "Wayward Wealths",
+          "Wealth of Time", "Well of a Time", "Whispers of the Past", "Wonders of the Past", ]
+
+    def __str__(self):
+        return self.n1[randint(len(self.n1))].title()
+
+
+class Books(object):
+    Genres = ['Children', 'Drama', 'Fiction', 'Horror', 'Humor', 'Mystery', 'Nonfiction', 'Romance', 'SciFi', 'Tome', ]
+
+    def Children(self):
+        c1 = ["baby", "bear", "bird", "boy", "bunny", "cat", "caterpillar", "chicken", "cow", "dino", "dog", "dragon",
+              "duck", "family", "fox", "frog", "ghost", "girl", "goat", "kid", "king", "kitten", "lion", "little bird",
+              "little boy", "little dragon", "little duck", "little girl", "little prince", "little princess", "man",
+              "mouse", "owl", "pig", "prince", "princess", "puppy", "queen", "rabbit", "sheep", "snowman", "tiger",
+              "toad", "wizard", "woman"]
+        c2 = ["babies", "bears", "birds", "boys", "bunnies", "cats", "chickens", "cows", "dinos", "dogs", "dragons",
+              "ducks", "foxes", "frogs", "ghosts", "girls", "goats", "kids", "kings", "kittens", "lions",
+              "little birds", "little dragons", "little ducks", "mice", "owls", "pigs", "puppies", "rabbits", "sheep",
+              "tigers", "toads", "wizards"]
+        c3 = ["adventure", "airplane", "attic", "basement", "bed", "candle", "car", "chair", "chimney", "city",
+              "closet", "coat", "country", "cup", "curiosity", "day", "door", "field", "flower", "forest", "hat",
+              "home", "house", "lantern", "light", "mirror", "mountain", "pocket", "river", "roof", "sands", "shield",
+              "statue", "stories", "story", "tale", "tales", "town", "train", "tree", "wand", "watch", "water", "week",
+              "window"]
+        c4 = ["in my house", "in my school", "in my town", "in space", "in the forest", "in the mountains",
+              "in the river", "of dreams", "of excelsior", "of fantasia", "of fantasy", "of fire", "of gold", "of life",
+              "of magic", "of miracles", "of my country", "of my dreams", "of my house", "of my imagination",
+              "of my land", "of mysteries", "of mystery", "of puzzles", "of rain", "of rainbows", "of riddles",
+              "of secrets", "of silver", "of stone", "of sunshine", "of the moon", "of the stars", "of the sun",
+              "of tomorrow", "of utopia", "of wonder", "of wood", "of yesterday", "on the moon"]
+        c5 = ["a day with", "adventure of", "afraid of", "amazing life of", "amazing world of", "back to", "back with",
+              "bewitched by", "boring at", "brave at", "bubble of", "careful with", "caring for", "celebrating with",
+              "cleaning at", "cleaning with", "clumsy at", "colors of", "cooking with", "cool at", "crafting with",
+              "crazy at", "crazy with", "cute with", "drawing with", "enchanted by", "fearless with", "foolish with",
+              "free with", "gift from", "gift of", "giving with", "growing up with", "growing with", "happy with",
+              "helping", "jealous of", "jumping with", "learning with", "living with", "love of", "loved by",
+              "playing with", "present from", "present of", "puzzling with", "reading with"]
+        c6 = ["fantasy", "flowers", "leaves", "magic", "my best friend", "my brother", "my cat", "my cousin", "my dad",
+              "my dog", "my family", "my father", "my fish", "my friend", "my home", "my house", "my imagination",
+              "my mom", "my mother", "my neighbor", "my neighbors", "my nephew", "my new cat", "my new clothes",
+              "my new dog", "my new fish", "my new pet", "my niece", "my pet", "my pet dragon", "my school",
+              "my sister", "my town", "my village", "petals", "sticks", "the animals", "the doctor", "the fields",
+              "the forest", "the hospital", "the mountains", "the neighbor", "the neighbors", "the river", "the school",
+              "the town", "water"]
+        c7 = ["in my house", "in my school", "in my town", "in space", "in the forest", "in the mountains",
+              "in the river", "of dreams", "of excelsior", "of fantasia", "of fantasy", "of fire", "of gold", "of life",
+              "of magic", "of miracles", "of my country", "of my dreams", "of my house", "of my imagination",
+              "of my land", "of mysteries", "of mystery", "of puzzles", "of rain", "of rainbows", "of riddles",
+              "of secrets", "of silver", "of stone", "of sunshine", "of the moon", "of the stars", "of the sun",
+              "of tomorrow", "of utopia", "of wonder", "of wood", "of yesterday", "on the moon"]
+        i = randint(5)
+        if i == 0:
+            return str(c1[randint(len(c1))] + ' ' + c4[randint(len(c4))]).title()
+        elif i == 1:
+            return str(c2[randint(len(c2))] + ' ' + c4[randint(len(c4))]).title()
+        elif i == 2:
+            return str(c2[randint(len(c2))] + ' ' + c2[randint(len(c2))]).title()
+        elif i == 3:
+            return str(c3[randint(len(c3))] + ' ' + c7[randint(len(c7))]).title()
+        else:
+            return str(c5[randint(len(c5))] + ' ' + c6[randint(len(c6))]).title()
+
+    def Drama(self):
+        d1 = ["accomplice", "agent", "ancestor", "angel", "army", "assassin", "assistant", "baker", "bandit", "bearer",
+              "blacksmith", "boy", "bringer", "builder", "butcher", "cat", "child", "collaborator", "collector",
+              "companion", "courier", "creator", "culler", "defender", "deputy", "descendant", "doctor", "dog",
+              "emissary", "enemy", "farmer", "follower", "foreigner", "founder", "friend", "girl", "guardian", "heir",
+              "horse", "human", "invader", "inventor", "knight", "lord", "man", "medic", "messenger", "officer",
+              "opponent", "patron", "peasant", "peon", "pirate", "planner", "rat", "raven", "rebel", "savior",
+              "scientist", "secretary", "servant", "slave", "soldier", "spy", "stranger", "supporter", "thief",
+              "traitor", "vulture", "warrior", "widow", "wife", "witch", "wolf", "woman"]
+        d2 = ["agents", "ancestors", "angels", "armies", "assassins", "assistants", "bakers", "bandits", "bearers",
+              "blacksmiths", "boys", "bringers", "builders", "butchers", "children", "collectors", "companions",
+              "couriers", "creators", "cullers", "defenders", "deputies", "descendants", "doctors", "emissaries",
+              "enemies", "farmers", "followers", "foreigners", "founders", "friends", "girls", "guardians", "heirs",
+              "horses", "people", "invaders", "inventors", "knights", "lords", "men", "medics", "messengers",
+              "officers", "opponents", "patrons", "peasants", "peons", "pirates", "planners", "rats", "rebels",
+              "saviors", "scientists", "secretaries", "servants", "slaves", "soldiers", "spies", "strangers",
+              "supporters", "thieves", "traitors", "vultures", "warriors", "widows", "wives", "witches", "wolves",
+              "women"]
+        d3 = ["accidents", "anger", "annihilation", "ascension", "bane", "beginning", "birth", "border", "boundaries",
+              "carnage", "castle", "cause", "certainty", "chase", "confinement", "country", "creation", "cruelty",
+              "culling", "death", "decay", "decisions", "demise", "design", "destruction", "dishonor", "disruption",
+              "edge", "effect", "element", "end", "execution", "failure", "fate", "harvest", "homes", "loss", "love",
+              "nation", "obliteration", "origin", "perfection", "planet", "product", "result", "rise", "root",
+              "ruination", "ruins", "scourge", "source", "undoing", "union", "unity", "vengeance", "violence", "vision"]
+        d4 = ["dressed in black", "dressed in white", "of afflication", "of agony", "of anguish", "of bad news",
+              "of breaking hearts", "of crime", "of damnation", "of darkness", "of dawn", "of desire", "of despair",
+              "of destruction", "of doom", "of dread", "of dusk", "of earth", "of eternity", "of evil", "of fire",
+              "of fortune", "of freedom", "of glory", "of gold", "of heaven", "of hell", "of history", "of hope",
+              "of ice", "of insanity", "of last rites", "of limbo", "of misery", "of nightmares", "of pain", "of power",
+              "of reality", "of remorse", "of repentance", "of sorrow", "of stone", "of suffering", "of the battle",
+              "of the blues", "of the curse", "of the east", "of the eclipse", "of the end", "of the forest",
+              "of the forsaken", "of the frontline", "of the gods", "of the lost ones", "of the mountains",
+              "of the nation", "of the nether", "of the night", "of the north", "of the ocean", "of the plague",
+              "of the prison", "of the river", "of the sea", "of the south", "of the stars", "of the stockades",
+              "of the void", "of the west", "of the world", "of time", "of tomorrow", "of twilight", "of war",
+              "with a goal", "with debt", "with gold", "with guns", "with hoods", "with horns", "with money",
+              "with silver hair", "with sins", "with wings", "without a conscience", "without a goal", "without a head",
+              "without a home", "without desire", "without direction", "without duty", "without faith", "without fear",
+              "without honor", "without hope", "without shame", "without sin", "without time"]
+        d5 = ["accepting", "admiring", "adopting", "alarming", "altering", "answering to", "arrival of", "avoiding",
+              "aware of", "battle", "battle of", "battling", "battling in", "becoming", "begging", "begging in",
+              "belonging to", "bound to", "binding to", "bleeding at", "bleeding in", "blinded by", "blinded in",
+              "blood at", "blood in", "bravery at", "breaking", "breath of", "call to", "calling", "changing",
+              "chasing", "choking in", "cleaning up", "clinging to", "commanding", "confessions of", "cruelty of",
+              "crying in", "dead at", "dead in", "death at", "death in", "death to", "destroying", "driving into",
+              "eliminating", "ending", "enter", "escape", "escaping", "facing", "fade into", "fighting", "flee to",
+              "flying into", "force of", "forsaken by", "forsaking", "frightened of", "haunting", "hiding", "hunted by",
+              "hunting", "hurt by", "hurting", "infamous among", "jealous of", "kicking", "killing", "laughing at",
+              "learning from", "life at", "life in", "listening to", "loathing", "losing", "lurking in", "meeting at",
+              "meeting in", "memories of", "memory of", "mending", "never trust", "numb to", "pray for", "prepare for",
+              "preparing for", "promises of", "remember", "robbing", "run for", "running into", "scared of",
+              "screams at", "screams in", "searching at", "searching for", "searching in", "separated at",
+              "separated by", "separated in", "sick of", "smiles in", "smiles of", "songs of", "sounds of", "starting",
+              "trust", "weep for", "welcome to", "whispers in", "whispers of", "write about", "wrong about"]
+        d6 = ["a storm", "dreams", "history", "my destiny", "my dreams", "my end", "my enemies", "my family",
+              "my friends", "my future", "my home", "my husband", "my leader", "my nightmares", "my past", "my school",
+              "my wife", "nightmares", "secrets", "technology", "the abyss", "the apocolypse", "the bridge",
+              "the castle", "the champions", "the city", "the commander", "the country", "the curse", "the dark",
+              "the darkness", "the demons", "the depths", "the dungeons", "the east", "the elements", "the emperor",
+              "the end", "the fog", "the forest", "the future", "the graveyard", "the guards", "the hunter",
+              "the jungle", "the king", "the light", "the mayor", "the maze", "the mines", "the mist", "the moon",
+              "the mountains", "the nation", "the night", "the north", "the ocean", "the past", "the plague",
+              "the president", "the prison", "the prisoner", "the prisoners", "the river", "the sea", "the shadows",
+              "the ships", "the slaves", "the soldier", "the soldiers", "the south", "the stars", "the sun",
+              "the swamp", "the town", "the traitor", "the traitors", "the void", "the west", "the world", "time"]
+        d7 = ["dressed in black", "dressed in white", "of afflication", "of agony", "of anguish", "of bad news",
+              "of breaking hearts", "of crime", "of damnation", "of darkness", "of dawn", "of desire", "of despair",
+              "of destruction", "of doom", "of dread", "of dusk", "of earth", "of eternity", "of evil", "of fire",
+              "of fortune", "of freedom", "of glory", "of gold", "of heaven", "of hell", "of history", "of hope",
+              "of ice", "of insanity", "of last rites", "of limbo", "of misery", "of nightmares", "of pain", "of power",
+              "of reality", "of remorse", "of repentance", "of sorrow", "of stone", "of suffering", "of the battle",
+              "of the blues", "of the curse", "of the east", "of the eclipse", "of the end", "of the forest",
+              "of the forsaken", "of the frontline", "of the gods", "of the lost ones", "of the mountains",
+              "of the nation", "of the nether", "of the night", "of the north", "of the ocean", "of the plague",
+              "of the prison", "of the river", "of the sea", "of the south", "of the stars", "of the stockades",
+              "of the void", "of the west", "of the world", "of time", "of tomorrow", "of twilight", "of war",
+              "with a goal", "with debt", "with gold", "with guns", "with hoods", "with horns", "with money",
+              "with silver hair", "with sins", "with wings", "without a conscience", "without a goal", "without a head",
+              "without a home", "without desire", "without direction", "without duty", "without faith", "without fear",
+              "without honor", "without hope", "without shame", "without sin", "without time"]
+        i = randint(5)
+        if i == 0:
+            return str(d1[randint(len(d1))] + ' ' + d4[randint(len(d4))]).title()
+        elif i == 1:
+            return str(d2[randint(len(d2))] + ' ' + d4[randint(len(d4))]).title()
+        elif i == 2:
+            return str(d2[randint(len(d2))] + ' ' + d2[randint(len(d2))]).title()
+        elif i == 3:
+            return str(d3[randint(len(d3))] + ' ' + d7[randint(len(d7))]).title()
+        else:
+            return str(d5[randint(len(d5))] + ' ' + d6[randint(len(d6))]).title()
+
+    def Fiction(self):
+        f1 = ["agent", "imp", "alien", "angel", "animal", "army", "assassin", "baker", "bandit", "blacksmith", "boy",
+              "butcher", "butterfly", "cat", "changeling", "child", "companion", "creator", "criminal", "cyborg",
+              "deceiver", "defender", "demon", "descendant", "doctor", "dog", "dragon", "dragonborn", "druid",
+              "duchess", "duke", "dwarf", "elf", "emperor", "enchanter", "enemy", "fairy", "fighter", "fish", "foe",
+              "foreigner", "friend", "gangster", "ghost", "giant", "girl", "gnome", "goblin", "god", "goddess",
+              "guardian", "hawk", "heir", "hero", "hobgoblin", "horse", "human", "hunter", "hydra", "invader", "king",
+              "knight", "lion", "lord", "mage", "man", "medic", "mermaid", "merman", "monk", "mouse", "necromancer",
+              "nymph", "officer", "ogre", "opponent", "orc", "owl", "paladin", "parrot", "persuer", "phantom", "pilot",
+              "pirate", "priest", "priestess", "protector", "queen", "rat", "raven", "rebel", "robot", "rogue", "sage",
+              "savior", "serpent", "shaman", "skeleton", "slave", "snake", "soldier", "spider", "spy", "stranger",
+              "summoner", "swindler", "thief", "tortoise", "traitor", "tree", "troll", "turtle", "vampire", "vulture",
+              "warlock", "warrior", "werewolf", "wife", "witch", "wizard", "wolf", "woman", "zombie"]
+        f2 = ["agents", "imps", "aliens", "angels", "animals", "armies", "assassins", "bandits", "blacksmiths", "boys",
+              "butchers", "cats", "children", "companions", "creators", "criminals", "cyborgs", "deceivers",
+              "defenders", "demons", "descendants", "doctors", "dogs", "dragons", "druids", "dwarves", "elves",
+              "enchanters", "enemies", "fairies", "fighters", "fish", "foes", "foreigners", "friends", "gangsters",
+              "ghosts", "giants", "girls", "gnomes", "goblins", "gods", "guardians", "heirs", "heroes", "hobgoblins",
+              "horses", "humans", "hunters", "invaders", "kings", "knights", "lions", "lords", "mages", "men",
+              "mermaids", "mermen", "mice", "monks", "necromancers", "nymphs", "officers", "ogres", "orcs", "owls",
+              "paladins", "persuers", "phantoms", "pilots", "pirates", "priests", "protectors", "rats", "rebels",
+              "robots", "rogues", "sages", "serpents", "shamans", "skeletons", "slaves", "snakes", "soldiers",
+              "spiders", "spies", "strangers", "summoners", "swindlers", "thieves", "traitors", "trees", "trolls",
+              "turtles", "vampires", "vultures", "warlocks", "warriors", "werewolves", "witches", "wives", "wizards",
+              "wolves", "women", "zombies"]
+        f3 = ["ancestry", "anger", "annihilation", "ascension", "bane", "beginning", "birth", "body", "border", "bow",
+              "burial", "carnage", "castle", "catacomb", "chamber", "chase", "coffin", "completion", "confinement",
+              "construction", "country", "creation", "crossbow", "crypt", "culling", "culmination", "curse", "death",
+              "decay", "defeat", "demise", "destiny", "dishonor", "disruption", "doom", "edge", "element",
+              "enchantment", "end", "extinction", "faction", "failure", "faith", "family", "fate", "fortune", "fruit",
+              "future", "game", "goal", "grave", "harmony", "hatred", "honor", "hope", "imprisonment", "inception",
+              "influence", "inspiration", "limit", "loss", "love", "luck", "magic", "mausoleum", "means", "misfortune",
+              "monument", "moon", "murder", "name", "nation", "obliteration", "origin", "palace", "perfection",
+              "planet", "rebirth", "reincarnation", "renewal", "restoration", "result", "revenge", "revival", "rise",
+              "root", "ruination", "ruins", "scourge", "shield", "source", "spear", "spells", "spire", "staff", "star",
+              "statue", "strife", "success", "surprise", "sword", "termination", "throne", "tomb", "tower", "tree",
+              "union", "unity", "vengeance", "victory", "vision", "wand", "will", "world"]
+        f4 = ["of autumn", "of darkness", "of dawn", "of deception", "of demons", "of desire", "of despair",
+              "of destruction", "of the rose", "of doom", "of dread", "of dreams", "of dusk", "of earth", "of eternity",
+              "of fire", "of fortune", "of freedom", "of glory", "of gold", "of greatness", "of heaven", "of hell",
+              "of history", "of hope", "of ice", "of infinity", "of insanity", "of limbo", "of magic", "of misfortune",
+              "of my dreams", "of my imagination", "of nature", "of nightmares", "of perfection", "of power",
+              "of rainbows", "of secrets", "of shadows", "of silver", "of snow", "of sorrow", "of spring", "of stone",
+              "of summer", "of the ancestors", "of the ancients", "of the banished", "of the banner", "of the bow",
+              "of the broken banner", "of the caves", "of the curse", "of the dagger", "of the dungeons", "of the east",
+              "of the eclipse", "of the end", "of the era", "of the eternal", "of the forest", "of the forsaken",
+              "of the future", "of the gods", "of the immortals", "of the king", "of the land", "of the light",
+              "of the lost ones", "of the mountain", "of the nation", "of the night", "of the north", "of the ocean",
+              "of the past", "of the plague", "of the prison", "of the river", "of the sea", "of the shadows",
+              "of the shield", "of the skull", "of the solstice", "of the south", "of the stars", "of the stockades",
+              "of the sword", "of the titans", "of the undead", "of the void", "of the west", "of the wind",
+              "of the world", "of time", "of tomorrow", "of twilight", "of utopia", "of water", "of whispers",
+              "of wind", "of winter", "of wood", "of yesterday", "with a goal", "with determination", "with gold",
+              "with honor", "with immortality", "with money", "with pride", "with silver", "with sins", "with strength",
+              "with vigor", "without a conscience", "without a goal", "without a home", "without a leader",
+              "without courage", "without desire", "without direction", "without duty", "without faith", "without fear",
+              "without flaws", "without glory", "without hate", "without honor", "without hope", "without shame",
+              "without sin", "without time"]
+        f5 = ["accepting", "admiring", "adopting", "altering", "amusing", "answering to", "arriving at", "avoiding",
+              "awakening", "bathing in", "battle", "battle of", "battling at", "battling in", "becoming", "begging in",
+              "belonging to", "bound to", "binding to", "bleeding at", "bleeding in", "blinded by", "blinded in",
+              "blood at", "blood in", "bravery at", "breaking", "breath of", "call to", "calling", "challenge of",
+              "challenging", "changing", "chasing", "choking in", "cleaning up", "clinging to", "commanding",
+              "confessions of", "controlling", "crying in", "dancing in", "dead at", "dead in", "death at", "death in",
+              "death to", "deceiving", "delaying", "destroying", "drinking at", "driving into", "dwelling in",
+              "eating at", "eliminating", "ending", "enhancing", "enter", "escape", "escaping", "fade into", "faith of",
+              "fighting", "flee to", "flying into", "force of", "forsaken by", "forsaking", "going to", "growing in",
+              "guarded by", "guarding", "healing", "helping", "hiding", "hunted by", "hunting", "hurt by", "hurting",
+              "ignoring", "inventing", "invited by", "jumping into", "justice in", "kicking", "laughing at", "leading",
+              "learning from", "life at", "life in", "listening to", "losing", "lurking in", "meeting at", "meeting in",
+              "memory of", "mending", "never trust", "origin of", "painting", "pleasing", "possessed by", "praise",
+              "praised by", "prepare for", "preparing for", "promises of", "punished by", "question", "raised by",
+              "reach of", "rejecting", "remember", "rescue at", "rescue in", "right about", "run for", "running in",
+              "sailing into", "scared at", "scared of", "screams at", "screams in", "searching at", "searching for",
+              "searching in", "separated at", "separated by", "separated in", "shelter at", "shelter in", "signs at",
+              "signs in", "signs of", "smile at", "smiles in", "songs of", "sounds in", "sounds of", "starting",
+              "still breathing in", "symbols in", "symbols of", "taste of", "temptations in", "temptations of",
+              "traces in", "travel to", "trust", "vanish at", "vanish in", "vanishing into", "visiting", "walking",
+              "weep for", "welcome to", "whispers in", "whispers of", "winning", "working", "write about",
+              "wrong about"]
+        f6 = ["a storm", "dreams", "eternity", "heaven", "hell", "history", "hope", "magic", "my country", "my destiny",
+              "my dreams", "my end", "my enemies", "my family", "my friends", "my future", "my home", "my leader",
+              "my nightmares", "my past", "nature", "nightmares", "secrets", "shields", "spells", "swords", "the abyss",
+              "the ancestors", "the angels", "the animals", "the apocolypse", "the beginning", "the castle",
+              "the catacombs", "the caves", "the champions", "the chasm", "the city", "the commander", "the country",
+              "the curse", "the dark", "the darkness", "the demons", "the depths", "the dungeons", "the east",
+              "the elements", "the emperor", "the end", "the eternals", "the firelands", "the fog", "the forest",
+              "the future", "the gods", "the graves", "the graveyard", "the guardians", "the heavens", "the hills",
+              "the home of demons", "the hunter", "the immortals", "the invaders", "the jungle", "the king",
+              "the leaders", "the light", "the maze", "the mist", "the moon", "the mountains", "the nation",
+              "the night", "the north", "the ocean", "the past", "the phantoms", "the pits", "the plague", "the river",
+              "the sea", "the shadows", "the ships", "the skies", "the slaves", "the south", "the swamp", "the titans",
+              "the tombs", "the town", "the universe", "the void", "the west", "the world", "time"]
+        f7 = ["of autumn", "of darkness", "of dawn", "of deception", "of demons", "of desire", "of despair",
+              "of destruction", "of the rose", "of doom", "of dread", "of dreams", "of dusk", "of earth", "of eternity",
+              "of fire", "of fortune", "of freedom", "of glory", "of gold", "of greatness", "of heaven", "of hell",
+              "of history", "of hope", "of ice", "of infinity", "of insanity", "of limbo", "of magic", "of misfortune",
+              "of my dreams", "of my imagination", "of nature", "of nightmares", "of perfection", "of power",
+              "of rainbows", "of secrets", "of shadows", "of silver", "of snow", "of sorrow", "of spring", "of stone",
+              "of summer", "of the ancestors", "of the ancients", "of the banished", "of the banner", "of the bow",
+              "of the broken banner", "of the caves", "of the curse", "of the dagger", "of the dungeons", "of the east",
+              "of the eclipse", "of the end", "of the era", "of the eternal", "of the forest", "of the forsaken",
+              "of the future", "of the gods", "of the immortals", "of the king", "of the land", "of the light",
+              "of the lost ones", "of the mountain", "of the nation", "of the night", "of the north", "of the ocean",
+              "of the past", "of the plague", "of the prison", "of the river", "of the sea", "of the shadows",
+              "of the shield", "of the skull", "of the solstice", "of the south", "of the stars", "of the stockades",
+              "of the sword", "of the titans", "of the undead", "of the void", "of the west", "of the wind",
+              "of the world", "of time", "of tomorrow", "of twilight", "of utopia", "of water", "of whispers",
+              "of wind", "of winter", "of wood", "of yesterday", "with a goal", "with determination", "with gold",
+              "with honor", "with immortality", "with money", "with pride", "with silver", "with sins", "with strength",
+              "with vigor", "without a conscience", "without a goal", "without a home", "without a leader",
+              "without courage", "without desire", "without direction", "without duty", "without faith", "without fear",
+              "without flaws", "without glory", "without hate", "without honor", "without hope", "without shame",
+              "without sin", "without time"]
+        i = randint(5)
+        if i == 0:
+            return str(f1[randint(len(f1))] + ' ' + f4[randint(len(f4))]).title()
+        elif i == 1:
+            return str(f2[randint(len(f2))] + ' ' + f4[randint(len(f4))]).title()
+        elif i == 2:
+            return str(f2[randint(len(f2))] + ' ' + f2[randint(len(f2))]).title()
+        elif i == 3:
+            return str(f3[randint(len(f3))] + ' ' + f7[randint(len(f7))]).title()
+        else:
+            return str(f5[randint(len(f5))] + ' ' + f6[randint(len(f6))]).title()
+
+    def Horror(self):
+        h1 = ["agent", "angel", "animal", "creature", "figure", "bat", "beast", "boy", "butcher", "cat", "child",
+              "colleague", "cook", "crow", "demon", "devil", "doctor", "dog", "fiend", "fish", "foreigner", "freak",
+              "friend", "ghost", "girl", "guest", "horror", "horse", "human", "hunter", "imp", "man", "monk", "monster",
+              "mutant", "neighbor", "owl", "phantom", "rat", "raven", "serpent", "shaman", "skeleton", "skinner",
+              "snake", "spider", "stranger", "student", "teacher", "tree", "visitor", "vulture", "wife", "witch",
+              "wolf", "woman", "zombie"]
+        h2 = ["agents", "angels", "animals", "creatures", "figures", "bats", "beasts", "boys", "butchers", "cats",
+              "children", "colleagues", "cooks", "crows", "demons", "dogs", "fiends", "fish", "foreigners", "freaks",
+              "friends", "ghosts", "girls", "guests", "horrors", "horses", "humans", "hunters", "imps", "men", "monks",
+              "monsters", "mutants", "neighbors", "owls", "phantoms", "rats", "serpents", "skeletons", "snakes",
+              "spiders", "strangers", "students", "teachers", "trees", "visitors", "vultures", "wives", "witches",
+              "wolves", "women", "zombies"]
+        h3 = ["ambushed", "blood", "bodies", "books", "captured", "carvings", "corruption", "temptation", "don't go",
+              "don't look", "drawings", "emblems", "eyes", "fire", "footprints", "footsteps", "giggling", "growls",
+              "grunts", "hands", "hidden", "laughter", "lights", "lost", "movement", "mumbling", "music", "noises",
+              "numbers", "paintings", "rituals", "screams", "secrets", "shadows", "signs", "singing", "songs", "sounds",
+              "symbols", "trapped", "trinkets", "vanished", "voices", "whispers", "working"]
+        h4 = ["asking questions", "asks weird questions", "at the catacombs", "at the crypts", "at the graveyard",
+              "at the hospital", "at the lake", "at the museum", "at the convention", "at the river", "at the tombs",
+              "behind me", "behind the counter", "behind the door", "behind you", "blinking twice", "during full moon",
+              "during halloween", "during lunch", "following me", "hiding from me", "in apartment B", "in my closet",
+              "in my dreams", "in my garden", "in my nightmares", "in my school", "in my street",
+              "in the abandoned house", "in the antique shop", "in the attic", "in the basement", "in the cabin",
+              "in the castle", "in the elevator", "in the field", "in the fog", "in the forest", "in the lake",
+              "in the library", "in the mirror", "in the mist", "in the mountain", "in the river", "in the store",
+              "looking at me", "next door", "of detention", "of hell", "of the forest", "of the mountain",
+              "of the night", "of the void", "on my roof", "on the ceiling", "under my bed", "who smiles", "who stare",
+              "with a smile", "with black hair", "with fire", "with rotten skin", "with white hair", "without a mouth",
+              "without a voice", "without eyes", "without teeth"]
+        h5 = ["abandoned in", "accepting", "afraid of", "afraid in", "alive in", "anguished by", "aware of",
+              "brave until", "blinded by", "calm until", "careful of", "cautious of", "confused by", "corrupted by",
+              "corrupted in", "crazy in", "defiant until", "defiant in", "brave in", "calm in", "defenseless in",
+              "dead in", "evil in", "frozen in", "frightened in", "foolish in", "forsaken in", "fatal in",
+              "growling in", "humble in", "hurt in", "horrified in", "hollowed by", "hidden in", "hidden by",
+              "helpless in", "haunted in", "haunted by", "knowing", "living in", "surviving", "lonely in", "mad in",
+              "miserable until", "mortified in", "motionless in", "mystery in", "numb in", "oblivious to",
+              "oblivious in", "pain in", "pained by", "rotten in", "ready for", "scared by", "scared in",
+              "somber until", "shaking in", "sweating in", "tempting until", "weeping at", "wicked until",
+              "wretched in"]
+        h6 = ["eternity", "hell", "history", "my demise", "my dreams", "my end", "my nightmares", "my past", "nature",
+              "nightmares", "secrets", "the abyss", "the catacombs", "the caves", "the chasm", "the city",
+              "the country", "the crypts", "the dark", "the darkness", "the depths", "the dungeons", "the elements",
+              "the end", "the fog", "the forest", "the graves", "the graveyard", "the hills", "the jungle", "the light",
+              "the maze", "the mist", "the mountains", "the night", "the north", "the ocean", "the pits", "the river",
+              "the sea", "the shadows", "the swamp", "the tombs", "the town", "the void", "time"]
+        h7 = ["at the catacombs", "at the convention", "at the crypts", "at the graveyard", "at the hospital",
+              "at the lake", "at the museum", "at the river", "at the tombs", "behind me", "behind the counter",
+              "behind the door", "behind you", "during full moon", "during halloween", "during lunch", "following me",
+              "hiding from me", "in apartment B", "in my closet", "in my dreams", "in my garden", "in my nightmares",
+              "in my school", "in my street", "in the abandoned house", "in the antique shop", "in the attic",
+              "in the basement", "in the cabin", "in the castle", "in the catacombs", "in the convention",
+              "in the crypts", "in the elevator", "in the field", "in the fog", "in the forest", "in the graveyard",
+              "in the hospital", "in the lake", "in the library", "in the mirror", "in the mist", "in the mountain",
+              "in the museum", "in the river", "in the store", "in the tombs", "next door", "on my roof",
+              "on the ceiling", "under my bed"]
+        i = randint(5)
+        if i == 0:
+            return str(h1[randint(len(h1))] + ' ' + h4[randint(len(h4))]).title()
+        elif i == 1:
+            return str(h2[randint(len(h2))] + ' ' + h4[randint(len(h4))]).title()
+        elif i == 2:
+            return str(h2[randint(len(h2))] + ' ' + h2[randint(len(h2))]).title()
+        elif i == 3:
+            return str(h3[randint(len(h3))] + ' ' + h7[randint(len(h7))]).title()
+        else:
+            return str(h5[randint(len(h5))] + ' ' + h6[randint(len(h6))]).title()
+
+    def Humor(self):
+        u1 = ["agent", "angel", "baker", "boy", "buffoon", "butcher", "cat", "chicken", "child", "clown", "comedian",
+              "companion", "criminal", "doctor", "dog", "fish", "foreigner", "friend", "girl", "fool", "harlequin",
+              "horse", "hunter", "jester", "king", "knight", "lord", "man", "mime", "mouse", "officer", "parrot", "pig",
+              "prankster", "queen", "rat", "raven", "rebel", "robot", "serpent", "soldier", "spider", "stranger",
+              "thief", "wife", "woman"]
+        u2 = ["agent", "angel", "baker", "boy", "buffoon", "butcher", "cat", "chicken", "child", "clown", "comedian",
+              "companion", "criminal", "doctor", "dog", "fish", "foreigner", "friend", "girl", "fool", "harlequin",
+              "horse", "hunter", "jester", "king", "knight", "lord", "man", "mime", "mouse", "officer", "parrot", "pig",
+              "prankster", "queen", "rat", "raven", "rebel", "robot", "serpent", "soldier", "spider", "stranger",
+              "thief", "wife", "woman"]
+        u3 = ["antics", "bags", "bliss", "buckets", "crying", "electricity", "farts", "fire", "fools", "gags", "humor",
+              "ignorance", "injury", "jokes", "journeys", "laughing", "laughter", "lyrics", "mirrors", "mischief",
+              "parody", "poems", "poop", "pranks", "secrets", "smoke", "songs", "spoofs", "stunts", "traps", "tricking",
+              "tricks", "trinkets", "trouble", "trust", "whispers"]
+        u4 = ["of jokes", "of gags", "of humor", "of laughs", "of parody", "of stunts", "with stunts", "of tomorrow",
+              "of the village", "of the city", "of the country", "from the mountains", "from the river",
+              "from the forests", "without a voice", "with big eyes", "project", "gamble", "program", "job", "design",
+              "deal", "plan", "setup", "affair", "program", "scheme", "strategy", "adventure", "exploit", "secret",
+              "in the window", "in the hallway", "in the museum", "on my journey", "during my travel", "arrangement",
+              "delusion", "wish", "puzzle", "makeover", "during the night", "can sing", "left me", "has been naughty",
+              "has a secret life", "on a day out", "with a hat", "mocks me", "prophecy", "can cook", "can dance",
+              "and my journey", "lives with me", "sleeps in my bed", "abroad", "loves sugar", "kicked me out",
+              "stalks me"]
+        u5 = ["accomplishment of", "active in", "adored by", "adventure in", "ambition of", "ambitious in", "amused by",
+              "anger of", "angry with", "blinded by", "bliss of", "brilliance of", "bruises of", "charm of",
+              "climax of", "confused by", "confusion of", "damage of", "damaged by", "delight of", "devoted to",
+              "discretion of", "elegance of", "embarrassed by", "evil of", "excited by", "excitement of", "failing of",
+              "favorite of", "frozen by", "glamour of", "glory of", "greed of", "help of", "helped by", "hidden by",
+              "hunger of", "ignorance of", "impressed by", "intelligence of", "intent of", "jealous of", "love for",
+              "love of", "luxury of", "madness of", "mystery of", "offense of", "pleased by", "power of", "puzzled by",
+              "respect for", "shame of", "simplicity of", "song of", "stupidity of", "suspicious of", "tired of",
+              "trust", "trust in", "victory of", "wealth of", "weight of", "whispers of", "word of"]
+        u6 = ["being lonely", "fantasy", "fire", "her laugh", "his laugh", "ice", "lies", "magic", "money",
+              "my actions", "my brother", "my design", "my friend", "my friends", "my idea", "my intentions",
+              "my island", "my journey", "my memories", "my parents", "my plan", "my pranks", "my project", "my sister",
+              "my system", "my teacher", "my town", "my trick", "my village", "nature", "that boy", "that girl",
+              "that idiot", "the boy", "the brothers", "the clown", "the design", "the device", "the fool", "the girl",
+              "the guard", "the idea", "the idiot", "the jester", "the job", "the joke", "the king", "the mayor",
+              "the maze", "the night", "the officer", "the pants", "the plan", "the pranks", "the president",
+              "the project", "the sisters", "the teacher", "the town", "the trick", "the truth", "the universe",
+              "the village", "traditions", "water"]
+        u7 = ["of jokes", "of gags", "of humor", "of laughs", "of parody", "of stunts", "with stunts", "of tomorrow",
+              "of the village", "of the city", "of the country", "from the mountains", "from the river",
+              "from the forests", "without a voice", "with big eyes", "project", "gamble", "program", "job", "design",
+              "deal", "plan", "setup", "affair", "program", "scheme", "strategy", "adventure", "exploit", "secret",
+              "in the window", "in the hallway", "in the museum", "on my journey", "during my travel", "arrangement",
+              "delusion", "wish", "puzzle", "makeover", "during the night", "can sing", "left me", "has been naughty",
+              "has a secret life", "on a day out", "with a hat", "mocks me", "prophecy", "can cook", "can dance",
+              "and my journey", "lives with me", "sleeps in my bed", "abroad", "loves sugar", "kicked me out",
+              "stalks me"]
+        i = randint(5)
+        if i == 0:
+            return str(u1[randint(len(u1))] + ' ' + u4[randint(len(u4))]).title()
+        elif i == 1:
+            return str(u2[randint(len(u2))] + ' ' + u4[randint(len(u4))]).title()
+        elif i == 2:
+            return str(u2[randint(len(u2))] + ' ' + u2[randint(len(u2))]).title()
+        elif i == 3:
+            return str(u3[randint(len(u3))] + ' ' + u7[randint(len(u7))]).title()
+        else:
+            return str(u5[randint(len(u5))] + ' ' + u6[randint(len(u6))]).title()
+
+    def Mystery(self):
+        m1 = ["agent", "angel", "army", "assassin", "baker", "bandit", "blacksmith", "boy", "butcher", "butterfly",
+              "cat", "changeling", "companion", "criminal", "cyborg", "defender", "doctor", "dog", "duchess", "duke",
+              "emperor", "enemy", "figure", "fish", "foe", "foreigner", "friend", "gangster", "giant", "vulture",
+              "descendant", "heir", "child", "creator", "girl", "god", "goddess", "guardian", "hawk", "hero", "horse",
+              "human", "invader", "king", "knight", "lion", "lord", "man", "medic", "mouse", "nymph", "officer",
+              "opponent", "owl", "parrot", "phantom", "pilot", "pirate", "priest", "priestess", "queen", "rat", "raven",
+              "hunter", "rebel", "robot", "sage", "savior", "serpent", "slave", "snake", "soldier", "spider", "spy",
+              "stranger", "swindler", "thief", "tortoise", "traitor", "tree", "turtle", "warrior", "wife", "witch",
+              "wolf", "woman"]
+        m2 = ["agents", "aliens", "armies", "assassins", "bandits", "blacksmiths", "boys", "butchers", "cats",
+              "companions", "criminals", "vultures", "descendants", "heirs", "children", "creators", "defenders",
+              "doctors", "dogs", "enemies", "figures", "fish", "foes", "foreigners", "friends", "gangsters", "giants",
+              "girls", "gods", "guardians", "heroes", "horses", "humans", "invaders", "kings", "knights", "lions",
+              "lords", "men", "mice", "officers", "owls", "phantoms", "pilots", "hunters", "pirates", "priests", "rats",
+              "rebels", "robots", "serpents", "slaves", "snakes", "soldiers", "spiders", "spies", "strangers",
+              "swindlers", "thieves", "traitors", "trees", "turtles", "warriors", "wives", "witches", "wolves", "women"]
+        m3 = ["achievement", "admiration", "appearance", "birth", "ceremony", "city", "clan", "relics", "clouds",
+              "code", "country", "crash", "creed", "cult", "death", "destruction", "dream", "dreams", "enigma",
+              "explosion", "faith", "fantasy", "fascination", "fog", "help", "illusion", "illusions", "key", "magic",
+              "map", "memories", "mists", "mystery", "nightmare", "nightmares", "oracle", "parable", "paradox",
+              "passage", "password", "picure", "prediction", "predictions", "puzzle", "puzzles", "question", "rain",
+              "rebirth", "restoration", "revival", "riddle", "road", "rune", "runes", "seclusion", "secret", "secrets",
+              "sect", "town", "treasure", "village", "vision", "visions", "worship"]
+        m4 = ["from beyond the grave", "in my city", "in my country", "in my garden", "in my house", "in my town",
+              "in my village", "in my yard", "in the city", "in the forest", "in the lake", "in the mountains",
+              "in the river", "of a beast", "of a cat", "of a creature", "of a dog", "of a friend", "of a man",
+              "of a painting", "of a person", "of a shadow", "of a star", "of a stranger", "of a woman",
+              "of an asteroid", "of an insect", "of animals", "of darkness", "of history", "of light", "of nature",
+              "of outer space", "of shadows", "of the caves", "of the chasm", "of the flowers", "of the forest",
+              "of the future", "of the galaxy", "of the lake", "of the moon", "of the mountain", "of the nether",
+              "of the ocean", "of the past", "of the river", "of the sea", "of the stars", "of the sun", "of the swamp",
+              "of the underground", "of the void", "of tomorrow", "of yesterday"]
+        m5 = ["abandoned by", "accomplishment of", "aching for", "adventure of", "age in", "age of", "alarmed by",
+              "amazed by", "amused by", "ashamed of", "astonished by", "aware of", "blinded by", "bound to",
+              "bravery for", "broken by", "calmed by", "caring for", "cautious of", "celebrate", "celebrated by",
+              "clueless about", "comforted by", "confronted by", "confused by", "conscious of", "corrupted by",
+              "created by", "crushed by", "curse of", "danger of", "deafened by", "death by", "death of", "depths of",
+              "disguised by", "doubting", "enchanted by", "enchantment of", "enlightened by", "essence of", "evil of",
+              "experiences of", "expert in", "faith of", "flaws of", "forsaken by", "frozen by", "gift of",
+              "growing by", "guilt of", "hated by", "hatred of", "help of", "hidden in", "hunger of", "idle in",
+              "jaded by", "love of", "loved by", "loyal to", "luck of", "moral of", "muted by", "nervous in", "old in",
+              "parallel of", "perfume of", "price of", "prize of", "shrouded by", "young in"]
+        m6 = ["a storm", "a tower", "darkness", "dreams", "eternity", "heaven", "hell", "history", "hope", "illusions",
+              "light", "my actions", "my destiny", "my dreams", "my future", "my home", "my house", "my life",
+              "my nightmares", "my past", "my secrets", "my sins", "my town", "my village", "nightmares",
+              "the beginning", "the black smoke", "the caves", "the chasm", "the cliffs", "the dark", "the depths",
+              "the dungeon", "the east", "the elements", "the end", "the fog", "the forest", "the future", "the light",
+              "the maze", "the mines", "the mist", "the moon", "the mountains", "the north", "the past", "the river",
+              "the south", "the stars", "the sun", "the west", "the white smoke", "the world", "time", "visions"]
+        m7 = ["from beyond the grave", "in my city", "in my country", "in my garden", "in my house", "in my town",
+              "in my village", "in my yard", "in the city", "in the forest", "in the lake", "in the mountains",
+              "in the river", "of a beast", "of a cat", "of a creature", "of a dog", "of a friend", "of a man",
+              "of a painting", "of a person", "of a shadow", "of a star", "of a stranger", "of a woman",
+              "of an asteroid", "of an insect", "of animals", "of darkness", "of history", "of light", "of nature",
+              "of outer space", "of shadows", "of the caves", "of the chasm", "of the flowers", "of the forest",
+              "of the future", "of the galaxy", "of the lake", "of the moon", "of the mountain", "of the nether",
+              "of the ocean", "of the past", "of the river", "of the sea", "of the stars", "of the sun", "of the swamp",
+              "of the underground", "of the void", "of tomorrow", "of yesterday"]
+        i = randint(5)
+        if i == 0:
+            return str(m1[randint(len(m1))] + ' ' + m4[randint(len(m4))]).title()
+        elif i == 1:
+            return str(m2[randint(len(m2))] + ' ' + m4[randint(len(m4))]).title()
+        elif i == 2:
+            return str(m2[randint(len(m2))] + ' ' + m2[randint(len(m2))]).title()
+        elif i == 3:
+            return str(m3[randint(len(m3))] + ' ' + m7[randint(len(m7))]).title()
+        else:
+            return str(m5[randint(len(m5))] + ' ' + m6[randint(len(m6))]).title()
+
+    def Nonfiction(self):
+        n1 = ["horses", "dogs", "people", "men", "women", "athletes", "children", "animals", "cats", "birds", "trees",
+              "flowers", "insects", "fungi", "grasses", "corals", "fish", "reptiles", "amphibians", "rodents",
+              "vultures", "pests", "predators", "preys", "crustaceans", "creatures", "angels", "devils", "demons",
+              "freaks", "fools", "herbs", "spices", "mice", "rats", "warriors", "ancients", "leaders", "followers",
+              "rulers", "kings", "queens", "emperors", "dinosaurs", "spirits", "friends", "enemies", "sinners",
+              "spiders", "snakes", "flies", "stars", "planets", "moons", "ancestors", "politicians"]
+        n2 = ["horses", "dogs", "people", "men", "women", "athletes", "children", "animals", "cats", "birds", "trees",
+              "flowers", "insects", "fungi", "grasses", "corals", "fish", "reptiles", "amphibians", "rodents",
+              "vultures", "pests", "predators", "preys", "crustaceans", "creatures", "angels", "devils", "demons",
+              "freaks", "fools", "herbs", "spices", "mice", "rats", "warriors", "ancients", "leaders", "followers",
+              "rulers", "kings", "queens", "emperors", "dinosaurs", "spirits", "friends", "enemies", "sinners",
+              "spiders", "snakes", "flies", "stars", "planets", "moons", "ancestors", "politicians"]
+        n3 = ["architecture", "art", "awards", "beaches", "books", "buildings", "candles", "capitals", "cars",
+              "castles", "cities", "clans", "comics", "constellations", "constructions", "cooking", "countries",
+              "crafting", "creations", "crimes", "currencies", "customs", "deception", "disasters", "diseases",
+              "drinks", "dungeons", "education", "elements", "empires", "events", "fantasy", "farming", "farms",
+              "festivals", "fields", "fires", "flags", "food", "furniture", "gems", "gods", "gold", "guardians",
+              "guilds", "harmony", "harvest", "help", "holidays", "hope", "instruments", "iron", "languages", "love",
+              "magic", "medicine", "miracles", "money", "monuments", "music", "nations", "nature", "ores", "paintings",
+              "phones", "photos", "planes", "populations", "prisons", "prophets", "resources", "robots", "schools",
+              "science", "secrets", "shields", "ships", "sights", "signs", "silver", "sins", "societies", "spells",
+              "statues", "swords", "technology", "towns", "traditions", "trains", "travelling", "tv", "vehicles",
+              "volcanos", "wars", "waters", "wealth", "weapons", "weather", "wonders", "working"]
+        n4 = ["around the world", "in the wild", "in your garden", "of dreams", "of heaven", "of hell", "of history",
+              "of magic", "of medicine", "of our realm", "of science", "of stone", "of technology", "of the caves",
+              "of the decade", "of the depths", "of the east", "of the fields", "of the forest", "of the future",
+              "of the harvest", "of the hunt", "of the jungle", "of the lakes", "of the mountains", "of the north",
+              "of the oceans", "of the past", "of the planet", "of the revolution", "of the rivers", "of the seas",
+              "of the sky", "of the south", "of the swamp", "of the universe", "of the west", "of the world", "of time",
+              "of tomorrow", "of yesterday", "of your dreams", "per continent", "per country", "per realm",
+              "with skills", "with style", "with tradition", "without borders", "without limits",
+              "without restrictions"]
+        n5 = ["academics of", "admiration of", "adoration of", "advancement of", "adventures of", "afraid of", "age of",
+              "alarmed by", "alive in", "amazed by", "amazing", "amused by", "amusing", "ancient", "annual", "antique",
+              "aromas of", "athletics of", "awesome", "basic", "blinded by", "bored by", "bored of", "brave",
+              "brilliant", "broken", "cautious of", "classic", "clever", "colors of", "comfort of", "confusing",
+              "creating", "creative", "dangers of", "demand for", "differences of", "digital", "digitize",
+              "elegance of", "emotions of", "ethics of", "excellence of", "excellent", "expert", "experts of",
+              "fame of", "famous", "fantasy of", "father of", "fears of", "flaws of", "focus on", "fortunes of",
+              "friends of", "glamor of", "grace of", "curse of", "memory of", "dawn of", "greed of", "happy", "harmful",
+              "helpful", "hidden", "honest", "honor of", "honored by", "idolized", "infamous", "innocence of",
+              "intelligence of", "intelligent", "joy of", "known", "lasting", "life with", "limits of", "lost",
+              "love for", "love of", "luck of", "majestic", "misery of", "mother of", "mysterious", "mystery of",
+              "nature of", "nifty", "notable", "odd", "outlandish", "perfume of", "political", "popular", "powerful",
+              "precious", "prestigious", "pure", "rare", "respect", "respect for", "safe", "scared of", "scented",
+              "secret", "strange", "stunning", "temptations of", "tempted by", "the best", "united", "united as",
+              "unusual", "wanted", "welcome to", "wonders of"]
+        n6 = ["aliens", "androids", "animals", "art", "babies", "biology", "neverland", "chemistry", "children",
+              "cooking", "drawing", "dreams", "earth", "education", "fantasy", "history", "imagination", "keeping pets",
+              "magic", "maths", "medicine", "men", "my country", "my home", "nature", "new earth", "nightmares",
+              "painting", "people", "pets", "physics", "robots", "science", "space", "technology", "teenagers",
+              "the caves", "the depths", "the forest", "the future", "the galaxy", "the lakes", "the lands",
+              "the mountains", "the oceans", "the past", "the planet", "the rivers", "the seas", "the swamps",
+              "the world", "time", "time travel", "today", "tomorrow", "women", "yesterday", "young adults",
+              "your family", "your garden", "your home"]
+        n7 = ["around the world", "in the wild", "in your garden", "of dreams", "of heaven", "of hell", "of history",
+              "of magic", "of medicine", "of our realm", "of science", "of stone", "of technology", "of the caves",
+              "of the decade", "of the depths", "of the east", "of the fields", "of the forest", "of the future",
+              "of the harvest", "of the hunt", "of the jungle", "of the lakes", "of the mountains", "of the north",
+              "of the oceans", "of the past", "of the planet", "of the revolution", "of the rivers", "of the seas",
+              "of the sky", "of the south", "of the swamp", "of the universe", "of the west", "of the world", "of time",
+              "of tomorrow", "of yesterday", "of your dreams", "per continent", "per country", "per realm",
+              "with skills", "with style", "with tradition", "without borders", "without limits",
+              "without restrictions"]
+        i = randint(5)
+        if i == 0:
+            return str(n1[randint(len(n1))] + ' ' + n4[randint(len(n4))]).title()
+        elif i == 1:
+            return str(n2[randint(len(n2))] + ' ' + n4[randint(len(n4))]).title()
+        elif i == 2:
+            return str(n2[randint(len(n2))] + ' ' + n2[randint(len(n2))]).title()
+        elif i == 3:
+            return str(n3[randint(len(n3))] + ' ' + n7[randint(len(n7))]).title()
+        else:
+            return str(n5[randint(len(n5))] + ' ' + n6[randint(len(n6))]).title()
+
+    def Romance(self):
+        r1 = ["admirer", "angel", "assistant", "beloved", "boy", "boyfriend", "colleague", "cook", "darling", "dear",
+              "dearest", "duchess", "duke", "fianc�", "flame", "foreigner", "friend", "girl", "girlfriend", "god",
+              "goddess", "guest", "heartthrob", "honey", "husband", "knight", "ladylove", "love", "lovebird", "lover",
+              "maid", "man", "mistress", "neighbor", "nymph", "queen", "roommate", "secret admirer", "servant",
+              "stranger", "suitor", "sweetheart", "sweetie", "truelove", "valentine", "visitor", "wife", "woman"]
+        r2 = ["admirers", "angels", "assistants", "beloved", "boys", "boyfriends", "butterflies", "darlings", "dears",
+              "dearests", "foreigners", "friends", "girls", "girlfriends", "gods", "guests", "heartthrobs", "honeys",
+              "husbands", "knights", "ladyloves", "loves", "lovebirds", "lovers", "men", "mistresses", "nymphs",
+              "queens", "roommates", "secret admirers", "strangers", "suitors", "sweethearts", "sweeties", "trueloves",
+              "valentines", "visitors", "wifes", "women", "servants", "neighbors", "colleagues"]
+        r3 = ["accident", "beginning", "birth", "body", "chase", "choice", "climax", "completion", "creation",
+              "destiny", "determination", "disruption", "edge", "element", "end", "evening", "fluke", "fortune",
+              "foundation", "fruit", "future", "game", "hug", "inspiration", "kiss", "limit", "loss", "love", "luck",
+              "lust", "memory", "name", "night", "origin", "passion", "perfection", "reality", "restoration", "result",
+              "rise", "romance", "root", "scent", "source", "surprise", "vision", "will", "world"]
+        r4 = ["at my school", "at my work", "in my town", "in the forest", "in the mountain", "in the night",
+              "in the river", "of the rose", "of bliss", "of dawn", "of desire", "of devotion", "of eternity",
+              "of fire", "of fond memories", "of fortune", "of freedom", "of heaven", "of hell", "of hope",
+              "of insanity", "of joy", "of love", "of lust", "of my admiration", "of my adoration", "of my childhood",
+              "of my dreams", "of my fascination", "of my imagination", "of my mind", "of paradise", "of passion",
+              "of perfection", "of rainbows", "of reality", "of romance", "of silver", "of the evening",
+              "of the forest", "of the mountains", "of the night", "of the north", "of the ocean", "of the river",
+              "of the sea", "of the solstice", "of the south", "of the stars", "of the west", "of tomorrow",
+              "of yearning", "of yesterday", "with a cheeky smile", "with a crush", "with a hat", "with black hair",
+              "with blond hair", "with blue eyes", "with brown hair", "with curly hair", "with freckles",
+              "with funny socks", "with green eyes", "with hazel eyes", "with red hair", "with white hair",
+              "with wings", "without fear", "without flaws", "without shame", "without time"]
+        r5 = ["accepting", "aching for", "admiring", "adored by", "adoring", "altering", "amusing", "answering",
+              "assured by", "attracted to", "avoiding", "awakening in", "bathing in", "becoming", "belonging to",
+              "bound to", "blinded by", "breath of", "calling", "changing", "chasing", "clinging to", "comforted by",
+              "confessions of", "dancing with", "controlling", "cuddling", "dance of", "devoted to", "escaping",
+              "excited by", "exciting", "flustered by", "frozen by", "guarded by", "guarding", "happy for", "helping",
+              "hope for", "hunted by", "hurt by", "intelligent", "kind", "kissing", "learning from", "listening to",
+              "lonely without", "losing", "loved by", "loving", "lucky with", "memory of", "oblivious to", "pleasing",
+              "possessed by", "praise", "praised by", "prepare for", "preparing for", "promises of", "punished by",
+              "rejecting", "remember", "scared of", "searching for", "separated by", "smile at", "songs of",
+              "sounds of", "strange", "symbols of", "talk about", "talk to", "taste of", "temptations of", "travel to",
+              "trust", "visited by", "visiting", "walking", "welcome to", "whispers in", "whispers of", "write about",
+              "wrong about"]
+        r6 = ["adoration", "affection", "dreams", "eternity", "friendship", "her", "her friends", "her parents", "him",
+              "his friends", "his parents", "love", "lust", "my admirer", "my boyfriend", "my dreams", "my friend",
+              "my future", "my girl", "my girlfriend", "my guy", "my husband", "my man", "my nightmares", "my past",
+              "my secret admirer", "my sweetheart", "my wife", "myself", "passion", "secrets", "the ", "the husband",
+              "the night", "the river", "the sea", "the shadows", "the stars", "the stranger", "the wife", "time"]
+        r7 = ["at my school", "at my work", "in my town", "in the forest", "in the mountain", "in the night",
+              "in the river", "of bliss", "of dawn", "of desire", "of devotion", "of eternity", "of fire",
+              "of fond memories", "of fortune", "of freedom", "of heaven", "of hell", "of hope", "of insanity",
+              "of joy", "of love", "of lust", "of my admiration", "of my adoration", "of my childhood", "of my dreams",
+              "of my fascination", "of my imagination", "of my mind", "of paradise", "of passion", "of perfection",
+              "of rainbows", "of reality", "of romance", "of silver", "of the evening", "of the forest",
+              "of the mountains", "of the night", "of the north", "of the ocean", "of the river", "of the sea",
+              "of the solstice", "of the south", "of the stars", "of the west", "of tomorrow", "of yearning",
+              "of yesterday"]
+        i = randint(5)
+        if i == 0:
+            return str(r1[randint(len(r1))] + ' ' + r4[randint(len(r4))]).title()
+        elif i == 1:
+            return str(r2[randint(len(r2))] + ' ' + r4[randint(len(r4))]).title()
+        elif i == 2:
+            return str(r2[randint(len(r2))] + ' ' + r2[randint(len(r2))]).title()
+        elif i == 3:
+            return str(r3[randint(len(r3))] + ' ' + r7[randint(len(r7))]).title()
+        else:
+            return str(r5[randint(len(r5))] + ' ' + r6[randint(len(r6))]).title()
+
+    def SciFi(self):
+        s1 = ["agent", "alien", "android", "angel", "army", "assassin", "beast", "boy", "captain", "child", "clone",
+              "commander", "creator", "creature", "cyborg", "defender", "director", "doctor", "droid", "emperor",
+              "enemy", "figure", "foreigner", "friend", "girl", "guardian", "guest", "hero", "human", "hunter",
+              "intruder", "invader", "leader", "man", "martian", "medic", "mercenary", "officer", "pilot", "rebel",
+              "recruit", "robot", "soldier", "spy", "stranger", "traitor", "veteran", "visitor", "volunteer", "woman"]
+        s2 = ["agents", "aliens", "androids", "armies", "assassins", "beasts", "boys", "captains", "children", "clones",
+              "commanders", "creators", "creatures", "cyborgs", "defenders", "directors", "doctors", "droids",
+              "emperors", "enemies", "figures", "foreigners", "friends", "girls", "guardians", "guests", "heroes",
+              "humans", "hunters", "intruders", "invaders", "leaders", "men", "martians", "medics", "mercenaries",
+              "officers", "pilots", "rebels", "recruits", "robots", "soldiers", "spies", "strangers", "traitors",
+              "veterans", "visitors", "volunteers", "women"]
+        s3 = ["ambush", "appearance", "ascension", "battle", "beginning", "betrayal", "birth", "border", "carnage",
+              "carvings", "chase", "confinement", "construction", "corruption", "creation", "culling", "death",
+              "deception", "defeat", "demise", "destiny", "destruction", "disruption", "doom", "edge", "element", "end",
+              "monument", "monuments", "statue", "statues", "exploration", "extermination", "extinction", "fate",
+              "future", "hatred", "honor", "hope", "inception", "influence", "inspiration", "loss", "love", "monument",
+              "moon", "murder", "nation", "obliteration", "origin", "planet", "rebirth", "reincarnation", "restoration",
+              "result", "revenge", "revival", "rise", "root", "ruins", "scourge", "signs", "source", "star", "statue",
+              "symbols", "throne", "victory", "world"]
+        s4 = ["of the sun", "of the moon", "of outer space", "on my ship", "of the galaxy", "of eternity",
+              "from outer space", "of war", "of aliens", "of life", "of death", "of time", "of the dead", "of darkness",
+              "of the void", "of the vacuum", "of the new world", "of earth", "of new earth", "of the sands",
+              "of the ocean", "of the crash", "of the flight", "of the orbit", "of space", "of the worlds",
+              "of the universe", "of the future", "of the past", "of everywhere", "of nowhere", "of the stars",
+              "of stardust", "of moondust", "with tentacles", "with four eyes", "with spaceships", "with a spaceship",
+              "with a UFO", "from the UFO", "in the news", "from the portal", "in the portal", "in the past",
+              "in the future", "in the center of the earth", "in the beginning of time", "of new worlds",
+              "of our legacy", "of men's legacy", "of earth's legacy", "of the fallen", "of our culture", "of honor",
+              "of exploration", "of our ship", "of our destiny", "of our future", "of the outlands", "of sunshine",
+              "of mars", "on mars"]
+        s5 = ["abandoned by", "abandoned in", "abandoned on", "admiration for", "afraid of", "alerted by", "alive in",
+              "alive on", "anxious for", "basic", "better", "blindd by", "bored by", "broken", "caution of",
+              "cautious of", "celebrating", "changed by", "closed for", "colors of", "complexity of", "confused by",
+              "courage for", "crazy of", "created by", "cultured by", "darkness of", "defenseless against",
+              "demand for", "dependent on", "devoted to", "disguised by", "disguised in", "elegance of", "equality in",
+              "equality of", "experience in", "experience of", "failing of", "failure of", "father of", "favor of",
+              "fixed in", "fortune of", "frightened of", "frozen by", "gift of", "glory of", "greed of", "haunted by",
+              "hidden by", "hidden in", "inspired by", "intelligence in", "joy of", "life after", "life in",
+              "life with", "light of", "limits of", "lonely in", "longing for", "lost in", "married to", "mother of",
+              "mystery of", "open to", "origin of", "perfection of", "puzzle of", "right for", "secrets of",
+              "security of", "serenity of", "sins of", "stranger to", "understanding"]
+        s6 = ["a new war", "a nuclear war", "a nuclear winter", "a rise of machines", "a robot takeover", "aliens",
+              "androids", "droids", "electricity", "eternity", "first contact", "moon rocks", "moondust",
+              "my android servant", "my journey", "my planet", "my space journey", "new earth", "new technology",
+              "orbit", "orbital flight", "outer space", "robotic control", "robots", "solar flares", "space flight",
+              "stardust", "technolic advancements", "technology", "the aliens", "the armies", "the depths", "the end",
+              "the end of earth", "the end of the sun", "the eyes", "the fog", "the galaxy", "the guests",
+              "the immortals", "the intruders", "the legends", "the machines", "the mists", "the moon", "the new age",
+              "the new gods", "the new planet", "the new world", "the ocean", "the portal", "the revolution",
+              "the robotic police", "the secrets", "the secrets of the ocean", "the stars", "the sun", "the titans",
+              "the troopers", "the truth", "the vacuum", "the void", "the void of space", "time travel",
+              "time travellers"]
+        s7 = ["from outer space", "of alien life", "of aliens", "of darkness", "of death", "of earth",
+              "of earth's legacy", "of eternity", "of everywhere", "of exploration", "of honor", "of life", "of mars",
+              "of men's legacy", "of moondust", "of new earth", "of new life", "of new worlds", "of nowhere",
+              "of our culture", "of our destiny", "of our future", "of our legacy", "of our ship", "of outer space",
+              "of robots", "of society", "of space", "of stardust", "of sunshine", "of the aliens", "of the androids",
+              "of the crash", "of the dead", "of the droids", "of the faceless ones", "of the fallen", "of the flight",
+              "of the future", "of the galaxy", "of the intruders", "of the invaders", "of the moon",
+              "of the new order", "of the new world", "of the ocean", "of the orbit", "of the outlands", "of the past",
+              "of the planet", "of the sands", "of the stars", "of the sun", "of the universe", "of the vacuum",
+              "of the void", "of the worlds", "of time", "of war", "on mars", "on my ship"]
+        i = randint(5)
+        if i == 0:
+            return str(s1[randint(len(s1))] + ' ' + s4[randint(len(s4))]).title()
+        elif i == 1:
+            return str(s2[randint(len(s2))] + ' ' + s4[randint(len(s4))]).title()
+        elif i == 2:
+            return str(s2[randint(len(s2))] + ' ' + s2[randint(len(s2))]).title()
+        elif i == 3:
+            return str(s3[randint(len(s3))] + ' ' + s7[randint(len(s7))]).title()
+        else:
+            return str(s5[randint(len(s5))] + ' ' + s6[randint(len(s6))]).title()
+
+    def Tome(self):
+        t1 = ["Alpha", "Amnesia", "Apostle", "Aqua", "Ash", "Ashes", "Ataraxia", "Benediction", "Blackfire", "Blackout",
+              "Blazefury", "Blazewing", "Brilliance", "Brilliancy", "Brimstone", "Celeste", "Celestia", "Chaos",
+              "Chaossong", "Clarity", "Clemence", "Cometfall", "Consecration", "Contortion", "Cosmos", "Covergence",
+              "Cryptic", "Cryptkeeper", "Dawn", "Dawne", "Dawnlight", "Daydream", "Deathsong", "Deluge", "Delusion",
+              "Dementia", "Doombinder", "Doomguard", "Doomshadow", "Doomward", "Dragonbane", "Dragonfire",
+              "Dragonwrath", "Draughtbane", "Dreambinder", "Dreamkiss", "Dreamshadow", "Dreamsong", "Dreamwhisper",
+              "Duskshadow", "Dusksong", "Earthshadow", "Earthsong", "Ebony", "Echo", "Eclipse", "Endgame", "Enigma",
+              "Featherfall", "Ferallity", "Fireweaver", "Flamebound", "Flameguard", "Flameward", "Fluke", "Flux",
+              "Frenzy", "Frostbound", "Frostguard", "Frostward", "Fury", "Ghost", "Glimmer", "Grieve", "Harmony",
+              "Hubris", "Hysteria", "Inertia", "Insanity", "Insight", "Ivory", "Labyrinth", "Lament", "Lazarus",
+              "Lifebender", "Lifebinder", "Lightbane", "Limbo", "Lorebinder", "Lorekeeper", "Lull", "Lullaby", "Malice",
+              "Memoire", "Mercy", "Midnight", "Mirage", "Moonbeam", "Moonlight", "Moonshadow", "Moonshard", "Mystery",
+              "Necrosong", "Nemesis", "Netherbane", "Nethersong", "Nexus", "Nightfall", "Nightkiss", "Nightmare",
+              "Nimble", "Nirvana", "Nymph", "Oath", "Oathkeeper", "Oblivion", "Omega", "Omen", "Oracle", "Peacesong",
+              "Penance", "Persuasion", "Phantom", "Phantomdream", "Phantomlight", "Phantomsong", "Phobia", "Pride",
+              "Prime", "Prophecy", "Prudence", "Pureheart", "Purgatory", "Purity", "Pursuit", "Reflection", "Remorse",
+              "Requiem", "Retribution", "Revelation", "Riddle", "Sanguine", "Sapience", "Scarlet", "Serenity",
+              "Shadowbane", "Shadowbinder", "Shadowbound", "Shadowfall", "Silence", "Silverglow", "Silverlight",
+              "Sleepwalker", "Snowfall", "Snowflake", "Solarflare", "Solarsong", "Soulbinder", "Souleater", "Soulflare",
+              "Soulkeeper", "Soulshadow", "Soulsiphon", "Soulsliver", "Soulspell", "Spark", "Spellbinder", "Spellbound",
+              "Spellkeeper", "Spellsong", "Stardust", "Starfall", "Starlight", "Stormrage", "Sunlight", "Supinity",
+              "Suspension", "Thorn", "Torment", "Torrent", "Trance", "Tranquillity", "Trinity", "Twinkle", "Twitch",
+              "Valhalla", "Verdict", "Visage", "Void", "Whisper", "Whispersong", "Whisperwind", "Willbinder",
+              "Windweaver"]
+        t2 = ["Ancient", "Antique", "Apocalypse", "Apocalyptic", "Arcane", "Arched", "Atuned", "Bandit's", "Baneful",
+              "Banished", "Barbarian", "Barbaric", "Battleworn", "Blazefury", "Blood Infused", "Blood-Forged",
+              "Bloodcursed", "Bloodied", "Bloodlord's", "Bloodsurge", "Bloodvenom", "Bonecarvin", "Brutal", "Brutality",
+              "Burnished", "Cataclysm", "Cataclysmic", "Challenger", "Challenger's", "Champion", "Champion's",
+              "Cold-Forged", "Conqueror", "Conqueror's", "Corroded", "Corrupted", "Crazed", "Crying", "Cursed",
+              "Curved", "Dancing", "Dark", "Darkness", "Defender", "Defender's", "Defiled", "Defiling", "Deluded",
+              "Demonic", "Deserted", "Desire's", "Desolation", "Destiny's", "Diabolical", "Dire", "Doom", "Doom's",
+              "Dragon's", "Dragonbreath", "Eerie", "Enchanted", "Engraved", "Enlightened", "Eternal", "Exiled",
+              "Extinction", "Faith's", "Faithful", "Fancy", "Fearful", "Feral", "Ferocious", "Fierce", "Fiery",
+              "Fire Infused", "Fireguard", "Firesoul", "Firestorm", "Flaming", "Flimsy", "Forsaken", "Fortune's",
+              "Foul", "Fragile", "Frail", "Frenzied", "Frost", "Frozen", "Furious", "Fusion", "Ghastly", "Ghost",
+              "Ghost-Forged", "Ghostly", "Gladiator", "Gladiator's", "Gleaming", "Glinting", "Greedy", "Grieving",
+              "Grim", "Guard's", "Guardian's", "Hailstorm", "Harmonized", "Hateful", "Haunted", "Heartless", "Heinous",
+              "Hero", "Hero's", "Hollow", "Holy", "Honed", "Honor's", "Hope's", "Hopeless", "Howling", "Hungering",
+              "Improved", "Impure", "Incarnated", "Infused", "Inherited", "Isolated", "Jade Infused", "Judgement",
+              "Keeper's", "Knightly", "Knight's", "Legionnaire's", "Liar's", "Lich", "Lightning", "Lonely", "Loyal",
+              "Lustful", "Lusting", "Malevolent", "Malicious", "Malificent", "Malignant", "Massive", "Mended",
+              "Mercenary", "Military", "Misfortune's", "Misty", "Moonlit", "Mourning", "Nightmare", "Oathkeeper's",
+              "Ominous", "Peacekeeper", "Peacekeeper's", "Phantom", "Polished", "Possessed", "Pride's", "Prideful",
+              "Primal", "Prime", "Primitive", "Promised", "Protector's", "Proud", "Pure", "Putrid", "Raging",
+              "Recruit's", "Refined", "Reforged", "Reincarnated", "Relentless", "Remorseful", "Renewed", "Renovated",
+              "Replica", "Restored", "Retribution", "Ritual", "Roaring", "Ruby Infused", "Rune-Forged", "Runed",
+              "Rusty", "Savage", "Sentinel", "Shadow", "Shamanic", "Sharpened", "Silent", "Singed", "Singing",
+              "Sinister", "Skyfall", "Smooth", "Soldier's", "Solitude's", "Sorcerer's", "Sorrow's", "Soul",
+              "Soul Infused", "Soul-Forged", "Soulcursed", "Soulless", "Spectral", "Spectral-Forged", "Spiteful",
+              "Storm", "Storm-Forged", "Stormfury", "Stormguard", "Terror", "Thirsting", "Thirsty", "Thunder",
+              "Thunder-Forged", "Thunderfury", "Thunderguard", "Thundersoul", "Thunderstorm", "Timeworn", "Tormented",
+              "Trainee's", "Treachery's", "Twilight", "Twilight's", "Twisted", "Tyrannical", "Undead", "Unholy",
+              "Vanquisher", "Vengeance", "Vengeful", "Venom", "Vicious", "Victor", "Vile", "Vindication", "Vindicator",
+              "Vindictive", "Void", "Volcanic", "Vowed", "War", "War-Forged", "Warden's", "Warlord's", "Warp", "Warped",
+              "Warrior", "Warrior's", "Whistling", "Wicked", "Wind's", "Wind-Forged", "Windsong", "Woeful", "Wrathful",
+              "Wretched", "Yearning", "Zealous"]
+        t3 = ["Tome", "Ledger", "Scroll", "Book", "Grimoire", "Compendium", "Manual", "Handbook", "Battletome",
+              "Manuscript", "Lexicon", "Codex", "Syllabus", "Epitome", "Grimoire", "Book", "Scroll", "Tome"]
+        t4 = ["Tome", "Ledger", "Scroll", "Book", "Grimoire", "Compendium", "Manual", "Handbook", "Battletome",
+              "Manuscript", "Lexicon", "Codex", "Syllabus", "Epitome", "Grimoire", "Book", "Scroll", "Tome",
+              "Allegiance", "Annihilation", "Betrayer", "Bond", "Boon", "Breaker", "Bringer", "Bruiser", "Call",
+              "Champion", "Conqueror", "Crusader", "Cry", "Cunning", "Dawn", "Defender", "Defiler", "Destroyer",
+              "Destruction", "Edge", "Ender", "Executioner", "Fan", "Favor", "Ferocity", "Foe", "Gift", "Glory",
+              "Guardian", "Heirloom", "Hope", "Incarnation", "Last Hope", "Last Stand", "Legacy", "Memory", "Might",
+              "Oath", "Pact", "Pledge", "Promise", "Prophecy", "Protector", "Ravager", "Reach", "Sculptor", "Secret",
+              "Slayer", "Soul", "Terror", "Token", "Touch", "Tribute", "Vengeance", "Voice", "Whisper", "Wit"]
+        t5 = ["of Agony", "of Ancient Power", "of Anguish", "of Ashes", "of Assassins", "of Black Magic",
+              "of Blessed Fortune", "of Blessings", "of Blight", "of Blood", "of Bloodlust", "of Broken Bones",
+              "of Broken Dreams", "of Broken Families", "of Burdens", "of Chaos", "of Closing Eyes",
+              "of Conquered Worlds", "of Corruption", "of Cruelty", "of Cunning", "of Dark Magic", "of Dark Souls",
+              "of Darkness", "of Decay", "of Deception", "of Degradation", "of Delusions", "of Denial",
+              "of Desecration", "of Diligence", "of Dismay", "of Dragonsouls", "of Due Diligence", "of Echoes",
+              "of Ended Dreams", "of Ending Hope", "of Ending Misery", "of Eternal Bloodlust", "of Eternal Damnation",
+              "of Eternal Glory", "of Eternal Justice", "of Eternal Rest", "of Eternal Sorrow", "of Eternal Struggles",
+              "of Eternity", "of Executions", "of Faded Memories", "of Fallen Souls", "of Fools", "of Frost",
+              "of Frozen Hells", "of Fury", "of Giants", "of Giantslaying", "of Grace", "of Grieving Widows", "of Hate",
+              "of Hatred", "of Hell's Games", "of Hellish Torment", "of Heroes", "of Holy Might", "of Honor", "of Hope",
+              "of Horrid Dreams", "of Horrors", "of Illuminated Dreams", "of Illumination", "of Immortality",
+              "of Inception", "of Infinite Trials", "of Insanity", "of Invocation", "of Justice", "of Light's Hope",
+              "of Lost Comrades", "of Lost Hope", "of Lost Voices", "of Lost Worlds", "of Magic", "of Mercy",
+              "of Misery", "of Mountains", "of Mourning", "of Mystery", "of Necromancy", "of Nightmares", "of Oblivion",
+              "of Perdition", "of Phantoms", "of Power", "of Pride", "of Pride's Fall", "of Putrefaction",
+              "of Reckoning", "of Redemption", "of Regret", "of Riddles", "of Secrecy", "of Secrets",
+              "of Shadow Strikes", "of Shadows", "of Shifting Sands", "of Shifting Worlds", "of Silence",
+              "of Slaughter", "of Souls", "of Stealth", "of Storms", "of Subtlety", "of Suffering",
+              "of Suffering's End", "of Summoning", "of Terror", "of Thunder", "of Time-Lost Memories",
+              "of Timeless Battles", "of Titans", "of Torment", "of Traitors", "of Trembling Hands", "of Trials",
+              "of Truth", "of Twilight's End", "of Twisted Visions", "of Unholy Blight", "of Unholy Might",
+              "of Vengeance", "of Visions", "of Wasted Time", "of Widows", "of Wizardry", "of Woe", "of Wraiths",
+              "of Zeal", "of the Ancients", "of the Banished", "of the Basilisk", "of the Beast", "of the Blessed",
+              "of the Breaking Storm", "of the Brotherhood", "of the Burning Sun", "of the Caged Mind",
+              "of the Cataclysm", "of the Champion", "of the Claw", "of the Corrupted", "of the Covenant",
+              "of the Crown", "of the Damned", "of the Daywalker", "of the Dead", "of the Depth", "of the Dreadlord",
+              "of the Earth", "of the East", "of the Emperor", "of the Empty Void", "of the End", "of the Enigma",
+              "of the Fallen", "of the Falling Sky", "of the Flame", "of the Forest", "of the Forgotten",
+              "of the Forsaken", "of the Gladiator", "of the Harvest", "of the Immortal", "of the Incoming Storm",
+              "of the Insane", "of the King", "of the Lasting Night", "of the Leviathan", "of the Light", "of the Lion",
+              "of the Lionheart", "of the Lone Victor", "of the Lone Wolf", "of the Lost", "of the Moon",
+              "of the Moonwalker", "of the Night Sky", "of the Night", "of the Nightstalker", "of the North",
+              "of the Occult", "of the Oracle", "of the Phoenix", "of the Plague", "of the Prince", "of the Protector",
+              "of the Queen", "of the Serpent", "of the Setting Sun", "of the Shadows", "of the Sky", "of the South",
+              "of the Stars", "of the Storm", "of the Summoner", "of the Sun", "of the Sunwalker", "of the Talon",
+              "of the Undying", "of the Victor", "of the Void", "of the West", "of the Whispers", "of the Wicked",
+              "of the Wind", "of the Wolf", "of the World", "of the Wretched"]
+        num = randint(3)
+        if num == 0:
+            return t1[randint(len(t1))]
+        elif num == 1:
+            return t2[randint(len(t2))] + ' ' + t3[randint(len(t3))]
+        else:
+            return t1[randint(len(t1))] + ', ' + t4[randint(len(t4))] + ' ' + t5[randint(len(t5))]
+
+    def Get(self, genre):
+        n = None
+        if genre not in self.Genres:
+            n = None
+        elif genre == "Children":
+            n = self.Children(self)
+        elif genre == "Drama":
+            n = self.Drama(self)
+        elif genre == "Fiction":
+            n = self.Fiction(self)
+        elif genre == "Horror":
+            n = self.Horror(self)
+        elif genre == "Humor":
+            n = self.Humor(self)
+        elif genre == "Mystery":
+            n = self.Mystery(self)
+        elif genre == "Nonfiction":
+            n = self.Nonfiction(self)
+        elif genre == "Romance":
+            n = self.Romance(self)
+        elif genre == "SciFi":
+            n = self.SciFi(self)
+        elif genre == "Tome":
+            n = self.Tome(self)
+        return n
+
+
+class Clothes(object):
+    c1 = ["A Change of Art", "A Cool Thread", "A Flair Deal", "A Stitch in Time", "A Wood Deal", "Air of Flair",
+          "All's Flair", "And Sew Forth", "And Sew On", "Any Stitch Way", "Apothecrafty", "Art Beats", "Art Cookie",
+          "Art From Scratch", "Art Tea", "Art Ways", "Art a la Carte", "Art and Parcel", "Art of Gold",
+          "Art of the Furniture", "Artsy Fartsy", "Be Sew Bold", "Bear With Flair", "Beautique", "Beauty Embroidified",
+          "By Design", "Care With Flair", "Care to Flair", "Celecreation", "Couture Gifts", "Craft Crazy",
+          "Craft Fever", "Craft Machine", "Craftastical", "Crafter Hours", "Crafter-Noon Delights", "Crafterina",
+          "Crafterpeneur", "Crafting Creativity", "Craftopia", "Crafts Foundry", "Craftworks", "Crafty Pleasures",
+          "Create Mate", "Create Parade", "Created Comforts", "Creative Beat", "Creative Crafts", "Creative Creature",
+          "Creative Motions", "Creative Scene", "Creative Splash", "Critter Crafts", "Critter Knitter", "Curio Crafts",
+          "Cute as a Button", "Daily Thread", "Dangly Knits", "Definitely Knot", "Destined to Design", "Doodlecrafts",
+          "Draft to Craft", "Dreamcrafts", "Etched On My Art", "Every Knit As Good", "Fab Fabrics", "Fabric Antics",
+          "Fabric Magic", "First Create", "Flair Play", "Flair is Fair", "Flair to Share", "Flair to Spare",
+          "Flights of Fancy", "Flying Art", "For Art's Sake", "For Keep's Sake", "For the Most Art", "From the Art",
+          "Full Seam Ahead", "Giftsakes", "Go With the Sew", "Handy Craft", "Handy Handmades", "Handy Hands",
+          "Happily Ever Crafter", "Happy Designs", "Heart in Art", "Heart to Home", "Heavenly Handmade", "Hot Threads",
+          "I Got Crafts", "I Sew It", "In Good Hands", "In Stitches", "In These Arts", "In a Stitch",
+          "Itching for Stitching", "Knit Fit", "Knit Knot", "Knit Picks", "Knit Wit", "Knit by Knit",
+          "Knit for the Gods", "Knitter Critter", "Knot Always", "Knot Done", "Knot Impossible", "Knot Lost",
+          "Knot a Bit", "Knotty Knitters", "Make, Believe", "Many Hands", "My Flair Lady", "Near to My Art",
+          "Needle in a Haystack", "Nightcrafts", "No Haste, No Waste", "Of the Arts", "One Little Knit",
+          "Out of the Box", "Piece of My Art", "Pieces of Art", "Pocket Crafts", "Pulse Art", "Right From the Art",
+          "Robin Wood", "Seam Come True", "Seam On", "Seam With Pride", "Seam World", "Seam's Right", "Sew Crafty",
+          "Sew Flow", "Sew It Goes", "Sew It Happens", "Sew Loveley", "Sew Pretty", "Sew Sinful", "Sew Solutions",
+          "Sew and Saw", "Sew and Sell", "Sew and Sew", "Sew of Hands", "Sew the Story Goes", "Sewley", "Sinful Soaps",
+          "Smart Art", "Snip Snap", "So Far, Sew Good", "Spun Fun", "State of Create", "Stensability", "Stitch Away",
+          "Stitch Itch", "Stitch-Perfect", "Sum of my Arts", "Sweet Craftations", "Sweet Scents", "Sweet Seams",
+          "Textile Aisle", "Textile Smile", "Textile Style", "Textilophile", "That's Sew Creative", "The Art Bard",
+          "The Art Box", "The Art Cart", "The Big Ball of Yarn", "The Craft Circus", "The Craft Crustacean",
+          "The Craft Draft", "The Craft Room", "The Craft Zone", "The Flair Bear", "The Flair Lair", "The Flairy",
+          "The More You Bow", "The Needle 'n Thread", "The Seam Dream", "The Seam Theme", "The Sew Show",
+          "The Sewing Room", "The Stitch Kettle", "The Stitch Witch", "The Thread 'n Needle", "The Unique Boutique",
+          "Thread and Buttons", "Thread of Roses", "Threaded Needle", "Tins and Needles", "To Be Flair", "True Knit",
+          "Whimsical Woods", "Whole Knit and Caboodle", "Wildest Seams", "Wood That I Could", "Would Craft",
+          "You Craft What You Sew", "You Imbued"]
+
+    def __str__(self):
+        return self.c1[randint(len(self.c1))]
+
+
+class Enchanter(object):
+    c1 = ["a", "e", "i", "o", "u", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "",
+          "", "", "", ""]
+    c2 = ["b", "d", "k", "l", "m", "n", "p", "r", "s", "t", "b", "d", "f", "g", "h", "k", "l", "m", "n", "p", "r", "s",
+          "t", "v", "w", "y", "z", "br", "dr", "gr", "kr", "pr", "str", "tr", "bl", "cl", "fl", "gl", "kl", "pl", "sl"]
+    c3 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "ae", "ea", "ou", "au", "a", "e", "o"]
+    c4 = ["d", "f", "g", "k", "l", "m", "n", "p", "r", "s", "t", "x"]
+    c5 = ["w", "n", "s", "m", "r", "", "", "", "", "", "", ""]
+    c6 = ["any", "arry", "arth", "arths", "arts", "elts", "erra", "erry", "erth", "eth", "iams", "ia", "iara", "ine",
+          "inns", "iths", "iton", "ity", "onia", "ons", "ora", "ore", "orth", "orths", "ose", "yce"]
+    c7 = ["Academy of Sorcery", "Academy of Spells", "Academy of Magics", "Academy of Witchcraft",
+          "Academy of Wizardry", "Academy of the Arcane", "Institute of Magics", "Institute of Wizardy",
+          "Institute of the Arcane", "School of Magics", "School of Sorcery", "School of Witchcraft",
+          "School of Wizardry", "School of Wizards", "School of the Arcane"]
+
+    def __str__(self):
+        return str(
+            self.c1[randint(len(self.c1))] + self.c2[randint(len(self.c2))] + self.c3[randint(len(self.c3))] + self.c4[
+                randint(len(self.c4))] + self.c5[randint(len(self.c5))] + self.c6[randint(len(self.c6))] + ', ' +
+            self.c7[randint(len(self.c7))]).title()
+
+
+class Potions(object):
+    p1 = ["Abracapothecary", "Abrakadabra", "Ace High", "Angels and Demons", "Arcane Affinity", "Arcane Infinity",
+          "Arcane Minded", "Augury and Alchemy", "Bona Fida", "Botanica Magica", "Breaking Point", "Celestial Spell",
+          "Cures and Curses", "Darkness and Lightness", "Demons and Daemons", "Dispel and That Spell",
+          "Doves and Pigeons", "Dragonfire", "Eagle's Eye", "Embers and Ashes", "Faerie Fire", "Fantasma",
+          "Fortunes and Luck", "Genie's Lantern", "Genius in a Bottle", "Ghosts 'n Stuff", "Ghosts and Phantoms",
+          "Gobl-Inn", "Gorgons and Gremlins", "Griffins and Gargoyles", "Heaven's Door", "Hell's Gate",
+          "Herbs and Lotions", "Hexes and Jinxes", "Hocus Pocus", "Hocusses and Pocusses", "Horoscopes and Heroscopes",
+          "Illuminations", "Invisibility and Invincibility", "Ki and Chi", "Nostrum Arcade", "Omnipharmacon",
+          "Orbs and Talismans", "Palindrome", "Pandora", "Pandora's Box", "Pharmagician", "Pixie Dust", "Polymorph",
+          "Portable Potents", "Potions and Cauldrons", "Potions and Lotions", "Rainbows and Sunshine",
+          "Runes and Relics", "Runes and Rods", "Shades and Shadows", "Shifted Polarity", "Siphons and Souls",
+          "Smoke and Mirrors", "Solutions", "Solutions and Answers", "Spellbound", "Spellunking", "Spheres and Orbs",
+          "Sprites and Spirits", "Staves and Stoves", "Sticks and Stones", "Taboos and Voodoos",
+          "Telekinesis and Telepathy", "The Acolyte", "The Alchemist", "The Animorph", "The Arcane Barrier",
+          "The Arcane Gateway", "The Arcane Scroll", "The Archangel", "The Banished Beast", "The Banshee's Scream",
+          "The Belly of the Beast", "The Black Couldron", "The Blink", "The Blissful Blizzard", "The Blood Pact",
+          "The Bloodstone", "The Blue Moon", "The Book of Riddles", "The Bound Tome", "The Bramble Staff",
+          "The Broken Vial", "The Cat In The Hat", "The Champion's Scroll", "The Charm", "The Cloak and Dagger",
+          "The Cloak of Invisibility", "The Companion", "The Cone of Cold", "The Conjured Refreshment",
+          "The Counterspell", "The Crystal Ball", "The Dark Flame", "The Daydream", "The Decoy", "The Devil's Key",
+          "The Dew Drop", "The Double Whammy", "The Dragon Aspect", "The Dragon Dungeon", "The Dragon Seal",
+          "The Dragon Slayer", "The Dragon's Breath", "The Dragonhide", "The Dusty Tome", "The Dwarven Beard",
+          "The Ectoplasm", "The Elder Scroll", "The Elemental Fury", "The Equinox", "The Ethereal", "The Evil Eye",
+          "The Eye of Newt", "The Falling Feather", "The Familiar", "The Faulty Dice", "The Fel Steed",
+          "The Fifth Element", "The Final Form", "The Fireball", "The Flying Carpet", "The Force Field",
+          "The Frosty Finger", "The Giant Gnome", "The Golden Lead", "The Grey Beard", "The Halberdashery",
+          "The Holy Grail", "The Hourglass", "The Illusion", "The Last Spell", "The Laughing Leprichaun",
+          "The Laughing Skull", "The Life Drain", "The Little Bunyip", "The Little Pixie", "The Living Statue",
+          "The Magic Box", "The Magic Dart", "The Magnet", "The Minotaur Maze", "The Mirage", "The Mirror Image",
+          "The Mistletoe", "The Mithril Mantle", "The Mystery", "The Mystic Mythic", "The Nether and Void",
+          "The Nightmare", "The Ninth Life", "The Pegasus", "The Pestle and Mortar", "The Philosopher's Stone",
+          "The Phoenix Feather", "The Plane Walker", "The Portal", "The Prophecy", "The Quiet Ritual",
+          "The Raven's Message", "The Raven's Quill", "The Red Slippers", "The Revelation", "The Ring of Life",
+          "The Risen Phoenix", "The Royal Frog", "The Rune", "The Second Chance", "The Shooting Star",
+          "The Silver Bullet", "The Silver Spoon", "The Siphon", "The Siren's Song", "The Skeleton Closet",
+          "The Sleeping Owl", "The Sleight of Hand", "The Soothsayer", "The Sorcerer's Source", "The Soul Apothecary",
+          "The Soulstone", "The Spell Counter", "The Sphere", "The Spirit Walk", "The Stone in the Sword",
+          "The Summoned Goods", "The Summoning Scroll", "The Sword in the Stone", "The Talisman", "The Tenth Ring",
+          "The Third Wish", "The Time Warp", "The Tinkered Tiara", "The Trick Sleeve", "The Twilight Zone",
+          "The Twinkle Star", "The Twisting Nether", "The Unicorn", "The Unicorn's Horn", "The Vision",
+          "The Voodoo Doll", "The Wand's Want", "The Water Elemental", "The White Beard", "The White Dove",
+          "The Wishbone", "The Witch's Nose", "The Wooden Stake", "The Wyrm and the Worm", "Tinctures 'n Tonics",
+          "Tomes and Tiaras", "Trident Trinity", "Trinkets and Tronkets", "Triton's Tident", "Wizard's Mail"]
+    p2 = ["Adorable", "Affordable", "Aggressive", "Amazing", "Amusing", "Ancient", "Angry", "Antique", "Awesome",
+          "Awkward", "Baby", "Bathing", "Big", "Bigger", "Bitter", "Ebon", "Bleeding", "Blind", "Blushing", "Brass",
+          "Bright", "Brilliant", "Bronze", "Brown", "Cheap", "Cheating", "Cheering", "Clean", "Clever", "Common",
+          "Corrupt", "Corrupted", "Crafty", "Crazy", "Creeping", "Cuddly", "Curly", "Dancing", "Dapper", "Dark",
+          "Dirty", "Dizzy", "Dreaming", "Eager", "Early", "Elder", "Elegant", "Elementary", "Evil", "Exalted", "Expert",
+          "Fading", "Fair", "Fake", "False", "Famous", "Fancy", "Fantastic", "Fast", "Flimsy", "Fluffy", "Forsaken",
+          "Frozen", "Gentle", "Glass", "Glowing", "Golden", "Graceful", "Greedy", "Green", "Grim", "Grumpy", "Hairy",
+          "Happy", "Haunting", "Heavy", "Hidden", "Huge", "Humble", "Hungry", "Invincible", "Invisible", "Iron",
+          "Jolly", "Kind", "Large", "Last", "Laughing", "Lazy", "Light", "Little", "Lonely", "Loving", "Lucky", "Mad",
+          "Majestic", "Mellow", "Merry", "Naughty", "Needy", "New", "Nutty", "Old", "Phony", "Plain", "Pretty", "Quick",
+          "Quiet", "Rapid", "Rare", "Royal", "Scary", "Screaming", "Second", "Secret", "Serene", "Shady", "Silly",
+          "Silver", "Sleeping", "Small", "Sneaky", "Steel", "Storm", "Striped", "Tall", "Thunder", "Tiny", "Tired",
+          "Weeping", "Wicked", "Wild", "Wise"]
+    p3 = ["Amulet", "Angel", "Artifact", "Banshee", "Basilisk", "Beacon", "Bigfoot", "Blade", "Book", "Boots", "Branch",
+          "Bunyip", "Cauldron", "Centaur", "Cerberus", "Chimera", "Chupacabra", "Cloak", "Cockatrice", "Codex", "Crown",
+          "Cupid", "Cyclops", "Demon", "Dragon", "Draugr", "Dryad", "Dwarf", "Elemental", "Elf", "Ent", "Fairy", "Faun",
+          "Feathered Serpent", "Focus", "Gargoyle", "Gauntlet", "Genie", "Ghost", "Giant", "Gnome", "Gorgon (Medussa)",
+          "Gremlin", "Griffin", "Grim Reaper", "Hag", "Harpy", "Hellhound", "Hippocampus", "Hippogriff", "Hobbit",
+          "Hobgoblin", "Hourglass", "Human", "Hydra", "Imp", "Incubus/Succubus", "Jackalope", "Key", "Kobold", "Kraken",
+          "Leprechaun", "Lich", "Lute", "Manticore", "Marker", "Mermaid", "Minotaur", "Mummy", "Naga", "Nymph", "Ogre",
+          "Orb", "Pegasus", "Phoenix", "Pixie", "Poltergeist", "Quill", "Ring", "Robe", "Roc", "Rune", "Sandman",
+          "Sasquatch", "Satyr", "Scepter", "Scroll", "Seal", "Shapeshifter", "Shield", "Siren", "Skeleton", "Skull",
+          "Sphere", "Sphinx", "Spriggan", "Sprite", "Staff", "Stone", "Sword", "Talisman", "Tiara", "Tome", "Troll",
+          "Unicorn", "Valkyrie", "Vampire", "Vial", "Wand", "Wendigo", "Werecat", "Werewolf", "White Stag",
+          "Winged Lion", "Winged Unicorn", "Wisp", "Wolpertinger", "World Turtle", "Wraith", "Wyvern", "Yeti", "Zombie"]
+
+    def __str__(self):
+        if randint(2):
+            return self.p1[randint(len(self.p1))].title()
+        else:
+            return str("The " + self.p2[randint(len(self.p2))] + " " + self.p3[randint(len(self.p3))]).title()
+
+
+class Tavern(object):
+    t1 = ['The Abandoned', 'The Absent', 'The Abstract', 'The Accidental', 'The Adorable', 'The Aggressive',
+          'The Alien', 'The American', 'The Amused', 'The Ancient', 'The Annoying', 'The Anxious', 'The Aquatic',
+          'The Armed', 'The Aromatic', 'The Ashamed', 'The Asian', 'The Assorted', 'The Attractive', 'The Australian',
+          'The Automatic', 'The Awesome', 'The Awful', 'The Bad', 'The Beautiful', 'The Best', 'The Better', 'The Big',
+          'The Bitter', 'The Bizarre', 'The Black', 'The Bloody', 'The Blue', 'The Blushing', 'The Boiling',
+          'The Bored', 'The Bouncy', 'The Brass', 'The Brave', 'The Broad', 'The Broken', 'The Bronze', 'The Bumpy',
+          'The Busy', 'The Calm', 'The Careful', 'The Careless', 'The Cheap', 'The Chilly', 'The Chinese', 'The Chubby',
+          'The Chunky', 'The Clean', 'The Clever', 'The Closed', 'The Clumsy', 'The Cold', 'The Colossal',
+          'The Confident', 'The Cool', 'The Copper', 'The Courageous', 'The Cowardly', 'The Crazy', 'The Creepy',
+          'The Crowded', 'The Cruel', 'The Cunning', 'The Curious', 'The Cute', 'The Daily', 'The Dancing',
+          'The Dangerous', 'The Dapper', 'The Dark', 'The Dazzling', 'The Dead', 'The Deep', 'The Defeated',
+          'The Defiant', 'The Delirious', 'The Deranged', 'The Deserted', 'The Detailed', 'The Devilish', 'The Diamond',
+          'The Different', 'The Dire', 'The Dirty', 'The Disarmed', 'The Discreet', 'The Double', 'The Drab',
+          'The Dramatic', 'The Drunk', 'The Drunken', 'The Dry', 'The Dusty', 'The Dutch', 'The Dwarven',
+          'The Dwarvish', 'The Dynamic', 'The Eager', 'The Early', 'The Earthy', 'The Educated', 'The Efficient',
+          'The Electric', 'The Elegent', 'The Elite', 'The Embarrassed', 'The Empty', 'The Enchanted',
+          'The Entertaining', 'The Equal', 'The Ethereal', 'The Even', 'The Excellent', 'The Excited', 'The Exclusive',
+          'The Exotic', 'The Expensive', 'The Fabulous', 'The Faded', 'The Faint', 'The False', 'The Familiar',
+          'The Famous', 'The Fancy', 'The Fantastic', 'The Far', 'The Far Away', 'The Fascinated', 'The Fascinating',
+          'The Fast', 'The Fearless', 'The Fiery', 'The Filthy', 'The Fine', 'The First', 'The Fixed', 'The Flashy',
+          'The Fluffy', 'The Foamy', 'The Foolish', 'The Fragile', 'The Free', 'The Freezing', 'The French',
+          'The Frightened', 'The Frightening', 'The Frozen', 'The Full', 'The Future', 'The Futuristic', 'The Fuzy',
+          'The General', 'The Gentle', 'The German', 'The Ghastly', 'The Ghost', 'The Giant', 'The Gifted',
+          'The Gigantic', 'The Glamorous', 'The Glistening', 'The Glorious', 'The Godly', 'The Golden', 'The Good',
+          'The Goofy', 'The Gorgeous', 'The Grateful', 'The Gray', 'The Greasy', 'The Green', 'The Grey', 'The Groovy',
+          'The Gruesome', 'The Grumpy', 'The Gullible', 'The Handy', 'The Happy', 'The Harsh', 'The Healthy',
+          'The Heavenly', 'The Heavy', 'The Hidden', 'The High', 'The Hilarious', 'The Hissing', 'The Hollow',
+          'The Honorable', 'The Hot', 'The Huge', 'The Hungry', 'The Hypnotic', 'The Icky', 'The Imaginary',
+          'The Imperfect', 'The Impolite', 'The Impossible', 'The Incompetent', 'The Incredible', 'The Infamous',
+          'The Innocent', 'The Intelligent', 'The Interesting', 'The International', 'The Iron', 'The Itchy',
+          'The Ivory', 'The Jaded', 'The Jagged', 'The Japanese', 'The Jazzy', 'The Jealous', 'The Jewish', 'The Jolly',
+          'The Juicy', 'The Kaput', 'The Keen', 'The Kind', 'The Known', 'The Lame', 'The Last', 'The Late',
+          'The Latin', 'The Latino', 'The Laughable', 'The Laughing', 'The Lazy', 'The Lean', 'The Left', 'The Lethal',
+          'The Light', 'The Likeable', 'The Limping', 'The Little', 'The Lively', 'The Lonely', 'The Long',
+          'The Longing', 'The Loud', 'The Lovely', 'The Loving', 'The Lucky', 'The Lush', 'The Lying', 'The Lyrical',
+          'The Macho', 'The Magenta', 'The Magical', 'The Magnificent', 'The Majestic', 'The Mammoth', 'The Maniacal',
+          'The Marked', 'The Married', 'The Marvelous', 'The Massive', 'The Mature', 'The Mean', 'The Measly',
+          'The Mellow', 'The Melting', 'The Merciful', 'The Messy', 'The Metal', 'The Middle', 'The Mighty',
+          'The Minor', 'The Misty', 'The Mixed', 'The Mixing', 'The Modern', 'The Moldy', 'The Molten', 'The Murky',
+          'The Mushy', 'The Mute', 'The Mysterious', 'The Naive', 'The Narrow', 'The Nasty', 'The National',
+          'The Natural', 'The Naughty', 'The Needy', 'The Nervous', 'The New', 'The Next', 'The Next Best', 'The Nice',
+          'The Nifty', 'The Nimble', 'The Nonstalgic', 'The Obedient', 'The Obnoxious', 'The Oceanic', 'The Odd',
+          'The Old', 'The Old Fashioned', 'The Open', 'The Opposite', 'The Orange', 'The Organic', 'The Oriental',
+          'The Outrageous', 'The Overrated', 'The Painful', 'The Panoramic', 'The Parallel', 'The Pathetic',
+          'The Peaceful', 'The Perfect', 'The Pink', 'The Plain', 'The Pleasant', 'The Pointless', 'The Polite',
+          'The Poor', 'The Precious', 'The Private', 'The Protective', 'The Proud', 'The Psychotic', 'The Puny',
+          'The Purple', 'The Puzzled', 'The Puzzling', 'The Quack', 'The Quacking', 'The Quaint', 'The Quick',
+          'The Quickest', 'The Quiet', 'The Rabid', 'The Rainy', 'The Rapid', 'The Rare', 'The Real', 'The Rebel',
+          'The Rebelious', 'The Red', 'The Reflecting', 'The Regular', 'The Relieved', 'The Repulsive',
+          'The Responsible', 'The Rich', 'The Right', 'The Righteous', 'The Romantic', 'The Rotten', 'The Round',
+          'The Royal', 'The Running', 'The Russian', 'The Ruthless', 'The Sad', 'The Safe', 'The Salty', 'The Scared',
+          'The Scary', 'The Scattered', 'The Second', 'The Secret', 'The Serious', 'The Shaggy', 'The Shaking',
+          'The Shattered', 'The Short', 'The Shouting', 'The Sick', 'The Sickly', 'The Silent', 'The Silver',
+          'The Simple', 'The Singing', 'The Skilled', 'The Skillful', 'The Skinny', 'The Sleeping', 'The Sleepy',
+          'The Slippery', 'The Slow', 'The Smart', 'The Smelly', 'The Smiling', 'The Smooth', 'The Snobbish',
+          'The Snoring', 'The Soft', 'The Solid', 'The Sore', 'The Sour', 'The Sparkling', 'The Special',
+          'The Spectacular', 'The Spicy', 'The Spiritual', 'The Spooky', 'The Spotless', 'The Spotted', 'The Square',
+          'The Stately', 'The Steel', 'The Stormy', 'The Successful', 'The Sudden', 'The Super', 'The Superb',
+          'The Supreme', 'The Sweet', 'The Sweet and Sour', 'The Swift', 'The Tacky', 'The Talented', 'The Tall',
+          'The Tame', 'The Tasty', 'The Teeny', 'The Temporary', 'The Terrible', 'The Terrific', 'The Thanked',
+          'The Thankful', 'The Thick', 'The Thin', 'The Third', 'The Thoughtful', 'The Threatened', 'The Threatening',
+          'The Thundering', 'The Timid', 'The Tiny', 'The Tipsy', 'The Tired', 'The Towering', 'The Triangular',
+          'The Tricky', 'The Twelve', 'The Twin', 'The Typical', 'The Ugliest', 'The Ugly', 'The Unarmed', 'The Uneven',
+          'The Unique', 'The Unknown', 'The Unnatural', 'The Unusual', 'The Unwritten', 'The Upset', 'The Vagabond',
+          'The Vague', 'The Valuable', 'The Vengeful', 'The Venomous', 'The Victorious', 'The Violent', 'The Violet',
+          'The Voiceless', 'The Vulgar', 'The Wacky', 'The Waiting', 'The Wandering', 'The Warm', 'The Weak',
+          'The Well-Groomed', 'The Wet', 'The Whimsical', 'The Whispering', 'The White', 'The Wicked', 'The Wild',
+          'The Windy', 'The Wise', 'The Wooden', 'The Worthless', 'The Wretched', 'The Wrong', 'The Demon',
+          'The Yellow', 'The Young', 'The Zealous', 'Ye Olde', 'Ye Olde', 'Ye Olde', 'Ye Olde', 'Ye Olde', 'Ye Olde',
+          'Ye Olde', 'Ye Olde', 'Ye Olde', 'Ye Olde']
+    t2 = ['', '', '', '', '', '', 'Accordion', 'Adventurer', 'Albatross', 'Alligator', 'Anemone', 'Angel', 'Angels',
+          'Ant', 'Anteater', 'Antelope', 'Ants', 'Ape', 'Apple', 'Apples', 'Arm', 'Armadillo', 'Avocado', 'Axe',
+          'Baboon', 'Bachelor', 'Badger', 'Bagpipe', 'Baker', 'Balloon', 'Bamboo', 'Banjo', 'Barracuda', 'Barrel',
+          'Barricade', 'Bass', 'Bassoon', 'Bat', 'Bats', 'Battleaxe', 'Bean', 'Bear', 'Beard', 'Bears', 'Beaver',
+          'Beavers', 'Bed', 'Bee', 'Bees', 'Bell', 'Bells', 'Belltower', 'Bird', 'Birds', 'Bison', 'Blossom', 'Boat',
+          'Bone', 'Bongo', 'Book', 'Books', 'Boulder', 'Bow', 'Bowl', 'Brain', 'Branch', 'Buffalo', 'Bunny', 'Butcher',
+          'Butterflies', 'Butterfly', 'Cabbage', 'Cake', 'Camel', 'Canary', 'Candle', 'Captain', 'Carrot', 'Cashew',
+          'Castle', 'Cat', 'Caterpillar', 'Cats', 'Cave', 'Cavern', 'Celery', 'Cello', 'Chain', 'Chainmail', 'Chair',
+          'Cheese', 'Cheetah', 'Cherry', 'Chestnut', 'Chestplate', 'Chick', 'Chicken', 'Child', 'Chimpanzee', 'Cinamon',
+          'City', 'Clam', 'Clams', 'Clarinet', 'Cliff', 'Cloth', 'Cobra', 'Coconut', 'Cod', 'Coin', 'Cookie', 'Corn',
+          'Couple', 'Coyote', 'Crab', 'Crabs', 'Crane', 'Crew', 'Crocodile', 'Crossbow', 'Crow', 'Crows', 'Crystal',
+          'Cucumber', 'Cup', 'Curry', 'Cushion', 'Dagger', 'Dahlia', 'Dandelion', 'Dark Elf', 'Dawg', 'Deer', 'Demon',
+          'Demons', 'Desk', 'Dessert', 'Didgeridoo', 'Dinosaur', 'Discovery', 'Dog', 'Dogs', 'Donkey', 'Dove', 'Doves',
+          'Dragon', 'Dragonfruit', 'Dragons', 'Drum', 'Drumstick', 'Duck', 'Ducks', 'Duduk', 'Dwarf', 'Eagle', 'Eagles',
+          'Eel', 'Egg', 'Elderberry', 'Elephant', 'Elephant Seal', 'Elephants', 'Elf', 'Emu', 'Explorer', 'Fairy',
+          'Falcon', 'Falcons', 'Ferret', 'Fiddle', 'Fiddler', 'Fig', 'Fire', 'Fish', 'Flame', 'Flea', 'Flies', 'Flower',
+          'Flute', 'Fly', 'Forest', 'Fork', 'Fowl', 'Fox', 'Frog', 'Gang', 'Garden', 'Gate', 'Gauntlet', 'Gazelle',
+          'Geese', 'Gentleman', 'Gentlemen', 'Gentlewoman', 'Gentlewomen', 'Giant', 'Giraffe', 'Glass', 'Glory', 'Goat',
+          'Goats', 'Goose', 'Gooseberry', 'Gopher', 'Gorilla', 'Grape', 'Grasshopper', 'Grotto', 'Group', 'Guard',
+          'Guinea Pig', 'Guinea Pigs', 'Guitar', 'Hag', 'Halberd', 'Hammer', 'Hamster', 'Hamsters', 'Hand', 'Harbour',
+          'Harp', 'Hatchet', 'Hawk', 'Hawks', 'Hazelnut', 'Head', 'Heart', 'Helm', 'Helmet', 'Hill', 'Hippo',
+          'Hippopotamus', 'Hog', 'Horn', 'Hornet', 'Hornets', 'Horse', 'Horses', 'Hunter', 'Huntress', 'Husband',
+          'Hyacinth', 'Hyena', 'Ice', 'Ingot', 'Jackal', 'Jackals', 'Jaguar', 'Jellyfish', 'Jester', 'Kangaroo', 'King',
+          'Kitten', 'Kiwi', 'Knife', 'Knight', 'Koala', 'Kumquat', 'Lady', 'Lake', 'Lamb', 'Lamp', 'Lantern',
+          'Lavender', 'Leader', 'Leaf', 'Leg', 'Lemon', 'Leopard', 'Lettuce', 'Librarian', 'Library', 'Lily', 'Lime',
+          'Lion', 'Lioness', 'Lions', 'Llama', 'Loaf', 'Lobster', 'Lobsters', 'Loch', 'Lord', 'Lute', 'Lychee', 'Lyre',
+          'Magpie', 'Manatee', 'Mandolin', 'Mango', 'Maple', 'Marigold', 'Master', 'Meat', 'Meerkat', 'Melon', 'Melons',
+          'Mice', 'Midget', 'Mind', 'Mole', 'Moon', 'Morning Glory', 'Mosquito', 'Mountain', 'Mouse', 'Moustache',
+          'Mushroom', 'Narcissus', 'Night', 'Night Elf', 'Nightingale', 'Note', 'Nugget', 'Nut', 'Nutmeg', 'Oak',
+          'Ocean', 'Octopus', 'Olive', 'Onion', 'Opossum', 'Orange', 'Orangutan', 'Orc', 'Ore', 'Ostrich', 'Otter',
+          'Owl', 'Ox', 'Oyster', 'Oysters', 'Palm', 'Pan Flute', 'Panda', 'Panther', 'Pants', 'Papaya', 'Parrot',
+          'Parrots', 'Parsnip', 'Pea', 'Peacock', 'Peanut', 'Pear', 'Pearl', 'Pegasus', 'Pelican', 'Peon', 'Pepper',
+          'Piano', 'Pickaxe', 'Pie', 'Pig', 'Pigeon', 'Pigeons', 'Pike', 'Pillow', 'Pirate', 'Pistachio', 'Planet',
+          'Plate', 'Ponies', 'Pony', 'Potato', 'Prince', 'Princess', 'Pudding', 'Pumpkin', 'Puppy', 'Queen', 'Rabbit',
+          'Raccoon', 'Rapier', 'Raspberry', 'Rat', 'Rats', 'Raven', 'Reindeer', 'Rhino', 'Rhinoceros', 'Rhododendron',
+          'River', 'Rock', 'Root', 'Rope', 'Rose', 'Sail', 'Sailboat', 'Salad', 'Salmon', 'Salt', 'Saxophone', 'Scream',
+          'Sea', 'Seadog', 'Seagull', 'Seagulls', 'Seahorse', 'Seal', 'Seals', 'Serpent', 'Shark', 'Sharks', 'Sheep',
+          'Shield', 'Ship', 'Shipmate', 'Shirt', 'Shoe', 'Shovel', 'Shrub', 'Sign', 'Skies', 'Skull', 'Skunk', 'Skunks',
+          'Snail', 'Snake', 'Snakes', 'Snapdragon', 'Snow', 'Snowball', 'Snowdrop', 'Snowfall', 'Soup', 'Spade',
+          'Spider', 'Spiders', 'Spoon', 'Squash', 'Squid', 'Squirrel', 'Stag', 'Star', 'Stars', 'Steed', 'Stew',
+          'Stick', 'Stone', 'Strawberry', 'Stream', 'Sugar', 'Sun', 'Swallow', 'Swan', 'Sword', 'Table', 'Tankard',
+          'Tauren', 'Tea Cup', 'Termite', 'Throne', 'Tiger', 'Tigers', 'Tigress', 'Toad', 'Tomato', 'Tortoise', 'Tower',
+          'Town', 'Traveler', 'Tree', 'Trespasser', 'Triangle', 'Troll', 'Trombone', 'Trout', 'Truffle', 'Trumpet',
+          'Trunk', 'Tuba', 'Tulip', 'Turkey', 'Turnip', 'Turtle', 'Tusk', 'Twig', 'Ukulele', 'Unicorn', 'Unicorns',
+          'Vampire', 'Vanilla', 'Vanilla Bean', 'Violin', 'Wall', 'Water', 'Weasel', 'Well', 'Whale', 'Whip', 'Whisper',
+          'Whistle', 'Wife', 'Wilderbeast', 'Willow', 'Wolf', 'Wolves', 'Wood Elf', 'Woodpecker', 'Worker', 'Worm',
+          'Xylophone', 'Yak', 'Yam', 'Yew', 'Zebra']
+    t3 = ['Pub', 'Tavern', 'Inn', 'Bar', '', '']
+
+    def __str__(self):
+        return self.t1[randint(len(self.t1))] + ' ' + self.t2[randint(len(self.t2))] + ' ' + self.t3[
+            randint(len(self.t3))]
+
+
+class Restaurant(object):
+    # Set 1
+    r1 = ["Abacus", "Amber", "Aqua", "Arctic", "Aroma", "Autumn", "Baking", "Bamboo", "Beach", "Bengal", "Big",
+          "Big City", "Bitter", "Boiling", "Bright", "Saffron", "Brimstone", "Bronze", "Caramel", "Caribbean", "Caviar",
+          "Central", "Champagne", "Charming", "Chili", "Chocolate", "Chopping", "Cinnamon", "City", "Clear", "Coastal",
+          "Cocoa", "Coffee", "Comet", "Cool", "Cool Cat", "Copper", "Coriander", "Corner", "Court", "Crimson",
+          "Crystal", "Curry", "Dairy", "Dapper", "Delhi", "Dwarf", "Eastern", "Electric", "Emerald", "Enigma", "Fable",
+          "Fantasy", "Fiery", "Fire", "First", "Forest", "French", "Fresh", "Friendly", "Gallery", "Glass", "Golden",
+          "Grand", "Greek", "Harborview", "Harlequin", "Harmonic", "Holy", "Honey", "Honor", "Hot", "Hungry",
+          "Imperial", "Incredible", "Indian", "Island", "Italian", "Jade", "Jamming", "Japanese", "Jazz", "Jungle",
+          "Juniper", "Karma", "King's", "Lakeside", "Lavender", "Light", "Little", "Lunar", "Mad", "Magical", "Malt",
+          "Mammoth", "Meadow", "Mellow", "Minty", "Modern", "Moroccan", "Mountain", "Mountainview", "Narrow", "New",
+          "Nifty", "Noodle", "Northern", "Old", "Olive", "Orange", "Original", "Oval", "Painted", "Palm", "Paradise",
+          "Pearl", "Pepper", "Pink", "Polar", "Private", "Proud", "Queen's", "Rare", "River", "Royal", "Ruby",
+          "Sailing", "Salty", "Sapphire", "Savory", "Seaside", "Shining", "Silent", "Silk", "Silver", "Solar", "Sour",
+          "Southern", "Spaghetti", "Spiced", "Spicy", "Spring", "Square", "Streetwise", "Sugar", "Summer", "Sumo",
+          "Sushi", "Sweet", "Tandoori", "Thai", "Tropical", "Underwater", "Urban", "Vanilla", "Village", "Vintage",
+          "Violet", "Warm", "Waterfront", "Waterway", "Western", "Whiskey", "Wild", "Winter"]
+    r2 = ["After Dark", "Afternoon", "Ambience", "Angel", "Apple", "Archive", "Avenue", "Badger", "Balcony", "Barbecue",
+          "Bass", "Bay", "Bear", "Beehive", "Bistro", "Bite", "Bites", "Blanket", "Blend", "Block", "Blossom", "Boar",
+          "Bond", "Boulevard", "Brewery", "Brothers", "Canteen", "Castle", "Catch", "Chamber", "Chef", "Chicken",
+          "Chimney", "Clam", "Cloud", "Clove", "Club", "Commander", "Cottage", "Court", "Courtyard", "Cow", "Crown",
+          "Cuisine", "Dairy", "Deer", "Demon", "Devil", "Diner", "Docks", "Dome", "Door", "Dragon", "Dream", "Drum",
+          "Duke", "Eats", "Elephant", "Emperor", "Empress", "Exchange", "Exhibit", "Fable", "Factory", "Faire",
+          "Farmer", "Fence", "Fiddler", "Fish", "Flavour", "Flower", "Fox", "Fridge", "Front", "Fusion", "Garden",
+          "Gate", "Genie", "Goat", "God", "Goddess", "Grill", "Grove", "Harvest", "Heart", "Heaven", "Hog", "Hook",
+          "Horse", "Hound", "House", "Jewel", "Junction", "Kitchen", "Knight", "Laguna", "Lane", "Lantern", "Leaf",
+          "Lighthouse", "Lily", "Lion", "Lobster", "Lounge", "Maple", "Market", "Merchant", "Mirror", "Mission",
+          "Mockingbird", "Moment", "Moments", "Monkey", "Monument", "Morning", "Night", "Nights", "Oak", "Orchard",
+          "Orchid", "Oriental", "Oyster", "Palace", "Panda", "Pantry", "Paradise", "Parlour", "Peasant", "Persia",
+          "Petal", "Pig", "Pipe", "Pizzeria", "Place", "Pond", "Port", "Ranch", "Road", "Rooftop", "Room", "Rose",
+          "Salmon", "Saloon", "Scarf", "Shack", "Shark", "Ship", "Shrimp", "Sisters", "Smith", "Spice", "Spices",
+          "Star", "Stranger", "Street", "Street Kitchen", "Table", "Taste", "Tiger", "Tower", "Tree", "Trumpet",
+          "Tulip", "Valley", "Vaults", "Victory", "View", "Vine", "Violin", "Walk", "Way", "Well", "Whale", "Wharf",
+          "Willow", "Windmill", "Window", "Wok", "Word", "Yard"]
+    r3 = ["Abacus", "Acapella", "Ace", "After Dark", "Alpha", "Ambience", "Amigos", "Amuse", "Aqua", "Arch", "Aroma",
+          "Atlas", "Aurora", "Babylon", "Backstage", "Bambino", "Bandits", "Basil", "Beehive", "Blossoms", "Blueprint",
+          "Bonds", "Bones", "Bounty", "Brimstone", "Butlers", "Buttons", "Candle", "Carnival", "Castle", "Catch",
+          "Chance", "Chapter", "Charm", "Cinnamon", "Citrus", "Clarity", "Cocoa", "Crickets", "Curiosity", "Daydream",
+          "Drifters", "Elementary", "Elements", "Embers", "Enigma", "Eureka", "Fabled", "Fantasia", "Fiddler",
+          "Fire and Ice", "Fluorescence", "Forester", "Friends", "Gastrognome", "Gem", "Gentle", "Glasshouse", "Grace",
+          "Happening", "Harlequin", "Harmony", "Harvest", "Hibiscus", "Incognito", "Indigo", "Interlude", "Intermezzo",
+          "Intermission", "Ivory", "Ivy", "Jewel", "Jubilee", "Karma", "Kings", "Kingsize", "Laguna", "Lavender",
+          "Lemon", "Lemon Grass", "Lily", "Limestone", "Little China", "Little Italy", "Little Persia", "Maximus",
+          "Maze", "Meadows", "Medallion", "Melting Pot", "Midnight", "Mirage", "Mirrors", "Modesty", "Moonlight",
+          "Mumbles", "Nightowl", "Nirvana", "Nova", "Oddity", "Olive Grove", "Paragon", "Paramount", "Parlay",
+          "Pavilion", "Petals", "Piccolo", "Podium", "Potroast", "Prospects", "Purity", "Queens", "Recess", "Retro",
+          "Revelations", "Roadhouse", "Roast", "Robot", "Rogue", "Roots", "Rye", "Saffron", "Salutation", "Sapphire",
+          "Seawise", "Serenade", "Serenity", "Shambles", "Shazam", "Simmer Down", "Skyward", "Solitude", "Solo Mio",
+          "Solstice", "Souls", "Splash", "Starlight", "Steam", "Streetwise", "Sunset", "The Bell Tower", "The Boar",
+          "The Boutique", "The Cane", "The Cave", "The Cellar", "The Cottage", "The Crown", "The Depot", "The Eclipse",
+          "The Emperor", "The Empress", "The Exhibit", "The Gallery", "The Garden", "The Goat", "The Grove", "The Hat",
+          "The Hive", "The Hog", "The Hummingbird", "The Island", "The Lamb", "The Lighthouse", "The Lion",
+          "The Locket", "The Lotus", "The Maple", "The Mockingbird", "The Momument", "The Monarch", "The Nightingale",
+          "The Nomad", "The Oak", "The Parlour", "The Peacock", "The Pearl", "The Rose", "The Scarf", "The Smile",
+          "The Square", "The Tower", "The Tulip", "The Turban", "The Vine", "The Vineyard", "The Wall", "The Willow",
+          "Tip Top", "Tranquility", "Treasure", "Trilogy", "Trinity", "Twilight", "Unwind", "Veil", "Vertigo", "Vista",
+          "Whammy", "Whisperwind"]
+    # Set 2
+    r4 = ["Élégant", "Émeraude", "Épicé", "Acide", "Acidulé", "Affamé", "Ambré", "Amer", "Ancien", "Antique",
+          "Arctique", "Ardent", "Argenté", "Bengale", "Bouillant", "Brûlent", "Brillant", "Côtier", "Carré",
+          "Chaleureux", "Charmant", "Chaud", "Chic", "Chouette", "Clair", "Cramoisi", "Doré", "Doux", "Fier", "Fou",
+          "Frais", "Français", "Gracieux", "Grec", "Harmonique", "Incarnat", "Incroyable", "Indien", "Italien",
+          "Japonais", "Laitier", "Lunaire", "Magique", "Marocain", "Moderne", "Moelleux", "Ovale", "Peint", "Pimpant",
+          "Polaire", "Privé", "Rare", "Relevé", "Rose", "Sacré", "Salé", "Sauvage", "Silencieux", "Solaire",
+          "Sous-Marin", "Soyeux", "Suave", "Sucré", "Sympa", "Thaïlandais", "Urbain", "Velouté", "Violet", "d'Énigme",
+          "d'Été", "d'Abaque", "d'Ambre", "d'Aqua", "d'Arôme", "d'Arlequin", "d'Aura", "d'Automne", "d'Eau",
+          "d'Harmonie", "d'Hiver", "d'Honneur", "d'Olive", "d'Or", "d'Orange", "de Bambou", "de Bord de la Mer",
+          "de Bord du Lac", "de Bronze", "de Cabotage", "de Cacao", "de Café", "de Cannelle", "de Caramel", "de Caviar",
+          "de Champagne", "de Chocolat", "de Coriandre", "de Couperet", "de Cramoisi", "de Cristal", "de Cuibre",
+          "de Cuisson", "de Fantaisie", "de Feu", "de Front de Mer", "de Genévrier", "de Grande Ville", "de Jade",
+          "de Jazz", "de Karma", "de Laiterie", "de Lavande", "de Lumière", "de Malt", "de Miel", "de Paradis",
+          "de Paume", "de Perle", "de Piments", "de Plage", "de Poivre", "de Printemps", "de Rubis", "de Safran",
+          "de Saphir", "de Sarriette", "de Soie", "de Soufre", "de Sushi", "de Vanille", "de Verre", "de Village",
+          "de Ville", "de Whisky", "de l'Énigme", "de l'Île", "de l'Est", "de l'Ouest", "de la Comète", "de la Cour",
+          "de la Fable", "de la Flamme", "de la Forêt", "de la Galerie", "de la Jungle", "de la Légende",
+          "de la Montagne", "de la Nouille", "de la Plage", "de la Prairie", "de la Reine", "de la Rivière",
+          "de la Rue", "de la Voie Navale", "des Caraïbes", "du Canal", "du Coin", "du Curry", "du Feu", "du Fleuve",
+          "du Nain", "du Nord", "du Pré", "du Quai", "du Roi", "du Sucre", "du Sud", "du Tribunal", "du Village",
+          "Tropical", "Royal", "Principal", "Oriental", "Original", "Impérial", "Central", "Austral", "Amical"]
+    r5 = ["Élégante", "Émeraude", "Épicée", "Acide", "Acidulée", "Affamée", "Ambrée", "Amère", "Ancienne", "Antique",
+          "Arctique", "Ardente", "Argentée", "Bengale", "Bouillante", "Brûlente", "Brillante", "Côtière", "Carrée",
+          "Chaleureuse", "Charmante", "Chaude", "Chic", "Chouette", "Claire", "Cramoisie", "Dorée", "Douce", "Fière",
+          "Folle", "Fraîche", "Française", "Gracieuse", "Grecque", "Harmonique", "Incarnate", "Incroyable", "Indienne",
+          "Italienne", "Japonaise", "Laitière", "Lunaire", "Magique", "Marocaine", "Moderne", "Moelleuse", "Ovale",
+          "Peinte", "Pimpante", "Polaire", "Privée", "Rare", "Relevée", "Rose", "Sacrée", "Salée", "Sauvage",
+          "Silencieuce", "Solaire", "Sous-Marine", "Soyeuse", "Suave", "Sucrée", "Sympa", "Thaïlandaise", "Urbaine",
+          "Veloutée", "Violette", "d'Énigme", "d'Été", "d'Abaque", "d'Ambre", "d'Aqua", "d'Arôme", "d'Arlequin",
+          "d'Aura", "d'Automne", "d'Eau", "d'Harmonie", "d'Hiver", "d'Honneur", "d'Olive", "d'Or", "d'Orange",
+          "de Bambou", "de Bord de la Mer", "de Bord du Lac", "de Bronze", "de Cabotage", "de Cacao", "de Café",
+          "de Cannelle", "de Caramel", "de Caviar", "de Champagne", "de Chocolat", "de Coriandre", "de Couperet",
+          "de Cramoisi", "de Cristal", "de Cuibre", "de Cuisson", "de Fantaisie", "de Feu", "de Front de Mer",
+          "de Genévrier", "de Grande Ville", "de Jade", "de Jazz", "de Karma", "de Laiterie", "de Lavande",
+          "de Lumière", "de Malt", "de Miel", "de Paradis", "de Paume", "de Perle", "de Piments", "de Plage",
+          "de Poivre", "de Printemps", "de Rubis", "de Safran", "de Saphir", "de Sarriette", "de Soie", "de Soufre",
+          "de Sushi", "de Vanille", "de Verre", "de Village", "de Ville", "de Whisky", "de l'Énigme", "de l'Île",
+          "de l'Est", "de l'Ouest", "de la Comète", "de la Cour", "de la Fable", "de la Flamme", "de la Forêt",
+          "de la Galerie", "de la Jungle", "de la Légende", "de la Montagne", "de la Nouille", "de la Plage",
+          "de la Prairie", "de la Reine", "de la Rivière", "de la Rue", "de la Voie Navale", "des Caraïbes", "du Canal",
+          "du Coin", "du Curry", "du Feu", "du Fleuve", "du Nain", "du Nord", "du Pré", "du Quai", "du Roi", "du Sucre",
+          "du Sud", "du Tribunal", "du Village", "Tropicale", "Royale", "Principale", "Orientale", "Originale",
+          "Impériale", "Centrale", "Australe", "Amicale"]
+    r6 = ["l'Écharpe", "l'Épice", "l'Étoile", "l'Ambiance", "l'Archive", "l'Atmosphère", "la Baie", "la Balade",
+          "la Baleine", "la Basse", "la Biche", "la Brasserie", "la Cabane", "la Cantine", "la Capture", "la Chèvre",
+          "la Chambre", "la Cheminée", "la Cocotte", "la Cour", "la Couronne", "la Couverture", "la Crevette",
+          "la Cuisine", "la Déesse", "la Duchesse", "l'Exposition", "la Façon", "la Fable", "la Fenêtre", "la Ferme",
+          "la Feuille", "la Fleur", "la Floraison", "la Fusion", "l'Huître", "l'Idole", "l'Impératrice", "la Légende",
+          "la Lagune", "la Lanterne", "la Liaison", "la Libellule", "la Maison", "la Mare", "la Matinée",
+          "la Merveille", "la Mission", "la Morsure", "la Nappe", "la Nuit", "l'Orchidée", "la Paloudre", "la Parole",
+          "la Perle", "la Pizzeria", "la Pomme", "la Porte", "la Poule", "la Promenade", "la Récolte", "la Rose",
+          "la Route", "la Ruche", "la Rue", "la Salle", "la Saveur", "la Soirée", "la Source", "la Table", "la Tour",
+          "la Tulipe", "l'Usine", "la Vache", "la Vallée", "la Victoire", "la Vigne", "la Voûte", "la Voie", "la Vue",
+          "l'Échange", "l'Éléphant", "l'Érable", "l'Étalage", "l'Ange", "l'Après-Midi", "l'Arbre", "le Balcon",
+          "le Bassin", "le Bateau", "le Bijou", "le Bistro", "le Blaireau", "le Bloc", "le Bosquet", "le Boulevard",
+          "le Cœur", "le Carrefour", "le Cavalier", "le Cerf", "le Château", "le Chêne", "le Champ", "le Chef",
+          "le Chemin", "le Cheval", "le Chevalier", "le Ciel", "le Club", "le Coin", "le Colibri", "le Commandant",
+          "le Cottage", "le Démon", "le Dîner", "le Dîneur", "le Dôme", "le Diable", "le Dieu", "le Dragon", "le Duc",
+          "l'Empereur", "l'Endroit", "le Fleur", "le Forgeron", "le Foulard", "le Foyer", "le Frigo", "le Génie",
+          "le Goût", "le Gril", "le Hall", "le Homard", "l'Instant", "le Jardin", "le Lien", "le Lieu", "le Lion",
+          "le Lis", "le Loup", "le Mélange", "le Manoir", "le Marché", "le Matin", "le Miroir", "le Moisson",
+          "le Moment", "le Monument", "le Morceau", "le Mot", "le Moulin", "le Navire", "le Nuage", "l'Ours",
+          "le Pétale", "le Palais", "le Panda", "le Paradis", "le Parc", "le Parfum", "le Parloir", "le Paysan",
+          "le Perchoir", "le Phare", "le Piment", "le Poisson", "le Port", "le Quai", "le Rêve", "le Ranch",
+          "le Renard", "le Requin", "le Salon", "le Sanglier", "le Saule", "le Saumon", "le Singe", "le Sommet",
+          "le Tableau", "le Tambour", "le Théâtre", "le Tigre", "le Toit", "le Trèfle", "le Triomphe", "le Vaisseau",
+          "le Verger", "le Violon", "le Violoneux", "le Yard"]
+    r7 = ["Élémentaire", "Acapella", "Agrume", "Alpha", "Ambiance", "Aqua", "Atlas", "Babylone", "Bambino", "Basilic",
+          "Boutons", "Cacao", "Citronnelle", "Clair de Lune", "Clarté", "Coquin", "Coucher du Soleil", "Curiosité",
+          "Eau", "Eureka", "Feu et Glace", "Fleurs", "Floraisons", "Fluorescence", "Géant", "Gentil", "Grâce",
+          "Harmonie", "Incognito", "Indigo", "Légendaire", "Lavande", "Lueuer des Étoiles", "Maximus", "Merveille",
+          "Minuit", "Miroirs", "Modestie", "Nirvana", "Nova", "Oiseau de Nuit", "Pétales", "Petite Chine",
+          "Petite Italie", "Petite Perse", "Piccolo", "Primordial", "Pureté", "Récréation", "Rétro", "Révélations",
+          "Rêveries", "Reines", "Royal", "Séduction", "Sérénité", "Safran", "Seigle", "Shazam", "Solitude",
+          "Tranquillité", "Vagabonds", "Vers le Ciel", "Violoneux", "des Os", "l'Éclipse", "l'Énigme", "l'Érable",
+          "l'Étalage", "l'Événement", "l'Île", "l'Abaque", "l'Accord", "l'Ace", "l'Agneau", "l'Amusement", "l'Arôme",
+          "l'Arche", "l'Arlequin", "l'Atmosphère", "l'Aura", "l'Aurore", "l'Empereur", "l'Entracte", "l'Exposition",
+          "l'Hibiscus", "l'Impératrice", "l'Interlude", "l'Intermezzo", "l'Intermission", "l'Interruption", "l'Ivoire",
+          "l'Occasion", "l'Oiseau Moqueur", "l'Oliveraie", "l'Origine", "la Base", "la Bougie", "la Boutique",
+          "la Braise", "la Branche", "la Brume", "la Canne", "la Cannelle", "la Capture", "la Cave", "la Caverne",
+          "la Chèvre", "la Chance", "la Chandelle", "la Cime", "la Couronne", "la Curiosité", "la Fable",
+          "la Fantaisie", "la Fusion", "la Galerie", "la Gemme", "la Goutte", "la Grotte", "la Joliesse", "la Légende",
+          "la Lagune", "la Liaison", "la Lumière des Étoiles", "la Muraille", "la Niche", "la Nuit", "la Nuit Tombée",
+          "la Pénombre", "la Pagaille", "la Pause", "la Perle", "la Perspective", "la Petite Maison", "la Prairie",
+          "la Prime", "la Récolte", "la Rêverie", "la Rose", "la Ruche", "la Sérénade", "la Salutation", "la Sensation",
+          "la Serre", "la Singularité", "la Tour", "la Tribune", "la Trilogie", "la Trinité", "la Tulipe",
+          "la Verrerie", "la Vieillesse", "la Vigne", "la Voûte", "la Vue", "le Bosquet", "le Calcaire", "le Calme",
+          "le Carnaval", "le Château", "le Chapeau", "le Chapitre", "le Charme", "le Clocher", "le Colibri",
+          "le Cottage", "le Couloir", "le Crâne", "le Crépuscule", "le Creuset", "le Dépôt", "le Forestier",
+          "le GastroGnome", "le Gastronome", "le Grillage", "le Jardin", "le Jubilé", "le Karma", "le Labyrinthe",
+          "le Lien", "le Lierre", "le Lion", "le Lis", "le Lotus", "le Médaillon", "le Marmonnement", "le Mirage",
+          "le Monarque", "le Monument", "le Mur", "le Nomade", "le Paon", "le Parangon", "le Parloir", "le Pavillon",
+          "le Plan", "le Podium", "le Pré", "le Projet", "le Rôti", "le Recoin", "le Relais", "le Robot",
+          "le Rossignol", "le Sanglier", "le Saphir", "le Saule", "le Solstice", "le Sommet", "le Sortilège",
+          "le Soufre", "le Sourire", "le Sous-Sol", "le Trésor", "le Turban", "le Vignoble", "le Voile", "les Âmes",
+          "les Éléments", "les Amis", "les Bandits", "les Grillons", "les Prairies", "les Rois"]
+
+    def __str__(self):
+        if randint(2):
+            if randint(2):
+                if randint(2):
+                    return self.r6[randint(len(self.r6))] + " " + self.r4[randint(len(self.r4))]
+                else:
+                    return self.r6[randint(len(self.r6))] + " " + self.r5[randint(len(self.r5))]
+            else:
+                return self.r7[randint(len(self.r7))]
+        else:
+            if randint(2):
+                return "The " + self.r1[randint(len(self.r1))] + " " + self.r2[randint(len(self.r2))]
+            else:
+                return self.r3[randint(len(self.r3))]
+
+
+class Jeweller(object):
+    j1 = ['A Hill of Beads', 'A Sparkly Thing', 'A Strand Above', 'A Strand For You', 'Accustomed', 'Adornmix',
+          'Around the Block', 'Artik', 'Artsifi', 'Be Adorned', 'Bead Adorned', 'Bead Alternique', 'Bead Assemblage',
+          'Bead Chic', 'Bead It Again', 'Beaded Creations', 'Beadiful Things', 'Beading Hearts', 'Beadniks',
+          'Bijouxanew', 'Bizzy Beads', 'BluGreen Jewelry', 'BluMoon', 'Buttons & Beads', 'Chameleons',
+          'Charming Crafts', 'Chic and Artsy', 'Chicas', 'Chokers and Charms', 'Classical Customs', 'Classics Jewelry',
+          'Colorful Stardust', 'Creative Incarnations', 'Creative Rage', 'Creative Recycling', 'Cultured Curio',
+          'CuriousBead', 'Custom Chic', 'Deja Jewel', 'Diamond Bead', 'Diamond Light Nebula', 'Diamond Sea', 'Diamonds',
+          'Discoveries', 'Doodads', 'EarthNique Jewelry', 'Ecletic Creations', 'Elements – Wearable Art',
+          'Embellished Life', 'Euphorium Jewel Design', 'Fab Jewels', 'Firebird Jewels', 'Foozles', 'Grace of Hearts',
+          'Green Chic', 'Holidaze Jewelry', 'Ice Jewelers', 'Illuminate Jewelers', 'Illuminated Accessories',
+          'Infinity Jewelers', 'Jenewal', 'Jeweled Feather', 'JewelJest', 'Jewelry Junkie', 'Jewelry Palace',
+          'Jewels and Gems', 'Jewelure', 'Journey Jewelry', 'Just Bead It', 'Kaleidescopes', 'Kobbled',
+          'Lux Fine Jewelry', 'Made For Her', 'Magic Clasp Jewelry', 'Memories Jewelry & Beads',
+          'Metal Spectrum Jewelry Store', 'Metamorphic Creations', 'Mingled Spectrum', 'Mixed Media Mutations', 'Moxie',
+          'Mr. Sparklez Emporium', 'New Born Bead', 'New Life Designs', 'New Life Inventions', 'Original Adornments',
+          'Ornamental Phoenix', 'Pandora’s Box', 'Past to Present', 'Phoenix Creations', 'Redazzled', 'Redonez',
+          'Regal Creations', 'Relics to Riches', 'Restoration Beads', 'ReTrend', 'RetroChic Jewelry', 'Revibrant',
+          'Ring of Memories Jewelers', 'Rocks', 'Royal Bloom Creations', 'Sparkles Shop',
+          'Special Engagements Jewelers', 'Spirited ReCreations', 'Spring Jewelers', 'Stone Appeal',
+          'Stranded Memories', 'Sunkissed Jewelry', 'The Beadhaus', 'The Diamond Band', 'The Galleria of Gems',
+          'The Gemstone Gallery', 'The Golden Goose', 'The Looking Glass Jewelers', 'The Platinum People',
+          'The Velvet Box', 'Thrifty Trinkets', 'Tiger’s Eye Oasis', 'Tiny Collage Studios', 'Touch of Gold',
+          'Transforming Trinkets', 'Treasure Gems', 'Treasurebox', 'Treasurer', 'Trinity Jewelers & Co.',
+          'The Chic and Some Wire', 'Uncommon Jewelry', 'Uniqness', ]
+
+    def __str__(self):
+        return self.j1[randint(len(self.j1))]
+
+
+class Blacksmith(object):
+    b1 = ["A Steel", "Adore Ore", "Anvil Crafts", "Anvil Mastery", "Anvil Works", "Anything Metal", "Arms of Steel",
+          "Ball of Fire", "Balls of Fire", "Baptisms of Fire", "Bars of Steel", "Beat the Heat", "Beats of Fire",
+          "Belly Fires", "Between Hammer and Anvil", "Blackstone Forge", "Blazing Blacksmiths", "Blazing Glory",
+          "Blazing Trails", "Bloodbath & Beyond", "Blue Blazes", "Blue Steel", "Breathing Fire", "By Hammer and Hand",
+          "By Hammer and Tongs", "Clamor Glamor", "Clamorize", "Clink \'n Clank", "Clobbering Time", "Curious Forge",
+          "Dame of Flame", "Fame of Flame", "Fire & Brimstone", "Fire It Up", "Flame of Fame", "Flux Crux",
+          "Flux Deluxe", "Forge and Fabricate", "Forge away", "Forging Ahead", "Forging Matters", "George\'s Forge",
+          "Gorge \'n Forge", "Hammer \'n Anvil", "Hammer Clamor", "Hammer Down", "Hammer Glamor", "Hammer Home",
+          "Hammer It Hot", "Hammer Out", "Hammer Time", "Hammer and Metal", "Hammer and Tongs", "Hammer in Hand",
+          "He Who Smelt It", "Heat Up", "Heat of the Moment", "Heavy Metal Works", "Heavy Metals", "Hot Hammer",
+          "Hot Hot Hot", "Hot Iron", "Hot Rod", "Hot Spot", "Hot Stuff", "Hot diggety dog!", "Hot diggety!", "Hot-Shot",
+          "In Flux", "Ingot This", "Iron Designs", "Iron Man", "Iron Woman", "Iron in the Fire", "Ironclad",
+          "Just Enough Irons", "Like Moths", "Making It Hot", "Matter of Metal", "Metal Accent", "Metal Arts",
+          "Metal Expertise", "Metal Fabrications", "Metal Mania", "Metal Maniac", "Metal Mastery", "Metal Pandemonium",
+          "Metal Trades", "Metal Works", "Metallurgy", "Metalworks", "Metalworks of Art", "Mind Over Matter",
+          "Mind Over Metal", "Mineral Minded", "Mineral Works", "Mr Smith", "Mrs Smith", "Nerves of Steel",
+          "Nice Ring To It", "Ore Decor", "Ore Else", "Ore Galore", "Ore Really", "Ore Restore", "Ore Store",
+          "Parent Rock", "Phoenix Fire", "Pound World", "Real Steel", "Ring to It", "Rings True", "Smelt Art",
+          "Smelt My Hearth", "Smelt in my Arms", "Smelting Pot", "Smelts of Heaven", "Smelts of Roses", "Smite Thee",
+          "Smith Thee", "Smithen", "Smitten", "Sparks and Flames", "Squeal of Steel", "Steel Appeal", "Steel Arms",
+          "Steel Base", "Steel Fabrications", "Steel Ideal", "Steel Show", "Steel Thunder", "Steel Wings",
+          "Stop! Hammer Time", "Striking Hot", "Sword in the Forge", "Sword in the Stone", "The Ancient Anvil",
+          "The Blacksmith\'s Forge", "The Clamor Shop", "The Clank Tank", "The Clinker Shop", "The Cobalt Forge",
+          "The Eternal Flame", "The Fire Spire", "The Fire Squire", "The Flame Game", "The Gorge Forge",
+          "The Heat is On", "The Hot Forge", "The Hot Ticket", "The Inferno Forge", "The Iron\'s Hot",
+          "The Metal Petal", "The Phoenix Forge", "The Right Clank", "The Smelt Belt", "The Smelt Celt",
+          "The Smith Myth", "The Smithy", "The Storm Forge", "The Tilted Anvil", "The Unbreakable Anvil",
+          "There Be Smoke", "True as Steel", "Under Construction", "While the Iron\'s Hot", "Young Flames"]
+
+    def __str__(self):
+        return self.b1[randint(len(self.b1))]
+
+
+class Relics(object):
+    n1 = ["Absorbing", "Abundance", "Acrimony", "Affluence", "Agony", "All-Seeing", "Angels", "Annihilation", "Apathy",
+          "Athanasia", "Bane", "Banishment", "Benediction", "Betrayal", "Binding", "Birth", "Black Magic", "Blessings",
+          "Blights", "Blinding", "Chance", "Chaos", "Charming", "Collapse", "Contagion", "Corruption", "Courage",
+          "Curses", "Damnation", "Darkness", "Death", "Decadence", "Decay", "Delirium", "Delusion", "Dementia",
+          "Demons", "Depravity", "Desire", "Destiny", "Destruction", "Dismay", "Divinity", "Doom", "Downfall", "Dread",
+          "Dreams", "Enigmas", "Enthrallment", "Eternal Health", "Eternal Slumber", "Eternity", "Evil", "Evils",
+          "Exiles", "Faith", "Fate", "Fear", "Fertility", "Fire", "Flame", "Fortitude", "Fortuity", "Fortune", "Frost",
+          "Futures", "Genesis", "Gluttony", "Gold", "Grace", "Greed", "Guardians", "Hatred", "Healing", "Hell",
+          "Heroism", "Honesty", "Hunger", "Ice", "Immobilizing", "Immortality", "Immunity", "Imperviousness",
+          "Infinity", "Invincibility", "Invisibility", "Invocation", "Judgment", "Justice", "Karma", "Knowledge",
+          "Liberation", "Life", "Lifeblood", "Light", "Lightness", "Lightning", "Longevity", "Loyalty", "Luck",
+          "Luminosity", "Lunacy", "Lust", "Malady", "Malediction", "Malevolence", "Malice", "Mania", "Massacres",
+          "Mending", "Metamorphosis", "Misery", "Misfortune", "Mysteries", "Nightmares", "Oaths", "Oblivion", "Origins",
+          "Pain", "Paradise", "Paralysis", "Passion", "Peace", "Persecution", "Pestilence", "Petrification", "Potency",
+          "Prosperity", "Protection", "Radiance", "Rain", "Rebirth", "Remedies", "Repelling", "Resistance",
+          "Restoration", "Resurrection", "Revival", "Riches", "Riddles", "Ruination", "Runes", "Sanctification",
+          "Sanctity", "Scorching", "Secrets", "Seduction", "Sentience", "Serendipity", "Service", "Shadows",
+          "Shapeshifting", "Sight", "Silence", "Sleep", "Solitude", "Souls", "Specters", "Speed", "Spellbinding",
+          "Spells", "Spirits", "Spite", "Storms", "Strength", "Summoning", "Teleportation", "Temptation", "Time",
+          "Torment", "Torture", "Toxin", "Transformation", "Transmutation", "Treachery", "Truth", "Valor", "Vengeance",
+          "Venom", "Vice", "Virility", "Warding", "Wealth", "Wisdom", "Wishes", "Worship", "Youth", "the Aether",
+          "the Cosmos", "the Creed", "the Crux", "the Dead", "the Elements", "the Gods", "the Heavens", "the Occult",
+          "the Oracle", "the Scourge", "the Titans", "the Void"]
+    n2 = ["Absorbing", "Aethereal", "Agony", "Alchemy", "All-Seeing", "Almighty", "Anarchy", "Angel", "Anguish",
+          "Annihilation", "Archangel", "Athanasia", "Aurora", "Azure", "Banishing", "Benediction", "Binding",
+          "Black Magic", "Blazing", "Blight", "Blinding", "Bravery", "Burning", "Celestial", "Chaos", "Charming",
+          "Contagion", "Corruption", "Curse", "Cursed", "Damnation", "Darkness", "Death's", "Decay", "Decimation",
+          "Delirium", "Delusion", "Dementia", "Demon", "Demonic", "Desire's", "Destiny's", "Destruction", "Devotion",
+          "Diabolic", "Divine", "Divinity's", "Dominance", "Domination", "Dominion", "Doom", "Dread", "Dream", "Echo",
+          "Eclipse", "Elemental", "Enigma", "Enigmatic", "Equinox", "Eradication", "Eternal", "Eternity", "Evil",
+          "Exile", "Exiled", "Extinction", "Faith's", "Fate's", "Finality", "Fire", "Flame", "Fortitude", "Fortune's",
+          "Frost", "Genesis", "Gold", "Golden", "Grave", "Guardian", "Guardian's", "Hallowed", "Hatred's", "Healing",
+          "Heavenly", "Hell's", "Hellish", "Hero", "Hero's", "Holy", "Hungering", "Ice", "Immortal", "Immunity",
+          "Impurity", "Infernal", "Infinity", "Insanity", "Invincibility", "Invisibility", "Invisible", "Isolation",
+          "Judging", "Judgment", "Justice", "Karma", "Kismet", "Liberty", "Life", "Life's", "Lifeblood", "Light's",
+          "Longevity", "Lucky", "Lust's", "Malady", "Malediction", "Malevolence", "Maniacal", "Massacre", "Mending",
+          "Metamorphosis", "Mirage", "Misery", "Misfortune", "Mystery", "Necrotic", "Nightmare", "Obedience",
+          "Oblivion", "Obsidian", "Onyx", "Oracle", "Pandemonium", "Paradise", "Paragon", "Paralyzing", "Paramount",
+          "Pestilence", "Petrifying", "Philosopher's", "Primal", "Prime", "Prosperous", "Purity", "Rebirth",
+          "Resistance", "Resolution", "Restoration", "Resurrection", "Rogue", "Runed", "Sacred", "Sanctifying",
+          "Scourge", "Seduction", "Sentient", "Seraphic", "Serenity", "Shade", "Shadow", "Shapeshifter",
+          "Shapeshifter's", "Slumber", "Solitude's", "Soul", "Specter", "Spellbound", "Spirit", "Spiritbound", "Spite",
+          "Storm", "Summoning", "Supremacy", "Teleportation", "Teleporting", "Temptation", "Termination", "Thaumaturgy",
+          "Thunder", "Titan", "Torment", "Torture", "Tranquility", "Transformation", "Transmutation", "Tribute",
+          "Triumph", "Truth", "Twilight", "Unholy", "Valor", "Valor's", "Vengeance", "Venom", "Vice", "Virility",
+          "Virtue", "Void", "Warding", "Wisdom", "Worshop"]
+    n3 = []
+    Types = ["Armor", "Book", "Potion", "Jewel", "Other", ]
+
+    def __init__(self, Classification):
+        if Classification not in self.Types:
+            Classification = "Other"
+        if Classification == "Armor":
+            self.n3 = ["Amulet", "Band", "Boots", "Sandals", "Bracelet", "Chest", "Cloak", "Fleece", "Gauntlet", "Hand",
+                       "Hide", "Mantle", "Mask", "Ring", "Robes", "Shield", ]
+        if Classification == "Book":
+            self.n3 = ["Book", "Grimoire", "Inscriptions", "Instrument", "Letters", "Runes", "Scroll", "Symbols",
+                       "Tablet", "Texts", "Slab", "Tome", ]
+        if Classification == "Potion":
+            self.n3 = ["Canopic Jar", "Elixir", "Fountain", "Ichor", "Tincture", ]
+        if Classification == "Jewel":
+            self.n3 = ["Crown", "Tiara", "Circlet", "Gem", "Necklace", "Stone", ]
+        if Classification == "Other":
+            self.n3 = ["Arch", "Ark", "Box", "Canopic Chest", "Cube", "Cup", "Cylinder", "Disc", "Chalice", "Goblet",
+                       "Door", "Feather", "Fruit", "Grail", "Horn", "Jar", "Key", "Lamp", "Microlith", "Mirror",
+                       "Monolith", "Pillar", "Rod", "Root", "Seal", "Shard", "Skull", "Statue", "Statuette", "Urn", ]
+
+    def __str__(self):
+        if randint(2):
+            return self.n3[randint(len(self.n3))] + " of " + self.n1[randint(len(self.n1))]
+        else:
+            return self.n2[randint(len(self.n2))] + " " + self.n3[randint(len(self.n3))]
+
+
+class Weapons(object):
+    Types = ["Axe", "Bow", "Dagger", "Hammer", "Mace", "Spear", "Sword", ]
+    var1 = var2 = var3 = var4 = var5 = var6 = var7 = []
+
+    def __init__(self, Classification):
+        if Classification not in self.Types:
+            print("Choose a weapon from the following list:", self.Types)
+        elif Classification == "Axe":
+            self.var1 = ["Abomination", "Agatha", "Allegiance", "Alpha", "Amnesia", "Anduril", "Anger's Edge",
+                         "Apocalypse", "Armageddon", "Arondite", "Ash", "Ashes", "Ashrune", "Betrayal", "Betrayer",
+                         "Blackout", "Blazefury", "Blazeguard", "Blight's Plight", "Blind Justice", "Blinkstrike",
+                         "Bloodfury", "Bloodmoon", "Bloodquench", "Bloodrage", "Bloodspiller", "Bloodweep",
+                         "Bone Warden", "Braindead", "Broken Promise", "Brutality", "Brutalizer", "Cataclysm",
+                         "Catastrophe", "Celeste", "Chance", "Chaos", "Chasm", "Chieftain", "Comet", "Cometfall",
+                         "Convergence", "Corpsemaker", "Corruption", "Crescent Moon", "Crimson", "Cutting Response",
+                         "Cyclone", "Darkness", "Dawn", "Dawn's Edge", "Dawnbreaker", "Daytime", "Deathbringer",
+                         "Deathraze", "Deathspade", "Decimation", "Desolation", "Despair", "Destiny", "Devastation",
+                         "Devine", "Devotion", "Devourer", "Divine Light", "Dominance", "Dominion", "Doom",
+                         "Doom's Edge", "Doomblade", "Doombringer", "Due Diligence", "Dusk's Edge", "Early Retirement",
+                         "Earthquake", "Echo", "Eclipse", "Edge of Death", "Edge of Eternity", "Edge of Infinity",
+                         "Edge of Life", "Edge of Madness", "Edge of Misery", "Edge of Reason", "Edge of Ruin",
+                         "Edge of Time", "Emergency", "Endbringer", "Enigma", "Epilogue", "Eternal Rest", "Eternity",
+                         "Extermination", "Extinction", "Faithkeeper", "Fate", "Finality", "Fleshrender",
+                         "Freak's Bite", "Frenzy", "Frostbite", "Frostwind", "Fury", "Fury's Gaze", "Gatecrasher",
+                         "Ghost Reaver", "Ghostwalker", "Glimmer", "Godslayer", "Grieving Blade", "Guillotine",
+                         "Gutrender", "Harbinger", "Harvester", "Hatred", "Hatred's Blade", "Heartseeker",
+                         "Hell's Scream", "Hellfire", "Hellreaver", "Homage", "Honor's Call", "Hope's Edge",
+                         "Hope's End", "Humongous", "Hurricane", "Infamy", "Infinity", "Interrogator", "Justice",
+                         "Justifier", "King's Defender", "King's Legacy", "Kinslayer", "Knight's Fall",
+                         "Knight's Honor", "Knightfall", "Lament", "Last Chance", "Last Laugh", "Last Rites",
+                         "Last Words", "Lazarus", "Legacy", "Legionaire", "Life's Limit", "Light's Bane", "Lightbane",
+                         "Lightbringer", "Lightning", "Limbo", "Magma", "Malice", "Maneater", "Massacre", "Mercy",
+                         "Midnight", "Misery's Edge", "Misery's End", "Monsoon", "Mooncleaver", "Mournblade",
+                         "Narcoleptic", "Nethersbane", "Night's Edge", "Night's Fall", "Nightbane", "Nightfall",
+                         "Nighttime", "Nirvana", "Oathbreaker", "Oathkeeper", "Oblivion", "Old Age", "Omega", "Orbit",
+                         "Orenmir", "Party Pooper", "Peacekeeper", "Peacemaker", "Pendulum", "Perfect Storm",
+                         "Persuasion", "Piece Maker", "Piety", "Pork-Chopper", "Pride", "Prophecy", "Purifier", "Rage",
+                         "Ragnarok", "Rapture", "Reaper", "Reaper's Toll", "Reckoning", "Red Dwarf", "Reign", "Remorse",
+                         "Requiem", "Retirement", "Righteous Might", "Rigormortis", "Rising Tide", "Savagery", "Scar",
+                         "Scourgeborne", "Second Chance", "Seism", "Severance", "Shadow Strike", "Shadow's Edge",
+                         "Shadowfury", "Shadowmoon", "Shadowsteel", "Silence", "Skullcleaver", "Skullcrusher",
+                         "Slice of Life", "Soul Breaker", "Soul Reaper", "Spinefall", "Stalker", "Storm",
+                         "Storm Breaker", "Storm-Weaver", "Stormbringer", "Stormcaller", "Stormedge", "Stormrider",
+                         "Supernova", "Supremacy", "Suspension", "Swan Song", "Termination", "The Ambassador",
+                         "The Chancellor", "The Chief", "The Decapitator", "The End", "The Facelifter", "The Light",
+                         "The Minotaur", "The Oculus", "The Oracle", "The Sundering", "The Void", "The Warden",
+                         "Thunder", "Treachery", "Tremor", "Trickster", "Trickster's Edge", "Trinity", "Twisted",
+                         "Typhoon", "Ubiquity", "Undoing", "Vacancy", "Valkyrie", "Vanquisher", "Vengeance",
+                         "Warbringer", "Warmonger", "Whirlwind", "Wicked", "Widow Maker", "Willbreaker", "Windreaper",
+                         "Windslicer", "Winter's Bite", "Wit's End", "Witherbrand", "Wolf", "Worldbreaker",
+                         "Worldcarver", "Worldslayer"]
+            self.var2 = ["Ancient", "Antique", "Apocalypse", "Apocalyptic", "Arcane", "Arched", "Atuned", "Bandit's",
+                         "Baneful", "Banished", "Barbarian", "Barbaric", "Battleworn", "Blazefury", "Blood Infused",
+                         "Blood-Forged", "Bloodcursed", "Bloodied", "Bloodlord's", "Bloodsurge", "Bloodvenom",
+                         "Bonecarvin", "Brutal", "Brutality", "Burnished", "Cataclysm", "Cataclysmic", "Challenger",
+                         "Challenger's", "Champion", "Champion's", "Cold-Forged", "Conqueror", "Conqueror's",
+                         "Corroded", "Corrupted", "Crazed", "Crying", "Cursed", "Curved", "Dancing", "Dark", "Darkness",
+                         "Defender", "Defender's", "Defiled", "Defiling", "Deluded", "Demonic", "Deserted", "Desire's",
+                         "Desolation", "Destiny's", "Diabolical", "Dire", "Doom", "Doom's", "Dragon's", "Dragonbreath",
+                         "Eerie", "Enchanted", "Engraved", "Enlightened", "Eternal", "Exiled", "Extinction", "Faith's",
+                         "Faithful", "Fancy", "Fearful", "Feral", "Ferocious", "Fierce", "Fiery", "Fire Infused",
+                         "Fireguard", "Firesoul", "Firestorm", "Flaming", "Flimsy", "Forsaken", "Fortune's", "Foul",
+                         "Fragile", "Frail", "Frenzied", "Frost", "Frozen", "Furious", "Fusion", "Ghastly", "Ghost",
+                         "Ghost-Forged", "Ghostly", "Gladiator", "Gladiator's", "Gleaming", "Glinting", "Greedy",
+                         "Grieving", "Grim", "Guard's", "Guardian's", "Hailstorm", "Harmonized", "Hateful", "Haunted",
+                         "Heartless", "Heinous", "Hero", "Hero's", "Hollow", "Holy", "Honed", "Honor's", "Hope's",
+                         "Hopeless", "Howling", "Hungering", "Improved", "Impure", "Incarnated", "Infused", "Inherited",
+                         "Isolated", "Jade Infused", "Judgement", "Keeper's", "Knightly", "Knight's", "Legionnaire's",
+                         "Liar's", "Lich", "Lightning", "Lonely", "Loyal", "Lustful", "Lusting", "Malevolent",
+                         "Malicious", "Malificent", "Malignant", "Massive", "Mended", "Mercenary", "Military",
+                         "Misfortune's", "Misty", "Moonlit", "Mourning", "Nightmare", "Oathkeeper's", "Ominous",
+                         "Peacekeeper", "Peacekeeper's", "Phantom", "Polished", "Possessed", "Pride's", "Prideful",
+                         "Primal", "Prime", "Primitive", "Promised", "Protector's", "Proud", "Pure", "Putrid", "Raging",
+                         "Recruit's", "Refined", "Reforged", "Reincarnated", "Relentless", "Remorseful", "Renewed",
+                         "Renovated", "Replica", "Restored", "Retribution", "Ritual", "Roaring", "Ruby Infused",
+                         "Rune-Forged", "Runed", "Rusty", "Savage", "Sentinel", "Shadow", "Shamanic", "Sharpened",
+                         "Silent", "Singed", "Singing", "Sinister", "Skyfall", "Smooth", "Soldier's", "Solitude's",
+                         "Sorcerer's", "Sorrow's", "Soul", "Soul Infused", "Soul-Forged", "Soulcursed", "Soulless",
+                         "Spectral", "Spectral-Forged", "Spiteful", "Storm", "Storm-Forged", "Stormfury", "Stormguard",
+                         "Terror", "Thirsting", "Thirsty", "Thunder", "Thunder-Forged", "Thunderfury", "Thunderguard",
+                         "Thundersoul", "Thunderstorm", "Timeworn", "Tormented", "Trainee's", "Treachery's", "Twilight",
+                         "Twilight's", "Twisted", "Tyrannical", "Undead", "Unholy", "Vanquisher", "Vengeance",
+                         "Vengeful", "Venom", "Vicious", "Victor", "Vile", "Vindication", "Vindicator", "Vindictive",
+                         "Void", "Volcanic", "Vowed", "War", "War-Forged", "Warden's", "Warlord's", "Warp", "Warped",
+                         "Warrior", "Warrior's", "Whistling", "Wicked", "Wind's", "Wind-Forged", "Windsong", "Woeful",
+                         "Wrathful", "Wretched", "Yearning", "Zealous"]
+            self.var3 = ["Adamantite", "Bone", "Bronze", "Bronzed", "Ivory", "Ebon", "Glass", "Golden", "Iron",
+                         "Ironbark", "Mithril", "Obsidian", "Silver", "Skeletal", "Steel", "Titanium"]
+            self.var4 = ["Battle Axe", "Chopper", "Axe", "Edge", "Crescent", "Cleaver", "Greataxe", "Dualblade",
+                         "Broadaxe", "Reaver", "War Axe", "Ravager", "Maul"]
+            self.var5 = ["Allegiance", "Annihilation", "Axe", "Battle Axe", "Betrayer", "Bond", "Boon", "Breaker",
+                         "Bringer", "Broadaxe", "Butcher", "Call", "Carver", "Champion", "Chopper", "Cleaver",
+                         "Conqueror", "Crescent", "Crusader", "Cry", "Cunning", "Dark Blade", "Dawn", "Defender",
+                         "Defiler", "Destroyer", "Doomblade", "Dualblade", "Edge", "Ender", "Etcher", "Executioner",
+                         "Favor", "Ferocity", "Foe", "Gift", "Glory", "Greataxe", "Guardian", "Heirloom", "Hope",
+                         "Incarnation", "Jaws", "Last Hope", "Last Stand", "Legacy", "Maul", "Memory", "Might", "Oath",
+                         "Pact", "Pledge", "Promise", "Prophecy", "Protector", "Ravager", "Razor", "Reach", "Reaper",
+                         "Reaver", "Runed Blade", "Sculptor", "Secret", "Slayer", "Slicer", "Soul", "Terror", "Token",
+                         "Tribute", "Vengeance", "Voice", "War Axe", "Warblade", "Whisper", "Wit"]
+            self.var6 = ["of Agony", "of Ancient Power", "of Anguish", "of Ashes", "of Assassins", "of Black Magic",
+                         "of Blessed Fortune", "of Blessings", "of Blight", "of Blood", "of Bloodlust",
+                         "of Broken Bones", "of Broken Dreams", "of Broken Families", "of Burdens", "of Chaos",
+                         "of Closing Eyes", "of Conquered Worlds", "of Corruption", "of Cruelty", "of Cunning",
+                         "of Dark Magic", "of Dark Souls", "of Darkness", "of Decay", "of Deception", "of Degradation",
+                         "of Delusions", "of Denial", "of Desecration", "of Diligence", "of Dismay", "of Dragonsouls",
+                         "of Due Diligence", "of Echoes", "of Ended Dreams", "of Ending Hope", "of Ending Misery",
+                         "of Eternal Bloodlust", "of Eternal Damnation", "of Eternal Glory", "of Eternal Justice",
+                         "of Eternal Rest", "of Eternal Sorrow", "of Eternal Struggles", "of Eternity", "of Executions",
+                         "of Faded Memories", "of Fallen Souls", "of Fools", "of Frost", "of Frozen Hells", "of Fury",
+                         "of Giants", "of Giantslaying", "of Grace", "of Grieving Widows", "of Hate", "of Hatred",
+                         "of Hell's Games", "of Hellish Torment", "of Heroes", "of Holy Might", "of Honor", "of Hope",
+                         "of Horrid Dreams", "of Horrors", "of Illuminated Dreams", "of Illumination", "of Immortality",
+                         "of Inception", "of Infinite Trials", "of Insanity", "of Invocation", "of Justice",
+                         "of Light's Hope", "of Lost Comrades", "of Lost Hope", "of Lost Voices", "of Lost Worlds",
+                         "of Magic", "of Mercy", "of Misery", "of Mountains", "of Mourning", "of Mystery",
+                         "of Necromancy", "of Nightmares", "of Oblivion", "of Perdition", "of Phantoms", "of Power",
+                         "of Pride", "of Pride's Fall", "of Putrefaction", "of Reckoning", "of Redemption", "of Regret",
+                         "of Riddles", "of Secrecy", "of Secrets", "of Shadow Strikes", "of Shadows",
+                         "of Shifting Sands", "of Shifting Worlds", "of Silence", "of Slaughter", "of Souls",
+                         "of Stealth", "of Storms", "of Subtlety", "of Suffering", "of Suffering's End", "of Summoning",
+                         "of Terror", "of Thunder", "of Time-Lost Memories", "of Timeless Battles", "of Titans",
+                         "of Torment", "of Traitors", "of Trembling Hands", "of Trials", "of Truth",
+                         "of Twilight's End", "of Twisted Visions", "of Unholy Blight", "of Unholy Might",
+                         "of Vengeance", "of Visions", "of Wasted Time", "of Widows", "of Wizardry", "of Woe",
+                         "of Wraiths", "of Zeal", "of the Ancients", "of the Banished", "of the Basilisk",
+                         "of the Beast", "of the Blessed", "of the Breaking Storm", "of the Brotherhood",
+                         "of the Burning Sun", "of the Caged Mind", "of the Cataclysm", "of the Champion",
+                         "of the Claw", "of the Corrupted", "of the Covenant", "of the Crown", "of the Damned",
+                         "of the Daywalker", "of the Dead", "of the Depth", "of the Dreadlord", "of the Earth",
+                         "of the East", "of the Emperor", "of the Empty Void", "of the End", "of the Enigma",
+                         "of the Fallen", "of the Falling Sky", "of the Flame", "of the Forest", "of the Forgotten",
+                         "of the Forsaken", "of the Gladiator", "of the Harvest", "of the Immortal",
+                         "of the Incoming Storm", "of the Insane", "of the King", "of the Lasting Night",
+                         "of the Leviathan", "of the Light", "of the Lion", "of the Lionheart", "of the Lone Victor",
+                         "of the Lone Wolf", "of the Lost", "of the Moon", "of the Moonwalker", "of the Night Sky",
+                         "of the Night", "of the Nightstalker", "of the North", "of the Occult", "of the Oracle",
+                         "of the Phoenix", "of the Plague", "of the Prince", "of the Protector", "of the Queen",
+                         "of the Serpent", "of the Setting Sun", "of the Shadows", "of the Sky", "of the South",
+                         "of the Stars", "of the Storm", "of the Summoner", "of the Sun", "of the Sunwalker",
+                         "of the Talon", "of the Undying", "of the Victor", "of the Void", "of the West",
+                         "of the Whispers", "of the Wicked", "of the Wind", "of the Wolf", "of the World",
+                         "of the Wretched"]
+            self.var7 = ["Abomination", "Agatha", "Allegiance", "Alpha", "Amnesia", "Anduril", "Anger's Edge",
+                         "Apocalypse", "Armageddon", "Arondite", "Ash", "Ashes", "Ashrune", "Betrayal", "Betrayer",
+                         "Blackout", "Blazefury", "Blazeguard", "Blind Justice", "Blinkstrike", "Bloodfury",
+                         "Bloodmoon", "Bloodquench", "Bloodrage", "Bloodspiller", "Bloodweep", "Bone Warden",
+                         "Braindead", "Broken Promise", "Brutality", "Brutalizer", "Cataclysm", "Catastrophe",
+                         "Celeste", "Chance", "Chaos", "Chasm", "Chieftain", "Comet", "Cometfall", "Convergence",
+                         "Corpsemaker", "Corruption", "Crescent Moon", "Crimson", "Cyclone", "Darkness", "Dawn",
+                         "Dawn's Edge", "Dawnbreaker", "Daytime", "Deathbringer", "Deathraze", "Deathspade",
+                         "Decimation", "Desolation", "Despair", "Destiny", "Devastation", "Devine", "Devotion",
+                         "Devourer", "Divine Light", "Dominance", "Dominion", "Doom", "Doomblade", "Doombringer",
+                         "Due Diligence", "Earthquake", "Echo", "Eclipse", "Emergency", "Endbringer", "Enigma",
+                         "Epilogue", "Eternal Rest", "Eternity", "Extermination", "Extinction", "Faithkeeper", "Fate",
+                         "Finality", "Fleshrender", "Freak's Bite", "Frenzy", "Frostbite", "Frostwind", "Fury",
+                         "Fury's Gaze", "Gatecrasher", "Ghost Reaver", "Ghostwalker", "Glimmer", "Godslayer",
+                         "Guillotine", "Gutrender", "Harbinger", "Harvester", "Hatred", "Heartseeker", "Hell's Scream",
+                         "Hellfire", "Hellreaver", "Homage", "Honor's Call", "Hope's Edge", "Hope's End", "Humongous",
+                         "Hurricane", "Infamy", "Infinity", "Interrogator", "Justice", "Justifier", "King's Defender",
+                         "King's Legacy", "Kinslayer", "Knight's Fall", "Knight's Honor", "Knightfall", "Lament",
+                         "Last Chance", "Last Laugh", "Last Rites", "Last Words", "Lazarus", "Legacy", "Legionaire",
+                         "Life's Limit", "Light's Bane", "Lightbane", "Lightbringer", "Lightning", "Limbo", "Magma",
+                         "Malice", "Maneater", "Massacre", "Mercy", "Midnight", "Misery's Edge", "Misery's End",
+                         "Monsoon", "Mooncleaver", "Mournblade", "Narcoleptic", "Nethersbane", "Night's Edge",
+                         "Night's Fall", "Nightbane", "Nightfall", "Nighttime", "Nirvana", "Oathbreaker", "Oathkeeper",
+                         "Oblivion", "Old Age", "Omega", "Orbit", "Orenmir", "Party Pooper", "Peacekeeper",
+                         "Peacemaker", "Pendulum", "Perfect Storm", "Persuasion", "Piece Maker", "Piety",
+                         "Pork-Chopper", "Pride", "Prophecy", "Purifier", "Rage", "Ragnarok", "Rapture", "Reaper",
+                         "Reaper's Toll", "Reckoning", "Red Dwarf", "Reign", "Remorse", "Requiem", "Retirement",
+                         "Rigormortis", "Rising Tide", "Savagery", "Scar", "Scourgeborne", "Second Chance", "Seism",
+                         "Severance", "Shadow Strike", "Shadow's Edge", "Shadowfury", "Shadowmoon", "Shadowsteel",
+                         "Silence", "Skullcleaver", "Skullcrusher", "Slice of Life", "Soul Breaker", "Soul Reaper",
+                         "Spinefall", "Stalker", "Storm", "Storm Breaker", "Storm-Weaver", "Stormbringer",
+                         "Stormcaller", "Stormedge", "Stormrider", "Supernova", "Supremacy", "Suspension", "Swan Song",
+                         "Termination", "The Ambassador", "The Chancellor", "The Chief", "The Decapitator", "The End",
+                         "The Facelifter", "The Light", "The Minotaur", "The Oculus", "The Oracle", "The Sundering",
+                         "The Void", "The Warden", "Thunder", "Treachery", "Tremor", "Trickster", "Trinity", "Twisted",
+                         "Typhoon", "Ubiquity", "Undoing", "Vacancy", "Valkyrie", "Vanquisher", "Vengeance",
+                         "Warbringer", "Warmonger", "Whirlwind", "Wicked", "Widow Maker", "Willbreaker", "Windreaper",
+                         "Windslicer", "Winter's Bite", "Wit's End", "Witherbrand", "Wolf", "Worldbreaker",
+                         "Worldcarver", "Worldslayer"]
+        elif Classification == "Bow":
+            self.var1 = ["Hornet's Sting", "Blackened Sky", "Darkened Sky", "Steel Hail", "Archangel", "Archdemon",
+                         "Arcus", "Armadillo", "Armageddon", "Arrowsong", "Arrowspike", "Avalance", "Back Pain",
+                         "Backsnipe", "Ballista", "Barrage", "Beesting", "Betrayal", "Betrayal's Sting", "Bolt",
+                         "Bolt Action", "Bon Voyage", "Bristleblitz", "Bullseye", "Calamity", "Chimera", "Clutch",
+                         "Comet", "Courier", "Crier", "Curvey", "Cyclone", "Dash", "Dead Air", "Death's Kiss",
+                         "Death's Sigh", "Death's Whisper", "Decimate", "Deliverance", "Deluge", "Destiny's Song",
+                         "Devil's Kiss", "Devil's Recurve", "Devil's Sting", "Devil's Whisper", "Doomcaster",
+                         "Drawback", "Drawling", "Drawstring", "Dream Catcher", "Eagle", "Eagle Strike",
+                         "Emily's Curve", "Euthanasia", "Eye of Eternity", "Eye of Fidelity", "Eye of Precision",
+                         "Eye of Truth", "Falling Star", "Featherdraw", "Final Breath", "Final Voyage", "Final Whisper",
+                         "Final Whistle", "Firestarter", "Fling", "Flux", "Fury", "Gargoyle", "Graviton", "Hailstorm",
+                         "Hamstring", "Hamstrung", "Harbinger", "Hatred's Sting", "Hawkeye", "Heartbeat",
+                         "Heartpiercer", "Heartstriker", "Heartstring", "Hedgehog", "Hell's Whistle", "High-Strung",
+                         "Hooty Tooty Aim and Shooty", "Hope's End", "Hornet", "Huntress", "Hurricane", "Hush",
+                         "Imminent Doom", "Impending Doom", "Irk", "Jugular", "Kiss of Death", "Lash", "Last Kiss",
+                         "Last Vision", "Last Whisper", "Lightning", "Lightning Strike", "Long Shot", "Messenger",
+                         "Meteor", "Meteor Strike", "Midge", "Mirage", "Misery's End", "Molten Fury", "Mosquito",
+                         "Needle Shooter", "Needle Threader", "Netherstrand", "Penetrator", "Perfidy", "Phantom",
+                         "Phantom Strike", "Phoenix", "Pierce", "Pinch", "Pique", "Pluck", "Porcupine", "Precise",
+                         "Precision", "Prickle", "Prophet", "Puncture", "Quickstrike", "Quillshooter", "Quintain",
+                         "Rain Maker", "Razorsong", "Razorwind", "Recurve", "Rigormortis", "Salvation", "Scorpio",
+                         "Scorpion", "Scorpion Sting", "Shadow Strike", "Shadow's Bane", "Shadow's Strike",
+                         "Shatter Storm", "Shooting Star", "Shriek", "Silent Messenger", "Silentsong", "Siren's Call",
+                         "Siren's Cry", "Siren's Song", "Sky Piercer", "Skyfire", "Snatch", "Snipe", "Snitch",
+                         "Soulstring", "Special Delivery", "Spitfire", "Splinter", "Splintermark", "Squawk", "Squirm",
+                         "Star's Fury", "Starshot", "Starstruck", "Sting", "Stormsong", "Striker's Mark", "Stryker",
+                         "Sudden Death", "Surprise", "Swiftwind", "Swoosh", "Talonstrike", "Tempest", "The Ambassador",
+                         "The Messenger", "Thunder", "Thunderstrike", "Tiebreaker", "Tranquility", "Trophy Chord",
+                         "Trophy Gatherer", "Trophy Mark", "Truestrike", "Tweak", "Twisted", "Twister", "Twitch",
+                         "Typhoon", "Valkyrie", "Vehement Chord", "Venomstrike", "Viper", "Vixen", "Vulture", "Warsong",
+                         "Wasp", "Wasp's Sting", "Whelm", "Whisper", "Whisperwind", "Windbreaker", "Windforce",
+                         "Windlass", "Windrunner", "Windstalker", "Windtalker", "WithDraw"]
+            self.var2 = ["Advanced", "Amber Infused", "Ancient", "Anguish'", "Annihilation", "Antique", "Arcane",
+                         "Arched", "Archer's", "Assassination", "Atuned", "Bandit's", "Baneful", "Banished",
+                         "Barbarian", "Barbaric", "Battleworn", "Blazefury", "Blessed", "Blood Infused", "Bloodcursed",
+                         "Bloodied", "Bloodlord's", "Bloodsurge", "Bloodvenom", "Bone Crushing", "Bowman's", "Brutal",
+                         "Brutality", "Burnished", "Cataclysm", "Cataclysmic", "Charmed", "Corrupted", "Crazed",
+                         "Crying", "Cursed", "Curved", "Dancing", "Defiled", "Deluded", "Demonic", "Deserted",
+                         "Desire's", "Desolation", "Destiny's", "Dire", "Doom", "Doom's", "Dragon's", "Dragonbreath",
+                         "Dreadful", "Ebon", "Eerie", "Enchanted", "Engraved", "Eternal", "Ethereal", "Executing",
+                         "Exiled", "Expert's", "Extinction", "Faith's", "Faithful", "Fancy", "Fearful",
+                         "Feather-Wrapped", "Featherdraw", "Feral", "Fierce", "Fiery", "Fine", "Firestorm", "Flimsy",
+                         "Forsaken", "Fortune's", "Fragile", "Frail", "Frenzied", "Frost", "Frozen", "Furious",
+                         "Fusion", "Ghastly", "Ghostly", "Gladiator", "Gladiator's", "Grieving", "Guard's",
+                         "Guardian's", "Hateful", "Haunted", "Heavy", "Hollow", "Holy", "Honed", "Honor's", "Hope's",
+                         "Hopeless", "Howling", "Hungering", "Improved", "Incarnated", "Infused", "Inherited",
+                         "Isolated", "Jade Infused", "Judgement", "Liar's", "Lich", "Lightning", "Lonely", "Loyal",
+                         "Lustful", "Lusting", "Mage's", "Malevolent", "Malicious", "Malignant", "Massive",
+                         "Master Hunter's", "Mended", "Mercenary", "Military", "Misfortune's", "Mourning", "Nightmare",
+                         "Nightstalker", "Ominous", "Peacekeeper", "Phantom", "Possessed", "Pride's", "Prideful",
+                         "Primitive", "Promised", "Protector's", "Proud", "Ranger's", "Recruit's", "Reincarnated",
+                         "Relentless", "Remorseful", "Renewed", "Renovated", "Replica", "Restored", "Retribution",
+                         "Ritual", "Roaring", "Savage", "Oathkeeper's", "Shadow", "Shadowleaf", "Shrieking", "Silent",
+                         "Singed", "Singing", "Sinister", "Skullforge", "Skyfall", "Smooth", "Solitude's", "Sorrow's",
+                         "Soul", "Soul Infused", "Soulcursed", "Soulless", "Spectral", "Spiteful", "Storm", "Storm's",
+                         "Stormfury", "Stormguard", "Stout", "Striker's", "Sturdy", "Terror", "Thirsting", "Thirsty",
+                         "Thunder", "Thunderfury", "Thunderguard", "Thundersoul", "Timeworn", "Tormented", "Tracking",
+                         "Trainee's", "Trapper's", "Treachery's", "Twilight", "Twilight's", "Twisted", "Tyrannical",
+                         "Undead", "Unholy", "Vengeance", "Vengeful", "Venom", "Vicious", "Vindication", "Vindictive",
+                         "Void", "Volcanic", "Vowed", "War-Forged", "Warlord's", "Warp", "Warped", "Warsong",
+                         "Well Crafted", "Whistling", "Wicked", "Wind's", "Windsong", "Woeful", "Wrathful", "Wretched",
+                         "Yearning", "Yielding", "Zealous"]
+            self.var3 = ["Ashwood", "Bone", "Bronzed", "Driftwood", "Ebon", "Hardwood", "Iron", "Ironbark", "Maple",
+                         "Oak", "Redwood", "Skeletal", "Steel", "Titanium", "Warpwood", "Willow", "Yew"]
+            self.var4 = ["Longbow", "Shortbow", "Crossbow", "Speargun", "Launcher", "Repeater", "Shooter", "Crossfire",
+                         "Bolter", "Heavy Crossbow", "Arbalest", "Piercer", "Striker", "Warbow", "Chord", "Recurve",
+                         "Bow", "Compound Bow", "Hunting Bow", "Warp-Bow", "Flatbow", "Reflex Bow", "Composite Bow",
+                         "Compound Crossbow", "Straight Bow", "Self Bow"]
+            self.var5 = ["Annihilation", "Arbalest", "Arch", "Betrayer", "Bite", "Bolter", "Bond", "Boon", "Bow",
+                         "Breaker", "Bringer", "Call", "Champion", "Chord", "Composite Bow", "Compound Bow", "Crescent",
+                         "Crook", "Crossbow", "Crossfire", "Cry", "Cunning", "Curve", "Dawn", "Defiler", "Destroyer",
+                         "Eclipse", "Ellipse", "Ender", "Etcher", "Executioner", "Eye", "Favor", "Ferocity", "Flatbow",
+                         "Foe", "Gift", "Glory", "Guardian", "Heavy Crossbow", "Heirloom", "Hope", "Hunting Bow",
+                         "Incarnation", "Kiss", "Last Hope", "Last Stand", "Launcher", "Legacy", "Longbow", "Memory",
+                         "Might", "Oath", "Pact", "Piercer", "Pique", "Pledge", "Poke", "Prick", "Promise", "Protector",
+                         "Ravager", "Reach", "Recurve", "Reflex Bow", "Repeater", "Savagery", "Secret", "Self Bow",
+                         "Shooter", "Shortbow", "Skewer", "Soul", "Speargun", "Spike", "Spine", "Straight Bow",
+                         "Striker", "String", "Terror", "Token", "Tribute", "Vengeance", "Voice", "Warbow", "Warp-Bow",
+                         "Whisper", "Wit"]
+            self.var6 = ["of Agony", "of Ancient Power", "of Anguish", "of Ashes", "of Assassins", "of Black Magic",
+                         "of Blessed Fortune", "of Blessings", "of Blight", "of Blood", "of Bloodlust",
+                         "of Broken Bones", "of Broken Dreams", "of Broken Families", "of Burdens", "of Chaos",
+                         "of Closing Eyes", "of Conquered Worlds", "of Corruption", "of Cruelty", "of Cunning",
+                         "of Dark Magic", "of Dark Souls", "of Darkness", "of Decay", "of Deception", "of Degradation",
+                         "of Delusions", "of Denial", "of Desecration", "of Diligence", "of Dismay", "of Dragonsouls",
+                         "of Due Diligence", "of Echoes", "of Ended Dreams", "of Ending Hope", "of Ending Misery",
+                         "of Eternal Bloodlust", "of Eternal Damnation", "of Eternal Glory", "of Eternal Justice",
+                         "of Eternal Rest", "of Eternal Sorrow", "of Eternal Struggles", "of Eternity", "of Executions",
+                         "of Faded Memories", "of Fallen Souls", "of Fools", "of Frost", "of Frozen Hells", "of Fury",
+                         "of Giants", "of Giantslaying", "of Grace", "of Grieving Widows", "of Hate", "of Hatred",
+                         "of Hell's Games", "of Hellish Torment", "of Heroes", "of Holy Might", "of Honor", "of Hope",
+                         "of Horrid Dreams", "of Horrors", "of Illuminated Dreams", "of Illumination", "of Immortality",
+                         "of Inception", "of Infinite Trials", "of Insanity", "of Invocation", "of Justice",
+                         "of Light's Hope", "of Lost Comrades", "of Lost Hope", "of Lost Voices", "of Lost Worlds",
+                         "of Magic", "of Mercy", "of Misery", "of Mountains", "of Mourning", "of Mystery",
+                         "of Necromancy", "of Nightmares", "of Oblivion", "of Perdition", "of Phantoms", "of Power",
+                         "of Pride", "of Pride's Fall", "of Putrefaction", "of Reckoning", "of Redemption", "of Regret",
+                         "of Riddles", "of Secrecy", "of Secrets", "of Shadow Strikes", "of Shadows",
+                         "of Shifting Sands", "of Shifting Worlds", "of Silence", "of Slaughter", "of Souls",
+                         "of Stealth", "of Storms", "of Subtlety", "of Suffering", "of Suffering's End", "of Summoning",
+                         "of Terror", "of Thunder", "of Time-Lost Memories", "of Timeless Battles", "of Titans",
+                         "of Torment", "of Traitors", "of Trembling Hands", "of Trials", "of Truth",
+                         "of Twilight's End", "of Twisted Visions", "of Unholy Blight", "of Unholy Might",
+                         "of Vengeance", "of Visions", "of Wasted Time", "of Widows", "of Wizardry", "of Woe",
+                         "of Wraiths", "of Zeal", "of the Ancients", "of the Banished", "of the Basilisk",
+                         "of the Beast", "of the Blessed", "of the Breaking Storm", "of the Brotherhood",
+                         "of the Burning Sun", "of the Caged Mind", "of the Cataclysm", "of the Champion",
+                         "of the Claw", "of the Corrupted", "of the Covenant", "of the Crown", "of the Damned",
+                         "of the Daywalker", "of the Dead", "of the Depth", "of the Dreadlord", "of the Earth",
+                         "of the East", "of the Emperor", "of the Empty Void", "of the End", "of the Enigma",
+                         "of the Fallen", "of the Falling Sky", "of the Flame", "of the Forest", "of the Forgotten",
+                         "of the Forsaken", "of the Gladiator", "of the Harvest", "of the Immortal",
+                         "of the Incoming Storm", "of the Insane", "of the King", "of the Lasting Night",
+                         "of the Leviathan", "of the Light", "of the Lion", "of the Lionheart", "of the Lone Victor",
+                         "of the Lone Wolf", "of the Lost", "of the Moon", "of the Moonwalker", "of the Night Sky",
+                         "of the Night", "of the Nightstalker", "of the North", "of the Occult", "of the Oracle",
+                         "of the Phoenix", "of the Plague", "of the Prince", "of the Protector", "of the Queen",
+                         "of the Serpent", "of the Setting Sun", "of the Shadows", "of the Sky", "of the South",
+                         "of the Stars", "of the Storm", "of the Summoner", "of the Sun", "of the Sunwalker",
+                         "of the Talon", "of the Undying", "of the Victor", "of the Void", "of the West",
+                         "of the Whispers", "of the Wicked", "of the Wind", "of the Wolf", "of the World",
+                         "of the Wretched"]
+            self.var7 = ["Archangel", "Archdemon", "Arcus", "Armadillo", "Armageddon", "Arrowsong", "Arrowspike",
+                         "Avalance", "Back Pain", "Backsnipe", "Ballista", "Barrage", "Beesting", "Betrayal",
+                         "Betrayal's Sting", "Bolt", "Bon Voyage", "Bristleblitz", "Bullseye", "Calamity", "Chimera",
+                         "Clutch", "Comet", "Courier", "Crier", "Curvey", "Cyclone", "Dash", "Dead Air", "Death's Kiss",
+                         "Death's Sigh", "Death's Whisper", "Decimate", "Deliverance", "Deluge", "Destiny's Song",
+                         "Devil's Kiss", "Devil's Recurve", "Devil's Sting", "Devil's Whisper", "Doomcaster",
+                         "Drawback", "Drawling", "Drawstring", "Dream Catcher", "Eagle", "Eagle Strike",
+                         "Emily's Curve", "Euthanasia", "Falling Star", "Featherdraw", "Firestarter", "Fling", "Flux",
+                         "Fury", "Gargoyle", "Graviton", "Hailstorm", "Hamstring", "Hamstrung", "Harbinger",
+                         "Hatred's Sting", "Hawkeye", "Heartbeat", "Heartpiercer", "Heartstriker", "Heartstring",
+                         "Hedgehog", "Hell's Whistle", "High-Strung", "Hope's End", "Hornet", "Huntress", "Hurricane",
+                         "Hush", "Irk", "Jugular", "Kiss of Death", "Lash", "Lightning", "Long Shot", "Messenger",
+                         "Meteor", "Midge", "Mirage", "Misery's End", "Molten Fury", "Mosquito", "Netherstrand",
+                         "Penetrator", "Perfidy", "Phantom", "Phantom Strike", "Phoenix", "Pierce", "Pinch", "Pique",
+                         "Pluck", "Porcupine", "Precise", "Precision", "Prickle", "Prophet", "Puncture", "Quickstrike",
+                         "Quintain", "Rain Maker", "Razorsong", "Razorwind", "Recurve", "Rigormortis", "Salvation",
+                         "Scorpio", "Scorpion", "Shadow Strike", "Shooting Star", "Shriek", "Silent Messenger",
+                         "Silentsong", "Siren's Call", "Siren's Cry", "Siren's Song", "Sky Piercer", "Skyfire",
+                         "Snatch", "Snipe", "Snitch", "Soulstring", "Spitfire", "Splinter", "Splintermark", "Squawk",
+                         "Squirm", "Star's Fury", "Starshot", "Starstruck", "Sting", "Stormsong", "Stryker", "Surprise",
+                         "Swiftwind", "Swoosh", "Talonstrike", "Tempest", "The Ambassador", "The Messenger", "Thunder",
+                         "Thunderstrike", "Tiebreaker", "Tranquility", "Truestrike", "Tweak", "Twisted", "Twister",
+                         "Twitch", "Typhoon", "Valkyrie", "Venomstrike", "Viper", "Vixen", "Vulture", "Warsong", "Wasp",
+                         "Whelm", "Whisper", "Whisperwind", "Windbreaker", "Windforce", "Windlass", "Windrunner",
+                         "Windstalker", "Windtalker", "WithDraw"]
+        elif Classification == "Dagger":
+            self.var1 = ["Tie Breaker", "Redemption", "Laceration", "Forever", "Silver Slicer", "Eternity", "Goodbye",
+                         "Abyssal Shard", "Aetherius", "Agatha", "Wyrmtooth", "Alpha", "Amnesia", "Amnesty", "Anarchy",
+                         "Anduril", "Anger's Tear", "Angerfang", "Apocalypse", "Armageddon", "Ashrune", "Backtwister",
+                         "Barb", "Betrayal", "Betrayer", "Blackfang", "Blackout", "Blacktalon",
+                         "Blade of a Thousand Cuts", "Blazefury", "Blind Justice", "Blindstrike", "Blink",
+                         "Blinkstrike", "Blood Weeper", "Bloodquench", "Bloodsipper", "Bloodweep", "Bonescraper",
+                         "Bonespike", "Brainpicker", "Broken Promise", "Brutality", "Cataclysm", "Catastrophe",
+                         "Celeste", "Chaos", "Chisel", "Cometfell", "Convergence", "Crisscross", "Crucifix",
+                         "Darkheart", "Darkness", "Dawn", "Death's Bite", "Death's Kiss", "Death's Sting", "Deathraze",
+                         "Decimation", "Dementia", "Desolation", "Despair", "Destiny's Song", "Devine", "Dirge",
+                         "Dissector", "Divinity", "Doomblade", "Doombringer", "Doomspike", "Dragonclaw", "Dragonfang",
+                         "Dragontooth", "Draughtbane", "Due Diligence", "Dustbringer", "Ebony", "Echo", "Eclipse",
+                         "Edge of Eternity", "Edge of Insanity", "Edge of Time", "Endbringer", "Enigma", "Epilogue",
+                         "Eternal Rest", "Extinction", "Faithkeeper", "Fate", "Fear", "Felstriker", "Fleshrender",
+                         "Fleshshaper", "Flicker", "Frenzy", "Frightalon", "Fury", "Garotte", "Ghost Reaver",
+                         "Ghost Shard", "Ghostwalker", "Gladius", "Glimmer", "Grasscutter", "Grieving Blade",
+                         "Gutrender", "Gutwrencher", "Harmony", "Hatred's Bite", "Heartpierce", "Heartrazor",
+                         "Heartseeker", "Heartshiver", "Heartstriker", "Hell's Scream", "Hellfire", "Hollow Silence",
+                         "Honor's Call", "Hope's End", "Hysteria", "Icefall", "Incision", "Infamy", "Infinity",
+                         "Insanity", "Interrogator", "Ivory", "Justice", "Kingsbane", "Kingsfall", "Kinslayer",
+                         "Knight's Fall", "Knightfall", "Lament", "Last Rites", "Last Words", "Lazarus", "Lifedrinker",
+                         "Lightbane", "Lightning", "Limbo", "Lobotomizer", "Loyalty", "Lynch", "Maelstrom", "Malice",
+                         "Mangler", "Massacre", "Mercy", "Meteor", "Midnight", "Moonlight", "Mournblade", "Murder",
+                         "Mutilator", "Nail", "Narcoleptic", "Needle", "Nemesis", "Nethersbane", "Night's Edge",
+                         "Night's Fall", "Nightbane", "Nightbite", "Nightcrackle", "Nightfall", "Nightkiss", "Nimble",
+                         "Nirvana", "Oathbreaker", "Oathkeeper", "Oblivion", "Omega", "Omen", "Peacekeeper",
+                         "Persuasion", "Phantom", "Phantom Shard", "Phantomstrike", "Phobia", "Piece Maker", "Prick",
+                         "Purify", "Quicksilver", "Rage", "Ragespike", "Reaper", "Reckoning", "Remorse", "Requiem",
+                         "Riddle", "Rigormortis", "Sacrifice", "Sanguine", "Savagery", "Scalpel", "Scar", "Scarlet",
+                         "Seethe", "Severance", "Shadow Strike", "Shadowbite", "Shadowfall", "Shadowkiss",
+                         "Shadowrazor", "Shadowshiver", "Shadowsong", "Silence", "Silencer", "Silver Saber",
+                         "Silverlight", "Siphon", "Slander", "Slice of Life", "Solarflare", "Spiderfang", "Spike",
+                         "Spineripper", "Spiritsever", "Spiteblade", "Stalker", "Starlight", "Starshard", "Stickler",
+                         "Sting", "Stinger", "Storm", "Stormbringer", "Stormcaller", "Stormtip", "Striker",
+                         "Sun Strike", "Sunflare", "Sunshard", "Suspension", "Swan Song", "Teaser", "The Black Blade",
+                         "The End", "The Facelifter", "The Sleeper", "The Stake", "The Unmaker", "The Void", "Thorn",
+                         "Thunder", "Timeslicer", "Toothpick", "Torment", "Treachery", "Trickster", "Trinity",
+                         "Twilight", "Twinkle", "Twister", "Twitch", "Tyrhung", "Valkyrie", "Vengeance", "Venom",
+                         "Venombite", "Venomkiss", "Venomshank", "Venomtip", "Warmonger", "Widow Maker", "Widowkiller",
+                         "Widowmaker", "Winterthorn"]
+            self.var2 = ["Ancient", "Anguish'", "Annihilation", "Antique", "Apocalypse", "Apocalyptic", "Arcane",
+                         "Arched", "Assassination", "Atuned", "Bandit's", "Baneful", "Banished", "Barbarian",
+                         "Barbaric", "Battleworn", "Blazefury", "Blood Infused", "Blood-Forged", "Bloodcursed",
+                         "Bloodied", "Bloodlord's", "Bloodsurge", "Bloodvenom", "Bonecarvin", "Brutal", "Brutality",
+                         "Burnished", "Cataclysm", "Cataclysmic", "Cold-Forged", "Corroded", "Corrupted", "Crazed",
+                         "Crying", "Cursed", "Curved", "Dancing", "Dark", "Darkness", "Defiled", "Defiling", "Deluded",
+                         "Deserted", "Desire's", "Desolation", "Destiny's", "Diabolical", "Dire", "Doom", "Doom's",
+                         "Dragon's", "Eerie", "Enchanted", "Engraved", "Eternal", "Executing", "Exiled", "Extinction",
+                         "Faith's", "Faithful", "Fancy", "Fearful", "Feral", "Ferocious", "Fierce", "Fiery",
+                         "Fire Infused", "Fireguard", "Firesoul", "Firestorm", "Flaming", "Flimsy", "Forsaken",
+                         "Fortune's", "Foul", "Fragile", "Frail", "Frenzied", "Frost", "Frozen", "Furious", "Fusion",
+                         "Ghastly", "Ghost-Forged", "Ghostly", "Gladiator", "Gladiator's", "Gleaming", "Glinting",
+                         "Greedy", "Grieving", "Grim", "Guard's", "Guardian's", "Hailstorm", "Hateful", "Haunted",
+                         "Heartless", "Heinous", "Hollow", "Holy", "Honed", "Honor's", "Hope's", "Hopeless", "Howling",
+                         "Hungering", "Improved", "Impure", "Incarnated", "Infused", "Inherited", "Isolated",
+                         "Jade Infused", "Judgement", "Knightly", "Legionnaire's", "Liar's", "Lich", "Lightning",
+                         "Lonely", "Loyal", "Lustful", "Lusting", "Mage's", "Malevolent", "Malicious", "Malificent",
+                         "Malignant", "Massive", "Mended", "Mercenary", "Military", "Misfortune's", "Misty", "Moonlit",
+                         "Mourning", "Nightmare", "Oathkeeper's", "Ominous", "Peacekeeper's", "Phantom", "Polished",
+                         "Possessed", "Pride's", "Prideful", "Primitive", "Promised", "Protector's", "Proud", "Pure",
+                         "Putrid", "Raging", "Recruit's", "Reforged", "Reincarnated", "Relentless", "Remorseful",
+                         "Renewed", "Renovated", "Replica", "Restored", "Retribution", "Ritual", "Roaring",
+                         "Ruby Infused", "Rune-Forged", "Rusty", "Savage", "Shadow", "Sharpened", "Silent", "Singed",
+                         "Singing", "Sinister", "Smooth", "Solitude's", "Sorrow's", "Soul", "Soul Infused",
+                         "Soul-Forged", "Soulcursed", "Soulless", "Spectral", "Spectral-Forged", "Spiteful", "Storm",
+                         "Storm-Forged", "Stormfury", "Stormguard", "Terror", "Thirsting", "Thirsty", "Thunder",
+                         "Thunder-Forged", "Thunderfury", "Thunderguard", "Thundersoul", "Thunderstorm", "Timeworn",
+                         "Tormented", "Trainee's", "Treachery's", "Twilight", "Twilight's", "Twisted", "Tyrannical",
+                         "Undead", "Unholy", "Vengeance", "Vengeful", "Venom", "Vicious", "Vile", "Vindication",
+                         "Vindictive", "Void", "Volcanic", "Vowed", "War-Forged", "Warlord's", "Warp", "Warped",
+                         "Whistling", "Wicked", "Wind's", "Wind-Forged", "Windsong", "Woeful", "Wrathful", "Wretched",
+                         "Yearning", "Zealous"]
+            self.var3 = ["Adamantite", "Bronze", "Copper", "Diamond", "Ebon", "Ebonsteel", "Ebony", "Glass", "Gold",
+                         "Iron", "Ironbark", "Ivory", "Mithril", "Obsidian", "Onyx", "Phantomsteel", "Shadowsteel",
+                         "Silver", "Skeletal", "Steel"]
+            self.var4 = ["Bayonet", "Blade", "Carver", "Dagger", "Deflector", "Dirk", "Doomblade", "Ebonblade",
+                         "Etcher", "Fang", "Guardian", "Knife", "Kris", "Mageblade", "Piercer", "Protector",
+                         "Quickblade", "Razor", "Reaver", "Sabre", "Scalpel", "Sculptor", "Shanker", "Shiv",
+                         "Shortblade", "Shortsword", "Skewer", "Slicer", "Spellblade", "Stiletto", "Swiftblade"]
+            self.var5 = ["Annihilation", "Bayonet", "Betrayer", "Blade", "Blessed Blade", "Blood Blade", "Bond", "Boon",
+                         "Breaker", "Bringer", "Butcher", "Call", "Carver", "Champion", "Conqueror", "Crusader", "Cry",
+                         "Cunning", "Dagger", "Dark Blade", "Dawn", "Defender", "Defiler", "Deflector", "Destroyer",
+                         "Dirk", "Doomblade", "Ebonblade", "Edge", "Ender", "Etcher", "Executioner", "Fang", "Favor",
+                         "Ferocity", "Foe", "Gift", "Glory", "Guardian", "Heirloom", "Hope", "Incarnation", "Jaws",
+                         "Knife", "Kris", "Last Hope", "Last Stand", "Legacy", "Mageblade", "Memory", "Might", "Oath",
+                         "Pact", "Piercer", "Pledge", "Promise", "Protector", "Quickblade", "Ravager", "Razor", "Reach",
+                         "Reaper", "Reaver", "Runed Blade", "Saber", "Sabre", "Savagery", "Scalpel", "Sculptor",
+                         "Secret", "Shanker", "Shiv", "Shortblade", "Skewer", "Slayer", "Slicer", "Soul", "Spellblade",
+                         "Spine", "Stiletto", "Swiftblade", "Terror", "Token", "Tribute", "Vengeance", "Voice",
+                         "Warblade", "Whisper", "Wit"]
+            self.var6 = ["of Agony", "of Ancient Power", "of Anguish", "of Ashes", "of Assassins", "of Black Magic",
+                         "of Blessed Fortune", "of Blessings", "of Blight", "of Blood", "of Bloodlust",
+                         "of Broken Bones", "of Broken Dreams", "of Broken Families", "of Burdens", "of Chaos",
+                         "of Closing Eyes", "of Conquered Worlds", "of Corruption", "of Cruelty", "of Cunning",
+                         "of Dark Magic", "of Dark Souls", "of Darkness", "of Decay", "of Deception", "of Degradation",
+                         "of Delusions", "of Denial", "of Desecration", "of Dilusion", "of Dismay", "of Dragonsouls",
+                         "of Due Diligence", "of Echoes", "of Ended Dreams", "of Ending Hope", "of Ending Misery",
+                         "of Eternal Bloodlust", "of Eternal Damnation", "of Eternal Glory", "of Eternal Justice",
+                         "of Eternal Rest", "of Eternal Sorrow", "of Eternal Struggles", "of Eternity", "of Executions",
+                         "of Faded Memories", "of Fallen Souls", "of Fools", "of Frost", "of Frozen Hells", "of Fury",
+                         "of Giants", "of Giantslaying", "of Grace", "of Grieving Widows", "of Hate", "of Hatred",
+                         "of Hell's Games", "of Hellish Torment", "of Heroes", "of Holy Might", "of Honor", "of Hope",
+                         "of Horrid Dreams", "of Horrors", "of Illuminated Dreams", "of Illumination", "of Immortality",
+                         "of Inception", "of Infinite Trials", "of Insanity", "of Invocation", "of Justice",
+                         "of Light's Hope", "of Lost Comrades", "of Lost Hope", "of Lost Voices", "of Lost Worlds",
+                         "of Magic", "of Mercy", "of Misery", "of Mountains", "of Mourning", "of Mystery",
+                         "of Necromancy", "of Nightmares", "of Oblivion", "of Perdition", "of Phantoms", "of Power",
+                         "of Pride", "of Pride's Fall", "of Putrefaction", "of Reckoning", "of Redemption", "of Regret",
+                         "of Riddles", "of Secrecy", "of Secrets", "of Shadow Strikes", "of Shadows",
+                         "of Shifting Sands", "of Shifting Worlds", "of Silence", "of Slaughter", "of Souls",
+                         "of Stealth", "of Storms", "of Subtlety", "of Suffering", "of Suffering's End", "of Summoning",
+                         "of Terror", "of Thunder", "of Time-Lost Memories", "of Timeless Battles", "of Titans",
+                         "of Torment", "of Traitors", "of Trembling Hands", "of Trials", "of Truth",
+                         "of Twilight's End", "of Twisted Visions", "of Unholy Blight", "of Unholy Might",
+                         "of Vengeance", "of Visions", "of Wasted Time", "of Widows", "of Wizardry", "of Woe",
+                         "of Wraiths", "of Zeal", "of the Ancients", "of the Banished", "of the Basilisk",
+                         "of the Beast", "of the Blessed", "of the Breaking Storm", "of the Brotherhood",
+                         "of the Burning Sun", "of the Caged Mind", "of the Cataclysm", "of the Champion",
+                         "of the Claw", "of the Corrupted", "of the Covenant", "of the Crown", "of the Damned",
+                         "of the Daywalker", "of the Dead", "of the Depth", "of the Dreadlord", "of the Earth",
+                         "of the East", "of the Emperor", "of the Empty Void", "of the End", "of the Enigma",
+                         "of the Fallen", "of the Falling Sky", "of the Flame", "of the Forest", "of the Forgotten",
+                         "of the Forsaken", "of the Gladiator", "of the Harvest", "of the Immortal",
+                         "of the Incoming Storm", "of the Insane", "of the King", "of the Lasting Night",
+                         "of the Leviathan", "of the Light", "of the Lion", "of the Lionheart", "of the Lone Victor",
+                         "of the Lone Wolf", "of the Lost", "of the Moon", "of the Moonwalker", "of the Night Sky",
+                         "of the Night", "of the Nightstalker", "of the North", "of the Occult", "of the Oracle",
+                         "of the Phoenix", "of the Plague", "of the Prince", "of the Protector", "of the Queen",
+                         "of the Serpent", "of the Setting Sun", "of the Shadows", "of the Sky", "of the South",
+                         "of the Stars", "of the Storm", "of the Summoner", "of the Sun", "of the Sunwalker",
+                         "of the Talon", "of the Undying", "of the Victor", "of the Void", "of the West",
+                         "of the Whispers", "of the Wicked", "of the Wind", "of the Wolf", "of the World",
+                         "of the Wretched"]
+            self.var7 = ["Tie Breaker", "Laceration", "Forever", "Silver Slicer", "Eternity", "Goodbye", "Aetherius",
+                         "Agatha", "Alpha", "Amnesia", "Amnesty", "Anarchy", "Anduril", "Anger's Tear", "Angerfang",
+                         "Apocalypse", "Armageddon", "Ashrune", "Backtwister", "Barb", "Betrayal", "Betrayer",
+                         "Blackfang", "Blackout", "Blacktalon", "Blazefury", "Blind Justice", "Blindstrike", "Blink",
+                         "Blinkstrike", "Blood Weeper", "Bloodquench", "Bloodsipper", "Bloodweep", "Bonescraper",
+                         "Bonespike", "Brainpicker", "Broken Promise", "Brutality", "Cataclysm", "Catastrophe",
+                         "Celeste", "Chaos", "Chisel", "Cometfell", "Convergence", "Crisscross", "Crucifix",
+                         "Darkheart", "Darkness", "Dawn", "Death's Bite", "Death's Kiss", "Death's Sting", "Deathraze",
+                         "Decimation", "Dementia", "Desolation", "Despair", "Devine", "Dirge", "Dissector", "Divinity",
+                         "Doomblade", "Doombringer", "Doomspike", "Dragonclaw", "Dragonfang", "Dragontooth",
+                         "Draughtbane", "Due Diligence", "Dustbringer", "Echo", "Eclipse", "Edge of Eternity",
+                         "Edge of Insanity", "Edge of Time", "Endbringer", "Enigma", "Epilogue", "Eternal Rest",
+                         "Extinction", "Faithkeeper", "Fate", "Fear", "Felstriker", "Fleshrender", "Fleshshaper",
+                         "Flicker", "Frenzy", "Frightalon", "Fury", "Garotte", "Ghost Reaver", "Ghost Shard",
+                         "Ghostwalker", "Glimmer", "Gutrender", "Gutwrencher", "Harmony", "Hatred's Bite",
+                         "Heartpierce", "Heartrazor", "Heartseeker", "Heartshiver", "Heartstriker", "Hell's Scream",
+                         "Hellfire", "Honor's Call", "Hope's End", "Hysteria", "Icefall", "Incision", "Infamy",
+                         "Infinity", "Insanity", "Interrogator", "Ivory", "Justice", "Kingsbane", "Kingsfall",
+                         "Kinslayer", "Knight's Fall", "Knightfall", "Lament", "Last Rites", "Last Words", "Lazarus",
+                         "Lifedrinker", "Lightbane", "Lightning", "Limbo", "Lobotomizer", "Lynch", "Maelstrom",
+                         "Malice", "Mangler", "Massacre", "Mercy", "Meteor", "Midnight", "Moonlight", "Mournblade",
+                         "Murder", "Mutilator", "Nail", "Narcoleptic", "Needle", "Nemesis", "Nethersbane",
+                         "Night's Edge", "Night's Fall", "Nightbane", "Nightbite", "Nightcrackle", "Nightfall",
+                         "Nightkiss", "Nimble", "Nirvana", "Oathbreaker", "Oathkeeper", "Oblivion", "Omega", "Omen",
+                         "Peacekeeper", "Persuasion", "Phantom", "Phantom Shard", "Phantomstrike", "Phobia",
+                         "Piece Maker", "Prick", "Purify", "Quicksilver", "Rage", "Ragespike", "Reaper", "Reckoning",
+                         "Remorse", "Requiem", "Riddle", "Rigormortis", "Sacrifice", "Sanguine", "Savagery", "Scalpel",
+                         "Scar", "Scarlet", "Seethe", "Severance", "Shadow Strike", "Shadowbite", "Shadowfall",
+                         "Shadowkiss", "Shadowrazor", "Shadowshiver", "Shadowsong", "Silence", "Silencer",
+                         "Silver Saber", "Silverlight", "Siphon", "Slander", "Slice of Life", "Solarflare",
+                         "Spiderfang", "Spike", "Spineripper", "Spiritsever", "Spiteblade", "Stalker", "Starlight",
+                         "Starshard", "Stickler", "Sting", "Stinger", "Storm", "Stormbringer", "Stormcaller",
+                         "Stormtip", "Striker", "Sun Strike", "Sunflare", "Sunshard", "Suspension", "Swan Song",
+                         "Teaser", "The Black Blade", "The End", "The Facelifter", "The Sleeper", "The Taker",
+                         "The Undertaker", "The Stake", "The Unmaker", "The Void", "Thorn", "Thunder", "Timeslicer",
+                         "Toothpick", "Torment", "Treachery", "Trickster", "Trinity", "Twilight", "Twinkle", "Twister",
+                         "Twitch", "Tyrhung", "Valkyrie", "Vengeance", "Venom", "Venombite", "Venomkiss", "Venomshank",
+                         "Venomtip", "Warmonger", "Widow Maker", "Widowkiller", "Widowmaker", "Winterthorn"]
+        elif Classification == "Mace":
+            self.var1 = ["Morning Glory", "Morning Star", "Mourning Star", "Blackjack", "Tresher", "Good Morning",
+                         "Headache", "Migraine", "Grimace", "Macerator", "Abomination", "Agatha", "Agony", "Allegiance",
+                         "Alpha", "Amnesia", "Anduril", "Apocalypse", "Armageddon", "Arondite", "Ash", "Ashes",
+                         "Ashrune", "Back Breaker", "Battlestar", "Betrayal", "Betrayer", "Blackout", "Blazeguard",
+                         "Blessing", "Blind Justice", "Bloodfury", "Bloodmoon", "Bloodquench", "Bloodrage",
+                         "Bloodspiller", "Bloodweep", "Bone Warden", "Bonesnapper", "Braindead", "Broken Promise",
+                         "Brutality", "Brutalizer", "Cataclysm", "Catastrophe", "Celeste", "Chance", "Chaos", "Chasm",
+                         "Chieftain", "Comet", "Cometfall", "Concussion", "Convergence", "Corpsemaker", "Corruption",
+                         "Cosmos", "Crash", "Crimson", "Crush", "Cryptmaker", "Cyclone", "Darkness", "Dawn",
+                         "Dawnbreaker", "Daytime", "Deathbringer", "Deathraze", "Decimation", "Demise", "Desolation",
+                         "Despair", "Destiny", "Destruction", "Devastation", "Devine", "Devotion", "Devourer",
+                         "Disturbance", "Divine Light", "Dominance", "Dominion", "Doom", "Doombringer", "Dragonfist",
+                         "Dragonmaw", "Dragonstrike", "Due Diligence", "Early Retirement", "Earthquake", "Earthshaker",
+                         "Earthshaper", "Earthwarden", "Echo", "Eclipse", "Emergency", "End of Dreams", "Endbringer",
+                         "Enigma", "Epilogue", "Eternal Rest", "Eternity", "Eveningstar", "Extermination", "Extinction",
+                         "Faithkeeper", "Falcon", "Falling Star", "Fate", "Finality", "Frenzy", "Frostwind", "Fury",
+                         "Fury's Gaze", "Galaxy", "Gatecrasher", "Ghost Reaver", "Ghostwalker", "Glimmer", "Godslayer",
+                         "Grace", "Guiding Star", "Harbinger", "Harmony", "Harvester", "Hatred", "Heartcrusher",
+                         "Hell's Scream", "Hellfire", "Homage", "Honor's Call", "Hope's End", "Humongous", "Hurricane",
+                         "Icebreaker", "Infamy", "Infinity", "Interrogator", "Jackhammer", "Jawbone", "Justice",
+                         "Justifier", "King's Defender", "King's Legacy", "Kinslayer", "Knight's Fall",
+                         "Knight's Honor", "Knightfall", "Lament", "Last Chance", "Last Laugh", "Last Rites",
+                         "Last Word", "Last Words", "Lazarus", "Legacy", "Legionaire", "Life's Limit", "Light's Bane",
+                         "Lightbane", "Lightbringer", "Lightning", "Limbo", "Lockjaw", "Magma", "Malice", "Maneater",
+                         "Massacre", "Mercy", "Midnight", "Misery's End", "Monsoon", "Morningstar", "Narcoleptic",
+                         "Nethersbane", "Night's Fall", "Nightbane", "Nightfall", "Nightglow", "Nightmare", "Nighttime",
+                         "Nirvana", "Oathbreaker", "Oathkeeper", "Oblivion", "Old Age", "Omega", "Orbit", "Orenmir",
+                         "Oxheart", "Party Pooper", "Patience", "Peacekeeper", "Peacemaker", "Pendulum",
+                         "Perfect Storm", "Persuasion", "Piece Maker", "Piety", "Pride", "Prophecy", "Punisher",
+                         "Purifier", "Rage", "Ragnarok", "Rapture", "Reaper's Toll", "Reckoning", "Red Dwarf", "Reign",
+                         "Remorse", "Requiem", "Retirement", "Righteous Might", "Rigormortis", "Rising Tide",
+                         "Savagery", "Scar", "Scourgeborne", "Second Chance", "Seism", "Seismic", "Serenity",
+                         "Severance", "Shadowfury", "Shadowmoon", "Shatterskull", "Shooting Star", "Silence",
+                         "Skullcrusher", "Soul Breaker", "Spinefall", "Stalker", "Stonefist", "Storm", "Storm Breaker",
+                         "Storm-Weaver", "Stormbringer", "Stormcaller", "Stormedge", "Stormherald", "Stormrider",
+                         "Sucker Punch", "Sundown", "Supernova", "Supremacy", "Suspension", "Swan Song", "Tank",
+                         "Tenderiser", "Termination", "The Ambassador", "The Chancellor", "The Chief", "The End",
+                         "The Light", "The Minotaur", "The Oculus", "The Oracle", "The Sundering", "The Void",
+                         "The Warden", "Thunder", "Trauma", "Treachery", "Tremor", "Trinity", "Twilight", "Typhoon",
+                         "Ubiquity", "Undoing", "Vacancy", "Valkyrie", "Vanquisher", "Vengeance", "Warbringer",
+                         "Warmonger", "Whirlwind", "Wicked", "Widow Maker", "Willbreaker", "Winter's Bite", "Wit's End",
+                         "Witherbrand", "Wolf", "Worldbreaker", "Worldcarver", "Worldslayer"]
+            self.var2 = ["Ancient", "Antique", "Apocalypse", "Apocalyptic", "Arcane", "Arched", "Atuned", "Bandit's",
+                         "Baneful", "Banished", "Barbarian", "Barbaric", "Battleworn", "Blazefury", "Blood Infused",
+                         "Blood-Forged", "Bloodcursed", "Bloodied", "Bloodlord's", "Bloodsurge", "Bloodvenom",
+                         "Bonecarvin", "Brutal", "Brutality", "Burnished", "Cataclysm", "Cataclysmic", "Challenger",
+                         "Challenger's", "Champion", "Champion's", "Cold-Forged", "Conqueror", "Conqueror's",
+                         "Corroded", "Corrupted", "Crazed", "Crying", "Cursed", "Curved", "Dancing", "Dark", "Darkness",
+                         "Defender", "Defender's", "Defiled", "Defiling", "Deluded", "Demonic", "Deserted", "Desire's",
+                         "Desolation", "Destiny's", "Diabolical", "Dire", "Doom", "Doom's", "Dragon's", "Dragonbreath",
+                         "Eerie", "Enchanted", "Engraved", "Enlightened", "Eternal", "Exiled", "Extinction", "Faith's",
+                         "Faithful", "Fancy", "Fearful", "Feral", "Ferocious", "Fierce", "Fiery", "Fire Infused",
+                         "Fireguard", "Firesoul", "Firestorm", "Flaming", "Flimsy", "Forsaken", "Fortune's", "Foul",
+                         "Fragile", "Frail", "Frenzied", "Frost", "Frozen", "Furious", "Fusion", "Ghastly", "Ghost",
+                         "Ghost-Forged", "Ghostly", "Gladiator", "Gladiator's", "Gleaming", "Glinting", "Greedy",
+                         "Grieving", "Grim", "Guard's", "Guardian's", "Hailstorm", "Harmonized", "Hateful", "Haunted",
+                         "Heartless", "Heinous", "Hero", "Hero's", "Hollow", "Holy", "Honed", "Honor's", "Hope's",
+                         "Hopeless", "Howling", "Hungering", "Improved", "Impure", "Incarnated", "Infused", "Inherited",
+                         "Isolated", "Jade Infused", "Judgement", "Keeper's", "Knightly", "Knight's", "Legionnaire's",
+                         "Liar's", "Lich", "Lightning", "Lonely", "Loyal", "Lustful", "Lusting", "Malevolent",
+                         "Malicious", "Malificent", "Malignant", "Massive", "Mended", "Mercenary", "Military",
+                         "Misfortune's", "Misty", "Moonlit", "Mourning", "Nightmare", "Oathkeeper's", "Ominous",
+                         "Peacekeeper", "Peacekeeper's", "Phantom", "Polished", "Possessed", "Pride's", "Prideful",
+                         "Primal", "Prime", "Primitive", "Promised", "Protector's", "Proud", "Pure", "Putrid", "Raging",
+                         "Recruit's", "Refined", "Reforged", "Reincarnated", "Relentless", "Remorseful", "Renewed",
+                         "Renovated", "Replica", "Restored", "Retribution", "Ritual", "Roaring", "Ruby Infused",
+                         "Rune-Forged", "Runed", "Rusty", "Savage", "Sentinel", "Shadow", "Shamanic", "Sharpened",
+                         "Silent", "Singed", "Singing", "Sinister", "Skyfall", "Smooth", "Soldier's", "Solitude's",
+                         "Sorcerer's", "Sorrow's", "Soul", "Soul Infused", "Soul-Forged", "Soulcursed", "Soulless",
+                         "Spectral", "Spectral-Forged", "Spiteful", "Storm", "Storm-Forged", "Stormfury", "Stormguard",
+                         "Terror", "Thirsting", "Thirsty", "Thunder", "Thunder-Forged", "Thunderfury", "Thunderguard",
+                         "Thundersoul", "Thunderstorm", "Timeworn", "Tormented", "Trainee's", "Treachery's", "Twilight",
+                         "Twilight's", "Twisted", "Tyrannical", "Undead", "Unholy", "Vanquisher", "Vengeance",
+                         "Vengeful", "Venom", "Vicious", "Victor", "Vile", "Vindication", "Vindicator", "Vindictive",
+                         "Void", "Volcanic", "Vowed", "War", "War-Forged", "Warden's", "Warlord's", "Warp", "Warped",
+                         "Warrior", "Warrior's", "Whistling", "Wicked", "Wind's", "Wind-Forged", "Windsong", "Woeful",
+                         "Wrathful", "Wretched", "Yearning", "Zealous"]
+            self.var3 = ["Adamantite", "Bone", "Bronze", "Bronzed", "Ivory", "Ebon", "Glass", "Golden", "Gilded",
+                         "Iron", "Ironbark", "Mithril", "Obsidian", "Silver", "Skeletal", "Steel", "Titanium"]
+            self.var4 = ["Mace", "Bludgeon", "Maul", "Crusher", "Smasher", "Warmace", "Hammer", "Mace", "Flail",
+                         "Morning Star", "Spikes", "Pummel", "Wacker", "Basher", "Impaler", "Piercer"]
+            self.var5 = ["Allegiance", "Annihilation", "Basher", "Betrayer", "Bludgeon", "Bond", "Boon", "Breaker",
+                         "Bringer", "Butcher", "Call", "Carver", "Champion", "Chopper", "Cleaver", "Conqueror",
+                         "Crusader", "Crusher", "Cry", "Cunning", "Dawn", "Defender", "Defiler", "Destroyer", "Edge",
+                         "Ender", "Etcher", "Executioner", "Favor", "Ferocity", "Flail", "Foe", "Gift", "Glory",
+                         "Guardian", "Hammer", "Heirloom", "Hope", "Impaler", "Incarnation", "Jaws", "Last Hope",
+                         "Last Stand", "Legacy", "Mace", "Maul", "Memory", "Might", "Morning Star", "Oath", "Pact",
+                         "Piercer", "Pledge", "Promise", "Prophecy", "Protector", "Pummel", "Ravager", "Razor", "Reach",
+                         "Reaper", "Reaver", "Sculptor", "Secret", "Slayer", "Slicer", "Smasher", "Soul", "Spikes",
+                         "Terror", "Token", "Tribute", "Vengeance", "Voice", "Wacker", "Warblade", "Warmace", "Whisper",
+                         "Wit"]
+            self.var6 = ["of Agony", "of Ancient Power", "of Anguish", "of Ashes", "of Assassins", "of Black Magic",
+                         "of Blessed Fortune", "of Blessings", "of Blight", "of Blood", "of Bloodlust",
+                         "of Broken Bones", "of Broken Dreams", "of Broken Families", "of Burdens", "of Chaos",
+                         "of Closing Eyes", "of Conquered Worlds", "of Corruption", "of Cruelty", "of Cunning",
+                         "of Dark Magic", "of Dark Souls", "of Darkness", "of Decay", "of Deception", "of Degradation",
+                         "of Delusions", "of Denial", "of Desecration", "of Diligence", "of Dismay", "of Dragonsouls",
+                         "of Due Diligence", "of Echoes", "of Ended Dreams", "of Ending Hope", "of Ending Misery",
+                         "of Eternal Bloodlust", "of Eternal Damnation", "of Eternal Glory", "of Eternal Justice",
+                         "of Eternal Rest", "of Eternal Sorrow", "of Eternal Struggles", "of Eternity", "of Executions",
+                         "of Faded Memories", "of Fallen Souls", "of Fools", "of Frost", "of Frozen Hells", "of Fury",
+                         "of Giants", "of Giantslaying", "of Grace", "of Grieving Widows", "of Hate", "of Hatred",
+                         "of Hell's Games", "of Hellish Torment", "of Heroes", "of Holy Might", "of Honor", "of Hope",
+                         "of Horrid Dreams", "of Horrors", "of Illuminated Dreams", "of Illumination", "of Immortality",
+                         "of Inception", "of Infinite Trials", "of Insanity", "of Invocation", "of Justice",
+                         "of Light's Hope", "of Lost Comrades", "of Lost Hope", "of Lost Voices", "of Lost Worlds",
+                         "of Magic", "of Mercy", "of Misery", "of Mountains", "of Mourning", "of Mystery",
+                         "of Necromancy", "of Nightmares", "of Oblivion", "of Perdition", "of Phantoms", "of Power",
+                         "of Pride", "of Pride's Fall", "of Putrefaction", "of Reckoning", "of Redemption", "of Regret",
+                         "of Riddles", "of Secrecy", "of Secrets", "of Shadow Strikes", "of Shadows",
+                         "of Shifting Sands", "of Shifting Worlds", "of Silence", "of Slaughter", "of Souls",
+                         "of Stealth", "of Storms", "of Subtlety", "of Suffering", "of Suffering's End", "of Summoning",
+                         "of Terror", "of Thunder", "of Time-Lost Memories", "of Timeless Battles", "of Titans",
+                         "of Torment", "of Traitors", "of Trembling Hands", "of Trials", "of Truth",
+                         "of Twilight's End", "of Twisted Visions", "of Unholy Blight", "of Unholy Might",
+                         "of Vengeance", "of Visions", "of Wasted Time", "of Widows", "of Wizardry", "of Woe",
+                         "of Wraiths", "of Zeal", "of the Ancients", "of the Banished", "of the Basilisk",
+                         "of the Beast", "of the Blessed", "of the Breaking Storm", "of the Brotherhood",
+                         "of the Burning Sun", "of the Caged Mind", "of the Cataclysm", "of the Champion",
+                         "of the Claw", "of the Corrupted", "of the Covenant", "of the Crown", "of the Damned",
+                         "of the Daywalker", "of the Dead", "of the Depth", "of the Dreadlord", "of the Earth",
+                         "of the East", "of the Emperor", "of the Empty Void", "of the End", "of the Enigma",
+                         "of the Fallen", "of the Falling Sky", "of the Flame", "of the Forest", "of the Forgotten",
+                         "of the Forsaken", "of the Gladiator", "of the Harvest", "of the Immortal",
+                         "of the Incoming Storm", "of the Insane", "of the King", "of the Lasting Night",
+                         "of the Leviathan", "of the Light", "of the Lion", "of the Lionheart", "of the Lone Victor",
+                         "of the Lone Wolf", "of the Lost", "of the Moon", "of the Moonwalker", "of the Night Sky",
+                         "of the Night", "of the Nightstalker", "of the North", "of the Occult", "of the Oracle",
+                         "of the Phoenix", "of the Plague", "of the Prince", "of the Protector", "of the Queen",
+                         "of the Serpent", "of the Setting Sun", "of the Shadows", "of the Sky", "of the South",
+                         "of the Stars", "of the Storm", "of the Summoner", "of the Sun", "of the Sunwalker",
+                         "of the Talon", "of the Undying", "of the Victor", "of the Void", "of the West",
+                         "of the Whispers", "of the Wicked", "of the Wind", "of the Wolf", "of the World",
+                         "of the Wretched"]
+            self.var7 = ["Morning Glory", "Morning Star", "Mourning Star", "Blackjack", "Tresher", "Good Morning",
+                         "Headache", "Migraine", "Grimace", "Macerator", "Abomination", "Agatha", "Agony", "Allegiance",
+                         "Alpha", "Amnesia", "Anduril", "Apocalypse", "Armageddon", "Arondite", "Ash", "Ashes",
+                         "Ashrune", "Back Breaker", "Battlestar", "Betrayal", "Betrayer", "Blackout", "Blazeguard",
+                         "Blessing", "Blind Justice", "Bloodfury", "Bloodmoon", "Bloodquench", "Bloodrage",
+                         "Bloodspiller", "Bloodweep", "Bone Warden", "Bonesnapper", "Braindead", "Broken Promise",
+                         "Brutality", "Brutalizer", "Cataclysm", "Catastrophe", "Celeste", "Chance", "Chaos", "Chasm",
+                         "Chieftain", "Comet", "Cometfall", "Concussion", "Convergence", "Corpsemaker", "Corruption",
+                         "Cosmos", "Crash", "Crimson", "Crush", "Cryptmaker", "Cyclone", "Darkness", "Dawn",
+                         "Dawnbreaker", "Daytime", "Deathbringer", "Deathraze", "Decimation", "Demise", "Desolation",
+                         "Despair", "Destiny", "Destruction", "Devastation", "Devine", "Devotion", "Devourer",
+                         "Disturbance", "Divine Light", "Dominance", "Dominion", "Doom", "Doombringer", "Dragonfist",
+                         "Dragonmaw", "Dragonstrike", "Due Diligence", "Earthquake", "Earthshaker", "Earthshaper",
+                         "Earthwarden", "Echo", "Eclipse", "Emergency", "End of Dreams", "Endbringer", "Enigma",
+                         "Epilogue", "Eternal Rest", "Eternity", "Eveningstar", "Extermination", "Extinction",
+                         "Faithkeeper", "Falcon", "Falling Star", "Fate", "Finality", "Frenzy", "Frostwind", "Fury",
+                         "Fury's Gaze", "Galaxy", "Gatecrasher", "Ghost Reaver", "Ghostwalker", "Glimmer", "Godslayer",
+                         "Grace", "Guiding Star", "Harbinger", "Harmony", "Harvester", "Hatred", "Heartcrusher",
+                         "Hell's Scream", "Hellfire", "Homage", "Honor's Call", "Hope's End", "Humongous", "Hurricane",
+                         "Icebreaker", "Infamy", "Infinity", "Interrogator", "Jackhammer", "Jawbone", "Justice",
+                         "Justifier", "King's Defender", "King's Legacy", "Kinslayer", "Knight's Fall",
+                         "Knight's Honor", "Knightfall", "Lament", "Last Chance", "Last Laugh", "Last Rites",
+                         "Last Word", "Last Words", "Lazarus", "Legacy", "Legionaire", "Life's Limit", "Light's Bane",
+                         "Lightbane", "Lightbringer", "Lightning", "Limbo", "Lockjaw", "Magma", "Malice", "Maneater",
+                         "Massacre", "Mercy", "Midnight", "Misery's End", "Monsoon", "Morningstar", "Narcoleptic",
+                         "Nethersbane", "Night's Fall", "Nightbane", "Nightfall", "Nightglow", "Nightmare", "Nighttime",
+                         "Nirvana", "Oathbreaker", "Oathkeeper", "Oblivion", "Old Age", "Omega", "Orbit", "Orenmir",
+                         "Oxheart", "Party Pooper", "Patience", "Peacekeeper", "Peacemaker", "Pendulum",
+                         "Perfect Storm", "Persuasion", "Piety", "Pride", "Prophecy", "Punisher", "Purifier", "Rage",
+                         "Ragnarok", "Rapture", "Reckoning", "Red Dwarf", "Reign", "Remorse", "Requiem", "Retirement",
+                         "Rigormortis", "Rising Tide", "Savagery", "Seism", "Seismic", "Serenity", "Severance",
+                         "Shadowfury", "Shatterskull", "Shooting Star", "Silence", "Skullcrusher", "Soul Breaker",
+                         "Spinefall", "Stalker", "Stonefist", "Storm", "Storm Breaker", "Storm-Weaver", "Stormbringer",
+                         "Stormcaller", "Stormedge", "Stormherald", "Stormrider", "Sucker Punch", "Sundown",
+                         "Supernova", "Supremacy", "Suspension", "Swan Song", "Tank", "Tenderiser", "Termination",
+                         "The Ambassador", "The Chancellor", "The Chief", "The End", "The Light", "The Minotaur",
+                         "The Oculus", "The Oracle", "The Sundering", "The Void", "The Warden", "Thunder", "Trauma",
+                         "Treachery", "Tremor", "Trinity", "Twilight", "Typhoon", "Ubiquity", "Undoing", "Vacancy",
+                         "Valkyrie", "Vanquisher", "Vengeance", "Warbringer", "Warmonger", "Whirlwind", "Wicked",
+                         "Widow Maker", "Willbreaker", "Winter's Bite", "Wit's End", "Witherbrand", "Wolf",
+                         "Worldbreaker", "Worldcarver", "Worldslayer"]
+        elif Classification == "Spear":
+            self.var1 = ["Abomination", "Agatha", "Allegiance", "Alpha", "Amnesia", "Anduril", "Anger's Edge",
+                         "Angerfang", "Anguish", "Apocalypse", "Appointment", "Armageddon", "Arondite", "Ash", "Ashes",
+                         "Ashrune", "Betrayal", "Betrayer", "Blackfury", "Blackout", "Blacktalon", "Blazefury",
+                         "Blazeguard", "Blind Justice", "Blinder", "Blindstrike", "Blinkstrike", "Bloodbound",
+                         "Bloodfall", "Bloodfury", "Bloodpike", "Bloodrage", "Bloodspiller", "Bloodweep",
+                         "Broken Promise", "Brutality", "Brutalizer", "Cataclysm", "Catastrophe", "Celeste", "Chance",
+                         "Chaos", "Checkpoint", "Chillspike", "Comet", "Cometfall", "Convergence", "Corpsemaker",
+                         "Corruption", "Crimson", "Cyclone", "Darkness", "Dawn", "Dawn's Edge", "Dawnbreaker",
+                         "Daytime", "Deathbringer", "Deathraze", "Deathspade", "Decimation", "Depravity", "Desolation",
+                         "Despair", "Destiny", "Devastation", "Devine", "Devotion", "Devourer", "Disappoint",
+                         "Divine Light", "Dominance", "Dominion", "Doom", "Doom's Tip", "Doombringer", "Due Diligence",
+                         "Early Retirement", "Echo", "Eclipse", "Emergency", "Endbringer", "Enigma", "Epilogue",
+                         "Eternal Rest", "Eternity", "Extermination", "Extinction", "Eyegouger", "Faithkeeper", "Fate",
+                         "Finality", "Freak's Bite", "Frenzy", "Frostbite", "Fury", "Fury's Gaze", "Ghostwalker",
+                         "Glimmer", "Glory's Reach", "Good Point", "Grieving Spike", "Hail", "Harbinger", "Harvester",
+                         "Hatred", "Hatred's Point", "Hatred's Spike", "Headspike", "Heartseeker", "Hell's Scream",
+                         "Hellreaver", "Homage", "Honor's Call", "Honor's Reach", "Honorbound", "Hope's Edge",
+                         "Hope's End", "Hope's Point", "Hurricane", "Icicle", "Infamy", "Infinity", "Inner Demon",
+                         "Jaeger", "Justice", "Justifier", "King's Defender", "King's Legacy", "Kingpin", "Kinslayer",
+                         "Knight's Fall", "Knight's Honor", "Knightfall", "Lament", "Last Chance", "Last Laugh",
+                         "Last Rites", "Last Words", "Lazarus", "Legacy", "Legionaire", "Life's Limit", "Light's Bane",
+                         "Lightbane", "Lightbringer", "Lightning", "Limbo", "Long Arm of the Law", "Malice",
+                         "Marrowstrike", "Massacre", "Mercy", "Midnight", "Misery's End", "Misery's Spike",
+                         "Narcoleptic", "Needle", "Needler", "Nethersbane", "Night's Fall", "Night's Reach",
+                         "Night's Spike", "Nightbane", "Nightfall", "Nighthorror", "Nightterror", "Nighttime",
+                         "Nirvana", "Oathbinder", "Oathbreaker", "Oathkeeper", "Oblivion", "Old Age", "Omega", "Orbit",
+                         "Party Pooper", "Peacekeeper", "Peacemaker", "Pendulum", "Persuasion", "Piece Maker", "Piety",
+                         "Pinpoint", "Point of no Return", "Pointless", "Pride", "Prophecy", "Purifier", "Rage",
+                         "Rapture", "Reckoning", "Reign", "Remorse", "Requiem", "Rigormortis", "Savagery", "Scar",
+                         "Seism", "Severance", "Shadow Strike", "Shadowfury", "Shadowmoon", "Shadowpike", "Shadowspike",
+                         "Shadowsteel", "Shadowstrike", "Shiverspine", "Silence", "Skirmisher", "Slice of Life",
+                         "Spike of Death", "Spike of Eternity", "Spike of Infinity", "Spike of Life",
+                         "Spike of Madness", "Spike of Misery", "Spike of Reason", "Spike of Ruin", "Spike of Time",
+                         "Spike", "Spinefall", "Spite", "Stalker", "Storm", "Stormbringer", "Stormcaller", "Stormcrow",
+                         "Stormedge", "Stormrider", "Supernova", "Supremacy", "Suspension", "Swan Song", "Swoosh",
+                         "Termination", "Terror's Reach", "The End", "The Facelifter", "The Oculus", "The Oracle",
+                         "The Surgeon", "The Void", "The Warden", "Thunder", "Thunderstrike", "Treachery", "Tremor",
+                         "Trickster", "Trickster's Tip", "Trinity", "Twisted", "Typhoon", "Ubiquity", "Undoing",
+                         "Vacancy", "Valkyrie", "Vanquisher", "Vengeance", "Viewpoint", "Warbringer", "Warmonger",
+                         "Waypoint", "Whirlwind", "Wicked", "Widow Maker", "Willbreaker", "Windpiercer",
+                         "Winter's Bite", "Wit's End", "Witherbrand", "Wolf", "Woosh"]
+            self.var2 = ["Ancient", "Antique", "Apocalypse", "Apocalyptic", "Arcane", "Arched", "Atuned", "Bandit's",
+                         "Baneful", "Banished", "Barbarian", "Barbaric", "Battleworn", "Blazefury", "Blood Infused",
+                         "Blood-Forged", "Bloodcursed", "Bloodied", "Bloodlord's", "Bloodsurge", "Bloodvenom",
+                         "Bonecarvin", "Brutal", "Brutality", "Burnished", "Cataclysm", "Cataclysmic", "Challenger",
+                         "Challenger's", "Champion", "Champion's", "Cold-Forged", "Conqueror", "Conqueror's",
+                         "Corroded", "Corrupted", "Crazed", "Crying", "Cursed", "Curved", "Dancing", "Dark", "Darkness",
+                         "Defender", "Defender's", "Defiled", "Defiling", "Deluded", "Demonic", "Deserted", "Desire's",
+                         "Desolation", "Destiny's", "Diabolical", "Dire", "Doom", "Doom's", "Dragon's", "Dragonbreath",
+                         "Eerie", "Enchanted", "Engraved", "Enlightened", "Eternal", "Exiled", "Extinction", "Faith's",
+                         "Faithful", "Fancy", "Fearful", "Feral", "Ferocious", "Fierce", "Fiery", "Fire Infused",
+                         "Fireguard", "Firesoul", "Firestorm", "Flaming", "Flimsy", "Forsaken", "Fortune's", "Foul",
+                         "Fragile", "Frail", "Frenzied", "Frost", "Frozen", "Furious", "Fusion", "Ghastly", "Ghost",
+                         "Ghost-Forged", "Ghostly", "Gladiator", "Gladiator's", "Gleaming", "Glinting", "Greedy",
+                         "Grieving", "Grim", "Guard's", "Guardian's", "Hailstorm", "Harmonized", "Hateful", "Haunted",
+                         "Heartless", "Heinous", "Hero", "Hero's", "Hollow", "Holy", "Honed", "Honor's", "Hope's",
+                         "Hopeless", "Howling", "Hungering", "Improved", "Impure", "Incarnated", "Infused", "Inherited",
+                         "Isolated", "Jade Infused", "Judgement", "Keeper's", "Knightly", "Knight's", "Legionnaire's",
+                         "Liar's", "Lich", "Lightning", "Lonely", "Loyal", "Lustful", "Lusting", "Malevolent",
+                         "Malicious", "Malificent", "Malignant", "Massive", "Mended", "Mercenary", "Military",
+                         "Misfortune's", "Misty", "Moonlit", "Mourning", "Nightmare", "Oathkeeper's", "Ominous",
+                         "Peacekeeper", "Peacekeeper's", "Phantom", "Polished", "Possessed", "Pride's", "Prideful",
+                         "Primal", "Prime", "Primitive", "Promised", "Protector's", "Proud", "Pure", "Putrid", "Raging",
+                         "Recruit's", "Refined", "Reforged", "Reincarnated", "Relentless", "Remorseful", "Renewed",
+                         "Renovated", "Replica", "Restored", "Retribution", "Ritual", "Roaring", "Ruby Infused",
+                         "Rune-Forged", "Runed", "Rusty", "Savage", "Sentinel", "Shadow", "Shamanic", "Sharpened",
+                         "Silent", "Singed", "Singing", "Sinister", "Skyfall", "Smooth", "Soldier's", "Solitude's",
+                         "Sorcerer's", "Sorrow's", "Soul", "Soul Infused", "Soul-Forged", "Soulcursed", "Soulless",
+                         "Spectral", "Spectral-Forged", "Spiteful", "Storm", "Storm-Forged", "Stormfury", "Stormguard",
+                         "Terror", "Thirsting", "Thirsty", "Thunder", "Thunder-Forged", "Thunderfury", "Thunderguard",
+                         "Thundersoul", "Thunderstorm", "Timeworn", "Tormented", "Trainee's", "Treachery's", "Twilight",
+                         "Twilight's", "Twisted", "Tyrannical", "Undead", "Unholy", "Vanquisher", "Vengeance",
+                         "Vengeful", "Venom", "Vicious", "Victor", "Vile", "Vindication", "Vindicator", "Vindictive",
+                         "Void", "Volcanic", "Vowed", "War", "War-Forged", "Warden's", "Warlord's", "Warp", "Warped",
+                         "Warrior", "Warrior's", "Whistling", "Wicked", "Wind's", "Wind-Forged", "Windsong", "Woeful",
+                         "Wrathful", "Wretched", "Yearning", "Zealous"]
+            self.var3 = ["Adamantite", "Mithril", "Obsidian", "Silver", "Skeletal", "Steel", "Ebon", "Ivory",
+                         "Ironbark", "Oak", "Maple", "Yew", "Ashwood", "Warpwood", "Ebonsteel", "Ebony", "Onyx",
+                         "Shadowsteel"]
+            self.var4 = ["Spear", "Trident", "Halberd", "Polearm", "Pike", "Spike", "Ranseur", "Javelin", "Lance",
+                         "Piercer", "Harpoon", "Prick", "Pricker", "Impaler", "Skewer", "Skiver"]
+            self.var5 = ["Allegiance", "Annihilation", "Betrayer", "Bond", "Boon", "Breaker", "Bringer", "Butcher",
+                         "Call", "Carver", "Champion", "Chopper", "Cleaver", "Conqueror", "Crusader", "Cry", "Cunning",
+                         "Dawn", "Defender", "Defiler", "Destroyer", "Edge", "Ender", "Etcher", "Executioner", "Favor",
+                         "Ferocity", "Foe", "Gift", "Glory", "Guardian", "Halberd", "Harpoon", "Heirloom", "Hope",
+                         "Impaler", "Incarnation", "Javelin", "Jaws", "Lance", "Last Hope", "Last Stand", "Legacy",
+                         "Memory", "Might", "Oath", "Pact", "Piercer", "Pike", "Pledge", "Polearm", "Prick", "Pricker",
+                         "Promise", "Prophecy", "Protector", "Ranseur", "Ravager", "Razor", "Reach", "Reaper", "Reaver",
+                         "Sculptor", "Secret", "Skewer", "Skiver", "Slayer", "Slicer", "Soul", "Spear", "Spike",
+                         "Terror", "Token", "Tribute", "Trident", "Vengeance", "Voice", "Warblade", "Whisper", "Wit"]
+            self.var6 = ["of Agony", "of Ancient Power", "of Anguish", "of Ashes", "of Assassins", "of Black Magic",
+                         "of Blessed Fortune", "of Blessings", "of Blight", "of Blood", "of Bloodlust",
+                         "of Broken Bones", "of Broken Dreams", "of Broken Families", "of Burdens", "of Chaos",
+                         "of Closing Eyes", "of Conquered Worlds", "of Corruption", "of Cruelty", "of Cunning",
+                         "of Dark Magic", "of Dark Souls", "of Darkness", "of Decay", "of Deception", "of Degradation",
+                         "of Delusions", "of Denial", "of Desecration", "of Diligence", "of Dismay", "of Dragonsouls",
+                         "of Due Diligence", "of Echoes", "of Ended Dreams", "of Ending Hope", "of Ending Misery",
+                         "of Eternal Bloodlust", "of Eternal Damnation", "of Eternal Glory", "of Eternal Justice",
+                         "of Eternal Rest", "of Eternal Sorrow", "of Eternal Struggles", "of Eternity", "of Executions",
+                         "of Faded Memories", "of Fallen Souls", "of Fools", "of Frost", "of Frozen Hells", "of Fury",
+                         "of Giants", "of Giantslaying", "of Grace", "of Grieving Widows", "of Hate", "of Hatred",
+                         "of Hell's Games", "of Hellish Torment", "of Heroes", "of Holy Might", "of Honor", "of Hope",
+                         "of Horrid Dreams", "of Horrors", "of Illuminated Dreams", "of Illumination", "of Immortality",
+                         "of Inception", "of Infinite Trials", "of Insanity", "of Invocation", "of Justice",
+                         "of Light's Hope", "of Lost Comrades", "of Lost Hope", "of Lost Voices", "of Lost Worlds",
+                         "of Magic", "of Mercy", "of Misery", "of Mountains", "of Mourning", "of Mystery",
+                         "of Necromancy", "of Nightmares", "of Oblivion", "of Perdition", "of Phantoms", "of Power",
+                         "of Pride", "of Pride's Fall", "of Putrefaction", "of Reckoning", "of Redemption", "of Regret",
+                         "of Riddles", "of Secrecy", "of Secrets", "of Shadow Strikes", "of Shadows",
+                         "of Shifting Sands", "of Shifting Worlds", "of Silence", "of Slaughter", "of Souls",
+                         "of Stealth", "of Storms", "of Subtlety", "of Suffering", "of Suffering's End", "of Summoning",
+                         "of Terror", "of Thunder", "of Time-Lost Memories", "of Timeless Battles", "of Titans",
+                         "of Torment", "of Traitors", "of Trembling Hands", "of Trials", "of Truth",
+                         "of Twilight's End", "of Twisted Visions", "of Unholy Blight", "of Unholy Might",
+                         "of Vengeance", "of Visions", "of Wasted Time", "of Widows", "of Wizardry", "of Woe",
+                         "of Wraiths", "of Zeal", "of the Ancients", "of the Banished", "of the Basilisk",
+                         "of the Beast", "of the Blessed", "of the Breaking Storm", "of the Brotherhood",
+                         "of the Burning Sun", "of the Caged Mind", "of the Cataclysm", "of the Champion",
+                         "of the Claw", "of the Corrupted", "of the Covenant", "of the Crown", "of the Damned",
+                         "of the Daywalker", "of the Dead", "of the Depth", "of the Dreadlord", "of the Earth",
+                         "of the East", "of the Emperor", "of the Empty Void", "of the End", "of the Enigma",
+                         "of the Fallen", "of the Falling Sky", "of the Flame", "of the Forest", "of the Forgotten",
+                         "of the Forsaken", "of the Gladiator", "of the Harvest", "of the Immortal",
+                         "of the Incoming Storm", "of the Insane", "of the King", "of the Lasting Night",
+                         "of the Leviathan", "of the Light", "of the Lion", "of the Lionheart", "of the Lone Victor",
+                         "of the Lone Wolf", "of the Lost", "of the Moon", "of the Moonwalker", "of the Night Sky",
+                         "of the Night", "of the Nightstalker", "of the North", "of the Occult", "of the Oracle",
+                         "of the Phoenix", "of the Plague", "of the Prince", "of the Protector", "of the Queen",
+                         "of the Serpent", "of the Setting Sun", "of the Shadows", "of the Sky", "of the South",
+                         "of the Stars", "of the Storm", "of the Summoner", "of the Sun", "of the Sunwalker",
+                         "of the Talon", "of the Undying", "of the Victor", "of the Void", "of the West",
+                         "of the Whispers", "of the Wicked", "of the Wind", "of the Wolf", "of the World",
+                         "of the Wretched"]
+            self.var7 = ["Abomination", "Agatha", "Allegiance", "Alpha", "Amnesia", "Anduril", "Angerfang", "Anguish",
+                         "Apocalypse", "Appointment", "Armageddon", "Arondite", "Ash", "Ashes", "Ashrune", "Betrayal",
+                         "Betrayer", "Blackfury", "Blackout", "Blacktalon", "Blazefury", "Blazeguard", "Blind Justice",
+                         "Blinder", "Blindstrike", "Blinkstrike", "Bloodbound", "Bloodfall", "Bloodfury", "Bloodpike",
+                         "Bloodrage", "Bloodspiller", "Bloodweep", "Broken Promise", "Brutality", "Brutalizer",
+                         "Cataclysm", "Catastrophe", "Celeste", "Chance", "Chaos", "Checkpoint", "Chillspike", "Comet",
+                         "Cometfall", "Convergence", "Corpsemaker", "Corruption", "Crimson", "Cyclone", "Darkness",
+                         "Dawn", "Dawn's Edge", "Dawnbreaker", "Daytime", "Deathbringer", "Deathraze", "Deathspade",
+                         "Decimation", "Depravity", "Desolation", "Despair", "Destiny", "Devastation", "Devine",
+                         "Devotion", "Devourer", "Disappoint", "Divine Light", "Dominance", "Dominion", "Doom",
+                         "Doom's Tip", "Doombringer", "Due Diligence", "Echo", "Eclipse", "Emergency", "Endbringer",
+                         "Enigma", "Epilogue", "Eternal Rest", "Eternity", "Extermination", "Extinction", "Eyegouger",
+                         "Faithkeeper", "Fate", "Finality", "Freak's Bite", "Frenzy", "Frostbite", "Fury",
+                         "Fury's Gaze", "Ghostwalker", "Glimmer", "Glory's Reach", "Good Point", "Grieving Spike",
+                         "Hail", "Harbinger", "Harvester", "Hatred", "Hatred's Point", "Hatred's Spike", "Headspike",
+                         "Heartseeker", "Hell's Scream", "Hellreaver", "Homage", "Honor's Call", "Honor's Reach",
+                         "Honorbound", "Hope's Edge", "Hope's End", "Hope's Point", "Hurricane", "Icicle", "Infamy",
+                         "Infinity", "Inner Demon", "Jaeger", "Justice", "Justifier", "King's Defender",
+                         "King's Legacy", "Kingpin", "Kinslayer", "Knight's Fall", "Knight's Honor", "Knightfall",
+                         "Lament", "Last Chance", "Last Laugh", "Last Rites", "Last Words", "Lazarus", "Legacy",
+                         "Legionaire", "Life's Limit", "Light's Bane", "Lightbane", "Lightbringer", "Lightning",
+                         "Limbo", "Malice", "Marrowstrike", "Massacre", "Mercy", "Midnight", "Misery's End",
+                         "Misery's Spike", "Narcoleptic", "Needle", "Needler", "Nethersbane", "Night's Fall",
+                         "Night's Reach", "Night's Spike", "Nightbane", "Nightfall", "Nighthorror", "Nightterror",
+                         "Nighttime", "Nirvana", "Oathbinder", "Oathbreaker", "Oathkeeper", "Oblivion", "Old Age",
+                         "Omega", "Orbit", "Party Pooper", "Peacekeeper", "Peacemaker", "Pendulum", "Persuasion",
+                         "Piece Maker", "Piety", "Pinpoint", "Pointless", "Pride", "Prophecy", "Purifier", "Rage",
+                         "Rapture", "Reckoning", "Reign", "Remorse", "Requiem", "Rigormortis", "Savagery", "Scar",
+                         "Seism", "Severance", "Shadow Strike", "Shadowfury", "Shadowmoon", "Shadowpike", "Shadowspike",
+                         "Shadowsteel", "Shadowstrike", "Shiverspine", "Silence", "Skirmisher", "Spike", "Spinefall",
+                         "Spite", "Stalker", "Storm", "Stormbringer", "Stormcaller", "Stormcrow", "Stormedge",
+                         "Stormrider", "Supernova", "Supremacy", "Suspension", "Swan Song", "Swoosh", "Termination",
+                         "Terror's Reach", "The End", "The Facelifter", "The Oculus", "The Oracle", "The Surgeon",
+                         "The Void", "The Warden", "Thunder", "Thunderstrike", "Treachery", "Tremor", "Trickster",
+                         "Trickster's Tip", "Trinity", "Twisted", "Typhoon", "Ubiquity", "Undoing", "Vacancy",
+                         "Valkyrie", "Vanquisher", "Vengeance", "Viewpoint", "Warbringer", "Warmonger", "Waypoint",
+                         "Whirlwind", "Wicked", "Widow Maker", "Willbreaker", "Windpiercer", "Winter's Bite",
+                         "Wit's End", "Witherbrand", "Wolf", "Woosh"]
+        elif Classification == "Sword":
+            self.var1 = ["Shadowfang", "Azurewrath", "Assurance", "ForgetMeNot", "Red Obsidian", "Abyssal Shard",
+                         "Aetherius", "Agatha", "Alpha", "Amnesia", "Anduril", "Anger's Tear", "Apocalypse",
+                         "Armageddon", "Arondite", "Ashrune", "Betrayal", "Betrayer", "Blackest Heart", "Blackout",
+                         "Blade of a Thousand Cuts", "Blade of the Grave", "Blazefury", "Blazeguard", "Blight's Plight",
+                         "Blind Justice", "Blinkstrike", "Bloodquench", "Bloodweep", "Broken Promise", "Brutality",
+                         "Cataclysm", "Catastrophe", "Celeste", "Chaos", "Cometfell", "Convergence", "Corruption",
+                         "Darkheart", "Darkness", "Dawn", "Dawn of Ruins", "Dawnbreaker", "Deathbringer", "Deathraze",
+                         "Decimation", "Desolation", "Despair", "Destiny's Song", "Devine", "Devourer", "Dirge",
+                         "Divine Light", "Doomblade", "Doombringer", "Draughtbane", "Due Diligence", "Early Retirement",
+                         "Echo", "Piece Maker", "Eclipse", "Endbringer", "Epilogue", "Espada", "Eternal Harmony",
+                         "Eternal Rest", "Extinction", "Faithkeeper", "Fallen Champion", "Fate", "Final Achievement",
+                         "Fleshrender", "Florance", "Frenzy", "Fury", "Ghost Reaver", "Ghostwalker", "Gladius",
+                         "Glimmer", "Godslayer", "Grasscutter", "Grieving Blade", "Gutrender", "Hatred's Bite",
+                         "Heartseeker", "Heartstriker", "Hell's Scream", "Hellfire", "Hellreaver", "Hollow Silence",
+                         "Honor's Call", "Hope's End", "Infamy", "Interrogator", "Justice", "Justifier",
+                         "King's Defender", "King's Legacy", "Kinslayer", "Klinge", "Knight's Fall", "Knightfall",
+                         "Lament", "Last Rites", "Last Words", "Lazarus", "Life's Limit", "Lifedrinker", "Light's Bane",
+                         "Lightbane", "Lightbringer", "Lightning", "Limbo", "Loyalty", "Malice", "Mangler", "Massacre",
+                         "Mercy", "Misery's End", "Morbid Doom", "Morbid Will", "Mournblade", "Narcoleptic", "Needle",
+                         "Nethersbane", "Night's Edge", "Night's Fall", "Nightbane", "Nightcrackle", "Nightfall",
+                         "Nirvana", "Oathbreaker", "Oathkeeper", "Oblivion", "Omega", "Orenmir", "Peacekeeper",
+                         "Perfect Storm", "Persuasion", "Prick", "Purifier", "Rage", "Ragespike", "Ragnarok", "Reaper",
+                         "Reaper's Toll", "Reckoning", "Reign of Misery", "Remorse", "Requiem", "Requiem of the Lost",
+                         "Retirement", "Righteous Might", "Rigormortis", "Savagery", "Scalpel", "Scar", "Seethe",
+                         "Severance", "Shadow Strike", "Shadowsteel", "Silence", "Silencer", "Silver Saber",
+                         "Silverlight", "Skullcrusher", "Slice of Life", "Soul Reaper", "Soulblade", "Soulrapier",
+                         "Spada", "Spike", "Spineripper", "Spiteblade", "Stalker", "Starshatterer", "Sting", "Stinger",
+                         "Storm", "Storm Breaker", "Stormbringer", "Stormcaller", "Storm-Weaver", "Striker",
+                         "Sun Strike", "Suspension", "Swan Song", "The Ambassador", "The Black Blade", "The End",
+                         "The Facelifter", "The Light", "The Oculus", "The Stake", "The Untamed", "The Unyielding",
+                         "The Void", "Thorn", "Thunder", "Toothpick", "Tranquility", "Treachery", "Trinity", "Tyrhung",
+                         "Unending Tyranny", "Unholy Might", "Valkyrie", "Vanquisher", "Vengeance", "Venom",
+                         "Venomshank", "Warmonger", "Widow Maker", "Willbreaker", "Winterthorn", "Wit's End",
+                         "Witherbrand", "Wolf", "Worldbreaker", "Worldslayer"]
+            self.var2 = ["Massive", "Military", "Amber Infused", "Ancient", "Anguish", "Annihilation", "Antique",
+                         "Arcane", "Arched", "Assassination", "Atuned", "Oathkeeper's", "Bandit's", "Baneful",
+                         "Banished", "Barbarian", "Barbaric", "Battleworn", "Blazefury", "Blood Infused",
+                         "Blood-Forged", "Bloodcursed", "Bloodied", "Bloodlord's", "Bloodsurge", "Bloodvenom",
+                         "Bone Crushing", "Bonecarvin", "Brutal", "Brutality", "Burnished", "Captain's", "Cataclysm",
+                         "Cataclysmic", "Cold-Forged", "Corroded", "Corrupted", "Crazed", "Crying", "Cursed", "Curved",
+                         "Dancing", "Decapitating", "Defiled", "Demonic", "Deserted", "Desire's", "Desolation",
+                         "Destiny's", "Dire", "Doom", "Doom's", "Dragon's", "Dragonbreath", "Ebon", "Eerie",
+                         "Enchanted", "Engraved", "Eternal", "Executing", "Exiled", "Extinction", "Faith's", "Faithful",
+                         "Fancy", "Fearful", "Feral", "Fierce", "Fiery", "Fire Infused", "Fireguard", "Firesoul",
+                         "Firestorm", "Flaming", "Flimsy", "Forsaken", "Fortune's", "Fragile", "Frail", "Frenzied",
+                         "Frost", "Frozen", "Furious", "Fusion", "Ghastly", "Ghost-Forged", "Ghostly", "Gladiator",
+                         "Gladiator's", "Gleaming", "Glinting", "Greedy", "Grieving", "Guard's", "Guardian's",
+                         "Hailstorm", "Hateful", "Haunted", "Heartless", "Hollow", "Holy", "Honed", "Honor's", "Hope's",
+                         "Hopeless", "Howling", "Hungering", "Improved", "Incarnated", "Infused", "Inherited",
+                         "Isolated", "Jade Infused", "Judgement", "Knightly", "Legionnaire's", "Liar's", "Lich",
+                         "Lightning", "Lonely", "Loyal", "Lustful", "Lusting", "Mage's", "Malevolent", "Malicious",
+                         "Malignant", "Mended", "Mercenary", "Misfortune's", "Misty", "Moonlit", "Mourning",
+                         "Nightmare", "Ominous", "Peacekeeper", "Phantom", "Polished", "Possessed", "Pride's",
+                         "Prideful", "Primitive", "Promised", "Protector's", "Deluded", "Proud", "Recruit's",
+                         "Reforged", "Reincarnated", "Relentless", "Remorseful", "Renewed", "Renovated", "Replica",
+                         "Restored", "Retribution", "Ritual", "Roaring", "Ruby Infused", "Rune-Forged", "Rusty",
+                         "Sailor's", "Sapphire Infused", "Savage", "Shadow", "Sharpened", "Silent", "Singed", "Singing",
+                         "Sinister", "Skullforge", "Skyfall", "Smooth", "Solitude's", "Sorrow's", "Soul",
+                         "Soul Infused", "Soul-Forged", "Soulcursed", "Soulless", "Spectral", "Spectral-Forged",
+                         "Spiteful", "Storm", "Storm-Forged", "Stormfury", "Stormguard", "Terror", "Thirsting",
+                         "Thirsty", "Thunder", "Thunder-Forged", "Thunderfury", "Thunderguard", "Thundersoul",
+                         "Thunderstorm", "Timeworn", "Tormented", "Trainee's", "Treachery's", "Twilight", "Twilight's",
+                         "Twisted", "Tyrannical", "Undead", "Unholy", "Vengeance", "Vengeful", "Venom", "Vicious",
+                         "Vindication", "Vindictive", "Void", "Volcanic", "Vowed", "War-Forged", "Warlord's", "Warp",
+                         "Warped", "Whistling", "Wicked", "Wind's", "Wind-Forged", "Windsong", "Woeful", "Wrathful",
+                         "Wretched", "Yearning", "Zealous"]
+            self.var3 = ["Adamantite", "Bronze", "Copper", "Diamond", "Glass", "Gold", "Iron", "Mithril", "Obsidian",
+                         "Silver", "Skeletal", "Steel"]
+            self.var4 = ["Blade", "Broadsword", "Claymore", "Defender", "Deflector", "Doomblade", "Greatsword",
+                         "Guardian", "Katana", "Longsword", "Mageblade", "Protector", "Quickblade", "Rapier", "Reaver",
+                         "Sabre", "Scimitar", "Shortsword", "Slicer", "Spellblade", "Swiftblade", "Sword", "Warblade",
+                         "Skewer", "Carver", "Etcher", "Sculptor", "Razor", "Crusader"]
+            self.var5 = ["Annihilation", "Betrayer", "Blade", "Blessed Blade", "Blood Blade", "Bond", "Boon", "Breaker",
+                         "Bringer", "Broadsword", "Butcher", "Call", "Carver", "Champion", "Claymore", "Conqueror",
+                         "Crusader", "Cry", "Cunning", "Dark Blade", "Dawn", "Defender", "Defiler", "Deflector",
+                         "Destroyer", "Doomblade", "Edge", "Ender", "Etcher", "Executioner", "Favor", "Ferocity", "Foe",
+                         "Gift", "Glory", "Greatsword", "Guardian", "Heirloom", "Hope", "Incarnation", "Jaws", "Katana",
+                         "Last Hope", "Last Stand", "Legacy", "Longblade", "Longsword", "Mageblade", "Memory", "Might",
+                         "Oath", "Pact", "Pledge", "Promise", "Protector", "Quickblade", "Rapier", "Ravager", "Razor",
+                         "Reach", "Reaper", "Reaver", "Runed Blade", "Saber", "Sabre", "Savagery", "Scimitar",
+                         "Sculptor", "Secret", "Shortsword", "Skewer", "Slayer", "Slicer", "Soul", "Spellblade",
+                         "Spine", "Swiftblade", "Sword", "Terror", "Token", "Tribute", "Vengeance", "Voice", "Warblade",
+                         "Warglaive", "Whisper", "Wit"]
+            self.var6 = ["of Agony", "of Ancient Power", "of Anguish", "of Ashes", "of Assassins", "of Black Magic",
+                         "of Blessed Fortune", "of Blessings", "of Blight", "of Blood", "of Bloodlust",
+                         "of Broken Bones", "of Broken Dreams", "of Broken Families", "of Burdens", "of Chaos",
+                         "of Closing Eyes", "of Conquered Worlds", "of Corruption", "of Cruelty", "of Cunning",
+                         "of Dark Magic", "of Dark Souls", "of Darkness", "of Decay", "of Deception", "of Degradation",
+                         "of Delusions", "of Denial", "of Desecration", "of Diligence", "of Dismay", "of Dragonsouls",
+                         "of Due Diligence", "of Echoes", "of Ended Dreams", "of Ending Hope", "of Ending Misery",
+                         "of Eternal Bloodlust", "of Eternal Damnation", "of Eternal Glory", "of Eternal Justice",
+                         "of Eternal Rest", "of Eternal Sorrow", "of Eternal Struggles", "of Eternity", "of Executions",
+                         "of Faded Memories", "of Fallen Souls", "of Fools", "of Frost", "of Frozen Hells", "of Fury",
+                         "of Giants", "of Giantslaying", "of Grace", "of Grieving Widows", "of Hate", "of Hatred",
+                         "of Hell's Games", "of Hellish Torment", "of Heroes", "of Holy Might", "of Honor", "of Hope",
+                         "of Horrid Dreams", "of Horrors", "of Illuminated Dreams", "of Illumination", "of Immortality",
+                         "of Inception", "of Infinite Trials", "of Insanity", "of Invocation", "of Justice",
+                         "of Light's Hope", "of Lost Comrades", "of Lost Hope", "of Lost Voices", "of Lost Worlds",
+                         "of Magic", "of Mercy", "of Misery", "of Mountains", "of Mourning", "of Mystery",
+                         "of Necromancy", "of Nightmares", "of Oblivion", "of Perdition", "of Phantoms", "of Power",
+                         "of Pride", "of Pride's Fall", "of Putrefaction", "of Reckoning", "of Redemption", "of Regret",
+                         "of Riddles", "of Secrecy", "of Secrets", "of Shadow Strikes", "of Shadows",
+                         "of Shifting Sands", "of Shifting Worlds", "of Silence", "of Slaughter", "of Souls",
+                         "of Stealth", "of Storms", "of Subtlety", "of Suffering", "of Suffering's End", "of Summoning",
+                         "of Terror", "of Thunder", "of Time-Lost Memories", "of Timeless Battles", "of Titans",
+                         "of Torment", "of Traitors", "of Trembling Hands", "of Trials", "of Truth",
+                         "of Twilight's End", "of Twisted Visions", "of Unholy Blight", "of Unholy Might",
+                         "of Vengeance", "of Visions", "of Wasted Time", "of Widows", "of Wizardry", "of Woe",
+                         "of Wraiths", "of Zeal", "of the Ancients", "of the Banished", "of the Basilisk",
+                         "of the Beast", "of the Blessed", "of the Breaking Storm", "of the Brotherhood",
+                         "of the Burning Sun", "of the Caged Mind", "of the Cataclysm", "of the Champion",
+                         "of the Claw", "of the Corrupted", "of the Covenant", "of the Crown", "of the Damned",
+                         "of the Daywalker", "of the Dead", "of the Depth", "of the Dreadlord", "of the Earth",
+                         "of the East", "of the Emperor", "of the Empty Void", "of the End", "of the Enigma",
+                         "of the Fallen", "of the Falling Sky", "of the Flame", "of the Forest", "of the Forgotten",
+                         "of the Forsaken", "of the Gladiator", "of the Harvest", "of the Immortal",
+                         "of the Incoming Storm", "of the Insane", "of the King", "of the Lasting Night",
+                         "of the Leviathan", "of the Light", "of the Lion", "of the Lionheart", "of the Lone Victor",
+                         "of the Lone Wolf", "of the Lost", "of the Moon", "of the Moonwalker", "of the Night Sky",
+                         "of the Night", "of the Nightstalker", "of the North", "of the Occult", "of the Oracle",
+                         "of the Phoenix", "of the Plague", "of the Prince", "of the Protector", "of the Queen",
+                         "of the Serpent", "of the Setting Sun", "of the Shadows", "of the Sky", "of the South",
+                         "of the Stars", "of the Storm", "of the Summoner", "of the Sun", "of the Sunwalker",
+                         "of the Talon", "of the Undying", "of the Victor", "of the Void", "of the West",
+                         "of the Whispers", "of the Wicked", "of the Wind", "of the Wolf", "of the World",
+                         "of the Wretched"]
+            self.var7 = ["Felthorn", "Aetherius", "Agatha", "Alpha", "Amnesia", "Anduril", "Apocalypse", "Armageddon",
+                         "Arondite", "Ashrune", "Betrayal", "Betrayer", "Blackout", "Blazefury", "Blazeguard",
+                         "Blinkstrike", "Bloodquench", "Bloodweep", "Brutality", "Celeste", "Chaos", "Cometfell",
+                         "Convergence", "Darkheart", "Dawn", "Dawnbreaker", "Deathbringer", "Deathraze", "Decimation",
+                         "Desolation", "Destiny's Song", "Dirge", "Doomblade", "Doombringer", "Draughtbane",
+                         "Due Diligence", "Echo", "Eclipse", "Endbringer", "Epilogue", "Espada", "Extinction",
+                         "Faithkeeper", "Fate", "Fleshrender", "Florance", "Frenzy", "Fury", "Ghost Reaver",
+                         "Ghostwalker", "Gladius", "Glimmer", "Godslayer", "Grasscutter", "Gutrender", "Hatred's Bite",
+                         "Heartseeker", "Heartstriker", "Hell's Scream", "Hellfire", "Piece Maker", "Hellreaver",
+                         "Honor's Call", "Hope's End", "Infamy", "Interrogator", "Justifier", "Kinslayer", "Klinge",
+                         "Knightfall", "Lament", "Lazarus", "Lifedrinker", "Light's Bane", "Lightbane", "Lightbringer",
+                         "Lightning", "Limbo", "Loyalty", "Malice", "Mangler", "Massacre", "Mercy", "Misery",
+                         "Mournblade", "Narcoleptic", "Needle", "Nethersbane", "Night's Edge", "Night's Fall",
+                         "Nightbane", "Nightcrackle", "Nightfall", "Nirvana", "Oathbreaker", "Oathkeeper", "Oblivion",
+                         "Omega", "Orenmir", "Peacekeeper", "Persuasion", "Prick", "Purifier", "Rage", "Ragespike",
+                         "Ragnarok", "Reckoning", "Reign", "Remorse", "Requiem", "Retirement", "Rigormortis",
+                         "Savagery", "Scalpel", "Scar", "Seethe", "Severance", "Shadow Strike", "Shadowsteel",
+                         "Silence", "Silencer", "Silver Saber", "Silverlight", "Skullcrusher", "Slice of Life",
+                         "Soul Reaper", "Soulblade", "Soulrapier", "Spada", "Spike", "Spineripper", "Spiteblade",
+                         "Stalker", "Starshatterer", "Sting", "Stinger", "Storm", "Storm Breaker", "Stormbringer",
+                         "Stormcaller", "Story-Weaver", "Striker", "Sun Strike", "Suspension", "Swan Song",
+                         "The Ambassador", "The Black Blade", "The End", "The Facelifter", "The Light", "The Oculus",
+                         "The Stake", "The Untamed", "The Unyielding", "The Void", "Thorn", "Thunder", "Toothpick",
+                         "Tranquility", "Treachery", "Trinity", "Tyrhung", "Unending Tyranny", "Unholy Might",
+                         "Valkyrie", "Vanquisher", "Vengeance", "Venom", "Venomshank", "Warmonger", "Widow Maker",
+                         "Willbreaker", "Winterthorn", "Wit's End", "Witherbrand", "Wolf", "Worldbreaker",
+                         "Worldslayer"]
+        elif Classification == "Hammer":
+            self.var1 = ["Abomination", "Agatha", "Agony", "Allegiance", "Alpha", "Amnesia", "Anduril", "Apocalypse",
+                         "Armageddon", "Arondite", "Ash", "Ashes", "Ashrune", "Back Breaker", "Battlestar", "Betrayal",
+                         "Betrayer", "Blackout", "Blazeguard", "Blessing", "Blind Justice", "Bloodfury", "Bloodmoon",
+                         "Bloodquench", "Bloodrage", "Bloodspiller", "Bloodweep", "Bone Warden", "Bonesnapper",
+                         "Braindead", "Broken Promise", "Brutality", "Brutalizer", "Cataclysm", "Catastrophe",
+                         "Celeste", "Chance", "Chaos", "Chasm", "Chieftain", "Comet", "Cometfall", "Concussion",
+                         "Convergence", "Corpsemaker", "Corruption", "Cosmos", "Crash", "Crimson", "Crush",
+                         "Cryptmaker", "Cyclone", "Darkness", "Dawn", "Dawnbreaker", "Daytime", "Deathbringer",
+                         "Deathraze", "Decimation", "Demise", "Desolation", "Despair", "Destiny", "Destruction",
+                         "Devastation", "Devine", "Devotion", "Devourer", "Disturbance", "Divine Light", "Dominance",
+                         "Dominion", "Doom", "Doombringer", "Dragonfist", "Dragonmaw", "Dragonstrike", "Due Diligence",
+                         "Early Retirement", "Earthquake", "Earthshaker", "Earthshaper", "Earthwarden", "Echo",
+                         "Eclipse", "Emergency", "End of Dreams", "Endbringer", "Enigma", "Epilogue", "Eternal Rest",
+                         "Eternity", "Eveningstar", "Extermination", "Extinction", "Faithkeeper", "Falcon",
+                         "Falling Star", "Fate", "Finality", "Frenzy", "Frostwind", "Fury", "Fury's Gaze", "Galaxy",
+                         "Gatecrasher", "Ghost Reaver", "Ghostwalker", "Glimmer", "Godslayer", "Grace", "Guiding Star",
+                         "Harbinger", "Harmony", "Harvester", "Hatred", "Heartcrusher", "Hell's Scream", "Hellfire",
+                         "Homage", "Honor's Call", "Hope's End", "Humongous", "Hurricane", "Icebreaker", "Infamy",
+                         "Infinity", "Interrogator", "Jackhammer", "Jawbone", "Justice", "Justifier", "King's Defender",
+                         "King's Legacy", "Kinslayer", "Knight's Fall", "Knight's Honor", "Knightfall", "Lament",
+                         "Last Chance", "Last Laugh", "Last Rites", "Last Word", "Last Words", "Lazarus", "Legacy",
+                         "Legionaire", "Life's Limit", "Light's Bane", "Lightbane", "Lightbringer", "Lightning",
+                         "Limbo", "Lockjaw", "Magma", "Malice", "Maneater", "Massacre", "Mercy", "Midnight",
+                         "Misery's End", "Monsoon", "Morningstar", "Narcoleptic", "Nethersbane", "Night's Fall",
+                         "Nightbane", "Nightfall", "Nightglow", "Nightmare", "Nighttime", "Nirvana", "Oathbreaker",
+                         "Oathkeeper", "Oblivion", "Old Age", "Omega", "Orbit", "Orenmir", "Oxheart", "Party Pooper",
+                         "Patience", "Peacekeeper", "Peacemaker", "Pendulum", "Perfect Storm", "Persuasion",
+                         "Piece Maker", "Piety", "Pride", "Prophecy", "Punisher", "Purifier", "Rage", "Ragnarok",
+                         "Rapture", "Reaper's Toll", "Reckoning", "Red Dwarf", "Reign", "Remorse", "Requiem",
+                         "Retirement", "Righteous Might", "Rigormortis", "Rising Tide", "Savagery", "Scar",
+                         "Scourgeborne", "Second Chance", "Seism", "Seismic", "Serenity", "Severance", "Shadowfury",
+                         "Shadowmoon", "Shatterskull", "Shooting Star", "Silence", "Skullcrusher", "Soul Breaker",
+                         "Spinefall", "Stalker", "Stonefist", "Storm", "Storm Breaker", "Storm-Weaver", "Stormbringer",
+                         "Stormcaller", "Stormedge", "Stormherald", "Stormrider", "Sucker Punch", "Sundown",
+                         "Supernova", "Supremacy", "Suspension", "Swan Song", "Tank", "Tenderiser", "Termination",
+                         "The Ambassador", "The Chancellor", "The Chief", "The End", "The Light", "The Minotaur",
+                         "The Oculus", "The Oracle", "The Sundering", "The Void", "The Warden", "Thunder", "Trauma",
+                         "Treachery", "Tremor", "Trinity", "Twilight", "Typhoon", "Ubiquity", "Undoing", "Vacancy",
+                         "Valkyrie", "Vanquisher", "Vengeance", "Warbringer", "Warmonger", "Whirlwind", "Wicked",
+                         "Widow Maker", "Willbreaker", "Winter's Bite", "Wit's End", "Witherbrand", "Wolf",
+                         "Worldbreaker", "Worldcarver", "Worldslayer"]
+            self.var2 = ["Ancient", "Antique", "Apocalypse", "Apocalyptic", "Arcane", "Arched", "Atuned", "Bandit's",
+                         "Baneful", "Banished", "Barbarian", "Barbaric", "Battleworn", "Blazefury", "Blood Infused",
+                         "Blood-Forged", "Bloodcursed", "Bloodied", "Bloodlord's", "Bloodsurge", "Bloodvenom",
+                         "Bonecarvin", "Brutal", "Brutality", "Burnished", "Cataclysm", "Cataclysmic", "Challenger",
+                         "Challenger's", "Champion", "Champion's", "Cold-Forged", "Conqueror", "Conqueror's",
+                         "Corroded", "Corrupted", "Crazed", "Crying", "Cursed", "Curved", "Dancing", "Dark", "Darkness",
+                         "Defender", "Defender's", "Defiled", "Defiling", "Deluded", "Demonic", "Deserted", "Desire's",
+                         "Desolation", "Destiny's", "Diabolical", "Dire", "Doom", "Doom's", "Dragon's", "Dragonbreath",
+                         "Eerie", "Enchanted", "Engraved", "Enlightened", "Eternal", "Exiled", "Extinction", "Faith's",
+                         "Faithful", "Fancy", "Fearful", "Feral", "Ferocious", "Fierce", "Fiery", "Fire Infused",
+                         "Fireguard", "Firesoul", "Firestorm", "Flaming", "Flimsy", "Forsaken", "Fortune's", "Foul",
+                         "Fragile", "Frail", "Frenzied", "Frost", "Frozen", "Furious", "Fusion", "Ghastly", "Ghost",
+                         "Ghost-Forged", "Ghostly", "Gladiator", "Gladiator's", "Gleaming", "Glinting", "Greedy",
+                         "Grieving", "Grim", "Guard's", "Guardian's", "Hailstorm", "Harmonized", "Hateful", "Haunted",
+                         "Heartless", "Heinous", "Hero", "Hero's", "Hollow", "Holy", "Honed", "Honor's", "Hope's",
+                         "Hopeless", "Howling", "Hungering", "Improved", "Impure", "Incarnated", "Infused", "Inherited",
+                         "Isolated", "Jade Infused", "Judgement", "Keeper's", "Knightly", "Knight's", "Legionnaire's",
+                         "Liar's", "Lich", "Lightning", "Lonely", "Loyal", "Lustful", "Lusting", "Malevolent",
+                         "Malicious", "Malificent", "Malignant", "Massive", "Mended", "Mercenary", "Military",
+                         "Misfortune's", "Misty", "Moonlit", "Mourning", "Nightmare", "Oathkeeper's", "Ominous",
+                         "Peacekeeper", "Peacekeeper's", "Phantom", "Polished", "Possessed", "Pride's", "Prideful",
+                         "Primal", "Prime", "Primitive", "Promised", "Protector's", "Proud", "Pure", "Putrid", "Raging",
+                         "Recruit's", "Refined", "Reforged", "Reincarnated", "Relentless", "Remorseful", "Renewed",
+                         "Renovated", "Replica", "Restored", "Retribution", "Ritual", "Roaring", "Ruby Infused",
+                         "Rune-Forged", "Runed", "Rusty", "Savage", "Sentinel", "Shadow", "Shamanic", "Sharpened",
+                         "Silent", "Singed", "Singing", "Sinister", "Skyfall", "Smooth", "Soldier's", "Solitude's",
+                         "Sorcerer's", "Sorrow's", "Soul", "Soul Infused", "Soul-Forged", "Soulcursed", "Soulless",
+                         "Spectral", "Spectral-Forged", "Spiteful", "Storm", "Storm-Forged", "Stormfury", "Stormguard",
+                         "Terror", "Thirsting", "Thirsty", "Thunder", "Thunder-Forged", "Thunderfury", "Thunderguard",
+                         "Thundersoul", "Thunderstorm", "Timeworn", "Tormented", "Trainee's", "Treachery's", "Twilight",
+                         "Twilight's", "Twisted", "Tyrannical", "Undead", "Unholy", "Vanquisher", "Vengeance",
+                         "Vengeful", "Venom", "Vicious", "Victor", "Vile", "Vindication", "Vindicator", "Vindictive",
+                         "Void", "Volcanic", "Vowed", "War", "War-Forged", "Warden's", "Warlord's", "Warp", "Warped",
+                         "Warrior", "Warrior's", "Whistling", "Wicked", "Wind's", "Wind-Forged", "Windsong", "Woeful",
+                         "Wrathful", "Wretched", "Yearning", "Zealous"]
+            self.var3 = ["Adamantite", "Bone", "Bronze", "Bronzed", "Ivory", "Ebon", "Glass", "Golden", "Iron",
+                         "Ironbark", "Mithril", "Obsidian", "Silver", "Skeletal", "Steel", "Titanium"]
+            self.var4 = ["Mace", "Bludgeon", "Maul", "Hammer", "Mallet", "Crusher", "Battlehammer", "Greathammer",
+                         "Smasher", "Warmace", "Hammer", "Mace", "Scepter", "Pummeler"]
+            self.var5 = ["Allegiance", "Annihilation", "Battlehammer", "Betrayer", "Bludgeon", "Bond", "Boon",
+                         "Breaker", "Bringer", "Bruiser", "Butcher", "Call", "Champion", "Conqueror", "Crusader",
+                         "Crusher", "Cry", "Cunning", "Dawn", "Defender", "Defiler", "Destroyer", "Disposer", "Ender",
+                         "Executioner", "Favor", "Ferocity", "Foe", "Gift", "Glory", "Greathammer", "Guardian",
+                         "Hammer", "Heirloom", "Hope", "Incarnation", "Jaws", "Last Hope", "Last Stand", "Legacy",
+                         "Mace", "Mallet", "Masher", "Maul", "Memory", "Might", "Oath", "Pact", "Pledge", "Pounder",
+                         "Promise", "Prophecy", "Protector", "Pummeler", "Queller", "Ravager", "Reach", "Reaper",
+                         "Scepter", "Sculptor", "Secret", "Slayer", "Smasher", "Soul", "Suppressor", "Terror", "Token",
+                         "Tribute", "Vengeance", "Voice", "Warmace", "Whisper", "Wit"]
+            self.var6 = ["of Agony", "of Ancient Power", "of Anguish", "of Ashes", "of Assassins", "of Black Magic",
+                         "of Blessed Fortune", "of Blessings", "of Blight", "of Blood", "of Bloodlust",
+                         "of Broken Bones", "of Broken Dreams", "of Broken Families", "of Burdens", "of Chaos",
+                         "of Closing Eyes", "of Conquered Worlds", "of Corruption", "of Cruelty", "of Cunning",
+                         "of Dark Magic", "of Dark Souls", "of Darkness", "of Decay", "of Deception", "of Degradation",
+                         "of Delusions", "of Denial", "of Desecration", "of Diligence", "of Dismay", "of Dragonsouls",
+                         "of Due Diligence", "of Echoes", "of Ended Dreams", "of Ending Hope", "of Ending Misery",
+                         "of Eternal Bloodlust", "of Eternal Damnation", "of Eternal Glory", "of Eternal Justice",
+                         "of Eternal Rest", "of Eternal Sorrow", "of Eternal Struggles", "of Eternity", "of Executions",
+                         "of Faded Memories", "of Fallen Souls", "of Fools", "of Frost", "of Frozen Hells", "of Fury",
+                         "of Giants", "of Giantslaying", "of Grace", "of Grieving Widows", "of Hate", "of Hatred",
+                         "of Hell's Games", "of Hellish Torment", "of Heroes", "of Holy Might", "of Honor", "of Hope",
+                         "of Horrid Dreams", "of Horrors", "of Illuminated Dreams", "of Illumination", "of Immortality",
+                         "of Inception", "of Infinite Trials", "of Insanity", "of Invocation", "of Justice",
+                         "of Light's Hope", "of Lost Comrades", "of Lost Hope", "of Lost Voices", "of Lost Worlds",
+                         "of Magic", "of Mercy", "of Misery", "of Mountains", "of Mourning", "of Mystery",
+                         "of Necromancy", "of Nightmares", "of Oblivion", "of Perdition", "of Phantoms", "of Power",
+                         "of Pride", "of Pride's Fall", "of Putrefaction", "of Reckoning", "of Redemption", "of Regret",
+                         "of Riddles", "of Secrecy", "of Secrets", "of Shadow Strikes", "of Shadows",
+                         "of Shifting Sands", "of Shifting Worlds", "of Silence", "of Slaughter", "of Souls",
+                         "of Stealth", "of Storms", "of Subtlety", "of Suffering", "of Suffering's End", "of Summoning",
+                         "of Terror", "of Thunder", "of Time-Lost Memories", "of Timeless Battles", "of Titans",
+                         "of Torment", "of Traitors", "of Trembling Hands", "of Trials", "of Truth",
+                         "of Twilight's End", "of Twisted Visions", "of Unholy Blight", "of Unholy Might",
+                         "of Vengeance", "of Visions", "of Wasted Time", "of Widows", "of Wizardry", "of Woe",
+                         "of Wraiths", "of Zeal", "of the Ancients", "of the Banished", "of the Basilisk",
+                         "of the Beast", "of the Blessed", "of the Breaking Storm", "of the Brotherhood",
+                         "of the Burning Sun", "of the Caged Mind", "of the Cataclysm", "of the Champion",
+                         "of the Claw", "of the Corrupted", "of the Covenant", "of the Crown", "of the Damned",
+                         "of the Daywalker", "of the Dead", "of the Depth", "of the Dreadlord", "of the Earth",
+                         "of the East", "of the Emperor", "of the Empty Void", "of the End", "of the Enigma",
+                         "of the Fallen", "of the Falling Sky", "of the Flame", "of the Forest", "of the Forgotten",
+                         "of the Forsaken", "of the Gladiator", "of the Harvest", "of the Immortal",
+                         "of the Incoming Storm", "of the Insane", "of the King", "of the Lasting Night",
+                         "of the Leviathan", "of the Light", "of the Lion", "of the Lionheart", "of the Lone Victor",
+                         "of the Lone Wolf", "of the Lost", "of the Moon", "of the Moonwalker", "of the Night Sky",
+                         "of the Night", "of the Nightstalker", "of the North", "of the Occult", "of the Oracle",
+                         "of the Phoenix", "of the Plague", "of the Prince", "of the Protector", "of the Queen",
+                         "of the Serpent", "of the Setting Sun", "of the Shadows", "of the Sky", "of the South",
+                         "of the Stars", "of the Storm", "of the Summoner", "of the Sun", "of the Sunwalker",
+                         "of the Talon", "of the Undying", "of the Victor", "of the Void", "of the West",
+                         "of the Whispers", "of the Wicked", "of the Wind", "of the Wolf", "of the World",
+                         "of the Wretched"]
+            self.var7 = ["Abomination", "Agatha", "Agony", "Allegiance", "Alpha", "Amnesia", "Anduril", "Apocalypse",
+                         "Armageddon", "Arondite", "Ash", "Ashes", "Ashrune", "Back Breaker", "Battlestar", "Betrayal",
+                         "Betrayer", "Blackout", "Blazeguard", "Blessing", "Blind Justice", "Bloodfury", "Bloodmoon",
+                         "Bloodquench", "Bloodrage", "Bloodspiller", "Bloodweep", "Bone Warden", "Bonesnapper",
+                         "Braindead", "Broken Promise", "Brutality", "Brutalizer", "Cataclysm", "Catastrophe",
+                         "Celeste", "Chance", "Chaos", "Chasm", "Chieftain", "Comet", "Cometfall", "Concussion",
+                         "Convergence", "Corpsemaker", "Corruption", "Cosmos", "Crash", "Crimson", "Crush",
+                         "Cryptmaker", "Cyclone", "Darkness", "Dawn", "Dawnbreaker", "Daytime", "Deathbringer",
+                         "Deathraze", "Decimation", "Demise", "Desolation", "Despair", "Destiny", "Destruction",
+                         "Devastation", "Devine", "Devotion", "Devourer", "Disturbance", "Divine Light", "Dominance",
+                         "Dominion", "Doom", "Doombringer", "Dragonfist", "Dragonmaw", "Dragonstrike", "Due Diligence",
+                         "Earthquake", "Earthshaker", "Earthshaper", "Earthwarden", "Echo", "Eclipse", "Emergency",
+                         "End of Dreams", "Endbringer", "Enigma", "Epilogue", "Eternal Rest", "Eternity", "Eveningstar",
+                         "Extermination", "Extinction", "Faithkeeper", "Falcon", "Falling Star", "Fate", "Finality",
+                         "Frenzy", "Frostwind", "Fury", "Fury's Gaze", "Galaxy", "Gatecrasher", "Ghost Reaver",
+                         "Ghostwalker", "Glimmer", "Godslayer", "Grace", "Guiding Star", "Harbinger", "Harmony",
+                         "Harvester", "Hatred", "Heartcrusher", "Hell's Scream", "Hellfire", "Homage", "Honor's Call",
+                         "Hope's End", "Humongous", "Hurricane", "Icebreaker", "Infamy", "Infinity", "Interrogator",
+                         "Jackhammer", "Jawbone", "Justice", "Justifier", "King's Defender", "King's Legacy",
+                         "Kinslayer", "Knight's Fall", "Knight's Honor", "Knightfall", "Lament", "Last Chance",
+                         "Last Laugh", "Last Rites", "Last Word", "Last Words", "Lazarus", "Legacy", "Legionaire",
+                         "Life's Limit", "Light's Bane", "Lightbane", "Lightbringer", "Lightning", "Limbo", "Lockjaw",
+                         "Magma", "Malice", "Maneater", "Massacre", "Mercy", "Midnight", "Misery's End", "Monsoon",
+                         "Morningstar", "Narcoleptic", "Nethersbane", "Night's Fall", "Nightbane", "Nightfall",
+                         "Nightglow", "Nightmare", "Nighttime", "Nirvana", "Oathbreaker", "Oathkeeper", "Oblivion",
+                         "Old Age", "Omega", "Orbit", "Orenmir", "Oxheart", "Party Pooper", "Patience", "Peacekeeper",
+                         "Peacemaker", "Pendulum", "Perfect Storm", "Persuasion", "Piety", "Pride", "Prophecy",
+                         "Punisher", "Purifier", "Rage", "Ragnarok", "Rapture", "Reckoning", "Red Dwarf", "Reign",
+                         "Remorse", "Requiem", "Retirement", "Rigormortis", "Rising Tide", "Savagery", "Seism",
+                         "Seismic", "Serenity", "Severance", "Shadowfury", "Shatterskull", "Shooting Star", "Silence",
+                         "Skullcrusher", "Soul Breaker", "Spinefall", "Stalker", "Stonefist", "Storm", "Storm Breaker",
+                         "Storm-Weaver", "Stormbringer", "Stormcaller", "Stormedge", "Stormherald", "Stormrider",
+                         "Sucker Punch", "Sundown", "Supernova", "Supremacy", "Suspension", "Swan Song", "Tank",
+                         "Tenderiser", "Termination", "The Ambassador", "The Chancellor", "The Chief", "The End",
+                         "The Light", "The Minotaur", "The Oculus", "The Oracle", "The Sundering", "The Void",
+                         "The Warden", "Thunder", "Trauma", "Treachery", "Tremor", "Trinity", "Twilight", "Typhoon",
+                         "Ubiquity", "Undoing", "Vacancy", "Valkyrie", "Vanquisher", "Vengeance", "Warbringer",
+                         "Warmonger", "Whirlwind", "Wicked", "Widow Maker", "Willbreaker", "Winter's Bite", "Wit's End",
+                         "Witherbrand", "Wolf", "Worldbreaker", "Worldcarver", "Worldslayer"]
+
+    def __str__(self):
+        num = randint(4)
+        if num == 0:
+            return self.var1[randint(len(self.var1))].title()
+        elif num == 1:
+            return self.var2[randint(len(self.var2))] + " " + self.var4[randint(len(self.var4))]
+        elif num == 2:
+            return self.var2[randint(len(self.var2))] + " " + self.var3[randint(len(self.var3))] + " " + self.var4[
+                randint(len(self.var4))]
+        elif num == 3:
+            return self.var7[randint(len(self.var7))] + ", " + self.var5[randint(len(self.var5))] + " " + self.var6[
+                randint(len(self.var6))]
+
+
+class GeneralStore(object):
+    n1 = ["Abiding", "Acclaimed", "Acquired", "Adapt", "Admired", "Admiring", "Adorable", "Affordable", "Aggressive",
+          "Agreeing", "Amazing", "Amusing", "Ancient", "Angelic", "Angry", "Antique", "Arriving", "Awesome", "Awkward",
+          "Baby", "Baking", "Balanced", "Basic", "Bathing", "Beautiful", "Begging", "Better", "Big", "Bitter", "Black",
+          "Blank", "Bleeding", "Blind", "Blissful", "Blond", "Blue", "Blushing", "Bouncing", "Bouncy", "Brass",
+          "Bright", "Brilliant", "Broken", "Bronze", "Brown", "Burning", "Busy", "Calculating", "Calm", "Careful",
+          "Challenging", "Cheap", "Cheating", "Cheering", "Clean", "Clever", "Colorful", "Common", "Complaining",
+          "Confused", "Corrupt", "Corrupted", "Courageous", "Crafty", "Crazy", "Creeping", "Cuddly", "Curly", "Dancing",
+          "Dapper", "Dark", "Dazzling", "Defiant", "Deserving", "Dirty", "Dizzy", "Drawing", "Dreaming", "Dry", "Eager",
+          "Early", "Earnest", "Educated", "Elder", "Elegant", "Elementary", "Empty", "Evil", "Exalted", "Excited",
+          "Expensive", "Expert", "Fabulous", "Fading", "Fair", "Fake", "False", "Famous", "Fancy", "Fantastic", "Fast",
+          "Flawless", "Flimsy", "Floating", "Flowing", "Fluffy", "Forsaken", "Fresh", "Frozen", "Gentle", "Glass",
+          "Glittering", "Glorious", "Glowing", "Golden", "Gorgeous", "Graceful", "Gracious", "Greedy", "Green", "Grim",
+          "Groaning", "Growing", "Grumpy", "Guarding", "Hairy", "Happy", "Hasty", "Haunting", "Heavy", "Hidden",
+          "Hiding", "Honest", "Honored", "Huge", "Humble", "Humming", "Hungry", "Imaginary", "Infamous", "Intelligent",
+          "Invincible", "Invisible", "Iron", "Ironclad", "Jaded", "Jealous", "Joking", "Jolly", "Juicy", "Jumbo",
+          "Jumping", "Kicking", "Kind", "Kissing", "Kneeling", "Large", "Last", "Laughing", "Lazy", "Light",
+          "Listening", "Little", "Lonely", "Long", "Loving", "Loyal", "Lucky", "Mad", "Majestic", "Marching", "Mellow",
+          "Melting", "Merry", "Misty", "Muddy", "Mushy", "Naughty", "Needy", "New", "Nodding", "Nutty", "Old", "Orange",
+          "Ordinary", "Perfect", "Performing", "Phony", "Pink", "Plain", "Pleasant", "Popular", "Praying", "Preaching",
+          "Precious", "Pretty", "Purple", "Puzzled", "Quick", "Quiet", "Racing", "Rainy", "Rapid", "Rare", "Reading",
+          "Red", "Rhyming", "Rolling", "Royal", "Running", "Sad", "Sandy", "Scary", "Screaming", "Searching", "Second",
+          "Secret", "Seeking", "Serene", "Shady", "Shaking", "Shaving", "Shrugging", "Silly", "Silver", "Sleek",
+          "Sleeping", "Small", "Smart", "Smelly", "Smoking", "Sneaky", "Sparkling", "Steel", "Storm", "Stormy",
+          "Striped", "Sunny", "Sweet", "Swimming", "Talking", "Tall", "Tasty", "Thirsty", "Thunder", "Tiny", "Tired",
+          "Trusty", "Ugly", "Unique", "Unlucky", "Velvet", "Vicious", "Violet", "Walking", "Wandering", "Watching",
+          "Waving", "Weeping", "Wet", "Whimsical", "Whispering", "Whistling", "White", "Wicked", "Wild", "Winking",
+          "Wise", "Wishing", "Worthy", "Wrestling", "Yawning", "Yelling", "Yellow", "Young"]
+    n2 = ["Adventure", "Android", "Antenna", "Anvil", "Apple", "Armor", "Arsenal", "Asteroid", "Bear", "Bed", "Bee",
+          "Berry", "Bird", "Bite", "Blade", "Blossom", "Boar", "Board", "Boat", "Bomb", "Book", "Boulder", "Bowl",
+          "Brush", "Bull", "Cake", "Canvas", "Cape", "Captain", "Car", "Caravan", "Carpet", "Carriage", "Carrot",
+          "Cart", "Castle", "Cat", "Chariot", "Cherry", "Chestnut", "Chimney", "Cloak", "Clock", "Comet", "Compass",
+          "Cow", "Crate", "Crow", "Cup", "Curtain", "Cyborg", "Day", "Disguise", "Dish", "Dog", "Door", "Drape",
+          "Dress", "Duck", "Dwarf", "Eagle", "Eel", "Elf", "Elixir", "Expanse", "Expedition", "Face", "Feather", "Fire",
+          "Fish", "Flower", "Forest", "Fork", "Frame", "Frog", "Furnace", "Ghost", "Giant", "Gnome", "Goose", "Grape",
+          "Growth", "Guard", "Gull", "Hammer", "Hazelnut", "Hog", "Horse", "Hunt", "Jester", "Joker", "Journey", "Jug",
+          "Kettle", "Kite", "Knife", "Lemon", "Mammoth", "Mantle", "Mark", "Mask", "Melon", "Mill", "Mirror", "Model",
+          "Monkey", "Moon", "Mountain", "Mouse", "Mug", "Note", "Nut", "Oven", "Owl", "Pagoda", "Painting", "Pantheon",
+          "Peach", "Peacock", "Peanut", "Pear", "Pen", "Pencil", "Pepper", "Phantom", "Phone", "Pig", "Pixy", "Plane",
+          "Plate", "Plum", "Pond", "Pony", "Pot", "Potato", "Pygmy", "Quarry", "Quest", "Quill", "Radio", "Raven",
+          "Record", "Remote", "River", "Road", "Robot", "Rocket", "Rug", "Sail", "Screen", "Search", "Shark", "Shawl",
+          "Shield", "Ship", "Shoe", "Shrimp", "Shrine", "Sign", "Snowman", "Spaceship", "Spoon", "Star", "Stone",
+          "Stove", "Sword", "TV", "Table", "Tankard", "Temple", "Ticker", "Timer", "Tome", "Tooth", "Tower", "Train",
+          "Traveller", "Tree", "Tribute", "Tusk", "Voyage", "Wall", "Walnut", "Watch", "Weapon", "Window", "Wolf",
+          "World", "Writer"]
+
+    n3 = ["Store", "Tradepost", "Grocer", "Hardware Store", "Hobby Store", "Kitchens", "Liquor Store", "Market", "Pawn",
+          "Pet Store", "Pharmacy", "Pub", "Repairs", ]
+
+    def __str__(self):
+        return self.n1[randint(len(self.n1))] + " " + self.n2[randint(len(self.n2))] + " " + self.n3[randint(len(self.n3))]
