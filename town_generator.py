@@ -25,7 +25,7 @@ notable_head = '<table class="wrapper-box"><tr><td><span class="bold text-md">'
 inventory_head_rarity = """</div><span class="text-lg bold">Inventory <span class="text-sm emp"> - Inflation:</span></span><table style="width:100%;" class="inventory-table"><tr><th style="text-align:left;">Item</th><th style="text-align:left;">Cost</th><th style="text-align:left;">Rarity</th></tr>"""
 inventory_head_type = """</div><span class="text-lg bold">Inventory <span class="text-sm emp"> - Inflation:</span></span><table style="width:100%;" class="inventory-table"><tr><th style="text-align:left;">Item</th><th style="text-align:left;">Cost</th><th style="text-align:left;">Type</th></tr>"""
 characters = []
-
+Notable = False
 
 class Character(object):
     """Characters are the centerpiece of stories"""
@@ -135,7 +135,10 @@ def write_html():
 
 
 def write_people(person, position):
-    global townHTML
+    global townHTML, Notable
+    if not Notable:
+        townHTML += '<div style="page-break-after:always;"></div><h2 class="text-lg bold center">Notable People</h2>'
+        Notable = True
     townHTML += notable_head + position + ': </span><span class="text-md">' + str(person)
     townHTML += '</div></td></tr></table><br />'
 

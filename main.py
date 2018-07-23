@@ -41,12 +41,7 @@ if __name__ == '__main__':
     with open('generate.txt', 'r') as inf:
         """ Ordering
         Weapons|Armor|Potion|Enchant|Enchanter|Books|Tavern|Jewel|Food|General
-        Each Line contains 5 variables
-        [# of Stores, Rarity Low, Rarity High, Quan High, Quan Low]
-        
-        Different Ones: Books, Tavern
-        Books: [# of Stores, Quan High, Quan Low]
-        Tavern: [# of Stores, # of Rooms, Quantity of Items]
+        See above for explanation and creation of the settings
         """
         content = inf.readlines()
         val = content[0].split()
@@ -79,6 +74,13 @@ if __name__ == '__main__':
         val = content[9].split()
         General = [int(thing) for thing in val]
 
+        Positions = []
+        for thing in range(10, len(content)):
+            Positions.append(content[thing].strip())
+
     town_generator.generate(Weapons, Armor, Potion, Enchant, Enchanter, Books, Tavern, Jewel, Food, General)
+    for p in Positions:
+        town_generator.write_people(town_generator.create_person(town_generator.create_variance()), p)
+    town_generator.write_html()
 
 
