@@ -1252,9 +1252,12 @@ def determine_rarity(q):
     l[0] += 1
     l = l[::-1]
     d = {}
+    pos = 0
     for x in range(q[0], q[1]+1):
-        d[x] = l[x]
+        d[x] = l[pos]
+        pos += 1
     return choice(list(d.keys()), p=list(normalize_dict(d).values()))
+
 
 class Store(object):
     """Everyone needs things!
@@ -1366,7 +1369,7 @@ class Weapon(object):
         'Light Axe': ['boarding axe', 'butchering axe', 'collapsible kumade', 'gandasa', 'handaxe', 'hooked axe', 'knuckle axe', 'kumade', 'light pick', 'mattock', 'throwing axe',],
         'Heavy Blade': ['Ankus', 'dueling sword', 'bastard sword', 'chakram', 'double chicken saber', 'double walking stick katana', 'elven curve blade', 'estoc', 'falcata', 'falchion', 'flambard', 'greatsword', 'great terbutje', 'katana', 'khopesh', 'klar', 'longsword', 'nine-ring broadsword', 'nodachi', 'scimitar', 'scythe', 'seven-branched sword', 'shotel', 'temple sword', 'terbutje', 'two-bladed sword',],
         'Light Blade': ['bayonet', 'butterfly knife', 'butterfly sword', 'chakram', 'dagger', 'deer horn knife', 'Drow razor', 'dueling dagger', 'gladius', 'hunga munga', 'kama', 'katar', 'kerambit', 'kukri', 'machete', 'madu', 'manople', 'pata', 'quadrens', 'rapier', 'sanpkhang', 'sawtooth sabre', 'scizore', 'shortsword', 'sica', 'sickle', 'spiral rapier', 'starknife', 'swordbreaker dagger', 'sword cane', 'wakizashi', 'war razor',],
-        'Close': ['bayonet', 'brass knuckles', 'cestus', 'dan bong', 'emei piercer', 'fighting fan', 'gauntlet', 'iron brush', 'katar', 'klar', 'madu', 'mere club', 'punching dagger', 'rope gauntlet', 'sap', 'scizore', 'spiked gauntlet', 'tekko-kagi', 'tonfa', 'tri-bladed katar', 'wooden stake', 'waveblade', 'wushu dart',],
+        'Close': ['bayonet', 'brass knuckles', 'cestus', 'dan bong', 'emei piercer', 'fighting fan', 'gauntlet', 'iron brush', 'katar', 'klar', 'madu', 'mere club', 'punching dagger', 'rope gauntlet', 'sap', 'scizore', 'spiked gauntlet', 'tekko-kagi', 'tonfa', 'tri-bladed katar', 'stake', 'waveblade', 'wushu dart',],
         'Double': ['bo staff', 'Boarding gaff', 'chain-hammer', 'chain spear', 'dire flail', 'double walking stick katana', 'double-chained kama', 'dwarven urgrosh', 'gnome battle ladder', 'gnome hooked hammer', 'kusarigama', 'monk’s spade', 'orc double axe', 'quarterstaff', 'taiaha', 'two-bladed sword', 'weighted spear',],
         'Flail': ['battle poi', 'bladed scarf', 'Cat-o’-nine-tails', 'chain spear', 'dire flail', 'double chained kama', 'dwarven dorn-dergar', 'flail', 'flying talon', 'gnome pincher', 'halfling rope-shot', 'heavy flail', 'kusarigama', 'kyoketsu shoge', 'meteor hammer', 'morningstar', 'nine-section whip', 'nunchaku', 'sansetsukon', 'scorpion whip', 'spiked chain', 'urumi', 'whip',],
         'Hammer': ['aklys', 'battle aspergillum', 'Chain-hammer', 'club', 'gnome piston maul', 'greatclub', 'heavy mace', 'lantern staff', 'light hammer', 'light mace', 'mere club', 'planson', 'taiaha', 'tetsubo', 'wahaika', 'warhammer',],
@@ -1389,8 +1392,7 @@ class Weapon(object):
         if randint(1, 101) + self.Rarity * self.Rarity >= 95:
             self.add_enchantment(Enchant())
         if randint(1, 101) + self.Rarity * self.Rarity >= 95:
-            # Add Masterwork
-            pass
+            self.add_masterwork(determine_rarity([1, 9]))
 
     def __choose_type(self, requirement=None):
         if requirement == None:
@@ -1514,7 +1516,8 @@ class Weapon(object):
         if self.Masterwork == 0:
             self.Masterwork = mlevel
             self.Cost += (1 + mlevel) * (1 + mlevel) * 1000
-            self.Name = "Masterwork " + self.Name + " +" + str(mlevel)
+            self.Name = "+" + str(mlevel) + ' ' + self.Name
+            self.Dice += "+" + str(mlevel)
         else:
             print("This Item is already Masterwork")
 
@@ -1523,6 +1526,7 @@ class Weapon(object):
         r = ['Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary']
         l = ["Level 0", "Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6", "Level 7", "Level 8", "Level 9", ]
         dam = ''
+        master = "Masterwork " if self.Masterwork > 0 else ""
         for c in self.Damage:
             dam += '\'' + c + '\','
         if self.Enchantment is None:
@@ -1530,15 +1534,15 @@ class Weapon(object):
             ' (' + self.Class + """) </span><br /><span class="text-sm emp">""" + \
             'Damage: ' + self.Dice + ' (' + self.Crit + ') [' + dam + '] Weight: ' + \
             str(self.Weight) + """ lbs</span></td><td>""" + determine_cost(self.Cost) + \
-            """</td><td>""" + r[self.Rarity] + """</td></tr>"""
+            """</td><td>""" + master + r[self.Rarity] + """</td></tr>"""
         else:
             s = """<tr><td style="width:50%;"><span class="text-md" onclick="show_hide('""" + str(MasterID) + \
                 """')" style="color:blue;">""" + self.Name + ' (' + self.Class + \
                 """) </span><br /><span class="text-sm emp" id=\"""" + str(MasterID) + \
                 """\" style="display: none;">""" + 'Damage: ' + self.Dice + ' (' + self.Crit + ') [' + dam + \
                 '] Weight: ' + str(self.Weight) + """ lbs""" + str(self.Enchantment) + """"</span></td><td>""" + \
-                determine_cost(self.Cost) + """</td><td>""" + r[self.Rarity] + ', '  +l[self.Enchantment.Level] + \
-                """</td></tr>"""
+                determine_cost(self.Cost) + """</td><td>""" + master +  r[self.Rarity] + ', ' + \
+                l[self.Enchantment.Level] + """</td></tr>"""
             MasterID += 1
         return s
 
@@ -1592,8 +1596,7 @@ class Armor(object):
         if randint(1, 101) + self.Rarity * self.Rarity >= 95:
             self.add_enchantment(Enchant())
         if randint(1, 101) + self.Rarity * self.Rarity >= 95:
-            # Add Masterwork
-            pass
+            self.add_masterwork(determine_rarity([1, 9]))
 
     def __choose_metal(self):
         if self.Rarity > 4:
@@ -1660,18 +1663,19 @@ class Armor(object):
         global MasterID
         r = ['Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary']
         l = ["Level 0", "Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6", "Level 7", "Level 8", "Level 9", ]
+        master = "Masterwork " if self.Masterwork > 0 else ""
         if self.Enchantment is None:
             s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + ' (' + self.Class + \
                 """) </span><br /><span class="text-sm emp">""" + 'AC: +' + str(self.AC) + ' Weight: ' + \
                 str(self.Weight) + """ lbs</span></td><td>""" + determine_cost(self.Cost) + """</td><td>""" + \
-                r[self.Rarity] + """</td></tr>"""
+                master + r[self.Rarity] + """</td></tr>"""
         else:
             s = """<tr><td style="width:50%;"><span class="text-md" onclick="show_hide('""" + str(MasterID) + \
                 """')" style="color:blue;">""" + self.Name + ' (' + self.Class + \
                 """) </span><br /><span class="text-sm emp" id=\"""" + str(MasterID) + \
                 """\" style="display: none;">""" + 'AC: +' + str(self.AC) + ' Weight: ' + str(self.Weight) + " lbs " + \
                 str(self.Enchantment) + """</span></td><td>""" + determine_cost(self.Cost) + """</td><td>""" + \
-                r[self.Rarity] + ', ' + l[self.Enchantment.Level] + """</td></tr>"""
+                master + r[self.Rarity] + ', ' + l[self.Enchantment.Level] + """</td></tr>"""
             MasterID += 1
         return s
 
@@ -1688,7 +1692,8 @@ class Armor(object):
         if self.Masterwork == 0:
             self.Masterwork = mlevel
             self.Cost += 2 * mlevel * mlevel * 1000
-            self.Name = "Masterwork " + self.Name + " +" + str(mlevel)
+            self.Name = "+" + str(mlevel) + ' ' + self.Name
+            self.AC += mlevel
         else:
             print("This Item is already Masterwork")
 
