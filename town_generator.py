@@ -184,7 +184,7 @@ def generate(w, a, p, e, en, b, t, j, f, g):
         write_store(store)
         
     for _ in range(g[0]):
-        store = create_general_store(create_person(create_variance()), [g[1], g[2]], randint(g[3], g[4]), inflate=g[0])
+        store = create_general_store(create_person(create_variance()), [g[1], g[2]], randint(g[3], g[4]), g[5], inflate=g[0])
         write_store(store)
 
     write_html()

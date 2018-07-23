@@ -2596,11 +2596,12 @@ def create_restaurant(owner, rarity, quan, inflate=1):
     return Inn(owner, name, (sum(random_sample(inflate)) / inflate), rarity, 0, quan)
 
 
-def create_general_store(owner, rarity, quan, inflate=1):
+def create_general_store(owner, rarity, quan, trink, inflate=1):
     name = str(GeneralStore()) + " (General)"
     a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
     a.fill_store(General, quan)
-    a.Stock.append(General(0, True))
+    for _ in range(trink):
+        a.Stock.append(General(0, True))
     return a
 
 

@@ -32,8 +32,8 @@ def make_sample():
         # [# of Stores, Rarity, Quantity Low, Quantity High]
         outf.write("1 0 15 30\n")
         # Write General Shop
-        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High]
-        outf.write("1 0 1 20 30")
+        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Trinkets]
+        outf.write("1 0 1 20 30 1")
 
 
 if __name__ == '__main__':
