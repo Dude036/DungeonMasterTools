@@ -146,7 +146,9 @@ def write_people(person, position):
 def generate(w, a, p, e, en, b, t, j, f, g):
     """ [# of Stores, Rarity Low, Rarity High, Quan High, Quan Low] """
     global townHTML
-    townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
+    if sum([w[0], a[0], p[0], e[0], en[0], b[0], t[0], j[0], f[0], g[0]]) > 0:
+        townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
+        return
     for _ in range(w[0]):
         store = create_weapon_shop(create_person(create_variance()), [w[1], w[2]], randint(w[3], w[4]), inflate=w[0])
         write_store(store)
@@ -190,7 +192,6 @@ def generate(w, a, p, e, en, b, t, j, f, g):
         store = create_general_store(create_person(create_variance()), [g[1], g[2]], randint(g[3], g[4]), g[5], inflate=g[0])
         write_store(store)
 
-    write_html()
 
 
 if __name__ == '__main__':
