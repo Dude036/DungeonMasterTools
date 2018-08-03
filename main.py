@@ -1,6 +1,16 @@
 #!/usr/bin/python3
 import town_generator
 
+"""
+@TODO:
+1: Brothel?
+2: Figure out why Hammers don't really exist
+3: Pricing for Enchantments needs to be adjusted for inflation and cost of parts
+4: Masterwork Items seem to be REALLY expensive
+5: UNIT TESTS!
+6: Better input design - GUI?
+7: Pip installation requirements
+"""
 
 def make_sample():
     with open('generate.txt', 'w') as outf:

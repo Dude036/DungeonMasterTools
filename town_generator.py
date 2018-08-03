@@ -148,7 +148,7 @@ def generate(w, a, p, e, en, b, t, j, f, g):
     global townHTML
     if sum([w[0], a[0], p[0], e[0], en[0], b[0], t[0], j[0], f[0], g[0]]) > 0:
         townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
-        return
+
     for _ in range(w[0]):
         store = create_weapon_shop(create_person(create_variance()), [w[1], w[2]], randint(w[3], w[4]), inflate=w[0])
         write_store(store)
