@@ -146,6 +146,8 @@ def write_people(person, position):
 def generate(w, a, p, e, en, b, t, j, f, g):
     """ [# of Stores, Rarity Low, Rarity High, Quan High, Quan Low] """
     global townHTML
+    from names import TownNamer
+    townHTML += "<h1>" + str(TownNamer()) + "</h1><p>Description</p>"
     if sum([w[0], a[0], p[0], e[0], en[0], b[0], t[0], j[0], f[0], g[0]]) > 0:
         townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
 

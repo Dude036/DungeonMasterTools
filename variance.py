@@ -115,7 +115,7 @@ def create_variance():
                 r = choice(list(EXOTIC.keys()), 1, list(EXOTIC.values()))
             pop[r[0]] = (settings['Variance']/800) * 1/settings['Exotic']
 
-    return pop
+    return normalize_dict(pop)
     
  
 def create(l):
