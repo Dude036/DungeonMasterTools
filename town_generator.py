@@ -128,9 +128,11 @@ def write_store(store, rarity=True):
     townHTML += info
 
 
-def write_html():
+def write_html(name=''):
     global townHTML
-    with open('test.html', 'w') as outf:
+    if name == '':
+        name = 'test'
+    with open(name + '.html', 'w') as outf:
         outf.write(bs(townHTML, 'html5lib').prettify())
 
 
@@ -147,7 +149,8 @@ def generate(w, a, p, e, en, b, t, j, f, g):
     """ [# of Stores, Rarity Low, Rarity High, Quan High, Quan Low] """
     global townHTML
     from names import TownNamer
-    townHTML += "<h1>" + str(TownNamer()) + "</h1><p>Description</p>"
+    town_name = str(TownNamer())
+    townHTML += "<h1>" + town_name + "</h1><p>Description</p>"
     if sum([w[0], a[0], p[0], e[0], en[0], b[0], t[0], j[0], f[0], g[0]]) > 0:
         townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
 
@@ -194,6 +197,7 @@ def generate(w, a, p, e, en, b, t, j, f, g):
         store = create_general_store(create_person(create_variance()), [g[1], g[2]], randint(g[3], g[4]), g[5], inflate=g[0])
         write_store(store)
 
+    return town_name
 
 
 if __name__ == '__main__':
