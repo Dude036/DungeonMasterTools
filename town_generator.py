@@ -59,23 +59,6 @@ class Character(object):
         return info
 
 
-def load_character(filename):
-    paragraph = []
-    n = r = g = ap = ''
-    ag = 0
-    with open(filename, 'r') as f:
-        content = f.readlines()
-    n = content[0].strip()
-    r = content[1].strip()
-    g = content[2].strip()
-    ag = int(content[3].strip())
-    tr = content[4].strip()
-    ap = [content[5].strip(), content[6].strip(), ]
-    for line in range(7, len(content)):
-        paragraph.append(content[line].strip())
-    return Character(n, r, g, ag, ap, tr, paragraph)
-
-
 def create_person(pop):
     race = choice(list(pop.keys()), 1, p=list(pop.values()))
     gender = choice(['Male', 'Female'])
@@ -243,7 +226,6 @@ if __name__ == '__main__':
 
 
     write_html()
-    load_character('character.txt')
     create_person(create_variance())
 
 

@@ -91,7 +91,7 @@ if __name__ == '__main__':
     town_name = town_generator.generate(Weapons, Armor, Potion, Enchant, Enchanter, Books, Tavern, Jewel, Food, General)
     for p in Positions:
         town_generator.write_people(town_generator.create_person(town_generator.create_variance()), p)
-    print("Writing the town called", town_name)
+    print("Writing the town ", town_name)
     town_generator.write_html(town_name)
 
 
