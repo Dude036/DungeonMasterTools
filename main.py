@@ -12,6 +12,7 @@ import town_generator
 7: Pip installation requirements
 """
 
+
 def make_sample():
     with open('generate.txt', 'w') as outf:
         # Write Weapon Shop
@@ -93,5 +94,3 @@ if __name__ == '__main__':
         town_generator.write_people(town_generator.create_person(town_generator.create_variance()), p)
     print("Writing the town ", town_name)
     town_generator.write_html(town_name)
-
-
