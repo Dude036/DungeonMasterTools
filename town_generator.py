@@ -138,46 +138,46 @@ def generate(w, a, p, e, en, b, t, j, f, g):
         townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
 
     for _ in range(w[0]):
-        store = create_weapon_shop(create_person(create_variance()), [w[1], w[2]], randint(w[3], w[4]), inflate=w[0])
+        store = create_weapon_shop(create_person(create_variance()), [w[1], w[2]], randint(w[3], w[4]), inflate=w[5])
         write_store(store)
 
     for _ in range(a[0]):
-        store = create_armor_shop(create_person(create_variance()), [a[1], a[2]], randint(a[3], a[4]), inflate=a[0])
+        store = create_armor_shop(create_person(create_variance()), [a[1], a[2]], randint(a[3], a[4]), inflate=a[5])
         write_store(store)
         
     for _ in range(p[0]):
-        store = create_potion_shop(create_person(create_variance()), [p[1], p[2]], randint(p[3], p[4]), inflate=p[0])
+        store = create_potion_shop(create_person(create_variance()), [p[1], p[2]], randint(p[3], p[4]), inflate=p[5])
         write_store(store)
         
     for _ in range(e[0]):
-        store = create_enchantment_shop(create_person(create_variance()), [e[1], e[2]], randint(e[3], e[4]), inflate=e[0])
+        store = create_enchantment_shop(create_person(create_variance()), [e[1], e[2]], randint(e[3], e[4]), inflate=e[5])
         write_store(store)
         
     for _ in range(en[0]):
-        store = create_enchanter_shop(create_person(create_variance()), [en[1], en[2]], randint(en[3], en[4]), inflate=en[0])
+        store = create_enchanter_shop(create_person(create_variance()), [en[1], en[2]], randint(en[3], en[4]), inflate=en[5])
         write_store(store)
         
     for _ in range(b[0]):
         store = create_book_shop(create_person(create_variance()),
                                  choice(Books.Genres, randint(len(Books.Genres)), replace=False),
-                                 randint(b[1], b[2]), inflate=b[0])
+                                 randint(b[1], b[2]), inflate=b[3])
         write_store(store, False)
         
     for _ in range(t[0]):
         # [Quality, Rooms, Quantity Low, Quantity High]
-        store = create_tavern(create_person(create_variance()), t[1], t[2], randint(t[3], t[4]), inflate=t[0])
+        store = create_tavern(create_person(create_variance()), t[1], t[2], randint(t[3], t[4]), inflate=t[5])
         write_store(store, False)
         
     for _ in range(j[0]):
-        store = create_jewel_shop(create_person(create_variance()), [j[1], j[2]], randint(j[3], j[4]), inflate=j[0])
+        store = create_jewel_shop(create_person(create_variance()), [j[1], j[2]], randint(j[3], j[4]), inflate=j[5])
         write_store(store)
         
     for _ in range(f[0]):
-        store = create_restaurant(create_person(create_variance()), f[1], randint(f[2], f[3]), inflate=f[0])
+        store = create_restaurant(create_person(create_variance()), f[1], randint(f[2], f[3]), inflate=f[4])
         write_store(store)
         
     for _ in range(g[0]):
-        store = create_general_store(create_person(create_variance()), [g[1], g[2]], randint(g[3], g[4]), g[5], inflate=g[0])
+        store = create_general_store(create_person(create_variance()), [g[1], g[2]], randint(g[3], g[4]), g[5], inflate=g[6])
         write_store(store)
 
     return town_name

@@ -16,35 +16,35 @@ import town_generator
 def make_sample():
     with open('generate.txt', 'w') as outf:
         # Write Weapon Shop
-        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High]
-        outf.write("2 0 4 15 20\n")
+        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
+        outf.write("2 0 4 15 20 1.0\r\n")
         # Write Armor Shop
-        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High]
-        outf.write("2 0 2 15 20\n")
+        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
+        outf.write("2 0 2 15 20 1.0\r\n")
         # Write Potion Shop
-        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High]
-        outf.write("1 0 9 10 15\n")
+        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
+        outf.write("1 0 9 10 15 1.0\r\n")
         # Write Enchant Shop
-        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High]
-        outf.write("1 0 9 10 15\n")
+        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
+        outf.write("1 0 9 10 15 1.0\r\n")
         # Write Enchanter Shop
-        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High]
-        outf.write("1 0 9 15 25\n")
+        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
+        outf.write("1 0 9 15 25 1.0\r\n")
         # Write Book Shop
-        # [# of Stores, Quantity High, Quantity Low]
-        outf.write("1 15 25\n")
+        # [# of Stores, Quantity High, Quantity Low, Inflation]
+        outf.write("1 15 25 1.0\r\n")
         # Write Tavern Shop
-        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High]
-        outf.write("1 0 3 10 15\n")
+        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
+        outf.write("1 0 3 10 15 1.0\r\n")
         # Write Jewel Shop
-        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High]
-        outf.write("1 0 5 15 30\n")
+        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
+        outf.write("1 0 5 15 30 1.0\r\n")
         # Write Food Shop
-        # [# of Stores, Rarity, Quantity Low, Quantity High]
-        outf.write("1 0 15 30\n")
+        # [# of Stores, Rarity, Quantity Low, Quantity High, Inflation]
+        outf.write("1 0 15 30 1.0\r\n")
         # Write General Shop
-        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Trinkets]
-        outf.write("1 0 1 20 30 1")
+        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Trinkets, Inflation]
+        outf.write("1 0 1 20 30 1 1.0")
 
 
 if __name__ == '__main__':

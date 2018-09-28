@@ -2681,14 +2681,20 @@ def create_book_shop(owner, genres, quan, inflate=1):
         if b not in Books.Genres:
             print(b, "Not in genre List. See: ", Books.Genres)
             return None
-    a = Store(owner, str(Antiques()) + " (Library)", (sum(random_sample(inflate)) / inflate) + .5, [0, 9])
+    if isinstance(inflate, float):
+        a = Store(owner, str(Antiques()) + " (Library)", inflate, [0, 9])
+    else:
+        a = Store(owner, str(Antiques()) + " (Library)", (sum(random_sample(inflate)) / inflate) + .5, [0, 9])
     a.fill_store(Book, quan)
     return a
 
 
 def create_enchantment_shop(owner, rarity, quan, inflate=1):
-    name = str(Enchanter())
-    a = Store(owner, name + " (Enchantments)", (sum(random_sample(inflate)) / inflate) + .5, rarity)
+    name = str(Enchanter()) + " (Enchantments)"
+    if isinstance(inflate, float):
+        a = Store(owner, name, inflate, rarity)
+    else:
+        a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
     if quan <= 2:
         quan = 3
     remain = randint(quan)
@@ -2755,7 +2761,7 @@ def create_tavern(owner, qual, rooms, quan, inflate=1):
 def create_jewel_shop(owner, rarity, quan, inflate=1):
     name = str(Jeweller()) + " (Jeweller)"
     if isinstance(inflate, float):
-        a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
+        a = Store(owner, name, inflate, rarity)
     else:
         a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
     a.fill_store(Jewel, quan)
@@ -2764,7 +2770,11 @@ def create_jewel_shop(owner, rarity, quan, inflate=1):
 
 def create_restaurant(owner, rarity, quan, inflate=1):
     name = str(Restaurant()) + " (Restaurant)"
-    return Inn(owner, name, (sum(random_sample(inflate)) / inflate), rarity, 0, quan)
+    if isinstance(inflate, float):
+        a = Inn(owner, name, inflate, rarity, 0, quan)
+    else:
+        a = Inn(owner, name, (sum(random_sample(inflate)) / inflate), rarity, 0, quan)
+    return a
 
 
 def create_general_store(owner, rarity, quan, trink, inflate=1):
