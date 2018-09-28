@@ -56,34 +56,34 @@ if __name__ == '__main__':
         """
         content = inf.readlines()
         val = content[0].split()
-        Weapons = [int(thing) for thing in val]
+        Weapons = [eval(thing) for thing in val]
 
         val = content[1].split()
-        Armor = [int(thing) for thing in val]
+        Armor = [eval(thing) for thing in val]
 
         val = content[2].split()
-        Potion = [int(thing) for thing in val]
+        Potion = [eval(thing) for thing in val]
 
         val = content[3].split()
-        Enchant = [int(thing) for thing in val]
+        Enchant = [eval(thing) for thing in val]
 
         val = content[4].split()
-        Enchanter = [int(thing) for thing in val]
+        Enchanter = [eval(thing) for thing in val]
 
         val = content[5].split()
-        Books = [int(thing) for thing in val]
+        Books = [eval(thing) for thing in val]
 
         val = content[6].split()
-        Tavern = [int(thing) for thing in val]
+        Tavern = [eval(thing) for thing in val]
 
         val = content[7].split()
-        Jewel = [int(thing) for thing in val]
+        Jewel = [eval(thing) for thing in val]
 
         val = content[8].split()
-        Food = [int(thing) for thing in val]
+        Food = [eval(thing) for thing in val]
 
         val = content[9].split()
-        General = [int(thing) for thing in val]
+        General = [eval(thing) for thing in val]
 
         Positions = []
         for thing in range(10, len(content)):

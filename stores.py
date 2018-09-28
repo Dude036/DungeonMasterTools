@@ -2698,8 +2698,11 @@ def create_enchantment_shop(owner, rarity, quan, inflate=1):
 
 
 def create_enchanter_shop(owner, rarity, quan, inflate=1):
-    name = str(Enchanter())
-    a = Store(owner, name + " (Enchanter)", (sum(random_sample(inflate)) / inflate) + .5, rarity)
+    name = str(Enchanter()) + " (Enchanter)"
+    if isinstance(inflate, float):
+        a = Store(owner, name, inflate, rarity)
+    else:
+        a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
     for _ in range(quan):
         a.Stock.append(Scroll(randint(rarity[0], rarity[1]), naming=False))
     return a
@@ -2707,7 +2710,10 @@ def create_enchanter_shop(owner, rarity, quan, inflate=1):
 
 def create_weapon_shop(owner, rarity, quan, inflate=1):
     name = str(Blacksmith()) + " (Weapon)"
-    a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
+    if isinstance(inflate, float):
+        a = Store(owner, name, inflate, rarity)
+    else:
+        a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
     if quan <= 2:
         quan = 3
     a.fill_store(Weapon, quan)
@@ -2715,8 +2721,11 @@ def create_weapon_shop(owner, rarity, quan, inflate=1):
 
 
 def create_armor_shop(owner, rarity, quan, inflate=1):
-    name = str(Blacksmith()) + " (Armor)"
-    a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
+    name = str(Blacksmith()) + " (Weapon)"
+    if isinstance(inflate, float):
+        a = Store(owner, name, inflate, rarity)
+    else:
+        a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
     if quan <= 2:
         quan = 3
     a.fill_store(Armor, quan)
@@ -2724,8 +2733,11 @@ def create_armor_shop(owner, rarity, quan, inflate=1):
 
 
 def create_potion_shop(owner, rarity, quan, inflate=1):
-    name = str(Potions())
-    a = Store(owner, name + " (Alchemist)", (sum(random_sample(inflate)) / inflate) + .5, rarity)
+    name = str(Potions()) + " (Alchemist)"
+    if isinstance(inflate, float):
+        a = Store(owner, name, inflate, rarity)
+    else:
+        a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
     a.fill_store(Potion, quan)
     return a
 
@@ -2733,12 +2745,19 @@ def create_potion_shop(owner, rarity, quan, inflate=1):
 def create_tavern(owner, qual, rooms, quan, inflate=1):
     # def __init__(self, keeper, name, service, qual, rooms, quan):
     name = str(Tavern()) + " (Inn)"
-    return Inn(owner, name, (sum(random_sample(inflate)) / inflate), qual, rooms, quan)
+    if isinstance(inflate, float):
+        a = Inn(owner, name, inflate, qual, rooms, quan)
+    else:
+        a = Inn(owner, name, (sum(random_sample(inflate)) / inflate), qual, rooms, quan)
+    return a
 
 
 def create_jewel_shop(owner, rarity, quan, inflate=1):
     name = str(Jeweller()) + " (Jeweller)"
-    a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
+    if isinstance(inflate, float):
+        a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
+    else:
+        a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
     a.fill_store(Jewel, quan)
     return a
 
@@ -2750,7 +2769,10 @@ def create_restaurant(owner, rarity, quan, inflate=1):
 
 def create_general_store(owner, rarity, quan, trink, inflate=1):
     name = str(GeneralStore()) + " (General)"
-    a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
+    if isinstance(inflate, float):
+        a = Store(owner, name, inflate, rarity)
+    else:
+        a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
     a.fill_store(General, quan)
     for _ in range(trink):
         a.Stock.append(General(0, True))
