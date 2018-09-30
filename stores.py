@@ -2676,6 +2676,68 @@ class Art(object):
         return s
 
 
+class Ring(object):
+    Spell = Name = ""
+    Level = Cost = 0
+    Enchantment = None
+
+    def __init__(self, level, spell=None):
+        if spell is None:
+            if level == 0:
+                self.Spell = choice(level_0)
+                self.Cost = 13
+            elif level == 1:
+                self.Spell = choice(level_1)
+                self.Cost = 25
+            elif level == 2:
+                self.Spell = choice(level_2)
+                self.Cost = 150
+            elif level == 3:
+                self.Spell = choice(level_3)
+                self.Cost = 375
+            elif level == 4:
+                self.Spell = choice(level_4)
+                self.Cost = 700
+            elif level == 5:
+                self.Spell = choice(level_5)
+                self.Cost = 1125
+            elif level == 6:
+                self.Spell = choice(level_6)
+                self.Cost = 1650
+            elif level == 7:
+                self.Spell = choice(level_7)
+                self.Cost = 2275
+            elif level == 8:
+                self.Spell = choice(level_8)
+                self.Cost = 3000
+            elif level == 9:
+                self.Spell = choice(level_9)
+                self.Cost = 4825
+
+            if self.Spell in odd_price:
+                self.Cost = round(self.Cost * odd_price[self.Spell])
+
+            self.Enchantment = Enchant(iSpell=self.Spell, rechargable=True)
+        else:
+            if find_spell_level(spell) == level:
+                self.Spell = spell
+                self.Enchantment = Enchant(iSpell=self.Spell)
+        self.Name = 'Ring of ' + self.Spell
+
+    def __str__(self):
+        # print(self.Enchantment.Level)
+        global MasterID
+        l = ["Level 0", "Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6", "Level 7", "Level 8",
+             "Level 9", ]
+
+        s = """<tr><td style="width:50%;"><span class="text-md" onclick="show_hide('""" + str(MasterID) + \
+            """')" style="color:blue;">""" + self.Name + """</span><br /><span class="text-sm emp" id=\"""" + \
+            str(MasterID) + """\" style="display: none;">""" + str(self.Enchantment) + """</span></td><td>""" + \
+            determine_cost(self.Cost) + """</td><td>""" + l[self.Enchantment.Level] + """</td></tr>"""
+        MasterID += 1
+        return s
+
+
 def create_book_shop(owner, genres, quan, inflate=1):
     for b in genres:
         if b not in Books.Genres:
