@@ -2744,24 +2744,24 @@ class Wondrous(object):
     def __init__(self, cl=-1):
         if cl == -1:
             pick = choice(list(MasterWondrous.keys()))
-            self.Name = pick.key()
-            self.Link = pick['Link']
-            self.Price = int(pick['Price'])
-            self.CL = int(pick['CL'])
-            self.Aura = pick['Aura']
-            self.Slot = pick['Slot']
-            self.Weight = pick['Weight']
+            self.Name = pick
+            self.Link = MasterWondrous[pick]['Link']
+            self.Price = int(MasterWondrous[pick]['Price'])
+            self.CL = int(MasterWondrous[pick]['CL'])
+            self.Aura = MasterWondrous[pick]['Aura']
+            self.Slot = MasterWondrous[pick]['Slot']
+            self.Weight = MasterWondrous[pick]['Weight']
         else:
             while True:
                 pick = choice(list(MasterWondrous.keys()))
                 if cl == int(pick['CL']):
-                    self.Name = pick.key()
-                    self.Link = pick['Link']
-                    self.Price = int(pick['Price'])
-                    self.CL = int(pick['CL'])
-                    self.Aura = pick['Aura']
-                    self.Slot = pick['Slot']
-                    self.Weight = pick['Weight']
+                    self.Name = MasterWondrous[pick].key()
+                    self.Link = MasterWondrous[pick]['Link']
+                    self.Price = int(MasterWondrous[pick]['Price'])
+                    self.CL = int(MasterWondrous[pick]['CL'])
+                    self.Aura = MasterWondrous[pick]['Aura']
+                    self.Slot = MasterWondrous[pick]['Slot']
+                    self.Weight = MasterWondrous[pick]['Weight']
                     break
 
     def __str__(self):
@@ -2945,3 +2945,5 @@ if __name__ == '__main__':
     #             test = MasterSpells[spell]
     #         except KeyError:
     #             print(spell)
+
+    Wondrous()
