@@ -1545,9 +1545,11 @@ class Weapon(object):
             MasterID += 1
         return s
 
-    def print_item(self):
-        print(['Name' + (' ' * (len(self.Name) - 10)), 'Weight', 'Cost', 'Rarity', 'Class', 'Dice', 'Crit', 'Damage'])
-        print([self.Name, self.Weight, self.Cost, self.Rarity, self.Class, self.Dice, self.Crit, self.Damage])
+    def to_string(self):
+        ench = ''
+        if self.Enchantment is not None:
+            ench = ' ' + self.Enchantment.to_string()
+        return self.Name + ench + ' (' + determine_cost(self.Cost) + ')'
 
 
 class Armor(object):
@@ -1696,9 +1698,11 @@ class Armor(object):
         else:
             print("This Item is already Masterwork")
 
-    def print_item(self):
-        print("""Weight | Cost | Rarity | AC | Name | Class | Metal""")
-        print(self.Weight, "|", self.Cost, "|", self.Rarity, "| +", self.AC, "|", self.Name, "|", self.Class, "|", self.Metal)
+    def to_string(self):
+        ench = ''
+        if self.Enchantment is not None:
+            ench = ' ' + self.Enchantment.to_string()
+        return self.Name + ench + ' (' + determine_cost(self.Cost) + ')'
 
 
 class Scroll(object):
@@ -1766,6 +1770,9 @@ class Scroll(object):
             self.Add + determine_cost(self.Cost) + """</td><td>""" + l[self.Enchantment.Level] + """</td></tr>"""
         MasterID += 1
         return s
+
+    def to_string(self):
+        return self.Name + ' (' + str(self.Cost) + ')'
 
 
 class Enchant(object):
@@ -1850,6 +1857,9 @@ class Enchant(object):
     def __str__(self):
         return self.Description
 
+    def to_string(self):
+        return self.Spell + ' (' + determine_cost(self.Cost) + ')'
+
 
 class Book(object):
     g = {
@@ -1878,6 +1888,9 @@ class Book(object):
             """</span></td><td>""" + determine_cost(self.Cost) + """</td><td>""" + \
             self.Genre + """</td></tr>"""
         return s
+
+    def to_string(self):
+        return self.Name + ' (Book) (' + determine_cost(self.Cost) + ')'
 
 
 class Potion(object):
@@ -1942,6 +1955,9 @@ class Potion(object):
         MasterID += 1
         return s
 
+    def to_string(self):
+        return self.Name + ' (' + determine_cost(self.Cost) + ')'
+
 
 class Wand(object):
     Name_Potential = ['Rod of ', 'Rod of ', 'Stave of ', 'Scepter of ', 'Staff of ', 'Staff of ', 'Wand of ', 'Wand of ', ]
@@ -2003,6 +2019,9 @@ class Wand(object):
             determine_cost(self.Cost) + """</td><td>""" + l[self.Enchantment.Level] + """</td></tr>"""
         MasterID += 1
         return s
+
+    def to_string(self):
+        return self.Name + ' (' + determine_cost(self.Cost) + ')'
 
 
 class Inn(object):
@@ -2469,6 +2488,9 @@ class Jewel(object):
             determine_cost(self.Cost) + '</td><td>' + l[self.Rarity] + '</td></tr>'
         return s
 
+    def to_string(self):
+        return self.Name + ' (' + determine_cost(self.Cost) + ')'
+
 
 class General(object):
     from trinkets import Trinkets, Gear
@@ -2521,6 +2543,9 @@ class General(object):
         s = '<tr><td style="width:50%;"><span class="text-md">' + self.Name + d + '</span></td><td>' + \
             determine_cost(self.Cost) + '</td><td>' + self.Type + '</td></tr>'
         return s
+
+    def to_string(self):
+        return self.Name + ' (' + determine_cost(self.Cost) + ')'
 
 
 class Art(object):
@@ -2674,6 +2699,9 @@ class Art(object):
             determine_cost(self.Cost) + '</td><td>Grade ' + str(self.Rarity+1) + ' Art</td></tr>'
         return s
 
+    def to_string(self):
+        return self.Description + ' (' + determine_cost(self.Cost) + ')'
+
 
 class Ring(object):
     Spell = Name = ""
@@ -2736,39 +2764,51 @@ class Ring(object):
         MasterID += 1
         return s
 
+    def to_string(self):
+        return self.Name + ' (' + determine_cost(self.Cost) + ')'
+
 
 class Wondrous(object):
     Name = Aura = Slot = Link = ''
-    Price = CL = Weight = 0
+    Cost = CL = Weight = 0
 
     def __init__(self, cl=-1):
         if cl == -1:
             pick = choice(list(MasterWondrous.keys()))
             self.Name = pick
             self.Link = MasterWondrous[pick]['Link']
-            self.Price = int(MasterWondrous[pick]['Price'])
+            self.Cost = int(MasterWondrous[pick]['Price'])
             self.CL = int(MasterWondrous[pick]['CL'])
             self.Aura = MasterWondrous[pick]['Aura']
             self.Slot = MasterWondrous[pick]['Slot']
             self.Weight = MasterWondrous[pick]['Weight']
         else:
+            i = 0
             while True:
                 pick = choice(list(MasterWondrous.keys()))
                 if cl == int(MasterWondrous[pick]['CL']):
                     self.Name = pick
                     self.Link = MasterWondrous[pick]['Link']
-                    self.Price = int(MasterWondrous[pick]['Price'])
+                    self.Cost = int(MasterWondrous[pick]['Price'])
                     self.CL = int(MasterWondrous[pick]['CL'])
                     self.Aura = MasterWondrous[pick]['Aura']
                     self.Slot = MasterWondrous[pick]['Slot']
                     self.Weight = MasterWondrous[pick]['Weight']
                     break
+                elif i == 100:
+                    i = 0
+                    cl = int(MasterWondrous[pick]['CL']) + 1
+                else:
+                    i += 1
 
     def __str__(self):
         return '<tr><td style="width:50%;"><span class="text-md"><a href"' + self.Link + '">' + self.Name + \
                '</a></span><br /><span class="text-sm emp">Aura ' + self.Aura + '; CL' + str(self.CL) + '; Weight' + \
-               self.Weight + '; Slot ' + self.Slot + '</span></td><td>' + determine_cost(self.Price) + '</td><td>' + \
+               self.Weight + '; Slot ' + self.Slot + '</span></td><td>' + determine_cost(self.Cost) + '</td><td>' + \
                'Wondrous Item</td></tr>'
+
+    def to_string(self):
+        return self.Name + ' (' + determine_cost(self.Cost) + ')'
 
 
 def create_book_shop(owner, genres, quan, inflate=1):
@@ -2890,60 +2930,4 @@ def diff(first, second):
 
 
 if __name__ == '__main__':
-    # for _ in range(15):
-    #    Weapon(0).print_item()
-
-    # for _ in range(15):
-    #    Weapon(1).print_item()
-
-    # for _ in range(15):
-    #    Weapon(2).print_item()
-
-    # for _ in range(15):
-    #    Weapon(3).print_item()
-
-    # for _ in range(15):
-    #    Weapon(4).print_item()
-
-    # print(Weapon(0))
-    # print(Weapon(1))
-    # print(Weapon(2))
-    # print(Weapon(3))
-    # print(Weapon(4))
-
-    # st = create_weapon_shop(None, 1)
-    # print(st.Store_name)
-    # for item in st.Stock:
-    #    item.print_item()
-
-    # for _ in range(15):
-    #    s = Scroll(0)
-    #    print(s.Name, s.Price, s.Spell)
-
-    # print(Armor(0))
-    # for _ in range(50):
-    #     print(Armor(0, 'Light'))
-    # Armor(1).print_item()
-    # Armor(2).print_item()
-    # Armor(3).print_item()
-    # Armor(4).print_item()
-
-    # import pprint
-    # pprint.PrettyPrinter(indent=4).pprint(list(MasterSpells.values()))
-
-    # import re
-    # for spell in list(MasterSpells.keys()):
-    #     lowest = re.findall(r'\d+', MasterSpells[spell][0]['level'])
-    #     print(spell, lowest)
-    #     print(min(lowest))
-
     print(determine_cost(54591.23))
-
-    # for level in [level_0, level_1, level_2, level_3, level_4, level_5, level_6, level_7, level_8, level_9]:
-    #     for spell in level:
-    #         try:
-    #             test = MasterSpells[spell]
-    #         except KeyError:
-    #             print(spell)
-
-    Wondrous()

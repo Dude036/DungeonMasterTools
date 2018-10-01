@@ -2,6 +2,7 @@
 
 from bs4 import BeautifulSoup as bs
 from numpy.random import choice
+from treasure import treasure_calculator
 import pickle
 import pprint
 import re
@@ -160,7 +161,8 @@ def print_monster(name, monster):
     if total_weapons % 2 == 1:
         html += '<table><td style="width: 50%"><span class="text-md"></span><br /><span class="text-sm emp"></span>' + \
                 '</td></table>'
-    html += '</ul><p><strong>Treasure: </strong>' + monster['Treasure'] + '</p></tr></table></body></html>'
+    treasure = treasure_calculator(monster['Treasure'], monster['Type'], monster['CR'])
+    html += '</ul><p><strong>Treasure: </strong>' + ', '.join(treasure) + '</p></tr></table></body></html>'
     global index
     index += 1
     with open('tests/' + str(index) + ' testing.html', 'w') as outf:
@@ -191,21 +193,9 @@ if __name__ == '__main__':
     #     n = pick_monster(m)
     #     l.append([n[0], n[1]['Treasure']])
     #
-    # json.dump(l, open('treasure.json', 'w'), sort_keys=True, indent=2)
-    #
     # pickle.dump(Beasts, open('beasts.pickle', 'wb'))
 
     # l = []
     # for m in list(Beasts.keys()):
     #     n = pick_monster(m)
     #     l.append([n[0], n[1]['Type']])
-    #
-    # json.dump(l, open('treasure.json', 'w'), sort_keys=True, indent=2)
-
-    # t = json.load(open('treasure.json', 'r'))
-    # available = ["Aberration", "Animal", "Construct", "Dragon", "Fey", "Humanoid", "Magical Beast", "Monstrous Humanoid", "Ooze", "Outsider", "Plant", "Undead", "Vermin"]
-    # abnormal = []
-    # for i in t:
-    #     if i[1].title() not in available:
-    #         abnormal.append(i[1].title())
-    # print(abnormal)
