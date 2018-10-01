@@ -2665,7 +2665,7 @@ class Art(object):
                 self.Description = choice(self.descriptor) + ' ' + choice(self.materials[3]) + ' ' + \
                                    choice(self.object) + ', set with a' + choice(self.gems[3]) + ' ' + \
                                    choice(self.magic)
-        cost_factor = [50, 150, 500, 1000, 5000, 10000]
+        cost_factor = [50, 150, 500, 1000, 5000, 10000, 50000]
         self.Cost = cost_factor[quality + 1]
         self.Rarity = quality
 
@@ -2754,8 +2754,8 @@ class Wondrous(object):
         else:
             while True:
                 pick = choice(list(MasterWondrous.keys()))
-                if cl == int(pick['CL']):
-                    self.Name = MasterWondrous[pick].key()
+                if cl == int(MasterWondrous[pick]['CL']):
+                    self.Name = pick
                     self.Link = MasterWondrous[pick]['Link']
                     self.Price = int(MasterWondrous[pick]['Price'])
                     self.CL = int(MasterWondrous[pick]['CL'])
