@@ -3,9 +3,8 @@ import pickle
 from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jeweller, Blacksmith, GeneralStore, Weapons
 from variance import normalize_dict
 
-MasterSpells = {}
-with open("spells.pickle", 'rb') as pfile:
-    MasterSpells = pickle.load(pfile)
+MasterSpells = pickle.load(open("spells.pickle", 'rb'))
+MasterWondrous = pickle.load(open("wondrous.pickle", 'rb'))
 
 MasterID = 1
 
@@ -2736,6 +2735,40 @@ class Ring(object):
             determine_cost(self.Cost) + """</td><td>""" + l[self.Enchantment.Level] + """</td></tr>"""
         MasterID += 1
         return s
+
+
+class Wondrous(object):
+    Name = Aura = Slot = Link = ''
+    Price = CL = Weight = 0
+
+    def __init__(self, cl=-1):
+        if cl == -1:
+            pick = choice(list(MasterWondrous.keys()))
+            self.Name = pick.key()
+            self.Link = pick['Link']
+            self.Price = int(pick['Price'])
+            self.CL = int(pick['CL'])
+            self.Aura = pick['Aura']
+            self.Slot = pick['Slot']
+            self.Weight = pick['Weight']
+        else:
+            while True:
+                pick = choice(list(MasterWondrous.keys()))
+                if cl == int(pick['CL']):
+                    self.Name = pick.key()
+                    self.Link = pick['Link']
+                    self.Price = int(pick['Price'])
+                    self.CL = int(pick['CL'])
+                    self.Aura = pick['Aura']
+                    self.Slot = pick['Slot']
+                    self.Weight = pick['Weight']
+                    break
+
+    def __str__(self):
+        return '<tr><td style="width:50%;"><span class="text-md"><a href"' + self.Link + '">' + self.Name + \
+               '</a></span><br /><span class="text-sm emp">Aura ' + self.Aura + '; CL' + str(self.CL) + '; Weight' + \
+               self.Weight + '; Slot ' + self.Slot + '</span></td><td>' + determine_cost(self.Price) + '</td><td>' + \
+               'Wondrous Item</td></tr>'
 
 
 def create_book_shop(owner, genres, quan, inflate=1):
