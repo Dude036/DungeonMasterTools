@@ -103,6 +103,8 @@ def print_monster(name, monster):
            '.col-1-4{width:25%;float:left;}.col-2-4{width:33.3%;float:left;}.col-3-4{width:50%;float:left;}' + \
            '.col-4-4{width:100%;float:left;}</style><style type="text/css">.inventory-table td{border-bottom:' + \
            '1px solid black;}.wrapper-box{width:100%;border:2px solid black;padding:5px;}</style></head>' + \
+           '<script>function show_hide(ident){\nvar a = document.getElementById(ident);\nif (a.style.display ===' + \
+           """""""'none'){\na.style.display = 'block';} else {a.style.display = 'none';}}</script>""" + \
            '<body><table class="wrapper-box" style="margin-bottom:60px;"><tr><td><span class="text-lg bold">' + \
            name + '</span>-<span class="text-md bold">CR ' + monster['CR'] + '</span>&emsp;<span>(EXP: ' + \
            str(format(Levels[monster['CR']], ',d')) + ')</span><p>' + monster['Description'] + \
@@ -161,8 +163,13 @@ def print_monster(name, monster):
     if total_weapons % 2 == 1:
         html += '<table><td style="width: 50%"><span class="text-md"></span><br /><span class="text-sm emp"></span>' + \
                 '</td></table>'
+    html += '</ul><p><strong>Treasure:</strong></p><table class="inventory-table" style="width:100%;"><tbody><tr>' + \
+            '<th style="text-align:left;">Item</th><th style="text-align:left;">Cost</th><th style="text-align:left;">' + \
+            'Rarity</th></tr>'
     treasure = treasure_calculator(monster['Treasure'], monster['Type'], monster['CR'])
-    html += '</ul><p><strong>Treasure: </strong>' + ', '.join(treasure) + '</p></tr></table></body></html>'
+    for t in treasure:
+        html += str(t)
+    html += '</tr></table></body></html>'
     global index
     index += 1
     with open('tests/' + str(index) + ' testing.html', 'w') as outf:

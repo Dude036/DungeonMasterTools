@@ -299,14 +299,17 @@ def treasure_calculator(treasure, species, cr):
             totalMoney += all_items[i]
             all_items.pop(i)
         else:
-            all_items[i] = all_items[i].to_string()
+            # all_items[i] = all_items[i].to_string()
             i += 1
 
     if additional != '':
         for item in additional.split(','):
-            all_items.append(item.strip())
-
-    all_items.append(determine_cost(totalMoney))
+            s = '<tr><td style="width:50%;"><span class="text-md">' + item.strip() + '</span></td><td> --- ' + \
+                '</td><td>Common</td></tr>'
+            all_items.append(s)
+    s = '<tr><td style="width:50%;"><span class="text-md">Spare Change</span></td><td>' + determine_cost(totalMoney) + \
+        '</td><td>Common</td></tr>'
+    all_items.append(s)
     return all_items
 
 
