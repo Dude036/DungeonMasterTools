@@ -185,24 +185,11 @@ if __name__ == '__main__':
         print('\t', n[1]['Ranged'])
         print_monster(n[0], n[1])
 
-    # print('########################')
-    # print('# Running all monsters #')
-    # print('########################')
-    # print()
-    #
-    # for m in tqdm(list(Beasts.keys())):
-    # # for m in list(Beasts.keys()):
-    #     n = pick_monster(m)
-    #     print_monster(n[0], n[1])
+    print('########################')
+    print('# Running all monsters #')
+    print('########################')
+    print()
 
-    # l = []
-    # for m in list(Beasts.keys()):
-    #     n = pick_monster(m)
-    #     l.append([n[0], n[1]['Treasure']])
-    #
-    # pickle.dump(Beasts, open('beasts.pickle', 'wb'))
-
-    # l = []
-    # for m in list(Beasts.keys()):
-    #     n = pick_monster(m)
-    #     l.append([n[0], n[1]['Type']])
+    for m in tqdm(list(Beasts.keys())):
+        n = pick_monster(m)
+        print_monster(n[0], n[1])
