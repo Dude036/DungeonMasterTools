@@ -107,18 +107,20 @@ def print_monster(name, monster):
            """""""'none'){\na.style.display = 'block';} else {a.style.display = 'none';}}</script>""" + \
            '<body><table class="wrapper-box" style="margin-bottom:60px;"><tr><td><span class="text-lg bold">' + \
            name + '</span>-<span class="text-md bold">CR ' + monster['CR'] + '</span>&emsp;<span>(EXP: ' + \
-           str(format(Levels[monster['CR']], ',d')) + ')</span><p>' + monster['Description'] + \
-           '</p><div><ul style="column-count: 2; list-style-type: none;margin: 5px"><li style="padding-top: 6px;' + \
-           'padding-bottom: 6px;"><span style="font-weight:bold;">HP:</span>' + monster['HP'] + ' ' + monster['HD'] + \
-           '</li><li style="padding-top: 6px;padding-bottom: 6px;"><span style="font-weight:bold;">Speed:</span>' + \
-           monster['Speed'] + '</li><li style="padding-top: 6px;padding-bottom: 6px;"><span style="font-weight:bold' + \
-           ';">Size:</span>' + monster['Size'] + '</li><li><table><th>AC:</th><td>' + armor.group(1) + \
-           '</td><th>Touch:</th><td>' + armor.group(2) + '</td><th>Flat:</th><td>' + armor.group(3) + \
-           '</td></table></li><li><table><th>Attack:' + '</th><td>' + monster['BaseAtk'] + '</td><th>CMB:</th><td>' + \
-           monster['CMB'] + '</td><th>CMD:</th><td>' + monster['CMD'] + '</td></table></li><li><table><th>Fort:' + \
-           '</th><td>' + saves.group(1) + '</td><th>Ref:</th><td>' + saves.group(2) + '</td><th>Will:</th><td>' + \
-           saves.group(3) + '</td></table></li></ul></div><table class="inventory-table" style="width: 100%;">' + \
-           '<tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr>'
+           str(format(Levels[monster['CR']], ',d')) + ')</span><p>'
+    for line in monster['Description'].split('.'):
+        html += '<p>' + line + '</p>'
+    html += '<div><ul style="column-count: 2; list-style-type: none;margin: 5px"><li style="padding-top: 6px;' + \
+            'padding-bottom: 6px;"><span style="font-weight:bold;">HP:</span>' + monster['HP'] + ' ' + monster['HD'] + \
+            '</li><li style="padding-top: 6px;padding-bottom: 6px;"><span style="font-weight:bold;">Speed:</span>' + \
+            monster['Speed'] + '</li><li style="padding-top: 6px;padding-bottom: 6px;"><span style="font-weight:bold' +\
+            ';">Size:</span>' + monster['Size'] + '</li><li><table><th>AC:</th><td>' + armor.group(1) + \
+            '</td><th>Touch:</th><td>' + armor.group(2) + '</td><th>Flat:</th><td>' + armor.group(3) + \
+            '</td></table></li><li><table><th>Attack:' + '</th><td>' + monster['BaseAtk'] + '</td><th>CMB:</th><td>' + \
+            monster['CMB'] + '</td><th>CMD:</th><td>' + monster['CMD'] + '</td></table></li><li><table><th>Fort:' + \
+            '</th><td>' + saves.group(1) + '</td><th>Ref:</th><td>' + saves.group(2) + '</td><th>Will:</th><td>' + \
+            saves.group(3) + '</td></table></li></ul></div><table class="inventory-table" style="width: 100%;">' + \
+            '<tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr>'
 
     for a in range(6):
         if abilities is None:
