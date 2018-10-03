@@ -496,20 +496,19 @@ def wondrous(g):
                 break
 
     for _ in range(quantity):
-        for _ in range(quantity):
-            if category[0] == 'lesser' and category[1] == 'minor':
-                l.append(Wondrous(randint(1, 3)))
-            elif category[0] == 'lesser' and category[1] == 'medium':
-                l.append(Wondrous(randint(2, 6)))
-            elif category[0] == 'lesser' and category[1] == 'major':
-                l.append(Wondrous(randint(4, 9)))
-            if category[0] == 'greater' and category[1] == 'minor':
-                l.append(Wondrous(randint(8, 13)))
-            elif category[0] == 'greater' and category[1] == 'medium':
-                l.append(Wondrous(randint(12, 16)))
-            elif category[0] == 'greater' and category[1] == 'major':
-                l.append(Wondrous(choice([16, 17, 18, 19, 20, 22])))
-        return l
+        if category[0] == 'lesser' and category[1] == 'minor':
+            l.append(Wondrous(randint(1, 3)))
+        elif category[0] == 'lesser' and category[1] == 'medium':
+            l.append(Wondrous(randint(2, 6)))
+        elif category[0] == 'lesser' and category[1] == 'major':
+            l.append(Wondrous(randint(4, 9)))
+        if category[0] == 'greater' and category[1] == 'minor':
+            l.append(Wondrous(randint(8, 13)))
+        elif category[0] == 'greater' and category[1] == 'medium':
+            l.append(Wondrous(randint(12, 16)))
+        elif category[0] == 'greater' and category[1] == 'major':
+            l.append(Wondrous(choice([16, 17, 18, 19, 20, 22])))
+    return l
 
 
 def art(s):

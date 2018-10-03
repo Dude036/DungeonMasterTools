@@ -2451,12 +2451,12 @@ class Art(object):
         self.Rarity = quality
 
     def __str__(self):
-        s = '<tr><td style="width:50%;"><span class="text-md">' + self.Description + '</span></td><td>' + \
+        s = '<tr><td style="width:50%;"><span class="text-md">' + self.Description.title() + '</span></td><td>' + \
             determine_cost(self.Cost) + '</td><td>Grade ' + str(self.Rarity+1) + ' Art</td></tr>'
         return s
 
     def to_string(self):
-        return self.Description + ' (' + determine_cost(self.Cost) + ')'
+        return self.Description.title() + ' (' + determine_cost(self.Cost) + ')'
 
 
 class Ring(object):
@@ -2558,7 +2558,7 @@ class Wondrous(object):
                     i += 1
 
     def __str__(self):
-        return '<tr><td style="width:50%;"><span class="text-md"><a href"' + self.Link + '">' + self.Name + \
+        return '<tr><td style="width:50%;"><span class="text-md"><a href="' + self.Link + '">' + self.Name + \
                '</a></span><br /><span class="text-sm emp">Aura ' + self.Aura + '; CL' + str(self.CL) + '; Weight' + \
                self.Weight + '; Slot ' + self.Slot + '</span></td><td>' + determine_cost(self.Cost) + '</td><td>' + \
                'Wondrous Item</td></tr>'
