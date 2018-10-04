@@ -12,43 +12,44 @@ def make_sample():
     with open('generate.txt', 'w') as outf:
         # Write Weapon Shop
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
-        outf.write("2 0 4 15 20 1.0\r\n")
+        outf.write("2 0 4 15 20 1.0\n\r")
         # Write Armor Shop
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
-        outf.write("2 0 2 15 20 1.0\r\n")
+        outf.write("2 0 2 15 20 1.0\n\r")
         # Write Potion Shop
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
-        outf.write("1 0 9 10 15 1.0\r\n")
+        outf.write("1 0 9 10 15 1.0\n\r")
         # Write Enchant Shop
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
-        outf.write("1 0 9 10 15 1.0\r\n")
+        outf.write("1 0 9 10 15 1.0\n\r")
         # Write Enchanter Shop
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
-        outf.write("1 0 9 15 25 1.0\r\n")
+        outf.write("1 0 9 15 25 1.0\n\r")
         # Write Book Shop
         # [# of Stores, Quantity High, Quantity Low, Inflation]
-        outf.write("1 15 25 1.0\r\n")
+        outf.write("1 15 25 1.0\n\r")
         # Write Tavern Shop
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
-        outf.write("1 0 3 10 15 1.0\r\n")
+        outf.write("1 0 3 10 15 1.0\n\r")
         # Write Jewel Shop
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
-        outf.write("1 0 5 15 30 1.0\r\n")
+        outf.write("1 0 5 15 30 1.0\n\r")
         # Write Food Shop
         # [# of Stores, Rarity, Quantity Low, Quantity High, Inflation]
-        outf.write("1 0 15 30 1.0\r\n")
+        outf.write("1 0 15 30 1.0\n\r")
         # Write General Shop
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Trinkets, Inflation]
-        outf.write("1 0 1 20 30 1 1.0\r\n")
+        outf.write("1 0 1 20 30 1 1.0\n\r")
         # Write Brothel
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
         outf.write("1 0 9 5 10 1")
+
 
 if __name__ == '__main__':
     # Weapons = Armor = Potion = Enchant = Enchanter = Books = Tavern = Jewel = Food = General = []
     with open('generate.txt', 'r') as inf:
         """ Ordering
-        Weapons|Armor|Potion|Enchant|Enchanter|Books|Tavern|Jewel|Food|General
+        Weapons|Armor|Potion|Enchant|Enchanter|Books|Tavern|Jewel|Food|General|Brothel
         See above for explanation and creation of the settings
         """
         content = inf.readlines()
