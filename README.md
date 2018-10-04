@@ -39,7 +39,7 @@ Generate.txt has all the information about the town. Every store has some unique
         [# of Stores (0 to infinite), Rarity (0 to infinite), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
     10: Write General Shop(s) 
         [# of Stores (0 to infinite), Rarity Low (0 to 3), Rarity High (Rarity Low+1 to 3), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Trinkets (0 to infinite), Inflation (0.00 to infinite)]
-    11: White Brothel(s)
+    11: Write Brothel(s)
         [# of Stores (0 to infinite), Rarity Low (0 to 3), Rarity High (Rarity Low+1 to 3), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
     12+: Town Positions - Create notable people with a certain profession in the town.
 
