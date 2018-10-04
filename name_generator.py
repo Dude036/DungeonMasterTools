@@ -2,7 +2,7 @@ from numpy.random import randint
 from names import *
 
 d_name = ['Aasimer', 'Drow', 'Duergar', 'Dwarf', 'Elf', 'Goblin', 'Human', 'Half-Orc', 'Half-Elf', 'Orc', 'Svirfneblin', 'Tian', 'Tengu', 'Tiefling',]
-d_single = ['Catfolk', 'Fetchling', 'Gnome', 'Halfling', 'Hobgoblin', 'Ifrit', 'Kitsune', 'Lizardfold', 'Nagaji', 'Oread', 'Ratfolk', 'Samsarans', 'Sylph', 'Undine', ]
+d_single = ['Catfolk', 'Fetchling', 'Gnome', 'Halfling', 'Hobgoblin', 'Ifrit', 'Kitsune', 'Lizardfolk', 'Nagaji', 'Oread', 'Ratfolk', 'Samsarans', 'Sylph', 'Undine', 'Kobold']
 d_premade = ['Dhampir', 'Gillman', 'Grippli', 'Merfolk', 'Strix', 'Vishkanya', 'Wayangs',]
 
 def default_name(race, gender='Male', doubled=True):

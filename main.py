@@ -4,12 +4,7 @@ import town_generator
 """
 @TODO:
 1: Brothel?
-2: Figure out why Hammers don't really exist
-3: Pricing for Enchantments needs to be adjusted for inflation and cost of parts
-4: Masterwork Items seem to be REALLY expensive
-5: UNIT TESTS!
-6: Better input design - GUI?
-7: Pip installation requirements
+2: UNIT TESTS!
 """
 
 
@@ -44,8 +39,10 @@ def make_sample():
         outf.write("1 0 15 30 1.0\r\n")
         # Write General Shop
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Trinkets, Inflation]
-        outf.write("1 0 1 20 30 1 1.0")
-
+        outf.write("1 0 1 20 30 1 1.0\r\n")
+        # Write Brothel
+        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
+        outf.write("1 0 9 5 10 1")
 
 if __name__ == '__main__':
     # Weapons = Armor = Potion = Enchant = Enchanter = Books = Tavern = Jewel = Food = General = []
@@ -85,11 +82,15 @@ if __name__ == '__main__':
         val = content[9].split()
         General = [eval(thing) for thing in val]
 
+        val = content[10].split()
+        Brothel = [eval(thing) for thing in val]
+
         Positions = []
-        for thing in range(10, len(content)):
+        for thing in range(11, len(content)):
             Positions.append(content[thing].strip())
 
-    town_name = town_generator.generate(Weapons, Armor, Potion, Enchant, Enchanter, Books, Tavern, Jewel, Food, General)
+    town_name = town_generator.generate(Weapons, Armor, Potion, Enchant, Enchanter, Books, Tavern, Jewel, Food, General,
+                                        Brothel)
     for p in Positions:
         town_generator.write_people(town_generator.create_person(town_generator.create_variance()), p)
     print("Writing the town ", town_name)

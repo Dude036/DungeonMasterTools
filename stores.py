@@ -1,7 +1,9 @@
 from numpy.random import randint, choice, random_sample
 import pickle
-from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jeweller, Blacksmith, GeneralStore, Weapons, Jewelling
-from variance import normalize_dict
+from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jeweller, Blacksmith, GeneralStore, Weapons,\
+    Jewelling, Brothel
+from variance import normalize_dict, create_variance
+import town_generator
 
 MasterSpells = pickle.load(open("spells.pickle", 'rb'))
 MasterWondrous = pickle.load(open("wondrous.pickle", 'rb'))
@@ -1228,7 +1230,7 @@ def find_spell_components(spell):
 
 def determine_cost(c):
     s = ""
-    if isinstance(type(c), type(0)):
+    if isinstance(type(c), int):
         s = format(c, ',d') + " gp"
     else:
         if int(c) > 0:
@@ -1238,8 +1240,8 @@ def determine_cost(c):
             s += str(int(c*10)) + " sp "
         if int((c * 100) % 10) > 0:
             s += str(int((c*100) % 10)) + " cp"
-        if len(s) == 0:
-            s = "1 cp"
+    if len(s) == 0:
+        s = "1 cp"
     return s
 
 def determine_rarity(q):
@@ -2567,6 +2569,23 @@ class Wondrous(object):
         return self.Name + ' (' + determine_cost(self.Cost) + ')'
 
 
+class Whore(object):
+    Person = None
+    Cost = 0
+
+    def __init__(self, vary=None, cost=-1):
+        self.Person = town_generator.create_person(create_variance())
+        self.Cost = random_sample() + .1
+
+    def __str__(self):
+        if self.Cost is None or self.Person.Gender is None:
+            print(self.Cost)
+            print(self.Person.Gender)
+        return '<tr><td style="width:50%;"><span class="text-md">' + self.Person.Name + ' (' + self.Person.Race + ')' +\
+               '</span><br /><span class="text-sm emp">' + self.Person.Appearance + '; Age ' + str(self.Person.Age) + \
+               '</span></td><td>' + determine_cost(self.Cost) + '</td><td>' + self.Person.Gender + '</td></tr>'
+
+
 def create_book_shop(owner, genres, quan, inflate=1):
     for b in genres:
         if b not in Books.Genres:
@@ -2680,9 +2699,14 @@ def create_general_store(owner, rarity, quan, trink, inflate=1):
     return a
 
 
-def diff(first, second):
-    second = set(second)
-    return [item for item in first if item not in second]
+def create_brothel(owner, rarity, quan, inflate=1):
+    name = str(Brothel()) + " (Brothel)"
+    if isinstance(inflate, float):
+        a = Store(owner, name, inflate, rarity)
+    else:
+        a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
+    a.fill_store(Whore, quan)
+    return a
 
 
 if __name__ == '__main__':
