@@ -1519,8 +1519,8 @@ class Weapon(object):
             self.Cost += (1 + mlevel) * (1 + mlevel) * 1000
             self.Name = "+" + str(mlevel) + ' ' + self.Name
             self.Dice += "+" + str(mlevel)
-        else:
-            print("This Item is already Masterwork")
+        # else:
+        #     print("This Item is already Masterwork")
 
     def __str__(self):
         global MasterID
@@ -1697,8 +1697,8 @@ class Armor(object):
             self.Cost += 2 * mlevel * mlevel * 1000
             self.Name = "+" + str(mlevel) + ' ' + self.Name
             self.AC += mlevel
-        else:
-            print("This Item is already Masterwork")
+        # else:
+        #     print("This Item is already Masterwork")
 
     def to_string(self):
         ench = ''

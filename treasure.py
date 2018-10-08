@@ -37,6 +37,8 @@ Coins = {
     50000: ["2d6 *1000 gp", "8d10 *100 pp"],
 }
 Coins_and_Gems = {
+    1: ["5d10 cp", "3d4 sp"],
+    5: ["2d6 *10 cp", "4d8 sp", "1d4 gp"],
     10: ["grade 1 gemstone"],
     15: ["2d6 *10 cp", "4d8 sp", "1d4 gp", "grade 1 gemstone"],
     25: ["5d10 sp", "1d4 gp", "2 grade 1 gemstones"],
@@ -56,6 +58,7 @@ Coins_and_Gems = {
     50000: ["4d4 *10 pp", "10 grade 3 gemstones", "4 grade 4 gemstones", "6 grade 5 gemstones", "8 grade 6 gemstones"],
 }
 Art_Objects = {
+    1: ["5d10 cp", "3d4 sp"],
     50: ["grade 1 art object"],
     100: ["grade 2 art object"],
     150: ["grade 1 art object", "grade 2 art object"],
@@ -76,6 +79,8 @@ Art_Objects = {
 
 }
 Coins_and_Objects = {
+    1: ["5d10 cp", "3d4 sp"],
+    5: ["2d6 *10 cp", "4d8 sp", "1d4 gp"],
     40: ["3d6 *10 sp", "4d4 gp", "lesser minor scroll"],
     50: ["2d4 *10 sp", "2d4 gp", "lesser minor potion"],
     100: ["4d6 *10 sp", "3d10 gp", "lesser minor potion", "lesser minor scroll"],
@@ -424,26 +429,32 @@ def armor(g):
     secondary = ['minor', 'medium', 'major']
     category = ''
     quantity = 0
-    for p in primary:
-        if category != '':
-            break
-        for s in secondary:
-            match = re.match(re.compile('([\d ]*)' + p + ' ' + s + ' armor[s]?'), g)
-            if match is not None:
-                if match.group(1) == '' or match.group(1) is None:
-                    quantity = 1
-                else:
-                    quantity = int(match.group(1))
-                category = (p, s)
+    if 'masterwork' in g:
+        f = g.split(' ')
+        a = Armor(randint(0, 4), iClass=f[1].title())
+        a.add_masterwork(randint(0, 9))
+        l.append(a)
+    else:
+        for p in primary:
+            if category != '':
                 break
+            for s in secondary:
+                match = re.match(re.compile('([\d ]*)' + p + ' ' + s + ' armor[s]?'), g)
+                if match is not None:
+                    if match.group(1) == '' or match.group(1) is None:
+                        quantity = 1
+                    else:
+                        quantity = int(match.group(1))
+                    category = (p, s)
+                    break
 
-    for _ in range(quantity):
-        if category[1] == 'minor':
-            l.append(Armor(randint(0, 1)))
-        elif category[1] == 'medium':
-            l.append(Armor(randint(1, 2)))
-        elif category[1] == 'major':
-            l.append(Armor(randint(3, 4)))
+        for _ in range(quantity):
+            if category[1] == 'minor':
+                l.append(Armor(randint(0, 1)))
+            elif category[1] == 'medium':
+                l.append(Armor(randint(1, 2)))
+            elif category[1] == 'major':
+                l.append(Armor(randint(3, 4)))
     return l
 
 
@@ -453,26 +464,34 @@ def weapon(g):
     secondary = ['minor', 'medium', 'major']
     category = ''
     quantity = 0
-    for p in primary:
-        if category != '':
-            break
-        for s in secondary:
-            match = re.match(re.compile('([\d ]*)' + p + ' ' + s + ' weapon[s]?'), g)
-            if match is not None:
-                if match.group(1) == '' or match.group(1) is None:
-                    quantity = 1
-                else:
-                    quantity = int(match.group(1))
-                category = (p, s)
+    if 'masterwork' in g:
+        w = Weapon(randint(0, 4))
+        w.add_masterwork(randint(0, 9))
+        l.append(w)
+    else:
+        for p in primary:
+            if category != '':
                 break
+            for s in secondary:
+                match = re.match(re.compile('([\d ]*)' + p + ' ' + s + ' weapon[s]?'), g)
+                if match is not None:
+                    if match.group(1) == '' or match.group(1) is None:
+                        quantity = 1
+                    else:
+                        quantity = int(match.group(1))
+                    category = (p, s)
+                    break
 
-    for _ in range(quantity):
-        if category[1] == 'minor':
-            l.append(Weapon(randint(0, 1)))
-        elif category[1] == 'medium':
-            l.append(Weapon(randint(1, 2)))
-        elif category[1] == 'major':
-            l.append(Weapon(randint(3, 4)))
+        for _ in range(quantity):
+            if category[1] == 'minor':
+                w = Weapon(randint(0, 1))
+            elif category[1] == 'medium':
+                w = Weapon(randint(1, 2))
+            elif category[1] == 'major':
+                w = Weapon(randint(3, 4))
+            else:
+                w = Weapon(0)
+            l.append(w)
     return l
 
 
