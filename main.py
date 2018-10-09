@@ -43,7 +43,10 @@ def make_sample():
         outf.write("1 0 1 20 30 1 1.0" + linesep)
         # Write Brothel
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
-        outf.write("1 0 9 5 10 1")
+        outf.write("1 0 9 5 10 1" + linesep)
+        # Write Gunsmith
+        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
+        outf.write("1 0 5 50 100 1")
 
 
 if __name__ == '__main__':
@@ -87,12 +90,15 @@ if __name__ == '__main__':
         val = content[10].split()
         Brothel = [eval(thing) for thing in val]
 
+        val = content[11].split()
+        Gunsmith = [eval(thing) for thing in val]
+
         Positions = []
-        for thing in range(11, len(content)):
+        for thing in range(12, len(content)):
             Positions.append(content[thing].strip())
 
     town_name = town_generator.generate(Weapons, Armor, Potion, Enchant, Enchanter, Books, Tavern, Jewel, Food, General,
-                                        Brothel)
+                                        Brothel, Gunsmith)
     for p in Positions:
         town_generator.write_people(town_generator.create_person(town_generator.create_variance()), p)
     print("Writing the town ", town_name)

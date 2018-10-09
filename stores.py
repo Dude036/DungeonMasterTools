@@ -1554,6 +1554,115 @@ class Weapon(object):
         return self.Name + ench + ' (' + determine_cost(self.Cost) + ')'
 
 
+class Firearm(object):
+    possible = {
+        'Pistol': ['Revolver', 'Pistol', ],
+        'Rifle': ['Rifle', 'Scoped Rifle', ],
+        'Sniper': ['Sniper', 'Scoped Sniper', ],
+        'Shotgun': ['Blunderbuss', 'Shotgun', ],
+    }
+    cost_and_weight = {
+        'Pistol': [1000, .8],
+        'Rifle': [2500, 2],
+        'Sniper': [10000, 5],
+        'Shotgun': [5000, 3],
+    }
+    Weight = Cost = Rarity = Masterwork = Range = Capacity = 0
+    Name = Dice = Crit = Class = ''
+    Enchantment = None
+
+    def __init__(self, rarity, iClass=None, iName=None):
+        if iClass is None or iClass not in list(self.possible.keys()):
+            self.Class = choice(list(self.possible.keys()))
+        self.Rarity = rarity
+        self.Crit = 'x' + str(randint(2, 5))
+        self.__choose_metal()
+        self.Name += choice(self.possible[self.Class])
+
+        if self.Class == 'Pistol':
+            self.Capacity = int(choice([1, 2, 4, 6, 8]))
+            self.Range = 10 + randint(1, 4) * 5 * self.Rarity
+            self.Dice = str(int((self.Rarity + 2) / 2)) + 'd' + str(choice([4, 6, 8]))
+
+        elif self.Class == 'Rifle':
+            self.Capacity = int(10 + randint(1, 8) * 5)
+            self.Range = 10 + randint(1, 6) * 5 * self.Rarity
+            self.Dice = str(int((self.Rarity + 2) / 2)) + 'd' + str(choice([4, 6, 8, 10]))
+
+        elif self.Class == 'Shotgun':
+            self.Capacity = int(choice([1, 2, 4, 6, 8, 10, 12]))
+            self.Range = randint(3, 6) * 5 * self.Rarity
+            self.Dice = str(int((self.Rarity + 2) / 2)) + 'd' + str(choice([6, 8, 10, 12]))
+
+        elif self.Class == 'Sniper':
+            self.Capacity = int(choice([1, 2, 4]))
+            self.Range = 30 + randint(1, 7) * 10 * self.Rarity
+            self.Dice = str(int((self.Rarity + 2) / 2)) + 'd' + str(choice([8, 10, 12]))
+
+        if iName is not None:
+            self.Name = iName
+
+        if randint(1, 101) + self.Rarity * self.Rarity >= 95:
+            self.add_enchantment(Enchant())
+        if randint(1, 101) + self.Rarity * self.Rarity >= 95:
+            self.add_masterwork(determine_rarity([1, 9]))
+
+    def __choose_metal(self):
+        if self.Rarity > 4:
+            self.Rarity %= 4
+
+        cl = [common_material, uncommon_material, rare_material, very_rare_material, legendary_material][self.Rarity]
+        metal = None
+        while metal is None:
+            metal = choice(list(cl.keys()))
+            if 'HA' in cl[metal]['Type'] and 'P' in cl[metal]['Type']:
+                self.Name += metal + ' '
+            else:
+                metal = None
+        self.Cost = self.cost_and_weight[self.Class][0] * cl[metal]['Cost'] * (self.Rarity + 1) ** self.Rarity
+        self.Weight = round(self.cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 4, 1)
+
+    def add_enchantment(self, ench):
+        if self.Enchantment is None:
+            self.Enchantment = ench
+            self.Cost = self.Cost + self.Enchantment.Cost
+        else:
+            print("This Item is already enchanted.")
+
+    def add_masterwork(self, mlevel):
+        if mlevel > 10:
+            mlevel %= 9
+        if self.Masterwork == 0:
+            self.Masterwork = mlevel
+            self.Cost += (1 + mlevel) * (1 + mlevel) * 1000
+            self.Name = "+" + str(mlevel) + ' ' + self.Name
+            self.Dice += "+" + str(mlevel)
+        # else:
+        #     print("This Item is already Masterwork")
+
+    def __str__(self):
+        global MasterID
+        r = ['Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary']
+        l = ["Level 0", "Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6", "Level 7", "Level 8", "Level 9", ]
+        dam = ''
+        master = "Masterwork " if self.Masterwork > 0 else ""
+        if self.Enchantment is None:
+            s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + ' (' + self.Class + \
+            ') </span><br /><span class="text-sm emp">' + 'Damage: ' + self.Dice + ' (' + self.Crit + ') Weight: ' + \
+            str(self.Weight) + """ lbs</span></td><td>""" + determine_cost(self.Cost) + \
+            """</td><td>""" + master + r[self.Rarity] + """</td></tr>"""
+        else:
+            s = """<tr><td style="width:50%;"><span class="text-md" onclick="show_hide('""" + str(MasterID) + \
+                """')" style="color:blue;">""" + self.Name + ' (' + self.Class + \
+                """) </span><br /><span class="text-sm emp" id=\"""" + str(MasterID) + \
+                """\" style="display: none;">""" + 'Damage: ' + self.Dice + ' (' + self.Crit + ') [' + dam + \
+                '] Weight: ' + str(self.Weight) + """ lbs""" + str(self.Enchantment) + """"</span></td><td>""" + \
+                determine_cost(self.Cost) + """</td><td>""" + master +  r[self.Rarity] + ', ' + \
+                l[self.Enchantment.Level] + """</td></tr>"""
+            MasterID += 1
+        return s
+
+
 class Armor(object):
     light_armor = {
         # Name	: 			HP, AC, Cost, Weight
@@ -2709,5 +2818,18 @@ def create_brothel(owner, rarity, quan, inflate=1):
     return a
 
 
+def create_gunsmith(owner, rarity, quan, inflate=1):
+    name = ' (Gunsmith)'
+    if isinstance(inflate, float):
+        a = Store(owner, name, inflate, rarity)
+    else:
+        a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
+    a.fill_store(Firearm, quan)
+    return a
+
+
 if __name__ == '__main__':
-    print(determine_cost(54591.23))
+    print(determine_cost(random_sample() * 1000000))
+
+    for _ in range(10):
+        print(Firearm(randint(3, 4)))
