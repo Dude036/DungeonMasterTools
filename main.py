@@ -4,8 +4,7 @@ from os import linesep
 
 """
 @TODO:
-1: Brothel?
-2: UNIT TESTS!
+1: UNIT TESTS!
 """
 
 
