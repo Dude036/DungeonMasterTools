@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# coding: utf-8
 MasterWondrous = { 
 	"""Abjurant Salt""": {'Link': 'https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/abjurant-salt/', 'Price': '600', 'Aura': 'moderate abjuration', 'CL': '9', 'Slot': 'None', 'Weight': '1 lb.'}, 
 	"""Admixture Vial""": {'Link': 'https://www.d20pfsrd.com/magic-items/wondrous-items/wondrous-items/a-b/admixture-vial/', 'Price': '5000', 'Aura': 'moderate universal', 'CL': '8', 'Slot': 'None', 'Weight': '0 lbs.'}, 

@@ -1,4 +1,5 @@
-#!/usr/bin/python3
+#!/usr/bin/python
+# coding: utf-8
 Trinkets = [
     'A miniature, tame mimic',
     'A carved marble elephant',
