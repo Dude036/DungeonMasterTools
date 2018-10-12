@@ -8,8 +8,8 @@ import pprint
 import re
 import json
 from tqdm import tqdm
+from beast_list import Beasts
 
-Beasts = None
 Levels = {
     '0.13': 50,
     '0.17': 65,
@@ -51,11 +51,6 @@ Levels = {
     '39.00': 209920000,
 }
 index = 0
-
-
-def load_monsters():
-    global Beasts
-    Beasts = json.load(open('beasts.json', 'r', encoding='utf-8'))
 
 
 def pick_monster(name='', cr=-1.0):
@@ -179,7 +174,6 @@ def print_monster(name, monster):
 
 
 if __name__ == '__main__':
-    load_monsters()
     for c in list(Levels.keys()):
         n = pick_monster(cr=c)
         print(n[0])
