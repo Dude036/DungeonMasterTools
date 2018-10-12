@@ -3,7 +3,7 @@
 from bs4 import BeautifulSoup as bs
 from numpy.random import choice
 from treasure import treasure_calculator
-import pickle
+import json
 import pprint
 import re
 import json
@@ -55,7 +55,7 @@ index = 0
 
 def load_monsters():
     global Beasts
-    Beasts = pickle.load(open('beasts.pickle', 'rb'))
+    Beasts = json.load(open('beasts.json', 'r', encoding='utf-8'))
 
 
 def pick_monster(name='', cr=-1.0):

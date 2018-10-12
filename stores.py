@@ -1,12 +1,12 @@
 from numpy.random import randint, choice, random_sample
-import pickle
+import json
 from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jeweller, Blacksmith, GeneralStore, Weapons,\
     Jewelling, Brothel, Gunsmithing
 from variance import normalize_dict, create_variance
 import town_generator
 
-MasterSpells = pickle.load(open("spells.pickle", 'rb'))
-MasterWondrous = pickle.load(open("wondrous.pickle", 'rb'))
+MasterSpells = json.load(open("spells.json", 'r'), encoding='utf-8')
+MasterWondrous = json.load(open("wondrous.json", 'r'), encoding='utf-8')
 
 MasterID = 1
 
