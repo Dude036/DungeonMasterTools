@@ -1180,7 +1180,7 @@ class Antiques(object):
 
 class Books(object):
     Genres = ['Children', 'Drama', 'Fiction', 'Horror', 'Humor', 'Mystery', 'Nonfiction', 'Romance', 'SciFi', 'Tome', ]
-
+    Name = ''
     def Children(self):
         c1 = ["baby", "bear", "bird", "boy", "bunny", "cat", "caterpillar", "chicken", "cow", "dino", "dog", "dragon",
               "duck", "family", "fox", "frog", "ghost", "girl", "goat", "kid", "king", "kitten", "lion", "little bird",
@@ -1985,31 +1985,34 @@ class Books(object):
         else:
             return t1[randint(len(t1))] + ', ' + t4[randint(len(t4))] + ' ' + t5[randint(len(t5))]
 
-    def Get(self, genre):
+    def __init__(self, genre):
         n = None
         if genre not in self.Genres:
             n = None
         elif genre == "Children":
-            n = self.Children(self)
+            n = self.Children()
         elif genre == "Drama":
-            n = self.Drama(self)
+            n = self.Drama()
         elif genre == "Fiction":
-            n = self.Fiction(self)
+            n = self.Fiction()
         elif genre == "Horror":
-            n = self.Horror(self)
+            n = self.Horror()
         elif genre == "Humor":
-            n = self.Humor(self)
+            n = self.Humor()
         elif genre == "Mystery":
-            n = self.Mystery(self)
+            n = self.Mystery()
         elif genre == "Nonfiction":
-            n = self.Nonfiction(self)
+            n = self.Nonfiction()
         elif genre == "Romance":
-            n = self.Romance(self)
+            n = self.Romance()
         elif genre == "SciFi":
-            n = self.SciFi(self)
+            n = self.SciFi()
         elif genre == "Tome":
-            n = self.Tome(self)
-        return n
+            n = self.Tome()
+        self.Name = n
+            
+    def __str__(self):
+        return self.Name
 
 
 class Clothes(object):

@@ -2176,7 +2176,7 @@ class Book(object):
 
     def __init__(self, rarity):
         self.Genre = self.g[rarity]
-        self.Name = Books.Get(Books, self.Genre)
+        self.Name = str(Books(genre=self.Genre))
         self.Cost = 0.5 + random_sample()
 
     def __str__(self):
