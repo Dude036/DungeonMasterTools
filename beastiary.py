@@ -186,6 +186,6 @@ if __name__ == '__main__':
     print('########################')
     print()
 
-    for m in tqdm(list(Beasts.keys())):
+    for m in tqdm(list(sorted(Beasts.keys()))):
         n = pick_monster(m)
         print_monster(n[0], n[1])
