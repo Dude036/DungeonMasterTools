@@ -1766,22 +1766,22 @@ class Firearm(object):
 
         if self.Class == 'Pistol':
             self.Capacity = int(choice([1, 2, 4, 6, 8]))
-            self.Range = 10 + randint(1, 4) * 5 * self.Rarity
+            self.Range = 10 + randint(1, 4) * 5 * (self.Rarity + 1)
             self.Dice = str(int((self.Rarity + 2) / 2)) + 'd' + str(choice([4, 6, 8]))
 
         elif self.Class == 'Rifle':
             self.Capacity = int(10 + randint(1, 8) * 5)
-            self.Range = 10 + randint(1, 6) * 5 * self.Rarity
+            self.Range = 10 + randint(1, 6) * 5 * (self.Rarity + 1)
             self.Dice = str(int((self.Rarity + 2) / 2)) + 'd' + str(choice([4, 6, 8, 10]))
 
         elif self.Class == 'Shotgun':
             self.Capacity = int(choice([1, 2, 4, 6, 8, 10, 12]))
-            self.Range = randint(3, 6) * 5 * self.Rarity
+            self.Range = randint(3, 6) * 5 * (self.Rarity + 1)
             self.Dice = str(int((self.Rarity + 2) / 2)) + 'd' + str(choice([6, 8, 10, 12]))
 
         elif self.Class == 'Sniper':
             self.Capacity = int(choice([1, 2, 4]))
-            self.Range = 30 + randint(1, 7) * 10 * self.Rarity
+            self.Range = 30 + randint(3, 7) * 10 * (self.Rarity + 1)
             self.Dice = str(int((self.Rarity + 2) / 2)) + 'd' + str(choice([8, 10, 12]))
 
         if iName is not None:
@@ -1834,15 +1834,15 @@ class Firearm(object):
         if self.Enchantment is None:
             s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name.title() + ' (' + self.Class + \
             ') </span><br /><span class="text-sm emp">' + 'Damage: ' + self.Dice + ' (' + self.Crit + ') Weight: ' + \
-            str(self.Weight) + """ lbs</span></td><td>""" + determine_cost(self.Cost) + \
+            str(self.Weight) + ' lbs. Range:' + str(self.Range) + "ft.</span></td><td>" + determine_cost(self.Cost) + \
             """</td><td>""" + master + r[self.Rarity] + """</td></tr>"""
         else:
             s = """<tr><td style="width:50%;"><span class="text-md" onclick="show_hide('""" + str(MasterID) + \
                 """')" style="color:blue;">""" + self.Name.title() + ' (' + self.Class + \
                 """) </span><br /><span class="text-sm emp" id=\"""" + str(MasterID) + \
-                """\" style="display: none;">""" + 'Damage: ' + self.Dice + ' (' + self.Crit + ') [' + dam + \
-                '] Weight: ' + str(self.Weight) + """ lbs""" + str(self.Enchantment) + """"</span></td><td>""" + \
-                determine_cost(self.Cost) + """</td><td>""" + master +  r[self.Rarity] + ', ' + \
+                """\" style="display: none;">""" + 'Damage: ' + self.Dice + ' (' + self.Crit + ') Weight: ' + \
+                str(self.Weight) + ' lbs. Range:' + str(self.Range) + ' ft.' + str(self.Enchantment) + "</span>" + \
+                """</td><td>""" + determine_cost(self.Cost) + """</td><td>""" + master + r[self.Rarity] + ', ' + \
                 l[self.Enchantment.Level] + """</td></tr>"""
             MasterID += 1
         return s
