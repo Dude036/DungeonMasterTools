@@ -2931,7 +2931,7 @@ def create_weapon_shop(owner, rarity, quan, inflate=1):
 
 
 def create_armor_shop(owner, rarity, quan, inflate=1):
-    name = str(Blacksmith()) + " (Weapon)"
+    name = str(Blacksmith()) + " (Armor)"
     if isinstance(inflate, float):
         a = Store(owner, name, inflate, rarity)
     else:
