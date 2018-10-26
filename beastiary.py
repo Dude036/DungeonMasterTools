@@ -3,10 +3,9 @@
 from bs4 import BeautifulSoup as bs
 from numpy.random import choice
 from treasure import treasure_calculator
-import json
+import time
 import pprint
 import re
-import json
 from tqdm import tqdm
 from beast_list import Beasts
 
@@ -73,8 +72,9 @@ def pick_monster(name='', cr=-1.0):
     return name, monster
 
 
-def print_monster(name, monster):
-    # pprint.pprint([name, monster])
+def print_monster(picked_monster):
+    name = picked_monster[0]
+    monster = picked_monster[1]
 
     abilities = re.match(r'Str\s+([\d\-]*),\s+Dex\s+([\d\-]*),\s+Con\s+([\d\-]*),\s+Int\s+([\d\-]*),\s+Wis\s+([\d\-]*),\s+Cha\s+([\d\-]*)',
                          monster['AbilitiyScores'])
@@ -167,25 +167,16 @@ def print_monster(name, monster):
     for t in treasure:
         html += str(t)
     html += '</tr></table></body></html>'
-    global index
-    index += 1
-    with open('tests/' + str(index) + ' testing.html', 'w') as outf:
+    with open('tests/' + name + '.html', 'w') as outf:
         outf.write(bs(html, 'html5lib').prettify())
 
 
 if __name__ == '__main__':
-    for c in list(Levels.keys()):
-        n = pick_monster(cr=c)
-        print(n[0])
-        print('\t', n[1]['Melee'])
-        print('\t', n[1]['Ranged'])
-        print_monster(n[0], n[1])
-
     print('########################')
     print('# Running all monsters #')
     print('########################')
     print()
+    time.sleep(.1)
 
     for m in tqdm(list(sorted(Beasts.keys()))):
-        n = pick_monster(m)
-        print_monster(n[0], n[1])
+        print_monster(pick_monster(name=m))
