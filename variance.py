@@ -7,41 +7,15 @@ from tqdm import tqdm
 import name_generator as ng
 from traits import *
 
-BASE_RACES = ['Dwarf', 'Elf', 'Gnome', 'Halfling', 'Human', 'Half-Elf', 'Half-Orc', 'Orc']
-EXOTIC = {
-    'Aasimer' : 0.0237375,
-    'Catfolk' : 0.03125,
-    'Changeling' : 0.03125,
-    'Dhampir' : 0.015625,
-    'Drow' : 0.09375,
-    'Duergar' : 0.015625,
-    'Fetchling' : 0.015625,
-    'Gillman' : 0.015325,
-    'Goblin' : 0.11313125,
-    'Grippli' : 0.015625,
-    'Hobgoblin' : 0.11313125,
-    'Ifrit' : 0.03125,
-    'Kitsune' : 0.015625,
-    'Kobold' : 0.09375,
-    'Lizardfolk' : 0.015625,
-    'Merfolk' : 0.0078125,
-    'Nagaji' : 0.015625,
-    'Oread' : 0.03125,
-    'Ratfolk' : 0.09375,
-    'Samsarans' : 0.015625,
-    'Strix' : 0.015625,
-    'Suli' : 0.015625,
-    'Svirfneblin' : 0.015625,
-    'Sylph' : 0.0237375,
-    'Tengu' : 0.015625,
-    'Tiefling' : 0.0625,
-    'Undine' : 0.0078125,
-    'Vanara' : 0.015625,
-    'Vishkanya' : 0.0078125,
-    'Wayangs' : 0.015625,
-}
+RACES = ['Dwarf', 'Elf', 'Gnome', 'Halfling', 'Human', 'Half-Elf', 'Half-Orc', 'Orc', 'Aasimer', 'Catfolk',
+         'Changeling', 'Dhampir', 'Drow', 'Duergar', 'Fetchling', 'Gillman', 'Goblin', 'Grippli', 'Hobgoblin', 'Ifrit',
+         'Kitsune', 'Kobold', 'Lizardfolk', 'Merfolk', 'Nagaji', 'Oread', 'Ratfolk', 'Samsarans', 'Strix', 'Suli',
+         'Svirfneblin', 'Sylph', 'Tengu', 'Tiefling', 'Undine', 'Vanara', 'Vishkanya', 'Wayangs']
 
 settings = None
+global_pop = None
+
+
 def load_settings():
     """ Settings
         1: Base population: see lists above
@@ -55,7 +29,7 @@ def load_settings():
             s[x] = s[x].rstrip('\n')
         
         # Check for Illegal Settings
-        if s[0] not in BASE_RACES and s[0] not in list(EXOTIC.keys()):
+        if s[0] not in RACES:
             print("Invalid Base Race")
             exit()
         if int(s[1]) <= 0:
@@ -64,16 +38,16 @@ def load_settings():
         if int(s[2]) < 0 or int(s[2]) > 100:
             print("Invalid Core Population Variance")
             exit()
-        if int(s[3]) < 0 or int(s[3]) > 32:
+        if int(s[3]) < 0 or int(s[3]) > 38:
             print("Invalid Exotic Race Count")
             exit()
         
         global settings    
         settings = {
             'Race': s[0],
-            'Population' : int(s[1]),
-            'Variance' : int(s[2]),
-            'Exotic' : int(s[3]),
+            'Population': int(s[1]),
+            'Variance': int(s[2]),
+            'Exotic': int(s[3]),
         }
         
     if settings is None:
@@ -85,37 +59,35 @@ def custom_settings(ra, po, va, ex):
     global settings
     settings = {
         'Race': ra,
-        'Population' : po,
-        'Variance' : va,
-        'Exotic' : ex,
+        'Population': po,
+        'Variance': va,
+        'Exotic': ex,
     }
 
 
 def create_variance():
     global settings
+    global global_pop
     if settings is None:
         load_settings()
+    if global_pop is not None:
+        return global_pop
     pop = {}
-    races = BASE_RACES
-    if settings['Race'] in races:
-        races.remove(settings['Race'])
     if settings['Variance'] == 0:
         pop[settings['Race']] = 1.0
     else: # Create Variance
         # Prime race
-        pop[settings['Race']] = (100 - settings['Variance'])/100
-        # Sub races
-        for race in races:
-            pop[race] = (settings['Variance'])/800
-        
-        # Add Exotics
-        for _ in range(settings['Exotic']):
-            r = [settings['Race']]
-            while r[0] in pop:
-                r = choice(list(EXOTIC.keys()), 1, list(EXOTIC.values()))
-            pop[r[0]] = (settings['Variance']/800) * 1/settings['Exotic']
+        base_pop = round(settings['Population'] / settings['Variance'])
+        pop[settings['Race']] = base_pop
 
-    return normalize_dict(pop)
+        # Add Exotics
+        choices = choice(RACES, settings['Exotic'], replace=False)
+        for i in choices:
+            variance_degree = settings['Population'] - base_pop
+            pop[i] = round(variance_degree / len(choices))
+
+    global_pop = normalize_dict(pop)
+    return global_pop
     
  
 def create(l):
@@ -129,17 +101,6 @@ def create(l):
     return d
 
 
-def random_variance():
-    var = {}
-    for _ in range(randint(1, len(BASE_RACES) + len(EXOTIC))):
-        choose = randint(2)
-        if choose:
-            var[BASE_RACES[randint(len(BASE_RACES))]] = randint(1, 101)
-        else:
-            var[list(EXOTIC.keys())[randint(len(EXOTIC))]] = randint(1, 101)
-    return var
-    
-    
 def from_file(file):
     with open(file, 'r') as f:
         content = f.readlines()
@@ -163,9 +124,11 @@ def load(file):
         v = pickle.load(f)
     return v
 
+
 def save(variance, filename):
     with open(filename, 'wb') as f:
         pickle.dump(variance, f)
+
 
 if __name__ == '__main__':
     rv = random_variance()
@@ -195,4 +158,4 @@ if __name__ == '__main__':
     print("End Results")
     for x in range(len(population)):
         print(population[x], '-', density[x])
-    
+

@@ -60,6 +60,8 @@ class Character(object):
 
 
 def create_person(pop):
+    if pop is None:
+        pop = create_variance()
     race = choice(list(pop.keys()), 1, p=list(pop.values()))
     gender = choice(['Male', 'Female'])
     name = ng.name_parser(race, gender)
