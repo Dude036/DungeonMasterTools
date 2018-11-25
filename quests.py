@@ -31,7 +31,7 @@ class QuestBoard(object):
             self.Board.append(q)
 
     def __str__(self):
-        line = ''
+        line = '<center class="bold text-md" style="font-size: 150%;">Quest Board</center><br/>'
         for x in self.Board:
             line += str(x)
         return line
@@ -135,7 +135,7 @@ class Quest(object):
                     badCR = False
             self.Title += name
             place = choice(['North', 'South', 'North-East', 'South-East', 'North-West', 'South-West', 'East', 'West'])
-            self.Hook = 'A ' + name + ' has taken refuge ' + place + ' of town. They have cause great harm to us ' + \
+            self.Hook = 'A "' + name + '" has taken refuge ' + place + ' of town. They have cause great harm to us ' + \
                         'and we are looking for able bodies to help defeat this foe. If you are able, report to ' + \
                         self.Reporter.Name + ' for more information.\nReward: ' + str(self.Reward)
         else:
