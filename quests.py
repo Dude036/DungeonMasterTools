@@ -2,15 +2,39 @@
 
 from beast_list import Beasts
 from trinkets import Trinkets
-from town_generator import create_person
+from character import create_person
 from numpy.random import randint, choice
 from traits import quest_location
 from treasure import treasure_samples, Campaign_Speed
+from names import TownNamer
+from stores import determine_cost
 
 
 class QuestBoard(object):
-    def __init__(self):
-        pass
+    Low = High = Quantity = 0
+    Board = []
+
+    def __init__(self, low, high, quan):
+        if low > high:
+            low, high = high, low
+        if high > 55:
+            high = 55
+        self.Low = low
+        self.High = high
+        self.Quantity = quan
+
+        self.fill_board()
+
+    def fill_board(self):
+        for _ in range(self.Quantity):
+            q = Quest(randint(self.Low, self.High + 1))
+            self.Board.append(q)
+
+    def __str__(self):
+        line = ''
+        for x in self.Board:
+            line += str(x)
+        return line
 
 
 class Quest(object):
@@ -25,8 +49,7 @@ class Quest(object):
         self.Reward = int(sum(treasure_samples(1, ['Coins'], Campaign_Speed[self.Level])))
 
         # Quest picker
-        # r = randint(0, 5)
-        r = randint(0, 2)
+        r = randint(0, 5)
         if r == 0:
             self.__fetch()
         elif r == 1:
@@ -81,11 +104,11 @@ class Quest(object):
                         '\nAge: ' + str(missing.Age) + '\nAppearance: ' + missing.Appearance
         elif r == 4:
             missing = create_person(None)
-            time = str(randint(1, 13)) + ':' + choice(['00', '15', '30', '45'])
+            time = str(randint(1, 13)) + ':' + str(choice(['00', 15, 30, 45]))
             self.Title = 'Search Party: ' + criminal.Name
             self.Hook = 'NOTICE: ' + missing.Name + ' has gone missing. ' + criminal.Name + ' has organized a ' + \
                         'searching party. If you have any information, report it to the authorities.\nIf you wish ' + \
-                        'to join the search party, please see ' + criminal.Name + ' ' + location + '.'
+                        'to join the search party, please see ' + criminal.Name + ' ' + location + ' at ' + time + '.'
 
     def __bounty(self):
         # Kill a monster or a criminal
@@ -137,64 +160,118 @@ class Quest(object):
         elif r == 4:
             self.Title = 'Hiring Adventurers'
 
+        r = randint(0, 3)
+        location = quest_location[randint(len(quest_location))]
+        destination = str(TownNamer())
+        if r == 0:
+            self.Hook = 'I need some assistance taking some items to ' + destination + '. If you are available, please' + \
+                        ' see ' + self.Reporter.Name + ' ' + location + '.'
+        elif r == 1:
+            self.Hook = 'I need to get to ' + destination + " in a week. I'm nervous about travelling alone, and " + \
+                        'need a companion for the journey. Please see ' + self.Reporter.Name + ' ' + location + '.'
+        elif r == 2:
+            items = ''
+            self.Hook = "I'm transporting a shipment of " + items + ' to ' + destination + ', and need some help.' + \
+                        ' Food and shelter will be covered for your assistance. Serious Inquiries only. See ' + \
+                        self.Reporter.Name + ' ' + location + ' before the end of the week.'
+
     def __guild(self):
         # All possible guild quests
         r = randint(0, 11)
         if r == 0:
-            self.Title = 'Adventurers Guild: New Hires Wanted!'
+            self.Title = 'Adventurers Guild'
         elif r == 1:
-            self.Title = 'Arcane Guild: New Hires Wanted!'
+            self.Title = 'Arcane Guild'
         elif r == 2:
-            self.Title = 'Laborers Guild: New Hires Wanted!'
+            self.Title = 'Laborers Guild'
         elif r == 3:
-            self.Title = 'Performers Guild: New Hires Wanted!'
+            self.Title = 'Performers Guild'
         elif r == 4:
-            self.Title = 'Scholastic Guild: New Hires Wanted!'
+            self.Title = 'Scholastic Guild'
         elif r == 5:
-            self.Title = 'Merchant Guild: New Hires Wanted!'
+            self.Title = 'Merchant Guild'
         elif r == 6:
-            self.Title = 'Bardic Guild: New Hires Wanted!'
+            self.Title = 'Bardic Guild'
         elif r == 7:
-            self.Title = 'Military Guild: New Hires Wanted!'
+            self.Title = 'Military Guild'
         elif r == 8:
-            self.Title = 'Thieves Guild: New Hires Wanted!'
+            self.Title = 'Thieves Guild'
         elif r == 9:
-            self.Title = 'Assassin Guild: New Hires Wanted!'
+            self.Title = 'Assassin Guild'
         elif r == 10:
-            self.Title = 'Gladiator Guild: New Hires Wanted!'
+            self.Title = 'Gladiator Guild'
+
+        location = quest_location[randint(len(quest_location))]
+        self.Hook = "We're a new chapter of the " + self.Title + ' and we are looking for some new talent and faces' + \
+                    '. If you are interested in joining, please see ' + self.Reporter.Name + ' ' + location + \
+                    '. For more information, please see ' + create_person(None).Name + '.'
 
     def __str__(self):
-        return ""
+        line = '<table class="wrapper-box"><tbody><tr><td><center class="bold text-md">' + self.Title + ' (Level ' + \
+               str(self.Level) + ')</center>'
+        for l in self.Hook.split('\n'):
+            line += '<p>&emsp;' + l + '</p>'
+        line += '<center><span class="bold text-md">Reward:</span>' + determine_cost(self.Reward) + '</center></td>' + \
+                '</tr></tbody></table><br/>'
+        return line
+
+
+def get_lotsa_rewards(quan, reward, filename):
+    with open(filename, 'w') as file:
+        for _ in range(quan):
+            file.write(str(int(sum(treasure_samples(1, ['Coins'], Campaign_Speed[reward])))) + ',')
+
+
+def delete_lotsa_rewards(levels):
+    for i in range(levels):
+        os.remove('reward_level_' + str(i) + '.csv')
+
+
+def threaded_analysis(levels):
+    from multiprocessing import Process
+    pile = []
+    for i in range(levels):
+        pile.append(Process(target=get_lotsa_rewards, args=(10000, i, 'reward_level_' + str(i) + '.csv')))
+
+    for shirt in pile:
+        shirt.start()
+
+    for item in pile:
+        item.join()
 
 
 if __name__ == '__main__':
-    print(Quest(0).Reward)
-    print(Quest(1).Reward)
-    print(Quest(2).Reward)
-    print(Quest(3).Reward)
-    print(Quest(4).Reward)
-    print(Quest(5).Reward)
-    print(Quest(6).Reward)
-    print(Quest(7).Reward)
-    print(Quest(8).Reward)
-    print(Quest(9).Reward)
-    print(Quest(10).Reward)
-    print(Quest(11).Reward)
-    print(Quest(12).Reward)
-    print(Quest(13).Reward)
-    print(Quest(14).Reward)
-    print(Quest(15).Reward)
-    print(Quest(16).Reward)
-    print(Quest(17).Reward)
-    print(Quest(18).Reward)
-    print(Quest(19).Reward)
-    print(Quest(20).Reward)
-    print(Quest(21).Reward)
-    print(Quest(22).Reward)
-    print(Quest(23).Reward)
-    print(Quest(24).Reward)
-    print(Quest(25).Reward)
-    print(Quest(26).Reward)
-    print(Quest(27).Reward)
-    print(Quest(28).Reward)
-    print(Quest(29).Reward)
+    levels = 55
+    threaded_analysis(levels)
+
+    master = ''
+    stats_list = []
+    for i in range(levels):
+        with open('reward_level_' + str(i) + '.csv', 'r') as inf:
+            f = inf.read().strip()
+            master += f + '\n'
+            lst = []
+            for x in f.split(','):
+                if x != '':
+                    lst.append(int(x))
+            stats_list.append(lst)
+
+    with open('master.csv', 'w') as outf:
+        outf.write(master)
+
+    from statistics import *
+    from collections import Counter
+    import os
+    with open('stats.csv', 'w') as outf:
+        outf.write('Level,Mean,Median,Median (Low),Median (High),Mode,Instances,Standard Deviation\n')
+        i = 0
+        for item in stats_list:
+            m = Counter(item).most_common(1)[0]
+            stats = [i, mean(item), median(item), median_low(item), median_high(item), m[0], m[1], stdev(item)]
+            i += 1
+            for s in stats:
+                outf.write(str(s) + ',')
+            outf.write('\n')
+
+    delete_lotsa_rewards(levels)
+

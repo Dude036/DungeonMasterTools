@@ -5,6 +5,8 @@ from os import linesep
 """
 @TODO:
 1: UNIT TESTS!
+2: Try sorting items in stores based on rarity.
+3: Character creator in favor of positions.
 """
 
 
@@ -45,7 +47,10 @@ def make_sample():
         outf.write("1 0 9 5 10 1" + linesep)
         # Write Gunsmith
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
-        outf.write("1 0 5 50 100 1")
+        outf.write("1 0 5 50 100 1" + linesep)
+        # Write Quest board
+        # [# of Stores, Level Low, Level High, Quantity]
+        outf.write("1 0 5 20")
 
 
 if __name__ == '__main__':
@@ -92,13 +97,23 @@ if __name__ == '__main__':
         val = content[11].split()
         Gunsmith = [eval(thing) for thing in val]
 
+        val = content[12].split()
+        Quests = [eval(thing) for thing in val]
+
         Positions = []
-        for thing in range(12, len(content)):
-            Positions.append(content[thing].strip())
+        PC = []
+        for thing in range(13, len(content)):
+            title = content[thing].strip()
+            if title[0] == '!':
+                PC.append(title[1:])
+            else:
+                Positions.append(title)
 
     town_name = town_generator.generate(Weapons, Armor, Potion, Enchant, Enchanter, Books, Tavern, Jewel, Food, General,
-                                        Brothel, Gunsmith)
+                                        Brothel, Gunsmith, Quests)
     for p in Positions:
         town_generator.write_people(town_generator.create_person(town_generator.create_variance()), p)
+    for npc in PC:
+        pass
     print("Writing the town ", town_name)
     town_generator.write_html(town_name)
