@@ -56,7 +56,10 @@ def write_html(name=''):
 
 
 def write_npc(character, position):
-    global townHTML
+    global townHTML, Notable
+    if not Notable:
+        townHTML += '<div style="page-break-after:always;"></div><h2 class="text-lg bold center">Notable People</h2>'
+        Notable = True
     townHTML += notable_head + position + ': </span><span class="text-md">' + str(character)
     townHTML += '</div></td></tr></table><br />'
 

@@ -17,13 +17,15 @@ class PC(Character):
     Stats = []
     Weapon = [None, None]
 
-    def __init__(self):
+    def __init__(self, newName=None):
         super(Character, self).__init__()
         c = create_person(None)
 
         self.Level = randint(1, 21)
-
-        self.Name = c.Name
+        if newName is None:
+            self.Name = c.Name
+        else:
+            self.Name = newName
         self.Race = c.Race
         self.Gender = c.Gender
         self.Age = c.Age
@@ -99,9 +101,10 @@ class PC(Character):
 
         # Add Spells
         if self.Spells is not None:
-            info += '</ul><p><strong>Spells:</strong></p><table class="inventory-table" style="width:100%;"><tbody>' + \
-                    '<tr><th style="text-align:left;">Spell</th><th style="text-align:left;">Class</th>' + \
-                    '<th style="text-align:left;">Level</th></tr>'
+            info += '</ul><table class="inventory-table" style="width:100%;"><tr><th style="text-align:left;' \
+                    'background-color:gray;color:white;padding:5px;">Spell</th><th style="text-align:left;' \
+                    'background-color:gray;color:white;padding:5px;">Class</th><th style="text-align:left;' \
+                    'background-color:gray;color:white;padding:5px;">Level</th></tr>'
             for spell in self.Spells:
                 # pprint(MasterSpells[spell])
                 level = MasterSpells[spell]['level'].split(' ')
