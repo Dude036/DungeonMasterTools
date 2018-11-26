@@ -41,6 +41,13 @@ Generate.txt has all the information about the town. Every store has some unique
         [# of Stores (0 to infinite), Rarity Low (0 to 3), Rarity High (Rarity Low+1 to 3), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Trinkets (0 to infinite), Inflation (0.00 to infinite)]
     11: Write Brothel(s)
         [# of Stores (0 to infinite), Rarity Low (0 to 3), Rarity High (Rarity Low+1 to 3), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
-    12+: Town Positions - Create notable people with a certain profession in the town.
+    12: Write Gunsmith(s)
+        [# of Stores (0 to infinite), Rarity Low (0 to 3), Rarity High (Rarity Low+1 to 3), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
+    13: Write Questboard(s)
+        [# of Stores (0 to infinite), Level Low (0 to 20), Level High (Level Low to 20), Quantity (0 to infinite)]
+    14+: Town Positions - Create notable people with a certain profession in the town.
 
+2 Options: A Notable NPC and A PC. A Notable Person only has basic information. This only means that the notable person only has basic information; a level 0 NPC.
+
+A PC has all the information of a playable character except for general survival items. Each has two weapons. One melee, the other ranged. They potentially have spells too. One in three are spell adept, having from 6 to 44 spells (Level 0 to 20).
 
