@@ -44,7 +44,7 @@ Coins_and_Gems = {
     50: ["grade 2 gemstone"],
     100: ["grade 3 gemstone"],
     150: ["grade 2 gemstone", "grade 3 gemstone"],
-    200: ["2d4 *20 sp", "3d8 *4 gp", "2d4 *2 pp" "4 grade 1 gemstones", "grade 3 gemstone"],
+    200: ["2d4 *20 sp", "3d8 *4 gp", "2d4 *2 pp", "4 grade 1 gemstones", "grade 3 gemstone"],
     250: ["2 grade 2 gemstones", "grade 3 gemstone"],
     500: ["9d10 *3 gp", "3d8 *2 pp", "grade 4 gemstone"],
     1000: ["6d8 *6 gp", "4d12 *2 pp", "grade 5 gemstone"],

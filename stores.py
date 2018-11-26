@@ -2,8 +2,8 @@ from numpy.random import randint, choice, random_sample
 import json
 from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jeweller, Blacksmith, GeneralStore, Weapons,\
     Jewelling, Brothel, Gunsmithing
-from variance import normalize_dict, create_variance
-import town_generator
+from variance import normalize_dict
+from character import create_person
 from spell_list import MasterSpells
 from wondrous_list import MasterWondrous
 
@@ -1445,11 +1445,11 @@ class Weapon(object):
                 self.Name = choice(list(self.possible_ranged[self.Class])).title()
         # Existing requirement
         elif requirement in list(self.possible_melee.keys()):
-            self.Class = choice(list(self.possible_melee[requirement]))
+            self.Class = requirement
             self.Name = choice(list(self.possible_melee[self.Class])).title()
 
         elif requirement in list(self.possible_ranged.keys()):
-            self.Class = choice(list(self.possible_ranged[requirement]))
+            self.Class = requirement
             self.Name = choice(list(self.possible_ranged[self.Class])).title()
 
         else:
@@ -1481,10 +1481,12 @@ class Weapon(object):
             self.Damage = ['P', 'S']
         elif self.Class == 'Spear':
             self.Damage = ['P']
-        if self.Class == 'Bows' or self.Class == 'Crossbow':
-            self.Damage = ['Ra', 'P']
+        elif self.Class == 'Bows':
+            self.Damage = ['Ra', 'P', choice(['30', '40', '50', '60', '70', '80', '90', '100']) + ' ft.']
+        elif self.Class == 'Crossbow':
+            self.Damage = ['Ra', 'P', choice(['60', '70', '80', '90', '100', '110', '120']) + ' ft.']
         elif self.Class == 'Thrown':
-            self.Damage = ['Ar', 'P', 'S']
+            self.Damage = ['Ar', 'P', 'S', choice(['5', '10', '15', '20', '25', '30', '35', '40']) + ' ft.']
         return
 
     def __choose_metal(self):
@@ -1518,9 +1520,10 @@ class Weapon(object):
             t = 0
             while t < len(self.Damage):
                 if self.Damage[t] not in cl[metal]['Type']:
-                    # print(metal, 'Not compatible with a', self.Name, '(\''+self.Damage[t]+'\')')
-                    metal = None
-                    t = len(self.Damage)
+                    if 'ft.' not in self.Damage[t]:
+                        # print(metal, 'Not compatible with a', self.Name, '(\''+self.Damage[t]+'\')')
+                        metal = None
+                        t = len(self.Damage)
                 t += 1
         return metal, cl
 
@@ -2868,7 +2871,7 @@ class Whore(object):
     Cost = 0
 
     def __init__(self, vary=None, cost=-1):
-        self.Person = town_generator.create_person(create_variance())
+        self.Person = create_person(None)
         self.Cost = random_sample() + .1
 
     def __str__(self):

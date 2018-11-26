@@ -2,6 +2,7 @@
 from bs4 import BeautifulSoup as bs
 from stores import *
 import quests
+import PC
 from character import create_person
 from variance import create_variance
 
@@ -52,6 +53,12 @@ def write_html(name=''):
         name = 'test'
     with open(name + '.html', 'w') as outf:
         outf.write(bs(townHTML, 'html5lib').prettify())
+
+
+def write_npc(character, position):
+    global townHTML
+    townHTML += notable_head + position + ': </span><span class="text-md">' + str(character)
+    townHTML += '</div></td></tr></table><br />'
 
 
 def write_people(person, position):

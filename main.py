@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import town_generator
+from PC import PC
 from os import linesep
 
 """
@@ -101,11 +102,11 @@ if __name__ == '__main__':
         Quests = [eval(thing) for thing in val]
 
         Positions = []
-        PC = []
+        NPC = []
         for thing in range(13, len(content)):
             title = content[thing].strip()
             if title[0] == '!':
-                PC.append(title[1:])
+                NPC.append(title[1:])
             else:
                 Positions.append(title)
 
@@ -113,7 +114,7 @@ if __name__ == '__main__':
                                         Brothel, Gunsmith, Quests)
     for p in Positions:
         town_generator.write_people(town_generator.create_person(town_generator.create_variance()), p)
-    for npc in PC:
-        pass
+    for npc in NPC:
+        town_generator.write_npc(PC(), npc)
     print("Writing the town ", town_name)
     town_generator.write_html(town_name)
