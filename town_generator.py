@@ -134,7 +134,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
         write_store(store)
 
     for _ in range(qu[0]):
-        board = str(quests.QuestBoard(qu[1], qu[2], qu[3]))
+        board = str(quests.QuestBoard(qu[1], qu[2], qu[3], town_name))
         townHTML += board
 
     return town_name

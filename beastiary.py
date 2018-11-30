@@ -8,6 +8,7 @@ import pprint
 import re
 from tqdm import tqdm
 from beast_list import Beasts
+import os
 
 Levels = {
     '0.13': 50,
@@ -73,6 +74,12 @@ def pick_monster(name='', cr=-1.0):
 
 
 def print_monster(picked_monster):
+    if 'beasts' not in os.listdir(os.getcwd()):
+        try:
+            os.mkdir(os.getcwd() + '/beasts')
+        except OSError:
+            print("Beasts directory creation failed")
+
     name = picked_monster[0]
     monster = picked_monster[1]
 
@@ -167,7 +174,7 @@ def print_monster(picked_monster):
     for t in treasure:
         html += str(t)
     html += '</tr></table></body></html>'
-    with open('tests/' + name + '.html', 'w') as outf:
+    with open('beasts/' + name + '.html', 'w') as outf:
         outf.write(bs(html, 'html5lib').prettify())
 
 
@@ -176,6 +183,13 @@ if __name__ == '__main__':
     print('# Running all monsters #')
     print('########################')
     print()
+
+    if 'beasts' not in os.listdir(os.getcwd()):
+        try:
+            os.mkdir(os.getcwd() + '/beasts')
+        except OSError:
+            print("Beasts directory creation failed")
+
     time.sleep(.1)
 
     for m in tqdm(list(sorted(Beasts.keys()))):

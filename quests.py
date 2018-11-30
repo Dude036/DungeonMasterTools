@@ -29,7 +29,7 @@ class QuestBoard(object):
     Low = High = Quantity = 0
     Board = []
 
-    def __init__(self, low, high, quan):
+    def __init__(self, low, high, quan, town_name):
         if low > high:
             low, high = high, low
         if high > 55:
@@ -39,12 +39,13 @@ class QuestBoard(object):
         self.Low = low
         self.High = high
         self.Quantity = quan
+        self.TownName = town_name
 
         self.fill_board()
 
     def fill_board(self):
         global questHTML
-        with open('questboard.html', 'w') as outf:
+        with open(self.TownName + ' questboard.html', 'w') as outf:
             for _ in range(self.Quantity):
                 num = randint(self.Low, self.High + 1)
                 q = Quest(num)
@@ -59,19 +60,19 @@ class QuestBoard(object):
                     if '"' in q.Type:
                         monster_name = q.Type.split('"')[1]
                         print_monster(pick_monster(name=monster_name))
-                        questHTML += '<iframe src="tests/' + monster_name + '.html" height="500" style="padding: 10px"></iframe><br>'
+                        questHTML += '<iframe src="beasts/' + monster_name + '.html" height="500" style="padding: 10px"></iframe><br>'
                         print(monster_name, ":: Specific Monster :: created for", q.Title)
                     else:
                         m = pick_monster(cr=str(q.Level) + '.00')
                         print_monster(m)
-                        questHTML += '<iframe src="tests/' + m[0] + '.html" height="500" style="padding: 10px"></iframe><br />'
+                        questHTML += '<iframe src="beasts/' + m[0] + '.html" height="500" style="padding: 10px"></iframe><br />'
                         print(m[0], ":: Monster :: created for", q.Title)
             questHTML += '</body></html>'
             outf.write(bs(questHTML, 'html5lib').prettify())
 
     def __str__(self):
-        line = '<center class="bold text-md" style="font-size: 150%;"><a href="questboard.html">Quest Board</a>' \
-               '</center><br/>'
+        line = '<center class="bold text-md" style="font-size: 150%;"><a href="' + self.TownName + \
+               ' questboard.html">Quest Board</a></center><br/>'
         for x in self.Board:
             line += str(x)
         return line
