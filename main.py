@@ -7,7 +7,9 @@ from os import linesep
 @TODO:
 1: UNIT TESTS!
 2: Try sorting items in stores based on rarity.
-3: Character creator in favor of positions.
+3: Character creator with actual classes
+4: Add Beasts to Beast list
+5: Just treasure printing
 """
 
 

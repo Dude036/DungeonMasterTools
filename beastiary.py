@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup as bs
 from numpy.random import choice
 from treasure import treasure_calculator
 import time
-import pprint
+from yapf.yapflib.yapf_api import FormatFile, FormatCode
 import re
 from tqdm import tqdm
 from beast_list import Beasts
@@ -176,6 +176,45 @@ def print_monster(picked_monster):
     html += '</tr></table></body></html>'
     with open('beasts/' + name + '.html', 'w') as outf:
         outf.write(bs(html, 'html5lib').prettify())
+
+
+def print_treasure(picked_monster):
+    if 'beasts' not in os.listdir(os.getcwd()):
+        try:
+            os.mkdir(os.getcwd() + '/beasts')
+        except OSError:
+            print("Beasts directory creation failed")
+
+    name = picked_monster[0]
+    monster = picked_monster[1]
+
+    html = '<!DOCTYPE html><html><head><meta content="width=device-width" name="viewport"/><title></title><style>' + \
+           'body {max-width:800px;margin-left:auto;margin-right:auto;padding-left:5px;padding-right:5px;} html' + \
+           '{font-family:Arial;}h1, h2 {color:black;text-align:center;} .center{text-align:center;} .bold' + \
+           '{font-weight:bold;}.emp{font-style:italic;} table{border:1px solid black;border-spacing:0px;}' + \
+           'table tr th {background-color:gray;color:white;padding:5px;}table tr td {margin:0px;padding:5px;}' + \
+           '.text-xs{font-size:12px;}.text-sm{font-size:14px;}.text-md{font-size:18px;}.text-lg{font-size:24px;}' + \
+           '.text-xl{font-size:32px;}.col-1-3{width:33.3%;float: left;}.col-2-3{width:50%;float:left;}' + \
+           '.col-3-3{width:100%;float:left;}.col-1-2{width:50%;float:left;}.col-2-2{width:100%;float:left;}' + \
+           '.col-1-4{width:25%;float:left;}.col-2-4{width:33.3%;float:left;}.col-3-4{width:50%;float:left;}' + \
+           '.col-4-4{width:100%;float:left;}</style><style type="text/css">.inventory-table td{border-bottom:' + \
+           '1px solid black;}.wrapper-box{width:100%;border:2px solid black;padding:5px;}</style></head>' + \
+           '<script>function show_hide(ident){\nvar a = document.getElementById(ident);\nif (a.style.display ===' + \
+           "'none'){\na.style.display = 'block';} else {a.style.display = 'none';}}</script>" + \
+           '<body><table class="inventory-table" style="width:100%;"><tbody><tr><th style="text-align:left;">Item'\
+           '</th><th style="text-align:left;">Cost</th><th style="text-align:left;">Rarity</th></tr>'
+
+    treasure = treasure_calculator(monster['Treasure'], monster['Type'], monster['CR'])
+    for t in treasure:
+        html += str(t)
+    html += '</tr></table></body></html>'
+    with open('beasts/' + name + ' Treasure.html', 'w') as outf:
+        outf.write(bs(html, 'html5lib').prettify())
+
+
+def add_to_beastiary(dict_name, dict_keys):
+    Beasts[dict_name] = dict_keys
+    open('beast_list.py', 'w').write(FormatCode(str(Beasts)))
 
 
 if __name__ == '__main__':
