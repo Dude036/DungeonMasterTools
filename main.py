@@ -2,6 +2,7 @@
 import town_generator
 from PC import PC
 from os import linesep
+from re import match
 
 """
 @TODO:
@@ -34,26 +35,98 @@ def make_sample():
         # [# of Stores, Quantity High, Quantity Low, Inflation]
         outf.write("1 15 25 1.0" + linesep)
         # Write Tavern Shop
-        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
-        outf.write("1 0 3 10 15 1.0" + linesep)
+        # [# of Stores, Rooms, Food Quantity Low, Food Quantity High, Inflation]
+        outf.write("1 3 10 15 1.0" + linesep)
         # Write Jewel Shop
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
         outf.write("1 0 5 15 30 1.0" + linesep)
         # Write Food Shop
-        # [# of Stores, Rarity, Quantity Low, Quantity High, Inflation]
-        outf.write("1 0 15 30 1.0" + linesep)
+        # [# of Stores, Quantity Low, Quantity High, Inflation]
+        outf.write("1 15 30 1.0" + linesep)
         # Write General Shop
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Trinkets, Inflation]
         outf.write("1 0 1 20 30 1 1.0" + linesep)
         # Write Brothel
-        # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
-        outf.write("1 0 9 5 10 1" + linesep)
+        # [# of Stores, Quantity Low, Quantity High, Inflation]
+        outf.write("1 5 10 1.0" + linesep)
         # Write Gunsmith
         # [# of Stores, Rarity Low, Rarity High, Quantity Low, Quantity High, Inflation]
-        outf.write("1 0 5 50 100 1" + linesep)
+        outf.write("1 0 5 15 30 1.0" + linesep)
         # Write Quest board
         # [# of Stores, Level Low, Level High, Quantity]
         outf.write("1 0 5 20")
+
+
+def make_sample_input():
+    store_dict = {'Weapon': r'(\d+) ([01234]) ([01234]) (\d+) (\d+) ([\d.]+)',
+                  'Armor': r'(\d+) ([01234]) ([01234]) (\d+) (\d+) ([\d.]+)',
+                  'Potion': r'(\d+) (\d) (\d) (\d+) (\d+) ([\d.]+)',
+                  'Enchantment': r'(\d+) (\d) (\d) (\d+) (\d+) ([\d.]+)',
+                  'Enchanter': r'(\d+) (\d) (\d) (\d+) (\d+) ([\d.]+)',
+                  'Book': r'(\d+) (\d+) (\d+) ([\d.]+)',
+                  'Tavern': r'(\d+) (\d+) (\d+) ([\d.]+)',
+                  'Jeweller': r'(\d+) (\d) (\d) (\d+) (\d+) ([\d.]+)',
+                  'Restaurant': r'(\d+) (\d+) (\d+) ([\d.]+)',
+                  'General': r'(\d+) ([0123]) ([0123]) (\d+) (\d+) \d+ ([\d.]+)',
+                  'Brothel': r'(\d+) (\d+) (\d+) ([\d.]+)',
+                  'Gunsmith': r'(\d+) ([01234]) ([01234]) (\d+) (\d+) ([\d.]+)',
+                  'Quest Board': r'(\d+) \d+ \d+ \d+'}
+
+    with open('generate.txt', 'w') as outf:
+        for store in list(store_dict.keys()):
+            invalid_input = True
+            user_input = ''
+            while invalid_input:
+                user_input = input("Please input information for " + store + ' store:\n')
+                parsed = match(store_dict[store], user_input)
+                print([int(p) for p in parsed.groups()])
+                if parsed is None:
+                    print("Invalid input for", store, '. Please see README for more info.')
+                    continue
+                elif store == 'Quest Board' and int(parsed.group(2)) > 20 and int(parsed.group(3)) > 20:
+                    print("Too large of level for", store, '. Please see README for more info.')
+                    continue
+                elif store in ['Weapon', 'Armor', 'Potion', 'Enchantment', 'Enchanter', 'Jeweller', 'General',
+                               'Gunsmith', 'Quest Board'] and int(parsed.group(2)) > int(parsed.group(3)):
+                    print("Rarity lower bound higher than upper bound.")
+                    continue
+                elif store in ['Weapon', 'Armor', 'Potion', 'Enchantment', 'Enchanter', 'Jeweller', 'General',
+                               'Gunsmith'] and int(parsed.group(4)) > int(parsed.group(5)):
+                    print("Quantity lower bound higher than upper bound.")
+                    continue
+                elif store in ['Weapon', 'Armor', 'Potion', 'Enchantment', 'Enchanter', 'Jeweller', 'General',
+                               'Gunsmith'] and int(parsed.group(4)) > int(parsed.group(5)):
+                    print("Quantity lower bound higher than upper bound.")
+                    continue
+                elif store in ['Weapon', 'Armor', 'Potion', 'Enchantment', 'Enchanter', 'Jeweller', 'General',
+                               'Gunsmith'] and eval(parsed.group(6)) <= 0:
+                    print("Inflation rate cannot be below 0.0.")
+                    continue
+                elif store == 'Books' and eval(parsed.group(4)) <= 0:
+                    print("Inflation rate cannot be below 0.0.")
+                    continue
+                elif store == 'Tavern' and eval(parsed.group(4)) <= 0:
+                    print("Inflation rate cannot be below 0.0.")
+                    continue
+                elif store == 'Restaurant' and eval(parsed.group(4)) <= 0:
+                    print("Inflation rate cannot be below 0.0.")
+                    continue
+                elif store == 'Brothel' and eval(parsed.group(4)) <= 0:
+                    print("Inflation rate cannot be below 0.0.")
+                    continue
+                else:
+                    invalid_input = False
+            outf.write(user_input + '\n')
+
+        user_input = ''
+        while user_input == '':
+            print()
+            user_input = input("Add characters. Type their title here. If you want them to be and NPC with items " + \
+                               "and stats, preface with an '!'.")
+            if user_input == "":
+                break
+            else:
+                outf.write(user_input + '\n')
 
 
 if __name__ == '__main__':
@@ -105,6 +178,7 @@ if __name__ == '__main__':
 
         Positions = []
         NPC = []
+
         for thing in range(13, len(content)):
             title = content[thing].strip()
             if title[0] == '!':

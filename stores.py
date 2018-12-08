@@ -1,5 +1,4 @@
 from numpy.random import randint, choice, random_sample
-import json
 from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jeweller, Blacksmith, GeneralStore, Weapons,\
     Jewelling, Brothel, Gunsmithing
 from variance import normalize_dict
@@ -1229,6 +1228,7 @@ odd_price = {
     'Wish': 7.5359477124183005
 }
 
+
 def find_spell_level(spell):
     l = None
     a = [level_0, level_1, level_2, level_3, level_4, level_5, level_6, level_7, level_8, level_9]
@@ -1237,11 +1237,14 @@ def find_spell_level(spell):
             l = level
     return l
 
+
 def find_spell_details(spell):
     if spell in list(MasterSpells.keys()):
-        return MasterSpells[spell]['link'], MasterSpells[spell]['school'], MasterSpells[spell]['casting_time'], MasterSpells[spell]['components'], MasterSpells[spell]['range'], MasterSpells[spell]['description'],
+        return MasterSpells[spell]['link'], MasterSpells[spell]['school'], MasterSpells[spell]['casting_time'], \
+               MasterSpells[spell]['components'], MasterSpells[spell]['range'], MasterSpells[spell]['description'],
     else:
         return None
+
 
 def find_spell_description(spell):
     if spell in list(MasterSpells.keys()):
@@ -1249,11 +1252,13 @@ def find_spell_description(spell):
     else:
         return None
 
+
 def find_spell_link(spell):
     if spell in list(MasterSpells.keys()):
         return MasterSpells[spell]['link']
     else:
         return None
+
 
 def find_spell_range(spell):
     if spell in list(MasterSpells.keys()):
@@ -1261,11 +1266,13 @@ def find_spell_range(spell):
     else:
         return None
 
+
 def find_spell_components(spell):
     if spell in list(MasterSpells.keys()):
         return MasterSpells[spell]['components']
     else:
         return None
+
 
 def determine_cost(c):
     s = ""
@@ -1282,6 +1289,7 @@ def determine_cost(c):
     if len(s) == 0:
         s = "1 cp"
     return s
+
 
 def determine_rarity(q):
     if q[0] == q[1]:
@@ -1762,6 +1770,8 @@ class Firearm(object):
     def __init__(self, rarity, iClass=None, iName=None):
         if iClass is None or iClass not in list(self.possible.keys()):
             self.Class = choice(list(self.possible.keys()))
+        if rarity > 4:
+            rarity %= 4
         self.Rarity = rarity
         self.Crit = 'x' + str(randint(2, 5))
         self.__choose_metal()
@@ -2329,12 +2339,11 @@ class Inn(object):
     Edibles = Stock = []
     Cost = Inflation = Quality = 0
 
-    def __init__(self, keeper, name, service, qual, rooms, quan):
+    def __init__(self, keeper, name, service, rooms, quan):
         self.Shopkeeper = keeper
         self.Store_name = name
         self.Inflation = service
         self.Stock = []
-        self.Quality = qual
 
         self.__fill_rooms(rooms)
         self.__fill_stock(quan)
@@ -2345,7 +2354,6 @@ class Inn(object):
             r = Room(n, self.Quality)
             r.Cost *= self.Inflation
             self.Rooms.append(r)
-
 
     def __fill_stock(self, quan):
         # Add room Price
@@ -2870,7 +2878,8 @@ class Whore(object):
     Person = None
     Cost = 0
 
-    def __init__(self, vary=None, cost=-1):
+    def __init__(self, useless):
+        # Even though this has an argument, It needs it, but it's useless
         self.Person = create_person(None)
         self.Cost = random_sample() + .1
 
@@ -2955,13 +2964,13 @@ def create_potion_shop(owner, rarity, quan, inflate=1):
     return a
 
 
-def create_tavern(owner, qual, rooms, quan, inflate=1):
+def create_tavern(owner, rooms, quan, inflate=1):
     # def __init__(self, keeper, name, service, qual, rooms, quan):
     name = str(Tavern()) + " (Inn)"
     if isinstance(inflate, float):
-        a = Inn(owner, name, inflate, qual, rooms, quan)
+        a = Inn(owner, name, inflate, rooms, quan)
     else:
-        a = Inn(owner, name, (sum(random_sample(inflate)) / inflate), qual, rooms, quan)
+        a = Inn(owner, name, (sum(random_sample(inflate)) / inflate), rooms, quan)
     return a
 
 
@@ -2975,17 +2984,19 @@ def create_jewel_shop(owner, rarity, quan, inflate=1):
     return a
 
 
-def create_restaurant(owner, rarity, quan, inflate=1):
+def create_restaurant(owner, quan, inflate=1):
     name = str(Restaurant()) + " (Restaurant)"
     if isinstance(inflate, float):
-        a = Inn(owner, name, inflate, rarity, 0, quan)
+        a = Inn(owner, name, inflate, 0, quan)
     else:
-        a = Inn(owner, name, (sum(random_sample(inflate)) / inflate), rarity, 0, quan)
+        a = Inn(owner, name, (sum(random_sample(inflate)) / inflate), 0, quan)
     return a
 
 
 def create_general_store(owner, rarity, quan, trink, inflate=1):
     name = str(GeneralStore()) + " (General)"
+    if trink < 0:
+        trink = 0
     if isinstance(inflate, float):
         a = Store(owner, name, inflate, rarity)
     else:
@@ -2996,12 +3007,12 @@ def create_general_store(owner, rarity, quan, trink, inflate=1):
     return a
 
 
-def create_brothel(owner, rarity, quan, inflate=1):
+def create_brothel(owner, quan, inflate=1):
     name = str(Brothel()) + " (Brothel)"
     if isinstance(inflate, float):
-        a = Store(owner, name, inflate, rarity)
+        a = Store(owner, name, inflate, [0, 0])
     else:
-        a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, rarity)
+        a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5, [0, 0])
     a.fill_store(Whore, quan)
     return a
 

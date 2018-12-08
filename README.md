@@ -30,17 +30,17 @@ Generate.txt has all the information about the town. Every store has some unique
     5: Write Enchanter Shop(s) 
         [# of Stores (0 to infinite), Rarity Low (0 to 9), Rarity High (Rarity Low+1 to 9), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
     6: Write Book Shop(s) 
-        [# of Stores (0 to infinite), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
+        [# of Stores (0 to infinite), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
     7: Write Tavern Shop(s) 
-        [# of Stores (0 to infinite), Rarity (0 to infinite), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
+        [# of Stores (0 to infinite), Rooms (0 to infinite), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
     8: Write Jewel Shop(s) 
         [# of Stores (0 to infinite), Rarity Low (0 to 5), Rarity High (Rarity Low+1 to 5), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite, Inflation (0.00 to infinite))]
     9: Write Food Shop(s) 
-        [# of Stores (0 to infinite), Rarity (0 to infinite), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
+        [# of Stores (0 to infinite), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
     10: Write General Shop(s) 
         [# of Stores (0 to infinite), Rarity Low (0 to 3), Rarity High (Rarity Low+1 to 3), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Trinkets (0 to infinite), Inflation (0.00 to infinite)]
     11: Write Brothel(s)
-        [# of Stores (0 to infinite), Rarity Low (0 to 3), Rarity High (Rarity Low+1 to 3), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
+        [# of Stores (0 to infinite), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
     12: Write Gunsmith(s)
         [# of Stores (0 to infinite), Rarity Low (0 to 3), Rarity High (Rarity Low+1 to 3), Quantity Low (0 to infinite), Quantity High (Quantity Low+1 to infinite), Inflation (0.00 to infinite)]
     13: Write Questboard(s)

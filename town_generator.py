@@ -109,8 +109,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
         write_store(store, False)
         
     for _ in range(t[0]):
-        # [Quality, Rooms, Quantity Low, Quantity High]
-        store = create_tavern(create_person(create_variance()), t[1], t[2], randint(t[3], t[4]), inflate=t[5])
+        store = create_tavern(create_person(create_variance()), t[1], randint(t[2], t[3]), inflate=t[4])
         write_store(store, False)
         
     for _ in range(j[0]):
@@ -118,7 +117,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
         write_store(store)
         
     for _ in range(f[0]):
-        store = create_restaurant(create_person(create_variance()), f[1], randint(f[2], f[3]), inflate=f[4])
+        store = create_restaurant(create_person(create_variance()), randint(f[1], f[2]), inflate=f[3])
         write_store(store)
 
     for _ in range(g[0]):
@@ -126,7 +125,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
         write_store(store)
 
     for _ in range(br[0]):
-        store = create_brothel(create_person(create_variance()), [br[1], br[2]], randint(br[3], br[4]), inflate=br[5])
+        store = create_brothel(create_person(create_variance()), randint(br[1], br[2]), inflate=br[3])
         write_store(store)
 
     for _ in range(gu[0]):
