@@ -3,11 +3,11 @@
 from bs4 import BeautifulSoup as bs
 from numpy.random import choice
 from treasure import treasure_calculator
-import time
-from yapf.yapflib.yapf_api import FormatFile, FormatCode
+from yapf.yapflib.yapf_api import FormatCode
 import re
 from tqdm import tqdm
 from beast_list import Beasts
+from numpy.random import randint
 import os
 
 Levels = {
@@ -73,6 +73,21 @@ def pick_monster(name='', cr=-1.0):
     return name, monster
 
 
+def roll_hp(string):
+    if '+' in string:
+        m = re.match(r'(\d+)d(\d+)\+(\d+)', string)
+    elif '-' in string:
+        m = re.match(r'(\d+)d(\d+)\-(\d+)', string)
+    else:
+        m = re.match(r'(\d+)d(\d+)', string)
+    total = 0
+    for _ in range(int(m.group(1))):
+        total += randint(int(m.group(2))) + 1
+    if len(m.groups()) == 3:
+        total += int(m.group(3))
+    return string
+
+
 def print_monster(picked_monster):
     if 'beasts' not in os.listdir(os.getcwd()):
         try:
@@ -117,11 +132,11 @@ def print_monster(picked_monster):
     for line in monster['Description'].split('.'):
         html += '<p>' + line + '</p>'
     html += '<div><ul style="column-count: 2; list-style-type: none;margin: 5px"><li style="padding-top: 6px;' + \
-            'padding-bottom: 6px;"><span style="font-weight:bold;">HP:</span>' + monster['HP'] + ' ' + monster['HD'] + \
-            '</li><li style="padding-top: 6px;padding-bottom: 6px;"><span style="font-weight:bold;">Speed:</span>' + \
-            monster['Speed'] + '</li><li style="padding-top: 6px;padding-bottom: 6px;"><span style="font-weight:bold' +\
-            ';">Size:</span>' + monster['Size'] + '</li><li><table><th>AC:</th><td>' + armor.group(1) + \
-            '</td><th>Touch:</th><td>' + armor.group(2) + '</td><th>Flat:</th><td>' + armor.group(3) + \
+            'padding-bottom: 6px;"><span style="font-weight:bold;">HP:</span>' + roll_hp(monster['HD']) + ' (' + \
+            monster['HD'] + ')</li><li style="padding-top: 6px;padding-bottom: 6px;"><span style="font-weight:' + \
+            'bold;">Speed:</span>' + monster['Speed'] + '</li><li style="padding-top: 6px;padding-bottom: 6px;">' + \
+            '<span style="font-weight:bold;">Size:</span>' + monster['Size'] + '</li><li><table><th>AC:</th><td>' + \
+            armor.group(1) + '</td><th>Touch:</th><td>' + armor.group(2) + '</td><th>Flat:</th><td>' + armor.group(3) +\
             '</td></table></li><li><table><th>Attack:' + '</th><td>' + monster['BaseAtk'] + '</td><th>CMB:</th><td>' + \
             monster['CMB'] + '</td><th>CMD:</th><td>' + monster['CMD'] + '</td></table></li><li><table><th>Fort:' + \
             '</th><td>' + saves.group(1) + '</td><th>Ref:</th><td>' + saves.group(2) + '</td><th>Will:</th><td>' + \
@@ -222,11 +237,20 @@ def print_treasure(picked_monster):
 
 
 def add_to_beastiary(dict_name, dict_keys):
+    global Beasts
     Beasts[dict_name] = dict_keys
-    open('beast_list.py', 'w').write(FormatCode(str(Beasts)))
+    open('beast_list.py', 'w').write(FormatCode("#!/usr/bin/python3\n# coding: utf-8\nBeasts=" + str(Beasts))[0])
+
+
+def beastiary_cleaning():
+    global Beasts
+    # Edit the Deastiary
+    open('new_beast_list.py', 'w').write(FormatCode("#!/usr/bin/python3\n# coding: utf-8\nBeasts=" + str(Beasts))[0])
 
 
 if __name__ == '__main__':
+    import time
+
     print('########################')
     print('# Running all monsters #')
     print('########################')
