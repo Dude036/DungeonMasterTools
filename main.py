@@ -8,9 +8,6 @@ from re import match
 1: UNIT TESTS!
 2: Try sorting items in stores based on rarity.
 3: Character creator with actual classes
-4: Add Beasts to Beast list
-5: Just treasure printing
-6. NPC Creation should be the same on the Quest board as the regular town file
 """
 
 
