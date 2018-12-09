@@ -11,6 +11,7 @@ from re import match
 3: Character creator with actual classes
 4: Add Beasts to Beast list
 5: Just treasure printing
+6. NPC Creation should be the same on the Quest board as the regular town file
 """
 
 

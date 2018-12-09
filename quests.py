@@ -2,7 +2,7 @@
 
 from beast_list import Beasts
 from trinkets import Trinkets
-from character import create_person
+from character import create_person, Character
 from numpy.random import randint, choice
 from traits import quest_location
 from treasure import treasure_samples, Campaign_Speed
@@ -51,22 +51,21 @@ class QuestBoard(object):
                 q = Quest(num)
                 self.Board.append(q)
 
-                if 'NPC' in q.Type:
-                    name = q.Type.split(' ')[1:]
-                    print(' '.join(name), ':: NPC :: created for', q.Title)
+                if isinstance(q.Other, Character):
+                    # No NPC allocated, create a monster
+                    print(q.Other.Name, ':: NPC :: created for', q.Title)
                     questHTML += '<table class="wrapper-box"><tr><td><span class="text-md">' + q.Title + ': ' + \
-                                 str(PC(newName=' '.join(name))) + '</div></td></tr></table><br />'
-                elif 'Monster' in q.Type:
-                    if '"' in q.Type:
-                        monster_name = q.Type.split('"')[1]
-                        print_monster(pick_monster(name=monster_name))
-                        questHTML += '<iframe src="beasts/' + monster_name + '.html" height="500" style="padding: 10px"></iframe><br>'
-                        print(monster_name, ":: Specific Monster :: created for", q.Title)
-                    else:
-                        m = pick_monster(cr=str(q.Level) + '.00')
-                        print_monster(m)
-                        questHTML += '<iframe src="beasts/' + m[0] + '.html" height="500" style="padding: 10px"></iframe><br />'
-                        print(m[0], ":: Monster :: created for", q.Title)
+                                 str(PC(q.Other)) + '</div></td></tr></table><br />'
+                elif q.Other != 'Monster':
+                    # Specific Monster
+                    print_monster(pick_monster(name=q.Other))
+                    questHTML += '<iframe src="beasts/' + q.Other + '.html" height="500" style="padding: 10px"></iframe><br>'
+                    print(q.Other, ":: Specific Monster :: created for", q.Title)
+                else:
+                    m = pick_monster(cr=str(q.Level) + '.00')
+                    print_monster(m)
+                    questHTML += '<iframe src="beasts/' + m[0] + '.html" height="500" style="padding: 10px"></iframe><br />'
+                    print(m[0], ":: Monster :: created for", q.Title)
             questHTML += '</body></html>'
             outf.write(bs(questHTML, 'html5lib').prettify())
 
@@ -79,9 +78,9 @@ class QuestBoard(object):
 
 
 class Quest(object):
-    Title = Hook = Type = ''
+    Title = Hook = ''
     Reward = Level = 0
-    Reporter = None
+    Reporter = Other = None
 
     def __init__(self, level):
         self.Level = int(level)
@@ -106,7 +105,7 @@ class Quest(object):
                        'this morning', 'last evening', 'last morning', 'a week ago', 'two days ago',
                        'three days ago', 'four days ago', 'five days ago', 'six days ago', 'recently',
                        'very recently', ])
-        criminal = create_person(None)
+        self.Other = create_person(None)
         location = quest_location[randint(len(quest_location))].lower()
         r = randint(0, 5)
         if r == 0:
@@ -122,42 +121,36 @@ class Quest(object):
         if r == 1:
             self.Title = 'Stolen Item! HELP!'
             item = choice(Trinkets)
-            self.Type += 'NPC ' + criminal.Name
             self.Hook = 'A trinket of mine was rudely taken from me ' + when + '. I reported it to the police, but ' + \
-                        'no effort to capture them has been made! I believe the crook to be ' + criminal.Name + ' (' + \
-                        criminal.Gender + ' / ' + criminal.Race + ' / ' + str(criminal.Age) + ' years old)\nIf you ' + \
-                        'apprehend them, see ' + self.Reporter.Name + ' ' + location + '. The trinket is "' + item + \
-                        '".'
+                        'no effort to capture them has been made! I believe the crook to be ' + self.Other.Name + ' (' + \
+                        self.Other.Gender + ' / ' + self.Other.Race + ' / ' + str(self.Other.Age) + ' years old)\n' + \
+                        'If you apprehend them, see ' + self.Reporter.Name + ' ' + location + '. The trinket is "' + \
+                        item + '".'
         elif r == 2:
-            missing = create_person(None)
-            self.Title = 'Missing Person: ' + missing.Name
-            self.Type += 'NPC ' + criminal.Name
-            self.Hook = 'NOTICE: ' + missing.Name + ' has gone missing. They were last seen with ' + criminal.Name + \
-                        ' (' + criminal.Gender + ' / ' + criminal.Race + ' / ' + str(criminal.Age) + ' years old)' + \
-                        '. If you have any information, please contact the authorities.\nRace: ' + missing.Race + \
-                        '\nAge: ' + str(missing.Age) + '\nAppearance: ' + missing.Appearance
+            self.Title = 'Missing Person: ' + self.Reporter.Name
+            self.Hook = 'NOTICE: ' + self.Reporter.Name + ' has gone missing. They were last seen with ' + \
+                        self.Other.Name + ' (' + self.Other.Gender + ' / ' + self.Other.Race + ' / ' + \
+                        str(self.Other.Age) + ' years old)' + '. If you have any information, please contact the' + \
+                        ' authorities.\nRace: ' + self.Reporter.Race + '\nAge: ' + str(self.Reporter.Age) + \
+                        '\nAppearance: ' + self.Reporter.Appearance
         elif r == 3:
-            missing = create_person(None)
-            self.Title = 'Kidnapped Person: ' + missing.Name
-            self.Type += 'NPC ' + criminal.Name
-            self.Hook = 'NOTICE: ' + missing.Name + ' has been kidnapped. They were last seen with ' + criminal.Name + \
-                        ' ( ' + criminal.Gender + ' / ' + criminal.Race + ' / ' + str(criminal.Age) + ' years old).' + \
-                        ' If you have any information, please contact the authorities.\nRace: ' + missing.Race + \
-                        '\nAge: ' + str(missing.Age) + '\nAppearance: ' + missing.Appearance
+            self.Title = 'Kidnapped Person: ' + self.Reporter.Name
+            self.Hook = 'NOTICE: ' + self.Reporter.Name + ' has been kidnapped. They were last seen with ' + \
+                        self.Other.Name + ' ( ' + self.Other.Gender + ' / ' + self.Other.Race + ' / ' + \
+                        str(self.Other.Age) + ' years old).' + ' If you have any information, please contact the' +\
+                        ' authorities.\nRace: ' + self.Reporter.Race + '\nAge: ' + str(self.Reporter.Age) + \
+                        '\nAppearance: ' + self.Reporter.Appearance
         elif r == 4:
-            missing = create_person(None)
-            time = str(randint(1, 13)) + ':' + str(choice(['00', 15, 30, 45]))
-            self.Title = 'Search Party: ' + criminal.Name
-            if randint(2) == 0:
-                self.Type += 'NPC ' + criminal.Name
-            self.Hook = 'NOTICE: ' + missing.Name + ' has gone missing. ' + criminal.Name + ' has organized a ' + \
-                        'searching party. If you have any information, report it to the authorities.\nIf you wish ' + \
-                        'to join the search party, please see ' + criminal.Name + ' ' + location + ' at ' + time + \
-                        '. \nRace: ' + missing.Race + '\nAge: ' + str(missing.Age) + '\nAppearance: ' + \
-                        missing.Appearance
+            timing = str(randint(1, 13)) + ':' + str(choice(['00', 15, 30, 45]))
+            self.Title = 'Search Party: ' + self.Other.Name
+            self.Hook = 'NOTICE: ' + self.Reporter.Name + ' has gone missing. ' + self.Other.Name + ' has organized' + \
+                        ' a searching party. If you have any information, report it to the authorities.\nIf you ' + \
+                        'wish to join the search party, please see ' + self.Other.Name + ' ' + location + ' at ' + \
+                        timing + '. \nRace: ' + self.Reporter.Race + '\nAge: ' + str(self.Reporter.Age) + \
+                        '\nAppearance: ' + self.Reporter.Appearance
 
     def __bounty(self):
-        # Kill a monster or a criminal
+        # Kill a Monster or a Criminal
         r = randint(0, 6)
         if r == 0:
             self.Title = 'Bounty: '
@@ -179,19 +172,17 @@ class Quest(object):
                 name = choice(list(Beasts.keys()))
                 if int(float(Beasts[name]['CR'])) == self.Level:
                     badCR = False
-            self.Title += name
-            self.Type += 'Monster "' + name + '"'
+            self.Other = name
             place = choice(['North', 'South', 'North-East', 'South-East', 'North-West', 'South-West', 'East', 'West'])
             self.Hook = 'A "' + name + '" has taken refuge ' + place + ' of town. They have cause great harm to us ' + \
                         'and we are looking for able bodies to help defeat this foe. If you are able, report to ' + \
                         self.Reporter.Name + ' for more information.'
         else:
             # Criminal
-            criminal = create_person(None)
-            self.Type += 'NPC ' + criminal.Name
-            self.Title += criminal.Name
-            self.Hook = 'Name: ' + criminal.Name + '\nGender: ' + criminal.Gender + '\nRace: ' + criminal.Race + \
-                        '\nAge: ' + str(criminal.Age) + ' years old\nAppearance: ' + criminal.Appearance + \
+            self.Other = create_person(None)
+            self.Title += self.Other.Name
+            self.Hook = 'Name: ' + self.Other.Name + '\nGender: ' + self.Other.Gender + '\nRace: ' + self.Other.Race + \
+                        '\nAge: ' + str(self.Other.Age) + ' years old\nAppearance: ' + self.Other.Appearance + \
                         '\nIf you have any information, please see ' + self.Reporter.Name
 
     def __escort(self):
@@ -211,16 +202,14 @@ class Quest(object):
         r = randint(0, 3)
         location = quest_location[randint(len(quest_location))].lower()
         destination = str(TownNamer())
+        self.Other = 'Monster'
         if r == 0:
-            self.Type += 'Monster'
-            self.Hook = 'I need some assistance taking some items to ' + destination + '. If you are available, please' + \
-                        ' see ' + self.Reporter.Name + ' ' + location + '.'
+            self.Hook = 'I need some assistance taking some items to ' + destination + '. If you are available, ' + \
+                        ' please see ' + self.Reporter.Name + ' ' + location + '.'
         elif r == 1:
-            self.Type += 'Monster'
             self.Hook = 'I need to get to ' + destination + " in a week. I'm nervous about travelling alone, and " + \
                         'need a companion for the journey. Please see ' + self.Reporter.Name + ' ' + location + '.'
         elif r == 2:
-            self.Type += 'Monster'
             items = choice(['Weapons', 'Armor', 'Scrolls', 'Equipment', 'Staffs', 'Supplies',  'Food', 'Wands',
                             'Slaves', 'Gems', 'Spell books', 'Books', 'Swords', 'Bows', 'Potions']).lower()
             self.Hook = "I'm transporting a shipment of " + items + ' to ' + destination + ', and need some help.' + \
@@ -254,11 +243,10 @@ class Quest(object):
             self.Title = 'Gladiator Guild'
 
         location = quest_location[randint(len(quest_location))].lower()
-        name = create_person(None).Name
-        self.Type += 'NPC ' + name
+        self.Other = create_person(None)
         self.Hook = "We're a new chapter of the " + self.Title + ' and we are looking for some new talent and faces' + \
                     '. If you are interested in joining, please see ' + self.Reporter.Name + ' ' + location + \
-                    '.\nFor more information, please see ' + name + '.'
+                    '.\nFor more information, please see ' + self.Other.Name + '.'
 
     def __str__(self):
         line = '<table class="wrapper-box"><tbody><tr><td><center class="bold text-md">' + self.Title + ' (Level ' + \

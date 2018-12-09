@@ -8,7 +8,7 @@ from pprint import pprint
 import re
 
 
-class PC(Character):
+class PC(object):
     """Characters are the centerpiece of stories"""
     Name = Gender = Race = Appearance = ''
     Traits = Story = []
@@ -17,21 +17,17 @@ class PC(Character):
     Stats = []
     Weapon = [None, None]
 
-    def __init__(self, newName=None):
-        super(Character, self).__init__()
-        c = create_person(None)
+    def __init__(self, new_char=None):
+        if new_char is None:
+            new_char = create_person(None)
 
         self.Level = randint(1, 21)
-        if newName is None:
-            self.Name = c.Name
-        else:
-            self.Name = newName
-        self.Race = c.Race
-        self.Gender = c.Gender
-        self.Age = c.Age
-        self.Appearance = c.Appearance
-        self.Traits = c.Traits
-        self.Story = c.Story
+        self.Race = new_char.Race
+        self.Gender = new_char.Gender
+        self.Age = new_char.Age
+        self.Appearance = new_char.Appearance
+        self.Traits = new_char.Traits
+        self.Story = new_char.Story
 
         self.roll()
 
