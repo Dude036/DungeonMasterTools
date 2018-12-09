@@ -5,6 +5,7 @@ d_name = ['Aasimer', 'Drow', 'Duergar', 'Dwarf', 'Elf', 'Goblin', 'Human', 'Half
 d_single = ['Catfolk', 'Fetchling', 'Gnome', 'Halfling', 'Hobgoblin', 'Ifrit', 'Kitsune', 'Lizardfolk', 'Nagaji', 'Oread', 'Ratfolk', 'Samsarans', 'Sylph', 'Undine', 'Kobold']
 d_premade = ['Dhampir', 'Gillman', 'Grippli', 'Merfolk', 'Strix', 'Vishkanya', 'Wayangs',]
 
+
 def default_name(race, gender='Male', doubled=True):
 	''' Races under this category
 	Aasimer, Drow, Duergar, Dwarf, Elf, Goblin, Human, Half-Orc, Half-Elf, Orc, Svirfneblin, Tian, Tengu, Tiefling
@@ -31,6 +32,7 @@ def default_name(race, gender='Male', doubled=True):
 	
 	return name.title()
 
+
 def default_single(race, gender='Male', doubled=True):
 	''' Races under this category
 	Catfolk, Fetchling, Gnome, Halfling, Hobgoblin, Ifrit, Kobold, Kitsune, Lizardfold, Nagaji, Oread, Ratfolk, Samsarans, Sylph, Undine, Vishkanya
@@ -49,11 +51,12 @@ def default_single(race, gender='Male', doubled=True):
 			name += race.f2[randint(len(race.f2))] + race.f3[randint(len(race.f3))]  + race.f4[randint(len(race.f4))]
 
 	return name.title()
-	
+
+
 def default_premade(race, gender='Male', single=False):
-	''' Races under this category
+	""" Races under this category
 	Dhampir, Gillman, Grippli, Merfolk, Strix, Wayangs
-	'''
+	"""
 	name = ''
 	if gender == 'Male':
 		name += race.m1[randint(len(race.m1))]
@@ -63,15 +66,18 @@ def default_premade(race, gender='Male', single=False):
 		name += ' ' + race.s1[randint(len(race.s1))]
 	return name.title()
 
+
 def changeling():
 	name = ''
 	name += Changeling.n1[randint(len(Changeling.n1))] + Changeling.n2[randint(len(Changeling.n2))] + Changeling.n3[randint(len(Changeling.n3))]
 	name += Changeling.n2[randint(len(Changeling.n2))] + Changeling.n3[randint(len(Changeling.n3))]
 	return name.title()
 
+
 def suli(gender='Male'):
 	s = default_name(Suli, gender) + ' the ' + Suli.t1[randint(len(Suli.t1))]
 	return s.title()
+
 
 def vanara(gender='Male'):
 	s = Vanara.n1[randint(len(Vanara.n1))]
@@ -80,6 +86,7 @@ def vanara(gender='Male'):
 	else:
 		s += Vanara.n3[randint(len(Vanara.n3))]
 	return s.title()
+
 
 def name_parser(race, gender):
 	name = ''
@@ -112,7 +119,7 @@ def name_parser(race, gender):
 			name = default_name(Tengu, gender)
 		elif race == 'Tiefling':
 			name = default_name(Tiefling, gender)
-			
+
 	elif race in d_single:
 		if race == 'Catfolk':
 			name = default_single(Catfolk, gender)
@@ -160,16 +167,17 @@ def name_parser(race, gender):
 			name = default_premade(Vishkanya, gender)
 		if race == 'Wayangs':
 			name = default_premade(Wayangs, gender, True)
-			
+
 	elif race == 'Changeling':
 		name = changeling()
 	elif race == 'Suli':
-		suli(gender)
+		name = suli(gender)
 	elif race == 'Vanara':
-		vanara(gender)
+		name = vanara(gender)
 	else:
 		name = None
 	return name
+
 
 if __name__ == '__main__':
 	print("\t Aasimer Male")
@@ -189,35 +197,35 @@ if __name__ == '__main__':
 	print('\t Changeling')
 	for _ in range(10):
 		print(changeling())
-	
+
 	print("\t Dhampir Male")
 	for _ in range(10):
 		print(default_premade(Dhampir))
 	print("\t Dhampir Female")
 	for _ in range(10):
 		print(default_premade(Dhampir, 'Female'))
-	
+
 	print("\t Drow Male")
 	for _ in range(10):
 		print(default_name(Drow))
 	print("\t Drow Female")
 	for _ in range(10):
 		print(default_name(Drow, 'Female'))
-		
+
 	print("\t Duergar Male")
 	for _ in range(10):
 		print(default_name(Duergar, 'Male', False))
 	print("\t Duergar Female")
 	for _ in range(10):
 		print(default_name(Duergar, 'Female', False))
-	
+
 	print("\t Dwarf Male")
 	for _ in range(10):
 		print(default_name(Dwarf))
 	print("\t Dwarf Female")
 	for _ in range(10):
 		print(default_name(Dwarf, 'Female'))
-		
+
 	print("\t Elf Male")
 	for _ in range(10):
 		print(default_name(Elf))
@@ -231,42 +239,42 @@ if __name__ == '__main__':
 	print("\t Fetchling Female")
 	for _ in range(10):
 		print(default_single(Fetchling, 'Female'))
-		
+
 	print("\t Gillman Male")
 	for _ in range(10):
 		print(default_premade(Gillman, 'Male', True))
 	print("\t Gillman Female")
 	for _ in range(10):
 		print(default_premade(Gillman, 'Female', True))
-		
+
 	print("\t Gnome Male")
 	for _ in range(10):
 		print(default_single(Gnome))
 	print("\t Gnome Female")
 	for _ in range(10):
 		print(default_single(Gnome, 'Female'))
-		
+
 	print("\t Goblin Male")
 	for _ in range(10):
 		print(default_name(Goblin, 'Male', False))
 	print("\t Goblin Female")
 	for _ in range(10):
 		print(default_name(Goblin, 'Female', False))
-		
+
 	print("\t Grippli Male")
 	for _ in range(10):
 		print(default_premade(Grippli, 'Male', True))
 	print("\t Grippli Female")
 	for _ in range(10):
 		print(default_premade(Grippli, 'Female', True))
-		
+
 	print("\t Halfling Male")
 	for _ in range(10):
 		print(default_single(Halfling, 'Male', False))
 	print("\t Halfling Female")
 	for _ in range(10):
 		print(default_single(Halfling, 'Female', False))
-		
+
 	print("\t Hobgoblin Male")
 	for _ in range(10):
 		print(default_single(Hobgoblin))
@@ -287,7 +295,7 @@ if __name__ == '__main__':
 	print("\t Half-Elf Female")
 	for _ in range(10):
 		print(default_name(HalfElf, 'Female'))
-		
+
 	print("\t Half-Orc Male")
 	for _ in range(10):
 		print(default_name(HalfOrc))
@@ -315,7 +323,7 @@ if __name__ == '__main__':
 	print("\t Lizardfolk Female")
 	for _ in range(10):
 		print(default_single(Lizardfolk, 'Female'))
-	
+
 	print("\t Merfolk Male")
 	for _ in range(10):
 		print(default_name(Merfolk, 'Male', True))
@@ -329,7 +337,7 @@ if __name__ == '__main__':
 	print("\t Nagaji Female")
 	for _ in range(10):
 		print(default_single(Nagaji, 'Female'))
-		
+
 	print("\t Orc Male")
 	for _ in range(10):
 		print(default_name(Orc))
@@ -343,89 +351,89 @@ if __name__ == '__main__':
 	print("\t Oread Female")
 	for _ in range(10):
 		print(default_single(Oread, 'Female'))
-	
+
 	print("\t Ratfolk Male")
 	for _ in range(10):
 		print(default_single(Ratfolk))
 	print("\t Ratfolk Female")
 	for _ in range(10):
 		print(default_single(Ratfolk, 'Female'))
-	
+
 	print("\t Samsarans")
 	for _ in range(10):
 		print(default_single(Samsarans))
-		
+
 	print("\t Strix Male")
 	for _ in range(10):
 		print(default_premade(Strix))
 	print("\t Strix Female")
 	for _ in range(10):
 		print(default_premade(Strix, 'Female'))
-	
+
 	print('\t Suli Male')
 	for _ in range(10):
 		print(suli())
-	
+
 	print('\t Suli Female')
 	for _ in range(10):
 		print(suli('Female'))
-		
+
 	print("\t Svirfneblin Male")
 	for _ in range(10):
 		print(default_name(Svirfneblin))
 	print("\t Svirfneblin Female")
 	for _ in range(10):
 		print(default_name(Svirfneblin, 'Female'))
-		
+
 	print("\t Sylph Male")
 	for _ in range(10):
 		print(default_single(Sylph))
 	print("\t Sylph Female")
 	for _ in range(10):
 		print(default_single(Sylph, 'Female'))
-	
+
 	print("\t Tian Male")
 	for _ in range(10):
 		print(default_name(Tian))
 	print("\t Tian Female")
 	for _ in range(10):
 		print(default_name(Tian, 'Female'))
-	
+
 	print("\t Tengu Male")
 	for _ in range(10):
 		print(default_name(Tengu))
 	print("\t Tengu Female")
 	for _ in range(10):
 		print(default_name(Tengu, 'Female'))
-	
+
 	print("\t Tiefling Male")
 	for _ in range(10):
 		print(default_name(Tiefling))
 	print("\t Tiefling Female")
 	for _ in range(10):
 		print(default_name(Tiefling, 'Female'))
-	
+
 	print("\t Undine Male")
 	for _ in range(10):
 		print(default_single(Undine))
 	print("\t Undine Female")
 	for _ in range(10):
 		print(default_single(Undine, 'Female'))
-	
+
 	print("\t Vanara")
 	for _ in range(10):
 			print(vanara())
 	print("\t Vanara")
 	for _ in range(10):
 			print(vanara('Female'))
-	
+
 	print("\t Vishkanya Male")
 	for _ in range(10):
 		print(default_premade(Vishkanya))
 	print("\t Vishkanya Female")
 	for _ in range(10):
 		print(default_premade(Vishkanya, 'Female'))
-		
+
 	print("\t Wayangs Male")
 	for _ in range(10):
 		print(default_premade(Wayangs, 'Male', True))
@@ -433,4 +441,3 @@ if __name__ == '__main__':
 	for _ in range(10):
 		print(default_premade(Wayangs, 'Female', True))
 
-	
