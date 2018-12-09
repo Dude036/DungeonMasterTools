@@ -6,31 +6,36 @@ import PC
 from character import create_person
 from variance import create_variance
 
-townHTML = """<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width" /><title></title>""" + \
-      """<style>body {max-width:800px;margin-left:auto;margin-right:auto;padding-left:5px;padding-right:5px;} html{font-family:Arial;}""" + \
-      """h1, h2 {color:black;text-align:center;} .center{text-align:center;} .bold{font-weight:bold;}""" + \
-      """.emp{font-style:italic;} table{border:1px solid black;border-spacing:0px;}""" + \
-      """table tr th {background-color:gray;color:white;padding:5px;}table tr td {margin:0px;padding:5px;}""" + \
-      """.text-xs{font-size:12px;}.text-sm{font-size:14px;}.text-md{font-size:18px;}""" + \
-      """.text-lg{font-size:24px;}.text-xl{font-size:32px;}.col-1-3{width:33.3%;float: left;}""" + \
-      """.col-2-3{width:50%;float:left;}.col-3-3{width:100%;float:left;}.col-1-2{width:50%;float:left;}""" + \
-      """.col-2-2{width:100%;float:left;}.col-1-4{width:25%;float:left;}.col-2-4{width:33.3%;float:left;}""" + \
-      """.col-3-4{width:50%;float:left;}.col-4-4{width:100%;float:left;}</style>""" + \
-      """<style type="text/css">.inventory-table td{border-bottom:1px solid black;}.wrapper-box{width:100%;border:2px solid black;padding:5px;}</style></head><body>""" + \
-      """<script>function show_hide(ident){\nvar a = document.getElementById(ident);\nif (a.style.display === 'none'){\n""" + \
-      """a.style.display = 'block';} else {a.style.display = 'none';}}</script>"""
+townHTML = '<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width" /><title></title><style>' \
+           'body{max-width:800px;margin-left:auto;margin-right:auto;padding-left:5px;padding-right:5px;} html{' \
+           'font-family:Arial;}h1, h2 {color:black;text-align:center;} .center{text-align:center;} .bold{font-weight:' \
+           'bold;}.emp{font-style:italic;} table{border:1px solid black;border-spacing:0px;}table tr th {' \
+           'background-color:gray;color:white;padding:5px;}table tr td {margin:0px;padding:5px;}.text-xs{font-size:' \
+           '12px;}.text-sm{font-size:14px;}.text-md{font-size:18px;}.text-lg{font-size:24px;}.text-xl{font-size:' \
+           '32px;}.col-1-3{width:33.3%;float: left;}.col-2-3{width:50%;float:left;}.col-3-3{width:100%;float:left;}' \
+           '.col-1-2{width:50%;float:left;}.col-2-2{width:100%;float:left;}.col-1-4{width:25%;float:left;}.col-2-4{' \
+           'width:33.3%;float:left;}.col-3-4{width:50%;float:left;}.col-4-4{width:100%;float:left;}</style><style ' \
+           'type="text/css">.inventory-table td{border-bottom:1px solid black;}.wrapper-box{width:100%;border:2px ' \
+           'solid black;padding:5px;}</style></head><body><script>function show_hide(ident){\nvar a = document.' \
+           'getElementById(ident);\nif (a.style.display === \'none\'){\na.style.display = \'block\';} else {' \
+           'a.style.display = \'none\';}}</script>'
 
 store_head = """<table class="wrapper-box" style="margin-bottom:60px;"><tr><td><span class="text-lg bold">"""
 notable_head = '<table class="wrapper-box"><tr><td><span class="bold text-md">'
-inventory_head_rarity = """</div><span class="text-lg bold">Inventory <span class="text-sm emp"> - Inflation:</span></span><table style="width:100%;" class="inventory-table"><tr><th style="text-align:left;">Item</th><th style="text-align:left;">Cost</th><th style="text-align:left;">Rarity</th></tr>"""
-inventory_head_type = """</div><span class="text-lg bold">Inventory <span class="text-sm emp"> - Inflation:</span></span><table style="width:100%;" class="inventory-table"><tr><th style="text-align:left;">Item</th><th style="text-align:left;">Cost</th><th style="text-align:left;">Type</th></tr>"""
+inventory_head_rarity = '</div><span class="text-lg bold">Inventory <span class="text-sm emp"> - Inflation:</span>' \
+                        '</span><table style="width:100%;" class="inventory-table"><tr><th style="text-align:left;">' \
+                        'Item</th><th style="text-align:left;">Cost</th><th style="text-align:left;">Rarity</th></tr>'
+inventory_head_type = '</div><span class="text-lg bold">Inventory <span class="text-sm emp"> - Inflation:</span>' \
+                      '</span><table style="width:100%;" class="inventory-table"><tr><th style="text-align:left;">' \
+                      'Item</th><th style="text-align:left;">Cost</th><th style="text-align:left;">Type</th></tr>'
 characters = []
 Notable = False
 
 
 def write_store(store, rarity=True):
     global townHTML
-    info = store_head + store.Store_name + """</span><br />\n<span class="bold text-md">Proprietor: </span><span class="text-md">"""
+    info = store_head + store.Store_name + """</span><br />\n<span class="bold text-md">Proprietor: </span><span' + \
+           ' class="text-md">"""
     info += str(store.Shopkeeper)
     if rarity:
         info += inventory_head_rarity
@@ -188,35 +193,35 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
 if __name__ == '__main__':
     townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
     for _ in range(4):
-        w = create_weapon_shop(
-            create_person(create_variance()), [0, 2],
-            randint(5, 15),
-            inflate=4)
-        write_store(w)
+        write_store(
+            create_weapon_shop(
+                create_person(create_variance()), [0, 2],
+                randint(5, 15),
+                inflate=4))
 
-        w = create_armor_shop(
-            create_person(create_variance()), [0, 2],
-            randint(5, 15),
-            inflate=4)
-        write_store(w)
+        write_store(
+            create_armor_shop(
+                create_person(create_variance()), [0, 2],
+                randint(5, 15),
+                inflate=4))
 
-        w = create_potion_shop(
-            create_person(create_variance()), [0, 9],
-            randint(5, 15),
-            inflate=4)
-        write_store(w)
+        write_store(
+            create_potion_shop(
+                create_person(create_variance()), [0, 9],
+                randint(5, 15),
+                inflate=4))
 
-        w = create_enchantment_shop(
-            create_person(create_variance()), [0, 9],
-            randint(15, 25),
-            inflate=4)
-        write_store(w)
+        write_store(
+            create_enchantment_shop(
+                create_person(create_variance()), [0, 9],
+                randint(15, 25),
+                inflate=4))
 
-        w = create_enchanter_shop(
-            create_person(create_variance()), [0, 9],
-            randint(15, 25),
-            inflate=4)
-        write_store(w)
+        write_store(
+            create_enchanter_shop(
+                create_person(create_variance()), [0, 9],
+                randint(15, 25),
+                inflate=4))
 
         write_store(
             create_book_shop(
@@ -226,24 +231,26 @@ if __name__ == '__main__':
                 randint(15, 25),
                 inflate=4), False)
 
-        w = create_tavern(create_person(create_variance()), 0, 3, 15)
-        write_store(w, False)
+        write_store(
+            create_tavern(create_person(create_variance()), 0, 3, 15), False)
 
-        w = create_jewel_shop(
-            create_person(create_variance()), [0, 5],
-            randint(15, 30),
-            inflate=4)
-        write_store(w)
+        write_store(
+            create_jewel_shop(
+                create_person(create_variance()), [0, 5],
+                randint(15, 30),
+                inflate=4))
 
-        w = create_restaurant(
-            create_person(create_variance()), 0, randint(15, 30), inflate=4)
-        write_store(w, False)
+        write_store(
+            create_restaurant(
+                create_person(create_variance()), randint(15, 30), inflate=4),
+            False)
 
-        w = create_general_store(
-            create_person(create_variance()), [0, 1],
-            randint(10, 20),
-            inflate=4)
-        write_store(w, False)
+        write_store(
+            create_general_store(
+                create_person(create_variance()), [0, 1],
+                randint(10, 20),
+                randint(1, 5),
+                inflate=4), False)
 
     townHTML += '<div style="page-break-after:always;"></div><h2 class="text-lg bold center">Notable People</h2>'
     for _ in range(1):
@@ -251,6 +258,8 @@ if __name__ == '__main__':
         write_people(create_person(create_variance()), 'Mayor')
         write_people(create_person(create_variance()), 'Captain of the Guard')
         write_people(create_person(create_variance()), 'Holy Person')
+        write_npc(create_person(create_variance()), 'Gladiator')
+        write_npc(create_person(create_variance()), 'Thief')
+        write_npc(create_person(create_variance()), 'Guard')
 
     write_html()
-    create_person(create_variance())
