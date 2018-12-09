@@ -7,10 +7,14 @@ from tqdm import tqdm
 import name_generator as ng
 from traits import *
 
-RACES = ['Dwarf', 'Elf', 'Gnome', 'Halfling', 'Human', 'Half-Elf', 'Half-Orc', 'Orc', 'Aasimer', 'Catfolk',
-         'Changeling', 'Dhampir', 'Drow', 'Duergar', 'Fetchling', 'Gillman', 'Goblin', 'Grippli', 'Hobgoblin', 'Ifrit',
-         'Kitsune', 'Kobold', 'Lizardfolk', 'Merfolk', 'Nagaji', 'Oread', 'Ratfolk', 'Samsarans', 'Strix', 'Suli',
-         'Svirfneblin', 'Sylph', 'Tengu', 'Tiefling', 'Undine', 'Vanara', 'Vishkanya', 'Wayangs']
+RACES = [
+    'Dwarf', 'Elf', 'Gnome', 'Halfling', 'Human', 'Half-Elf', 'Half-Orc',
+    'Orc', 'Aasimer', 'Catfolk', 'Changeling', 'Dhampir', 'Drow', 'Duergar',
+    'Fetchling', 'Gillman', 'Goblin', 'Grippli', 'Hobgoblin', 'Ifrit',
+    'Kitsune', 'Kobold', 'Lizardfolk', 'Merfolk', 'Nagaji', 'Oread', 'Ratfolk',
+    'Samsarans', 'Strix', 'Suli', 'Svirfneblin', 'Sylph', 'Tengu', 'Tiefling',
+    'Undine', 'Vanara', 'Vishkanya', 'Wayangs'
+]
 
 settings = None
 global_pop = None
@@ -27,7 +31,7 @@ def load_settings():
         s = setting.readlines()
         for x in range(len(s)):
             s[x] = s[x].rstrip('\n')
-        
+
         # Check for Illegal Settings
         if s[0] not in RACES:
             print("Invalid Base Race")
@@ -41,15 +45,15 @@ def load_settings():
         if int(s[3]) < 0 or int(s[3]) > 38:
             print("Invalid Exotic Race Count")
             exit()
-        
-        global settings    
+
+        global settings
         settings = {
             'Race': s[0],
             'Population': int(s[1]),
             'Variance': int(s[2]),
             'Exotic': int(s[3]),
         }
-        
+
     if settings is None:
         print("Unable to open settings")
         exit()
@@ -75,7 +79,7 @@ def create_variance():
     pop = {}
     if settings['Variance'] == 0:
         pop[settings['Race']] = 1.0
-    else: # Create Variance
+    else:  # Create Variance
         # Prime race
         base_pop = round(settings['Population'] / settings['Variance'])
         pop[settings['Race']] = base_pop
@@ -88,8 +92,8 @@ def create_variance():
 
     global_pop = normalize_dict(pop)
     return global_pop
-    
- 
+
+
 def create(l):
     v = np.array(l)
     if len(v.shape) < 2:
@@ -107,7 +111,7 @@ def from_file(file):
     l = []
     for line in content:
         l.append(line.split())
-    return create(l)  
+    return create(l)
 
 
 def normalize_dict(v):
@@ -115,7 +119,7 @@ def normalize_dict(v):
     total = sum(v.values())
     for x in v.keys():
         # print(x, v[x])
-        d[x] = v[x]/total
+        d[x] = v[x] / total
     return d
 
 
@@ -135,27 +139,26 @@ if __name__ == '__main__':
     test_var = normalize_dict(rv)
     custom_settings(BASE_RACES[randint(len(BASE_RACES))],\
         randint(1, 2147483647), randint(0, 100), randint(33))
-    
+
     d = normalize_dict(test_var)
     save(d, 'test.pickle')
     print(load('test.pickle'))
-    
+
     # from_file('test.txt')
-    
+
     load_settings()
     draw = create_variance()
     # draw = custom.normalize_dict(custom.from_file('Sanos.txt'))
-    
+
     population = list(draw.keys())
-    density = [0]*len(population)
-    
+    density = [0] * len(population)
+
     for c in tqdm(range(settings['Population'])):
         pick = choice(list(draw.keys()), 1, p=list(draw.values()))
         for x in range(len(population)):
             if population[x] == pick:
                 density[x] += 1
-    
+
     print("End Results")
     for x in range(len(population)):
         print(population[x], '-', density[x])
-

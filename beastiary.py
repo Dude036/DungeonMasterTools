@@ -83,10 +83,14 @@ def print_monster(picked_monster):
     name = picked_monster[0]
     monster = picked_monster[1]
 
-    abilities = re.match(r'Str\s+([\d\-]*),\s+Dex\s+([\d\-]*),\s+Con\s+([\d\-]*),\s+Int\s+([\d\-]*),\s+Wis\s+([\d\-]*),\s+Cha\s+([\d\-]*)',
-                         monster['AbilitiyScores'])
-    armor = re.match(r'(\-?\d+), touch (\-?\d+), flat-footed (\-?\d+)', monster['AC'])
-    saves = re.match(r'Fort ([+-]\d+[\S ]*), Ref ([+-]\d+[\S ]*), Will ([+-]\d+[\S ]*)', monster['Saves'])
+    abilities = re.match(
+        r'Str\s+([\d\-]*),\s+Dex\s+([\d\-]*),\s+Con\s+([\d\-]*),\s+Int\s+([\d\-]*),\s+Wis\s+([\d\-]*),\s+Cha\s+([\d\-]*)',
+        monster['AbilitiyScores'])
+    armor = re.match(r'(\-?\d+), touch (\-?\d+), flat-footed (\-?\d+)',
+                     monster['AC'])
+    saves = re.match(
+        r'Fort ([+-]\d+[\S ]*), Ref ([+-]\d+[\S ]*), Will ([+-]\d+[\S ]*)',
+        monster['Saves'])
     # -5 + int(n / 2)
     if saves is None or armor is None or abilities is None:
         print(name)
@@ -127,22 +131,24 @@ def print_monster(picked_monster):
     for a in range(6):
         if abilities is None:
             print(name)
-        if abilities.group(a+1) == '-':
+        if abilities.group(a + 1) == '-':
             add = '- (-)'
         else:
-            b = -5 + int(int(abilities.group(a+1)) / 2)
+            b = -5 + int(int(abilities.group(a + 1)) / 2)
             if b >= 0:
                 add = '+' + str(b)
             else:
                 add = str(b)
-        html += '<td style = "text-align: center;">' + str(abilities.group(a+1)) + ' (' + add + ')</td>'
+        html += '<td style = "text-align: center;">' + str(
+            abilities.group(a + 1)) + ' (' + add + ')</td>'
     html += '</tr></table><ul style="columns: 2;padding: 10px;">'
 
     total_weapons = 0
 
     if monster['Melee'] != '':
-        all_weapons = re.findall(r'(\d{0,3}\s*[\w ]+)[\s]+([\+\-\d\/]+)[\s]+\(([\w\d\-\+\\\/\.\,\'\; ]+)\)',
-                                 monster['Melee'])
+        all_weapons = re.findall(
+            r'(\d{0,3}\s*[\w ]+)[\s]+([\+\-\d\/]+)[\s]+\(([\w\d\-\+\\\/\.\,\'\; ]+)\)',
+            monster['Melee'])
         if all_weapons:
             for weapon in all_weapons:
                 html += '<table><td style="width: 50%"><span class="text-md">' + weapon[0].strip().title() + \
@@ -153,8 +159,9 @@ def print_monster(picked_monster):
             print(name, '\t', monster['Melee'])
 
     if monster['Ranged'] != '':
-        all_weapons = re.findall(r'(\d{0,3}\s*[\w ]+)[\s]+([\+\-\d\/]+)[\s]+\(([\w\d\-\+\\\/\.\,\'\; ]+)\)',
-                                 monster['Ranged'])
+        all_weapons = re.findall(
+            r'(\d{0,3}\s*[\w ]+)[\s]+([\+\-\d\/]+)[\s]+\(([\w\d\-\+\\\/\.\,\'\; ]+)\)',
+            monster['Ranged'])
         if all_weapons:
             for weapon in all_weapons:
                 html += '<table><td style="width: 50%"><span class="text-md">' + weapon[0].strip().title() + \
@@ -170,7 +177,8 @@ def print_monster(picked_monster):
     html += '</ul><p><strong>Treasure:</strong></p><table class="inventory-table" style="width:100%;"><tbody><tr>' + \
             '<th style="text-align:left;">Item</th><th style="text-align:left;">Cost</th><th style="text-align:left;">' + \
             'Rarity</th></tr>'
-    treasure = treasure_calculator(monster['Treasure'], monster['Type'], monster['CR'])
+    treasure = treasure_calculator(monster['Treasure'], monster['Type'],
+                                   monster['CR'])
     for t in treasure:
         html += str(t)
     html += '</tr></table></body></html>'
@@ -204,7 +212,8 @@ def print_treasure(picked_monster):
            '<body><table class="inventory-table" style="width:100%;"><tbody><tr><th style="text-align:left;">Item'\
            '</th><th style="text-align:left;">Cost</th><th style="text-align:left;">Rarity</th></tr>'
 
-    treasure = treasure_calculator(monster['Treasure'], monster['Type'], monster['CR'])
+    treasure = treasure_calculator(monster['Treasure'], monster['Type'],
+                                   monster['CR'])
     for t in treasure:
         html += str(t)
     html += '</tr></table></body></html>'

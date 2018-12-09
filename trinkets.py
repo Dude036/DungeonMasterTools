@@ -365,7 +365,8 @@ Trinkets = [
     'A hammer from a long gone blacksmith Sometimes at night you can see the hammer float and pound any weapons nearby',
     'A glass sphere containing ooze, still alive; it sometimes causes green acidic liquid to gush out of the sphere',
     'A crystal dagger, it is engraved with the symbol of a flaming skull with a rune covered ring around it',
-    'A wizard''s journal, recounting the tales of many arcane experiments',
+    'A wizard'
+    's journal, recounting the tales of many arcane experiments',
     'A red gemstone shaped like a heart',
     'A purple gemstone shaped like a cage',
     'A piece of coal vaguely shaped like a head',
@@ -375,34 +376,47 @@ Trinkets = [
     'An incredibly heavy bone with countless words inscribed into it',
     'A small jar that has a lid attached to it When the lid is closed, it turns its contents into fresh milk',
     'An incomplete book that adds to itself constantly',
-    'A merchant''s scale that is covered in blood stains',
+    'A merchant'
+    's scale that is covered in blood stains',
     'A hat that drenches the wearer in a viscous orange fluid',
     'A vial of blood from an unknown creature',
-    'A child''s severed finger, still fresh, and periodically twitching',
-    'A small painting of a skeleton in noble''s clothes',
-    'A ring carved from the sternum of a serial killer''s most beloved victim',
+    'A child'
+    's severed finger, still fresh, and periodically twitching',
+    'A small painting of a skeleton in noble'
+    's clothes',
+    'A ring carved from the sternum of a serial killer'
+    's most beloved victim',
     'The hilt of a broken greatsword When held with both hands, blood runs down along the remnants of the blade',
     'The left glove of a well-known murderer You periodically find yourself wearing it',
     'A small jar of sugar that makes all food and drink taste of salmon',
-    'A stuffed bear given to you by a child that wouldn''t speak',
+    'A stuffed bear given to you by a child that wouldn'
+    't speak',
     'A bundle of differently colored strands of hair',
     'A small box containing bloody teeth and fingernails The box has the word "Mother" inscribed on the top',
     'A tiny hat that makes you feel very confident whilst wearing it',
     'An old piece of parchment reading "Fredrick, Why?"',
-    'A rat''s skull with a beautiful, yet unidentifiable family crest carved into it',
-    'An apple with a single bite taken out of it It does not decay, it tastes terrible, and you can''t bring yourself to throw it out',
+    'A rat'
+    's skull with a beautiful, yet unidentifiable family crest carved into it',
+    'An apple with a single bite taken out of it It does not decay, it tastes terrible, and you can'
+    't bring yourself to throw it out',
     'A miniature painted wooden elephant with a single ivory tusk, the other one is snapped off with a jagged break',
-    'A magical tome When the spells inside are cast, the effect is never the same, are extremely stupid, and the spells cast aren''t what''s written in the tome',
+    'A magical tome When the spells inside are cast, the effect is never the same, are extremely stupid, and the spells cast aren'
+    't what'
+    's written in the tome',
     'A piece of frayed rope about a foot long The ends are slightly burned',
-    'A war veteran''s glass eye',
-    'A deformed human infant''s skull',
+    'A war veteran'
+    's glass eye',
+    'A deformed human infant'
+    's skull',
     'A ceramic jar containing rice grains When opened, a foul odor emanates from the jar',
     'A necklace adorned with a wooden medallion depicting a crudely-painted smiling face',
     'A sacrificial dagger that cuts into your palm whenever you grip the hilt',
-    'A terrible love novel written by a hack author For whatever reason, you love the story, even though you know it''s terrible',
+    'A terrible love novel written by a hack author For whatever reason, you love the story, even though you know it'
+    's terrible',
     'A whistle that causes all that hear it to feel incredibly nauseous',
     'An incredibly venomous snake that refuses to bite you, however, it likes to wrap itself around your arm',
-    'An ancient hero''s heart, bound in linen and kept in a clay jar',
+    'An ancient hero'
+    's heart, bound in linen and kept in a clay jar',
     'A ring which makes the wearer reek of rotting fish',
     'A pair of pants that supposedly belonged to a powerful necromancer',
     'A pewter spoon that was owned by a powerful, fat landlord',
@@ -947,636 +961,2501 @@ Trinkets = [
 
 Gear = {
     'C': {
-        'Abacus': {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Ale (gallon)': {'Base Price': 20, 'Class': 'Food & Drink & Lodging'},
-        'Artisan Glue (gallon)': {'Base Price': 200, 'Class': 'Tools & Skill Kits'},
-        'Artisan Scissors': {'Base Price': 100, 'Class': 'Tools & Skill Kits'},
-        "Artisan's Outfit": {'Base Price': 100, 'Class': 'Clothing'},
-        "Artisan's Tools": {'Base Price': 500, 'Class': 'Tools & Skill Kits'},
-        'Backpack (empty)': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Barrel (empty)': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Basket (empty)': {'Base Price': 40, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Bedroll': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Belt Pouch (empty)': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Birch Bark': {'Base Price': 1, 'Class': 'Food & Drink & Lodging'},
-        'Biscuit Bin': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Bit & Bridle': {'Base Price': 200, 'Class': 'Mounts & Related Gear'},
-        'Blanket (winter)': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Block and Tackle': {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Boiled Sweets': {'Base Price': 4, 'Class': 'Food & Drink & Lodging'},
-        'Bread (per loaf)': {'Base Price': 2, 'Class': 'Food & Drink & Lodging'},
-        'Broom': {'Base Price': 8, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Bucket (empty)': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Bullfrog (Pair)': {'Base Price': 1, 'Class': 'Commodities'},
-        'Bush (Small)': {'Base Price': 20, 'Class': 'Commodities'},
-        'Butter': {'Base Price': 5, 'Class': 'Food & Drink & Lodging'},
-        'Butter Churn': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Candle': {'Base Price': 1, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Candle Lantern': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Canvas (sq yd)': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Canvas Apron': {'Base Price': 30, 'Class': 'Clothing'},
-        'Cart': {'Base Price': 1500, 'Class': 'Transport'},
-        'Cat': {'Base Price': 1, 'Class': 'Commodities'},
-        'Chain Barding (Large)': {'Base Price': 60000, 'Class': 'Mounts & Related Gear'},
-        'Chain Barding (Medium)': {'Base Price': 30000, 'Class': 'Mounts & Related Gear'},
-        'Chalk (1 piece)': {'Base Price': 1, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Chamber Pot': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Chest (empty)': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Chimney Brush Kit': {'Base Price': 80, 'Class': 'Tools & Skill Kits'},
-        'Chunk of Meat': {'Base Price': 30, 'Class': 'Food & Drink & Lodging'},
-        'Cider Press': {'Base Price': 100, 'Class': 'Tools & Skill Kits'},
-        'Clay Jug': {'Base Price': 3, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Clay Smoking Pipe': {'Base Price': 2, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Cleric's Vestments": {'Base Price': 500, 'Class': 'Clothing'},
-        'Cloth Apron': {'Base Price': 10, 'Class': 'Clothing'},
-        'Coal (5 lb)': {'Base Price': 1, 'Class': 'Commodities'},
-        'Cold Weather Outfit': {'Base Price': 800, 'Class': 'Clothing'},
-        'Common Back Scratcher': {'Base Price': 3, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Bed Clothing': {'Base Price': 8, 'Class': 'Clothing'},
-        'Common Bowl': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Buckle': {'Base Price': 20, 'Class': 'Clothing'},
-        'Common Buttons (12)': {'Base Price': 5, 'Class': 'Clothing'},
-        'Common Casket': {'Base Price': 40, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Cloth Dye (10yd)': {'Base Price': 50, 'Class': 'Tools & Skill Kits'},
-        'Common Curtains': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Decorative Plant': {'Base Price': 2, 'Class': 'Commodities'},
-        'Common Dried Herbs': {'Base Price': 2, 'Class': 'Commodities'},
-        'Common Eating Utensils': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Eye Patch': {'Base Price': 2, 'Class': 'Tools & Skill Kits'},
-        'Common Flower Pot': {'Base Price': 2, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Foot Stool': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Glass Eye': {'Base Price': 5, 'Class': 'Tools & Skill Kits'},
-        'Common Gloves': {'Base Price': 4, 'Class': 'Clothing'},
-        'Common Hat/Headpiece': {'Base Price': 5, 'Class': 'Clothing'},
-        'Common Hide Blanket': {'Base Price': 300, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Nuts (in shell)': {'Base Price': 1, 'Class': 'Commodities'},
-        'Common Pelt (Medium)': {'Base Price': 500, 'Class': 'Commodities'},
-        'Common Pelt (Small)': {'Base Price': 50, 'Class': 'Commodities'},
-        'Common Pelt (Tiny)': {'Base Price': 8, 'Class': 'Commodities'},
-        'Common Pet Bird': {'Base Price': 2, 'Class': 'Commodities'},
-        'Common Pet Collar': {'Base Price': 5, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Pillow': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Rats (Pair)': {'Base Price': 1, 'Class': 'Commodities'},
-        'Common Serving Bowl': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Smoking Pipe': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Tablecloth': {'Base Price': 20, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Toy Doll': {'Base Price': 3, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Vase': {'Base Price': 5, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Vegetables': {'Base Price': 1, 'Class': 'Food & Drink & Lodging'},
-        'Common Wine (pitcher)': {'Base Price': 20, 'Class': 'Food & Drink & Lodging'},
-        'Common Wooden Toy': {'Base Price': 5, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common fresh Fruit': {'Base Price': 2, 'Class': 'Food & Drink & Lodging'},
-        "Cook's Knives (set)": {'Base Price': 800, 'Class': 'Tools & Skill Kits'},
-        'Cookie Cutter': {'Base Price': 5, 'Class': 'Tools & Skill Kits'},
-        'Cookies (dozen)': {'Base Price': 5, 'Class': 'Food & Drink & Lodging'},
-        'Cooking Stone': {'Base Price': 200, 'Class': 'Tools & Skill Kits'},
-        'Cooking Utensils (set)': {'Base Price': 50, 'Class': 'Tools & Skill Kits'},
-        'Copper/Stone Ash Bowl Common': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Cough Sweets': {'Base Price': 10, 'Class': 'Food & Drink & Lodging'},
-        'Covered Cart': {'Base Price': 2000, 'Class': 'Transport'},
-        'Crab Trap': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Craftsman's Paint (5 gal)": {'Base Price': 500, 'Class': 'Tools & Skill Kits'},
-        'Dandelion Wine (pitcher)': {'Base Price': 10, 'Class': 'Food & Drink & Lodging'},
-        'Domesticated Turkey': {'Base Price': 1, 'Class': 'Commodities'},
-        'Donkey or Mule': {'Base Price': 800, 'Class': 'Mounts & Related Gear'},
-        'Dozen Eggs': {'Base Price': 1, 'Class': 'Food & Drink & Lodging'},
-        'Drying Towel': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Duck': {'Base Price': 3, 'Class': 'Commodities'},
-        "Farmer's Tools": {'Base Price': 100, 'Class': 'Tools & Skill Kits'},
-        'Feather Mat': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Feed (per day)': {'Base Price': 5, 'Class': 'Mounts & Related Gear'},
-        'Filling Putty (4 use vial)': {'Base Price': 2500, 'Class': 'Special Substances & Items'},
-        'Firewood (per day)': {'Base Price': 1, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fishhook': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fishing Net (25 sq ft)': {'Base Price': 400, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Flask (empty)': {'Base Price': 3, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Flint Chips (12)': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Flint and Steel': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Flower Bouquet': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fruit Pie (freshly baked)': {'Base Price': 10, 'Class': 'Food & Drink & Lodging'},
-        "Full Barber's Services": {'Base Price': 100, 'Class': 'Services'},
-        'Gallon Cider': {'Base Price': 20, 'Class': 'Food & Drink & Lodging'},
-        'Gallon Mead': {'Base Price': 20, 'Class': 'Food & Drink & Lodging'},
-        'Gerbil (Pair)': {'Base Price': 1, 'Class': 'Commodities'},
-        'Glass Beads (24)': {'Base Price': 10, 'Class': 'Commodities'},
-        'Glass Goblet': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Grape Vine (Small)': {'Base Price': 10, 'Class': 'Commodities'},
-        'Grave Digger': {'Base Price': 10, 'Class': 'Services'},
-        'Guinea Pig': {'Base Price': 1, 'Class': 'Commodities'},
-        'Hair Brush': {'Base Price': 8, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Hair Comb': {'Base Price': 2, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Hair and Body Soap (flask)': {'Base Price': 50, 'Class': 'Special Substances & Items'},
-        'Hammer': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Healer's Kit": {'Base Price': 5000, 'Class': 'Tools & Skill Kits'},
-        'Hearth Tools': {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Heavy Horse': {'Base Price': 20000, 'Class': 'Mounts & Related Gear'},
-        'Hemp Rope (50 ft)': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Hide Apron': {'Base Price': 200, 'Class': 'Clothing'},
-        'Holy Symbol (Wooden)': {'Base Price': 100, 'Class': 'Tools & Skill Kits'},
-        'Holy Water (flask)': {'Base Price': 2500, 'Class': 'Special Substances & Items'},
-        'Honey': {'Base Price': 80, 'Class': 'Food & Drink & Lodging'},
-        'Hot Toffee Apple': {'Base Price': 3, 'Class': 'Food & Drink & Lodging'},
-        'House Slippers': {'Base Price': 50, 'Class': 'Clothing'},
-        'Hunk of Cheese': {'Base Price': 10, 'Class': 'Food & Drink & Lodging'},
-        'Inferior Meat (chunk)': {'Base Price': 5, 'Class': 'Food & Drink & Lodging'},
-        'Ink Vial (empty)': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Jam': {'Base Price': 30, 'Class': 'Food & Drink & Lodging'},
-        "Juggler's Balls": {'Base Price': 80, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Kettle': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Kudzu Vine (Small)': {'Base Price': 1, 'Class': 'Commodities'},
-        'Ladder (10 ft)': {'Base Price': 5, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Lamp (Common)': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Lard': {'Base Price': 1, 'Class': 'Food & Drink & Lodging'},
-        'Leather Barding (Large)': {'Base Price': 4000, 'Class': 'Mounts & Related Gear'},
-        'Leather Barding (Medium)': {'Base Price': 2000, 'Class': 'Mounts & Related Gear'},
-        'Leather Belt (Common)': {'Base Price': 10, 'Class': 'Clothing'},
-        'Leather Cord (10 ft)': {'Base Price': 8, 'Class': 'Commodities'},
-        'Lice and Flea Soap (flask)': {'Base Price': 100, 'Class': 'Special Substances & Items'},
-        'Light Horse': {'Base Price': 7500, 'Class': 'Mounts & Related Gear'},
-        'Light Leather Gloves': {'Base Price': 20, 'Class': 'Clothing'},
-        'Lip Wax': {'Base Price': 5, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Lock (Very Simple)': {'Base Price': 2000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Loincloth': {'Base Price': 2, 'Class': 'Clothing'},
-        'Lumber Axe': {'Base Price': 600, 'Class': 'Tools & Skill Kits'},
-        'Lumber Saw': {'Base Price': 600, 'Class': 'Tools & Skill Kits'},
-        'Meat Grinder': {'Base Price': 200, 'Class': 'Tools & Skill Kits'},
-        "Merchant's Scale": {'Base Price': 200, 'Class': 'Tools & Skill Kits'},
-        'Messenger (per mile)': {'Base Price': 2, 'Class': 'Services'},
-        'Midwife': {'Base Price': 20, 'Class': 'Services'},
-        'Mop': {'Base Price': 20, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Mourner': {'Base Price': 10, 'Class': 'Services'},
-        'Mouse Trap': {'Base Price': 5, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Mug/Tankard (clay)': {'Base Price': 2, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Mushrooms': {'Base Price': 5, 'Class': 'Food & Drink & Lodging'},
-        'Musical Instrument (Common)': {'Base Price': 500, 'Class': 'Tools & Skill Kits'},
-        'Nails (100)': {'Base Price': 50, 'Class': 'Tools & Skill Kits'},
-        'Newts (6)': {'Base Price': 1, 'Class': 'Commodities'},
-        'Non-poisonous Snake (Diminutive)': {'Base Price': 1, 'Class': 'Commodities'},
-        'Non-poisonous Snake (Small)': {'Base Price': 10, 'Class': 'Commodities'},
-        'Non-poisonous Snake (Tiny)': {'Base Price': 3, 'Class': 'Commodities'},
-        'Oar': {'Base Price': 200, 'Class': 'Transport'},
-        'Ordinary Nutcracker': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Ox': {'Base Price': 2000, 'Class': 'Commodities'},
-        "Peasant's Outfit": {'Base Price': 10, 'Class': 'Clothing'},
-        'Pet Leash': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Pewter Goblet': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Pewter Mug/Tankard': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Pickled Vegetables': {'Base Price': 10, 'Class': 'Food & Drink & Lodging'},
-        'Pitcher (clay)': {'Base Price': 2, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Pitcher Milk': {'Base Price': 3, 'Class': 'Food & Drink & Lodging'},
-        'Plates (Common) set of 4': {'Base Price': 40, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Plow': {'Base Price': 3000, 'Class': 'Tools & Skill Kits'},
-        'Pole (10 ft)': {'Base Price': 20, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Pony': {'Base Price': 3000, 'Class': 'Mounts & Related Gear'},
-        'Pot (iron)': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Potato Bin': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Potion Vial (empty)': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Pumice': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Quality Corn Feed': {'Base Price': 10, 'Class': 'Commodities'},
-        'Rabbit': {'Base Price': 1, 'Class': 'Commodities'},
-        "Rabbit's Foot": {'Base Price': 5, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Rash Ointment (jar)': {'Base Price': 1000, 'Class': 'Special Substances & Items'},
-        'Rat Trap': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Rope Bed': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Rowboat': {'Base Price': 5000, 'Class': 'Transport'},
-        'Sack (empty)': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Saddle (Pack)': {'Base Price': 500, 'Class': 'Mounts & Related Gear'},
-        'Saddle (Riding)': {'Base Price': 1000, 'Class': 'Mounts & Related Gear'},
-        'Saddlebags': {'Base Price': 400, 'Class': 'Mounts & Related Gear'},
-        'Sassafras Root': {'Base Price': 3, 'Class': 'Food & Drink & Lodging'},
-        'Scale Barding (Large)': {'Base Price': 20000, 'Class': 'Mounts & Related Gear'},
-        'Scale Barding (Medium)': {'Base Price': 10000, 'Class': 'Mounts & Related Gear'},
-        'Sealing Wax': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Seeds (50)': {'Base Price': 1, 'Class': 'Commodities'},
-        'Sewing Needle': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Signal Whistle': {'Base Price': 80, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Simple Barber's Services": {'Base Price': 10, 'Class': 'Services'},
-        'Simple Cake': {'Base Price': 8, 'Class': 'Food & Drink & Lodging'},
-        'Skillet': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Sled': {'Base Price': 2000, 'Class': 'Transport'},
-        'Sledge': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Smelling Salts (flask)': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Soap (per Lb)': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Soft Cheese': {'Base Price': 10, 'Class': 'Services'},
-        'Soup Pot': {'Base Price': 1000, 'Class': 'Tools & Skill Kits'},
-        'Soup/Dog Bones': {'Base Price': 2, 'Class': 'Food & Drink & Lodging'},
-        'Spade or Shovel': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Spindle': {'Base Price': 4, 'Class': 'Tools & Skill Kits'},
-        'Spinning Wheel': {'Base Price': 1000, 'Class': 'Tools & Skill Kits'},
-        'Straw Mat': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Studded Leather Barding (Large)': {'Base Price': 10000, 'Class': 'Mounts & Related Gear'},
-        'Studded Leather Barding (Medium)': {'Base Price': 5000, 'Class': 'Mounts & Related Gear'},
-        'Suede Boots (ankle high)': {'Base Price': 10, 'Class': 'Clothing'},
-        'Suede Boots (knee high)': {'Base Price': 30, 'Class': 'Clothing'},
-        'Sugar (1 Lb)': {'Base Price': 30, 'Class': 'Food & Drink & Lodging'},
-        'Tacks (100)': {'Base Price': 20, 'Class': 'Tools & Skill Kits'},
-        'Tent': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Tent Wagon': {'Base Price': 8500, 'Class': 'Transport'},
-        'Thread': {'Base Price': 5, 'Class': 'Tools & Skill Kits'},
-        'Torch': {'Base Price': 1, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Trail Rations (per day)': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Traveler's Outfit": {'Base Price': 100, 'Class': 'Clothing'},
-        'Turtle': {'Base Price': 1, 'Class': 'Commodities'},
-        'Undertaker': {'Base Price': 50, 'Class': 'Services'},
-        'Untrained Hireling (per day)': {'Base Price': 10, 'Class': 'Services'},
-        'Vinegar (gallon) in jar': {'Base Price': 5, 'Class': 'Food & Drink & Lodging'},
-        'Wagon': {'Base Price': 3500, 'Class': 'Transport'},
-        'Waste Bin (10 gallon)': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Waste Bin (5 gallon)': {'Base Price': 4, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Waterskin': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wheelbarrow': {'Base Price': 300, 'Class': 'Tools & Skill Kits'},
-        'Whetstone': {'Base Price': 2, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wiping Rug': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Ash Bowl (Common)': {'Base Price': 8, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Beads (24)': {'Base Price': 1, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Dice (Pair)': {'Base Price': 1, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Garment Hook': {'Base Price': 3, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Mask': {'Base Price': 500, 'Class': 'Clothing'},
-        'Wooden Picture frame (Small)': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Picture frame (Tiny)': {'Base Price': 3, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Serving Tray': {'Base Price': 20, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Stool (Medium)': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Stool (Small)': {'Base Price': 20, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Wash Basin': {'Base Price': 400, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wool Mittens': {'Base Price': 8, 'Class': 'Clothing'},
-        'Wool Scarf': {'Base Price': 10, 'Class': 'Clothing'},
-        'Wool Stockings/Socks': {'Base Price': 8, 'Class': 'Clothing'},
-        'Yarn Ball (500 ft)': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Yeast (baker) (for 10 Lb)': {'Base Price': 2, 'Class': 'Food & Drink & Lodging'},
-        'Yeast (brewer) (for 10 gal)': {'Base Price': 2, 'Class': 'Food & Drink & Lodging'},
-        'Yoke (and accessories)': {'Base Price': 200, 'Class': 'Transport'}
+        'Abacus': {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Ale (gallon)': {
+            'Base Price': 20,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Artisan Glue (gallon)': {
+            'Base Price': 200,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Artisan Scissors': {
+            'Base Price': 100,
+            'Class': 'Tools & Skill Kits'
+        },
+        "Artisan's Outfit": {
+            'Base Price': 100,
+            'Class': 'Clothing'
+        },
+        "Artisan's Tools": {
+            'Base Price': 500,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Backpack (empty)': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Barrel (empty)': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Basket (empty)': {
+            'Base Price': 40,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Bedroll': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Belt Pouch (empty)': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Birch Bark': {
+            'Base Price': 1,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Biscuit Bin': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Bit & Bridle': {
+            'Base Price': 200,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Blanket (winter)': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Block and Tackle': {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Boiled Sweets': {
+            'Base Price': 4,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Bread (per loaf)': {
+            'Base Price': 2,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Broom': {
+            'Base Price': 8,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Bucket (empty)': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Bullfrog (Pair)': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Bush (Small)': {
+            'Base Price': 20,
+            'Class': 'Commodities'
+        },
+        'Butter': {
+            'Base Price': 5,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Butter Churn': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Candle': {
+            'Base Price': 1,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Candle Lantern': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Canvas (sq yd)': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Canvas Apron': {
+            'Base Price': 30,
+            'Class': 'Clothing'
+        },
+        'Cart': {
+            'Base Price': 1500,
+            'Class': 'Transport'
+        },
+        'Cat': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Chain Barding (Large)': {
+            'Base Price': 60000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Chain Barding (Medium)': {
+            'Base Price': 30000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Chalk (1 piece)': {
+            'Base Price': 1,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Chamber Pot': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Chest (empty)': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Chimney Brush Kit': {
+            'Base Price': 80,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Chunk of Meat': {
+            'Base Price': 30,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Cider Press': {
+            'Base Price': 100,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Clay Jug': {
+            'Base Price': 3,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Clay Smoking Pipe': {
+            'Base Price': 2,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Cleric's Vestments": {
+            'Base Price': 500,
+            'Class': 'Clothing'
+        },
+        'Cloth Apron': {
+            'Base Price': 10,
+            'Class': 'Clothing'
+        },
+        'Coal (5 lb)': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Cold Weather Outfit': {
+            'Base Price': 800,
+            'Class': 'Clothing'
+        },
+        'Common Back Scratcher': {
+            'Base Price': 3,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Bed Clothing': {
+            'Base Price': 8,
+            'Class': 'Clothing'
+        },
+        'Common Bowl': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Buckle': {
+            'Base Price': 20,
+            'Class': 'Clothing'
+        },
+        'Common Buttons (12)': {
+            'Base Price': 5,
+            'Class': 'Clothing'
+        },
+        'Common Casket': {
+            'Base Price': 40,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Cloth Dye (10yd)': {
+            'Base Price': 50,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Common Curtains': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Decorative Plant': {
+            'Base Price': 2,
+            'Class': 'Commodities'
+        },
+        'Common Dried Herbs': {
+            'Base Price': 2,
+            'Class': 'Commodities'
+        },
+        'Common Eating Utensils': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Eye Patch': {
+            'Base Price': 2,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Common Flower Pot': {
+            'Base Price': 2,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Foot Stool': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Glass Eye': {
+            'Base Price': 5,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Common Gloves': {
+            'Base Price': 4,
+            'Class': 'Clothing'
+        },
+        'Common Hat/Headpiece': {
+            'Base Price': 5,
+            'Class': 'Clothing'
+        },
+        'Common Hide Blanket': {
+            'Base Price': 300,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Nuts (in shell)': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Common Pelt (Medium)': {
+            'Base Price': 500,
+            'Class': 'Commodities'
+        },
+        'Common Pelt (Small)': {
+            'Base Price': 50,
+            'Class': 'Commodities'
+        },
+        'Common Pelt (Tiny)': {
+            'Base Price': 8,
+            'Class': 'Commodities'
+        },
+        'Common Pet Bird': {
+            'Base Price': 2,
+            'Class': 'Commodities'
+        },
+        'Common Pet Collar': {
+            'Base Price': 5,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Pillow': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Rats (Pair)': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Common Serving Bowl': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Smoking Pipe': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Tablecloth': {
+            'Base Price': 20,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Toy Doll': {
+            'Base Price': 3,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Vase': {
+            'Base Price': 5,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Vegetables': {
+            'Base Price': 1,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Common Wine (pitcher)': {
+            'Base Price': 20,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Common Wooden Toy': {
+            'Base Price': 5,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common fresh Fruit': {
+            'Base Price': 2,
+            'Class': 'Food & Drink & Lodging'
+        },
+        "Cook's Knives (set)": {
+            'Base Price': 800,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Cookie Cutter': {
+            'Base Price': 5,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Cookies (dozen)': {
+            'Base Price': 5,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Cooking Stone': {
+            'Base Price': 200,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Cooking Utensils (set)': {
+            'Base Price': 50,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Copper/Stone Ash Bowl Common': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Cough Sweets': {
+            'Base Price': 10,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Covered Cart': {
+            'Base Price': 2000,
+            'Class': 'Transport'
+        },
+        'Crab Trap': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Craftsman's Paint (5 gal)": {
+            'Base Price': 500,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Dandelion Wine (pitcher)': {
+            'Base Price': 10,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Domesticated Turkey': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Donkey or Mule': {
+            'Base Price': 800,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Dozen Eggs': {
+            'Base Price': 1,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Drying Towel': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Duck': {
+            'Base Price': 3,
+            'Class': 'Commodities'
+        },
+        "Farmer's Tools": {
+            'Base Price': 100,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Feather Mat': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Feed (per day)': {
+            'Base Price': 5,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Filling Putty (4 use vial)': {
+            'Base Price': 2500,
+            'Class': 'Special Substances & Items'
+        },
+        'Firewood (per day)': {
+            'Base Price': 1,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fishhook': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fishing Net (25 sq ft)': {
+            'Base Price': 400,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Flask (empty)': {
+            'Base Price': 3,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Flint Chips (12)': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Flint and Steel': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Flower Bouquet': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fruit Pie (freshly baked)': {
+            'Base Price': 10,
+            'Class': 'Food & Drink & Lodging'
+        },
+        "Full Barber's Services": {
+            'Base Price': 100,
+            'Class': 'Services'
+        },
+        'Gallon Cider': {
+            'Base Price': 20,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Gallon Mead': {
+            'Base Price': 20,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Gerbil (Pair)': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Glass Beads (24)': {
+            'Base Price': 10,
+            'Class': 'Commodities'
+        },
+        'Glass Goblet': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Grape Vine (Small)': {
+            'Base Price': 10,
+            'Class': 'Commodities'
+        },
+        'Grave Digger': {
+            'Base Price': 10,
+            'Class': 'Services'
+        },
+        'Guinea Pig': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Hair Brush': {
+            'Base Price': 8,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Hair Comb': {
+            'Base Price': 2,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Hair and Body Soap (flask)': {
+            'Base Price': 50,
+            'Class': 'Special Substances & Items'
+        },
+        'Hammer': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Healer's Kit": {
+            'Base Price': 5000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Hearth Tools': {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Heavy Horse': {
+            'Base Price': 20000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Hemp Rope (50 ft)': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Hide Apron': {
+            'Base Price': 200,
+            'Class': 'Clothing'
+        },
+        'Holy Symbol (Wooden)': {
+            'Base Price': 100,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Holy Water (flask)': {
+            'Base Price': 2500,
+            'Class': 'Special Substances & Items'
+        },
+        'Honey': {
+            'Base Price': 80,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Hot Toffee Apple': {
+            'Base Price': 3,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'House Slippers': {
+            'Base Price': 50,
+            'Class': 'Clothing'
+        },
+        'Hunk of Cheese': {
+            'Base Price': 10,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Inferior Meat (chunk)': {
+            'Base Price': 5,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Ink Vial (empty)': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Jam': {
+            'Base Price': 30,
+            'Class': 'Food & Drink & Lodging'
+        },
+        "Juggler's Balls": {
+            'Base Price': 80,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Kettle': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Kudzu Vine (Small)': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Ladder (10 ft)': {
+            'Base Price': 5,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Lamp (Common)': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Lard': {
+            'Base Price': 1,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Leather Barding (Large)': {
+            'Base Price': 4000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Leather Barding (Medium)': {
+            'Base Price': 2000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Leather Belt (Common)': {
+            'Base Price': 10,
+            'Class': 'Clothing'
+        },
+        'Leather Cord (10 ft)': {
+            'Base Price': 8,
+            'Class': 'Commodities'
+        },
+        'Lice and Flea Soap (flask)': {
+            'Base Price': 100,
+            'Class': 'Special Substances & Items'
+        },
+        'Light Horse': {
+            'Base Price': 7500,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Light Leather Gloves': {
+            'Base Price': 20,
+            'Class': 'Clothing'
+        },
+        'Lip Wax': {
+            'Base Price': 5,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Lock (Very Simple)': {
+            'Base Price': 2000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Loincloth': {
+            'Base Price': 2,
+            'Class': 'Clothing'
+        },
+        'Lumber Axe': {
+            'Base Price': 600,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Lumber Saw': {
+            'Base Price': 600,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Meat Grinder': {
+            'Base Price': 200,
+            'Class': 'Tools & Skill Kits'
+        },
+        "Merchant's Scale": {
+            'Base Price': 200,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Messenger (per mile)': {
+            'Base Price': 2,
+            'Class': 'Services'
+        },
+        'Midwife': {
+            'Base Price': 20,
+            'Class': 'Services'
+        },
+        'Mop': {
+            'Base Price': 20,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Mourner': {
+            'Base Price': 10,
+            'Class': 'Services'
+        },
+        'Mouse Trap': {
+            'Base Price': 5,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Mug/Tankard (clay)': {
+            'Base Price': 2,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Mushrooms': {
+            'Base Price': 5,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Musical Instrument (Common)': {
+            'Base Price': 500,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Nails (100)': {
+            'Base Price': 50,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Newts (6)': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Non-poisonous Snake (Diminutive)': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Non-poisonous Snake (Small)': {
+            'Base Price': 10,
+            'Class': 'Commodities'
+        },
+        'Non-poisonous Snake (Tiny)': {
+            'Base Price': 3,
+            'Class': 'Commodities'
+        },
+        'Oar': {
+            'Base Price': 200,
+            'Class': 'Transport'
+        },
+        'Ordinary Nutcracker': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Ox': {
+            'Base Price': 2000,
+            'Class': 'Commodities'
+        },
+        "Peasant's Outfit": {
+            'Base Price': 10,
+            'Class': 'Clothing'
+        },
+        'Pet Leash': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Pewter Goblet': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Pewter Mug/Tankard': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Pickled Vegetables': {
+            'Base Price': 10,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Pitcher (clay)': {
+            'Base Price': 2,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Pitcher Milk': {
+            'Base Price': 3,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Plates (Common) set of 4': {
+            'Base Price': 40,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Plow': {
+            'Base Price': 3000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Pole (10 ft)': {
+            'Base Price': 20,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Pony': {
+            'Base Price': 3000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Pot (iron)': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Potato Bin': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Potion Vial (empty)': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Pumice': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Quality Corn Feed': {
+            'Base Price': 10,
+            'Class': 'Commodities'
+        },
+        'Rabbit': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        "Rabbit's Foot": {
+            'Base Price': 5,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Rash Ointment (jar)': {
+            'Base Price': 1000,
+            'Class': 'Special Substances & Items'
+        },
+        'Rat Trap': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Rope Bed': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Rowboat': {
+            'Base Price': 5000,
+            'Class': 'Transport'
+        },
+        'Sack (empty)': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Saddle (Pack)': {
+            'Base Price': 500,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Saddle (Riding)': {
+            'Base Price': 1000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Saddlebags': {
+            'Base Price': 400,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Sassafras Root': {
+            'Base Price': 3,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Scale Barding (Large)': {
+            'Base Price': 20000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Scale Barding (Medium)': {
+            'Base Price': 10000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Sealing Wax': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Seeds (50)': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Sewing Needle': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Signal Whistle': {
+            'Base Price': 80,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Simple Barber's Services": {
+            'Base Price': 10,
+            'Class': 'Services'
+        },
+        'Simple Cake': {
+            'Base Price': 8,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Skillet': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Sled': {
+            'Base Price': 2000,
+            'Class': 'Transport'
+        },
+        'Sledge': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Smelling Salts (flask)': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Soap (per Lb)': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Soft Cheese': {
+            'Base Price': 10,
+            'Class': 'Services'
+        },
+        'Soup Pot': {
+            'Base Price': 1000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Soup/Dog Bones': {
+            'Base Price': 2,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Spade or Shovel': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Spindle': {
+            'Base Price': 4,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Spinning Wheel': {
+            'Base Price': 1000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Straw Mat': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Studded Leather Barding (Large)': {
+            'Base Price': 10000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Studded Leather Barding (Medium)': {
+            'Base Price': 5000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Suede Boots (ankle high)': {
+            'Base Price': 10,
+            'Class': 'Clothing'
+        },
+        'Suede Boots (knee high)': {
+            'Base Price': 30,
+            'Class': 'Clothing'
+        },
+        'Sugar (1 Lb)': {
+            'Base Price': 30,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Tacks (100)': {
+            'Base Price': 20,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Tent': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Tent Wagon': {
+            'Base Price': 8500,
+            'Class': 'Transport'
+        },
+        'Thread': {
+            'Base Price': 5,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Torch': {
+            'Base Price': 1,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Trail Rations (per day)': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Traveler's Outfit": {
+            'Base Price': 100,
+            'Class': 'Clothing'
+        },
+        'Turtle': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Undertaker': {
+            'Base Price': 50,
+            'Class': 'Services'
+        },
+        'Untrained Hireling (per day)': {
+            'Base Price': 10,
+            'Class': 'Services'
+        },
+        'Vinegar (gallon) in jar': {
+            'Base Price': 5,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Wagon': {
+            'Base Price': 3500,
+            'Class': 'Transport'
+        },
+        'Waste Bin (10 gallon)': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Waste Bin (5 gallon)': {
+            'Base Price': 4,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Waterskin': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wheelbarrow': {
+            'Base Price': 300,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Whetstone': {
+            'Base Price': 2,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wiping Rug': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Ash Bowl (Common)': {
+            'Base Price': 8,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Beads (24)': {
+            'Base Price': 1,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Dice (Pair)': {
+            'Base Price': 1,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Garment Hook': {
+            'Base Price': 3,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Mask': {
+            'Base Price': 500,
+            'Class': 'Clothing'
+        },
+        'Wooden Picture frame (Small)': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Picture frame (Tiny)': {
+            'Base Price': 3,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Serving Tray': {
+            'Base Price': 20,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Stool (Medium)': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Stool (Small)': {
+            'Base Price': 20,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Wash Basin': {
+            'Base Price': 400,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wool Mittens': {
+            'Base Price': 8,
+            'Class': 'Clothing'
+        },
+        'Wool Scarf': {
+            'Base Price': 10,
+            'Class': 'Clothing'
+        },
+        'Wool Stockings/Socks': {
+            'Base Price': 8,
+            'Class': 'Clothing'
+        },
+        'Yarn Ball (500 ft)': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Yeast (baker) (for 10 Lb)': {
+            'Base Price': 2,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Yeast (brewer) (for 10 gal)': {
+            'Base Price': 2,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Yoke (and accessories)': {
+            'Base Price': 200,
+            'Class': 'Transport'
+        }
     },
     'U': {
-        'Acid (flask)': {'Base Price': 1000, 'Class': 'Special Substances & Items'},
-        "Alchemist's Fire (flask)": {'Base Price': 2000, 'Class': 'Special Substances & Items'},
-        'Animal (Medium) Cage': {'Base Price': 5000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Animal (Small) Cage': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Animal (Tiny) Cage': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Banded Barding (Large)': {'Base Price': 100000, 'Class': 'Mounts & Related Gear'},
-        'Banded Barding (Medium)': {'Base Price': 50000, 'Class': 'Mounts & Related Gear'},
-        "Barber's Kit": {'Base Price': 1000, 'Class': 'Tools & Skill Kits'},
-        'Bell': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Blank Book': {'Base Price': 300, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Blemish Cream (jar)': {'Base Price': 3000, 'Class': 'Special Substances & Items'},
-        "Blood Letter's Leeches (flask of 12 live)": {'Base Price': 20, 'Class': 'Tools & Skill Kits'},
-        'Brass Garment Hook': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Caltrops': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Carnivorous Plant': {'Base Price': 3, 'Class': 'Commodities'},
-        'Carriage': {'Base Price': 10000, 'Class': 'Transport'},
-        'Case (map or scroll)': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Cedar Chips': {'Base Price': 1, 'Class': 'Commodities'},
-        'Ceramic Mask': {'Base Price': 2000, 'Class': 'Clothing'},
-        'Chain (10 ft)': {'Base Price': 3000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Clotting Paste (jar)': {'Base Price': 3000, 'Class': 'Special Substances & Items'},
-        'Coach Cab (per mile)': {'Base Price': 3, 'Class': 'Services'},
-        'Coffee Beans': {'Base Price': 200, 'Class': 'Commodities'},
-        'Common Bedside Table': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Birdbath': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Bookmark': {'Base Price': 1, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Cage Wagon': {'Base Price': 45000, 'Class': 'Transport'},
-        'Common Caravan Wagon': {'Base Price': 75000, 'Class': 'Transport'},
-        'Common Chest of Drawers': {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Dining Chair': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Dining Table': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Dresser (standing)': {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Festival Costume': {'Base Price': 500, 'Class': 'Clothing'},
-        'Common Kaleidoscope': {'Base Price': 2000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Leather Mask': {'Base Price': 200, 'Class': 'Clothing'},
-        "Common Master's Chair": {'Base Price': 2000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Pelt (large)': {'Base Price': 2500, 'Class': 'Commodities'},
-        "Common Performer's Cart": {'Base Price': 50000, 'Class': 'Transport'},
-        'Common Perfume (vial)': {'Base Price': 20, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Plate Cabinet (standing)': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Puppet': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Stained Glass Work (per sq ft)': {'Base Price': 500, 'Class': 'Services'},
-        'Common Vanity Table (w/ Mirror)': {'Base Price': 50000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Common Wig': {'Base Price': 1000, 'Class': 'Clothing'},
-        'Copper/Stone Ash Bowl Fancy': {'Base Price': 300, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Cork Wood': {'Base Price': 10, 'Class': 'Commodities'},
-        'Covered Sled': {'Base Price': 5000, 'Class': 'Transport'},
-        'Crowbar': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Dart Board': {'Base Price': 80, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Diary (Blank w/ lock)': {'Base Price': 2500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Diary (Blank w/o lock)': {'Base Price': 300, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Disguise Kit': {'Base Price': 5000, 'Class': 'Tools & Skill Kits'},
-        'Dominos (set)': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Entertainer's Outfit": {'Base Price': 300, 'Class': 'Clothing'},
-        'Essential Oil': {'Base Price': 200, 'Class': 'Commodities'},
-        "Explorer's Outfit": {'Base Price': 1000, 'Class': 'Clothing'},
-        'Fancy Back Scratcher': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Bookmark': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Bowl': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Buttons (12)': {'Base Price': 30, 'Class': 'Clothing'},
-        'Fancy Cake': {'Base Price': 100, 'Class': 'Food & Drink & Lodging'},
-        'Fancy Curtains': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Eye Patch': {'Base Price': 10, 'Class': 'Tools & Skill Kits'},
-        'Fancy Glass Eye': {'Base Price': 50, 'Class': 'Tools & Skill Kits'},
-        'Fancy Pet Collar': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fife (Common)': {'Base Price': 500, 'Class': 'Musical Instrument'},
-        "Foldable Merchant's Table": {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Gallon Fortified Malt Brew': {'Base Price': 10, 'Class': 'Food & Drink & Lodging'},
-        'Gallon Stout (Brew)': {'Base Price': 30, 'Class': 'Food & Drink & Lodging'},
-        'Gallon Yam Beer': {'Base Price': 20, 'Class': 'Food & Drink & Lodging'},
-        'Gaming Table': {'Base Price': 2000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Glass Bottle (Wine)': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Glass Orb': {'Base Price': 100, 'Class': 'Tools & Skill Kits'},
-        'Goose': {'Base Price': 2, 'Class': 'Commodities'},
-        'Grand Songbook (blank)': {'Base Price': 1200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Guard Dog': {'Base Price': 2500, 'Class': 'Mounts & Related Gear'},
-        'Hair Dye (1 use)': {'Base Price': 100, 'Class': 'Special Substances & Items'},
-        'Half Gallon Distilled Spirits': {'Base Price': 100, 'Class': 'Food & Drink & Lodging'},
-        'Hamster (mated Pair)': {'Base Price': 1, 'Class': 'Commodities'},
-        'Itching Powder (1 vial)': {'Base Price': 1000, 'Class': 'Special Substances & Items'},
-        'Ivory Dice (Pair)': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Ivy Vine (Small)': {'Base Price': 5, 'Class': 'Commodities'},
-        'Keelboat': {'Base Price': 300000, 'Class': 'Transport'},
-        'Lantern (Bullseye)': {'Base Price': 1200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Lantern (Hooded)': {'Base Price': 700, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Large Bookshelf': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Large Songbook (blank)': {'Base Price': 800, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Leather Belt (Fancy)': {'Base Price': 40, 'Class': 'Clothing'},
-        'Lock (Average)': {'Base Price': 4000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Lute (Common)': {'Base Price': 500, 'Class': 'Musical Instrument'},
-        'Manacles': {'Base Price': 1500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Mandolin (Common)': {'Base Price': 500, 'Class': 'Musical Instrument'},
-        "Masterwork Artisan's Tools": {'Base Price': 5500, 'Class': 'Tools & Skill Kits'},
-        'Medium Bookshelf': {'Base Price': 300, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Medium Cook's Table": {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Medium Wooden Sign': {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Miner's Pick": {'Base Price': 300, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Mirror (Small steel)': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Molasses': {'Base Price': 20, 'Class': 'Food & Drink & Lodging'},
-        "Monk's Outfit": {'Base Price': 500, 'Class': 'Clothing'},
-        'Mugwort Pillow': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Nanny (per day)': {'Base Price': 1, 'Class': 'Services'},
-        'Natural Sponge (3”)': {'Base Price': 2, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Natural Sponge (5”)': {'Base Price': 4, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Natural Sponge (8”)': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Oil (1 pint flask)': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Organ Box (Common)': {'Base Price': 300, 'Class': 'Musical Instrument'},
-        'Parchment (sheet)': {'Base Price': 20, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Pepper Mill': {'Base Price': 500, 'Class': 'Tools & Skill Kits'},
-        'Pet Fish': {'Base Price': 1, 'Class': 'Commodities'},
-        'Pickled Meat': {'Base Price': 80, 'Class': 'Food & Drink & Lodging'},
-        'Pitcher Fortified Wine': {'Base Price': 20, 'Class': 'Food & Drink & Lodging'},
-        'Piton': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Portable Coop': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Puppet Box': {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Recipe Book (blank)': {'Base Price': 400, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Recorder (Common)': {'Base Price': 500, 'Class': 'Musical Instrument'},
-        'Ring Toss Set': {'Base Price': 20, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Saddle (Military)': {'Base Price': 2000, 'Class': 'Mounts & Related Gear'},
-        'Salt/Sugar Cured Meat': {'Base Price': 60, 'Class': 'Food & Drink & Lodging'},
-        'Sailing Ship': {'Base Price': 1000000, 'Class': 'Transport'},
-        'Sausage': {'Base Price': 50, 'Class': 'Food & Drink & Lodging'},
-        "Scholar's Outfit": {'Base Price': 500, 'Class': 'Clothing'},
-        'Shawm (Common)': {'Base Price': 500, 'Class': 'Musical Instrument'},
-        'Silk Rope (50 ft)': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Silk Scarf': {'Base Price': 50, 'Class': 'Clothing'},
-        'Silk Stockings/Socks': {'Base Price': 200, 'Class': 'Clothing'},
-        'Small Blank Book': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Small Bookshelf': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Small Cook's Table": {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Small Songbook (blank)': {'Base Price': 400, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Small Wooden Sign': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Smokestick': {'Base Price': 2000, 'Class': 'Special Substances & Items'},
-        'Sparkle Candle': {'Base Price': 1000, 'Class': 'Special Substances & Items'},
-        'Spell Component Pouch': {'Base Price': 500, 'Class': 'Tools & Skill Kits'},
-        'Splint Barding (Large)': {'Base Price': 80000, 'Class': 'Mounts & Related Gear'},
-        'Splint Barding (Medium)': {'Base Price': 40000, 'Class': 'Mounts & Related Gear'},
-        'Straw Stuffed Leather Ball': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Sundial': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Sunrod': {'Base Price': 200, 'Class': 'Special Substances & Items'},
-        'Tavern Table': {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Tea Biscuits': {'Base Price': 4, 'Class': 'Food & Drink & Lodging'},
-        'Thunderstone': {'Base Price': 3000, 'Class': 'Special Substances & Items'},
-        'Tindertwig': {'Base Price': 1000, 'Class': 'Special Substances & Items'},
-        'Toffee': {'Base Price': 30, 'Class': 'Food & Drink & Lodging'},
-        'Tombstone': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Tooth Ointment (25 use flask)': {'Base Price': 1000, 'Class': 'Special Substances & Items'},
-        'Trained Hireling (per day)': {'Base Price': 30, 'Class': 'Services'},
-        'Tree (Small & young)': {'Base Price': 20, 'Class': 'Commodities'},
-        'Truffles': {'Base Price': 100, 'Class': 'Commodities'},
-        'Tutor (per day)': {'Base Price': 1, 'Class': 'Services'},
-        'UnCommon Dried Herbs': {'Base Price': 10, 'Class': 'Commodities'},
-        'UnCommon Nuts (in shell)': {'Base Price': 10, 'Class': 'Commodities'},
-        'Uncommon Vegetables': {'Base Price': 3, 'Class': 'Food & Drink & Lodging'},
-        'Waste Bin (50 gallon)': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Wizard'sSpellbook (Blank)": {'Base Price': 1500, 'Class': 'Tools & Skill Kits'},
-        'Wood Stain (5 sq ft)': {'Base Price': 300, 'Class': 'Tools & Skill Kits'},
-        'Wooden Ash Bowl (Fancy)': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Baby Cradle': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Cricket Box': {'Base Price': 4, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Foot Massager': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Peg Leg': {'Base Price': 70, 'Class': 'Tools & Skill Kits'},
-        'Wooden Picture frame (Medium)': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Writing Board': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Writing Quills (6)': {'Base Price': 2, 'Class': 'Adventuring Gear/Luxury Items'},
+        'Acid (flask)': {
+            'Base Price': 1000,
+            'Class': 'Special Substances & Items'
+        },
+        "Alchemist's Fire (flask)": {
+            'Base Price': 2000,
+            'Class': 'Special Substances & Items'
+        },
+        'Animal (Medium) Cage': {
+            'Base Price': 5000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Animal (Small) Cage': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Animal (Tiny) Cage': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Banded Barding (Large)': {
+            'Base Price': 100000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Banded Barding (Medium)': {
+            'Base Price': 50000,
+            'Class': 'Mounts & Related Gear'
+        },
+        "Barber's Kit": {
+            'Base Price': 1000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Bell': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Blank Book': {
+            'Base Price': 300,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Blemish Cream (jar)': {
+            'Base Price': 3000,
+            'Class': 'Special Substances & Items'
+        },
+        "Blood Letter's Leeches (flask of 12 live)": {
+            'Base Price': 20,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Brass Garment Hook': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Caltrops': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Carnivorous Plant': {
+            'Base Price': 3,
+            'Class': 'Commodities'
+        },
+        'Carriage': {
+            'Base Price': 10000,
+            'Class': 'Transport'
+        },
+        'Case (map or scroll)': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Cedar Chips': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Ceramic Mask': {
+            'Base Price': 2000,
+            'Class': 'Clothing'
+        },
+        'Chain (10 ft)': {
+            'Base Price': 3000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Clotting Paste (jar)': {
+            'Base Price': 3000,
+            'Class': 'Special Substances & Items'
+        },
+        'Coach Cab (per mile)': {
+            'Base Price': 3,
+            'Class': 'Services'
+        },
+        'Coffee Beans': {
+            'Base Price': 200,
+            'Class': 'Commodities'
+        },
+        'Common Bedside Table': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Birdbath': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Bookmark': {
+            'Base Price': 1,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Cage Wagon': {
+            'Base Price': 45000,
+            'Class': 'Transport'
+        },
+        'Common Caravan Wagon': {
+            'Base Price': 75000,
+            'Class': 'Transport'
+        },
+        'Common Chest of Drawers': {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Dining Chair': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Dining Table': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Dresser (standing)': {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Festival Costume': {
+            'Base Price': 500,
+            'Class': 'Clothing'
+        },
+        'Common Kaleidoscope': {
+            'Base Price': 2000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Leather Mask': {
+            'Base Price': 200,
+            'Class': 'Clothing'
+        },
+        "Common Master's Chair": {
+            'Base Price': 2000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Pelt (large)': {
+            'Base Price': 2500,
+            'Class': 'Commodities'
+        },
+        "Common Performer's Cart": {
+            'Base Price': 50000,
+            'Class': 'Transport'
+        },
+        'Common Perfume (vial)': {
+            'Base Price': 20,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Plate Cabinet (standing)': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Puppet': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Stained Glass Work (per sq ft)': {
+            'Base Price': 500,
+            'Class': 'Services'
+        },
+        'Common Vanity Table (w/ Mirror)': {
+            'Base Price': 50000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Common Wig': {
+            'Base Price': 1000,
+            'Class': 'Clothing'
+        },
+        'Copper/Stone Ash Bowl Fancy': {
+            'Base Price': 300,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Cork Wood': {
+            'Base Price': 10,
+            'Class': 'Commodities'
+        },
+        'Covered Sled': {
+            'Base Price': 5000,
+            'Class': 'Transport'
+        },
+        'Crowbar': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Dart Board': {
+            'Base Price': 80,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Diary (Blank w/ lock)': {
+            'Base Price': 2500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Diary (Blank w/o lock)': {
+            'Base Price': 300,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Disguise Kit': {
+            'Base Price': 5000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Dominos (set)': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Entertainer's Outfit": {
+            'Base Price': 300,
+            'Class': 'Clothing'
+        },
+        'Essential Oil': {
+            'Base Price': 200,
+            'Class': 'Commodities'
+        },
+        "Explorer's Outfit": {
+            'Base Price': 1000,
+            'Class': 'Clothing'
+        },
+        'Fancy Back Scratcher': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Bookmark': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Bowl': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Buttons (12)': {
+            'Base Price': 30,
+            'Class': 'Clothing'
+        },
+        'Fancy Cake': {
+            'Base Price': 100,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Fancy Curtains': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Eye Patch': {
+            'Base Price': 10,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Fancy Glass Eye': {
+            'Base Price': 50,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Fancy Pet Collar': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fife (Common)': {
+            'Base Price': 500,
+            'Class': 'Musical Instrument'
+        },
+        "Foldable Merchant's Table": {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Gallon Fortified Malt Brew': {
+            'Base Price': 10,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Gallon Stout (Brew)': {
+            'Base Price': 30,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Gallon Yam Beer': {
+            'Base Price': 20,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Gaming Table': {
+            'Base Price': 2000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Glass Bottle (Wine)': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Glass Orb': {
+            'Base Price': 100,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Goose': {
+            'Base Price': 2,
+            'Class': 'Commodities'
+        },
+        'Grand Songbook (blank)': {
+            'Base Price': 1200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Guard Dog': {
+            'Base Price': 2500,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Hair Dye (1 use)': {
+            'Base Price': 100,
+            'Class': 'Special Substances & Items'
+        },
+        'Half Gallon Distilled Spirits': {
+            'Base Price': 100,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Hamster (mated Pair)': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Itching Powder (1 vial)': {
+            'Base Price': 1000,
+            'Class': 'Special Substances & Items'
+        },
+        'Ivory Dice (Pair)': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Ivy Vine (Small)': {
+            'Base Price': 5,
+            'Class': 'Commodities'
+        },
+        'Keelboat': {
+            'Base Price': 300000,
+            'Class': 'Transport'
+        },
+        'Lantern (Bullseye)': {
+            'Base Price': 1200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Lantern (Hooded)': {
+            'Base Price': 700,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Large Bookshelf': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Large Songbook (blank)': {
+            'Base Price': 800,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Leather Belt (Fancy)': {
+            'Base Price': 40,
+            'Class': 'Clothing'
+        },
+        'Lock (Average)': {
+            'Base Price': 4000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Lute (Common)': {
+            'Base Price': 500,
+            'Class': 'Musical Instrument'
+        },
+        'Manacles': {
+            'Base Price': 1500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Mandolin (Common)': {
+            'Base Price': 500,
+            'Class': 'Musical Instrument'
+        },
+        "Masterwork Artisan's Tools": {
+            'Base Price': 5500,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Medium Bookshelf': {
+            'Base Price': 300,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Medium Cook's Table": {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Medium Wooden Sign': {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Miner's Pick": {
+            'Base Price': 300,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Mirror (Small steel)': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Molasses': {
+            'Base Price': 20,
+            'Class': 'Food & Drink & Lodging'
+        },
+        "Monk's Outfit": {
+            'Base Price': 500,
+            'Class': 'Clothing'
+        },
+        'Mugwort Pillow': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Nanny (per day)': {
+            'Base Price': 1,
+            'Class': 'Services'
+        },
+        'Natural Sponge (3”)': {
+            'Base Price': 2,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Natural Sponge (5”)': {
+            'Base Price': 4,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Natural Sponge (8”)': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Oil (1 pint flask)': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Organ Box (Common)': {
+            'Base Price': 300,
+            'Class': 'Musical Instrument'
+        },
+        'Parchment (sheet)': {
+            'Base Price': 20,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Pepper Mill': {
+            'Base Price': 500,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Pet Fish': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Pickled Meat': {
+            'Base Price': 80,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Pitcher Fortified Wine': {
+            'Base Price': 20,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Piton': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Portable Coop': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Puppet Box': {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Recipe Book (blank)': {
+            'Base Price': 400,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Recorder (Common)': {
+            'Base Price': 500,
+            'Class': 'Musical Instrument'
+        },
+        'Ring Toss Set': {
+            'Base Price': 20,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Saddle (Military)': {
+            'Base Price': 2000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Salt/Sugar Cured Meat': {
+            'Base Price': 60,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Sailing Ship': {
+            'Base Price': 1000000,
+            'Class': 'Transport'
+        },
+        'Sausage': {
+            'Base Price': 50,
+            'Class': 'Food & Drink & Lodging'
+        },
+        "Scholar's Outfit": {
+            'Base Price': 500,
+            'Class': 'Clothing'
+        },
+        'Shawm (Common)': {
+            'Base Price': 500,
+            'Class': 'Musical Instrument'
+        },
+        'Silk Rope (50 ft)': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Silk Scarf': {
+            'Base Price': 50,
+            'Class': 'Clothing'
+        },
+        'Silk Stockings/Socks': {
+            'Base Price': 200,
+            'Class': 'Clothing'
+        },
+        'Small Blank Book': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Small Bookshelf': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Small Cook's Table": {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Small Songbook (blank)': {
+            'Base Price': 400,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Small Wooden Sign': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Smokestick': {
+            'Base Price': 2000,
+            'Class': 'Special Substances & Items'
+        },
+        'Sparkle Candle': {
+            'Base Price': 1000,
+            'Class': 'Special Substances & Items'
+        },
+        'Spell Component Pouch': {
+            'Base Price': 500,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Splint Barding (Large)': {
+            'Base Price': 80000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Splint Barding (Medium)': {
+            'Base Price': 40000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Straw Stuffed Leather Ball': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Sundial': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Sunrod': {
+            'Base Price': 200,
+            'Class': 'Special Substances & Items'
+        },
+        'Tavern Table': {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Tea Biscuits': {
+            'Base Price': 4,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Thunderstone': {
+            'Base Price': 3000,
+            'Class': 'Special Substances & Items'
+        },
+        'Tindertwig': {
+            'Base Price': 1000,
+            'Class': 'Special Substances & Items'
+        },
+        'Toffee': {
+            'Base Price': 30,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Tombstone': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Tooth Ointment (25 use flask)': {
+            'Base Price': 1000,
+            'Class': 'Special Substances & Items'
+        },
+        'Trained Hireling (per day)': {
+            'Base Price': 30,
+            'Class': 'Services'
+        },
+        'Tree (Small & young)': {
+            'Base Price': 20,
+            'Class': 'Commodities'
+        },
+        'Truffles': {
+            'Base Price': 100,
+            'Class': 'Commodities'
+        },
+        'Tutor (per day)': {
+            'Base Price': 1,
+            'Class': 'Services'
+        },
+        'UnCommon Dried Herbs': {
+            'Base Price': 10,
+            'Class': 'Commodities'
+        },
+        'UnCommon Nuts (in shell)': {
+            'Base Price': 10,
+            'Class': 'Commodities'
+        },
+        'Uncommon Vegetables': {
+            'Base Price': 3,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Waste Bin (50 gallon)': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Wizard'sSpellbook (Blank)": {
+            'Base Price': 1500,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Wood Stain (5 sq ft)': {
+            'Base Price': 300,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Wooden Ash Bowl (Fancy)': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Baby Cradle': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Cricket Box': {
+            'Base Price': 4,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Foot Massager': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Peg Leg': {
+            'Base Price': 70,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Wooden Picture frame (Medium)': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Writing Board': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Writing Quills (6)': {
+            'Base Price': 2,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
     },
     'R': {
-        'Albino Rats (Pair)': {'Base Price': 2, 'Class': 'Commodities'},
-        'Animal (Diminutive) Cage': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Antitoxin': {'Base Price': 5000, 'Class': 'Special Substances & Items'},
-        "Apothecary's Table": {'Base Price': 3000, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Beekeeper's Hive": {'Base Price': 200, 'Class': 'Tools & Skill Kits'},
-        "Beekeeper's Suit": {'Base Price': 1000, 'Class': 'Tools & Skill Kits'},
-        'Book of Fairy Tales': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Book of General Learning': {'Base Price': 2000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Book of Legends': {'Base Price': 2500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Book of Recipes': {'Base Price': 1500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Chinchilla': {'Base Price': 100, 'Class': 'Commodities'},
-        "Climber's Kit": {'Base Price': 8000, 'Class': 'Tools & Skill Kits'},
-        'Cocoa Beans': {'Base Price': 300, 'Class': 'Commodities'},
-        'Common Gem Eye': {'Base Price': 1500, 'Class': 'Tools & Skill Kits'},
-        'Common Padded Chair': {'Base Price': 800, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Copper Serving Tray': {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Copper Wash Basin': {'Base Price': 15000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Cosmetics/Theater Makeup Kit': {'Base Price': 1000, 'Class': 'Tools & Skill Kits'},
-        "Courtier's Outfit": {'Base Price': 3000, 'Class': 'Clothing'},
-        'Didjeridoo (Common)': {'Base Price': 500, 'Class': 'Musical Instrument'},
-        'Fancy Bed Clothing': {'Base Price': 100, 'Class': 'Clothing'},
-        'Fancy Bedside Table': {'Base Price': 1500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Birdbath': {'Base Price': 3000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Buckle': {'Base Price': 500, 'Class': 'Clothing'},
-        'Fancy Casket': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Chest of Drawers': {'Base Price': 5000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Cloth Dye (10yd)': {'Base Price': 500, 'Class': 'Tools & Skill Kits'},
-        'Fancy Decorative Plant': {'Base Price': 10, 'Class': 'Commodities'},
-        'Fancy Dining Chair': {'Base Price': 800, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Dining Table': {'Base Price': 5000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Dresser (standing)': {'Base Price': 2500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Eating Utensils': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Festival Costume': {'Base Price': 2500, 'Class': 'Clothing'},
-        'Fancy Foot Stool': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Gloves': {'Base Price': 100, 'Class': 'Clothing'},
-        'Fancy Hat/Headpiece': {'Base Price': 100, 'Class': 'Clothing'},
-        'Fancy Hide Blanket': {'Base Price': 2000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Kaleidoscope': {'Base Price': 8000, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Fancy Master's Chair": {'Base Price': 10000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Mice': {'Base Price': 1, 'Class': 'Commodities'},
-        'Fancy Nutcracker': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Pelt (Small)': {'Base Price': 300, 'Class': 'Commodities'},
-        'Fancy Pelt (Tiny)': {'Base Price': 30, 'Class': 'Commodities'},
-        'Fancy Pelt/Exotic Hide (Medium)': {'Base Price': 3000, 'Class': 'Commodities'},
-        'Fancy Perfume (vial)': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Pet Bird': {'Base Price': 20, 'Class': 'Commodities'},
-        'Fancy Pillow': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Plate Cabinet (standing)': {'Base Price': 5000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Serving Bowl': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Smoking Pipe': {'Base Price': 300, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Stained Glass Work (per sq ft)': {'Base Price': 2000, 'Class': 'Services'},
-        'Fancy Tablecloth': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Toy Doll': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Vanity Table (w/ Mirror)': {'Base Price': 80000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Wig': {'Base Price': 3000, 'Class': 'Clothing'},
-        'Fancy Wooden Toy': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Ferret': {'Base Price': 30, 'Class': 'Commodities'},
-        'Fife (masterwork)': {'Base Price': 10000, 'Class': 'Musical Instrument'},
-        'Fine Wine (bottle)': {'Base Price': 1000, 'Class': 'Food & Drink & Lodging'},
-        'Fishbowl': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fizzle Stones (12)': {'Base Price': 500, 'Class': 'Special Substances & Items'},
-        'Flask Olive oil': {'Base Price': 100, 'Class': 'Food & Drink & Lodging'},
-        'Four Leaf Clover': {'Base Price': 2, 'Class': 'Commodities'},
-        'Full Plate Barding (Large)': {'Base Price': 600000, 'Class': 'Mounts & Related Gear'},
-        'Full Plate Barding (Medium)': {'Base Price': 300000, 'Class': 'Mounts & Related Gear'},
-        'Galley': {'Base Price': 3000000, 'Class': 'Transport'},
-        'Grand Book of Songs (100)': {'Base Price': 5000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Grand Cage Wagon': {'Base Price': 80000, 'Class': 'Transport'},
-        'Grand Curtains': {'Base Price': 300, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Grappling Hook': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Hair Removal Ointment': {'Base Price': 300, 'Class': 'Special Substances & Items'},
-        'Heavy Warhorse': {'Base Price': 40000, 'Class': 'Mounts & Related Gear'},
-        'Holy Symbol (Silver)': {'Base Price': 2500, 'Class': 'Tools & Skill Kits'},
-        'Hookah': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Hourglass': {'Base Price': 2500, 'Class': 'Tools & Skill Kits'},
-        'Hourglass (1 day)': {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Hourglass (1 hour)': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Hurdy Gurdy (Common)': {'Base Price': 500, 'Class': 'Musical Instrument'},
-        'Ink (1 oz vial)': {'Base Price': 800, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Ink Pen': {'Base Price': 10, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Iron Bed': {'Base Price': 20000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Jade Dice (Pair)': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Large Book of Songs (50)': {'Base Price': 3000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Light Warhorse': {'Base Price': 15000, 'Class': 'Mounts & Related Gear'},
-        'Llama': {'Base Price': 1000, 'Class': 'Transport'},
-        'Lock (Good)': {'Base Price': 8000, 'Class': 'Adventuring Gear/Luxury Items'},
+        'Albino Rats (Pair)': {
+            'Base Price': 2,
+            'Class': 'Commodities'
+        },
+        'Animal (Diminutive) Cage': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Antitoxin': {
+            'Base Price': 5000,
+            'Class': 'Special Substances & Items'
+        },
+        "Apothecary's Table": {
+            'Base Price': 3000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Beekeeper's Hive": {
+            'Base Price': 200,
+            'Class': 'Tools & Skill Kits'
+        },
+        "Beekeeper's Suit": {
+            'Base Price': 1000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Book of Fairy Tales': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Book of General Learning': {
+            'Base Price': 2000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Book of Legends': {
+            'Base Price': 2500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Book of Recipes': {
+            'Base Price': 1500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Chinchilla': {
+            'Base Price': 100,
+            'Class': 'Commodities'
+        },
+        "Climber's Kit": {
+            'Base Price': 8000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Cocoa Beans': {
+            'Base Price': 300,
+            'Class': 'Commodities'
+        },
+        'Common Gem Eye': {
+            'Base Price': 1500,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Common Padded Chair': {
+            'Base Price': 800,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Copper Serving Tray': {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Copper Wash Basin': {
+            'Base Price': 15000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Cosmetics/Theater Makeup Kit': {
+            'Base Price': 1000,
+            'Class': 'Tools & Skill Kits'
+        },
+        "Courtier's Outfit": {
+            'Base Price': 3000,
+            'Class': 'Clothing'
+        },
+        'Didjeridoo (Common)': {
+            'Base Price': 500,
+            'Class': 'Musical Instrument'
+        },
+        'Fancy Bed Clothing': {
+            'Base Price': 100,
+            'Class': 'Clothing'
+        },
+        'Fancy Bedside Table': {
+            'Base Price': 1500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Birdbath': {
+            'Base Price': 3000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Buckle': {
+            'Base Price': 500,
+            'Class': 'Clothing'
+        },
+        'Fancy Casket': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Chest of Drawers': {
+            'Base Price': 5000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Cloth Dye (10yd)': {
+            'Base Price': 500,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Fancy Decorative Plant': {
+            'Base Price': 10,
+            'Class': 'Commodities'
+        },
+        'Fancy Dining Chair': {
+            'Base Price': 800,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Dining Table': {
+            'Base Price': 5000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Dresser (standing)': {
+            'Base Price': 2500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Eating Utensils': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Festival Costume': {
+            'Base Price': 2500,
+            'Class': 'Clothing'
+        },
+        'Fancy Foot Stool': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Gloves': {
+            'Base Price': 100,
+            'Class': 'Clothing'
+        },
+        'Fancy Hat/Headpiece': {
+            'Base Price': 100,
+            'Class': 'Clothing'
+        },
+        'Fancy Hide Blanket': {
+            'Base Price': 2000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Kaleidoscope': {
+            'Base Price': 8000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Fancy Master's Chair": {
+            'Base Price': 10000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Mice': {
+            'Base Price': 1,
+            'Class': 'Commodities'
+        },
+        'Fancy Nutcracker': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Pelt (Small)': {
+            'Base Price': 300,
+            'Class': 'Commodities'
+        },
+        'Fancy Pelt (Tiny)': {
+            'Base Price': 30,
+            'Class': 'Commodities'
+        },
+        'Fancy Pelt/Exotic Hide (Medium)': {
+            'Base Price': 3000,
+            'Class': 'Commodities'
+        },
+        'Fancy Perfume (vial)': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Pet Bird': {
+            'Base Price': 20,
+            'Class': 'Commodities'
+        },
+        'Fancy Pillow': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Plate Cabinet (standing)': {
+            'Base Price': 5000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Serving Bowl': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Smoking Pipe': {
+            'Base Price': 300,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Stained Glass Work (per sq ft)': {
+            'Base Price': 2000,
+            'Class': 'Services'
+        },
+        'Fancy Tablecloth': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Toy Doll': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Vanity Table (w/ Mirror)': {
+            'Base Price': 80000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Wig': {
+            'Base Price': 3000,
+            'Class': 'Clothing'
+        },
+        'Fancy Wooden Toy': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Ferret': {
+            'Base Price': 30,
+            'Class': 'Commodities'
+        },
+        'Fife (masterwork)': {
+            'Base Price': 10000,
+            'Class': 'Musical Instrument'
+        },
+        'Fine Wine (bottle)': {
+            'Base Price': 1000,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Fishbowl': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fizzle Stones (12)': {
+            'Base Price': 500,
+            'Class': 'Special Substances & Items'
+        },
+        'Flask Olive oil': {
+            'Base Price': 100,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Four Leaf Clover': {
+            'Base Price': 2,
+            'Class': 'Commodities'
+        },
+        'Full Plate Barding (Large)': {
+            'Base Price': 600000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Full Plate Barding (Medium)': {
+            'Base Price': 300000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Galley': {
+            'Base Price': 3000000,
+            'Class': 'Transport'
+        },
+        'Grand Book of Songs (100)': {
+            'Base Price': 5000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Grand Cage Wagon': {
+            'Base Price': 80000,
+            'Class': 'Transport'
+        },
+        'Grand Curtains': {
+            'Base Price': 300,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Grappling Hook': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Hair Removal Ointment': {
+            'Base Price': 300,
+            'Class': 'Special Substances & Items'
+        },
+        'Heavy Warhorse': {
+            'Base Price': 40000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Holy Symbol (Silver)': {
+            'Base Price': 2500,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Hookah': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Hourglass': {
+            'Base Price': 2500,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Hourglass (1 day)': {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Hourglass (1 hour)': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Hurdy Gurdy (Common)': {
+            'Base Price': 500,
+            'Class': 'Musical Instrument'
+        },
+        'Ink (1 oz vial)': {
+            'Base Price': 800,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Ink Pen': {
+            'Base Price': 10,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Iron Bed': {
+            'Base Price': 20000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Jade Dice (Pair)': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Large Book of Songs (50)': {
+            'Base Price': 3000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Light Warhorse': {
+            'Base Price': 15000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Llama': {
+            'Base Price': 1000,
+            'Class': 'Transport'
+        },
+        'Lock (Good)': {
+            'Base Price': 8000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
         # 'Longship': {'Base Price': 1000000, 'Class': 'Transport'},
-        'Lute (masterwork)': {'Base Price': 10000, 'Class': 'Musical Instrument'},
-        'Magnifying Glass': {'Base Price': 10000, 'Class': 'Tools & Skill Kits'},
-        'Manacles (masterwork)': {'Base Price': 5000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Mandolin (masterwork)': {'Base Price': 10000, 'Class': 'Musical Instrument'},
-        'Masterwork Tool': {'Base Price': 5000, 'Class': 'Tools & Skill Kits'},
-        'Maze Board (w/ marble)': {'Base Price': 50, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Metal Face Mask': {'Base Price': 5000, 'Class': 'Clothing'},
-        'Mink': {'Base Price': 50, 'Class': 'Commodities'},
-        'Mongoose': {'Base Price': 100, 'Class': 'Commodities'},
-        'Mood Stone Headpiece': {'Base Price': 3500, 'Class': 'Special Substances & Items'},
-        'Mood Stone Orb': {'Base Price': 1500, 'Class': 'Special Substances & Items'},
-        'Mood Stone Pendant': {'Base Price': 1500, 'Class': 'Special Substances & Items'},
-        'Mood Stone Ring': {'Base Price': 1000, 'Class': 'Special Substances & Items'},
-        'Mouth Soap (12)': {'Base Price': 500, 'Class': 'Special Substances & Items'},
-        'Music Box (Common)': {'Base Price': 1500, 'Class': 'Musical Instrument'},
-        'Musical Instrument (masterwork)': {'Base Price': 10000, 'Class': 'Tools & Skill Kits'},
-        'Noble Nanny (per day)': {'Base Price': 10, 'Class': 'Services'},
-        'Noble Tutor (per day)': {'Base Price': 30, 'Class': 'Services'},
-        "Noble's Outfit": {'Base Price': 7500, 'Class': 'Clothing'},
-        'Organ Box (Fancy)': {'Base Price': 800, 'Class': 'Musical Instrument'},
-        'Paper (sheet)': {'Base Price': 40, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Plates (Fancy) set of 4': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Poet's Blank Book": {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Rain Stick (Common)': {'Base Price': 500, 'Class': 'Musical Instrument'},
-        'Rare/Import Dried Herbs': {'Base Price': 100, 'Class': 'Commodities'},
-        'Recorder (masterwork)': {'Base Price': 10000, 'Class': 'Musical Instrument'},
-        'Riding Dog': {'Base Price': 15000, 'Class': 'Mounts & Related Gear'},
-        'Roundabout': {'Base Price': 3000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Sarod': {'Base Price': 2000, 'Class': 'Musical Instrument'},
-        'Sarod (Common)': {'Base Price': 1500, 'Class': 'Musical Instrument'},
-        "Scholar's Bed": {'Base Price': 4000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Set of Mahjong Tiles': {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Shadow Lantern': {'Base Price': 2500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Shawm (masterwork)': {'Base Price': 10000, 'Class': 'Musical Instrument'},
-        'Sideshow Cart': {'Base Price': 65000, 'Class': 'Transport'},
-        'Signet Ring': {'Base Price': 500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Silver Serving Tray': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Singing Bowl w/ accessories (Common)': {'Base Price': 1500, 'Class': 'Musical Instrument'},
-        'Sitar (Common)': {'Base Price': 1500, 'Class': 'Musical Instrument'},
-        'Small Book of Songs (20)': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Spectacles': {'Base Price': 80000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Standing Mirror': {'Base Price': 30000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Stone Cricket Box': {'Base Price': 30, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Tanglefoot Bag': {'Base Price': 5000, 'Class': 'Special Substances & Items'},
-        'Tarantula': {'Base Price': 3, 'Class': 'Commodities'},
-        'Tea Service Set': {'Base Price': 1500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Teeth (demihuman) per tooth': {'Base Price': 80, 'Class': 'Tools & Skill Kits'},
-        'Teeth (humanoid) per tooth': {'Base Price': 10, 'Class': 'Tools & Skill Kits'},
-        'Therapeutic Massage': {'Base Price': 20, 'Class': 'Services'},
-        "Thieves' Tools": {'Base Price': 3000, 'Class': 'Tools & Skill Kits'},
-        'Tinted Spectacles': {'Base Price': 85000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Uncommon fresh Fruit': {'Base Price': 5, 'Class': 'Food & Drink & Lodging'},
-        'Vanity Mirror': {'Base Price': 5000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Warpony': {'Base Price': 10000, 'Class': 'Mounts & Related Gear'},
-        'Wooden Fortune Wheel': {'Base Price': 2000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Moon Calendar': {'Base Price': 100, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Wooden Picture frame (Large)': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Xylophone (Common)': {'Base Price': 1500, 'Class': 'Musical Instrument'},
+        'Lute (masterwork)': {
+            'Base Price': 10000,
+            'Class': 'Musical Instrument'
+        },
+        'Magnifying Glass': {
+            'Base Price': 10000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Manacles (masterwork)': {
+            'Base Price': 5000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Mandolin (masterwork)': {
+            'Base Price': 10000,
+            'Class': 'Musical Instrument'
+        },
+        'Masterwork Tool': {
+            'Base Price': 5000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Maze Board (w/ marble)': {
+            'Base Price': 50,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Metal Face Mask': {
+            'Base Price': 5000,
+            'Class': 'Clothing'
+        },
+        'Mink': {
+            'Base Price': 50,
+            'Class': 'Commodities'
+        },
+        'Mongoose': {
+            'Base Price': 100,
+            'Class': 'Commodities'
+        },
+        'Mood Stone Headpiece': {
+            'Base Price': 3500,
+            'Class': 'Special Substances & Items'
+        },
+        'Mood Stone Orb': {
+            'Base Price': 1500,
+            'Class': 'Special Substances & Items'
+        },
+        'Mood Stone Pendant': {
+            'Base Price': 1500,
+            'Class': 'Special Substances & Items'
+        },
+        'Mood Stone Ring': {
+            'Base Price': 1000,
+            'Class': 'Special Substances & Items'
+        },
+        'Mouth Soap (12)': {
+            'Base Price': 500,
+            'Class': 'Special Substances & Items'
+        },
+        'Music Box (Common)': {
+            'Base Price': 1500,
+            'Class': 'Musical Instrument'
+        },
+        'Musical Instrument (masterwork)': {
+            'Base Price': 10000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Noble Nanny (per day)': {
+            'Base Price': 10,
+            'Class': 'Services'
+        },
+        'Noble Tutor (per day)': {
+            'Base Price': 30,
+            'Class': 'Services'
+        },
+        "Noble's Outfit": {
+            'Base Price': 7500,
+            'Class': 'Clothing'
+        },
+        'Organ Box (Fancy)': {
+            'Base Price': 800,
+            'Class': 'Musical Instrument'
+        },
+        'Paper (sheet)': {
+            'Base Price': 40,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Plates (Fancy) set of 4': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Poet's Blank Book": {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Rain Stick (Common)': {
+            'Base Price': 500,
+            'Class': 'Musical Instrument'
+        },
+        'Rare/Import Dried Herbs': {
+            'Base Price': 100,
+            'Class': 'Commodities'
+        },
+        'Recorder (masterwork)': {
+            'Base Price': 10000,
+            'Class': 'Musical Instrument'
+        },
+        'Riding Dog': {
+            'Base Price': 15000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Roundabout': {
+            'Base Price': 3000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Sarod': {
+            'Base Price': 2000,
+            'Class': 'Musical Instrument'
+        },
+        'Sarod (Common)': {
+            'Base Price': 1500,
+            'Class': 'Musical Instrument'
+        },
+        "Scholar's Bed": {
+            'Base Price': 4000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Set of Mahjong Tiles': {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Shadow Lantern': {
+            'Base Price': 2500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Shawm (masterwork)': {
+            'Base Price': 10000,
+            'Class': 'Musical Instrument'
+        },
+        'Sideshow Cart': {
+            'Base Price': 65000,
+            'Class': 'Transport'
+        },
+        'Signet Ring': {
+            'Base Price': 500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Silver Serving Tray': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Singing Bowl w/ accessories (Common)': {
+            'Base Price': 1500,
+            'Class': 'Musical Instrument'
+        },
+        'Sitar (Common)': {
+            'Base Price': 1500,
+            'Class': 'Musical Instrument'
+        },
+        'Small Book of Songs (20)': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Spectacles': {
+            'Base Price': 80000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Standing Mirror': {
+            'Base Price': 30000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Stone Cricket Box': {
+            'Base Price': 30,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Tanglefoot Bag': {
+            'Base Price': 5000,
+            'Class': 'Special Substances & Items'
+        },
+        'Tarantula': {
+            'Base Price': 3,
+            'Class': 'Commodities'
+        },
+        'Tea Service Set': {
+            'Base Price': 1500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Teeth (demihuman) per tooth': {
+            'Base Price': 80,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Teeth (humanoid) per tooth': {
+            'Base Price': 10,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Therapeutic Massage': {
+            'Base Price': 20,
+            'Class': 'Services'
+        },
+        "Thieves' Tools": {
+            'Base Price': 3000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Tinted Spectacles': {
+            'Base Price': 85000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Uncommon fresh Fruit': {
+            'Base Price': 5,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Vanity Mirror': {
+            'Base Price': 5000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Warpony': {
+            'Base Price': 10000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Wooden Fortune Wheel': {
+            'Base Price': 2000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Moon Calendar': {
+            'Base Price': 100,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Wooden Picture frame (Large)': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Xylophone (Common)': {
+            'Base Price': 1500,
+            'Class': 'Musical Instrument'
+        },
     },
     'E': {
-        "Alchemist's Lab": {'Base Price': 50000, 'Class': 'Tools & Skill Kits'},
-        'Baboon': {'Base Price': 2000, 'Class': 'Commodities'},
-        'Boa Constrictor': {'Base Price': 1000, 'Class': 'Commodities'},
-        'Bonzai Tree (Tiny to Small)': {'Base Price': 10, 'Class': 'Commodities'},
-        'Canopy Bed': {'Base Price': 35000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Carnival Kaleidoscope': {'Base Price': 20000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Carnival Mirror (standing)': {'Base Price': 35000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Clockwork Toy': {'Base Price': 2000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Didjeridoo (masterwork)': {'Base Price': 10000, 'Class': 'Musical Instrument'},
-        'Everburning Torch': {'Base Price': 11000, 'Class': 'Special Substances & Items'},
-        'Exotic Perfume (vial)': {'Base Price': 2000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Exotic Saddle (Military)': {'Base Price': 6000, 'Class': 'Mounts & Related Gear'},
-        'Exotic Saddle (Pack)': {'Base Price': 1500, 'Class': 'Mounts & Related Gear'},
-        'Exotic Saddle (Riding)': {'Base Price': 3000, 'Class': 'Mounts & Related Gear'},
-        'Exotic/Rare Meat (chunk)': {'Base Price': 500, 'Class': 'Food & Drink & Lodging'},
-        'Fancy Caravan Wagon': {'Base Price': 125000, 'Class': 'Transport'},
-        'Fancy Gem Eye': {'Base Price': 5000, 'Class': 'Tools & Skill Kits'},
-        'Fancy Gnomish Cukoo Clock': {'Base Price': 200000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Padded Chair': {'Base Price': 2500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fancy Pelt/Exotic Hide (large)': {'Base Price': 10000, 'Class': 'Commodities'},
-        "Fancy Performer's Cart": {'Base Price': 80000, 'Class': 'Transport'},
-        'Fancy Pet Lizard': {'Base Price': 30, 'Class': 'Commodities'},
-        'Fancy Puppet': {'Base Price': 200, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Fine Leather Mask': {'Base Price': 500, 'Class': 'Clothing'},
-        'Ginseng Root': {'Base Price': 300, 'Class': 'Commodities'},
-        'Gnomish Crank Whistle': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Gnomish Cutting Shears': {'Base Price': 8000, 'Class': 'Tools & Skill Kits'},
-        'Gnomish Fire Crank': {'Base Price': 1500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Gnomish Gear Clock': {'Base Price': 120000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Gnomish Heat Lantern': {'Base Price': 2500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Gnomish Meat Grinder': {'Base Price': 1500, 'Class': 'Tools & Skill Kits'},
-        'Hurdy Gurdy (masterwork)': {'Base Price': 10000, 'Class': 'Musical Instrument'},
-        'Lock (Amazing)': {'Base Price': 15000, 'Class': 'Adventuring Gear/Luxury Items'},
-        "Masterwork Thieves' Tools": {'Base Price': 10000, 'Class': 'Tools & Skill Kits'},
-        'Monkey': {'Base Price': 500, 'Class': 'Commodities'},
-        'Music Box (masterwork)': {'Base Price': 30000, 'Class': 'Musical Instrument'},
-        'Noble Chest of Drawers': {'Base Price': 25000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Organ Box (masterwork)': {'Base Price': 20000, 'Class': 'Musical Instrument'},
-        'Peacock': {'Base Price': 5, 'Class': 'Commodities'},
-        'Portable Ram': {'Base Price': 1000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Rain Stick (masterwork)': {'Base Price': 10000, 'Class': 'Musical Instrument'},
-        'Rare Pet Bird': {'Base Price': 500, 'Class': 'Commodities'},
-        'Rare/Exotic Decorative Plant': {'Base Price': 200, 'Class': 'Commodities'},
-        'Royal Gnomish Cukoo Clock': {'Base Price': 300000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Royal Outfit': {'Base Price': 20000, 'Class': 'Clothing'},
-        'Royal Vanity Table (w/ Mirror)': {'Base Price': 150000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Sarod (masterwork)': {'Base Price': 30000, 'Class': 'Musical Instrument'},
-        'Singing Bowl w/ accessories (masterwork)': {'Base Price': 30000, 'Class': 'Musical Instrument'},
-        'Sitar (masterwork)': {'Base Price': 30000, 'Class': 'Musical Instrument'},
-        'Spyglass': {'Base Price': 100000, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Stone Moon Calendar': {'Base Price': 1500, 'Class': 'Adventuring Gear/Luxury Items'},
-        'Sugar Glider': {'Base Price': 100, 'Class': 'Commodities'},
-        'Vanilla Beans': {'Base Price': 100, 'Class': 'Commodities'},
+        "Alchemist's Lab": {
+            'Base Price': 50000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Baboon': {
+            'Base Price': 2000,
+            'Class': 'Commodities'
+        },
+        'Boa Constrictor': {
+            'Base Price': 1000,
+            'Class': 'Commodities'
+        },
+        'Bonzai Tree (Tiny to Small)': {
+            'Base Price': 10,
+            'Class': 'Commodities'
+        },
+        'Canopy Bed': {
+            'Base Price': 35000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Carnival Kaleidoscope': {
+            'Base Price': 20000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Carnival Mirror (standing)': {
+            'Base Price': 35000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Clockwork Toy': {
+            'Base Price': 2000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Didjeridoo (masterwork)': {
+            'Base Price': 10000,
+            'Class': 'Musical Instrument'
+        },
+        'Everburning Torch': {
+            'Base Price': 11000,
+            'Class': 'Special Substances & Items'
+        },
+        'Exotic Perfume (vial)': {
+            'Base Price': 2000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Exotic Saddle (Military)': {
+            'Base Price': 6000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Exotic Saddle (Pack)': {
+            'Base Price': 1500,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Exotic Saddle (Riding)': {
+            'Base Price': 3000,
+            'Class': 'Mounts & Related Gear'
+        },
+        'Exotic/Rare Meat (chunk)': {
+            'Base Price': 500,
+            'Class': 'Food & Drink & Lodging'
+        },
+        'Fancy Caravan Wagon': {
+            'Base Price': 125000,
+            'Class': 'Transport'
+        },
+        'Fancy Gem Eye': {
+            'Base Price': 5000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Fancy Gnomish Cukoo Clock': {
+            'Base Price': 200000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Padded Chair': {
+            'Base Price': 2500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fancy Pelt/Exotic Hide (large)': {
+            'Base Price': 10000,
+            'Class': 'Commodities'
+        },
+        "Fancy Performer's Cart": {
+            'Base Price': 80000,
+            'Class': 'Transport'
+        },
+        'Fancy Pet Lizard': {
+            'Base Price': 30,
+            'Class': 'Commodities'
+        },
+        'Fancy Puppet': {
+            'Base Price': 200,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Fine Leather Mask': {
+            'Base Price': 500,
+            'Class': 'Clothing'
+        },
+        'Ginseng Root': {
+            'Base Price': 300,
+            'Class': 'Commodities'
+        },
+        'Gnomish Crank Whistle': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Gnomish Cutting Shears': {
+            'Base Price': 8000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Gnomish Fire Crank': {
+            'Base Price': 1500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Gnomish Gear Clock': {
+            'Base Price': 120000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Gnomish Heat Lantern': {
+            'Base Price': 2500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Gnomish Meat Grinder': {
+            'Base Price': 1500,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Hurdy Gurdy (masterwork)': {
+            'Base Price': 10000,
+            'Class': 'Musical Instrument'
+        },
+        'Lock (Amazing)': {
+            'Base Price': 15000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        "Masterwork Thieves' Tools": {
+            'Base Price': 10000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Monkey': {
+            'Base Price': 500,
+            'Class': 'Commodities'
+        },
+        'Music Box (masterwork)': {
+            'Base Price': 30000,
+            'Class': 'Musical Instrument'
+        },
+        'Noble Chest of Drawers': {
+            'Base Price': 25000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Organ Box (masterwork)': {
+            'Base Price': 20000,
+            'Class': 'Musical Instrument'
+        },
+        'Peacock': {
+            'Base Price': 5,
+            'Class': 'Commodities'
+        },
+        'Portable Ram': {
+            'Base Price': 1000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Rain Stick (masterwork)': {
+            'Base Price': 10000,
+            'Class': 'Musical Instrument'
+        },
+        'Rare Pet Bird': {
+            'Base Price': 500,
+            'Class': 'Commodities'
+        },
+        'Rare/Exotic Decorative Plant': {
+            'Base Price': 200,
+            'Class': 'Commodities'
+        },
+        'Royal Gnomish Cukoo Clock': {
+            'Base Price': 300000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Royal Outfit': {
+            'Base Price': 20000,
+            'Class': 'Clothing'
+        },
+        'Royal Vanity Table (w/ Mirror)': {
+            'Base Price': 150000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Sarod (masterwork)': {
+            'Base Price': 30000,
+            'Class': 'Musical Instrument'
+        },
+        'Singing Bowl w/ accessories (masterwork)': {
+            'Base Price': 30000,
+            'Class': 'Musical Instrument'
+        },
+        'Sitar (masterwork)': {
+            'Base Price': 30000,
+            'Class': 'Musical Instrument'
+        },
+        'Spyglass': {
+            'Base Price': 100000,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Stone Moon Calendar': {
+            'Base Price': 1500,
+            'Class': 'Adventuring Gear/Luxury Items'
+        },
+        'Sugar Glider': {
+            'Base Price': 100,
+            'Class': 'Commodities'
+        },
+        'Vanilla Beans': {
+            'Base Price': 100,
+            'Class': 'Commodities'
+        },
         # 'Warship': {'Base Price': 2500000, 'Class': 'Transport'},
-        'Water Clock': {'Base Price': 100000, 'Class': 'Tools & Skill Kits'},
-        'Xylophone (masterwork)': {'Base Price': 30000, 'Class': 'Musical Instrument'},
+        'Water Clock': {
+            'Base Price': 100000,
+            'Class': 'Tools & Skill Kits'
+        },
+        'Xylophone (masterwork)': {
+            'Base Price': 30000,
+            'Class': 'Musical Instrument'
+        },
     },
 }
-

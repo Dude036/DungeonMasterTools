@@ -12,7 +12,8 @@ class Character(object):
     Traits = Story = []
     Age = 0
 
-    def __init__(self, cName, cRace, cGender, cAge, cAppearance, cTraits, cStory):
+    def __init__(self, cName, cRace, cGender, cAge, cAppearance, cTraits,
+                 cStory):
         self.Name = cName
         self.Race = cRace
         self.Gender = cGender
@@ -29,7 +30,8 @@ class Character(object):
                """</li><li><span style="font-weight:bold;">Appearance:</span> """ + str(self.Appearance) + \
                """</li><li><span style="font-weight:bold;">Trait 1:</span> """ + self.Traits[0] + "</li>"
         if len(self.Traits) > 1:
-            info += """<li><span style="font-weight:bold;">Trait 2:</span> """ + self.Traits[1] + "</li>"
+            info += """<li><span style="font-weight:bold;">Trait 2:</span> """ + self.Traits[
+                1] + "</li>"
         info += "</ul><p>"
         for x in range(len(self.Story)):
             info += self.Story[x] + """</p>"""
@@ -50,7 +52,8 @@ def create_person(pop):
     hair = appearance['Hair'][randint(len(appearance['Hair']))]
     eyes = appearance['Eyes'][randint(len(appearance['Eyes']))]
     body = appearance['Body'][randint(len(appearance['Body']))]
-    appear = body + ' and looks ' + face.lower() + ' with ' + hair.lower() + ' hair and ' + eyes.lower() + ' eyes. '
+    appear = body + ' and looks ' + face.lower() + ' with ' + hair.lower(
+    ) + ' hair and ' + eyes.lower() + ' eyes. '
 
     back = 'I\'m a ' + gender + ' ' + race[0] + ', from '
     back += back_location[randint(len(back_location))] + ' who '
@@ -68,6 +71,8 @@ def create_person(pop):
         trait.append(negative_traits[randint(len(negative_traits))])
         trait.append(negative_traits[randint(len(negative_traits))])
 
-    story = [back, ]
+    story = [
+        back,
+    ]
 
     return Character(name, race[0], gender, age, appear, trait, story)

@@ -60,11 +60,13 @@ class QuestBoard(object):
                     # Specific Monster
                     print_monster(pick_monster(name=q.Other))
                     questHTML += '<iframe src="beasts/' + q.Other + '.html" height="500" style="padding: 10px"></iframe><br>'
-                    print(q.Other, ":: Specific Monster :: created for", q.Title)
+                    print(q.Other, ":: Specific Monster :: created for",
+                          q.Title)
                 else:
                     m = pick_monster(cr=str(q.Level) + '.00')
                     print_monster(m)
-                    questHTML += '<iframe src="beasts/' + m[0] + '.html" height="500" style="padding: 10px"></iframe><br />'
+                    questHTML += '<iframe src="beasts/' + m[
+                        0] + '.html" height="500" style="padding: 10px"></iframe><br />'
                     print(m[0], ":: Monster :: created for", q.Title)
             questHTML += '</body></html>'
             outf.write(bs(questHTML, 'html5lib').prettify())
@@ -86,7 +88,8 @@ class Quest(object):
         self.Level = int(level)
         # Create Person of interest and Reward
         self.Reporter = create_person(None)
-        self.Reward = int(sum(treasure_samples(1, ['Coins'], Campaign_Speed[self.Level])))
+        self.Reward = int(
+            sum(treasure_samples(1, ['Coins'], Campaign_Speed[self.Level])))
 
         # Quest picker
         r = randint(0, 4)
@@ -101,19 +104,51 @@ class Quest(object):
 
     def __fetch(self):
         # Retrieve stolen or rare item
-        when = choice(['yesterday', 'the other day', 'a while ago', 'today', 'a fortnight ago', 'this week',
-                       'this morning', 'last evening', 'last morning', 'a week ago', 'two days ago',
-                       'three days ago', 'four days ago', 'five days ago', 'six days ago', 'recently',
-                       'very recently', ])
+        when = choice([
+            'yesterday',
+            'the other day',
+            'a while ago',
+            'today',
+            'a fortnight ago',
+            'this week',
+            'this morning',
+            'last evening',
+            'last morning',
+            'a week ago',
+            'two days ago',
+            'three days ago',
+            'four days ago',
+            'five days ago',
+            'six days ago',
+            'recently',
+            'very recently',
+        ])
         self.Other = create_person(None)
         location = quest_location[randint(len(quest_location))].lower()
         r = randint(0, 5)
         if r == 0:
             self.Title = 'Missing Item'
             item = choice(Trinkets)
-            heritage = choice(['Brother', 'Sister', 'Mom', 'Dad', 'Parent', 'Sibling', 'Step-Brother', 'Step-Sister',
-                               'Step-Mom', 'Step-Dad', 'Grandma', 'Grandpa', 'Uncle', 'Aunt', 'Great-Grandma',
-                               'Great-Grandpa', 'Great-Uncle', 'Great-Aunt', ])
+            heritage = choice([
+                'Brother',
+                'Sister',
+                'Mom',
+                'Dad',
+                'Parent',
+                'Sibling',
+                'Step-Brother',
+                'Step-Sister',
+                'Step-Mom',
+                'Step-Dad',
+                'Grandma',
+                'Grandpa',
+                'Uncle',
+                'Aunt',
+                'Great-Grandma',
+                'Great-Grandpa',
+                'Great-Uncle',
+                'Great-Aunt',
+            ])
 
             self.Hook = "I seem to have lost something very close to me. It's \"" + item + '". My ' + heritage + \
                         ' gave it to me forever ago, and seem to have lost it. If you find it, please bring it to ' + \
@@ -141,7 +176,8 @@ class Quest(object):
                         ' authorities.\nRace: ' + self.Reporter.Race + '\nAge: ' + str(self.Reporter.Age) + \
                         '\nAppearance: ' + self.Reporter.Appearance
         elif r == 4:
-            timing = str(randint(1, 13)) + ':' + str(choice(['00', 15, 30, 45]))
+            timing = str(randint(1, 13)) + ':' + str(
+                choice(['00', 15, 30, 45]))
             self.Title = 'Search Party: ' + self.Other.Name
             self.Hook = 'NOTICE: ' + self.Reporter.Name + ' has gone missing. ' + self.Other.Name + ' has organized' + \
                         ' a searching party. If you have any information, report it to the authorities.\nIf you ' + \
@@ -173,7 +209,10 @@ class Quest(object):
                 if int(float(Beasts[name]['CR'])) == self.Level:
                     badCR = False
             self.Other = name
-            place = choice(['North', 'South', 'North-East', 'South-East', 'North-West', 'South-West', 'East', 'West'])
+            place = choice([
+                'North', 'South', 'North-East', 'South-East', 'North-West',
+                'South-West', 'East', 'West'
+            ])
             self.Hook = 'A "' + name + '" has taken refuge ' + place + ' of town. They have cause great harm to us ' + \
                         'and we are looking for able bodies to help defeat this foe. If you are able, report to ' + \
                         self.Reporter.Name + ' for more information.'
@@ -210,8 +249,11 @@ class Quest(object):
             self.Hook = 'I need to get to ' + destination + " in a week. I'm nervous about travelling alone, and " + \
                         'need a companion for the journey. Please see ' + self.Reporter.Name + ' ' + location + '.'
         elif r == 2:
-            items = choice(['Weapons', 'Armor', 'Scrolls', 'Equipment', 'Staffs', 'Supplies',  'Food', 'Wands',
-                            'Slaves', 'Gems', 'Spell books', 'Books', 'Swords', 'Bows', 'Potions']).lower()
+            items = choice([
+                'Weapons', 'Armor', 'Scrolls', 'Equipment', 'Staffs',
+                'Supplies', 'Food', 'Wands', 'Slaves', 'Gems', 'Spell books',
+                'Books', 'Swords', 'Bows', 'Potions'
+            ]).lower()
             self.Hook = "I'm transporting a shipment of " + items + ' to ' + destination + ', and need some help.' + \
                         ' Food and shelter will be covered for your assistance. Serious Inquiries only. See ' + \
                         self.Reporter.Name + ' ' + location + ' before the end of the week.'
@@ -261,7 +303,12 @@ class Quest(object):
 def get_lotsa_rewards(quan, reward, filename):
     with open(filename, 'w') as file:
         for _ in range(quan):
-            file.write(str(int(sum(treasure_samples(1, ['Coins'], Campaign_Speed[reward])))) + ',')
+            file.write(
+                str(
+                    int(
+                        sum(
+                            treasure_samples(1, ['Coins'],
+                                             Campaign_Speed[reward])))) + ',')
 
 
 def delete_lotsa_rewards(levels):
@@ -273,7 +320,10 @@ def threaded_analysis(levels):
     from multiprocessing import Process
     pile = []
     for i in range(levels):
-        pile.append(Process(target=get_lotsa_rewards, args=(10000, i, 'reward_level_' + str(i) + '.csv')))
+        pile.append(
+            Process(
+                target=get_lotsa_rewards,
+                args=(10000, i, 'reward_level_' + str(i) + '.csv')))
 
     for shirt in pile:
         shirt.start()
@@ -305,15 +355,23 @@ if __name__ == '__main__':
     from collections import Counter
     import os
     with open('stats.csv', 'w') as outf:
-        outf.write('Level,Mean,Median,Median (Low),Median (High),Mode,Instances,Standard Deviation\n')
+        outf.write(
+            'Level,Mean,Median,Median (Low),Median (High),Mode,Instances,Standard Deviation\n'
+        )
         i = 0
         for item in stats_list:
             m = Counter(item).most_common(1)[0]
-            stats = [i, mean(item), median(item), median_low(item), median_high(item), m[0], m[1], stdev(item)]
+            stats = [
+                i,
+                mean(item),
+                median(item),
+                median_low(item),
+                median_high(item), m[0], m[1],
+                stdev(item)
+            ]
             i += 1
             for s in stats:
                 outf.write(str(s) + ',')
             outf.write('\n')
 
     delete_lotsa_rewards(levels)
-

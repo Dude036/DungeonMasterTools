@@ -3,7 +3,6 @@ import town_generator
 from PC import PC
 from os import linesep
 from re import match
-
 """
 @TODO:
 1: UNIT TESTS!
@@ -59,48 +58,63 @@ def make_sample():
 
 
 def make_sample_input():
-    store_dict = {'Weapon': r'(\d+) ([01234]) ([01234]) (\d+) (\d+) ([\d.]+)',
-                  'Armor': r'(\d+) ([01234]) ([01234]) (\d+) (\d+) ([\d.]+)',
-                  'Potion': r'(\d+) (\d) (\d) (\d+) (\d+) ([\d.]+)',
-                  'Enchantment': r'(\d+) (\d) (\d) (\d+) (\d+) ([\d.]+)',
-                  'Enchanter': r'(\d+) (\d) (\d) (\d+) (\d+) ([\d.]+)',
-                  'Book': r'(\d+) (\d+) (\d+) ([\d.]+)',
-                  'Tavern': r'(\d+) (\d+) (\d+) ([\d.]+)',
-                  'Jeweller': r'(\d+) (\d) (\d) (\d+) (\d+) ([\d.]+)',
-                  'Restaurant': r'(\d+) (\d+) (\d+) ([\d.]+)',
-                  'General': r'(\d+) ([0123]) ([0123]) (\d+) (\d+) \d+ ([\d.]+)',
-                  'Brothel': r'(\d+) (\d+) (\d+) ([\d.]+)',
-                  'Gunsmith': r'(\d+) ([01234]) ([01234]) (\d+) (\d+) ([\d.]+)',
-                  'Quest Board': r'(\d+) \d+ \d+ \d+'}
+    store_dict = {
+        'Weapon': r'(\d+) ([01234]) ([01234]) (\d+) (\d+) ([\d.]+)',
+        'Armor': r'(\d+) ([01234]) ([01234]) (\d+) (\d+) ([\d.]+)',
+        'Potion': r'(\d+) (\d) (\d) (\d+) (\d+) ([\d.]+)',
+        'Enchantment': r'(\d+) (\d) (\d) (\d+) (\d+) ([\d.]+)',
+        'Enchanter': r'(\d+) (\d) (\d) (\d+) (\d+) ([\d.]+)',
+        'Book': r'(\d+) (\d+) (\d+) ([\d.]+)',
+        'Tavern': r'(\d+) (\d+) (\d+) ([\d.]+)',
+        'Jeweller': r'(\d+) (\d) (\d) (\d+) (\d+) ([\d.]+)',
+        'Restaurant': r'(\d+) (\d+) (\d+) ([\d.]+)',
+        'General': r'(\d+) ([0123]) ([0123]) (\d+) (\d+) \d+ ([\d.]+)',
+        'Brothel': r'(\d+) (\d+) (\d+) ([\d.]+)',
+        'Gunsmith': r'(\d+) ([01234]) ([01234]) (\d+) (\d+) ([\d.]+)',
+        'Quest Board': r'(\d+) \d+ \d+ \d+'
+    }
 
     with open('generate.txt', 'w') as outf:
         for store in list(store_dict.keys()):
             invalid_input = True
             user_input = ''
             while invalid_input:
-                user_input = input("Please input information for " + store + ' store:\n')
+                user_input = input("Please input information for " + store +
+                                   ' store:\n')
                 parsed = match(store_dict[store], user_input)
                 print([int(p) for p in parsed.groups()])
                 if parsed is None:
-                    print("Invalid input for", store, '. Please see README for more info.')
+                    print("Invalid input for", store,
+                          '. Please see README for more info.')
                     continue
-                elif store == 'Quest Board' and int(parsed.group(2)) > 20 and int(parsed.group(3)) > 20:
-                    print("Too large of level for", store, '. Please see README for more info.')
+                elif store == 'Quest Board' and int(
+                        parsed.group(2)) > 20 and int(parsed.group(3)) > 20:
+                    print("Too large of level for", store,
+                          '. Please see README for more info.')
                     continue
-                elif store in ['Weapon', 'Armor', 'Potion', 'Enchantment', 'Enchanter', 'Jeweller', 'General',
-                               'Gunsmith', 'Quest Board'] and int(parsed.group(2)) > int(parsed.group(3)):
+                elif store in [
+                        'Weapon', 'Armor', 'Potion', 'Enchantment',
+                        'Enchanter', 'Jeweller', 'General', 'Gunsmith',
+                        'Quest Board'
+                ] and int(parsed.group(2)) > int(parsed.group(3)):
                     print("Rarity lower bound higher than upper bound.")
                     continue
-                elif store in ['Weapon', 'Armor', 'Potion', 'Enchantment', 'Enchanter', 'Jeweller', 'General',
-                               'Gunsmith'] and int(parsed.group(4)) > int(parsed.group(5)):
+                elif store in [
+                        'Weapon', 'Armor', 'Potion', 'Enchantment',
+                        'Enchanter', 'Jeweller', 'General', 'Gunsmith'
+                ] and int(parsed.group(4)) > int(parsed.group(5)):
                     print("Quantity lower bound higher than upper bound.")
                     continue
-                elif store in ['Weapon', 'Armor', 'Potion', 'Enchantment', 'Enchanter', 'Jeweller', 'General',
-                               'Gunsmith'] and int(parsed.group(4)) > int(parsed.group(5)):
+                elif store in [
+                        'Weapon', 'Armor', 'Potion', 'Enchantment',
+                        'Enchanter', 'Jeweller', 'General', 'Gunsmith'
+                ] and int(parsed.group(4)) > int(parsed.group(5)):
                     print("Quantity lower bound higher than upper bound.")
                     continue
-                elif store in ['Weapon', 'Armor', 'Potion', 'Enchantment', 'Enchanter', 'Jeweller', 'General',
-                               'Gunsmith'] and eval(parsed.group(6)) <= 0:
+                elif store in [
+                        'Weapon', 'Armor', 'Potion', 'Enchantment',
+                        'Enchanter', 'Jeweller', 'General', 'Gunsmith'
+                ] and eval(parsed.group(6)) <= 0:
                     print("Inflation rate cannot be below 0.0.")
                     continue
                 elif store == 'Books' and eval(parsed.group(4)) <= 0:
@@ -187,10 +201,12 @@ if __name__ == '__main__':
             else:
                 Positions.append(title)
 
-    town_name = town_generator.generate(Weapons, Armor, Potion, Enchant, Enchanter, Books, Tavern, Jewel, Food, General,
-                                        Brothel, Gunsmith, Quests)
+    town_name = town_generator.generate(Weapons, Armor, Potion, Enchant,
+                                        Enchanter, Books, Tavern, Jewel, Food,
+                                        General, Brothel, Gunsmith, Quests)
     for p in Positions:
-        town_generator.write_people(town_generator.create_person(town_generator.create_variance()), p)
+        town_generator.write_people(
+            town_generator.create_person(town_generator.create_variance()), p)
     for npc in NPC:
         town_generator.write_npc(PC(), npc)
     print("Writing the town ", town_name)

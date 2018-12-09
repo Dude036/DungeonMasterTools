@@ -31,11 +31,17 @@ class PC(object):
 
         self.roll()
 
-        self.Weapon = [Weapon(randint(0, 5),
-                              iClass=choice(['Heavy Axe', 'Light Axe', 'Heavy Blade', 'Light Blade', 'Close', 'Double',
-                                             'Flail', 'Hammer', 'Monk', 'Polearm', 'Spear'])),
-                       Weapon(randint(0, 5),
-                              iClass=choice(['Bows', 'Crossbow', 'Thrown']))]
+        self.Weapon = [
+            Weapon(
+                randint(0, 5),
+                iClass=choice([
+                    'Heavy Axe', 'Light Axe', 'Heavy Blade', 'Light Blade',
+                    'Close', 'Double', 'Flail', 'Hammer', 'Monk', 'Polearm',
+                    'Spear'
+                ])),
+            Weapon(
+                randint(0, 5), iClass=choice(['Bows', 'Crossbow', 'Thrown']))
+        ]
 
         # Spell enabled character - 1 in 3
         if randint(3) == 0:
@@ -65,7 +71,8 @@ class PC(object):
                '</li><li><span style="font-weight:bold;">Appearance:</span> ' + str(self.Appearance) + \
                '</li><li><span style="font-weight:bold;">Trait 1:</span> ' + self.Traits[0] + "</li>"
         if len(self.Traits) > 1:
-            info += '<li><span style="font-weight:bold;">Trait 2:</span> ' + self.Traits[1] + "</li>"
+            info += '<li><span style="font-weight:bold;">Trait 2:</span> ' + self.Traits[
+                1] + "</li>"
         info += "</ul><p>"
         for x in range(len(self.Story)):
             info += self.Story[x] + '</p>'
@@ -81,7 +88,8 @@ class PC(object):
                 add = '+' + str(b)
             else:
                 add = str(b)
-            info += '<td style="text-align: center;">' + str(s) + ' (' + add + ')</td>'
+            info += '<td style="text-align: center;">' + str(
+                s) + ' (' + add + ')</td>'
         info += '</tbody></table>'
 
         # Add Weapons
@@ -120,4 +128,3 @@ class PC(object):
 
 if __name__ == '__main__':
     print(PC())
-
