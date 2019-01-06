@@ -4,8 +4,7 @@ import pickle
 import numpy as np
 from numpy.random import choice, randint
 from tqdm import tqdm
-import name_generator as ng
-from traits import *
+import simplejson as json
 
 RACES = [
     'Dwarf', 'Elf', 'Gnome', 'Halfling', 'Human', 'Half-Elf', 'Half-Orc',
@@ -27,35 +26,23 @@ def load_settings():
         3: Core Population Variance: [0, 100] | 0 = No population Varience, 100 = Every Diverse
         4: Exotic Populations: [0, 32] | 0 = No exotic, 32 = All Exotic
     """
-    with open("settings.txt", 'r') as setting:
-        s = setting.readlines()
-        for x in range(len(s)):
-            s[x] = s[x].rstrip('\n')
+    global settings
+    settings = json.loads(open('settings.json', 'r').read())
 
-        # Check for Illegal Settings
-        if s[0] not in RACES:
-            print("Invalid Base Race")
-            exit()
-        if int(s[1]) <= 0:
-            print("Invalid Population size")
-            exit()
-        if int(s[2]) < 0 or int(s[2]) > 100:
-            print("Invalid Core Population Variance")
-            exit()
-        if int(s[3]) < 0 or int(s[3]) > 38:
-            print("Invalid Exotic Race Count")
-            exit()
-
-        global settings
-        settings = {
-            'Race': s[0],
-            'Population': int(s[1]),
-            'Variance': int(s[2]),
-            'Exotic': int(s[3]),
-        }
-
-    if settings is None:
+    if settings is None:  # Check for Illegal Settings
         print("Unable to open settings")
+        exit()
+    elif settings["Race"] not in RACES:
+        print("Invalid Base Race")
+        exit()
+    elif settings["Population"] <= 0:
+        print("Invalid Population size")
+        exit()
+    elif settings["Variance"] < 0 or settings["Variance"] > 100:
+        print("Invalid Core Population Variance")
+        exit()
+    elif settings["Exotic"] < 0 or settings["Exotic"] > 38:
+        print("Invalid Exotic Race Count")
         exit()
 
 
@@ -81,14 +68,15 @@ def create_variance():
         pop[settings['Race']] = 1.0
     else:  # Create Variance
         # Prime race
-        base_pop = round(settings['Population'] / settings['Variance'])
+        base_pop = settings['Population'] - round(settings['Population'] * (settings['Variance'] / 100))
         pop[settings['Race']] = base_pop
 
         # Add Exotics
-        choices = choice(RACES, settings['Exotic'], replace=False)
+        races = RACES
+        races.remove(settings['Race'])
+        choices = choice(races, settings['Exotic'], replace=False)
         for i in choices:
-            variance_degree = settings['Population'] - base_pop
-            pop[i] = round(variance_degree / len(choices))
+            pop[i] = round(settings['Population'] * (settings['Variance'] / 100) / settings['Exotic'])
 
     global_pop = normalize_dict(pop)
     return global_pop

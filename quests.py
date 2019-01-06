@@ -61,14 +61,14 @@ class QuestBoard(object):
                 elif q.Other != 'Monster':
                     # Specific Monster
                     print_monster(pick_monster(name=q.Other))
-                    questHTML += '<iframe src="beasts/' + q.Other + '.html" height="500" style="padding: 10px"></iframe><br>'
+                    questHTML += '<iframe src="beasts/' + q.Other + '.html" height="500" width="100%" style="padding: 10px"></iframe><br>'
                     print(q.Other, ":: Specific Monster :: created for",
                           q.Title)
                 else:
                     m = pick_monster(cr=str(q.Level) + '.00')
                     print_monster(m)
                     questHTML += '<iframe src="beasts/' + m[
-                        0] + '.html" height="500" style="padding: 10px"></iframe><br />'
+                        0] + '.html" height="500" width="100%" style="padding: 10px"></iframe><br />'
                     print(m[0], ":: Monster :: created for", q.Title)
             questHTML += '</body></html>'
             outf.write(bs(questHTML, 'html5lib').prettify())
