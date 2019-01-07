@@ -1,0 +1,106 @@
+{
+    "Weapon Shops": {
+        "# of Stores": 2,
+        "Rarity Low": 0,
+        "Rarity High": 4,
+        "Quantity Low": 15,
+        "Quantity High": 25,
+        "Inflation": 1
+    },
+    "Armor Shops": {
+        "# of Stores": 2,
+        "Rarity Low": 0,
+        "Rarity High": 4,
+        "Quantity Low": 15,
+        "Quantity High": 25,
+        "Inflation": 1
+    },
+    "Potion Shops": {
+        "# of Stores": 1,
+        "Rarity Low": 0,
+        "Rarity High": 9,
+        "Quantity Low": 15,
+        "Quantity High": 20,
+        "Inflation": 1
+    },
+    "Enchant Shops": {
+        "# of Stores": 1,
+        "Rarity Low": 0,
+        "Rarity High": 9,
+        "Quantity Low": 15,
+        "Quantity High": 20,
+        "Inflation": 1
+    },
+    "Enchanter Shops": {
+        "# of Stores": 1,
+        "Rarity Low": 0,
+        "Rarity High": 9,
+        "Quantity Low": 15,
+        "Quantity High": 20,
+        "Inflation": 1
+    },
+    "Book Shops": {
+        "# of Stores": 1,
+        "Quantity Low": 15,
+        "Quantity High": 25,
+        "Inflation": 1
+    },
+    "Tavern Shops": {
+        "# of Stores": 1,
+        "Rooms": 3,
+        "Quantity Low": 10,
+        "Quantity High": 15,
+        "Inflation": 1
+    },
+    "Jewel Shops": {
+        "# of Stores": 1,
+        "Rarity Low": 0,
+        "Rarity High": 5,
+        "Quantity Low": 10,
+        "Quantity High": 15,
+        "Inflation": 1
+    },
+    "Food Shops": {
+        "# of Stores": 1,
+        "Quantity Low": 15,
+        "Quantity High": 30,
+        "Inflation": 1
+    },
+    "General Shops": {
+        "# of Stores": 1,
+        "Rarity Low": 0,
+        "Rarity High": 3,
+        "Quantity Low": 30,
+        "Quantity High": 40,
+        "Trinkets": 2,
+        "Inflation": 1
+    },
+    "Brothels": {
+        "# of Stores": 1,
+        "Quantity Low": 15,
+        "Quantity High": 20,
+        "Inflation": 1
+    },
+    "Gunsmiths": {
+        "# of Stores": 1,
+        "Rarity Low": 0,
+        "Rarity High": 3,
+        "Quantity Low": 15,
+        "Quantity High": 20,
+        "Inflation": 1
+    },
+    "Quest Boards": {
+        "# of Stores": 1,
+        "Level Low": 0,
+        "Level High": 5,
+        "Quantity": 10
+    },
+    "Occupations": [
+        "The King",
+        "The Cleric"
+    ],
+    "NPCs": [
+        "Captain of the Guard",
+        "The Villain"
+    ]
+}

@@ -3,6 +3,7 @@ import town_generator
 from PC import PC
 from os import linesep
 from re import match
+import simplejson as json
 """
 @TODO:
 1: UNIT TESTS!
@@ -142,69 +143,113 @@ def make_sample_input():
 
 
 if __name__ == '__main__':
-    # Weapons = Armor = Potion = Enchant = Enchanter = Books = Tavern = Jewel = Food = General = []
-    with open('generate.txt', 'r') as inf:
-        """ Ordering
-        Weapons|Armor|Potion|Enchant|Enchanter|Books|Tavern|Jewel|Food|General|Brothel
-        See above for explanation and creation of the settings
-        """
-        content = inf.readlines()
-        val = content[0].split()
-        Weapons = [eval(thing) for thing in val]
-
-        val = content[1].split()
-        Armor = [eval(thing) for thing in val]
-
-        val = content[2].split()
-        Potion = [eval(thing) for thing in val]
-
-        val = content[3].split()
-        Enchant = [eval(thing) for thing in val]
-
-        val = content[4].split()
-        Enchanter = [eval(thing) for thing in val]
-
-        val = content[5].split()
-        Books = [eval(thing) for thing in val]
-
-        val = content[6].split()
-        Tavern = [eval(thing) for thing in val]
-
-        val = content[7].split()
-        Jewel = [eval(thing) for thing in val]
-
-        val = content[8].split()
-        Food = [eval(thing) for thing in val]
-
-        val = content[9].split()
-        General = [eval(thing) for thing in val]
-
-        val = content[10].split()
-        Brothel = [eval(thing) for thing in val]
-
-        val = content[11].split()
-        Gunsmith = [eval(thing) for thing in val]
-
-        val = content[12].split()
-        Quests = [eval(thing) for thing in val]
-
-        Positions = []
-        NPC = []
-
-        for thing in range(13, len(content)):
-            title = content[thing].strip()
-            if title[0] == '!':
-                NPC.append(title[1:])
-            else:
-                Positions.append(title)
+    generator = json.loads(open('generate.json', 'r').read())
+    Weapons = [
+        generator['Weapon Shops']["# of Stores"],
+        generator['Weapon Shops']["Rarity Low"],
+        generator['Weapon Shops']["Rarity High"],
+        generator['Weapon Shops']["Quantity Low"],
+        generator['Weapon Shops']["Quantity High"],
+        generator['Weapon Shops']["Inflation"]
+    ]
+    Armor = [
+        generator['Armor Shops']["# of Stores"],
+        generator['Armor Shops']["Rarity Low"],
+        generator['Armor Shops']["Rarity High"],
+        generator['Armor Shops']["Quantity Low"],
+        generator['Armor Shops']["Quantity High"],
+        generator['Armor Shops']["Inflation"]
+    ]
+    Potion = [
+        generator["Potion Shops"]["# of Stores"],
+        generator["Potion Shops"]["Rarity Low"],
+        generator["Potion Shops"]["Rarity High"],
+        generator["Potion Shops"]["Quantity Low"],
+        generator["Potion Shops"]["Quantity High"],
+        generator["Potion Shops"]["Inflation"]
+    ]
+    Enchant = [
+        generator['Enchant Shops']["# of Stores"],
+        generator['Enchant Shops']["Rarity Low"],
+        generator['Enchant Shops']["Rarity High"],
+        generator['Enchant Shops']["Quantity Low"],
+        generator['Enchant Shops']["Quantity High"],
+        generator['Enchant Shops']["Inflation"]
+    ]
+    Enchanter = [
+        generator["Enchanter Shops"]["# of Stores"],
+        generator["Enchanter Shops"]["Rarity Low"],
+        generator["Enchanter Shops"]["Rarity High"],
+        generator["Enchanter Shops"]["Quantity Low"],
+        generator["Enchanter Shops"]["Quantity High"],
+        generator["Enchanter Shops"]["Inflation"]
+    ]
+    Books = [
+        generator["Book Shops"]["# of Stores"],
+        generator["Book Shops"]["Quantity Low"],
+        generator["Book Shops"]["Quantity High"],
+        generator["Book Shops"]["Inflation"]
+    ]
+    Tavern = [
+        generator["Tavern Shops"]["# of Stores"],
+        generator["Tavern Shops"]["Rooms"],
+        generator["Tavern Shops"]["Quantity Low"],
+        generator["Tavern Shops"]["Quantity High"],
+        generator["Tavern Shops"]["Inflation"]
+    ]
+    Jewel = [
+        generator["Jewel Shops"]["# of Stores"],
+        generator["Jewel Shops"]["Rarity Low"],
+        generator["Jewel Shops"]["Rarity High"],
+        generator["Jewel Shops"]["Quantity Low"],
+        generator["Jewel Shops"]["Quantity High"],
+        generator["Jewel Shops"]["Inflation"]
+    ]
+    Food = [
+        generator["Food Shops"]["# of Stores"],
+        generator["Food Shops"]["Quantity Low"],
+        generator["Food Shops"]["Quantity High"],
+        generator["Food Shops"]["Inflation"]
+    ]
+    General = [
+        generator["General Shops"]["# of Stores"],
+        generator["General Shops"]["Rarity Low"],
+        generator["General Shops"]["Rarity High"],
+        generator["General Shops"]["Quantity Low"],
+        generator["General Shops"]["Quantity High"],
+        generator["General Shops"]["Trinkets"],
+        generator["General Shops"]["Inflation"]
+    ]
+    Brothel = [
+        generator["Brothels"]["# of Stores"],
+        generator["Brothels"]["Quantity Low"],
+        generator["Brothels"]["Quantity High"],
+        generator["Brothels"]["Inflation"]
+    ]
+    Gunsmith = [
+        generator["Gunsmiths"]["# of Stores"],
+        generator["Gunsmiths"]["Rarity Low"],
+        generator["Gunsmiths"]["Rarity High"],
+        generator["Gunsmiths"]["Quantity Low"],
+        generator["Gunsmiths"]["Quantity High"],
+        generator["Gunsmiths"]["Inflation"]
+    ]
+    Quests = [
+        generator["Quest Boards"]["# of Stores"],
+        generator["Quest Boards"]["Level Low"],
+        generator["Quest Boards"]["Level High"],
+        generator["Quest Boards"]["Quantity"]
+    ]
 
     town_name = town_generator.generate(Weapons, Armor, Potion, Enchant,
                                         Enchanter, Books, Tavern, Jewel, Food,
                                         General, Brothel, Gunsmith, Quests)
-    for p in Positions:
+
+    for p in generator['Occupations']:
         town_generator.write_people(
             town_generator.create_person(town_generator.create_variance()), p)
-    for npc in NPC:
+    for npc in generator['NPCs']:
         town_generator.write_npc(PC(), npc)
+
     print("Writing the town ", town_name)
     town_generator.write_html(town_name)
