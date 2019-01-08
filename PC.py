@@ -21,6 +21,7 @@ class PC(object):
         if new_char is None:
             new_char = create_person(None)
 
+        self.Name = new_char.Name
         self.Level = randint(1, 21)
         self.Race = new_char.Race
         self.Gender = new_char.Gender

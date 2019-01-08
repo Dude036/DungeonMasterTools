@@ -11,6 +11,7 @@ d_name = [
     'Human',
     'Half-Orc',
     'Half-Elf',
+    'Merfolk'
     'Orc',
     'Svirfneblin',
     'Tian',
@@ -26,7 +27,6 @@ d_premade = [
     'Dhampir',
     'Gillman',
     'Grippli',
-    'Merfolk',
     'Strix',
     'Vishkanya',
     'Wayangs',
@@ -147,6 +147,8 @@ def name_parser(race, gender):
             name = default_name(HalfElf, gender)
         elif race == 'Half-Orc':
             name = default_name(HalfOrc, gender)
+        if race == 'Merfolk':
+            name = default_name(Merfolk, gender)
         elif race == 'Orc':
             name = default_name(Orc, gender)
         elif race == 'Svirfneblin':
@@ -197,8 +199,6 @@ def name_parser(race, gender):
             name = default_premade(Gillman, gender, True)
         if race == 'Grippli':
             name = default_premade(Grippli, gender, True)
-        if race == 'Merfolk':
-            name = default_premade(Merfolk, gender, True)
         if race == 'Strix':
             name = default_premade(Strix, gender)
         if race == 'Vishkanya':
