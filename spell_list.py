@@ -4621,6 +4621,36 @@ MasterSpells = {
         'subschool':
         'creation'
     },
+    """Cold Ice Strike""": {
+        'school':
+        'evocation',
+        'saving_throw':
+        'Reflex half',
+        'reference':
+        'prd/spells',
+        'level':
+        'cleric/oracle 6, wizard/sorcerer 6',
+        'spell_resistance':
+        'yes',
+        'area':
+        '30 ft. line',
+        'link':
+        'https://www.d20pfsrd.com/magic/all-spells/c/cold-ice-strike/',
+        'casting_time':
+        '1 swift action',
+        'range':
+        '30 ft.',
+        'description':
+        '<p>You create a shredding flurry of ice slivers, which blast from your hand in a line. The line deals 1d6 points of cold damage per <a href="https://www.d20pfsrd.com/magic#TOC-Caster-Level">caster level</a> (maximum 15d6).</p>',
+        'components':
+        'V, S',
+        'altname':
+        'cold-ice-strike',
+        'duration':
+        'instantaneous',
+        'subschool':
+        'cold'
+    },
     """Color Spray""": {
         'school':
         'illusion',
@@ -8641,6 +8671,36 @@ MasterSpells = {
         'subschool':
         ''
     },
+    """Ear-Piercing Scream""": {
+        'school':
+        'evocation',
+        'saving_throw':
+        'Fortitude partial',
+        'reference':
+        'prd/spells',
+        'level':
+        'bard 1, bloodrager 1, inquisitor 1, psychic 1, sorcerer/wizard 1, witch 1',
+        'spell_resistance':
+        'yes',
+        'area':
+        '',
+        'link':
+        'https://www.d20pfsrd.com/magic/all-spells/e/ear-piercing-scream/',
+        'casting_time':
+        '1 standard action',
+        'range':
+        'close (25 ft. + 5 ft./2 levels)',
+        'description':
+        '<p>You unleash a powerful scream, inaudible to all but a single target. The target is <a href="https://www.d20pfsrd.com/gamemastering/conditions#TOC-Dazed">dazed</a> for 1 round and takes 1d6 points of sonic damage per two caster levels (maximum 5d6). A successful save negates the daze effect and halves the damage.</p>',
+        'components':
+        'V, S',
+        'altname':
+        'ear-piercing-scream',
+        'duration':
+        'instantaneous',
+        'subschool':
+        'sonic'
+    },
     """Earthquake""": {
         'school':
         'evocation',
@@ -11760,6 +11820,36 @@ MasterSpells = {
         'instantaneous or concentration (up to 1 round/level); see text',
         'subschool':
         'creation or calling'
+    },
+    """Geas""": {
+        'school':
+        'enchantment',
+        'saving_throw':
+        'Will negates',
+        'reference':
+        'prd/spells',
+        'level':
+        'bard 3, sorcerer/wizard 4',
+        'spell_resistance':
+        'yes',
+        'area':
+        '',
+        'link':
+        'http://www.d20srd.org/srd/spells/geasLesser.htm',
+        'casting_time':
+        '1 round',
+        'range':
+        'close (25 ft. + 5 ft./2 levels)',
+        'description':
+        '<p>A lesser geas places a magical command on a creature to carry out some service or to refrain from some action or course of activity, as desired by you. The creature must have 7 or fewer HD and be able to understand you. While a geas cannot compel a creature to kill itself or perform acts that would result in certain death, it can cause almost any other course of activity.</p><p>The geased creature must follow the given instructions until the geas is completed, no matter how long it takes.</p><p>If the instructions involve some open-ended task that the recipient cannot complete through his own actions, the spell remains in effect for a maximum of 1 day per caster level. A clever recipient can subvert some instructions.</p><p>If the subject is prevented from obeying the lesser geas for 24 hours, it takes a –2 penalty to each of its ability scores. Each day, another –2 penalty accumulates, up to a total of –8. No ability score can be reduced to less than 1 by this effect. The ability score penalties are removed 24 hours after the subject resumes obeying the lesser geas.</p><p>A lesser geas (and all ability score penalties) can be ended by break enchantment, limited wish, remove curse, miracle, or wish. Dispel magic does not affect a lesser geas.</p>',
+        'components':
+        'V',
+        'altname':
+        'geas-lesser',
+        'duration':
+        '1 day/level or until discharged (D)',
+        'subschool':
+        'compulsion'
     },
     """Geas, Lesser""": {
         'school':
@@ -19531,6 +19621,36 @@ MasterSpells = {
         'subschool':
         'compulsion'
     },
+    """Piercing Shriek""": {
+        'school':
+        'evocation',
+        'saving_throw':
+        'Fortitude negates',
+        'reference':
+        'prd/spells',
+        'level':
+        'bard 2, psychic 2',
+        'spell_resistance':
+        'yes',
+        'area':
+        '',
+        'link':
+        'https://www.d20pfsrd.com/magic/all-spells/p/piercing-shriek/',
+        'casting_time':
+        '1 standard action',
+        'range':
+        'medium (100 ft. + 10 ft. / level)',
+        'description':
+        '',
+        'components':
+        'V',
+        'altname':
+        'piercing-shriek',
+        'duration':
+        '1 round/level',
+        'subschool':
+        'sonic'
+    },
     """Pilfering Hand""": {
         'school':
         'evocation',
@@ -24061,6 +24181,36 @@ MasterSpells = {
         'subschool':
         'polymorph'
     },
+    """Share Memory""": {
+        'school':
+        'divination',
+        'saving_throw':
+        'Will negates',
+        'reference':
+        'prd/spells',
+        'level':
+        'bard 2, medium 2, mesmerist 2, occultist 2, psychic 2, sorcerer/wizard 2, witch 2',
+        'spell_resistance':
+        'yes',
+        'area':
+        '',
+        'link':
+        'https://www.d20pfsrd.com/magic/all-spells/s/share-memory',
+        'casting_time':
+        '1 standard action',
+        'range':
+        'touch',
+        'description':
+        '<p>You momentarily link your mind with the target and share a single memory of no longer than 1 minute. You can show the target one of your memories, show the target one of its own memories, or view one of the target’s memories.</p>',
+        'components':
+        'V, S',
+        'altname':
+        'share-memory',
+        'duration':
+        'instantaneous',
+        'subschool':
+        'void'
+    },
     """Share Language""": {
         'school':
         'divination',
@@ -27361,6 +27511,36 @@ MasterSpells = {
         'subschool':
         'compulsion'
     },
+    """Symbol of Mirroring""": {
+        'school':
+        'illusion',
+        'saving_throw':
+        'Will partial',
+        'reference':
+        'prd/spells',
+        'level':
+        'sorcerer/wizard 2, witch 2',
+        'spell_resistance':
+        'yes',
+        'area':
+        '60 ft.',
+        'link':
+        'https://www.d20pfsrd.com/magic/all-spells/s/symbol-of-mirroring/',
+        'casting_time':
+        '10 minutes',
+        'range':
+        '60 ft.',
+        'description':
+        '<p>This spell functions as <a href="https://www.d20pfsrd.com/magic/all-spells/s/symbol-of-death" style="font-style:italic">symbol of death</a>, except it instead creates one illusory duplicate of each creature within 60 feet of the symbol. These duplicates function as <a href="https://www.d20pfsrd.com/magic/all-spells/s/m/mirror-image" style="font-style:italic">mirror image</a>, moving with the original creatures and mimicking their movements, sounds, and actions exactly. If an illusory double is destroyed, a new one appears on the creature’s turn. The images last for as long as a creature remains within 60 feet of the symbol, and for 1 round/level thereafter. Once triggered, the symbol remains active for 10 minutes per <a href="https://www.d20pfsrd.com/magic#TOC-Caster-Level">caster level</a>.</p><p><i>Symbol of mirroring</i> can be made permanent with a <a href="https://www.d20pfsrd.com/magic/all-spells/s/p/permanency" style="font-style:italic">permanency</a> spell by a caster of 10th level or higher for the cost of 5,000 gp.</p>',
+        'components':
+        'V, S, M (mercury and phosphorous, plus powdered diamond and opal worth a total of 100 gp)',
+        'altname':
+        'symbol-of-mirroring',
+        'duration':
+        '10 minutes/level',
+        'subschool':
+        'figment'
+    },
     """Symbol of Pain""": {
         'school':
         'necromancy',
@@ -27450,6 +27630,36 @@ MasterSpells = {
         '',
         'subschool':
         'compulsion'
+    },
+    """Symbol of Slowing""": {
+        'school':
+        'transmutation',
+        'saving_throw':
+        'Will negates',
+        'reference':
+        'prd/spells',
+        'level':
+        'cleric/oracle 4, sorcerer/wizard 4, witch 4',
+        'spell_resistance':
+        'yes',
+        'area':
+        '60 ft.',
+        'link':
+        'https://www.d20pfsrd.com/magic/all-spells/s/symbol-of-slowing/',
+        'casting_time':
+        '10 minuts',
+        'range':
+        '0 ft.',
+        'description':
+        '<p>This spell functions as <a href="https://www.d20pfsrd.com/magic/all-spells/s/symbol-of-death" style="font-style:italic">symbol of death</a>, except all creatures within 60 feet of a symbol of slowing are slowed (as the <a href="https://www.d20pfsrd.com/magic/all-spells/s/slow" style="font-style:italic">slow</a> spell) for 1 round per <a href="https://www.d20pfsrd.com/magic#TOC-Caster-Level">caster level</a>.</p><p><i>Symbol of slowing</i> can be made permanent with a <a href="https://www.d20pfsrd.com/magic/all-spells/s/p/permanency" style="font-style:italic">permanency</a> spell by a caster of 11th level or higher for the cost of 10,000 gp.</p>',
+        'components':
+        'V, S, M (mercury and phosphorous, plus powdered diamond and opal worth a total of 1,000 gp)',
+        'altname':
+        'symbol-of-slowing',
+        'duration':
+        '10 minutes/level',
+        'subschool':
+        ''
     },
     """Symbol of Striking""": {
         'school':
@@ -28020,6 +28230,36 @@ MasterSpells = {
         '1 hour/2 levels (D)',
         'subschool':
         ''
+    },
+    """Terrible Remorse""": {
+        'school':
+        'enchantment',
+        'saving_throw':
+        'Will partial',
+        'reference':
+        'prd/spells',
+        'level':
+        'bard 3, cleric/oracle 4, inquisitor 3, sorcerer/wizard 4',
+        'spell_resistance':
+        'yes',
+        'area':
+        '',
+        'link':
+        'https://www.d20pfsrd.com/magic/all-spells/t/terrible-remorse/',
+        'casting_time':
+        '1 standard action',
+        'range':
+        'close (25 ft. + 5 ft./2 levels)',
+        'description':
+        '<p>You fill a target with such profound remorse that it begins to harm itself. Each round, the target must save or deal 1d8 points of damage + its Strength modifier to itself using an item held in its hand or with unarmed attacks. If the creature saves, it is staggered for 1 round and takes a -2 penalty to Armor Class, after which the spell ends.</p>',
+        'components':
+        'V, S',
+        'altname':
+        'terrible-remorse',
+        'duration':
+        '1 round/level',
+        'subschool':
+        'compulsion'
     },
     """Thorn Body""": {
         'school':
