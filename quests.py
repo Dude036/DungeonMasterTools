@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-from beast_list import Beasts
 from trinkets import Trinkets
 from character import create_person, Character
 from numpy.random import randint, choice
@@ -188,6 +187,7 @@ class Quest(object):
                         '\nAppearance: ' + self.Reporter.Appearance
 
     def __bounty(self):
+        Beasts = json.load(open('beasts.json'), encoding='utf-8')
         # Kill a Monster or a Criminal
         r = randint(0, 6)
         if r == 0:

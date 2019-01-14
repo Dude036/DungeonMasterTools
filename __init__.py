@@ -7,4 +7,4 @@ listOfFiles = os.listdir('.')
 pattern = "*.py"
 for entry in listOfFiles:
     if fnmatch.fnmatch(entry, pattern):
-            pyc.compile(entry)
+        pyc.compile(entry)

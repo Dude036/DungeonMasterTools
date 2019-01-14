@@ -3,11 +3,10 @@ from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jewel
     Jewelling, Brothel, Gunsmithing
 from variance import normalize_dict
 from character import create_person
-# from spell_list import MasterSpells
-from wondrous_list import MasterWondrous
 import simplejson as json
 
 MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
+MasterWondrous = json.load(open('wondrous.json', 'r'), encoding='utf-8')
 
 MasterID = 1
 '''
@@ -15,7 +14,7 @@ MasterID = 1
 B, S, P          - Blunt, Slash, Pierce
 LA, MA, HA        - Light Armor, Medium Armor, Heavy Armor
 2, 1                - 2 Handed, 1 Handed   
-Si, Ma, Ex, Ra, Ar  - Simple, Martial, Exotic, Ranged (bows), Ranged (arrows)
+Si, Ma, Ex, Ra, Ar  - Simple, Martial, Exotic, Ranged (bows), Ranged (arrows)s
     If you want to make your life hell:
 https://the-eye.eu/public/Books/rpg.rem.uz/Pathfinder/3rd%20Party/Rite%20Publishing/101%20Series/101%20Special%20Materials%20%26%20Power%20Components.pdf
 '''

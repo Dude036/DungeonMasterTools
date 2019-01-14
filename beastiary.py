@@ -6,10 +6,11 @@ from treasure import treasure_calculator
 from yapf.yapflib.yapf_api import FormatCode
 import re
 from tqdm import tqdm
-from beast_list import Beasts
 from numpy.random import randint
 import os
+import simplejson as json
 
+Beasts = json.load(open('beasts.json'), encoding='utf-8')
 Levels = {
     '0.13': 50,
     '0.17': 65,
@@ -239,13 +240,9 @@ def print_treasure(picked_monster):
 def add_to_beastiary(dict_name, dict_keys):
     global Beasts
     Beasts[dict_name] = dict_keys
-    open('beast_list.py', 'w').write(FormatCode("#!/usr/bin/python3\n# coding: utf-8\nBeasts=" + str(Beasts))[0])
-
-
-def beastiary_cleaning():
-    global Beasts
-    # Edit the Deastiary
-    open('new_beast_list.py', 'w').write(FormatCode("#!/usr/bin/python3\n# coding: utf-8\nBeasts=" + str(Beasts))[0])
+    open('beast_list.py', 'w').write(
+        FormatCode("#!/usr/bin/python3\n# coding: utf-8\nBeasts=" +
+                   str(Beasts))[0])
 
 
 if __name__ == '__main__':
