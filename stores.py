@@ -3,8 +3,11 @@ from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jewel
     Jewelling, Brothel, Gunsmithing
 from variance import normalize_dict
 from character import create_person
-from spell_list import MasterSpells
+# from spell_list import MasterSpells
 from wondrous_list import MasterWondrous
+import simplejson as json
+
+MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
 
 MasterID = 1
 '''
@@ -1058,6 +1061,7 @@ def find_spell_level(spell):
 
 
 def find_spell_details(spell):
+    MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
     if spell in list(MasterSpells.keys()):
         return MasterSpells[spell]['link'], MasterSpells[spell]['school'], MasterSpells[spell]['casting_time'], \
                MasterSpells[spell]['components'], MasterSpells[spell]['range'], MasterSpells[spell]['description'],
@@ -1066,6 +1070,7 @@ def find_spell_details(spell):
 
 
 def find_spell_description(spell):
+    MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
     if spell in list(MasterSpells.keys()):
         return MasterSpells[spell]['description']
     else:
@@ -1073,6 +1078,7 @@ def find_spell_description(spell):
 
 
 def find_spell_link(spell):
+    MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
     if spell in list(MasterSpells.keys()):
         return MasterSpells[spell]['link']
     else:
@@ -1080,6 +1086,7 @@ def find_spell_link(spell):
 
 
 def find_spell_range(spell):
+    MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
     if spell in list(MasterSpells.keys()):
         return MasterSpells[spell]['range']
     else:

@@ -2,10 +2,12 @@
 
 from numpy.random import randint, choice
 from character import Character, create_person
-from spell_list import MasterSpells
 from stores import Weapon
 from pprint import pprint
+import simplejson as json
 import re
+
+MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
 
 
 class PC(object):
