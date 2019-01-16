@@ -22,7 +22,7 @@ These two should contain the name of the position. They will be filled with peop
 
 Inflation is compatible with both floats and integers. Floats with mean it's exact Percentage of inflation, 1.0 == 100%. An integer will mean some arbitrary amount. The higher the number, the more nominal it will be.
 
-Below has the initial settings file with brackets after. Inside the brackets is the possible range of each setting. This can also be found in **generate.json**
+Below has the initial settings file with brackets after. Inside the brackets is the possible range of each setting.
 
     "Weapon Shops": {
         "# of Stores": 2,       // [0 to Infinte]
