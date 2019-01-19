@@ -118,7 +118,7 @@ Below has the initial settings file with brackets after. Inside the brackets is 
         "# of Stores": 1,       // [0 to Infinte]
         "Level Low": 0,         // [0 to 20]
         "Level High": 5,        // [Level Low to 20]
-        "Quantity": 10          // [0 to Infinite
+        "Quantity": 10          // [0 to Infinite]
     },
     "Occupations": [            // Encapsulate with "", and seperate with ,
         "The King",
