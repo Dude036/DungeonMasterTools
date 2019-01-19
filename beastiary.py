@@ -237,14 +237,6 @@ def print_treasure(picked_monster):
         outf.write(bs(html, 'html5lib').prettify())
 
 
-def add_to_beastiary(dict_name, dict_keys):
-    global Beasts
-    Beasts[dict_name] = dict_keys
-    open('beast_list.py', 'w').write(
-        FormatCode("#!/usr/bin/python3\n# coding: utf-8\nBeasts=" +
-                   str(Beasts))[0])
-
-
 if __name__ == '__main__':
     import time
 
