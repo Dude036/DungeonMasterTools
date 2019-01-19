@@ -3,7 +3,6 @@
 from bs4 import BeautifulSoup as bs
 from numpy.random import choice
 from treasure import treasure_calculator
-from yapf.yapflib.yapf_api import FormatCode
 import re
 from tqdm import tqdm
 from numpy.random import randint
