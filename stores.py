@@ -1165,7 +1165,7 @@ class Store(object):
                     same = False
 
     def add_relic(self, Item):
-        qual = randint(self.Quality[0], self.Quality[1] + 1)
+        # qual = randint(self.Quality[0], self.Quality[1] + 1)
         if isinstance(Item, Weapon):
             typ = choice([
                 "Axe",
@@ -1641,10 +1641,7 @@ class Weapon(object):
         if self.Rarity > 4:
             self.Rarity %= 4
 
-        if self.Rarity == 0:  # Common Materials
-            m = self.__verify_metal(common_material)
-
-        elif self.Rarity == 1:  # Uncommon Materials
+        if self.Rarity == 1:    # Uncommon Materials
             m = self.__verify_metal(uncommon_material)
 
         elif self.Rarity == 2:  # Rare Materials
@@ -1655,6 +1652,9 @@ class Weapon(object):
 
         elif self.Rarity == 4:  # Legendary Materials
             m = self.__verify_metal(legendary_material)
+
+        else:                   # Common Materials
+            m = self.__verify_metal(common_material)
 
         self.Name = m[0] + ' ' + self.Name
         self.__crit()
@@ -1755,6 +1755,13 @@ class Weapon(object):
         if self.Enchantment is not None:
             ench = ' ' + self.Enchantment.to_string()
         return self.Name + ench + ' (' + determine_cost(self.Cost) + ')'
+
+    def to_dict(self):
+        return {
+            "NAme": self.Name,
+            "Rarity": self.Rarity,
+            "Enchantment": self.Enchantment,
+        }
 
 
 class Firearm(object):
@@ -2581,7 +2588,6 @@ class Firearm(object):
             "Level 8",
             "Level 9",
         ]
-        dam = ''
         master = "Masterwork " if self.Masterwork > 0 else ""
         if self.Enchantment is None:
             s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name.title() + ' (' + self.Class + \

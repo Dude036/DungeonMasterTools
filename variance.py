@@ -95,14 +95,6 @@ def create(l):
     return d
 
 
-def from_file(file):
-    with open(file, 'r') as f:
-        content = f.readlines()
-    l = []
-    for line in content:
-        l.append(line.split())
-    return create(l)
-
 
 def normalize_dict(v):
     d = {}
@@ -112,43 +104,3 @@ def normalize_dict(v):
         d[x] = v[x] / total
     return d
 
-
-def load(file):
-    with open(file, 'rb') as f:
-        v = pickle.load(f)
-    return v
-
-
-def save(variance, filename):
-    with open(filename, 'wb') as f:
-        pickle.dump(variance, f)
-
-
-if __name__ == '__main__':
-    rv = random_variance()
-    test_var = normalize_dict(rv)
-    custom_settings(BASE_RACES[randint(len(BASE_RACES))],\
-        randint(1, 2147483647), randint(0, 100), randint(33))
-
-    d = normalize_dict(test_var)
-    save(d, 'test.pickle')
-    print(load('test.pickle'))
-
-    # from_file('test.txt')
-
-    load_settings()
-    draw = create_variance()
-    # draw = custom.normalize_dict(custom.from_file('Sanos.txt'))
-
-    population = list(draw.keys())
-    density = [0] * len(population)
-
-    for c in tqdm(range(settings['Population'])):
-        pick = choice(list(draw.keys()), 1, p=list(draw.values()))
-        for x in range(len(population)):
-            if population[x] == pick:
-                density[x] += 1
-
-    print("End Results")
-    for x in range(len(population)):
-        print(population[x], '-', density[x])
