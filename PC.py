@@ -3,17 +3,134 @@
 from numpy.random import randint, choice
 from character import Character, create_person
 from stores import Weapon
-from pprint import pprint
 import simplejson as json
 import re
 
 MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
 
+# A list of what stats are import to what character.
+# This is somewhat just an opinion, so if you feel it's different, then change it.
+playable = {
+    "Barbarian": {
+        "STR": 0,
+        "DEX": 1,
+        "CON": 2,
+        "INT": 4,
+        "WIS": 3,
+        "CHA": 5
+    },
+    "Bard": {
+        "STR": 5,
+        "DEX": 1,
+        "CON": 2,
+        "INT": 3,
+        "WIS": 4,
+        "CHA": 0
+    },
+    "Cleric": {
+        "STR": 2,
+        "DEX": 4,
+        "CON": 1,
+        "INT": 5,
+        "WIS": 0,
+        "CHA": 3
+    },
+    "Druid": {
+        "STR": 3,
+        "DEX": 1,
+        "CON": 2,
+        "INT": 4,
+        "WIS": 0,
+        "CHA": 5
+    },
+    "Fighter": {
+        "STR": 0,
+        "DEX": 1,
+        "CON": 2,
+        "INT": 4,
+        "WIS": 3,
+        "CHA": 5
+    },
+    "Magus": {
+        "STR": 3,
+        "DEX": 0,
+        "CON": 2,
+        "INT": 1,
+        "WIS": 4,
+        "CHA": 5
+    },
+    "Monk": {
+        "STR": 1,
+        "DEX": 0,
+        "CON": 2,
+        "INT": 4,
+        "WIS": 3,
+        "CHA": 5
+    },
+    "Paladin": {
+        "STR": 0,
+        "DEX": 3,
+        "CON": 2,
+        "INT": 4,
+        "WIS": 5,
+        "CHA": 1
+    },
+    "Ranger": {
+        "STR": 0,
+        "DEX": 1,
+        "CON": 2,
+        "INT": 3,
+        "WIS": 4,
+        "CHA": 5
+    },
+    "Rogue": {   
+        "STR": 5,
+        "DEX": 0,
+        "CON": 1,
+        "INT": 2,
+        "WIS": 3,
+        "CHA": 4
+    },
+    "Sorcerer": {
+        "STR": 5,
+        "DEX": 1,
+        "CON": 2,
+        "INT": 4,
+        "WIS": 3,
+        "CHA": 0
+    },
+    "Summoner": {
+        "STR": 5,
+        "DEX": 1,
+        "CON": 2,
+        "INT": 4,
+        "WIS": 3,
+        "CHA": 0
+    },
+    "Warpriest": {
+        "STR": 0,
+        "DEX": 3,
+        "CON": 2,
+        "INT": 4,
+        "WIS": 1,
+        "CHA": 5
+    },
+    "Wizard": {
+        "STR": 5,
+        "DEX": 3,
+        "CON": 1,
+        "INT": 0,
+        "WIS": 2,
+        "CHA": 4
+    }
+}
+class_feats = json.load(open("pathfinder_class_feats.json", 'r'), encoding='utf-8')
+# class_feats = json.load(open("5e_class_feats.json", 'r'), encoding='utf-8')
 
 class PC(object):
     """Characters are the centerpiece of stories"""
-    Name = Gender = Race = Appearance = ''
-    Traits = Story = []
+    Name = Gender = Race = Appearance = Class = ''
+    Traits = Story = Feats = []
     Age = Level = 0
     Spells = None
     Stats = []
@@ -32,7 +149,11 @@ class PC(object):
         self.Traits = new_char.Traits
         self.Story = new_char.Story
 
+        # First Roll
         self.roll()
+
+        # Send the Rolls to determine the
+        self.choose_class()
 
         self.Weapon = [
             Weapon(
@@ -66,6 +187,18 @@ class PC(object):
             temp.pop()
             self.Stats.append(sum(temp))
 
+    def choose_class(self):
+        self.Class = choice(list(playable.keys()))
+        self.Stats.sort(reverse=True)
+        self.Stats = [
+            self.Stats[playable[self.Class]['STR']],
+            self.Stats[playable[self.Class]['DEX']],
+            self.Stats[playable[self.Class]['CON']],
+            self.Stats[playable[self.Class]['INT']],
+            self.Stats[playable[self.Class]['WIS']],
+            self.Stats[playable[self.Class]['CHA']]
+        ]
+
     def __str__(self):
         info = self.Name + '<div>' + \
                '<ul><li><span style="font-weight:bold;">Race:</span> ' + self.Race + \
@@ -94,6 +227,7 @@ class PC(object):
             info += '<td style="text-align: center;">' + str(
                 s) + ' (' + add + ')</td>'
         info += '</tbody></table>'
+        for item in
 
         # Add Weapons
         info += '<ul style="columns: 2;padding: 10px;">'
