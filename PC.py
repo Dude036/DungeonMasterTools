@@ -227,7 +227,7 @@ class PC(object):
             info += '<td style="text-align: center;">' + str(
                 s) + ' (' + add + ')</td>'
         info += '</tbody></table>'
-        for item in
+        
 
         # Add Weapons
         info += '<ul style="columns: 2;padding: 10px;">'
