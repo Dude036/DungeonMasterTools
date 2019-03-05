@@ -5,6 +5,7 @@ import quests
 import PC
 from character import create_person
 from variance import create_variance
+import simplejson as json
 
 townHTML = '<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width" /><title></title><style>' \
            'body{max-width:800px;margin-left:auto;margin-right:auto;padding-left:5px;padding-right:5px;} html{' \
@@ -95,13 +96,16 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             gu[0]
     ]) > 0:
         townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
-
+    full_town = {}
+    i = 0
     for _ in range(w[0]):
         store = create_weapon_shop(
             create_person(create_variance()), [w[1], w[2]],
             randint(w[3], w[4]),
             inflate=w[5])
         write_store(store)
+        full_town[i] = store.__dict__
+        i += 1
 
     for _ in range(a[0]):
         store = create_armor_shop(
@@ -109,6 +113,8 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(a[3], a[4]),
             inflate=a[5])
         write_store(store)
+        full_town[i] = store.__dict__
+        i += 1
 
     for _ in range(p[0]):
         store = create_potion_shop(
@@ -116,6 +122,8 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(p[3], p[4]),
             inflate=p[5])
         write_store(store)
+        full_town[i] = store.__dict__
+        i += 1
 
     for _ in range(e[0]):
         store = create_enchantment_shop(
@@ -123,6 +131,8 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(e[3], e[4]),
             inflate=e[5])
         write_store(store)
+        full_town[i] = store.__dict__
+        i += 1
 
     for _ in range(en[0]):
         store = create_enchanter_shop(
@@ -130,6 +140,8 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(en[3], en[4]),
             inflate=en[5])
         write_store(store)
+        full_town[i] = store.__dict__
+        i += 1
 
     for _ in range(b[0]):
         store = create_book_shop(
@@ -138,6 +150,8 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(b[1], b[2]),
             inflate=b[3])
         write_store(store, False)
+        full_town[i] = store.__dict__
+        i += 1
 
     for _ in range(t[0]):
         store = create_tavern(
@@ -146,6 +160,8 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(t[2], t[3]),
             inflate=t[4])
         write_store(store, False)
+        full_town[i] = store.__dict__
+        i += 1
 
     for _ in range(j[0]):
         store = create_jewel_shop(
@@ -153,6 +169,8 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(j[3], j[4]),
             inflate=j[5])
         write_store(store)
+        full_town[i] = store.__dict__
+        i += 1
 
     for _ in range(f[0]):
         store = create_restaurant(
@@ -160,6 +178,8 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(f[1], f[2]),
             inflate=f[3])
         write_store(store)
+        full_town[i] = store.__dict__
+        i += 1
 
     for _ in range(g[0]):
         store = create_general_store(
@@ -168,6 +188,8 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             g[5],
             inflate=g[6])
         write_store(store)
+        full_town[i] = store.__dict__
+        i += 1
 
     for _ in range(br[0]):
         store = create_brothel(
@@ -175,6 +197,8 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(br[1], br[2]),
             inflate=br[3])
         write_store(store)
+        full_town[i] = store.__dict__
+        i += 1
 
     for _ in range(gu[0]):
         store = create_gunsmith(
@@ -182,11 +206,20 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(gu[3], gu[4]),
             inflate=gu[5])
         write_store(store)
+        full_town[i] = store.__dict__
+        i += 1
 
     for _ in range(qu[0]):
-        board = str(quests.QuestBoard(qu[1], qu[2], qu[3], town_name))
+        q = quests.QuestBoard(qu[1], qu[2], qu[3], town_name)
+        board = str(q)
         townHTML += board
+        full_town[i] = q.__dict__
+        i += 1
 
+    # Dump the class information into a json file
+    dump_json = False
+    if dump_json:
+        json.dump(full_town, open(town_name + ".json", 'w'), indent=4, sort_keys=True, default=lambda x: x.__dict__)
     return town_name
 
 
