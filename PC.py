@@ -2,6 +2,7 @@
 
 from numpy.random import randint, choice
 from character import Character, create_person
+from resources import MasterSpellBlacklist
 from stores import Weapon
 import simplejson as json
 import re
@@ -127,6 +128,7 @@ playable = {
 class_feats = json.load(open("pathfinder_class_feats.json", 'r'), encoding='utf-8')
 # class_feats = json.load(open("5e_class_feats.json", 'r'), encoding='utf-8')
 
+
 class PC(object):
     """Characters are the centerpiece of stories"""
     Name = Gender = Race = Appearance = Class = ''
@@ -172,10 +174,10 @@ class PC(object):
             self.Spells = []
             for x in range(4 + self.Level * 2):
                 s = choice(list(MasterSpells.keys()))
-                if s not in self.Spells:
+                if s not in self.Spells and MasterSpells[s]['link'] not in MasterSpellBlacklist:
                     self.Spells.append(s)
             # Sort spells
-            self.Spells.sort(key=lambda x: MasterSpells[x]['school'])
+            # self.Spells.sort(key=lambda x: MasterSpells[x]['school'])
 
     def roll(self):
         self.Stats = []
@@ -198,10 +200,13 @@ class PC(object):
             self.Stats[playable[self.Class]['WIS']],
             self.Stats[playable[self.Class]['CHA']]
         ]
+        # for level in range(1, self.Level + 1):
+        #     for item in class_feats[self.Class][str(level)]:
+        #         self.Feats.append(item)
 
     def __str__(self):
-        info = self.Name + '<div>' + \
-               '<ul><li><span style="font-weight:bold;">Race:</span> ' + self.Race + \
+        info = self.Name + '<div><div class="bold text-md" style="text-indent: 50px">' + self.Class + ' ' + \
+               str(self.Level) + '</div><ul><li><span style="font-weight:bold;">Race:</span> ' + self.Race + \
                '</li><li><span style="font-weight:bold;">Gender:</span> ' + self.Gender + \
                '</li><li><span style="font-weight:bold;">Age:</span> ' + str(self.Age) + \
                '</li><li><span style="font-weight:bold;">Appearance:</span> ' + str(self.Appearance) + \
@@ -227,7 +232,7 @@ class PC(object):
             info += '<td style="text-align: center;">' + str(
                 s) + ' (' + add + ')</td>'
         info += '</tbody></table>'
-        
+
 
         # Add Weapons
         info += '<ul style="columns: 2;padding: 10px;">'
@@ -247,6 +252,7 @@ class PC(object):
                     'background-color:gray;color:white;padding:5px;">Class</th><th style="text-align:left;' \
                     'background-color:gray;color:white;padding:5px;">Level</th></tr>'
             for spell in self.Spells:
+
                 # pprint(MasterSpells[spell])
                 level = MasterSpells[spell]['level'].split(' ')
                 highlevel = 0

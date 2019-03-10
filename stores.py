@@ -9,8 +9,8 @@ from resources import *
 MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
 MasterWondrous = json.load(open('wondrous.json', 'r'), encoding='utf-8')
 
-MasterID = 1
 
+MasterID = 1
 
 
 def find_spell_level(spell):
@@ -26,8 +26,9 @@ def find_spell_level(spell):
 
 
 def find_spell_details(spell):
-    MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
     if spell in list(MasterSpells.keys()):
+        if MasterSpells[spell]['link'] in MasterSpellBlacklist:
+            return None
         return MasterSpells[spell]['link'], MasterSpells[spell]['school'], MasterSpells[spell]['casting_time'], \
                MasterSpells[spell]['components'], MasterSpells[spell]['range'], MasterSpells[spell]['description'],
     else:
@@ -35,7 +36,6 @@ def find_spell_details(spell):
 
 
 def find_spell_description(spell):
-    MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
     if spell in list(MasterSpells.keys()):
         return MasterSpells[spell]['description']
     else:
@@ -43,7 +43,6 @@ def find_spell_description(spell):
 
 
 def find_spell_link(spell):
-    MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
     if spell in list(MasterSpells.keys()):
         return MasterSpells[spell]['link']
     else:
@@ -51,7 +50,6 @@ def find_spell_link(spell):
 
 
 def find_spell_range(spell):
-    MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
     if spell in list(MasterSpells.keys()):
         return MasterSpells[spell]['range']
     else:
@@ -328,7 +326,7 @@ class Weapon(object):
         if mlevel > 10:
             mlevel %= 9
         if self.Masterwork == 0:
-            self.Masterwork = mlevel
+            self.Masterwork = int(mlevel)
             self.Cost += (1 + mlevel) * (1 + mlevel) * 1000
             self.Name = "+" + str(mlevel) + ' ' + self.Name
             self.Dice += "+" + str(mlevel)
@@ -376,13 +374,6 @@ class Weapon(object):
         if self.Enchantment is not None:
             ench = ' ' + self.Enchantment.to_string()
         return self.Name + ench + ' (' + determine_cost(self.Cost) + ')'
-
-    def to_dict(self):
-        return {
-            "NAme": self.Name,
-            "Rarity": self.Rarity,
-            "Enchantment": self.Enchantment,
-        }
 
 
 class Firearm(object):
@@ -1187,7 +1178,7 @@ class Firearm(object):
         if mlevel > 10:
             mlevel %= 9
         if self.Masterwork == 0:
-            self.Masterwork = mlevel
+            self.Masterwork = int(mlevel)
             self.Cost += (1 + mlevel) * (1 + mlevel) * 1000
             self.Name = "+" + str(mlevel) + ' ' + self.Name
             self.Dice += "+" + str(mlevel)
@@ -1442,7 +1433,7 @@ class Armor(object):
         if mlevel > 10:
             mlevel %= 9
         if self.Masterwork == 0:
-            self.Masterwork = mlevel
+            self.Masterwork = int(mlevel)
             self.Cost += 2 * mlevel * mlevel * 1000
             self.Name = "+" + str(mlevel) + ' ' + self.Name
             self.AC += mlevel
@@ -1457,14 +1448,6 @@ class Armor(object):
 
 
 class Scroll(object):
-    Name_Potential = [
-        'Scroll of ',
-        'Scroll of ',
-        'Scroll of ',
-        'Tome of ',
-        'Spellbook of ',
-        'Book of ',
-    ]
     Name = Spell = Add = ''
     Enchantment = None
     Cost = 0
@@ -1513,8 +1496,8 @@ class Scroll(object):
                     iSpell=self.Spell, rechargable=False)
 
         if naming:
-            self.Name = self.Name_Potential[randint(len(
-                self.Name_Potential))] + self.Spell
+            self.Name = Scroll_Name_Potential[randint(len(
+                Scroll_Name_Potential))] + self.Spell
         else:
             self.Name = self.Spell
             self.Add = '+'
@@ -1668,24 +1651,6 @@ class Book(object):
 
 
 class Potion(object):
-    Name_Potential = [
-        'Potion of ',
-        'Potion of ',
-        'Potion of ',
-        'Potion of ',
-        'Potion of ',
-        'Potion of ',
-        'Potion of ',
-        'Potion of ',
-        'Oil of ',
-        'Tincture of ',
-        'Solution of ',
-        'Philter of ',
-        'Draught of ',
-        'Elixir of ',
-        'Draft of ',
-        'Brew of ',
-    ]
     Spell = Name = ""
     Cost = 0
     Enchantment = None
@@ -1733,8 +1698,7 @@ class Potion(object):
                 self.Enchantment = Enchant(
                     iSpell=self.Spell, rechargable=False)
 
-        self.Name = self.Name_Potential[randint(len(
-            self.Name_Potential))] + self.Spell
+        self.Name = Potion_Name_Potential[randint(len(Potion_Name_Potential))] + self.Spell
 
     def __str__(self):
         # print(self.Enchantment.Level)
@@ -1764,16 +1728,6 @@ class Potion(object):
 
 
 class Wand(object):
-    Name_Potential = [
-        'Rod of ',
-        'Rod of ',
-        'Stave of ',
-        'Scepter of ',
-        'Staff of ',
-        'Staff of ',
-        'Wand of ',
-        'Wand of ',
-    ]
     Spell = Name = ""
     Level = Cost = 0
     Enchantment = None
@@ -1819,8 +1773,8 @@ class Wand(object):
             if find_spell_level(spell) == level:
                 self.Spell = spell
                 self.Enchantment = Enchant(iSpell=self.Spell)
-        self.Name = self.Name_Potential[randint(len(
-            self.Name_Potential))] + self.Spell
+        self.Name = Wand_Name_Potential[randint(len(
+            Wand_Name_Potential))] + self.Spell
 
     def __str__(self):
         # print(self.Enchantment.Level)
@@ -1885,269 +1839,6 @@ class Inn(object):
 
 
 class Food(object):
-    f1 = [
-        'Acai Berry',
-        'Apple',
-        'Apricot',
-        'Banana',
-        'Blackberry',
-        'Blueberry',
-        'Boysenberry',
-        'Crab Apple',
-        'Cherry',
-        'Cloudberry',
-        'Coconut',
-        'Cranberry',
-        'Elderberry',
-        'Grape',
-        'Grapefruit',
-        'Guava',
-        'Huckleberry',
-        'Juniper berry',
-        'Kiwi',
-        'Lemon',
-        'Lime',
-        'Mango',
-        'Melon',
-        'Cantaloupe',
-        'Honeydew',
-        'Watermelon',
-        'Nectarine',
-        'Orange',
-        'Blood Orange',
-        'Mandarine',
-        'Tangerine',
-        'Papaya',
-        'Passionfruit',
-        'Peach',
-        'Pear',
-        'Plum',
-        'Pineapple',
-        'Pineberry',
-        'Pomegranate',
-        'Raspberry',
-        'Star Apple',
-        'Strawberry',
-    ]
-    f2 = [
-        'Jam',
-        'Current',
-        'Spread',
-        'Puree',
-        'Sauce',
-        'Slices',
-    ]
-    v1 = [
-        '',
-        '',
-        '',
-        '',
-        'Steamed ',
-        'Cooked ',
-        'Baked ',
-        'Mashed ',
-        'Pickled ',
-        'Chopped ',
-        'Roasted ',
-        'Toasted ',
-        'Sliced ',
-        'Fried ',
-        'Boiled ',
-        'Uncooked ',
-    ]
-    v2 = [
-        'Artichoke',
-        'Eggplant',
-        'Avocado',
-        'Asparagus',
-        'Legumes',
-        'Alfalfa Sprouts',
-        'Beans'
-        'Peas',
-        'Broccoli',
-        'Brussels Sprouts',
-        'Cabbage',
-        'Cauliflower',
-        'Celery',
-        'Spinach',
-        'Lettuce',
-        'Arugula',
-        'Chives',
-        'Leek',
-        'Onion',
-        'Scallion',
-        'Rhubarb',
-        'Beet',
-        'Carrot',
-        'Parsnip',
-        'Turnip',
-        'Radish',
-        'Horseradish',
-        'Sweetcorn',
-        'Zucchini',
-        'Cucumber',
-        'Squash',
-        'Pumpkin',
-        'Potato',
-        'Sweet Potato',
-        'Yam',
-        'Water Chestnut',
-        'Watercress',
-    ]
-    m1 = [
-        'Aged ',
-        'Baked ',
-        'Barbecued ',
-        'Braised ',
-        'Dried ',
-        'Fried ',
-        'Ground ',
-        'Marinated ',
-        'Pickled ',
-        'Poached ',
-        'Roasted ',
-        'Salt-cured ',
-        'Smoked ',
-        'Stewed ',
-        'Corned ',
-        'Sliced ',
-    ]
-    m2 = [
-        'Bear',
-        'Beef',
-        'Buffalo',
-        'Bison',
-        'Caribou',
-        'Goat',
-        'Ham',
-        'Horse',
-        'Kangaroo',
-        'Lamb',
-        'Moose',
-        'Mutton',
-        'Pork',
-        'Bacon',
-        'Rabbit',
-        'Tripe',
-        'Veal',
-        'Venison',
-        'Chicken',
-        'Duck',
-        'Emu',
-        'Goose',
-        'Grouse',
-        'Liver',
-        'Ostrich',
-        'Pheasant',
-        'Quail',
-        'Squab',
-        'Turkey',
-        'Abalone',
-        'Anchovy',
-        'Bass',
-        'Calamari',
-        'Carp',
-        'Catfish',
-        'Cod',
-        'Crab',
-        'Crayfish',
-        'Dolphin',
-        'Eel',
-        'Flounder',
-        'Grouper',
-        'Haddock',
-        'Halibut',
-        'Herring',
-        'Kingfish',
-        'Lobster',
-        'Mackerel',
-        'Mahi',
-        'Marlin',
-        'Milkfish',
-        'Mussel',
-        'Octopus',
-        'Oyster',
-        'Perch',
-        'Pike',
-        'Pollock',
-        'Salmon',
-        'Sardine',
-        'Scallop',
-        'Shark',
-        'Shrimp',
-        'Swai',
-        'Swordfish',
-        'Tilapia',
-        'Trout',
-        'Tuna',
-        'Walleye',
-        'Whale',
-    ]
-    m3 = [
-        '',
-        '',
-        '',
-        '',
-        'Burger',
-        'Charcuterie',
-        'Chop',
-        'Cured',
-        'Cutlet',
-        'Dum',
-        'Fillet',
-        'Kebab',
-        'Meatball',
-        'Meatloaf',
-        'Offal',
-        'Sausage',
-        'Steak',
-        'Tandoor',
-        'Tartare',
-    ]
-    g1 = ['', '', '', '', 'Buttered ', 'Spiced ', 'Cheesy ']
-    g2 = [
-        'Barley',
-        'Corn',
-        'Oat',
-        'Rice',
-        'Wheat',
-        'Rye',
-        'Maize',
-    ]
-    g3 = [
-        'Bun',
-        'Roll',
-        'Bread',
-        'Cake',
-        'Patty',
-        'Muffin',
-        'Toast',
-        'Biscuit',
-        'Loaf',
-    ]
-    spice = [
-        'Basil',
-        'Ginger',
-        'Caraway',
-        'Cilantro',
-        'Chamomile',
-        'Dill',
-        'Fennel',
-        'Lavender',
-        'Lemon Grass',
-        'Marjoram',
-        'Oregano',
-        'Parsley',
-        'Rosemary',
-        'Sage',
-        'Thyme',
-        'Garlic',
-        'Chili Pepper',
-        'Jalapeno',
-        'Habanero',
-        'Paprika',
-        'Cayenne Pepper',
-    ]
     String = Descriptor = ''
     Cost = 0
 
@@ -2156,63 +1847,63 @@ class Food(object):
         meal_option = randint(15) + rarity
         if meal_option <= 10:
             self.Descriptor = "Meat, Bread"
-            s += self.m1[randint(len(self.m1))] + self.m2[randint(
-                len(self.m2))] + " " + self.m3[randint(len(
-                    self.m3))] + " with a "
-            s += self.g1[randint(len(self.g1))] + self.g2[randint(
-                len(self.g2))] + " " + self.g3[randint(len(self.g3))]
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
+                len(Food_m2))] + " " + Food_m3[randint(len(
+                    Food_m3))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
+                len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
         elif meal_option == 11:
             self.Descriptor = "Meat, Bread, Fruit"
-            s += self.m1[randint(len(self.m1))] + self.m2[randint(
-                len(self.m2))] + " " + self.m3[randint(len(
-                    self.m3))] + " with a "
-            s += self.g1[randint(len(self.g1))] + self.g2[randint(
-                len(self.g2))] + " " + self.g3[randint(len(self.g3))]
-            s += " and a side of " + self.f1[randint(len(
-                self.f1))] + ' ' + self.f2[randint(len(self.f2))]
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
+                len(Food_m2))] + " " + Food_m3[randint(len(
+                    Food_m3))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
+                len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+            s += " and a side of " + Food_f1[randint(len(
+                Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
 
         elif meal_option == 12:
             self.Descriptor = "Meat, Bread, Vegetable"
-            s += self.m1[randint(len(self.m1))] + self.m2[randint(
-                len(self.m2))] + " " + self.m3[randint(len(
-                    self.m3))] + " with a "
-            s += self.g1[randint(len(self.g1))] + self.g2[randint(
-                len(self.g2))] + " " + self.g3[randint(len(self.g3))]
-            s += " and a side of " + self.v1[randint(len(
-                self.v1))] + ' ' + self.v2[randint(len(self.v2))]
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
+                len(Food_m2))] + " " + Food_m3[randint(len(
+                    Food_m3))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
+                len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+            s += " and a side of " + Food_v1[randint(len(
+                Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
         elif meal_option == 13:
             self.Descriptor = "Vegetable, Bread, Fruit"
-            s += self.v1[randint(len(self.v1))] + ' ' + self.v2[randint(
-                len(self.v2))] + " with a "
-            s += self.g1[randint(len(self.g1))] + self.g2[randint(
-                len(self.g2))] + " " + self.g3[randint(len(self.g3))]
-            s += " and a side of " + self.f1[randint(len(
-                self.f1))] + ' ' + self.f2[randint(len(self.f2))]
+            s += Food_v1[randint(len(Food_v1))] + ' ' + Food_v2[randint(
+                len(Food_v2))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
+                len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+            s += " and a side of " + Food_f1[randint(len(
+                Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
         elif meal_option == 14:
             self.Descriptor = "Meat, Fruit, Vegetable"
-            s += self.m1[randint(len(self.m1))] + self.m2[randint(
-                len(self.m2))] + " " + self.m3[randint(len(self.m3))]
-            s += " with " + self.f1[randint(len(
-                self.f1))] + ' ' + self.f2[randint(len(self.f2))]
-            s += " and " + self.v1[randint(len(
-                self.v1))] + ' ' + self.v2[randint(len(self.v2))]
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
+                len(Food_m2))] + " " + Food_m3[randint(len(Food_m3))]
+            s += " with " + Food_f1[randint(len(
+                Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+            s += " and " + Food_v1[randint(len(
+                Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
         else:
             self.Descriptor = "Meat, Fruit, Vegetable, Bread"
-            s += self.m1[randint(len(self.m1))] + self.m2[randint(
-                len(self.m2))] + " " + self.m3[randint(len(
-                    self.m3))] + " with a "
-            s += self.g1[randint(len(self.g1))] + self.g2[randint(
-                len(self.g2))] + " " + self.g3[randint(len(self.g3))]
-            s += " with " + self.f1[randint(len(
-                self.f1))] + ' ' + self.f2[randint(len(self.f2))]
-            s += " and " + self.v1[randint(len(
-                self.v1))] + ' ' + self.v2[randint(len(self.v2))]
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
+                len(Food_m2))] + " " + Food_m3[randint(len(
+                    Food_m3))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
+                len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+            s += " with " + Food_f1[randint(len(
+                Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+            s += " and " + Food_v1[randint(len(
+                Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
         self.String = s
         if meal_option == 0:
-            self.Cost = (len(s) * random_sample() + .5) / 10
+            self.Cost = (len(s) * random_sample() + .5) // 10
         else:
             self.Cost = (len(s) *
-                         (sum(random_sample(meal_option)) / meal_option)) / 10
+                         (sum(random_sample(meal_option)) / meal_option)) // 10
 
     def __str__(self):
         s = """<tr><td style="width:50%;"><span class="text-md">""" + self.String + """</span></td><td>""" + \
@@ -2221,217 +1912,6 @@ class Food(object):
 
 
 class Drink(object):
-    d1 = [
-        'Water',
-        'Water',
-        'Water',
-        'Water',
-        'Water',
-        'Water',
-        'Water',
-        'Water',
-        'Water',
-        'Water',
-        'Water',
-        'Water',
-        'Water',
-        'Water',
-        'Acai Juice',
-        'Apple Juice',
-        'Apricot Juice',
-        'Banana Juice',
-        'Blackberry Juice',
-        'Blueberry Juice',
-        'Boysenberry Juice',
-        'Crab Apples Juice',
-        'Cherry Juice',
-        'Cloudberry Juice',
-        'Coconut Juice',
-        'Cranberry Juice',
-        'Grape Juice',
-        'Grapefruit Juice',
-        'Guava Juice',
-        'Honeyberry Juice',
-        'Huckleberry Juice',
-        'Kiwi Juice',
-        'Lemon Juice',
-        'Lime Juice',
-        'Mango Juice',
-        'Melon Juice',
-        'Cantaloupe Juice',
-        'Honeydew Juice',
-        'Watermelon Juice',
-        'Nectarine Juice',
-        'Orange Juice',
-        'Papaya Juice',
-        'Peach Juice',
-        'Pear Juice',
-        'Pineapple Juice',
-        'Pomegranate Juice',
-        'Raspberry Juice',
-        'Strawberry Juice',
-        'Acai Contentrate',
-        'Apple Contentrate',
-        'Apricot Contentrate',
-        'Banana Contentrate',
-        'Blackberry Contentrate',
-        'Blueberry Contentrate',
-        'Boysenberry Contentrate',
-        'Crab Apples Contentrate',
-        'Cherry Contentrate',
-        'Cloudberry Contentrate',
-        'Coconut Contentrate',
-        'Cranberry Contentrate',
-        'Grape Contentrate',
-        'Grapefruit Contentrate',
-        'Guava Contentrate',
-        'Honeyberry Contentrate',
-        'Huckleberry Contentrate',
-        'Kiwi Contentrate',
-        'Lemon Contentrate',
-        'Lime Contentrate',
-        'Mango Contentrate',
-        'Melon Contentrate',
-        'Cantaloupe Contentrate',
-        'Honeydew Contentrate',
-        'Watermelon Contentrate',
-        'Nectarine Contentrate',
-        'Orange Contentrate',
-        'Papaya Contentrate',
-        'Peach Contentrate',
-        'Pear Contentrate',
-        'Pineapple Contentrate',
-        'Pomegranate Contentrate',
-        'Raspberry Contentrate',
-        'Strawberry Contentrate',
-        'Acai Cider',
-        'Apple Cider',
-        'Apricot Cider',
-        'Banana Cider',
-        'Blackberry Cider',
-        'Blueberry Cider',
-        'Boysenberry Cider',
-        'Crab Apples Cider',
-        'Cherry Cider',
-        'Cloudberry Cider',
-        'Coconut Cider',
-        'Cranberry Cider',
-        'Grape Cider',
-        'Grapefruit Cider',
-        'Guava Cider',
-        'Honeyberry Cider',
-        'Huckleberry Cider',
-        'Kiwi Cider',
-        'Lemon Cider',
-        'Lime Cider',
-        'Mango Cider',
-        'Melon Cider',
-        'Cantaloupe Cider',
-        'Honeydew Cider',
-        'Watermelon Cider',
-        'Nectarine Cider',
-        'Orange Cider',
-        'Papaya Cider',
-        'Peach Cider',
-        'Pear Cider',
-        'Pineapple Cider',
-        'Pomegranate Cider',
-        'Raspberry Cider',
-        'Strawberry Cider',
-        'Acai Soda',
-        'Apple Soda',
-        'Apricot Soda',
-        'Banana Soda',
-        'Blackberry Soda',
-        'Blueberry Soda',
-        'Boysenberry Soda',
-        'Crab Apples Soda',
-        'Cherry Soda',
-        'Cloudberry Soda',
-        'Coconut Soda',
-        'Cranberry Soda',
-        'Grape Soda',
-        'Grapefruit Soda',
-        'Guava Soda',
-        'Honeyberry Soda',
-        'Huckleberry Soda',
-        'Kiwi Soda',
-        'Lemon Soda',
-        'Lime Soda',
-        'Mango Soda',
-        'Melon Soda',
-        'Cantaloupe Soda',
-        'Honeydew Soda',
-        'Watermelon Soda',
-        'Nectarine Soda',
-        'Orange Soda',
-        'Papaya Soda',
-        'Peach Soda',
-        'Pear Soda',
-        'Pineapple Soda',
-        'Pomegranate Soda',
-        'Raspberry Soda',
-        'Strawberry Soda',
-        'Acai Infusion',
-        'Apple Infusion',
-        'Apricot Infusion',
-        'Banana Infusion',
-        'Blackberry Infusion',
-        'Blueberry Infusion',
-        'Boysenberry Infusion',
-        'Crab Apples Infusion',
-        'Cherry Infusion',
-        'Cloudberry Infusion',
-        'Coconut Infusion',
-        'Cranberry Infusion',
-        'Grape Infusion',
-        'Grapefruit Infusion',
-        'Guava Infusion',
-        'Honeyberry Infusion',
-        'Huckleberry Infusion',
-        'Kiwi Infusion',
-        'Lemon Infusion',
-        'Lime Infusion',
-        'Mango Infusion',
-        'Melon Infusion',
-        'Cantaloupe Infusion',
-        'Honeydew Infusion',
-        'Watermelon Infusion',
-        'Nectarine Infusion',
-        'Orange Infusion',
-        'Papaya Infusion',
-        'Peach Infusion',
-        'Pear Infusion',
-        'Pineapple Infusion',
-        'Pomegranate Infusion',
-        'Raspberry Infusion',
-        'Strawberry Infusion',
-    ]
-    d2 = [
-        'Absinthe',
-        'Cognac',
-        'Gin',
-        'Pale Ale',
-        'Pilsner',
-        'Amber Ale',
-        'Wheat Beer',
-        'Ale',
-        'Porter',
-        'Marzen',
-        'Scotch',
-        'Stout',
-        'Pale Lager',
-        'Rye Ale',
-        'Rum',
-        'Cocktail',
-        'Whiskey',
-        'Vodka',
-        'Moonshine',
-        'Bourban',
-        'Brandy',
-        'Rum',
-        'Vermouth',
-    ]
     String = Descriptor = ''
     Cost = 0
 
@@ -2440,10 +1920,10 @@ class Drink(object):
         num = randint(4) + level
         if num < 2:
             self.Descriptor = "Non-Alcoholic"
-            s += self.d1[randint(len(self.d1))]
+            s += Drink_d1[randint(len(Drink_d1))]
         else:
             self.Descriptor = "Alcoholic"
-            s += self.d2[randint(len(self.d2))]
+            s += Drink_d2[randint(len(Drink_d2))]
         self.String = s
         if num == 0:
             self.Cost = (len(s) * random_sample() + .5) / 10
