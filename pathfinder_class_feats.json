@@ -1,0 +1,5566 @@
+{
+    "Barbarian": {
+        "1": {
+            "Feats": [
+                "<p><b>Fast Movement: </b>A barbarian's land speed is faster than the norm for her race by +10 feet. This benefit applies only when he is wearing no <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus\">armor</a>, light <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus\">armor</a>, or medium <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Armor-Bonus\">armor</a>, and not carrying a heavy load. Apply this bonus before modifying the barbarian's speed because of any load carried or armor worn. This bonus stacks with any other bonuses to the barbarian's land speed.</p>",
+                "<p><b>Rage: </b>A barbarian can call upon inner reserves of strength and ferocity, granting her additional combat prowess. Starting at 1st level, a barbarian can rage for a number of rounds per day equal to 4 + her <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\" rel=\"nofollow\">Constitution</a> modifier. At each level after 1st, she can rage for 2 additional rounds. Temporary increases to <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\" rel=\"nofollow\">Constitution</a>, such as those gained from rage and spells like <a style=\"font-style: italic\" href=\"https://www.d20pfsrd.com/magic/all-spells/b/bear-s-endurance\">bear's endurance</a>, do not increase the total number of rounds that a barbarian can rage per day. A barbarian can enter rage as a free action. The total number of rounds of rage per day is renewed after resting for 8 hours, although these hours do not need to be consecutive.</p><p>While in rage, a barbarian gains a +4 morale bonus to her <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\" rel=\"nofollow\">Strength</a> and <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\" rel=\"nofollow\">Constitution</a>, as well as a +2 morale bonus on <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\" rel=\"nofollow\">Will</a> saves. In addition, she takes a –2 penalty to <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\" rel=\"nofollow\">Armor Class</a>. The increase to <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\" rel=\"nofollow\">Constitution</a> grants the barbarian 2 hit points per Hit Dice, but these disappear when the rage ends and are not lost first like <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Temporary-Hit-Points\" rel=\"nofollow\">temporary hit points</a>. While in rage, a barbarian cannot use any <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Charisma-Cha-\" rel=\"nofollow\">Charisma</a>-, <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Dexterity-Dex-\" rel=\"nofollow\">Dexterity</a>-, or <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Intelligence-Int-\" rel=\"nofollow\">Intelligence</a>-based skills (except <a href=\"https://www.d20pfsrd.com/skills/acrobatics\" rel=\"nofollow\">Acrobatics</a>, <a href=\"https://www.d20pfsrd.com/skills/fly\" rel=\"nofollow\">Fly</a>, <a href=\"https://www.d20pfsrd.com/skills/intimidate\" rel=\"nofollow\">Intimidate</a>, and <a href=\"https://www.d20pfsrd.com/skills/ride\" rel=\"nofollow\">Ride</a>) or any ability that requires patience or concentration.</p><p>A barbarian can end her rage as a free action and is <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Fatigued\" rel=\"nofollow\">fatigued</a> after rage for a number of rounds equal to 2 times the number of rounds spent in the rage. A barbarian cannot enter a new rage while <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Fatigued\" rel=\"nofollow\">fatigued</a> or <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Exhausted\" rel=\"nofollow\">exhausted</a> but can otherwise enter rage multiple times during a single encounter or combat. If a barbarian falls <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Unconscious\" rel=\"nofollow\">unconscious</a>, her rage immediately ends, placing her in peril of death.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 2,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 1
+            }
+        },
+        "2": {
+            "Feats": [
+                "<p><b>Rage Powers: </b><p>As a barbarian gains levels, she learns to use her rage in new ways. Starting at 2nd level, a barbarian gains a <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers\">rage power</a>. She gains another <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers\">rage power</a> for every two levels of barbarian attained after 2nd level. A barbarian gains the benefits of <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers\">rage powers</a> only while raging, and some of these powers require the barbarian to take an action first. Unless otherwise noted, a barbarian cannot select an individual power more than once.</p><p>Any barbarian who meets the powers’ prerequisites can select and use rage powers. Totem rage powers grant powers related to a theme. A barbarian cannot select from more than one group of totem rage powers; for example, a barbarian who selects a beast totem rage power cannot later choose to gain any of the dragon totem rage powers (any rage power with \"dragon totem\", in its title).</p><ul><li>A complete list of rage powers can be found here: <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers\">Rage Powers</a></li></ul>",
+                "<p><b>Uncanny Dodge: </b>At 2nd level, a barbarian gains the ability to react to danger before her senses would normally allow her to do so. She cannot be caught <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Flat-Footed\" rel=\"nofollow\">flat-footed</a>, nor does she lose her Dex bonus to AC if the attacker is invisible. She still loses her <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Dexterity-Dex-\" rel=\"nofollow\">Dexterity</a> bonus to <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\" rel=\"nofollow\">armor class</a> if immobilized. A barbarian with this ability can still lose her <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Dexterity-Dex-\" rel=\"nofollow\">Dexterity</a> bonus to <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\" rel=\"nofollow\">armor class</a> if an opponent successfully uses the feint action against her.</p><p>If a barbarian already has <a href=\"https://www.d20pfsrd.com/classes/core-classes/rogue#TOC-Uncanny-Dodge-Ex-\">uncanny dodge</a> from a different class, she automatically gains <a href=\"https://www.d20pfsrd.com/classes/core-classes/rogue#TOC-Improved-Uncanny-Dodge-Ex-\">improved uncanny dodge</a> (see below) instead.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 3,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 2
+            }
+        },
+        "3": {
+            "Feats": [
+                "<p><b>Trap Sense: </b>Gains a +1 bonus on <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex\" rel=\"nofollow\">Reflex</a> saves made to avoid traps and a +1 <a href=\"https://www.d20pfsrd.com/gamemastering/combat#dodge_bonus\" rel=\"nofollow\">dodge bonus</a> to <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\" rel=\"nofollow\">armor class</a> against attacks made by traps. These bonuses increase by +1 every three barbarian levels thereafter (6th, 9th, 12th, 15th, and 18th level). Trap sense bonuses gained from multiple classes stack.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 3,
+                "Ref": 1,
+                "Will": 1,
+                "BAB": 3
+            }
+        },
+        "4": {
+            "Feats": [
+                "<p><b>Rage Powers: </b><p>Choose another rage power. A complete list of rage powers can be found here: <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers\">Rage Powers</a></p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 4,
+                "Ref": 1,
+                "Will": 1,
+                "BAB": 4
+            }
+        },
+        "5": {
+            "Feats": [
+                "<p><b>Improved Uncanny Dodge: </b>At 5th level and higher, a barbarian can no longer be flanked. This defense denies a rogue the ability to sneak attack the barbarian by flanking her, unless the attacker has at least four more rogue levels than the target has barbarian levels.</p><p>If a character already has <a href=\"https://www.d20pfsrd.com/classes/core-classes/rogue#TOC-Uncanny-Dodge-Ex-\">uncanny dodge</a> (see above) from another class, the levels from the classes that grant <a href=\"https://www.d20pfsrd.com/classes/core-classes/rogue#TOC-Uncanny-Dodge-Ex-\">uncanny dodge</a> stack to determine the minimum rogue level required to flank the character.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 4,
+                "Ref": 1,
+                "Will": 1,
+                "BAB": 5
+            }
+        },
+        "6": {
+            "Feats": [
+                "<p><b>Rage Powers: </b><p>Choose another rage power. A complete list of rage powers can be found here: <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers\">Rage Powers</a></p>",
+                "<p><b>Trap Sense: </b>Increase Trap Sense to a +2 bonus on <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex\" rel=\"nofollow\">Reflex</a> saves made to avoid traps and a +1 <a href=\"https://www.d20pfsrd.com/gamemastering/combat#dodge_bonus\" rel=\"nofollow\">dodge bonus</a> to <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\" rel=\"nofollow\">armor class</a> against attacks made by traps.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 5,
+                "Ref": 2,
+                "Will": 2,
+                "BAB": 6
+            }
+        },
+        "7": {
+            "Feats": [
+                "<p><b>Damage Reduction: </b><p>At 7th level, a barbarian gains <a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\" rel=\"nofollow\">damage reduction</a>. Subtract 1 from the damage the barbarian takes each time she is dealt damage from a weapon or a natural attack. <a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\" rel=\"nofollow\">Damage reduction</a> can reduce damage to 0 but not below 0.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 5,
+                "Ref": 2,
+                "Will": 2,
+                "BAB": 7
+            }
+        },
+        "8": {
+            "Feats": [
+                "<p><b>Rage Powers: </b><p>Choose another rage power. A complete list of rage powers can be found here: <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers\">Rage Powers</a></p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 6,
+                "Ref": 2,
+                "Will": 2,
+                "BAB": 8
+            }
+        },
+        "9": {
+            "Feats": [
+                "<p><b>Trap Sense: </b>Increase Trap Sense to a +3 bonus on <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex\" rel=\"nofollow\">Reflex</a> saves made to avoid traps and a +1 <a href=\"https://www.d20pfsrd.com/gamemastering/combat#dodge_bonus\" rel=\"nofollow\">dodge bonus</a> to <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\" rel=\"nofollow\">armor class</a> against attacks made by traps.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 6,
+                "Ref": 3,
+                "Will": 3,
+                "BAB": 9
+            }
+        },
+        "10": {
+            "Feats": [
+                "<p><b>Rage Powers: </b><p>Choose another rage power. A complete list of rage powers can be found here: <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers\">Rage Powers</a></p>",
+                "<p><b>Damage Reduction: </b><p>You gain <a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\" rel=\"nofollow\">damage reduction</a>. Subtract 2 from the damage the barbarian takes each time she is dealt damage from a weapon or a natural attack. <a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\" rel=\"nofollow\">Damage reduction</a> can reduce damage to 0 but not below 0.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 7,
+                "Ref": 3,
+                "Will": 3,
+                "BAB": 10
+            }
+        },
+        "11": {
+            "Feats": [
+                "<p><b>Greater Rage: </b><p>When a barbarian enters rage, the morale bonus to her <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\" rel=\"nofollow\">Strength</a> and <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\" rel=\"nofollow\">Constitution</a> increases to +6 and the morale bonus on her <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\" rel=\"nofollow\">Will</a> saves increases to +3.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 7,
+                "Ref": 3,
+                "Will": 3,
+                "BAB": 11
+            }
+        },
+        "12": {
+            "Feats": [
+                "<p><b>Rage Powers: </b><p>Choose another rage power. A complete list of rage powers can be found here: <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers\">Rage Powers</a></p>",
+                "<p><b>Trap Sense: </b>Increase Trap Sense to a +4 bonus on <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex\" rel=\"nofollow\">Reflex</a> saves made to avoid traps and a +1 <a href=\"https://www.d20pfsrd.com/gamemastering/combat#dodge_bonus\" rel=\"nofollow\">dodge bonus</a> to <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\" rel=\"nofollow\">armor class</a> against attacks made by traps.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 8,
+                "Ref": 4,
+                "Will": 4,
+                "BAB": 12
+            }
+        },
+        "13": {
+            "Feats": [
+                "<p><b>Damage Reduction: </b><p>You gain <a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\" rel=\"nofollow\">damage reduction</a>. Subtract 3 from the damage the barbarian takes each time she is dealt damage from a weapon or a natural attack. <a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\" rel=\"nofollow\">Damage reduction</a> can reduce damage to 0 but not below 0.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 8,
+                "Ref": 4,
+                "Will": 4,
+                "BAB": 13
+            }
+        },
+        "14": {
+            "Feats": [
+                "<p><b>Rage Powers: </b><p>Choose another rage power. A complete list of rage powers can be found here: <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers\">Rage Powers</a></p>",
+                "<p><b>Indomitable Will: </b>While in rage, a barbarian of 14th level or higher gains a +4 bonus on <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\" rel=\"nofollow\">Will</a> saves to resist enchantment spells. This bonus stacks with all other modifiers, including the morale bonus on <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\" rel=\"nofollow\">Will</a> saves she also receives during her rage.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 9,
+                "Ref": 4,
+                "Will": 4,
+                "BAB": 14
+            }
+        },
+        "15": {
+            "Feats": [
+                "<p><b>Trap Sense: </b>Increase Trap Sense to a +5 bonus on <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Reflex\" rel=\"nofollow\">Reflex</a> saves made to avoid traps and a +1 <a href=\"https://www.d20pfsrd.com/gamemastering/combat#dodge_bonus\" rel=\"nofollow\">dodge bonus</a> to <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Armor-Class\" rel=\"nofollow\">armor class</a> against attacks made by traps.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 9,
+                "Ref": 5,
+                "Will": 5,
+                "BAB": 15
+            }
+        },
+        "16": {
+            "Feats": [
+                "<p><b>Rage Powers: </b><p>Choose another rage power. A complete list of rage powers can be found here: <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers\">Rage Powers</a></p>",
+                "<p><b>Damage Reduction: </b><p>You gain <a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\" rel=\"nofollow\">damage reduction</a>. Subtract 4 from the damage the barbarian takes each time she is dealt damage from a weapon or a natural attack. <a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\" rel=\"nofollow\">Damage reduction</a> can reduce damage to 0 but not below 0.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 10,
+                "Ref": 5,
+                "Will": 5,
+                "BAB": 16
+            }
+        },
+        "17": {
+            "Feats": [
+                "<p><b>Tireless Rage: </b>Starting at 17th level, a barbarian no longer becomes <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Fatigued\" rel=\"nofollow\">fatigued</a> at the end of her rage.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 10,
+                "Ref": 5,
+                "Will": 5,
+                "BAB": 17
+            }
+        },
+        "18": {
+            "Feats": [
+                "<p><b>Rage Powers: </b><p>Choose another rage power. A complete list of rage powers can be found here: <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers\">Rage Powers</a></p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 11,
+                "Ref": 6,
+                "Will": 6,
+                "BAB": 18
+            }
+        },
+        "19": {
+            "Feats": [
+                "<p><b>Damage Reduction: </b><p>You gain <a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\" rel=\"nofollow\">damage reduction</a>. Subtract 5 from the damage the barbarian takes each time she is dealt damage from a weapon or a natural attack. <a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#TOC-Damage-Reduction\" rel=\"nofollow\">Damage reduction</a> can reduce damage to 0 but not below 0.</p>"],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 11,
+                "Ref": 6,
+                "Will": 6,
+                "BAB": 19
+            }
+        },
+        "20": {
+            "Feats": [
+                "<p><b>Rage Powers: </b><p>Choose another rage power. A complete list of rage powers can be found here: <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian/rage-powers\">Rage Powers</a></p>",
+                "<p><b>Mighty Rage: </b>When a barbarian enters rage, the morale bonus to her <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Strength-Str-\" rel=\"nofollow\">Strength</a> and <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\" rel=\"nofollow\">Constitution</a> increases to +8 and the morale bonus on her <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\" rel=\"nofollow\">Will</a> saves increases to +4.</p>"
+            ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 12,
+                "Ref": 6,
+                "Will": 6,
+                "BAB": 20
+            }
+        }
+    },
+    "Bard": {
+        "1": {
+            "Feats": [
+                "<p><b>Bardic <a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a></h4><p>A bard adds half his class level (minimum 1) to all <a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a> skill checks and may make all <a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a> skill checks untrained.</p>",
+                "<p><b>Bardic Performance</b> : <i><a href=\"https://www.d20pfsrd.com/classes/core-classes/Bard/#TOC-Countersong-Su-\">Countersong (Su)</a></i>: At 1st level, a bard learns to counter magic effects that depend on sound (but not spells that have verbal <a href=\"https://www.d20pfsrd.com/magic#TOC-Components\">components</a>.) Each round of the countersong he makes a <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> (keyboard, percussion, wind, string, or sing) skill check. Any creature within 30 feet of the bard (including the bard himself) that is affected by a sonic or language-dependent magical attack may use the bard’s <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> check result in place of its saving throw if, after the saving throw is rolled, the <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> check result proves to be higher. If a creature within range of the countersong is already under the effect of a non-instantaneous sonic or language-dependent magical attack, it gains another saving throw against the effect each round it hears the countersong, but it must use the bard’s <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> skill check result for the save. Countersong does not work on effects that don’t allow saves. Countersong relies on audible components.</p>",
+                "<p><b>Bardic Performance</b> : <i><a href=\"https://www.d20pfsrd.com/classes/core-classes/Bard/#TOC-Distraction-Su-\">Distraction (Su)</a></i>: At 1st level, a bard can use his performance to counter magic effects that depend on sight. Each round of the Distraction, he makes a <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> (act, comedy, dance, or oratory) skill check. Any creature within 30 feet of the bard (including the bard himself) that is affected by an <a href=\"https://www.d20pfsrd.com/magic#TOC-Illusion\">illusion</a> (<a href=\"https://www.d20pfsrd.com/magic#TOC-lllusion-Pattern\">pattern</a>) or <a href=\"https://www.d20pfsrd.com/magic#TOC-Illusion\">illusion</a> (<a href=\"https://www.d20pfsrd.com/magic#TOC-lllusion-Figment\">figment</a>) magical attack may use the bard’s <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> check result in place of its saving throw if, after the saving throw is rolled, the <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> check result proves to be higher. If a creature within range of the Distraction is already under the effect of a non-instantaneous <a href=\"https://www.d20pfsrd.com/magic#TOC-Illusion\">illusion</a> (<a href=\"https://www.d20pfsrd.com/magic#TOC-lllusion-Pattern\">pattern</a>) or <a href=\"https://www.d20pfsrd.com/magic#TOC-Illusion\">illusion</a> (<a href=\"https://www.d20pfsrd.com/magic#TOC-lllusion-Figment\">figment</a>) magical attack, it gains another saving throw against the effect each round it sees the Distraction, but it must use the bard’s <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> check result for the save. Distraction does not work on effects that don’t allow saves. Distraction relies on visual components.</p>",
+                "<p><b>Bardic Performance</b> : <i><a href=\"https://www.d20pfsrd.com/classes/core-classes/Bard/#TOC-Fascinate-Su-\">Fascinate (Su)</a></i>: At 1st level, a bard can use his performance to cause one or more creatures to become <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Fascinated\">fascinated</a> with him. Each creature to be fascinated must be within 90 feet, able to see and hear the bard, and capable of paying attention to him. The bard must also be able to see the creatures affected. The Distraction of a nearby combat or other dangers prevents the ability from working. For every three levels a bard has attained beyond 1st, he can target one additional creature with this ability.</p><p>Each creature within range receives a <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\">Will</a> save (DC 10 + 1/2 the bard’s level + the bard’s <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Cha</a> modifier) to negate the effect. If a creature’s saving throw succeeds, the bard cannot attempt to fascinate that creature again for 24 hours. If its saving throw fails, the creature sits quietly and observes the performance for as long as the bard continues to maintain it. While <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Fascinated\">fascinated</a>, a target takes a –4 penalty on skill checks made as reactions, such as <a href=\"https://www.d20pfsrd.com/skills/perception\">Perception</a> checks. Any potential threat to the target allows the target to make a new saving throw against the effect. Any obvious threat, such as someone drawing a weapon, casting a spell, or aiming a weapon at the target, automatically breaks the effect.</p><p>Fascinate is an <a href=\"https://www.d20pfsrd.com/magic#TOC-Enchantment\">enchantment</a> (<a href=\"https://www.d20pfsrd.com/magic#TOC-Enchantment-Compulsion\">compulsion</a>), mind-affecting ability. Fascinate relies on audible and visual components in order to function.</p>",
+                "<p><b>Bardic Performance</b> : <i><a href=\"https://www.d20pfsrd.com/classes/core-classes/Bard/#TOC-Inspire-Courage-Su-\">Inspire Courage (Su)</a></i>: A 1st level bard can use his performance to inspire courage in his allies (including himself), bolstering them against fear and improving their combat abilities. To be affected, an ally must be able to perceive the bard’s performance. An affected ally receives a +1 <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Morale-Bonus\">morale bonus</a> on saving throws against <a href=\"https://www.d20pfsrd.com/magic#TOC-Enchantment-Charm\">charm</a> and fear effects and a +1 <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Competence-Bonus\">competence bonus</a> on attack and weapon damage rolls. At 5th level, and every six bard levels thereafter, this bonus increases by +1, to a maximum of +4 at 17th level. Inspire courage is a mind-affecting ability. inspire courage can use audible or visual components. The bard must choose which component to use when starting his performance.</p>"
+            ],
+            "Spells": {
+                "0": 4,
+                "1": 2,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 2,
+                "Will": 2,
+                "BAB": 1
+            }
+        },
+        "2": {
+            "Feats": [
+                "<p><b>Versatile Performance</b>: At 2nd level, a bard can choose one type of <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> skill. He can use his bonus in that skill in place of his bonus in associated skills. When substituting in this way, the bard uses his total <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> skill bonus, including class skill bonus, in place of its associated skill's bonus, whether or not he has ranks in that skill or if it is a class skill. At 6th level, and every 4 levels thereafter, the bard can select an additional type of <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> to substitute.</p><p>The types of <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> and their associated skills are: Act (<a href=\"https://www.d20pfsrd.com/skills/bluff\">Bluff</a>, <a href=\"https://www.d20pfsrd.com/skills/disguise\">Disguise</a>), Comedy (<a href=\"https://www.d20pfsrd.com/skills/bluff\">Bluff</a>, <a href=\"https://www.d20pfsrd.com/skills/intimidate\">Intimidate</a>), Dance (<a href=\"https://www.d20pfsrd.com/skills/acrobatics\">Acrobatics</a>, <a href=\"https://www.d20pfsrd.com/skills/fly\">Fly</a>), Keyboard Instruments (<a href=\"https://www.d20pfsrd.com/skills/diplomacy\">Diplomacy</a>, <a href=\"https://www.d20pfsrd.com/skills/intimidate\">Intimidate</a>), Oratory (<a href=\"https://www.d20pfsrd.com/skills/diplomacy\">Diplomacy</a>, <a href=\"https://www.d20pfsrd.com/skills/sense-motive\">Sense Motive</a>), Percussion (<a href=\"https://www.d20pfsrd.com/skills/handle-animal\">Handle Animal</a>, <a href=\"https://www.d20pfsrd.com/skills/intimidate\">Intimidate</a>), Sing (<a href=\"https://www.d20pfsrd.com/skills/bluff\">Bluff</a>, <a href=\"https://www.d20pfsrd.com/skills/sense-motive\">Sense Motive</a>), String (<a href=\"https://www.d20pfsrd.com/skills/bluff\">Bluff</a>, <a href=\"https://www.d20pfsrd.com/skills/diplomacy\">Diplomacy</a>), and Wind (<a href=\"https://www.d20pfsrd.com/skills/diplomacy\">Diplomacy</a>, <a href=\"https://www.d20pfsrd.com/skills/handle-animal\">Handle Animal</a>).</p>",
+                "<p><b>Well-Versed</b>: At 2nd level, the bard becomes resistant to the bardic performance of others, and to sonic effects in general. The bard gains a +4 bonus on saving throws made against bardic performance, sonic, and language-dependent effects.</p>"
+            ],
+            "Spells": {
+                "0": 5,
+                "1": 3,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 3,
+                "Will": 3,
+                "BAB": 2
+            }
+        },
+        "3": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 4,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 1,
+                "Ref": 3,
+                "Will": 3,
+                "BAB": 3
+            }
+        },
+        "4": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 4,
+                "2": 2,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 1,
+                "Ref": 4,
+                "Will": 4,
+                "BAB": 3
+            }
+        },
+        "5": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 4,
+                "2": 3,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 1,
+                "Ref": 4,
+                "Will": 4,
+                "BAB": 4
+            }
+        },
+        "6": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 4,
+                "2": 4,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 2,
+                "Ref": 5,
+                "Will": 5,
+                "BAB": 5
+            }
+        },
+        "7": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 5,
+                "2": 4,
+                "3": 2,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 2,
+                "Ref": 5,
+                "Will": 5,
+                "BAB": 6
+            }
+        },
+        "8": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 5,
+                "2": 4,
+                "3": 3,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 2,
+                "Ref": 6,
+                "Will": 6,
+                "BAB": 6
+            }
+        },
+        "9": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 5,
+                "2": 4,
+                "3": 4,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 3,
+                "Ref": 6,
+                "Will": 6,
+                "BAB": 7
+            }
+        },
+        "10": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 5,
+                "2": 5,
+                "3": 4,
+                "4": 2,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 3,
+                "Ref": 7,
+                "Will": 7,
+                "BAB":  8
+            }
+        },
+        "11": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 6,
+                "2": 5,
+                "3": 4,
+                "4": 3,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 3,
+                "Ref": 7,
+                "Will": 7,
+                "BAB": 9
+            }
+        },
+        "12": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 6,
+                "2": 5,
+                "3": 4,
+                "4": 4,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 4,
+                "Ref": 8,
+                "Will": 8,
+                "BAB": 9
+            }
+        },
+        "13": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 6,
+                "2": 5,
+                "3": 5,
+                "4": 4,
+                "5": 2,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 4,
+                "Ref": 8,
+                "Will": 8,
+                "BAB": 10
+            }
+        },
+        "14": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 6,
+                "2": 6,
+                "3": 5,
+                "4": 4,
+                "5": 3,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 4,
+                "Ref": 9,
+                "Will": 9,
+                "BAB": 11
+            }
+        },
+        "15": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 6,
+                "2": 6,
+                "3": 5,
+                "4": 4,
+                "5": 4,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 5,
+                "Ref": 9,
+                "Will": 9,
+                "BAB": 12
+            }
+        },
+        "16": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 6,
+                "2": 6,
+                "3": 5,
+                "4": 5,
+                "5": 4,
+                "6": 2,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 5,
+                "Ref": 10,
+                "Will": 10,
+                "BAB": 12
+            }
+        },
+        "17": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 6,
+                "2": 6,
+                "3": 6,
+                "4": 5,
+                "5": 4,
+                "6": 3,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 5,
+                "Ref": 10,
+                "Will": 10,
+                "BAB": 13
+            }
+        },
+        "18": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 6,
+                "2": 6,
+                "3": 6,
+                "4": 5,
+                "5": 4,
+                "6": 4,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 6,
+                "Ref": 11,
+                "Will": 11,
+                "BAB": 14
+            }
+        },
+        "19": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 6,
+                "2": 6,
+                "3": 6,
+                "4": 5,
+                "5": 5,
+                "6": 4,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 6,
+                "Ref": 12,
+                "Will": 11,
+                "BAB": 15
+            }
+        },
+        "20": {
+            "Feats": [],
+            "Spells": {
+                "0": 6,
+                "1": 6,
+                "2": 6,
+                "3": 6,
+                "4": 6,
+                "5": 5,
+                "6": 5,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 6,
+                "Ref": 12,
+                "Will": 12,
+                "BAB": 15
+            }
+        }
+    },
+    "Cleric": {
+        "1": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "2": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "3": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "4": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "5": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "6": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "7": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "8": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "9": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "10": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "11": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "12": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "13": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "14": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "15": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "16": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "17": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "18": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "19": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "20": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        }
+    },
+    "Druid": {
+        "1": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "2": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "3": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "4": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "5": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "6": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "7": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "8": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "9": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "10": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "11": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "12": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "13": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "14": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "15": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "16": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "17": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "18": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "19": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "20": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        }
+    },
+    "Fighter": {
+        "1": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "2": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "3": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "4": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "5": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "6": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "7": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "8": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "9": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "10": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "11": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "12": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "13": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "14": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "15": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "16": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "17": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "18": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "19": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "20": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        }
+    },
+    "Magus": {
+        "1": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "2": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "3": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "4": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "5": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "6": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "7": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "8": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "9": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "10": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "11": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "12": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "13": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "14": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "15": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "16": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "17": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "18": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "19": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "20": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        }
+    },
+    "Monk": {
+        "1": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "2": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "3": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "4": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "5": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "6": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "7": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "8": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "9": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "10": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "11": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "12": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "13": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "14": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "15": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "16": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "17": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "18": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "19": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "20": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        }
+    },
+    "Paladin": {
+        "1": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "2": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "3": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "4": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "5": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "6": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "7": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "8": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "9": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "10": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "11": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "12": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "13": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "14": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "15": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "16": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "17": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "18": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "19": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "20": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        }
+    },
+    "Ranger": {
+        "1": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "2": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "3": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "4": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "5": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "6": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "7": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "8": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "9": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "10": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "11": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "12": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "13": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "14": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "15": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "16": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "17": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "18": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "19": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "20": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        }
+    },
+    "Sorcerer": {
+        "1": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "2": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "3": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "4": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "5": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "6": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "7": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "8": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "9": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "10": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "11": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "12": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "13": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "14": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "15": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "16": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "17": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "18": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "19": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "20": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        }
+    },
+    "Summoner": {
+        "1": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "2": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "3": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "4": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "5": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "6": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "7": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "8": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "9": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "10": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "11": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "12": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "13": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "14": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "15": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "16": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "17": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "18": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "19": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "20": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        }
+    },
+    "Warpriest": {
+        "1": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "2": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "3": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "4": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "5": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "6": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "7": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "8": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "9": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "10": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "11": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "12": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "13": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "14": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "15": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "16": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "17": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "18": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "19": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "20": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        }
+    },
+    "Wizard": {
+        "1": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "2": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "3": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "4": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "5": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "6": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "7": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "8": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "9": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "10": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "11": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "12": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "13": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "14": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "15": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "16": {
+            "Feats": [
+           ],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "17": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "18": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "19": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        },
+        "20": {
+            "Feats": [],
+            "Spells": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0
+            },
+            "Saves": {
+                "Fort": 0,
+                "Ref": 0,
+                "Will": 0,
+                "BAB": 0
+            }
+        }
+    }
+}
