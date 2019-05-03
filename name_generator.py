@@ -11,7 +11,7 @@ d_name = [
     'Human',
     'Half-Orc',
     'Half-Elf',
-    'Merfolk'
+    'Merfolk',
     'Orc',
     'Svirfneblin',
     'Tian',
@@ -34,9 +34,9 @@ d_premade = [
 
 
 def default_name(race, gender='Male', doubled=True):
-    ''' Races under this category
-	Aasimer, Drow, Duergar, Dwarf, Elf, Goblin, Human, Half-Orc, Half-Elf, Orc, Svirfneblin, Tian, Tengu, Tiefling
-	'''
+    """ Races under this category
+    Aasimer, Drow, Duergar, Dwarf, Elf, Goblin, Human, Half-Orc, Half-Elf, Orc, Svirfneblin, Tian, Tengu, Tiefling
+    """
     # First name
     name = ''
     if gender == 'Male':
@@ -66,9 +66,9 @@ def default_name(race, gender='Male', doubled=True):
 
 
 def default_single(race, gender='Male', doubled=True):
-    ''' Races under this category
-	Catfolk, Fetchling, Gnome, Halfling, Hobgoblin, Ifrit, Kobold, Kitsune, Lizardfold, Nagaji, Oread, Ratfolk, Samsarans, Sylph, Undine, Vishkanya
-	'''
+    """ Races under this category
+    Catfolk, Fetchling, Gnome, Halfling, Hobgoblin, Ifrit, Kobold, Kitsune, Lizardfold, Nagaji, Oread, Ratfolk, Samsarans, Sylph, Undine, Vishkanya
+    """
     name = ''
     if gender == 'Male':
         name += race.m1[randint(len(race.m1))] + race.m2[randint(len(
@@ -91,8 +91,8 @@ def default_single(race, gender='Male', doubled=True):
 
 def default_premade(race, gender='Male', single=False):
     """ Races under this category
-	Dhampir, Gillman, Grippli, Merfolk, Strix, Wayangs
-	"""
+    Dhampir, Gillman, Grippli, Merfolk, Strix, Wayangs
+    """
     name = ''
     if gender == 'Male':
         name += race.m1[randint(len(race.m1))]
@@ -147,7 +147,7 @@ def name_parser(race, gender):
             name = default_name(HalfElf, gender)
         elif race == 'Half-Orc':
             name = default_name(HalfOrc, gender)
-        if race == 'Merfolk':
+        elif race == 'Merfolk':
             name = default_name(Merfolk, gender)
         elif race == 'Orc':
             name = default_name(Orc, gender)
@@ -163,47 +163,47 @@ def name_parser(race, gender):
     elif race in d_single:
         if race == 'Catfolk':
             name = default_single(Catfolk, gender)
-        if race == 'Fetchling':
+        elif race == 'Fetchling':
             name = default_single(Fetchling, gender)
-        if race == 'Gnome':
+        elif race == 'Gnome':
             name = default_single(Gnome, gender)
-        if race == 'Halfling':
+        elif race == 'Halfling':
             name = default_single(Halfling, gender)
-        if race == 'Hobgoblin':
+        elif race == 'Hobgoblin':
             name = default_single(Hobgoblin, gender)
-        if race == 'Ifrit':
+        elif race == 'Ifrit':
             name = default_single(Ifrit, gender)
-        if race == 'Kitsune':
+        elif race == 'Kitsune':
             name = default_single(Kitsune, gender)
-        if race == 'Kobold':
+        elif race == 'Kobold':
             name = default_single(Kobold, gender)
-        if race == 'Lizardfolk':
+        elif race == 'Lizardfolk':
             name = default_single(Lizardfolk, gender)
-        if race == 'Nagaji':
+        elif race == 'Nagaji':
             name = default_single(Nagaji, gender)
-        if race == 'Oread':
+        elif race == 'Oread':
             name = default_single(Oread, gender)
-        if race == 'Ratfolk':
+        elif race == 'Ratfolk':
             name = default_single(Ratfolk, gender)
-        if race == 'Samsarans':
+        elif race == 'Samsarans':
             name = default_single(Samsarans)
-        if race == 'Sylph':
+        elif race == 'Sylph':
             name = default_single(Sylph, gender)
-        if race == 'Undine':
+        elif race == 'Undine':
             name = default_single(Undine, gender)
 
     elif race in d_premade:
         if race == 'Dhampir':
             name = default_premade(Dhampir, gender)
-        if race == 'Gillman':
+        elif race == 'Gillman':
             name = default_premade(Gillman, gender, True)
-        if race == 'Grippli':
+        elif race == 'Grippli':
             name = default_premade(Grippli, gender, True)
-        if race == 'Strix':
+        elif race == 'Strix':
             name = default_premade(Strix, gender)
-        if race == 'Vishkanya':
+        elif race == 'Vishkanya':
             name = default_premade(Vishkanya, gender)
-        if race == 'Wayangs':
+        elif race == 'Wayangs':
             name = default_premade(Wayangs, gender, True)
 
     elif race == 'Changeling':

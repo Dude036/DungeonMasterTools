@@ -43,10 +43,10 @@ class Character(object):
 def create_person(pop):
     if pop is None:
         pop = create_variance()
-    race = choice(list(pop.keys()), 1, p=list(pop.values()))
+    race = choice(list(pop.keys()), 1, p=list(pop.values()))[0]
     gender = choice(['Male', 'Female'])
     name = ng.name_parser(race, gender)
-    age = randint(ages[race[0]][0], ages[race[0]][1])
+    age = randint(ages[race][0], ages[race][1])
 
     face = appearance['Face'][randint(len(appearance['Face']))]
     hair = appearance['Hair'][randint(len(appearance['Hair']))]
@@ -75,4 +75,4 @@ def create_person(pop):
         back,
     ]
 
-    return Character(name, race[0], gender, age, appear, trait, story)
+    return Character(name, race, gender, age, appear, trait, story)
