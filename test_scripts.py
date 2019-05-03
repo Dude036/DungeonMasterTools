@@ -1,5 +1,6 @@
 import unittest
 from variance import RACES
+import simplejson as json
 
 
 class TestStringMethods(unittest.TestCase):
@@ -18,6 +19,19 @@ class TestStringMethods(unittest.TestCase):
                 self.assertEqual(len(test_person.Story), 1)
                 self.assertIsInstance(test_person.Traits, list)
                 self.assertEqual(len(test_person.Traits), 2)
+
+    def test_enchantments(self):
+        from stores import MasterSpells, Enchant
+        for spell in list(MasterSpells.keys()):
+            s = Enchant(iSpell=spell)
+            try:
+                self.assertIsInstance(s.Cost, int)
+            except AssertionError:
+                self.assertIsInstance(s.Cost, float)
+            self.assertIsInstance(s.Level, int)
+            self.assertIsInstance(s.Uses, int)
+            self.assertIsInstance(s.Description, str)
+            self.assertEqual(s.Spell, spell)
 
 
 if __name__ == '__main__':

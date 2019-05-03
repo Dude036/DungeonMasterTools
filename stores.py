@@ -1568,7 +1568,6 @@ class Enchant(object):
 
         if rechargable:
             self.Uses = int(choice([2, 4, 6, 8, 10, 12], p=[.35, .3, .15, .1, .05, .05]))
-            if self.Uses is None or self.Level is None:
             self.Cost += self.Uses * (self.Level + 1)**self.Level
             self.__describe(rechargable)
         else:
