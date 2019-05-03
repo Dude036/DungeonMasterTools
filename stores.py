@@ -6,8 +6,10 @@ from character import create_person
 import simplejson as json
 from resources import *
 
-MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
-MasterWondrous = json.load(open('wondrous.json', 'r'), encoding='utf-8')
+with open('spells.json', 'r') as inf:
+    MasterSpells = json.load(inf, encoding='utf-8')
+with open('wondrous.json', 'r') as inf:
+    MasterWondrous = json.load(inf, encoding='utf-8')
 
 
 MasterID = 1
@@ -1565,8 +1567,8 @@ class Enchant(object):
         self.__lp()
 
         if rechargable:
-            self.Uses = int(choice([2, 4, 6, 8, 10, 12],
-                               p=[.35, .3, .15, .1, .05, .05]))
+            self.Uses = int(choice([2, 4, 6, 8, 10, 12], p=[.35, .3, .15, .1, .05, .05]))
+            if self.Uses is None or self.Level is None:
             self.Cost += self.Uses * (self.Level + 1)**self.Level
             self.__describe(rechargable)
         else:
