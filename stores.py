@@ -26,13 +26,12 @@ def find_spell_level(spell):
 
 
 def find_spell_details(spell):
-    if spell in list(MasterSpells.keys()):
-        if MasterSpells[spell]['link'] in MasterSpellBlacklist:
-            return None
-        return MasterSpells[spell]['link'], MasterSpells[spell]['school'], MasterSpells[spell]['casting_time'], \
-               MasterSpells[spell]['components'], MasterSpells[spell]['range'], MasterSpells[spell]['description'],
-    else:
+    while spell not in list(MasterSpells.keys()):
+        spell = choice(list(MasterSpells.keys()))
+    if MasterSpells[spell]['link'] in MasterSpellBlacklist:
         return None
+    return MasterSpells[spell]['link'], MasterSpells[spell]['school'], MasterSpells[spell]['casting_time'], \
+           MasterSpells[spell]['components'], MasterSpells[spell]['range'], MasterSpells[spell]['description'],
 
 
 def find_spell_description(spell):
