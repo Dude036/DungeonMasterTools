@@ -521,7 +521,9 @@
             }
         },
         "3": {
-            "Feats": [],
+            "Feats": [
+                "<p><b>Bardic Performance</b> : <i><a href=\"https://www.d20pfsrd.com/classes/core-classes/Bard/#TOC-Inspire-Competence-Su-\">Inspire Competence (Su)</a></i>: A bard of 3rd level or higher can use his performance to help an ally succeed at a task. The ally must be within 30 feet and able to see and hear the bard. The ally gets a +2 <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Competence-Bonus\">competence bonus</a> on skill checks with a particular skill as long as she continues to hear the bard’s performance. This bonus increases by +1 for every four levels the bard has attained beyond 3rd (+3 at 7th, +4 at 11th, +5 at 15th, and +6 at 19th). Certain uses of this ability are infeasible, such as <a href=\"https://www.d20pfsrd.com/skills/stealth\">Stealth</a>, and may be disallowed at the GM’s discretion. A bard can’t inspire competence in himself. inspire competence relies on audible components.</p>"
+            ],
             "Spells": {
                 "0": 6,
                 "1": 4,
@@ -563,7 +565,9 @@
             }
         },
         "5": {
-            "Feats": [],
+            "Feats": [
+                "<p><b><a name=\"TOC-Lore-Master-Ex-\"></a>Lore Master (<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#extraordinary-abilities-ex\">Ex</a>)<b>At 5th level, the bard becomes a master of lore and can take 10 on any <a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a> skill check that he has ranks in. A bard can choose not to take 10 and can instead roll normally. In addition, once per day, the bard can take 20 on any <a href=\"https://www.d20pfsrd.com/skills/knowledge\">Knowledge</a> skill check as a <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions\">standard action</a>. He can use this ability one additional time per day for every six levels he possesses beyond 5th, to a maximum of three times per day at 17th level.</p>"
+            ],
             "Spells": {
                 "0": 6,
                 "1": 4,
@@ -584,7 +588,12 @@
             }
         },
         "6": {
-            "Feats": [],
+            "Feats": [
+                "<p><b>Expanded Versatility (Ex)</b>: The bard chooses one <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> skill that he has already selected with versatile performance. He adds one of the following skills to the list of skills that are associated with the chosen <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> skill for the purpose of the versatile performance ability: <a href=\"https://www.d20pfsrd.com/skills/bluff\">Bluff</a>, <a href=\"https://www.d20pfsrd.com/skills/diplomacy\">Diplomacy</a>, <a href=\"https://www.d20pfsrd.com/skills/disguise\">Disguise</a>, <a href=\"https://www.d20pfsrd.com/skills/escape-artist\">Escape Artist</a>, <a href=\"https://www.d20pfsrd.com/skills/handle-animal\">Handle Animal</a>, <a href=\"https://www.d20pfsrd.com/skills/intimidate\">Intimidate</a>, <a href=\"https://www.d20pfsrd.com/skills/sense-motive\">Sense Motive</a>, or <a href=\"https://www.d20pfsrd.com/skills/use-magic-device\">Use Magic Device</a>. This option can be selected multiple times, but no skill can be associated with the same <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> skill more than once.</p>",
+                "<p><b>Martial Performance (Ex)</b>: The bard chooses one weapon belonging to a <a href=\"https://www.d20pfsrd.com/classes/core-classes/fighter\">fighter</a> weapon group that is associated with a <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> skill he has selected with versatile performance (see below). He gains proficiency with this weapon. If the bard is already proficient with this weapon or later becomes proficient with it, he gains <a href=\"https://www.d20pfsrd.com/feats/combat-feats/weapon-focus/\">Weapon Focus</a> with that weapon as a bonus feat instead. In addition, the <a href=\"https://www.d20pfsrd.com/classes/core-classes/bard\">bard’s</a> effective <a href=\"https://www.d20pfsrd.com/classes/core-classes/fighter\">fighter</a> level is equal to 1/2 his bard level for the purpose of qualifying for feats that specifically select weapons from those <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> skills’ associated <a href=\"https://www.d20pfsrd.com/classes/core-classes/fighter\">fighter</a> weapon groups. The types of <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> skills and their associated <a href=\"https://www.d20pfsrd.com/classes/core-classes/fighter\">fighter</a> weapon groups are: Act (close, double), Comedy (flails, thrown), Dance (<a href=\"https://www.d20pfsrd.com/classes/core-classes/monk\">monk</a>, spears), Keyboard Instruments (hammers, siege engines), Oratory (heavy blades, light blades), Percussion (close, hammers), Sing (close, <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Bonus-Natural-Armor-\">natural</a>), <a href=\"https://www.d20pfsrd.com/equipment/goods-and-services/hunting-camping-survival-gear#TOC-String-or-Twine\">String</a> (axes, bows), and Wind (<a href=\"https://www.d20pfsrd.com/classes/core-classes/monk\">monk</a>, thrown).</p>",
+                "<p><b>Bardic Performance</b> : <i>Masterpiece</i>: The bard gains a bardic masterpiece, as if he were giving up a feat to learn it. He must meet the masterpiece’s prerequisites, and the masterpiece must list ranks in a <a href=\"https://www.d20pfsrd.com/skills/perform\">Perform</a> skill that the bard has chosen with versatile performance as a prerequisite. This option can be selected multiple times.</p>",
+                "<p><b>Bardic Performance</b> : <i><a href=\"https://www.d20pfsrd.com/classes/core-classes/Bard/#TOC-Suggestion-Sp-\">Suggestion (Sp)</a></i>: A bard of 6th level or higher can use his performance to make a <a style=\"font-style: italic\" href=\"https://www.d20pfsrd.com/magic/all-spells/s/suggestion\">suggestion</a> (as per the spell) to a creature that he has already <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Fascinated\">fascinated</a> (see above). Using this ability does not disrupt the fascinate effect, but it does require a <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Standard-Actions\">standard action</a> to activate (in addition to the <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Free-Actions\">free action</a> to continue the fascinate effect). A bard can use this ability more than once against an individual creature during an individual performance. A <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\">Will</a> saving throw (DC 10 + 1/2 bard’s level + bard’s <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Cha</a> modifier) negates the effect. This ability affects only a single creature (but see <a href=\"#TOC-Mass-Suggestion-Sp-\">mass suggestion</a>, below). Suggestion is an <a href=\"https://www.d20pfsrd.com/magic#TOC-Enchantment\">enchantment</a> (<a href=\"https://www.d20pfsrd.com/magic#TOC-Enchantment-Compulsion\">compulsion</a>), mind-affecting, language-dependent ability and relies on audible components.</p>"
+            ],
             "Spells": {
                 "0": 6,
                 "1": 4,
@@ -647,7 +656,9 @@
             }
         },
         "9": {
-            "Feats": [],
+            "Feats": [
+                "<p><b>Bardic Performance</b> : <i><a href=\"https://www.d20pfsrd.com/classes/core-classes/Bard/#TOC-Inspire-Greatness-Su-\">Inspire Greatness (Su)</a></i>: A bard of 9th level or higher can use his performance to inspire greatness in himself or a single willing ally within 30 feet, granting extra fighting capability. For every three levels a bard attains beyond 9th, he can target one additional ally while using this performance (up to a maximum of four at 18th level). To inspire greatness, all of the targets must be able to see and hear the bard. A creature inspired with greatness gains 2 bonus <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Hit-Dice-HD-\">Hit Dice</a> (d10s), the commensurate number of <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Temporary-Hit-Points\">temporary hit points</a> (apply the target’s <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Constitution-Con-\">Constitution</a> modifier, if any, to these bonus <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Hit-Dice-HD-\">Hit Dice</a>), a +2 <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Competence-Bonus\">competence bonus</a> on <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Attack-Roll\">attack rolls</a>, and a +1 <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Competence-Bonus\">competence bonus</a> on <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Fortitude\">Fortitude</a> saves. The bonus <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Hit-Dice-HD-\">Hit Dice</a> count as regular <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Hit-Dice-HD-\">Hit Dice</a> for determining the effect of spells that are <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Hit-Dice-HD-\">Hit Dice</a> dependent. Inspire greatness is a mind-affecting ability and it relies on audible and visual components.</p>"
+            ],
             "Spells": {
                 "0": 6,
                 "1": 5,
@@ -668,7 +679,9 @@
             }
         },
         "10": {
-            "Feats": [],
+            "Feats": [
+                "<p><b><a name=\"TOC-Jack-of-All-Trades-Ex-\"></a>Jack of All Trades (<a href=\"https://www.d20pfsrd.com/gamemastering/special-abilities#extraordinary-abilities-ex\">Ex</a>)<b>At 10th level, the bard can use any skill, even if the skill normally requires him to be trained. At 16th level, the bard considers all skills to be class skills. At 19th level, the bard can take 10 on any skill check, even if it is not normally allowed.</p>"
+            ],
             "Spells": {
                 "0": 6,
                 "1": 5,
@@ -710,7 +723,9 @@
             }
         },
         "12": {
-            "Feats": [],
+            "Feats": [
+                "<p><b>Bardic Performance</b> : <i><a href=\"https://www.d20pfsrd.com/classes/core-classes/Bard/#TOC-Soothing-Performance-Su-\">Soothing Performance (Su)</a></i>: A bard of 12th level or higher can use his performance to create an effect equivalent to the <a style=\"font-style: italic\" href=\"https://www.d20pfsrd.com/magic/all-spells/c/cure-serious-wounds\"><i>mass cure serious wounds</i></a>, using the bard’s level as the <a href=\"https://www.d20pfsrd.com/magic#TOC-Caster-Level\">caster level</a>. In addition, this performance removes the <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Fatigued\">fatigued</a>, <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Sickened\">sickened</a>, and <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Shaken\">shaken</a> condition from all those affected. Using this ability requires 4 continuous performance, and the targets must be able to see and hear the bard throughout the performance. Soothing performance relies on audible and visual components.</p>"
+            ],
             "Spells": {
                 "0": 6,
                 "1": 6,
@@ -752,7 +767,9 @@
             }
         },
         "14": {
-            "Feats": [],
+            "Feats": [
+                "<p><b>Bardic Performance</b> : <i><a href=\"https://www.d20pfsrd.com/classes/core-classes/Bard/#TOC-Frightening-Tune-Sp-\">Frightening Tune (Sp)</a></i>: A bard of 14th level or higher can use his performance to cause fear in his enemies. To be affected, an enemy must be able to hear the bard perform and be within 30 feet. Each enemy within range receives a <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\">Will</a> save (DC 10 + 1/2 the bard’s level + the bard’s <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Cha</a> modifier) to negate the effect. If the save succeeds, the creature is immune to this ability for 24 hours. If the save fails, the target becomes <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Frightened\">frightened</a> and flees for as long as the target can hear the bard’s performance. Frightening tune relies on audible components.</p>"
+            ],
             "Spells": {
                 "0": 6,
                 "1": 6,
@@ -773,7 +790,9 @@
             }
         },
         "15": {
-            "Feats": [],
+            "Feats": [
+                "<p><b>Bardic Performance</b> : <i><a href=\"https://www.d20pfsrd.com/classes/core-classes/Bard/#TOC-Inspire-Heroics-Su-\">Inspire Heroics (Su)</a></i>: A bard of 15th level or higher can inspire tremendous heroism in himself or a single ally within 30 feet. For every three bard levels the character attains beyond 15th, he can inspire heroics in one additional creature. To inspire heroics, all of the targets must be able to see and hear the bard. Inspired creatures gain a +4 <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Morale-Bonus\">morale bonus</a> on saving throws and a +4 <a href=\"https://www.d20pfsrd.com/basics-ability-scores/glossary#TOC-Dodge-Bonus\">dodge bonus</a> to AC. The effect lasts for as long as the targets are able to witness the performance. Inspire heroics is a mind-affecting ability that relies on audible and visual components.</p>"
+            ],
             "Spells": {
                 "0": 6,
                 "1": 6,
@@ -836,7 +855,9 @@
             }
         },
         "18": {
-            "Feats": [],
+            "Feats": [
+                "<p><b>Bardic Performance</b> : <i><a href=\"https://www.d20pfsrd.com/classes/core-classes/Bard/#TOC-Mass-Suggestion-Sp-\">Mass Suggestion (Sp)</a></i>: This ability functions just like <a href=\"#TOC-Suggestion-Sp-\">suggestion</a>, but allows a bard of 18th level or higher to make <i>a </i>suggestion simultaneously to any number of creatures that he has already <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Fascinated\">fascinated</a>. Mass suggestion is an <a href=\"https://www.d20pfsrd.com/magic#TOC-Enchantment\">enchantment</a> (<a href=\"https://www.d20pfsrd.com/magic#TOC-Enchantment-Compulsion\">compulsion</a>), mind-affecting, language dependent ability that relies on audible components.</p>"
+            ],
             "Spells": {
                 "0": 6,
                 "1": 6,
@@ -878,7 +899,9 @@
             }
         },
         "20": {
-            "Feats": [],
+            "Feats": [
+                "<p><b>Bardic Performance</b> : <i><a href=\"https://www.d20pfsrd.com/classes/core-classes/Bard/#TOC-Deadly-Performance-Su-\">Deadly Performance (Su)</a></i>: A bard of 20th level or higher can use his performance to cause one enemy to die from joy or sorrow. To be affected, the target must be able to see and hear the bard perform for 1 full round and be within 30 feet. The target receives a <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\">Will</a> save (DC 10 + 1/2 the bard’s level + the bard’s <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\">Cha</a> modifier) to negate the effect. If a creature’s saving throw succeeds, the target is <a href=\"https://www.d20pfsrd.com/gamemastering/conditions#TOC-Staggered\">staggered</a> for 1d4 rounds, and the bard cannot use deadly performance on that creature again for 24 hours. If a creature’s saving throw fails, it dies. Deadly performance is a mind-effecting death effect that relies on audible and visual components.</p>"
+            ],
             "Spells": {
                 "0": 6,
                 "1": 6,
