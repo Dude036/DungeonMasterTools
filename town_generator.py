@@ -35,8 +35,8 @@ Notable = False
 
 def write_store(store, rarity=True):
     global townHTML
-    info = store_head + store.Store_name + """</span><br />\n<span class="bold text-md">Proprietor: </span><span' + \
-           ' class="text-md">"""
+    info = store_head + store.Store_name + """</span><br />\n<span class="bold text-md">Proprietor: </span><span""" + \
+           """ class="text-md">"""
     info += str(store.Shopkeeper)
     if rarity:
         info += inventory_head_rarity
@@ -91,10 +91,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
     from names import TownNamer
     town_name = str(TownNamer())
     townHTML += "<h1>" + town_name + "</h1><p>Description</p>"
-    if sum([
-            w[0], a[0], p[0], e[0], en[0], b[0], t[0], j[0], f[0], g[0], br[0],
-            gu[0]
-    ]) > 0:
+    if sum([w[0], a[0], p[0], e[0], en[0], b[0], t[0], j[0], f[0], g[0], br[0], gu[0]]) > 0:
         townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
     full_town = {}
     i = 0
