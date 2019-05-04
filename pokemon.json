@@ -38,12 +38,12 @@
     "Pokedex": "460",
     "Resist": [
       "Bug",
-      " Fighting",
-      " Fire",
-      " Flying",
-      " Poison",
-      " Rock",
-      " Steel"
+      "Fighting",
+      "Fire",
+      "Flying",
+      "Poison",
+      "Rock",
+      "Steel"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -96,9 +96,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 5900
   },
@@ -125,8 +125,8 @@
     "Pokedex": "063",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Small",
@@ -179,7 +179,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 100
   },
@@ -226,8 +226,8 @@
     "Pokedex": "359",
     "Resist": [
       "Bug",
-      " Fairy",
-      " Fighting"
+      "Fairy",
+      "Fighting"
     ],
     "Senses": [
       "Truesight 15ft"
@@ -294,7 +294,7 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Ghost"
+      "Ghost"
     ],
     "XP": 8400
   },
@@ -340,10 +340,10 @@
     "Pokedex": "142",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock",
-      " Steel",
-      " Water"
+      "Ice",
+      "Rock",
+      "Steel",
+      "Water"
     ],
     "Senses": [
       "Darkvision 50ft"
@@ -403,10 +403,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Normal",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Normal",
+      "Poison"
     ],
     "XP": 10000
   },
@@ -451,8 +451,8 @@
     "Pokedex": "306",
     "Resist": [
       "Fighting",
-      " Ground",
-      " Water"
+      "Ground",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 80ft"
@@ -521,13 +521,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Fairy",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock"
+      "Dragon",
+      "Fairy",
+      "Flying",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock"
     ],
     "XP": 11500
   },
@@ -666,8 +666,8 @@
     "Pokedex": "065",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -723,7 +723,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 8400
   },
@@ -772,9 +772,9 @@
     "Pokedex": "334",
     "Resist": [
       "Dragon",
-      " Fairy",
-      " Ice",
-      " Rock"
+      "Fairy",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -827,10 +827,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fire",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fire",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 8400
   },
@@ -1016,8 +1016,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 8400
   },
@@ -1066,8 +1066,8 @@
     "Pokedex": "347",
     "Resist": [
       "Rock",
-      " Steel",
-      " Water"
+      "Steel",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -1109,7 +1109,7 @@
     ],
     "Weaknesses": [
       "Normal",
-      " Poison"
+      "Poison"
     ],
     "XP": 450
   },
@@ -1160,7 +1160,7 @@
     "Pokedex": "024",
     "Resist": [
       "Ground",
-      " Psychic"
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Large",
@@ -1208,10 +1208,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 2300
   },
@@ -1244,8 +1244,8 @@
     "Pokedex": "059",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -1292,11 +1292,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 5000
   },
@@ -1470,9 +1470,9 @@
     "Pokedex": "168",
     "Resist": [
       "Fire",
-      " Flying",
-      " Psychic",
-      " Rock"
+      "Flying",
+      "Psychic",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -1517,10 +1517,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 1800
   },
@@ -1565,8 +1565,8 @@
     "Pokedex": "348",
     "Resist": [
       "Rock",
-      " Steel",
-      " Water"
+      "Steel",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -1615,7 +1615,7 @@
     ],
     "Weaknesses": [
       "Normal",
-      " Poison"
+      "Poison"
     ],
     "XP": 5900
   },
@@ -1666,8 +1666,8 @@
     "Pokedex": "304",
     "Resist": [
       "Fighting",
-      " Ground",
-      " Water"
+      "Ground",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 20ft"
@@ -1711,13 +1711,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Fairy",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock"
+      "Dragon",
+      "Fairy",
+      "Flying",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock"
     ],
     "XP": 100
   },
@@ -1757,9 +1757,9 @@
     "Pokedex": "144",
     "Resist": [
       "Electric",
-      " Fire",
-      " Rock",
-      " Steel"
+      "Fire",
+      "Rock",
+      "Steel"
     ],
     "Senses": [
       "Darkvision 60ft"
@@ -1810,7 +1810,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 13000
   },
@@ -1847,8 +1847,8 @@
     "Pokedex": "482",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -1909,7 +1909,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 13000
   },
@@ -1958,8 +1958,8 @@
     "Pokedex": "184",
     "Resist": [
       "Electric",
-      " Grass",
-      " Poison"
+      "Grass",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Small",
@@ -2006,11 +2006,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fighting",
-      " Fire",
-      " Ice",
-      " Water"
+      "Dark",
+      "Fighting",
+      "Fire",
+      "Ice",
+      "Water"
     ],
     "XP": 2300
   },
@@ -2051,7 +2051,7 @@
     "Pokedex": "298",
     "Resist": [
       "Poison",
-      " Steel"
+      "Steel"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -2090,7 +2090,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark"
+      "Dark"
     ],
     "XP": 25
   },
@@ -2137,8 +2137,8 @@
     "Pokedex": "371",
     "Resist": [
       "Dragon",
-      " Fairy",
-      " Ice"
+      "Fairy",
+      "Ice"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -2179,9 +2179,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fire",
-      " Grass",
-      " Water"
+      "Fire",
+      "Grass",
+      "Water"
     ],
     "XP": 200
   },
@@ -2230,11 +2230,11 @@
     "Pokedex": "343",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost",
-      " Grass",
-      " Ice",
-      " Water"
+      "Dark",
+      "Ghost",
+      "Grass",
+      "Ice",
+      "Water"
     ],
     "Senses": [
       "Darkvision 20ft"
@@ -2292,9 +2292,9 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Poison",
-      " Psychic",
-      " Rock"
+      "Poison",
+      "Psychic",
+      "Rock"
     ],
     "XP": 200
   },
@@ -2339,7 +2339,7 @@
     "Pokedex": "354",
     "Resist": [
       "Dark",
-      " Ghost"
+      "Ghost"
     ],
     "Senses": [
       "Darkvision 60ft"
@@ -2396,7 +2396,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Poison"
+      "Poison"
     ],
     "XP": 5000
   },
@@ -2487,9 +2487,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Poison",
-      " Rock",
-      " Steel"
+      "Poison",
+      "Rock",
+      "Steel"
     ],
     "XP": 50
   },
@@ -2532,8 +2532,8 @@
     "Pokedex": "411",
     "Resist": [
       "Fighting",
-      " Ground",
-      " Water"
+      "Ground",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -2587,13 +2587,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Fairy",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock"
+      "Dragon",
+      "Fairy",
+      "Flying",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock"
     ],
     "XP": 7200
   },
@@ -2639,10 +2639,10 @@
     "Pokedex": "153",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Small",
@@ -2683,9 +2683,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 1800
   },
@@ -2727,10 +2727,10 @@
     "Pokedex": "267",
     "Resist": [
       "Electric",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Rock"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -2776,8 +2776,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Grass"
+      "Fighting",
+      "Grass"
     ],
     "XP": 2300
   },
@@ -2821,9 +2821,9 @@
     "Pokedex": "015",
     "Resist": [
       "Fire",
-      " Flying",
-      " Psychic",
-      " Rock"
+      "Flying",
+      "Psychic",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -2873,10 +2873,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 2300
   },
@@ -2901,9 +2901,9 @@
     "Pokedex": "374",
     "Resist": [
       "Dark",
-      " Fire",
-      " Ghost",
-      " Ground"
+      "Fire",
+      "Ghost",
+      "Ground"
     ],
     "Senses": [
       "Darkvision 20ft"
@@ -2923,14 +2923,14 @@
     ],
     "Weaknesses": [
       "Dragon",
-      " Fairy",
-      " Flying",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock",
-      " Steel"
+      "Fairy",
+      "Flying",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock",
+      "Steel"
     ],
     "XP": 700
   },
@@ -2964,10 +2964,10 @@
     "Pokedex": "182",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -3012,9 +3012,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 10000
   },
@@ -3062,9 +3062,9 @@
     "Pokedex": "069",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Psychic"
+      "Flying",
+      "Ice",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -3107,10 +3107,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 50
   },
@@ -3159,8 +3159,8 @@
     "Pokedex": "400",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Grass"
+      "Fighting",
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -3213,9 +3213,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 2900
   },
@@ -3350,7 +3350,7 @@
     "Pokedex": "009",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -3403,9 +3403,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 10000
   },
@@ -3450,9 +3450,9 @@
     "Pokedex": "257",
     "Resist": [
       "Flying",
-      " Ground",
-      " Psychic",
-      " Water"
+      "Ground",
+      "Psychic",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -3511,11 +3511,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Dark",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 10000
   },
@@ -3670,10 +3670,10 @@
     "Pokedex": "438",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Steel",
+      "Water"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -3715,9 +3715,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison"
+      "Flying",
+      "Normal",
+      "Poison"
     ],
     "XP": 100
   },
@@ -3764,11 +3764,11 @@
     "Pokedex": "286",
     "Resist": [
       "Fairy",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison",
-      " Psychic"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -3818,11 +3818,11 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Electric",
-      " Grass",
-      " Ground",
-      " Dark",
-      " Water"
+      "Electric",
+      "Grass",
+      "Ground",
+      "Dark",
+      "Water"
     ],
     "XP": 2900
   },
@@ -3872,9 +3872,9 @@
     "Pokedex": "437",
     "Resist": [
       "Dark",
-      " Fire",
-      " Ghost",
-      " Ground"
+      "Fire",
+      "Ghost",
+      "Ground"
     ],
     "Senses": [
       "Darkvision 60ft"
@@ -3934,14 +3934,14 @@
     ],
     "Weaknesses": [
       "Dragon",
-      " Fairy",
-      " Flying",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock",
-      " Steel"
+      "Fairy",
+      "Flying",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock",
+      "Steel"
     ],
     "XP": 7200
   },
@@ -3991,9 +3991,9 @@
     "Pokedex": "436",
     "Resist": [
       "Dark",
-      " Fire",
-      " Ghost",
-      " Ground"
+      "Fire",
+      "Ghost",
+      "Ground"
     ],
     "Senses": [
       "Darkvision 30ft"
@@ -4049,14 +4049,14 @@
     ],
     "Weaknesses": [
       "Dragon",
-      " Fairy",
-      " Flying",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock",
-      " Steel"
+      "Fairy",
+      "Flying",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock",
+      "Steel"
     ],
     "XP": 450
   },
@@ -4091,9 +4091,9 @@
     "Pokedex": "406",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Psychic"
+      "Flying",
+      "Ice",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -4136,10 +4136,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 50
   },
@@ -4187,7 +4187,7 @@
     "Pokedex": "418",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -4228,9 +4228,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 100
   },
@@ -4278,9 +4278,9 @@
     "Pokedex": "001",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Psychic"
+      "Flying",
+      "Ice",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -4323,10 +4323,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 100
   },
@@ -4449,8 +4449,8 @@
     "Pokedex": "412",
     "Resist": [
       "Fire",
-      " Flying",
-      " Rock"
+      "Flying",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -4468,8 +4468,8 @@
     ],
     "Weaknesses": [
       "Grass",
-      " Ground",
-      " Fighting"
+      "Ground",
+      "Fighting"
     ],
     "XP": 50
   },
@@ -4515,10 +4515,10 @@
     "Pokedex": "012",
     "Resist": [
       "Electric",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Rock"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -4552,8 +4552,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Grass"
+      "Fighting",
+      "Grass"
     ],
     "XP": 2300
   },
@@ -4604,10 +4604,10 @@
     "Pokedex": "331",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -4650,9 +4650,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 50
   },
@@ -4700,12 +4700,12 @@
     "Pokedex": "332",
     "Resist": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -4753,11 +4753,11 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Electric",
-      " Ghost",
-      " Grass",
-      " Ground",
-      " Water"
+      "Electric",
+      "Ghost",
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 3900
   },
@@ -4803,7 +4803,7 @@
     "Pokedex": "323",
     "Resist": [
       "Ground",
-      " Water"
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -4856,10 +4856,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Poison",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Poison",
+      "Steel"
     ],
     "XP": 5000
   },
@@ -4903,10 +4903,10 @@
     "Pokedex": "455",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -4949,9 +4949,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 2900
   },
@@ -4999,10 +4999,10 @@
     "Pokedex": "318",
     "Resist": [
       "Bug",
-      " Electric",
-      " Fairy",
-      " Fighting",
-      " Grass"
+      "Electric",
+      "Fairy",
+      "Fighting",
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -5046,11 +5046,11 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Fire",
-      " Ghost",
-      " Ice",
-      " Steel",
-      " Water"
+      "Fire",
+      "Ghost",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 50
   },
@@ -5074,8 +5074,8 @@
     "Pokedex": "268",
     "Resist": [
       "Fire",
-      " Flying",
-      " Rock"
+      "Flying",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -5092,8 +5092,8 @@
     ],
     "Weaknesses": [
       "Grass",
-      " Ground",
-      " Fighting"
+      "Ground",
+      "Fighting"
     ],
     "XP": 200
   },
@@ -5211,8 +5211,8 @@
     "Pokedex": "010",
     "Resist": [
       "Fire",
-      " Flying",
-      " Rock"
+      "Flying",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -5229,8 +5229,8 @@
     ],
     "Weaknesses": [
       "Grass",
-      " Ground",
-      " Fighting"
+      "Ground",
+      "Fighting"
     ],
     "XP": 25
   },
@@ -5269,12 +5269,12 @@
     "Pokedex": "251",
     "Resist": [
       "Bug",
-      " Dark",
-      " Fire",
-      " Flying",
-      " Ghost",
-      " Ice",
-      " Poison"
+      "Dark",
+      "Fire",
+      "Flying",
+      "Ghost",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -5331,11 +5331,11 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Ground",
-      " Psychic",
-      " Water"
+      "Fighting",
+      "Grass",
+      "Ground",
+      "Psychic",
+      "Water"
     ],
     "XP": 13000
   },
@@ -5489,8 +5489,8 @@
     "Pokedex": "006",
     "Resist": [
       "Electric",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -5551,11 +5551,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Fire",
-      " Grass",
-      " Steel"
+      "Fairy",
+      "Fighting",
+      "Fire",
+      "Grass",
+      "Steel"
     ],
     "XP": 10000
   },
@@ -5599,8 +5599,8 @@
     "Pokedex": "004",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -5646,11 +5646,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 100
   },
@@ -5692,8 +5692,8 @@
     "Pokedex": "005",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -5739,11 +5739,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 1800
   },
@@ -5791,8 +5791,8 @@
     "Pokedex": "441",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -5836,7 +5836,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 1800
   },
@@ -5879,10 +5879,10 @@
     "Pokedex": "421",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -5921,9 +5921,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 3900
   },
@@ -5965,10 +5965,10 @@
     "Pokedex": "420",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -6006,9 +6006,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 50
   },
@@ -6056,10 +6056,10 @@
     "Pokedex": "152",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Small",
@@ -6100,9 +6100,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 100
   },
@@ -6149,8 +6149,8 @@
     "Pokedex": "390",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -6199,11 +6199,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 100
   },
@@ -6245,8 +6245,8 @@
     "Pokedex": "358",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -6297,7 +6297,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 7200
   },
@@ -6346,7 +6346,7 @@
     "Pokedex": "170",
     "Resist": [
       "Grass",
-      " Ground"
+      "Ground"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -6391,10 +6391,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Steel",
-      " Water"
+      "Flying",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 50
   },
@@ -6430,8 +6430,8 @@
     "Pokedex": "433",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -6480,7 +6480,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 200
   },
@@ -6508,7 +6508,7 @@
     "Pokedex": "366",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -6545,9 +6545,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 200
   },
@@ -6594,11 +6594,11 @@
     "Pokedex": "344",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost",
-      " Grass",
-      " Ice",
-      " Water"
+      "Dark",
+      "Ghost",
+      "Grass",
+      "Ice",
+      "Water"
     ],
     "Senses": [
       "Darkvision 50ft"
@@ -6659,9 +6659,9 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Poison",
-      " Psychic",
-      " Rock"
+      "Poison",
+      "Psychic",
+      "Rock"
     ],
     "XP": 7200
   },
@@ -6692,7 +6692,7 @@
     "Pokedex": "036",
     "Resist": [
       "Poison",
-      " Steel"
+      "Steel"
     ],
     "Senses": [
       "Darkvision 50ft"
@@ -6753,8 +6753,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fighting"
+      "Dark",
+      "Fighting"
     ],
     "XP": 3900
   },
@@ -6809,7 +6809,7 @@
     "Pokedex": "035",
     "Resist": [
       "Poison",
-      " Steel"
+      "Steel"
     ],
     "Senses": [
       "Darkvision 30ft"
@@ -6868,8 +6868,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fighting"
+      "Dark",
+      "Fighting"
     ],
     "XP": 200
   },
@@ -6905,7 +6905,7 @@
     "Pokedex": "173",
     "Resist": [
       "Poison",
-      " Steel"
+      "Steel"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -6954,8 +6954,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fighting"
+      "Dark",
+      "Fighting"
     ],
     "XP": 25
   },
@@ -6992,9 +6992,9 @@
     "Pokedex": "091",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Rock"
+      "Fighting",
+      "Grass",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -7039,7 +7039,7 @@
     ],
     "Weaknesses": [
       "Ice",
-      " Water"
+      "Water"
     ],
     "XP": 3900
   },
@@ -7071,10 +7071,10 @@
     "Pokedex": "415",
     "Resist": [
       "Electric",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Rock"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -7092,8 +7092,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Grass"
+      "Fighting",
+      "Grass"
     ],
     "XP": 50
   },
@@ -7139,9 +7139,9 @@
     "Pokedex": "256",
     "Resist": [
       "Flying",
-      " Ground",
-      " Psychic",
-      " Water"
+      "Ground",
+      "Psychic",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -7192,11 +7192,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Dark",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 1800
   },
@@ -7245,7 +7245,7 @@
     "Pokedex": "341",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -7293,9 +7293,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 50
   },
@@ -7348,9 +7348,9 @@
     "Pokedex": "222",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Ground"
+      "Fighting",
+      "Grass",
+      "Ground"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -7403,10 +7403,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Poison"
+      "Flying",
+      "Ice",
+      "Normal",
+      "Poison"
     ],
     "XP": 700
   },
@@ -7451,9 +7451,9 @@
     "Pokedex": "346",
     "Resist": [
       "Bug",
-      " Fighting",
-      " Ice",
-      " Steel"
+      "Fighting",
+      "Ice",
+      "Steel"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -7502,7 +7502,7 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Normal"
+      "Normal"
     ],
     "XP": 7200
   },
@@ -7547,10 +7547,10 @@
     "Pokedex": "408",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Steel",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -7602,9 +7602,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison"
+      "Flying",
+      "Normal",
+      "Poison"
     ],
     "XP": 450
   },
@@ -7652,10 +7652,10 @@
     "Pokedex": "342",
     "Resist": [
       "Bug",
-      " Electric",
-      " Fairy",
-      " Fighting",
-      " Grass"
+      "Electric",
+      "Fairy",
+      "Fighting",
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -7709,11 +7709,11 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Fire",
-      " Ghost",
-      " Ice",
-      " Steel",
-      " Water"
+      "Fire",
+      "Ghost",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 1800
   },
@@ -7749,8 +7749,8 @@
     "Pokedex": "488",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -7802,7 +7802,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 13000
   },
@@ -7852,8 +7852,8 @@
     "Pokedex": "453",
     "Resist": [
       "Flying",
-      " Ground",
-      " Psychic"
+      "Ground",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -7908,11 +7908,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fighting",
-      " Grass",
-      " Poison",
-      " Rock"
+      "Dark",
+      "Fighting",
+      "Grass",
+      "Poison",
+      "Rock"
     ],
     "XP": 50
   },
@@ -7956,9 +7956,9 @@
     "Pokedex": "169",
     "Resist": [
       "Electric",
-      " Ice",
-      " Psychic",
-      " Rock"
+      "Ice",
+      "Psychic",
+      "Rock"
     ],
     "Senses": [
       "Blindsight 120ft"
@@ -8012,10 +8012,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 10000
   },
@@ -8062,7 +8062,7 @@
     "Pokedex": "159",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -8109,9 +8109,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 1800
   },
@@ -8160,8 +8160,8 @@
     "Pokedex": "104",
     "Resist": [
       "Grass",
-      " Ice",
-      " Water"
+      "Ice",
+      "Water"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -8210,7 +8210,7 @@
     ],
     "Weaknesses": [
       "Poison",
-      " Rock"
+      "Rock"
     ],
     "XP": 100
   },
@@ -8258,8 +8258,8 @@
     "Pokedex": "155",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -8299,11 +8299,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 100
   },
@@ -8338,8 +8338,8 @@
     "Pokedex": "491",
     "Resist": [
       "Bug",
-      " Fairy",
-      " Fighting"
+      "Fairy",
+      "Fighting"
     ],
     "Senses": [
       "Darkvision 100ft",
@@ -8407,7 +8407,7 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Ghost"
+      "Ghost"
     ],
     "XP": 13000
   },
@@ -8517,9 +8517,9 @@
     "Pokedex": "225",
     "Resist": [
       "Electric",
-      " Fire",
-      " Rock",
-      " Steel"
+      "Fire",
+      "Rock",
+      "Steel"
     ],
     "Senses": [],
     "Size": "Small",
@@ -8562,7 +8562,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 200
   },
@@ -8602,8 +8602,8 @@
     "Pokedex": "386",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -8669,7 +8669,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 13000
   },
@@ -8718,9 +8718,9 @@
     "Pokedex": "087",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Rock"
+      "Fighting",
+      "Grass",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -8765,7 +8765,7 @@
     ],
     "Weaknesses": [
       "Ice",
-      " Water"
+      "Water"
     ],
     "XP": 5900
   },
@@ -8802,7 +8802,7 @@
     "Pokedex": "483",
     "Resist": [
       "Fighting",
-      " Ground"
+      "Ground"
     ],
     "Senses": [
       "Darkvision 100ft",
@@ -8867,14 +8867,14 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Electric",
-      " Flying",
-      " Grass",
-      " Normal",
-      " Psychic",
-      " Rock",
-      " Steel",
-      " Water"
+      "Electric",
+      "Flying",
+      "Grass",
+      "Normal",
+      "Psychic",
+      "Rock",
+      "Steel",
+      "Water"
     ],
     "XP": 13000
   },
@@ -8923,8 +8923,8 @@
     "Pokedex": "050",
     "Resist": [
       "Grass",
-      " Ice",
-      " Water"
+      "Ice",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 80ft"
@@ -8966,7 +8966,7 @@
     ],
     "Weaknesses": [
       "Poison",
-      " Rock"
+      "Rock"
     ],
     "XP": 100
   },
@@ -9056,8 +9056,8 @@
     "Pokedex": "085",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -9102,7 +9102,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 5000
   },
@@ -9153,8 +9153,8 @@
     "Pokedex": "084",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -9193,7 +9193,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 50
   },
@@ -9241,8 +9241,8 @@
     "Pokedex": "232",
     "Resist": [
       "Grass",
-      " Ice",
-      " Water"
+      "Ice",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -9287,7 +9287,7 @@
     ],
     "Weaknesses": [
       "Poison",
-      " Rock"
+      "Rock"
     ],
     "XP": 2900
   },
@@ -9333,8 +9333,8 @@
     "Pokedex": "148",
     "Resist": [
       "Dragon",
-      " Fairy",
-      " Ice"
+      "Fairy",
+      "Ice"
     ],
     "Senses": [],
     "Size": "Huge",
@@ -9381,9 +9381,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fire",
-      " Grass",
-      " Water"
+      "Fire",
+      "Grass",
+      "Water"
     ],
     "XP": 2300
   },
@@ -9427,9 +9427,9 @@
     "Pokedex": "149",
     "Resist": [
       "Dragon",
-      " Fairy",
-      " Ice",
-      " Rock"
+      "Fairy",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -9494,10 +9494,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fire",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fire",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 11500
   },
@@ -9607,9 +9607,9 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Grass",
-      " Ghost",
-      " Poison"
+      "Grass",
+      "Ghost",
+      "Poison"
     ],
     "XP": 5900
   },
@@ -9657,8 +9657,8 @@
     "Pokedex": "147",
     "Resist": [
       "Dragon",
-      " Fairy",
-      " Ice"
+      "Fairy",
+      "Ice"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -9704,9 +9704,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fire",
-      " Grass",
-      " Water"
+      "Fire",
+      "Grass",
+      "Water"
     ],
     "XP": 50
   },
@@ -9753,10 +9753,10 @@
     "Pokedex": "426",
     "Resist": [
       "Dark",
-      " Electric",
-      " Ghost",
-      " Ice",
-      " Rock"
+      "Electric",
+      "Ghost",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -9808,8 +9808,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass",
-      " Poison"
+      "Grass",
+      "Poison"
     ],
     "XP": 5000
   },
@@ -9858,10 +9858,10 @@
     "Pokedex": "425",
     "Resist": [
       "Dark",
-      " Electric",
-      " Ghost",
-      " Ice",
-      " Rock"
+      "Electric",
+      "Ghost",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -9910,8 +9910,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass",
-      " Poison"
+      "Grass",
+      "Poison"
     ],
     "XP": 450
   },
@@ -9961,8 +9961,8 @@
     "Pokedex": "096",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Small",
@@ -10015,7 +10015,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 100
   },
@@ -10065,8 +10065,8 @@
     "Pokedex": "051",
     "Resist": [
       "Grass",
-      " Ice",
-      " Water"
+      "Ice",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 120ft"
@@ -10114,7 +10114,7 @@
     ],
     "Weaknesses": [
       "Poison",
-      " Rock"
+      "Rock"
     ],
     "XP": 3900
   },
@@ -10273,7 +10273,7 @@
     "Pokedex": "356",
     "Resist": [
       "Dark",
-      " Ghost"
+      "Ghost"
     ],
     "Senses": [
       "Darkvision 60ft"
@@ -10332,7 +10332,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Poison"
+      "Poison"
     ],
     "XP": 8400
   },
@@ -10380,7 +10380,7 @@
     "Pokedex": "477",
     "Resist": [
       "Dark",
-      " Ghost"
+      "Ghost"
     ],
     "Senses": [
       "Darkvision 100ft"
@@ -10441,7 +10441,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Poison"
+      "Poison"
     ],
     "XP": 11500
   },
@@ -10489,7 +10489,7 @@
     "Pokedex": "355",
     "Resist": [
       "Dark",
-      " Ghost"
+      "Ghost"
     ],
     "Senses": [
       "Darkvision 30ft"
@@ -10541,7 +10541,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Poison"
+      "Poison"
     ],
     "XP": 200
   },
@@ -10587,9 +10587,9 @@
     "Pokedex": "269",
     "Resist": [
       "Fire",
-      " Flying",
-      " Psychic",
-      " Rock"
+      "Flying",
+      "Psychic",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -10636,10 +10636,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 2900
   },
@@ -10774,7 +10774,7 @@
     "Pokedex": "023",
     "Resist": [
       "Ground",
-      " Psychic"
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -10820,10 +10820,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 100
   },
@@ -10913,8 +10913,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 5000
   },
@@ -11010,8 +11010,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 11500
   },
@@ -11100,8 +11100,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 50
   },
@@ -11191,8 +11191,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 3900
   },
@@ -11280,8 +11280,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 450
   },
@@ -11324,8 +11324,8 @@
     "Pokedex": "395",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Ground"
+      "Fighting",
+      "Ground"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -11382,15 +11382,15 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Fairy",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock",
-      " Steel",
-      " Water"
+      "Dragon",
+      "Fairy",
+      "Flying",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock",
+      "Steel",
+      "Water"
     ],
     "XP": 10000
   },
@@ -11430,8 +11430,8 @@
     "Pokedex": "244",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -11481,11 +11481,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 13000
   },
@@ -11532,8 +11532,8 @@
     "Pokedex": "196",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Small",
@@ -11580,7 +11580,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 5000
   },
@@ -11628,12 +11628,12 @@
     "Pokedex": "102",
     "Resist": [
       "Bug",
-      " Dark",
-      " Fire",
-      " Flying",
-      " Ghost",
-      " Ice",
-      " Poison"
+      "Dark",
+      "Fire",
+      "Flying",
+      "Ghost",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -11680,11 +11680,11 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Ground",
-      " Psychic",
-      " Water"
+      "Fighting",
+      "Grass",
+      "Ground",
+      "Psychic",
+      "Water"
     ],
     "XP": 100
   },
@@ -11723,12 +11723,12 @@
     "Pokedex": "103",
     "Resist": [
       "Bug",
-      " Dark",
-      " Fire",
-      " Flying",
-      " Ghost",
-      " Ice",
-      " Poison"
+      "Dark",
+      "Fire",
+      "Flying",
+      "Ghost",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -11778,11 +11778,11 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Ground",
-      " Psychic",
-      " Water"
+      "Fighting",
+      "Grass",
+      "Ground",
+      "Psychic",
+      "Water"
     ],
     "XP": 3900
   },
@@ -11935,8 +11935,8 @@
     "Pokedex": "083",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -11981,7 +11981,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 700
   },
@@ -12026,8 +12026,8 @@
     "Pokedex": "022",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -12069,7 +12069,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 1800
   },
@@ -12101,7 +12101,7 @@
     "Pokedex": "349",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -12139,9 +12139,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 50
   },
@@ -12185,7 +12185,7 @@
     "Pokedex": "160",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -12239,9 +12239,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 10000
   },
@@ -12289,7 +12289,7 @@
     "Pokedex": "456",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -12331,9 +12331,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 450
   },
@@ -12419,8 +12419,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 1100
   },
@@ -12467,8 +12467,8 @@
     "Pokedex": "136",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -12512,11 +12512,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 3900
   },
@@ -12564,7 +12564,7 @@
     "Pokedex": "419",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -12612,9 +12612,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 3900
   },
@@ -12661,8 +12661,8 @@
     "Pokedex": "330",
     "Resist": [
       "Dragon",
-      " Fairy",
-      " Ice"
+      "Fairy",
+      "Ice"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -12714,8 +12714,8 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Poison",
-      " Rock"
+      "Poison",
+      "Rock"
     ],
     "XP": 11500
   },
@@ -12812,13 +12812,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Fairy",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Steel"
+      "Dragon",
+      "Fairy",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Steel"
     ],
     "XP": 8400
   },
@@ -12862,10 +12862,10 @@
     "Pokedex": "478",
     "Resist": [
       "Dark",
-      " Fire",
-      " Ghost",
-      " Rock",
-      " Steel"
+      "Fire",
+      "Ghost",
+      "Rock",
+      "Steel"
     ],
     "Senses": [
       "Darkvision 60ft"
@@ -12921,8 +12921,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Ice",
-      " Poison"
+      "Ice",
+      "Poison"
     ],
     "XP": 7200
   },
@@ -13063,8 +13063,8 @@
     "Pokedex": "444",
     "Resist": [
       "Dragon",
-      " Fairy",
-      " Ice"
+      "Fairy",
+      "Ice"
     ],
     "Senses": [
       "Tremorsense 60ft"
@@ -13111,8 +13111,8 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Poison",
-      " Rock"
+      "Poison",
+      "Rock"
     ],
     "XP": 2900
   },
@@ -13157,8 +13157,8 @@
     "Pokedex": "475",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Ghost"
+      "Flying",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -13230,7 +13230,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Rock"
+      "Rock"
     ],
     "XP": 10000
   },
@@ -13270,8 +13270,8 @@
     "Pokedex": "445",
     "Resist": [
       "Dragon",
-      " Fairy",
-      " Ice"
+      "Fairy",
+      "Ice"
     ],
     "Senses": [
       "Tremorsense 100ft"
@@ -13329,8 +13329,8 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Poison",
-      " Rock"
+      "Poison",
+      "Rock"
     ],
     "XP": 11500
   },
@@ -13377,8 +13377,8 @@
     "Pokedex": "282",
     "Resist": [
       "Ghost",
-      " Poison",
-      " Steel"
+      "Poison",
+      "Steel"
     ],
     "Senses": [
       "Truesight 20ft"
@@ -13439,7 +13439,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 10000
   },
@@ -13486,8 +13486,8 @@
     "Pokedex": "092",
     "Resist": [
       "Dark",
-      " Ghost",
-      " Psychic"
+      "Ghost",
+      "Psychic"
     ],
     "Senses": [
       "Darkvision 30ft"
@@ -13541,9 +13541,9 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Grass",
+      "Poison"
     ],
     "XP": 100
   },
@@ -13635,9 +13635,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Poison",
-      " Rock",
-      " Steel"
+      "Poison",
+      "Rock",
+      "Steel"
     ],
     "XP": 5000
   },
@@ -13679,8 +13679,8 @@
     "Pokedex": "094",
     "Resist": [
       "Dark",
-      " Ghost",
-      " Psychic"
+      "Ghost",
+      "Psychic"
     ],
     "Senses": [
       "Darkvision 80ft"
@@ -13743,9 +13743,9 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Grass",
+      "Poison"
     ],
     "XP": 8400
   },
@@ -13796,11 +13796,11 @@
     "Pokedex": "074",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Ice",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 30ft"
@@ -13849,10 +13849,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Normal",
+      "Poison",
+      "Rock"
     ],
     "XP": 100
   },
@@ -13894,8 +13894,8 @@
     "Pokedex": "443",
     "Resist": [
       "Dragon",
-      " Fairy",
-      " Ice"
+      "Fairy",
+      "Ice"
     ],
     "Senses": [
       "Tremorsense 30ft"
@@ -13942,8 +13942,8 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Poison",
-      " Rock"
+      "Poison",
+      "Rock"
     ],
     "XP": 200
   },
@@ -13993,7 +13993,7 @@
     "Pokedex": "203",
     "Resist": [
       "Bug",
-      " Dark"
+      "Dark"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -14083,10 +14083,10 @@
     "Pokedex": "487",
     "Resist": [
       "Fairy",
-      " Dark",
-      " Dragon",
-      " Ghost",
-      " Ice"
+      "Dark",
+      "Dragon",
+      "Ghost",
+      "Ice"
     ],
     "Senses": [
       "Darkvision 100ft",
@@ -14151,11 +14151,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Electric",
-      " Fire",
-      " Grass",
-      " Poison",
-      " Water"
+      "Electric",
+      "Fire",
+      "Grass",
+      "Poison",
+      "Water"
     ],
     "XP": 13000
   },
@@ -14191,10 +14191,10 @@
     "Pokedex": "487",
     "Resist": [
       "Fairy",
-      " Dark",
-      " Dragon",
-      " Ghost",
-      " Ice"
+      "Dark",
+      "Dragon",
+      "Ghost",
+      "Ice"
     ],
     "Senses": [
       "Darkvision 100ft",
@@ -14259,11 +14259,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Electric",
-      " Fire",
-      " Grass",
-      " Poison",
-      " Water"
+      "Electric",
+      "Fire",
+      "Grass",
+      "Poison",
+      "Water"
     ],
     "XP": 13000
   },
@@ -14310,9 +14310,9 @@
     "Pokedex": "471",
     "Resist": [
       "Fighting",
-      " Fire",
-      " Rock",
-      " Steel"
+      "Fire",
+      "Rock",
+      "Steel"
     ],
     "Senses": [],
     "Size": "Small",
@@ -14398,9 +14398,9 @@
     "Pokedex": "362",
     "Resist": [
       "Fighting",
-      " Fire",
-      " Rock",
-      " Steel"
+      "Fire",
+      "Rock",
+      "Steel"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -14592,7 +14592,7 @@
     "Pokedex": "207",
     "Resist": [
       "Ice",
-      " Water"
+      "Water"
     ],
     "Senses": [
       "Darkvision 30ft"
@@ -14652,8 +14652,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Poison"
+      "Fighting",
+      "Poison"
     ],
     "XP": 700
   },
@@ -14701,7 +14701,7 @@
     "Pokedex": "472",
     "Resist": [
       "Ice",
-      " Water"
+      "Water"
     ],
     "Senses": [
       "Darkvision 60ft"
@@ -14764,8 +14764,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Poison"
+      "Fighting",
+      "Poison"
     ],
     "XP": 7200
   },
@@ -14811,9 +14811,9 @@
     "Pokedex": "044",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Psychic"
+      "Flying",
+      "Ice",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -14855,10 +14855,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 1800
   },
@@ -14905,9 +14905,9 @@
     "Pokedex": "042",
     "Resist": [
       "Electric",
-      " Ice",
-      " Psychic",
-      " Rock"
+      "Ice",
+      "Psychic",
+      "Rock"
     ],
     "Senses": [
       "Blindsight 100ft"
@@ -14959,10 +14959,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 2900
   },
@@ -15010,7 +15010,7 @@
     "Pokedex": "118",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -15049,9 +15049,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 50
   },
@@ -15098,7 +15098,7 @@
     "Pokedex": "055",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -15149,9 +15149,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 5900
   },
@@ -15195,11 +15195,11 @@
     "Pokedex": "076",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Ice",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 80ft"
@@ -15253,10 +15253,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Normal",
+      "Poison",
+      "Rock"
     ],
     "XP": 10000
   },
@@ -15302,7 +15302,7 @@
     "Pokedex": "368",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -15347,9 +15347,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 2300
   },
@@ -15398,7 +15398,7 @@
     "Pokedex": "210",
     "Resist": [
       "Poison",
-      " Steel"
+      "Steel"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -15461,8 +15461,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fighting"
+      "Dark",
+      "Fighting"
     ],
     "XP": 1800
   },
@@ -15511,11 +15511,11 @@
     "Pokedex": "075",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Ice",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 50ft"
@@ -15564,10 +15564,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Normal",
+      "Poison",
+      "Rock"
     ],
     "XP": 2300
   },
@@ -15617,7 +15617,7 @@
     "Pokedex": "088",
     "Resist": [
       "Ground",
-      " Psychic"
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -15665,10 +15665,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 100
   },
@@ -15712,10 +15712,10 @@
     "Pokedex": "388",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Small",
@@ -15755,9 +15755,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 1800
   },
@@ -15795,8 +15795,8 @@
     "Pokedex": "383",
     "Resist": [
       "Grass",
-      " Ice",
-      " Water"
+      "Ice",
+      "Water"
     ],
     "Senses": [
       "Darkvision 60ft"
@@ -15859,7 +15859,7 @@
     ],
     "Weaknesses": [
       "Poison",
-      " Rock"
+      "Rock"
     ],
     "XP": 13000
   },
@@ -15906,10 +15906,10 @@
     "Pokedex": "253",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Small",
@@ -15956,9 +15956,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 1800
   },
@@ -16009,8 +16009,8 @@
     "Pokedex": "058",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -16052,11 +16052,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 100
   },
@@ -16103,8 +16103,8 @@
     "Pokedex": "326",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Small",
@@ -16160,7 +16160,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 7200
   },
@@ -16209,7 +16209,7 @@
     "Pokedex": "316",
     "Resist": [
       "Ground",
-      " Psychic"
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -16250,10 +16250,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 100
   },
@@ -16296,7 +16296,7 @@
     "Pokedex": "130",
     "Resist": [
       "Electric",
-      " Rock"
+      "Rock"
     ],
     "Senses": [],
     "Size": "Huge",
@@ -16353,10 +16353,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Fire",
-      " Steel",
-      " Water"
+      "Fighting",
+      "Fire",
+      "Steel",
+      "Water"
     ],
     "XP": 5900
   },
@@ -16483,8 +16483,8 @@
     "Pokedex": "297",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Psychic"
+      "Flying",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -16533,8 +16533,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Rock"
+      "Dark",
+      "Rock"
     ],
     "XP": 2900
   },
@@ -16580,8 +16580,8 @@
     "Pokedex": "093",
     "Resist": [
       "Dark",
-      " Ghost",
-      " Psychic"
+      "Ghost",
+      "Psychic"
     ],
     "Senses": [
       "Darkvision 50ft"
@@ -16638,9 +16638,9 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Grass",
+      "Poison"
     ],
     "XP": 1800
   },
@@ -16677,8 +16677,8 @@
     "Pokedex": "485",
     "Resist": [
       "Fighting",
-      " Ground",
-      " Water"
+      "Ground",
+      "Water"
     ],
     "Senses": [
       "Darkvision 100ft",
@@ -16735,14 +16735,14 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Fairy",
-      " Flying",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Steel"
+      "Dragon",
+      "Fairy",
+      "Flying",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Steel"
     ],
     "XP": 13000
   },
@@ -16792,9 +16792,9 @@
     "Pokedex": "214",
     "Resist": [
       "Fairy",
-      " Fire",
-      " Flying",
-      " Psychic"
+      "Fire",
+      "Flying",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -16846,9 +16846,9 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Grass",
-      " Ground"
+      "Dark",
+      "Grass",
+      "Ground"
     ],
     "XP": 5000
   },
@@ -16893,8 +16893,8 @@
     "Pokedex": "449",
     "Resist": [
       "Grass",
-      " Ice",
-      " Water"
+      "Ice",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 30ft"
@@ -16934,7 +16934,7 @@
     ],
     "Weaknesses": [
       "Poison",
-      " Rock"
+      "Rock"
     ],
     "XP": 200
   },
@@ -16980,8 +16980,8 @@
     "Pokedex": "450",
     "Resist": [
       "Grass",
-      " Ice",
-      " Water"
+      "Ice",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 60ft"
@@ -17024,7 +17024,7 @@
     ],
     "Weaknesses": [
       "Poison",
-      " Rock"
+      "Rock"
     ],
     "XP": 5900
   },
@@ -17074,8 +17074,8 @@
     "Pokedex": "107",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Psychic"
+      "Flying",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -17119,8 +17119,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Rock"
+      "Dark",
+      "Rock"
     ],
     "XP": 2300
   },
@@ -17169,8 +17169,8 @@
     "Pokedex": "106",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Psychic"
+      "Flying",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -17216,8 +17216,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Rock"
+      "Dark",
+      "Rock"
     ],
     "XP": 2300
   },
@@ -17264,8 +17264,8 @@
     "Pokedex": "237",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Psychic"
+      "Flying",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -17309,8 +17309,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Rock"
+      "Dark",
+      "Rock"
     ],
     "XP": 2300
   },
@@ -17350,8 +17350,8 @@
     "Pokedex": "250",
     "Resist": [
       "Electric",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Huge",
@@ -17414,11 +17414,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Fire",
-      " Grass",
-      " Steel"
+      "Fairy",
+      "Fighting",
+      "Fire",
+      "Grass",
+      "Steel"
     ],
     "XP": 13000
   },
@@ -17459,9 +17459,9 @@
     "Pokedex": "430",
     "Resist": [
       "Electric",
-      " Fairy",
-      " Ice",
-      " Rock"
+      "Fairy",
+      "Ice",
+      "Rock"
     ],
     "Senses": [
       "Darkvision 80ft"
@@ -17517,8 +17517,8 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Ghost",
-      " Grass"
+      "Ghost",
+      "Grass"
     ],
     "XP": 5900
   },
@@ -17570,8 +17570,8 @@
     "Pokedex": "163",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [
       "Darkvision 60ft"
@@ -17618,7 +17618,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 50
   },
@@ -17671,10 +17671,10 @@
     "Pokedex": "187",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Ice",
+      "Poison",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -17717,8 +17717,8 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Grass",
-      " Water"
+      "Grass",
+      "Water"
     ],
     "XP": 50
   },
@@ -17765,7 +17765,7 @@
     "Pokedex": "116",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -17803,9 +17803,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 100
   },
@@ -17853,9 +17853,9 @@
     "Pokedex": "229",
     "Resist": [
       "Fighting",
-      " Ground",
-      " Rock",
-      " Water"
+      "Ground",
+      "Rock",
+      "Water"
     ],
     "Senses": [
       "Darkvision 60ft"
@@ -17908,11 +17908,11 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Fire",
-      " Ghost",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fire",
+      "Ghost",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 3900
   },
@@ -17961,9 +17961,9 @@
     "Pokedex": "228",
     "Resist": [
       "Fighting",
-      " Ground",
-      " Rock",
-      " Water"
+      "Ground",
+      "Rock",
+      "Water"
     ],
     "Senses": [
       "Darkvision 30ft"
@@ -18014,11 +18014,11 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Fire",
-      " Ghost",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fire",
+      "Ghost",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 100
   },
@@ -18064,7 +18064,7 @@
     "Pokedex": "367",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -18106,9 +18106,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 3900
   },
@@ -18158,8 +18158,8 @@
     "Pokedex": "097",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -18214,7 +18214,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 3900
   },
@@ -18247,7 +18247,7 @@
     "Pokedex": "174",
     "Resist": [
       "Poison",
-      " Steel"
+      "Steel"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -18296,7 +18296,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark"
+      "Dark"
     ],
     "XP": 25
   },
@@ -18343,8 +18343,8 @@
     "Pokedex": "314",
     "Resist": [
       "Fire",
-      " Flying",
-      " Rock"
+      "Flying",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -18394,8 +18394,8 @@
     ],
     "Weaknesses": [
       "Grass",
-      " Ground",
-      " Fighting"
+      "Ground",
+      "Fighting"
     ],
     "XP": 2900
   },
@@ -18437,9 +18437,9 @@
     "Pokedex": "392",
     "Resist": [
       "Flying",
-      " Ground",
-      " Psychic",
-      " Water"
+      "Ground",
+      "Psychic",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -18502,11 +18502,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Dark",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 8400
   },
@@ -18552,9 +18552,9 @@
     "Pokedex": "002",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Psychic"
+      "Flying",
+      "Ice",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -18597,10 +18597,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 1800
   },
@@ -18653,7 +18653,7 @@
     "Pokedex": "039",
     "Resist": [
       "Poison",
-      " Steel"
+      "Steel"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -18711,7 +18711,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark"
+      "Dark"
     ],
     "XP": 200
   },
@@ -18752,9 +18752,9 @@
     "Pokedex": "385",
     "Resist": [
       "Dark",
-      " Fire",
-      " Ghost",
-      " Ground"
+      "Fire",
+      "Ghost",
+      "Ground"
     ],
     "Senses": [
       "Truesight 20ft"
@@ -18813,14 +18813,14 @@
     ],
     "Weaknesses": [
       "Dragon",
-      " Fairy",
-      " Flying",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock",
-      " Steel"
+      "Fairy",
+      "Flying",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock",
+      "Steel"
     ],
     "XP": 13000
   },
@@ -18913,8 +18913,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 3900
   },
@@ -18961,10 +18961,10 @@
     "Pokedex": "189",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Ice",
+      "Poison",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -19009,8 +19009,8 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Grass",
-      " Water"
+      "Grass",
+      "Water"
     ],
     "XP": 10000
   },
@@ -19058,11 +19058,11 @@
     "Pokedex": "124",
     "Resist": [
       "Bug",
-      " Dark",
-      " Fire",
-      " Ghost",
-      " Rock",
-      " Steel"
+      "Dark",
+      "Fire",
+      "Ghost",
+      "Rock",
+      "Steel"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -19120,7 +19120,7 @@
     ],
     "Weaknesses": [
       "Ice",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 3900
   },
@@ -19167,9 +19167,9 @@
     "Pokedex": "140",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Ground"
+      "Fighting",
+      "Grass",
+      "Ground"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -19214,10 +19214,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Poison"
+      "Flying",
+      "Ice",
+      "Normal",
+      "Poison"
     ],
     "XP": 450
   },
@@ -19263,9 +19263,9 @@
     "Pokedex": "141",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Ground"
+      "Fighting",
+      "Grass",
+      "Ground"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -19316,10 +19316,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Poison"
+      "Flying",
+      "Ice",
+      "Normal",
+      "Poison"
     ],
     "XP": 7200
   },
@@ -19365,8 +19365,8 @@
     "Pokedex": "064",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -19420,7 +19420,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 2300
   },
@@ -19444,9 +19444,9 @@
     "Pokedex": "014",
     "Resist": [
       "Fire",
-      " Flying",
-      " Psychic",
-      " Rock"
+      "Flying",
+      "Psychic",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -19464,10 +19464,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 200
   },
@@ -19712,7 +19712,7 @@
     "Pokedex": "230",
     "Resist": [
       "Dragon",
-      " Fairy"
+      "Fairy"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -19754,8 +19754,8 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Steel",
-      " Water"
+      "Steel",
+      "Water"
     ],
     "XP": 8400
   },
@@ -19803,7 +19803,7 @@
     "Pokedex": "099",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -19850,9 +19850,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 3900
   },
@@ -19900,8 +19900,8 @@
     "Pokedex": "281",
     "Resist": [
       "Ghost",
-      " Poison",
-      " Steel"
+      "Poison",
+      "Steel"
     ],
     "Senses": [
       "Truesight 10ft"
@@ -19957,7 +19957,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 1800
   },
@@ -20003,7 +20003,7 @@
     "Pokedex": "109",
     "Resist": [
       "Ground",
-      " Psychic"
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -20049,10 +20049,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 100
   },
@@ -20102,7 +20102,7 @@
     "Pokedex": "098",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -20146,9 +20146,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 50
   },
@@ -20177,8 +20177,8 @@
     "Pokedex": "401",
     "Resist": [
       "Fire",
-      " Flying",
-      " Rock"
+      "Flying",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -20196,8 +20196,8 @@
     ],
     "Weaknesses": [
       "Grass",
-      " Ground",
-      " Fighting"
+      "Ground",
+      "Fighting"
     ],
     "XP": 50
   },
@@ -20242,8 +20242,8 @@
     "Pokedex": "402",
     "Resist": [
       "Fire",
-      " Flying",
-      " Rock"
+      "Flying",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -20287,8 +20287,8 @@
     ],
     "Weaknesses": [
       "Grass",
-      " Ground",
-      " Fighting"
+      "Ground",
+      "Fighting"
     ],
     "XP": 1800
   },
@@ -20326,7 +20326,7 @@
     "Pokedex": "382",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Huge",
@@ -20377,9 +20377,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 13000
   },
@@ -20428,8 +20428,8 @@
     "Pokedex": "305",
     "Resist": [
       "Fighting",
-      " Ground",
-      " Water"
+      "Ground",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 50ft"
@@ -20475,13 +20475,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Fairy",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock"
+      "Dragon",
+      "Fairy",
+      "Flying",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock"
     ],
     "XP": 3900
   },
@@ -20529,7 +20529,7 @@
     "Pokedex": "171",
     "Resist": [
       "Grass",
-      " Ground"
+      "Ground"
     ],
     "Senses": [],
     "Size": "Small",
@@ -20576,10 +20576,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Steel",
-      " Water"
+      "Flying",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 2300
   },
@@ -20627,9 +20627,9 @@
     "Pokedex": "131",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Rock"
+      "Fighting",
+      "Grass",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Large",
@@ -20679,7 +20679,7 @@
     ],
     "Weaknesses": [
       "Ice",
-      " Water"
+      "Water"
     ],
     "XP": 5900
   },
@@ -20726,11 +20726,11 @@
     "Pokedex": "246",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Ice",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 30ft"
@@ -20780,10 +20780,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Normal",
+      "Poison",
+      "Rock"
     ],
     "XP": 200
   },
@@ -20823,11 +20823,11 @@
     "Pokedex": "380",
     "Resist": [
       "Bug",
-      " Dark",
-      " Dragon",
-      " Fairy",
-      " Ghost",
-      " Ice"
+      "Dark",
+      "Dragon",
+      "Fairy",
+      "Ghost",
+      "Ice"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -20892,11 +20892,11 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fighting",
-      " Fire",
-      " Grass",
-      " Psychic",
-      " Water"
+      "Fighting",
+      "Fire",
+      "Grass",
+      "Psychic",
+      "Water"
     ],
     "XP": 13000
   },
@@ -20935,11 +20935,11 @@
     "Pokedex": "381",
     "Resist": [
       "Bug",
-      " Dark",
-      " Dragon",
-      " Fairy",
-      " Ghost",
-      " Ice"
+      "Dark",
+      "Dragon",
+      "Fairy",
+      "Ghost",
+      "Ice"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -21004,11 +21004,11 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fighting",
-      " Fire",
-      " Grass",
-      " Psychic",
-      " Water"
+      "Fighting",
+      "Fire",
+      "Grass",
+      "Psychic",
+      "Water"
     ],
     "XP": 13000
   },
@@ -21055,10 +21055,10 @@
     "Pokedex": "470",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Small",
@@ -21104,9 +21104,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 5000
   },
@@ -21153,10 +21153,10 @@
     "Pokedex": "166",
     "Resist": [
       "Electric",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Rock"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -21204,8 +21204,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Grass"
+      "Fighting",
+      "Grass"
     ],
     "XP": 3900
   },
@@ -21252,10 +21252,10 @@
     "Pokedex": "165",
     "Resist": [
       "Electric",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Rock"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -21300,8 +21300,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Grass"
+      "Fighting",
+      "Grass"
     ],
     "XP": 50
   },
@@ -21555,9 +21555,9 @@
     "Pokedex": "345",
     "Resist": [
       "Bug",
-      " Fighting",
-      " Ice",
-      " Steel"
+      "Fighting",
+      "Ice",
+      "Steel"
     ],
     "Senses": [],
     "Size": "Small",
@@ -21600,7 +21600,7 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Normal"
+      "Normal"
     ],
     "XP": 450
   },
@@ -21741,8 +21741,8 @@
     "Pokedex": "271",
     "Resist": [
       "Bug",
-      " Flying",
-      " Poison"
+      "Flying",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Small",
@@ -21790,8 +21790,8 @@
     ],
     "Weaknesses": [
       "Ground",
-      " Steel",
-      " Water"
+      "Steel",
+      "Water"
     ],
     "XP": 1100
   },
@@ -21937,8 +21937,8 @@
     "Pokedex": "270",
     "Resist": [
       "Bug",
-      " Flying",
-      " Poison"
+      "Flying",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -21983,8 +21983,8 @@
     ],
     "Weaknesses": [
       "Ground",
-      " Steel",
-      " Water"
+      "Steel",
+      "Water"
     ],
     "XP": 50
   },
@@ -22128,8 +22128,8 @@
     "Pokedex": "448",
     "Resist": [
       "Fighting",
-      " Fire",
-      " Ground"
+      "Fire",
+      "Ground"
     ],
     "Senses": [
       "Truesight 30ft"
@@ -22188,13 +22188,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Dragon",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Rock",
-      " Steel"
+      "Dark",
+      "Dragon",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Rock",
+      "Steel"
     ],
     "XP": 3900
   },
@@ -22223,8 +22223,8 @@
     "Pokedex": "272",
     "Resist": [
       "Bug",
-      " Flying",
-      " Poison"
+      "Flying",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -22276,8 +22276,8 @@
     ],
     "Weaknesses": [
       "Ground",
-      " Steel",
-      " Water"
+      "Steel",
+      "Water"
     ],
     "XP": 5900
   },
@@ -22317,10 +22317,10 @@
     "Pokedex": "249",
     "Resist": [
       "Dark",
-      " Electric",
-      " Ghost",
-      " Ice",
-      " Rock"
+      "Electric",
+      "Ghost",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Huge",
@@ -22384,8 +22384,8 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Grass",
-      " Psychic"
+      "Grass",
+      "Psychic"
     ],
     "XP": 13000
   },
@@ -22431,7 +22431,7 @@
     "Pokedex": "457",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -22474,9 +22474,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 5000
   },
@@ -22525,12 +22525,12 @@
     "Pokedex": "337",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost",
-      " Grass",
-      " Ground",
-      " Water",
-      " Steel"
+      "Dark",
+      "Ghost",
+      "Grass",
+      "Ground",
+      "Water",
+      "Steel"
     ],
     "Senses": [],
     "Size": "Small",
@@ -22590,10 +22590,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison",
-      " Psychic"
+      "Flying",
+      "Normal",
+      "Poison",
+      "Psychic"
     ],
     "XP": 3900
   },
@@ -22640,7 +22640,7 @@
     "Pokedex": "370",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -22679,9 +22679,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 1800
   },
@@ -22766,8 +22766,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 2300
   },
@@ -22851,8 +22851,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 10000
   },
@@ -22898,8 +22898,8 @@
     "Pokedex": "068",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Psychic"
+      "Flying",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -22951,8 +22951,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Rock"
+      "Dark",
+      "Rock"
     ],
     "XP": 8400
   },
@@ -23001,8 +23001,8 @@
     "Pokedex": "067",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Psychic"
+      "Flying",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -23052,8 +23052,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Rock"
+      "Dark",
+      "Rock"
     ],
     "XP": 1800
   },
@@ -23104,8 +23104,8 @@
     "Pokedex": "066",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Psychic"
+      "Flying",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -23155,8 +23155,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Rock"
+      "Dark",
+      "Rock"
     ],
     "XP": 100
   },
@@ -23202,8 +23202,8 @@
     "Pokedex": "240",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -23243,11 +23243,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 450
   },
@@ -23291,9 +23291,9 @@
     "Pokedex": "219",
     "Resist": [
       "Fighting",
-      " Ground",
-      " Rock",
-      " Water"
+      "Ground",
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -23347,13 +23347,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Poison",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Flying",
+      "Ice",
+      "Normal",
+      "Poison",
+      "Steel"
     ],
     "XP": 5900
   },
@@ -23384,7 +23384,7 @@
     "Pokedex": "129",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -23401,9 +23401,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 50
   },
@@ -23447,8 +23447,8 @@
     "Pokedex": "126",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -23492,11 +23492,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 5000
   },
@@ -23538,8 +23538,8 @@
     "Pokedex": "467",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -23592,11 +23592,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 11500
   },
@@ -23648,8 +23648,8 @@
     "Pokedex": "081",
     "Resist": [
       "Fighting",
-      " Fire",
-      " Ground"
+      "Fire",
+      "Ground"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -23692,14 +23692,14 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Electric",
-      " Fairy",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock"
+      "Dragon",
+      "Electric",
+      "Fairy",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock"
     ],
     "XP": 100
   },
@@ -23750,8 +23750,8 @@
     "Pokedex": "082",
     "Resist": [
       "Fighting",
-      " Fire",
-      " Ground"
+      "Fire",
+      "Ground"
     ],
     "Senses": [],
     "Size": "Small",
@@ -23797,14 +23797,14 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Electric",
-      " Fairy",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock"
+      "Dragon",
+      "Electric",
+      "Fairy",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock"
     ],
     "XP": 3900
   },
@@ -23852,8 +23852,8 @@
     "Pokedex": "462",
     "Resist": [
       "Fighting",
-      " Fire",
-      " Ground"
+      "Fire",
+      "Ground"
     ],
     "Senses": [],
     "Size": "Small",
@@ -23900,14 +23900,14 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Electric",
-      " Fairy",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock"
+      "Dragon",
+      "Electric",
+      "Fairy",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock"
     ],
     "XP": 11500
   },
@@ -23958,8 +23958,8 @@
     "Pokedex": "296",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Psychic"
+      "Flying",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -24004,8 +24004,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Rock"
+      "Dark",
+      "Rock"
     ],
     "XP": 200
   },
@@ -24051,10 +24051,10 @@
     "Pokedex": "473",
     "Resist": [
       "Fire",
-      " Fighting",
-      " Grass",
-      " Steel",
-      " Water"
+      "Fighting",
+      "Grass",
+      "Steel",
+      "Water"
     ],
     "Senses": [],
     "Size": "Large",
@@ -24138,7 +24138,7 @@
     "Pokedex": "490",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -24189,9 +24189,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 13000
   },
@@ -24281,8 +24281,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 5000
   },
@@ -24334,8 +24334,8 @@
     "Pokedex": "056",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Psychic"
+      "Flying",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -24388,8 +24388,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Rock"
+      "Dark",
+      "Rock"
     ],
     "XP": 100
   },
@@ -24438,7 +24438,7 @@
     "Pokedex": "226",
     "Resist": [
       "Electric",
-      " Rock"
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -24485,10 +24485,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Fire",
-      " Steel",
-      " Water"
+      "Fighting",
+      "Fire",
+      "Steel",
+      "Water"
     ],
     "XP": 7200
   },
@@ -24537,7 +24537,7 @@
     "Pokedex": "458",
     "Resist": [
       "Electric",
-      " Rock"
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -24580,10 +24580,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Fire",
-      " Steel",
-      " Water"
+      "Fighting",
+      "Fire",
+      "Steel",
+      "Water"
     ],
     "XP": 700
   },
@@ -24668,8 +24668,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 50
   },
@@ -24720,8 +24720,8 @@
     "Pokedex": "183",
     "Resist": [
       "Electric",
-      " Grass",
-      " Poison"
+      "Grass",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -24764,11 +24764,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fighting",
-      " Fire",
-      " Ice",
-      " Water"
+      "Dark",
+      "Fighting",
+      "Fire",
+      "Ice",
+      "Water"
     ],
     "XP": 100
   },
@@ -24815,8 +24815,8 @@
     "Pokedex": "105",
     "Resist": [
       "Grass",
-      " Ice",
-      " Water"
+      "Ice",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -24871,7 +24871,7 @@
     ],
     "Weaknesses": [
       "Poison",
-      " Rock"
+      "Rock"
     ],
     "XP": 2900
   },
@@ -24965,9 +24965,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Poison",
-      " Rock",
-      " Steel"
+      "Poison",
+      "Rock",
+      "Steel"
     ],
     "XP": 1800
   },
@@ -25011,10 +25011,10 @@
     "Pokedex": "284",
     "Resist": [
       "Electric",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Rock"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -25061,8 +25061,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Grass"
+      "Fighting",
+      "Grass"
     ],
     "XP": 2900
   },
@@ -25113,7 +25113,7 @@
     "Pokedex": "303",
     "Resist": [
       "Fire",
-      " Ground"
+      "Ground"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -25172,13 +25172,13 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Fairy",
-      " Flying",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock"
+      "Fairy",
+      "Flying",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock"
     ],
     "XP": 2900
   },
@@ -25229,8 +25229,8 @@
     "Pokedex": "308",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Ghost"
+      "Flying",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -25285,7 +25285,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Rock"
+      "Rock"
     ],
     "XP": 5900
   },
@@ -25336,8 +25336,8 @@
     "Pokedex": "307",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Ghost"
+      "Flying",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -25386,7 +25386,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Rock"
+      "Rock"
     ],
     "XP": 100
   },
@@ -25429,10 +25429,10 @@
     "Pokedex": "154",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -25479,9 +25479,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 10000
   },
@@ -25615,8 +25615,8 @@
     "Pokedex": "481",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -25673,7 +25673,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 13000
   },
@@ -25716,9 +25716,9 @@
     "Pokedex": "376",
     "Resist": [
       "Dark",
-      " Fire",
-      " Ghost",
-      " Ground"
+      "Fire",
+      "Ghost",
+      "Ground"
     ],
     "Senses": [
       "Darkvision 40ft",
@@ -25775,14 +25775,14 @@
     ],
     "Weaknesses": [
       "Dragon",
-      " Fairy",
-      " Flying",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock",
-      " Steel"
+      "Fairy",
+      "Flying",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock",
+      "Steel"
     ],
     "XP": 11500
   },
@@ -25826,9 +25826,9 @@
     "Pokedex": "375",
     "Resist": [
       "Dark",
-      " Fire",
-      " Ghost",
-      " Ground"
+      "Fire",
+      "Ghost",
+      "Ground"
     ],
     "Senses": [
       "Darkvision 30ft",
@@ -25884,14 +25884,14 @@
     ],
     "Weaknesses": [
       "Dragon",
-      " Fairy",
-      " Flying",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock",
-      " Steel"
+      "Fairy",
+      "Flying",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock",
+      "Steel"
     ],
     "XP": 5000
   },
@@ -25915,8 +25915,8 @@
     "Pokedex": "011",
     "Resist": [
       "Fire",
-      " Flying",
-      " Rock"
+      "Flying",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -25933,8 +25933,8 @@
     ],
     "Weaknesses": [
       "Grass",
-      " Ground",
-      " Fighting"
+      "Ground",
+      "Fighting"
     ],
     "XP": 200
   },
@@ -25969,8 +25969,8 @@
     "Pokedex": "151",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -25988,7 +25988,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 13000
   },
@@ -26030,8 +26030,8 @@
     "Pokedex": "150",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -26105,7 +26105,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 13000
   },
@@ -26159,8 +26159,8 @@
     "Pokedex": "262",
     "Resist": [
       "Bug",
-      " Fairy",
-      " Fighting"
+      "Fairy",
+      "Fighting"
     ],
     "Senses": [
       "Darkvision 50ft"
@@ -26205,7 +26205,7 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Ghost"
+      "Ghost"
     ],
     "XP": 1800
   },
@@ -26252,7 +26252,7 @@
     "Pokedex": "350",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Large",
@@ -26298,9 +26298,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 5900
   },
@@ -26450,8 +26450,8 @@
     "Pokedex": "439",
     "Resist": [
       "Ghost",
-      " Poison",
-      " Steel"
+      "Poison",
+      "Steel"
     ],
     "Senses": [
       "Truesight 5ft"
@@ -26508,7 +26508,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 200
   },
@@ -26598,8 +26598,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 2300
   },
@@ -26643,7 +26643,7 @@
     "Pokedex": "200",
     "Resist": [
       "Dark",
-      " Ghost"
+      "Ghost"
     ],
     "Senses": [
       "Darkvision 30ft"
@@ -26698,7 +26698,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Poison"
+      "Poison"
     ],
     "XP": 2900
   },
@@ -26728,7 +26728,7 @@
     "Pokedex": "429",
     "Resist": [
       "Dark",
-      " Ghost"
+      "Ghost"
     ],
     "Senses": [
       "Darkvision 60ft",
@@ -26787,7 +26787,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Poison"
+      "Poison"
     ],
     "XP": 8400
   },
@@ -26827,8 +26827,8 @@
     "Pokedex": "146",
     "Resist": [
       "Electric",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [
       "Darkvision 60ft"
@@ -26879,11 +26879,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Fire",
-      " Grass",
-      " Steel"
+      "Fairy",
+      "Fighting",
+      "Fire",
+      "Grass",
+      "Steel"
     ],
     "XP": 13000
   },
@@ -26929,9 +26929,9 @@
     "Pokedex": "391",
     "Resist": [
       "Flying",
-      " Ground",
-      " Psychic",
-      " Water"
+      "Ground",
+      "Psychic",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -26985,11 +26985,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Dark",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 1800
   },
@@ -27034,10 +27034,10 @@
     "Pokedex": "414",
     "Resist": [
       "Electric",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Rock"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Rock"
     ],
     "Senses": [
       "Darkvision 50ft"
@@ -27088,8 +27088,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Grass"
+      "Fighting",
+      "Grass"
     ],
     "XP": 1100
   },
@@ -27144,8 +27144,8 @@
     "Pokedex": "122",
     "Resist": [
       "Ghost",
-      " Poison",
-      " Steel"
+      "Poison",
+      "Steel"
     ],
     "Senses": [
       "Truesight 10ft"
@@ -27210,7 +27210,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 5000
   },
@@ -27257,7 +27257,7 @@
     "Pokedex": "258",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -27299,9 +27299,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 100
   },
@@ -27347,7 +27347,7 @@
     "Pokedex": "089",
     "Resist": [
       "Ground",
-      " Psychic"
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -27401,10 +27401,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 5900
   },
@@ -27552,9 +27552,9 @@
     "Pokedex": "198",
     "Resist": [
       "Electric",
-      " Fairy",
-      " Ice",
-      " Rock"
+      "Fairy",
+      "Ice",
+      "Rock"
     ],
     "Senses": [
       "Darkvision 30ft"
@@ -27608,8 +27608,8 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Ghost",
-      " Grass"
+      "Ghost",
+      "Grass"
     ],
     "XP": 450
   },
@@ -27659,10 +27659,10 @@
     "Pokedex": "177",
     "Resist": [
       "Dark",
-      " Electric",
-      " Ghost",
-      " Ice",
-      " Rock"
+      "Electric",
+      "Ghost",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -27712,8 +27712,8 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Grass",
-      " Psychic"
+      "Grass",
+      "Psychic"
     ],
     "XP": 100
   },
@@ -27747,9 +27747,9 @@
     "Pokedex": "034",
     "Resist": [
       "Ground",
-      " Ice",
-      " Psychic",
-      " Water"
+      "Ice",
+      "Psychic",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -27815,10 +27815,10 @@
     ],
     "Weaknesses": [
       "Fairy",
-      " Fighting",
-      " Fire",
-      " Bug",
-      " Poison"
+      "Fighting",
+      "Fire",
+      "Bug",
+      "Poison"
     ],
     "XP": 8400
   },
@@ -27854,9 +27854,9 @@
     "Pokedex": "031",
     "Resist": [
       "Ground",
-      " Ice",
-      " Psychic",
-      " Water"
+      "Ice",
+      "Psychic",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -27922,10 +27922,10 @@
     ],
     "Weaknesses": [
       "Fairy",
-      " Fighting",
-      " Fire",
-      " Bug",
-      " Poison"
+      "Fighting",
+      "Fire",
+      "Bug",
+      "Poison"
     ],
     "XP": 10000
   },
@@ -27973,7 +27973,7 @@
     "Pokedex": "029",
     "Resist": [
       "Ground",
-      " Psychic"
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -28016,10 +28016,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 50
   },
@@ -28067,7 +28067,7 @@
     "Pokedex": "032",
     "Resist": [
       "Ground",
-      " Psychic"
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -28105,10 +28105,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 50
   },
@@ -28154,7 +28154,7 @@
     "Pokedex": "030",
     "Resist": [
       "Ground",
-      " Psychic"
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -28197,10 +28197,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 1100
   },
@@ -28246,7 +28246,7 @@
     "Pokedex": "033",
     "Resist": [
       "Ground",
-      " Psychic"
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -28289,10 +28289,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 1100
   },
@@ -28335,9 +28335,9 @@
     "Pokedex": "290",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Water"
+      "Flying",
+      "Ice",
+      "Water"
     ],
     "Senses": [
       "Darkvision 30ft"
@@ -28377,8 +28377,8 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Ground",
-      " Poison"
+      "Ground",
+      "Poison"
     ],
     "XP": 50
   },
@@ -28408,8 +28408,8 @@
     "Pokedex": "038",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -28456,11 +28456,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 2900
   },
@@ -28507,10 +28507,10 @@
     "Pokedex": "291",
     "Resist": [
       "Electric",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Rock"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Rock"
     ],
     "Senses": [
       "Darkvision 60ft"
@@ -28557,8 +28557,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Grass"
+      "Fighting",
+      "Grass"
     ],
     "XP": 2300
   },
@@ -28609,8 +28609,8 @@
     "Pokedex": "164",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [
       "Darkvision 100ft"
@@ -28659,7 +28659,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 2300
   },
@@ -28710,10 +28710,10 @@
     "Pokedex": "299",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Steel",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -28760,9 +28760,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison"
+      "Flying",
+      "Normal",
+      "Poison"
     ],
     "XP": 1100
   },
@@ -28811,7 +28811,7 @@
     "Pokedex": "322",
     "Resist": [
       "Ground",
-      " Water"
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -28855,10 +28855,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Poison",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Poison",
+      "Steel"
     ],
     "XP": 50
   },
@@ -28901,12 +28901,12 @@
     "Pokedex": "274",
     "Resist": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [
       "Tremorsense 30ft"
@@ -28961,11 +28961,11 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Electric",
-      " Ghost",
-      " Grass",
-      " Ground",
-      " Water"
+      "Electric",
+      "Ghost",
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 1100
   },
@@ -29013,7 +29013,7 @@
     "Pokedex": "224",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -29064,9 +29064,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 2300
   },
@@ -29115,9 +29115,9 @@
     "Pokedex": "043",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Psychic"
+      "Flying",
+      "Ice",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -29149,10 +29149,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 50
   },
@@ -29200,9 +29200,9 @@
     "Pokedex": "138",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Ground"
+      "Fighting",
+      "Grass",
+      "Ground"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -29247,10 +29247,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Poison"
+      "Flying",
+      "Ice",
+      "Normal",
+      "Poison"
     ],
     "XP": 450
   },
@@ -29295,9 +29295,9 @@
     "Pokedex": "139",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Ground"
+      "Fighting",
+      "Grass",
+      "Ground"
     ],
     "Senses": [],
     "Size": "Small",
@@ -29345,10 +29345,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Poison"
+      "Flying",
+      "Ice",
+      "Normal",
+      "Poison"
     ],
     "XP": 7200
   },
@@ -29403,11 +29403,11 @@
     "Pokedex": "095",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Ice",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 120ft"
@@ -29461,10 +29461,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Normal",
+      "Poison",
+      "Rock"
     ],
     "XP": 5900
   },
@@ -29552,8 +29552,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 2300
   },
@@ -29590,7 +29590,7 @@
     "Pokedex": "484",
     "Resist": [
       "Dragon",
-      " Fairy"
+      "Fairy"
     ],
     "Senses": [],
     "Size": "Huge",
@@ -29654,8 +29654,8 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Steel",
-      " Water"
+      "Steel",
+      "Water"
     ],
     "XP": 13000
   },
@@ -29701,11 +29701,11 @@
     "Pokedex": "046",
     "Resist": [
       "Fire",
-      " Flying",
-      " Poison",
-      " Rock",
-      " Ice",
-      " Bug"
+      "Flying",
+      "Poison",
+      "Rock",
+      "Ice",
+      "Bug"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -29750,10 +29750,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Ground",
-      " Water"
+      "Fighting",
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 50
   },
@@ -29798,11 +29798,11 @@
     "Pokedex": "047",
     "Resist": [
       "Fire",
-      " Flying",
-      " Poison",
-      " Rock",
-      " Ice",
-      " Bug"
+      "Flying",
+      "Poison",
+      "Rock",
+      "Ice",
+      "Bug"
     ],
     "Senses": [],
     "Size": "Small",
@@ -29850,10 +29850,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Ground",
-      " Water"
+      "Fighting",
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 2900
   },
@@ -29903,7 +29903,7 @@
     "Pokedex": "279",
     "Resist": [
       "Electric",
-      " Rock"
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -29952,10 +29952,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Fire",
-      " Steel",
-      " Water"
+      "Fighting",
+      "Fire",
+      "Steel",
+      "Water"
     ],
     "XP": 2900
   },
@@ -30105,8 +30105,8 @@
     "Pokedex": "231",
     "Resist": [
       "Grass",
-      " Ice",
-      " Water"
+      "Ice",
+      "Water"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -30144,7 +30144,7 @@
     ],
     "Weaknesses": [
       "Poison",
-      " Rock"
+      "Rock"
     ],
     "XP": 100
   },
@@ -30180,7 +30180,7 @@
     "Pokedex": "489",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -30223,9 +30223,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 13000
   },
@@ -30300,8 +30300,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 25
   },
@@ -30345,8 +30345,8 @@
     "Pokedex": "018",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -30388,7 +30388,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 5900
   },
@@ -30434,8 +30434,8 @@
     "Pokedex": "017",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -30475,7 +30475,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 700
   },
@@ -30523,8 +30523,8 @@
     "Pokedex": "016",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -30562,7 +30562,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 50
   },
@@ -30653,8 +30653,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 100
   },
@@ -30702,10 +30702,10 @@
     "Pokedex": "221",
     "Resist": [
       "Fire",
-      " Fighting",
-      " Grass",
-      " Steel",
-      " Water"
+      "Fighting",
+      "Grass",
+      "Steel",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -30798,8 +30798,8 @@
     "Pokedex": "204",
     "Resist": [
       "Fire",
-      " Flying",
-      " Rock"
+      "Flying",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -30842,8 +30842,8 @@
     ],
     "Weaknesses": [
       "Grass",
-      " Ground",
-      " Fighting"
+      "Ground",
+      "Fighting"
     ],
     "XP": 200
   },
@@ -30891,8 +30891,8 @@
     "Pokedex": "127",
     "Resist": [
       "Fire",
-      " Flying",
-      " Rock"
+      "Flying",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -30941,8 +30941,8 @@
     ],
     "Weaknesses": [
       "Grass",
-      " Ground",
-      " Fighting"
+      "Ground",
+      "Fighting"
     ],
     "XP": 5000
   },
@@ -30989,7 +30989,7 @@
     "Pokedex": "393",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -31034,9 +31034,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 100
   },
@@ -31125,8 +31125,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 2300
   },
@@ -31162,7 +31162,7 @@
     "Pokedex": "186",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -31210,9 +31210,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 8400
   },
@@ -31260,7 +31260,7 @@
     "Pokedex": "060",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -31299,9 +31299,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 50
   },
@@ -31347,7 +31347,7 @@
     "Pokedex": "061",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -31392,9 +31392,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 700
   },
@@ -31429,10 +31429,10 @@
     "Pokedex": "062",
     "Resist": [
       "Electric",
-      " Grass",
-      " Psychic",
-      " Fairy",
-      " Flying"
+      "Grass",
+      "Psychic",
+      "Fairy",
+      "Flying"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -31487,12 +31487,12 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fire",
-      " Ice",
-      " Rock",
-      " Steel",
-      " Water"
+      "Dark",
+      "Fire",
+      "Ice",
+      "Rock",
+      "Steel",
+      "Water"
     ],
     "XP": 8400
   },
@@ -31540,8 +31540,8 @@
     "Pokedex": "077",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -31580,11 +31580,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 100
   },
@@ -31635,8 +31635,8 @@
     "Pokedex": "261",
     "Resist": [
       "Bug",
-      " Fairy",
-      " Fighting"
+      "Fairy",
+      "Fighting"
     ],
     "Senses": [
       "Darkvision 30ft"
@@ -31679,7 +31679,7 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Ghost"
+      "Ghost"
     ],
     "XP": 50
   },
@@ -32016,8 +32016,8 @@
     "Pokedex": "057",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Psychic"
+      "Flying",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -32073,8 +32073,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Rock"
+      "Dark",
+      "Rock"
     ],
     "XP": 2300
   },
@@ -32120,7 +32120,7 @@
     "Pokedex": "394",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -32166,9 +32166,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 1800
   },
@@ -32217,8 +32217,8 @@
     "Pokedex": "476",
     "Resist": [
       "Fighting",
-      " Ground",
-      " Water"
+      "Ground",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -32270,13 +32270,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Fairy",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock"
+      "Dragon",
+      "Fairy",
+      "Flying",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock"
     ],
     "XP": 10000
   },
@@ -32325,7 +32325,7 @@
     "Pokedex": "054",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -32373,9 +32373,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 100
   },
@@ -32419,11 +32419,11 @@
     "Pokedex": "247",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Ice",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 50ft"
@@ -32474,10 +32474,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Normal",
+      "Poison",
+      "Rock"
     ],
     "XP": 2900
   },
@@ -32673,9 +32673,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Poison",
-      " Rock",
-      " Steel"
+      "Poison",
+      "Rock",
+      "Steel"
     ],
     "XP": 2300
   },
@@ -32721,8 +32721,8 @@
     "Pokedex": "156",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -32764,11 +32764,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 1800
   },
@@ -32820,8 +32820,8 @@
     "Pokedex": "211",
     "Resist": [
       "Electric",
-      " Ground",
-      " Psychic"
+      "Ground",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -32869,13 +32869,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Fire",
-      " Ice",
-      " Poison",
-      " Steel",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Fire",
+      "Ice",
+      "Poison",
+      "Steel",
+      "Water"
     ],
     "XP": 1800
   },
@@ -32947,8 +32947,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 2900
   },
@@ -33037,8 +33037,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 13000
   },
@@ -33081,7 +33081,7 @@
     "Pokedex": "351",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -33129,9 +33129,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 1800
   },
@@ -33179,8 +33179,8 @@
     "Pokedex": "280",
     "Resist": [
       "Ghost",
-      " Poison",
-      " Steel"
+      "Poison",
+      "Steel"
     ],
     "Senses": [
       "Truesight 5ft"
@@ -33236,7 +33236,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 50
   },
@@ -33280,10 +33280,10 @@
     "Pokedex": "409",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Steel",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -33341,9 +33341,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison"
+      "Flying",
+      "Normal",
+      "Poison"
     ],
     "XP": 3900
   },
@@ -33388,8 +33388,8 @@
     "Pokedex": "078",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -33432,11 +33432,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 7200
   },
@@ -33662,9 +33662,9 @@
     "Pokedex": "384",
     "Resist": [
       "Dragon",
-      " Fairy",
-      " Ice",
-      " Rock"
+      "Fairy",
+      "Ice",
+      "Rock"
     ],
     "Senses": [
       "Darkvision 60ft"
@@ -33735,10 +33735,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fire",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fire",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 13000
   },
@@ -33778,9 +33778,9 @@
     "Pokedex": "378",
     "Resist": [
       "Fighting",
-      " Fire",
-      " Rock",
-      " Steel"
+      "Fire",
+      "Rock",
+      "Steel"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -33958,10 +33958,10 @@
     "Pokedex": "377",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Steel",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -34012,9 +34012,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison"
+      "Flying",
+      "Normal",
+      "Poison"
     ],
     "XP": 11500
   },
@@ -34056,8 +34056,8 @@
     "Pokedex": "379",
     "Resist": [
       "Fighting",
-      " Fire",
-      " Ground"
+      "Fire",
+      "Ground"
     ],
     "Senses": [
       "Tremorsense 50ft",
@@ -34113,15 +34113,15 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Fairy",
-      " Flying",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock",
-      " Steel"
+      "Dragon",
+      "Fairy",
+      "Flying",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock",
+      "Steel"
     ],
     "XP": 11500
   },
@@ -34168,9 +34168,9 @@
     "Pokedex": "369",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Ground"
+      "Fighting",
+      "Grass",
+      "Ground"
     ],
     "Senses": [],
     "Size": "Small",
@@ -34221,10 +34221,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Poison"
+      "Flying",
+      "Ice",
+      "Normal",
+      "Poison"
     ],
     "XP": 3900
   },
@@ -34271,7 +34271,7 @@
     "Pokedex": "223",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -34316,9 +34316,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 50
   },
@@ -34361,11 +34361,11 @@
     "Pokedex": "112",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Ice",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 60ft"
@@ -34430,10 +34430,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Normal",
+      "Poison",
+      "Rock"
     ],
     "XP": 7200
   },
@@ -34481,11 +34481,11 @@
     "Pokedex": "111",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Ice",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 40ft"
@@ -34541,10 +34541,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Normal",
+      "Poison",
+      "Rock"
     ],
     "XP": 700
   },
@@ -34589,11 +34589,11 @@
     "Pokedex": "464",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Ice",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 100ft"
@@ -34659,10 +34659,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Normal",
+      "Poison",
+      "Rock"
     ],
     "XP": 11500
   },
@@ -34705,8 +34705,8 @@
     "Pokedex": "447",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Psychic"
+      "Flying",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -34753,8 +34753,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Rock"
+      "Dark",
+      "Rock"
     ],
     "XP": 100
   },
@@ -34803,9 +34803,9 @@
     "Pokedex": "315",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Psychic"
+      "Flying",
+      "Ice",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -34849,10 +34849,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 1800
   },
@@ -34882,9 +34882,9 @@
     "Pokedex": "407",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Psychic"
+      "Flying",
+      "Ice",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -34931,10 +34931,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 8400
   },
@@ -34978,8 +34978,8 @@
     "Pokedex": "479",
     "Resist": [
       "Dark",
-      " Ghost",
-      " Ground"
+      "Ghost",
+      "Ground"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -35024,10 +35024,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Electric",
-      " Flying",
-      " Poison",
-      " Steel"
+      "Electric",
+      "Flying",
+      "Poison",
+      "Steel"
     ],
     "XP": 3900
   },
@@ -35072,7 +35072,7 @@
     "Pokedex": "479",
     "Resist": [
       "Ice",
-      " Rock"
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -35117,10 +35117,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Flying",
-      " Grass",
-      " Steel"
+      "Fighting",
+      "Flying",
+      "Grass",
+      "Steel"
     ],
     "XP": 3900
   },
@@ -35165,9 +35165,9 @@
     "Pokedex": "479",
     "Resist": [
       "Fighting",
-      " Fire",
-      " Ground",
-      " Rock"
+      "Fire",
+      "Ground",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -35212,8 +35212,8 @@
     ],
     "Weaknesses": [
       "Flying",
-      " Electric",
-      " Ice"
+      "Electric",
+      "Ice"
     ],
     "XP": 3900
   },
@@ -35258,8 +35258,8 @@
     "Pokedex": "479",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -35304,13 +35304,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Electric",
-      " Fairy",
-      " Fire",
-      " Flying",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Electric",
+      "Fairy",
+      "Fire",
+      "Flying",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 3900
   },
@@ -35355,9 +35355,9 @@
     "Pokedex": "479",
     "Resist": [
       "Bug",
-      " Fire",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Small",
@@ -35402,9 +35402,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Water",
-      " Steel"
+      "Grass",
+      "Water",
+      "Steel"
     ],
     "XP": 3900
   },
@@ -35449,7 +35449,7 @@
     "Pokedex": "479",
     "Resist": [
       "Grass",
-      " Ground"
+      "Ground"
     ],
     "Senses": [],
     "Size": "Small",
@@ -35494,10 +35494,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Steel",
-      " Water"
+      "Flying",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 3900
   },
@@ -35650,9 +35650,9 @@
     "Pokedex": "373",
     "Resist": [
       "Dragon",
-      " Fairy",
-      " Ice",
-      " Rock"
+      "Fairy",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -35705,10 +35705,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fire",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fire",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 11500
   },
@@ -35759,8 +35759,8 @@
     "Pokedex": "027",
     "Resist": [
       "Grass",
-      " Ice",
-      " Water"
+      "Ice",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 60ft"
@@ -35807,7 +35807,7 @@
     ],
     "Weaknesses": [
       "Poison",
-      " Rock"
+      "Rock"
     ],
     "XP": 100
   },
@@ -35857,8 +35857,8 @@
     "Pokedex": "028",
     "Resist": [
       "Grass",
-      " Ice",
-      " Water"
+      "Ice",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 80ft"
@@ -35911,7 +35911,7 @@
     ],
     "Weaknesses": [
       "Poison",
-      " Rock"
+      "Rock"
     ],
     "XP": 2900
   },
@@ -35955,10 +35955,10 @@
     "Pokedex": "254",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -36012,9 +36012,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 10000
   },
@@ -36113,13 +36113,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Fairy",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Steel"
+      "Dragon",
+      "Fairy",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Steel"
     ],
     "XP": 11500
   },
@@ -36170,10 +36170,10 @@
     "Pokedex": "123",
     "Resist": [
       "Electric",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Rock"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -36220,8 +36220,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Grass"
+      "Fighting",
+      "Grass"
     ],
     "XP": 3900
   },
@@ -36264,7 +36264,7 @@
     "Pokedex": "117",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -36304,9 +36304,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 3900
   },
@@ -36351,7 +36351,7 @@
     "Pokedex": "119",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -36392,9 +36392,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 5000
   },
@@ -36441,9 +36441,9 @@
     "Pokedex": "364",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Rock"
+      "Fighting",
+      "Grass",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -36487,7 +36487,7 @@
     ],
     "Weaknesses": [
       "Ice",
-      " Water"
+      "Water"
     ],
     "XP": 5000
   },
@@ -36527,10 +36527,10 @@
     "Pokedex": "273",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -36569,9 +36569,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 50
   },
@@ -36623,7 +36623,7 @@
     "Pokedex": "086",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -36664,9 +36664,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 100
   },
@@ -36810,7 +36810,7 @@
     "Pokedex": "336",
     "Resist": [
       "Ground",
-      " Psychic"
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Large",
@@ -36858,10 +36858,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 1800
   },
@@ -36909,10 +36909,10 @@
     "Pokedex": "319",
     "Resist": [
       "Bug",
-      " Electric",
-      " Fairy",
-      " Fighting",
-      " Grass"
+      "Electric",
+      "Fairy",
+      "Fighting",
+      "Grass"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -36964,11 +36964,11 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Fire",
-      " Ghost",
-      " Ice",
-      " Steel",
-      " Water"
+      "Fire",
+      "Ghost",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 5900
   },
@@ -37006,10 +37006,10 @@
     "Pokedex": "492",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -37052,9 +37052,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 13000
   },
@@ -37092,10 +37092,10 @@
     "Pokedex": "492",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Ice",
+      "Poison",
+      "Rock"
     ],
     "Senses": [
       "Truesight 50ft"
@@ -37141,8 +37141,8 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Grass",
-      " Water"
+      "Grass",
+      "Water"
     ],
     "XP": 13000
   },
@@ -37184,10 +37184,10 @@
     "Pokedex": "292",
     "Resist": [
       "Dark",
-      " Fire",
-      " Flying",
-      " Ghost",
-      " Rock"
+      "Fire",
+      "Flying",
+      "Ghost",
+      "Rock"
     ],
     "Senses": [
       "Darkvision 60ft",
@@ -37234,9 +37234,9 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass",
-      " Ground",
-      " Poison"
+      "Grass",
+      "Ground",
+      "Poison"
     ],
     "XP": 200
   },
@@ -37282,8 +37282,8 @@
     "Pokedex": "372",
     "Resist": [
       "Dragon",
-      " Fairy",
-      " Ice"
+      "Fairy",
+      "Ice"
     ],
     "Senses": [],
     "Size": "Small",
@@ -37324,9 +37324,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fire",
-      " Grass",
-      " Water"
+      "Fire",
+      "Grass",
+      "Water"
     ],
     "XP": 2900
   },
@@ -37376,7 +37376,7 @@
     "Pokedex": "090",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -37412,9 +37412,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 100
   },
@@ -37459,7 +37459,7 @@
     "Pokedex": "422",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -37496,9 +37496,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 450
   },
@@ -37543,8 +37543,8 @@
     "Pokedex": "410",
     "Resist": [
       "Fighting",
-      " Ground",
-      " Water"
+      "Ground",
+      "Water"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -37596,13 +37596,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Fairy",
-      " Flying",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Rock"
+      "Dragon",
+      "Fairy",
+      "Flying",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Rock"
     ],
     "XP": 700
   },
@@ -37634,12 +37634,12 @@
     "Pokedex": "275",
     "Resist": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [
       "Tremorsense 50ft"
@@ -37700,11 +37700,11 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Electric",
-      " Ghost",
-      " Grass",
-      " Ground",
-      " Water"
+      "Electric",
+      "Ghost",
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 5000
   },
@@ -37792,8 +37792,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 50
   },
@@ -37839,10 +37839,10 @@
     "Pokedex": "285",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -37881,9 +37881,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 100
   },
@@ -37930,8 +37930,8 @@
     "Pokedex": "213",
     "Resist": [
       "Rock",
-      " Steel",
-      " Water"
+      "Steel",
+      "Water"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -37977,7 +37977,7 @@
     ],
     "Weaknesses": [
       "Normal",
-      " Poison"
+      "Poison"
     ],
     "XP": 1100
   },
@@ -38026,7 +38026,7 @@
     "Pokedex": "353",
     "Resist": [
       "Dark",
-      " Ghost"
+      "Ghost"
     ],
     "Senses": [
       "Darkvision 30ft"
@@ -38078,7 +38078,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Poison"
+      "Poison"
     ],
     "XP": 200
   },
@@ -38102,8 +38102,8 @@
     "Pokedex": "266",
     "Resist": [
       "Fire",
-      " Flying",
-      " Rock"
+      "Flying",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -38120,8 +38120,8 @@
     ],
     "Weaknesses": [
       "Grass",
-      " Ground",
-      " Fighting"
+      "Ground",
+      "Fighting"
     ],
     "XP": 200
   },
@@ -38167,7 +38167,7 @@
     "Pokedex": "227",
     "Resist": [
       "Electric",
-      " Fire"
+      "Fire"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -38217,13 +38217,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Fairy",
-      " Flying",
-      " Grass",
-      " Normal",
-      " Psychic",
-      " Steel"
+      "Dragon",
+      "Fairy",
+      "Flying",
+      "Grass",
+      "Normal",
+      "Psychic",
+      "Steel"
     ],
     "XP": 5900
   },
@@ -38274,10 +38274,10 @@
     "Pokedex": "188",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Ice",
+      "Poison",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -38320,8 +38320,8 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Grass",
-      " Water"
+      "Grass",
+      "Water"
     ],
     "XP": 2300
   },
@@ -38475,9 +38475,9 @@
     "Pokedex": "451",
     "Resist": [
       "Fire",
-      " Flying",
-      " Psychic",
-      " Rock"
+      "Flying",
+      "Psychic",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -38527,10 +38527,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 450
   },
@@ -38629,9 +38629,9 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Grass",
-      " Ghost",
-      " Poison"
+      "Grass",
+      "Ghost",
+      "Poison"
     ],
     "XP": 3900
   },
@@ -38863,10 +38863,10 @@
     "Pokedex": "080",
     "Resist": [
       "Bug",
-      " Dark",
-      " Electric",
-      " Ghost",
-      " Grass"
+      "Dark",
+      "Electric",
+      "Ghost",
+      "Grass"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -38926,11 +38926,11 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Fire",
-      " Ice",
-      " Psychic",
-      " Steel",
-      " Water"
+      "Fire",
+      "Ice",
+      "Psychic",
+      "Steel",
+      "Water"
     ],
     "XP": 7200
   },
@@ -38978,10 +38978,10 @@
     "Pokedex": "199",
     "Resist": [
       "Bug",
-      " Dark",
-      " Electric",
-      " Ghost",
-      " Grass"
+      "Dark",
+      "Electric",
+      "Ghost",
+      "Grass"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -39043,11 +39043,11 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Fire",
-      " Ice",
-      " Psychic",
-      " Steel",
-      " Water"
+      "Fire",
+      "Ice",
+      "Psychic",
+      "Steel",
+      "Water"
     ],
     "XP": 7200
   },
@@ -39097,10 +39097,10 @@
     "Pokedex": "079",
     "Resist": [
       "Bug",
-      " Dark",
-      " Electric",
-      " Ghost",
-      " Grass"
+      "Dark",
+      "Electric",
+      "Ghost",
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -39155,11 +39155,11 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Fire",
-      " Ice",
-      " Psychic",
-      " Steel",
-      " Water"
+      "Fire",
+      "Ice",
+      "Psychic",
+      "Steel",
+      "Water"
     ],
     "XP": 100
   },
@@ -39207,8 +39207,8 @@
     "Pokedex": "218",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -39250,11 +39250,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 25
   },
@@ -39365,11 +39365,11 @@
     "Pokedex": "238",
     "Resist": [
       "Bug",
-      " Dark",
-      " Fire",
-      " Ghost",
-      " Rock",
-      " Steel"
+      "Dark",
+      "Fire",
+      "Ghost",
+      "Rock",
+      "Steel"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -39420,7 +39420,7 @@
     ],
     "Weaknesses": [
       "Ice",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 450
   },
@@ -39468,11 +39468,11 @@
     "Pokedex": "215",
     "Resist": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Fire",
-      " Rock",
-      " Steel"
+      "Fairy",
+      "Fighting",
+      "Fire",
+      "Rock",
+      "Steel"
     ],
     "Senses": [
       "Darkvision 40ft"
@@ -39532,8 +39532,8 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Ghost",
-      " Ice"
+      "Ghost",
+      "Ice"
     ],
     "XP": 1100
   },
@@ -39677,9 +39677,9 @@
     "Pokedex": "361",
     "Resist": [
       "Fighting",
-      " Fire",
-      " Rock",
-      " Steel"
+      "Fire",
+      "Rock",
+      "Steel"
     ],
     "Senses": [],
     "Size": "Small",
@@ -39762,11 +39762,11 @@
     "Pokedex": "459",
     "Resist": [
       "Bug",
-      " Fighting",
-      " Fire",
-      " Flying",
-      " Poison",
-      " Rock Steel"
+      "Fighting",
+      "Fire",
+      "Flying",
+      "Poison",
+      "Rock Steel"
     ],
     "Senses": [],
     "Size": "Small",
@@ -39809,9 +39809,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 200
   },
@@ -39854,9 +39854,9 @@
     "Pokedex": "351",
     "Resist": [
       "Fighting",
-      " Fire",
-      " Rock",
-      " Steel"
+      "Fire",
+      "Rock",
+      "Steel"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -39953,7 +39953,7 @@
     "Pokedex": "209",
     "Resist": [
       "Poison",
-      " Steel"
+      "Steel"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -40009,8 +40009,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fighting"
+      "Dark",
+      "Fighting"
     ],
     "XP": 50
   },
@@ -40057,12 +40057,12 @@
     "Pokedex": "338",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost",
-      " Grass",
-      " Ground",
-      " Water",
-      " Steel"
+      "Dark",
+      "Ghost",
+      "Grass",
+      "Ground",
+      "Water",
+      "Steel"
     ],
     "Senses": [],
     "Size": "Small",
@@ -40125,10 +40125,10 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison",
-      " Psychic"
+      "Flying",
+      "Normal",
+      "Poison",
+      "Psychic"
     ],
     "XP": 3900
   },
@@ -40174,8 +40174,8 @@
     "Pokedex": "021",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -40216,7 +40216,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 50
   },
@@ -40266,9 +40266,9 @@
     "Pokedex": "363",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Rock"
+      "Fighting",
+      "Grass",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -40311,7 +40311,7 @@
     ],
     "Weaknesses": [
       "Ice",
-      " Water"
+      "Water"
     ],
     "XP": 50
   },
@@ -40362,9 +40362,9 @@
     "Pokedex": "167",
     "Resist": [
       "Fire",
-      " Flying",
-      " Psychic",
-      " Rock"
+      "Flying",
+      "Psychic",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -40405,10 +40405,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 50
   },
@@ -40647,8 +40647,8 @@
     "Pokedex": "325",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Small",
@@ -40697,7 +40697,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 100
   },
@@ -40745,7 +40745,7 @@
     "Pokedex": "007",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -40781,9 +40781,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 100
   },
@@ -40923,8 +40923,8 @@
     "Pokedex": "398",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -40967,7 +40967,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 8400
   },
@@ -41010,8 +41010,8 @@
     "Pokedex": "397",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -41052,7 +41052,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 700
   },
@@ -41095,8 +41095,8 @@
     "Pokedex": "396",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -41137,7 +41137,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 25
   },
@@ -41171,10 +41171,10 @@
     "Pokedex": "121",
     "Resist": [
       "Bug",
-      " Dark",
-      " Electric",
-      " Ghost",
-      " Grass"
+      "Dark",
+      "Electric",
+      "Ghost",
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -41227,11 +41227,11 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Fire",
-      " Ice",
-      " Psychic",
-      " Steel",
-      " Water"
+      "Fire",
+      "Ice",
+      "Psychic",
+      "Steel",
+      "Water"
     ],
     "XP": 5000
   },
@@ -41284,7 +41284,7 @@
     "Pokedex": "120",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -41330,9 +41330,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 100
   },
@@ -41385,9 +41385,9 @@
     "Pokedex": "208",
     "Resist": [
       "Fighting",
-      " Fire",
-      " Ground",
-      " Water"
+      "Fire",
+      "Ground",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 120ft"
@@ -41444,12 +41444,12 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Flying",
-      " Normal",
-      " Psychic",
-      " Rock",
-      " Steel"
+      "Dragon",
+      "Flying",
+      "Normal",
+      "Psychic",
+      "Rock",
+      "Steel"
     ],
     "XP": 11500
   },
@@ -41546,9 +41546,9 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Grass",
-      " Ghost",
-      " Poison"
+      "Grass",
+      "Ghost",
+      "Poison"
     ],
     "XP": 100
   },
@@ -41598,10 +41598,10 @@
     "Pokedex": "185",
     "Resist": [
       "Fighting",
-      " Grass",
-      " Ground",
-      " Steel",
-      " Water"
+      "Grass",
+      "Ground",
+      "Steel",
+      "Water"
     ],
     "Senses": [],
     "Size": "Small",
@@ -41650,9 +41650,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Flying",
-      " Normal",
-      " Poison"
+      "Flying",
+      "Normal",
+      "Poison"
     ],
     "XP": 2300
   },
@@ -41693,7 +41693,7 @@
     "Pokedex": "245",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -41742,9 +41742,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 13000
   },
@@ -41795,10 +41795,10 @@
     "Pokedex": "192",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Small",
@@ -41839,9 +41839,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 2900
   },
@@ -41892,10 +41892,10 @@
     "Pokedex": "191",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -41934,9 +41934,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 50
   },
@@ -41979,8 +41979,8 @@
     "Pokedex": "351",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -42028,11 +42028,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 1800
   },
@@ -42074,8 +42074,8 @@
     "Pokedex": "283",
     "Resist": [
       "Electric",
-      " Flying",
-      " Rock"
+      "Flying",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -42116,10 +42116,10 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Ground",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ground",
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 50
   },
@@ -42169,8 +42169,8 @@
     "Pokedex": "333",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -42215,7 +42215,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 100
   },
@@ -42261,7 +42261,7 @@
     "Pokedex": "317",
     "Resist": [
       "Ground",
-      " Psychic"
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -42306,10 +42306,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 5900
   },
@@ -42404,9 +42404,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Poison",
-      " Rock",
-      " Steel"
+      "Poison",
+      "Rock",
+      "Steel"
     ],
     "XP": 10000
   },
@@ -42451,8 +42451,8 @@
     "Pokedex": "277",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -42495,7 +42495,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 2300
   },
@@ -42545,10 +42545,10 @@
     "Pokedex": "220",
     "Resist": [
       "Fire",
-      " Fighting",
-      " Grass",
-      " Steel",
-      " Water"
+      "Fighting",
+      "Grass",
+      "Steel",
+      "Water"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -42636,8 +42636,8 @@
     "Pokedex": "276",
     "Resist": [
       "Electric",
-      " Ice",
-      " Rock"
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -42677,7 +42677,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Grass"
+      "Grass"
     ],
     "XP": 50
   },
@@ -42728,10 +42728,10 @@
     "Pokedex": "114",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Small",
@@ -42773,9 +42773,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 1800
   },
@@ -42823,10 +42823,10 @@
     "Pokedex": "465",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -42880,9 +42880,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 8400
   },
@@ -43124,8 +43124,8 @@
     "Pokedex": "072",
     "Resist": [
       "Electric",
-      " Ground",
-      " Psychic"
+      "Ground",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -43173,13 +43173,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Fire",
-      " Ice",
-      " Poison",
-      " Steel",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Fire",
+      "Ice",
+      "Poison",
+      "Steel",
+      "Water"
     ],
     "XP": 450
   },
@@ -43227,8 +43227,8 @@
     "Pokedex": "073",
     "Resist": [
       "Electric",
-      " Ground",
-      " Psychic"
+      "Ground",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -43279,13 +43279,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Fire",
-      " Ice",
-      " Poison",
-      " Steel",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Fire",
+      "Ice",
+      "Poison",
+      "Steel",
+      "Water"
     ],
     "XP": 3900
   },
@@ -43314,10 +43314,10 @@
     "Pokedex": "468",
     "Resist": [
       "Electric",
-      " Ice",
-      " Poison",
-      " Rock",
-      " Steel"
+      "Ice",
+      "Poison",
+      "Rock",
+      "Steel"
     ],
     "Senses": [
       "Truesight 30ft"
@@ -43377,9 +43377,9 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fighting",
-      " Grass"
+      "Dark",
+      "Fighting",
+      "Grass"
     ],
     "XP": 11500
   },
@@ -43427,7 +43427,7 @@
     "Pokedex": "175",
     "Resist": [
       "Poison",
-      " Steel"
+      "Steel"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -43477,8 +43477,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fighting"
+      "Dark",
+      "Fighting"
     ],
     "XP": 200
   },
@@ -43526,10 +43526,10 @@
     "Pokedex": "176",
     "Resist": [
       "Electric",
-      " Ice",
-      " Poison",
-      " Rock",
-      " Steel"
+      "Ice",
+      "Poison",
+      "Rock",
+      "Steel"
     ],
     "Senses": [
       "Truesight 10ft"
@@ -43590,9 +43590,9 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fighting",
-      " Grass"
+      "Dark",
+      "Fighting",
+      "Grass"
     ],
     "XP": 3900
   },
@@ -43637,8 +43637,8 @@
     "Pokedex": "255",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -43681,11 +43681,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 100
   },
@@ -43734,8 +43734,8 @@
     "Pokedex": "324",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -43784,11 +43784,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 3900
   },
@@ -43830,9 +43830,9 @@
     "Pokedex": "389",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice"
+      "Fire",
+      "Flying",
+      "Ice"
     ],
     "Senses": [
       "Tremorsense 100ft"
@@ -43886,7 +43886,7 @@
     ],
     "Weaknesses": [
       "Ground",
-      " Rock"
+      "Rock"
     ],
     "XP": 10000
   },
@@ -43935,7 +43935,7 @@
     "Pokedex": "158",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -43981,9 +43981,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 100
   },
@@ -44031,8 +44031,8 @@
     "Pokedex": "454",
     "Resist": [
       "Flying",
-      " Ground",
-      " Psychic"
+      "Ground",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -44092,11 +44092,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Fighting",
-      " Grass",
-      " Poison",
-      " Rock"
+      "Dark",
+      "Fighting",
+      "Grass",
+      "Poison",
+      "Rock"
     ],
     "XP": 3900
   },
@@ -44148,8 +44148,8 @@
     "Pokedex": "328",
     "Resist": [
       "Grass",
-      " Ice",
-      " Water"
+      "Ice",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 30ft"
@@ -44190,7 +44190,7 @@
     ],
     "Weaknesses": [
       "Poison",
-      " Rock"
+      "Rock"
     ],
     "XP": 50
   },
@@ -44237,10 +44237,10 @@
     "Pokedex": "252",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -44284,9 +44284,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 100
   },
@@ -44331,10 +44331,10 @@
     "Pokedex": "357",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Poison",
-      " Rock"
+      "Flying",
+      "Ice",
+      "Poison",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -44383,8 +44383,8 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Grass",
-      " Water"
+      "Grass",
+      "Water"
     ],
     "XP": 7200
   },
@@ -44430,10 +44430,10 @@
     "Pokedex": "387",
     "Resist": [
       "Bug",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Poison"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -44473,9 +44473,9 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Grass",
-      " Ground",
-      " Water"
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 100
   },
@@ -44518,8 +44518,8 @@
     "Pokedex": "157",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -44573,11 +44573,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 10000
   },
@@ -44622,12 +44622,12 @@
     "Pokedex": "248",
     "Resist": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Ground",
-      " Steel",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Ground",
+      "Steel",
+      "Water"
     ],
     "Senses": [
       "Tremorsense 80ft"
@@ -44695,11 +44695,11 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Fire",
-      " Flying",
-      " Ghost",
-      " Normal",
-      " Poison"
+      "Fire",
+      "Flying",
+      "Ghost",
+      "Normal",
+      "Poison"
     ],
     "XP": 11500
   },
@@ -44728,8 +44728,8 @@
     "Pokedex": "236",
     "Resist": [
       "Fairy",
-      " Flying",
-      " Psychic"
+      "Flying",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -44769,8 +44769,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark",
-      " Rock"
+      "Dark",
+      "Rock"
     ],
     "XP": 50
   },
@@ -44817,8 +44817,8 @@
     "Pokedex": "197",
     "Resist": [
       "Bug",
-      " Fairy",
-      " Fighting"
+      "Fairy",
+      "Fighting"
     ],
     "Senses": [
       "Darkvision 30ft"
@@ -44865,7 +44865,7 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Ghost"
+      "Ghost"
     ],
     "XP": 5000
   },
@@ -44889,8 +44889,8 @@
     "Pokedex": "201",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -44907,7 +44907,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 200
   },
@@ -45042,8 +45042,8 @@
     "Pokedex": "480",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -45099,7 +45099,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 13000
   },
@@ -45146,7 +45146,7 @@
     "Pokedex": "134",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -45191,9 +45191,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 3900
   },
@@ -45241,9 +45241,9 @@
     "Pokedex": "049",
     "Resist": [
       "Fire",
-      " Flying",
-      " Psychic",
-      " Rock"
+      "Flying",
+      "Psychic",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -45288,10 +45288,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 3900
   },
@@ -45340,9 +45340,9 @@
     "Pokedex": "048",
     "Resist": [
       "Fire",
-      " Flying",
-      " Psychic",
-      " Rock"
+      "Flying",
+      "Psychic",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -45381,10 +45381,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 100
   },
@@ -45427,9 +45427,9 @@
     "Pokedex": "003",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Psychic"
+      "Flying",
+      "Ice",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -45478,10 +45478,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 10000
   },
@@ -45530,10 +45530,10 @@
     "Pokedex": "416",
     "Resist": [
       "Electric",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Rock"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -45580,8 +45580,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Grass"
+      "Fighting",
+      "Grass"
     ],
     "XP": 3900
   },
@@ -45627,8 +45627,8 @@
     "Pokedex": "329",
     "Resist": [
       "Dragon",
-      " Fairy",
-      " Ice"
+      "Fairy",
+      "Ice"
     ],
     "Senses": [],
     "Size": "Small",
@@ -45672,8 +45672,8 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Poison",
-      " Rock"
+      "Poison",
+      "Rock"
     ],
     "XP": 2900
   },
@@ -45710,9 +45710,9 @@
     "Pokedex": "071",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Psychic"
+      "Flying",
+      "Ice",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -45757,10 +45757,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 8400
   },
@@ -45886,9 +45886,9 @@
     "Pokedex": "045",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Psychic"
+      "Flying",
+      "Ice",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -45933,10 +45933,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 10000
   },
@@ -45984,8 +45984,8 @@
     "Pokedex": "313",
     "Resist": [
       "Fire",
-      " Flying",
-      " Rock"
+      "Flying",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Small",
@@ -46035,8 +46035,8 @@
     ],
     "Weaknesses": [
       "Grass",
-      " Ground",
-      " Fighting"
+      "Ground",
+      "Fighting"
     ],
     "XP": 2900
   },
@@ -46127,8 +46127,8 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Flying",
-      " Steel"
+      "Flying",
+      "Steel"
     ],
     "XP": 100
   },
@@ -46179,8 +46179,8 @@
     "Pokedex": "037",
     "Resist": [
       "Ground",
-      " Rock",
-      " Water"
+      "Rock",
+      "Water"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -46222,11 +46222,11 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fire",
-      " Grass",
-      " Ice",
-      " Steel"
+      "Fairy",
+      "Fire",
+      "Grass",
+      "Ice",
+      "Steel"
     ],
     "XP": 50
   },
@@ -46276,7 +46276,7 @@
     "Pokedex": "320",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -46319,9 +46319,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 700
   },
@@ -46367,7 +46367,7 @@
     "Pokedex": "321",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Gargantuan",
@@ -46412,9 +46412,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 5000
   },
@@ -46461,9 +46461,9 @@
     "Pokedex": "365",
     "Resist": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Rock"
+      "Fighting",
+      "Grass",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -46510,7 +46510,7 @@
     ],
     "Weaknesses": [
       "Ice",
-      " Water"
+      "Water"
     ],
     "XP": 11500
   },
@@ -46556,7 +46556,7 @@
     "Pokedex": "008",
     "Resist": [
       "Electric",
-      " Grass"
+      "Grass"
     ],
     "Senses": [],
     "Size": "Small",
@@ -46590,9 +46590,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Ice",
-      " Steel",
-      " Water"
+      "Ice",
+      "Steel",
+      "Water"
     ],
     "XP": 1800
   },
@@ -46639,11 +46639,11 @@
     "Pokedex": "461",
     "Resist": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Fire",
-      " Rock",
-      " Steel"
+      "Fairy",
+      "Fighting",
+      "Fire",
+      "Rock",
+      "Steel"
     ],
     "Senses": [
       "Darkvision 80ft"
@@ -46707,8 +46707,8 @@
     ],
     "Weaknesses": [
       "Dark",
-      " Ghost",
-      " Ice"
+      "Ghost",
+      "Ice"
     ],
     "XP": 7200
   },
@@ -46737,9 +46737,9 @@
     "Pokedex": "013",
     "Resist": [
       "Fire",
-      " Flying",
-      " Psychic",
-      " Rock"
+      "Flying",
+      "Psychic",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -46756,10 +46756,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 25
   },
@@ -46805,9 +46805,9 @@
     "Pokedex": "070",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Psychic"
+      "Flying",
+      "Ice",
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -46850,10 +46850,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Water"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Water"
     ],
     "XP": 1800
   },
@@ -46896,7 +46896,7 @@
     "Pokedex": "110",
     "Resist": [
       "Ground",
-      " Psychic"
+      "Psychic"
     ],
     "Senses": [],
     "Size": "Small",
@@ -46946,10 +46946,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 5900
   },
@@ -47045,9 +47045,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Poison",
-      " Rock",
-      " Steel"
+      "Poison",
+      "Rock",
+      "Steel"
     ],
     "XP": 2300
   },
@@ -47164,7 +47164,7 @@
     "Pokedex": "040",
     "Resist": [
       "Poison",
-      " Steel"
+      "Steel"
     ],
     "Senses": [],
     "Size": "Small",
@@ -47226,7 +47226,7 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dark"
+      "Dark"
     ],
     "XP": 2300
   },
@@ -47272,7 +47272,7 @@
     "Pokedex": "278",
     "Resist": [
       "Electric",
-      " Rock"
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -47315,10 +47315,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Fire",
-      " Steel",
-      " Water"
+      "Fighting",
+      "Fire",
+      "Steel",
+      "Water"
     ],
     "XP": 50
   },
@@ -47346,8 +47346,8 @@
     "Pokedex": "202",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Medium",
@@ -47365,7 +47365,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 2300
   },
@@ -47457,9 +47457,9 @@
     ],
     "Weaknesses": [
       "Fire",
-      " Poison",
-      " Rock",
-      " Steel"
+      "Poison",
+      "Rock",
+      "Steel"
     ],
     "XP": 50
   },
@@ -47506,11 +47506,11 @@
     "Pokedex": "413",
     "Resist": [
       "Fire",
-      " Flying",
-      " Poison",
-      " Rock",
-      " Ice",
-      " Bug"
+      "Flying",
+      "Poison",
+      "Rock",
+      "Ice",
+      "Bug"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -47556,10 +47556,10 @@
     ],
     "Weaknesses": [
       "Electric",
-      " Fighting",
-      " Grass",
-      " Ground",
-      " Water"
+      "Fighting",
+      "Grass",
+      "Ground",
+      "Water"
     ],
     "XP": 2300
   },
@@ -47606,9 +47606,9 @@
     "Pokedex": "413",
     "Resist": [
       "Fire",
-      " Flying",
-      " Ice",
-      " Water"
+      "Flying",
+      "Ice",
+      "Water"
     ],
     "Senses": [
       "Darkvision 30ft"
@@ -47656,8 +47656,8 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Ground",
-      " Poison"
+      "Ground",
+      "Poison"
     ],
     "XP": 2300
   },
@@ -47752,13 +47752,13 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Dragon",
-      " Fairy",
-      " Grass",
-      " Ice",
-      " Normal",
-      " Psychic",
-      " Steel"
+      "Dragon",
+      "Fairy",
+      "Grass",
+      "Ice",
+      "Normal",
+      "Psychic",
+      "Steel"
     ],
     "XP": 2300
   },
@@ -47790,8 +47790,8 @@
     "Pokedex": "265",
     "Resist": [
       "Fire",
-      " Flying",
-      " Rock"
+      "Flying",
+      "Rock"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -47808,8 +47808,8 @@
     ],
     "Weaknesses": [
       "Grass",
-      " Ground",
-      " Fighting"
+      "Ground",
+      "Fighting"
     ],
     "XP": 25
   },
@@ -47842,8 +47842,8 @@
     "Pokedex": "360",
     "Resist": [
       "Bug",
-      " Dark",
-      " Ghost"
+      "Dark",
+      "Ghost"
     ],
     "Senses": [],
     "Size": "Tiny",
@@ -47860,7 +47860,7 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Psychic"
+      "Psychic"
     ],
     "XP": 50
   },
@@ -47910,10 +47910,10 @@
     "Pokedex": "178",
     "Resist": [
       "Dark",
-      " Electric",
-      " Ghost",
-      " Ice",
-      " Rock"
+      "Electric",
+      "Ghost",
+      "Ice",
+      "Rock"
     ],
     "Senses": [
       "Truesight 10ft"
@@ -47969,8 +47969,8 @@
     ],
     "Weaknesses": [
       "Fighting",
-      " Grass",
-      " Psychic"
+      "Grass",
+      "Psychic"
     ],
     "XP": 2900
   },
@@ -48019,10 +48019,10 @@
     "Pokedex": "193",
     "Resist": [
       "Electric",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Rock"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Rock"
     ],
     "Senses": [
       "Darkvision 50ft"
@@ -48064,8 +48064,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Grass"
+      "Fighting",
+      "Grass"
     ],
     "XP": 1800
   },
@@ -48112,10 +48112,10 @@
     "Pokedex": "469",
     "Resist": [
       "Electric",
-      " Fire",
-      " Flying",
-      " Ice",
-      " Rock"
+      "Fire",
+      "Flying",
+      "Ice",
+      "Rock"
     ],
     "Senses": [
       "Darkvision 100ft"
@@ -48163,8 +48163,8 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Grass"
+      "Fighting",
+      "Grass"
     ],
     "XP": 10000
   },
@@ -48307,7 +48307,7 @@
     "Pokedex": "145",
     "Resist": [
       "Ice",
-      " Rock"
+      "Rock"
     ],
     "Senses": [
       "Darkvision 60ft"
@@ -48359,10 +48359,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fighting",
-      " Flying",
-      " Grass",
-      " Steel"
+      "Fighting",
+      "Flying",
+      "Grass",
+      "Steel"
     ],
     "XP": 13000
   },
@@ -48501,9 +48501,9 @@
     "Pokedex": "041",
     "Resist": [
       "Electric",
-      " Ice",
-      " Psychic",
-      " Rock"
+      "Ice",
+      "Psychic",
+      "Rock"
     ],
     "Senses": [
       "Blindsight 80ft"
@@ -48552,10 +48552,10 @@
     ],
     "Weaknesses": [
       "Bug",
-      " Fairy",
-      " Fighting",
-      " Grass",
-      " Poison"
+      "Fairy",
+      "Fighting",
+      "Grass",
+      "Poison"
     ],
     "XP": 50
   }
