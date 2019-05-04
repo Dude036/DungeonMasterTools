@@ -99,7 +99,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 5900
   },
   "Abra": {
     "AC": "12",
@@ -179,7 +180,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 100
   },
   "Absol": {
     "AC": "15",
@@ -293,7 +295,8 @@
     "Weaknesses": [
       "Dark",
       " Ghost"
-    ]
+    ],
+    "XP": 8400
   },
   "Aerodactyl": {
     "AC": "16",
@@ -404,7 +407,8 @@
       " Flying",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 10000
   },
   "Aggron": {
     "AC": "18",
@@ -524,7 +528,8 @@
       " Normal",
       " Psychic",
       " Rock"
-    ]
+    ],
+    "XP": 11500
   },
   "Aipom": {
     "AC": "14",
@@ -620,7 +625,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 700
   },
   "Alakazam": {
     "AC": "17",
@@ -718,7 +724,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 8400
   },
   "Altaria": {
     "AC": "17",
@@ -824,7 +831,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 8400
   },
   "Ambipom": {
     "AC": "15",
@@ -918,7 +926,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 7200
   },
   "Ampharos": {
     "AC": "16",
@@ -1009,7 +1018,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 8400
   },
   "Anorith": {
     "AC": "13",
@@ -1100,7 +1110,8 @@
     "Weaknesses": [
       "Normal",
       " Poison"
-    ]
+    ],
+    "XP": 450
   },
   "Arbok": {
     "AC": "15",
@@ -1201,7 +1212,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 2300
   },
   "Arcanine": {
     "AC": "16",
@@ -1285,7 +1297,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 5000
   },
   "Arceus": {
     "AC": "25",
@@ -1406,7 +1419,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 13000
   },
   "Ariados": {
     "AC": "14",
@@ -1507,7 +1521,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 1800
   },
   "Armaldo": {
     "AC": "16",
@@ -1601,7 +1616,8 @@
     "Weaknesses": [
       "Normal",
       " Poison"
-    ]
+    ],
+    "XP": 5900
   },
   "Aron": {
     "AC": "14",
@@ -1702,7 +1718,8 @@
       " Normal",
       " Psychic",
       " Rock"
-    ]
+    ],
+    "XP": 100
   },
   "Articuno": {
     "AC": "18",
@@ -1794,7 +1811,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 13000
   },
   "Azelf": {
     "AC": "16",
@@ -1892,7 +1910,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 13000
   },
   "Azumarill": {
     "AC": "15",
@@ -1992,7 +2011,8 @@
       " Fire",
       " Ice",
       " Water"
-    ]
+    ],
+    "XP": 2300
   },
   "Azurill": {
     "AC": "11",
@@ -2071,7 +2091,8 @@
     "Weaknesses": [
       "Bug",
       " Dark"
-    ]
+    ],
+    "XP": 25
   },
   "Bagon": {
     "AC": "12",
@@ -2161,7 +2182,8 @@
       " Fire",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 200
   },
   "Baltoy": {
     "AC": "14",
@@ -2273,7 +2295,8 @@
       " Poison",
       " Psychic",
       " Rock"
-    ]
+    ],
+    "XP": 200
   },
   "Banette": {
     "AC": "15",
@@ -2374,7 +2397,8 @@
     "Weaknesses": [
       "Bug",
       " Poison"
-    ]
+    ],
+    "XP": 5000
   },
   "Barboach": {
     "AC": "12",
@@ -2466,7 +2490,8 @@
       " Poison",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 50
   },
   "Bastiodon": {
     "AC": "20",
@@ -2569,7 +2594,8 @@
       " Normal",
       " Psychic",
       " Rock"
-    ]
+    ],
+    "XP": 7200
   },
   "Bayleef": {
     "AC": "15",
@@ -2660,7 +2686,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Beautifly": {
     "AC": "13",
@@ -2751,7 +2778,8 @@
       "Bug",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 2300
   },
   "Beedrill": {
     "AC": "14",
@@ -2849,7 +2877,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 2300
   },
   "Beldum": {
     "AC": "14",
@@ -2902,7 +2931,8 @@
       " Psychic",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 700
   },
   "Bellossom": {
     "AC": "16",
@@ -2985,7 +3015,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 10000
   },
   "Bellsprout": {
     "AC": "11",
@@ -3080,7 +3111,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Bibarel": {
     "AC": "14",
@@ -3184,7 +3216,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 2900
   },
   "Bidoof": {
     "AC": "12",
@@ -3275,7 +3308,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 50
   },
   "Blastoise": {
     "AC": "17",
@@ -3372,7 +3406,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 10000
   },
   "Blaziken": {
     "AC": "15",
@@ -3481,7 +3516,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 10000
   },
   "Blissey": {
     "AC": "15",
@@ -3587,7 +3623,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 11500
   },
   "Bonsly": {
     "AC": "14",
@@ -3681,7 +3718,8 @@
       " Flying",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 100
   },
   "Breloom": {
     "AC": "15",
@@ -3785,7 +3823,8 @@
       " Ground",
       " Dark",
       " Water"
-    ]
+    ],
+    "XP": 2900
   },
   "Bronzong": {
     "AC": "17",
@@ -3903,7 +3942,8 @@
       " Psychic",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 7200
   },
   "Bronzor": {
     "AC": "15",
@@ -4017,7 +4057,8 @@
       " Psychic",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 450
   },
   "Budew": {
     "AC": "13",
@@ -4099,7 +4140,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Buizel": {
     "AC": "12",
@@ -4189,7 +4231,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Bulbasaur": {
     "AC": "13",
@@ -4284,7 +4327,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Buneary": {
     "AC": "13",
@@ -4374,7 +4418,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 450
   },
   "Burmy": {
     "AC": "12",
@@ -4425,7 +4470,8 @@
       "Grass",
       " Ground",
       " Fighting"
-    ]
+    ],
+    "XP": 50
   },
   "Butterfree": {
     "AC": "14",
@@ -4508,7 +4554,8 @@
       "Bug",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 2300
   },
   "Cacnea": {
     "AC": "12",
@@ -4606,7 +4653,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Cacturne": {
     "AC": "14",
@@ -4710,7 +4758,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 3900
   },
   "Camerupt": {
     "AC": "14",
@@ -4811,7 +4860,8 @@
       " Fire",
       " Poison",
       " Steel"
-    ]
+    ],
+    "XP": 5000
   },
   "Carnivine": {
     "AC": "14",
@@ -4902,7 +4952,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 2900
   },
   "Carvanha": {
     "AC": "11",
@@ -5000,7 +5051,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Cascoon": {
     "AC": "11",
@@ -5042,7 +5094,8 @@
       "Grass",
       " Ground",
       " Fighting"
-    ]
+    ],
+    "XP": 200
   },
   "Castform": {
     "AC": "15",
@@ -5130,7 +5183,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 1800
   },
   "Caterpie": {
     "AC": "11",
@@ -5177,7 +5231,8 @@
       "Grass",
       " Ground",
       " Fighting"
-    ]
+    ],
+    "XP": 25
   },
   "Celebi": {
     "AC": "18",
@@ -5281,7 +5336,8 @@
       " Ground",
       " Psychic",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Chansey": {
     "AC": "13",
@@ -5390,7 +5446,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 2900
   },
   "Charizard": {
     "AC": "16",
@@ -5499,7 +5556,8 @@
       " Fire",
       " Grass",
       " Steel"
-    ]
+    ],
+    "XP": 10000
   },
   "Charmander": {
     "AC": "13",
@@ -5593,7 +5651,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 100
   },
   "Charmeleon": {
     "AC": "14",
@@ -5685,7 +5744,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 1800
   },
   "Chatot": {
     "AC": "13",
@@ -5777,7 +5837,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 1800
   },
   "Cherrim": {
     "AC": "15",
@@ -5863,7 +5924,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 3900
   },
   "Cherubi": {
     "AC": "12",
@@ -5947,7 +6009,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Chikorita": {
     "AC": "14",
@@ -6040,7 +6103,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Chimchar": {
     "AC": "13",
@@ -6140,7 +6204,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 100
   },
   "Chimecho": {
     "AC": "16",
@@ -6233,7 +6298,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 7200
   },
   "Chinchou": {
     "AC": "13",
@@ -6329,7 +6395,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Chingling": {
     "AC": "13",
@@ -6414,7 +6481,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 200
   },
   "Clamperl": {
     "AC": "14",
@@ -6480,7 +6548,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 200
   },
   "Claydol": {
     "AC": "18",
@@ -6593,7 +6662,8 @@
       " Poison",
       " Psychic",
       " Rock"
-    ]
+    ],
+    "XP": 7200
   },
   "Clefable": {
     "AC": "15",
@@ -6685,7 +6755,8 @@
       "Bug",
       " Dark",
       " Fighting"
-    ]
+    ],
+    "XP": 3900
   },
   "Clefairy": {
     "AC": "13",
@@ -6799,7 +6870,8 @@
       "Bug",
       " Dark",
       " Fighting"
-    ]
+    ],
+    "XP": 200
   },
   "Cleffa": {
     "AC": "11",
@@ -6884,7 +6956,8 @@
       "Bug",
       " Dark",
       " Fighting"
-    ]
+    ],
+    "XP": 25
   },
   "Cloyster": {
     "AC": "18",
@@ -6967,7 +7040,8 @@
     "Weaknesses": [
       "Ice",
       " Water"
-    ]
+    ],
+    "XP": 3900
   },
   "Combee": {
     "AC": "13",
@@ -7020,7 +7094,8 @@
       "Bug",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 50
   },
   "Combusken": {
     "AC": "14",
@@ -7122,7 +7197,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 1800
   },
   "Corphish": {
     "AC": "12",
@@ -7220,7 +7296,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Corsola": {
     "AC": "16",
@@ -7330,7 +7407,8 @@
       " Ice",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 700
   },
   "Cradily": {
     "AC": "17",
@@ -7425,7 +7503,8 @@
     "Weaknesses": [
       "Electric",
       " Normal"
-    ]
+    ],
+    "XP": 7200
   },
   "Cranidos": {
     "AC": "12",
@@ -7526,7 +7605,8 @@
       " Flying",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 450
   },
   "Crawdaunt": {
     "AC": "14",
@@ -7634,7 +7714,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Cresselia": {
     "AC": "20",
@@ -7722,7 +7803,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 13000
   },
   "Croagunk": {
     "AC": "12",
@@ -7831,7 +7913,8 @@
       " Grass",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 50
   },
   "Crobat": {
     "AC": "17",
@@ -7933,7 +8016,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 10000
   },
   "Croconaw": {
     "AC": "15",
@@ -8028,7 +8112,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Cubone": {
     "AC": "14",
@@ -8126,7 +8211,8 @@
     "Weaknesses": [
       "Poison",
       " Rock"
-    ]
+    ],
+    "XP": 100
   },
   "Cyndaquil": {
     "AC": "13",
@@ -8218,7 +8304,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 100
   },
   "Darkrai": {
     "AC": "17",
@@ -8321,7 +8408,8 @@
     "Weaknesses": [
       "Dark",
       " Ghost"
-    ]
+    ],
+    "XP": 13000
   },
   "Delcatty": {
     "AC": "14",
@@ -8401,7 +8489,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 2300
   },
   "Delibird": {
     "AC": "13",
@@ -8474,7 +8563,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 200
   },
   "Deoxys": {
     "AC": "15",
@@ -8580,7 +8670,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 13000
   },
   "Dewgong": {
     "AC": "16",
@@ -8675,7 +8766,8 @@
     "Weaknesses": [
       "Ice",
       " Water"
-    ]
+    ],
+    "XP": 5900
   },
   "Dialga": {
     "AC": "20",
@@ -8783,7 +8875,8 @@
       " Rock",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Diglett": {
     "AC": "12",
@@ -8874,7 +8967,8 @@
     "Weaknesses": [
       "Poison",
       " Rock"
-    ]
+    ],
+    "XP": 100
   },
   "Ditto": {
     "AC": "13",
@@ -8915,7 +9009,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 700
   },
   "Dodrio": {
     "AC": "15",
@@ -9008,7 +9103,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 5000
   },
   "Doduo": {
     "AC": "12",
@@ -9098,7 +9194,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 50
   },
   "Donphan": {
     "AC": "16",
@@ -9191,7 +9288,8 @@
     "Weaknesses": [
       "Poison",
       " Rock"
-    ]
+    ],
+    "XP": 2900
   },
   "Dragonair": {
     "AC": "14",
@@ -9286,7 +9384,8 @@
       " Fire",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 2300
   },
   "Dragonite": {
     "AC": "17",
@@ -9399,7 +9498,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 11500
   },
   "Drapion": {
     "AC": "17",
@@ -9510,7 +9610,8 @@
       " Grass",
       " Ghost",
       " Poison"
-    ]
+    ],
+    "XP": 5900
   },
   "Dratini": {
     "AC": "13",
@@ -9606,7 +9707,8 @@
       " Fire",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Drifblim": {
     "AC": "13",
@@ -9708,7 +9810,8 @@
       "Bug",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 5000
   },
   "Drifloon": {
     "AC": "12",
@@ -9809,7 +9912,8 @@
       "Bug",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 450
   },
   "Drowzee": {
     "AC": "14",
@@ -9912,7 +10016,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 100
   },
   "Dugtrio": {
     "AC": "15",
@@ -10010,7 +10115,8 @@
     "Weaknesses": [
       "Poison",
       " Rock"
-    ]
+    ],
+    "XP": 3900
   },
   "Dunsparce": {
     "AC": "14",
@@ -10118,7 +10224,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 450
   },
   "Dusclops": {
     "AC": "18",
@@ -10226,7 +10333,8 @@
     "Weaknesses": [
       "Bug",
       " Poison"
-    ]
+    ],
+    "XP": 8400
   },
   "Dusknoir": {
     "AC": "19",
@@ -10334,7 +10442,8 @@
     "Weaknesses": [
       "Bug",
       " Poison"
-    ]
+    ],
+    "XP": 11500
   },
   "Duskull": {
     "AC": "13",
@@ -10433,7 +10542,8 @@
     "Weaknesses": [
       "Bug",
       " Poison"
-    ]
+    ],
+    "XP": 200
   },
   "Dustox": {
     "AC": "15",
@@ -10530,7 +10640,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 2900
   },
   "Eevee": {
     "AC": "13",
@@ -10615,7 +10726,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 100
   },
   "Ekans": {
     "AC": "13",
@@ -10712,7 +10824,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 100
   },
   "Electabuzz": {
     "AC": "15",
@@ -10802,7 +10915,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 5000
   },
   "Electivire": {
     "AC": "16",
@@ -10898,7 +11012,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 11500
   },
   "Electrike": {
     "AC": "12",
@@ -10987,7 +11102,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 50
   },
   "Electrode": {
     "AC": "17",
@@ -11077,7 +11193,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 3900
   },
   "Elekid": {
     "AC": "13",
@@ -11165,7 +11282,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 450
   },
   "Empoleon": {
     "AC": "16",
@@ -11273,7 +11391,8 @@
       " Rock",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 10000
   },
   "Entei": {
     "AC": "16",
@@ -11367,7 +11486,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 13000
   },
   "Espeon": {
     "AC": "16",
@@ -11461,7 +11581,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 5000
   },
   "Exeggcute": {
     "AC": "14",
@@ -11564,7 +11685,8 @@
       " Ground",
       " Psychic",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Exeggutor": {
     "AC": "15",
@@ -11661,7 +11783,8 @@
       " Ground",
       " Psychic",
       " Water"
-    ]
+    ],
+    "XP": 3900
   },
   "Exploud": {
     "AC": "14",
@@ -11760,7 +11883,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 7200
   },
   "Farfetch'd": {
     "AC": "14",
@@ -11858,7 +11982,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 700
   },
   "Fearow": {
     "AC": "15",
@@ -11945,7 +12070,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 1800
   },
   "Feebas": {
     "AC": "12",
@@ -12016,7 +12142,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Feraligatr": {
     "AC": "16",
@@ -12115,7 +12242,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 10000
   },
   "Finneon": {
     "AC": "14",
@@ -12206,7 +12334,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 450
   },
   "Flaaffy": {
     "AC": "13",
@@ -12292,7 +12421,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 1100
   },
   "Flareon": {
     "AC": "16",
@@ -12387,7 +12517,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 3900
   },
   "Floatzel": {
     "AC": "14",
@@ -12484,7 +12615,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 3900
   },
   "Flygon": {
     "AC": "16",
@@ -12584,7 +12716,8 @@
       "Fire",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 11500
   },
   "Forretress": {
     "AC": "16",
@@ -12686,7 +12819,8 @@
       " Normal",
       " Psychic",
       " Steel"
-    ]
+    ],
+    "XP": 8400
   },
   "Froslass": {
     "AC": "15",
@@ -12789,7 +12923,8 @@
       "Bug",
       " Ice",
       " Poison"
-    ]
+    ],
+    "XP": 7200
   },
   "Furret": {
     "AC": "14",
@@ -12887,7 +13022,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 1800
   },
   "Gabite": {
     "AC": "14",
@@ -12977,7 +13113,8 @@
       "Fire",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 2900
   },
   "Gallade": {
     "AC": "16",
@@ -13094,7 +13231,8 @@
     "Weaknesses": [
       "Fighting",
       " Rock"
-    ]
+    ],
+    "XP": 10000
   },
   "Garchomp": {
     "AC": "17",
@@ -13193,7 +13331,8 @@
       "Fire",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 11500
   },
   "Gardevoir": {
     "AC": "16",
@@ -13301,7 +13440,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 10000
   },
   "Gastly": {
     "AC": "12",
@@ -13404,7 +13544,8 @@
       " Fairy",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 100
   },
   "Gastrodon": {
     "AC": "14",
@@ -13497,7 +13638,8 @@
       " Poison",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 5000
   },
   "Gengar": {
     "AC": "15",
@@ -13604,7 +13746,8 @@
       " Fairy",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 8400
   },
   "Geodude": {
     "AC": "13",
@@ -13710,7 +13853,8 @@
       " Normal",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 100
   },
   "Gible": {
     "AC": "12",
@@ -13800,7 +13944,8 @@
       "Fire",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 200
   },
   "Girafarig": {
     "AC": "15",
@@ -13902,7 +14047,8 @@
     ],
     "Weaknesses": [
       "Psychic"
-    ]
+    ],
+    "XP": 2300
   },
   "Giratina Altered Forme": {
     "AC": "22",
@@ -14010,7 +14156,8 @@
       " Grass",
       " Poison",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Giratina Origin Forme": {
     "AC": "20",
@@ -14117,7 +14264,8 @@
       " Grass",
       " Poison",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Glaceon": {
     "AC": "16",
@@ -14208,7 +14356,8 @@
     ],
     "Weaknesses": [
       "Ice"
-    ]
+    ],
+    "XP": 5000
   },
   "Glalie": {
     "AC": "16",
@@ -14299,7 +14448,8 @@
     ],
     "Weaknesses": [
       "Ice"
-    ]
+    ],
+    "XP": 7200
   },
   "Glameow": {
     "AC": "13",
@@ -14393,7 +14543,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 450
   },
   "Gligar": {
     "AC": "16",
@@ -14503,7 +14654,8 @@
       "Bug",
       " Fighting",
       " Poison"
-    ]
+    ],
+    "XP": 700
   },
   "Gliscor": {
     "AC": "17",
@@ -14614,7 +14766,8 @@
       "Bug",
       " Fighting",
       " Poison"
-    ]
+    ],
+    "XP": 7200
   },
   "Gloom": {
     "AC": "14",
@@ -14706,7 +14859,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Golbat": {
     "AC": "15",
@@ -14809,7 +14963,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 2900
   },
   "Goldeen": {
     "AC": "13",
@@ -14897,7 +15052,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Golduck": {
     "AC": "16",
@@ -14996,7 +15152,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 5900
   },
   "Golem": {
     "AC": "16",
@@ -15100,7 +15257,8 @@
       " Normal",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 10000
   },
   "Gorebyss": {
     "AC": "16",
@@ -15192,7 +15350,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 2300
   },
   "Granbull": {
     "AC": "14",
@@ -15304,7 +15463,8 @@
       "Bug",
       " Dark",
       " Fighting"
-    ]
+    ],
+    "XP": 1800
   },
   "Graveler": {
     "AC": "15",
@@ -15408,7 +15568,8 @@
       " Normal",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 2300
   },
   "Grimer": {
     "AC": "12",
@@ -15508,7 +15669,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 100
   },
   "Grotle": {
     "AC": "14",
@@ -15596,7 +15758,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Groudon": {
     "AC": "18",
@@ -15697,7 +15860,8 @@
     "Weaknesses": [
       "Poison",
       " Rock"
-    ]
+    ],
+    "XP": 13000
   },
   "Grovyle": {
     "AC": "14",
@@ -15795,7 +15959,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Growlithe": {
     "AC": "13",
@@ -15892,7 +16057,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 100
   },
   "Grumpig": {
     "AC": "16",
@@ -15995,7 +16161,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 7200
   },
   "Gulpin": {
     "AC": "13",
@@ -16087,7 +16254,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 100
   },
   "Gyarados": {
     "AC": "16",
@@ -16189,7 +16357,8 @@
       " Fire",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 5900
   },
   "Happiny": {
     "AC": "11",
@@ -16265,7 +16434,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 200
   },
   "Hariyama": {
     "AC": "14",
@@ -16365,7 +16535,8 @@
       "Bug",
       " Dark",
       " Rock"
-    ]
+    ],
+    "XP": 2900
   },
   "Haunter": {
     "AC": "14",
@@ -16470,7 +16641,8 @@
       " Fairy",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 1800
   },
   "Heatran": {
     "AC": "20",
@@ -16571,7 +16743,8 @@
       " Normal",
       " Psychic",
       " Steel"
-    ]
+    ],
+    "XP": 13000
   },
   "Heracross": {
     "AC": "18",
@@ -16676,7 +16849,8 @@
       " Dark",
       " Grass",
       " Ground"
-    ]
+    ],
+    "XP": 5000
   },
   "Hippopotas": {
     "AC": "14",
@@ -16761,7 +16935,8 @@
     "Weaknesses": [
       "Poison",
       " Rock"
-    ]
+    ],
+    "XP": 200
   },
   "Hippowdon": {
     "AC": "18",
@@ -16850,7 +17025,8 @@
     "Weaknesses": [
       "Poison",
       " Rock"
-    ]
+    ],
+    "XP": 5900
   },
   "Hitmonchan": {
     "AC": "16",
@@ -16945,7 +17121,8 @@
       "Bug",
       " Dark",
       " Rock"
-    ]
+    ],
+    "XP": 2300
   },
   "Hitmonlee": {
     "AC": "16",
@@ -17041,7 +17218,8 @@
       "Bug",
       " Dark",
       " Rock"
-    ]
+    ],
+    "XP": 2300
   },
   "Hitmontop": {
     "AC": "16",
@@ -17133,7 +17311,8 @@
       "Bug",
       " Dark",
       " Rock"
-    ]
+    ],
+    "XP": 2300
   },
   "Ho-oh": {
     "AC": "19",
@@ -17240,7 +17419,8 @@
       " Fire",
       " Grass",
       " Steel"
-    ]
+    ],
+    "XP": 13000
   },
   "Honchkrow": {
     "AC": "13",
@@ -17339,7 +17519,8 @@
       "Dark",
       " Ghost",
       " Grass"
-    ]
+    ],
+    "XP": 5900
   },
   "Hoothoot": {
     "AC": "12",
@@ -17438,7 +17619,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 50
   },
   "Hoppip": {
     "AC": "13",
@@ -17537,7 +17719,8 @@
       "Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Horsea": {
     "AC": "13",
@@ -17623,7 +17806,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Houndoom": {
     "AC": "17",
@@ -17729,7 +17913,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 3900
   },
   "Houndour": {
     "AC": "12",
@@ -17834,7 +18019,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 100
   },
   "Huntail": {
     "AC": "16",
@@ -17923,7 +18109,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 3900
   },
   "Hypno": {
     "AC": "16",
@@ -18028,7 +18215,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 3900
   },
   "Igglybuff": {
     "AC": "10",
@@ -18109,7 +18297,8 @@
     "Weaknesses": [
       "Bug",
       " Dark"
-    ]
+    ],
+    "XP": 25
   },
   "Illumise": {
     "AC": "16",
@@ -18207,7 +18396,8 @@
       "Grass",
       " Ground",
       " Fighting"
-    ]
+    ],
+    "XP": 2900
   },
   "Infernape": {
     "AC": "15",
@@ -18317,7 +18507,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 8400
   },
   "Ivysaur": {
     "AC": "15",
@@ -18410,7 +18601,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Jigglypuff": {
     "AC": "13",
@@ -18520,7 +18712,8 @@
     "Weaknesses": [
       "Bug",
       " Dark"
-    ]
+    ],
+    "XP": 200
   },
   "Jirachi": {
     "AC": "18",
@@ -18628,7 +18821,8 @@
       " Psychic",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 13000
   },
   "Jolteon": {
     "AC": "16",
@@ -18721,7 +18915,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 3900
   },
   "Jumpluff": {
     "AC": "16",
@@ -18816,7 +19011,8 @@
       "Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 10000
   },
   "Jynx": {
     "AC": "15",
@@ -18925,7 +19121,8 @@
     "Weaknesses": [
       "Ice",
       " Psychic"
-    ]
+    ],
+    "XP": 3900
   },
   "Kabuto": {
     "AC": "14",
@@ -19021,7 +19218,8 @@
       " Ice",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 450
   },
   "Kabutops": {
     "AC": "16",
@@ -19122,7 +19320,8 @@
       " Ice",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 7200
   },
   "Kadabra": {
     "AC": "14",
@@ -19222,7 +19421,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 2300
   },
   "Kakuna": {
     "AC": "12",
@@ -19268,7 +19468,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 200
   },
   "Kangaskhan": {
     "AC": "18",
@@ -19369,7 +19570,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 5900
   },
   "Kecleon": {
     "AC": "16",
@@ -19469,7 +19671,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 2300
   },
   "Kingdra": {
     "AC": "17",
@@ -19553,7 +19756,8 @@
       "Fire",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 8400
   },
   "Kingler": {
     "AC": "16",
@@ -19649,7 +19853,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 3900
   },
   "Kirlia": {
     "AC": "12",
@@ -19753,7 +19958,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 1800
   },
   "Koffing": {
     "AC": "14",
@@ -19847,7 +20053,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 100
   },
   "Krabby": {
     "AC": "13",
@@ -19942,7 +20149,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Kricketot": {
     "AC": "12",
@@ -19990,7 +20198,8 @@
       "Grass",
       " Ground",
       " Fighting"
-    ]
+    ],
+    "XP": 50
   },
   "Kricketune": {
     "AC": "13",
@@ -20080,7 +20289,8 @@
       "Grass",
       " Ground",
       " Fighting"
-    ]
+    ],
+    "XP": 1800
   },
   "Kyogre": {
     "AC": "19",
@@ -20170,7 +20380,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Lairon": {
     "AC": "16",
@@ -20271,7 +20482,8 @@
       " Normal",
       " Psychic",
       " Rock"
-    ]
+    ],
+    "XP": 3900
   },
   "Lanturn": {
     "AC": "14",
@@ -20368,7 +20580,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 2300
   },
   "Lapras": {
     "AC": "16",
@@ -20467,7 +20680,8 @@
     "Weaknesses": [
       "Ice",
       " Water"
-    ]
+    ],
+    "XP": 5900
   },
   "Larvitar": {
     "AC": "13",
@@ -20570,7 +20784,8 @@
       " Normal",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 200
   },
   "Latias": {
     "AC": "20",
@@ -20682,7 +20897,8 @@
       " Grass",
       " Psychic",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Latios": {
     "AC": "17",
@@ -20793,7 +21009,8 @@
       " Grass",
       " Psychic",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Leafeon": {
     "AC": "16",
@@ -20890,7 +21107,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 5000
   },
   "Ledian": {
     "AC": "16",
@@ -20988,7 +21206,8 @@
       "Bug",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 3900
   },
   "Ledyba": {
     "AC": "13",
@@ -21083,7 +21302,8 @@
       "Bug",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 50
   },
   "Lickilicky": {
     "AC": "16",
@@ -21185,7 +21405,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 11500
   },
   "Lickitung": {
     "AC": "14",
@@ -21286,7 +21507,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 2900
   },
   "Lileep": {
     "AC": "15",
@@ -21379,7 +21601,8 @@
     "Weaknesses": [
       "Electric",
       " Normal"
-    ]
+    ],
+    "XP": 450
   },
   "Linoone": {
     "AC": "15",
@@ -21473,7 +21696,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 2900
   },
   "Lombre": {
     "AC": "14",
@@ -21568,7 +21792,8 @@
       "Ground",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 1100
   },
   "Lopunny": {
     "AC": "17",
@@ -21667,7 +21892,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 5000
   },
   "Lotad": {
     "AC": "12",
@@ -21759,7 +21985,8 @@
       "Ground",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Loudred": {
     "AC": "12",
@@ -21853,7 +22080,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 1800
   },
   "Lucario": {
     "AC": "15",
@@ -21967,7 +22195,8 @@
       " Normal",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 3900
   },
   "Ludicolo": {
     "AC": "16",
@@ -22049,7 +22278,8 @@
       "Ground",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 5900
   },
   "Lugia": {
     "AC": "21",
@@ -22156,7 +22386,8 @@
       "Fighting",
       " Grass",
       " Psychic"
-    ]
+    ],
+    "XP": 13000
   },
   "Lumineon": {
     "AC": "16",
@@ -22246,7 +22477,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 5000
   },
   "Lunatone": {
     "AC": "15",
@@ -22362,7 +22594,8 @@
       " Normal",
       " Poison",
       " Psychic"
-    ]
+    ],
+    "XP": 3900
   },
   "Luvdisc": {
     "AC": "14",
@@ -22449,7 +22682,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Luxio": {
     "AC": "13",
@@ -22534,7 +22768,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 2300
   },
   "Luxray": {
     "AC": "15",
@@ -22618,7 +22853,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 10000
   },
   "Machamp": {
     "AC": "15",
@@ -22717,7 +22953,8 @@
       "Bug",
       " Dark",
       " Rock"
-    ]
+    ],
+    "XP": 8400
   },
   "Machoke": {
     "AC": "14",
@@ -22817,7 +23054,8 @@
       "Bug",
       " Dark",
       " Rock"
-    ]
+    ],
+    "XP": 1800
   },
   "Machop": {
     "AC": "12",
@@ -22919,7 +23157,8 @@
       "Bug",
       " Dark",
       " Rock"
-    ]
+    ],
+    "XP": 100
   },
   "Magby": {
     "AC": "13",
@@ -23009,7 +23248,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 450
   },
   "Magcargo": {
     "AC": "16",
@@ -23114,7 +23354,8 @@
       " Normal",
       " Poison",
       " Steel"
-    ]
+    ],
+    "XP": 5900
   },
   "Magikarp": {
     "AC": "12",
@@ -23163,7 +23404,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Magmar": {
     "AC": "15",
@@ -23255,7 +23497,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 5000
   },
   "Magmortar": {
     "AC": "16",
@@ -23354,7 +23597,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 11500
   },
   "Magnemite": {
     "AC": "14",
@@ -23456,7 +23700,8 @@
       " Normal",
       " Psychic",
       " Rock"
-    ]
+    ],
+    "XP": 100
   },
   "Magneton": {
     "AC": "16",
@@ -23560,7 +23805,8 @@
       " Normal",
       " Psychic",
       " Rock"
-    ]
+    ],
+    "XP": 3900
   },
   "Magnezone": {
     "AC": "17",
@@ -23662,7 +23908,8 @@
       " Normal",
       " Psychic",
       " Rock"
-    ]
+    ],
+    "XP": 11500
   },
   "Makuhita": {
     "AC": "11",
@@ -23759,7 +24006,8 @@
       "Bug",
       " Dark",
       " Rock"
-    ]
+    ],
+    "XP": 200
   },
   "Mamoswine": {
     "AC": "15",
@@ -23853,7 +24101,8 @@
     ],
     "Weaknesses": [
       "Poison"
-    ]
+    ],
+    "XP": 10000
   },
   "Manaphy": {
     "AC": "18",
@@ -23943,7 +24192,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Manectric": {
     "AC": "15",
@@ -24033,7 +24283,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 5000
   },
   "Mankey": {
     "AC": "12",
@@ -24139,7 +24390,8 @@
       "Bug",
       " Dark",
       " Rock"
-    ]
+    ],
+    "XP": 100
   },
   "Mantine": {
     "AC": "17",
@@ -24237,7 +24489,8 @@
       " Fire",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 7200
   },
   "Mantyke": {
     "AC": "15",
@@ -24331,7 +24584,8 @@
       " Fire",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 700
   },
   "Mareep": {
     "AC": "12",
@@ -24416,7 +24670,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 50
   },
   "Marill": {
     "AC": "13",
@@ -24514,7 +24769,8 @@
       " Fire",
       " Ice",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Marowak": {
     "AC": "16",
@@ -24616,7 +24872,8 @@
     "Weaknesses": [
       "Poison",
       " Rock"
-    ]
+    ],
+    "XP": 2900
   },
   "Marshtomp": {
     "AC": "14",
@@ -24711,7 +24968,8 @@
       " Poison",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 1800
   },
   "Masquerain": {
     "AC": "15",
@@ -24805,7 +25063,8 @@
       "Bug",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 2900
   },
   "Mawile": {
     "AC": "17",
@@ -24920,7 +25179,8 @@
       " Normal",
       " Psychic",
       " Rock"
-    ]
+    ],
+    "XP": 2900
   },
   "Medicham": {
     "AC": "16",
@@ -25026,7 +25286,8 @@
     "Weaknesses": [
       "Fighting",
       " Rock"
-    ]
+    ],
+    "XP": 5900
   },
   "Meditite": {
     "AC": "13",
@@ -25126,7 +25387,8 @@
     "Weaknesses": [
       "Fighting",
       " Rock"
-    ]
+    ],
+    "XP": 100
   },
   "Meganium": {
     "AC": "17",
@@ -25220,7 +25482,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 10000
   },
   "Meowth": {
     "AC": "13",
@@ -25316,7 +25579,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 100
   },
   "Mesprit": {
     "AC": "18",
@@ -25410,7 +25674,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 13000
   },
   "Metagross": {
     "AC": "18",
@@ -25518,7 +25783,8 @@
       " Psychic",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 11500
   },
   "Metang": {
     "AC": "16",
@@ -25626,7 +25892,8 @@
       " Psychic",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 5000
   },
   "Metapod": {
     "AC": "12",
@@ -25668,7 +25935,8 @@
       "Grass",
       " Ground",
       " Fighting"
-    ]
+    ],
+    "XP": 200
   },
   "Mew": {
     "AC": "18",
@@ -25721,7 +25989,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 13000
   },
   "Mewtwo": {
     "AC": "18",
@@ -25837,7 +26106,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 13000
   },
   "Mightyena": {
     "AC": "14",
@@ -25936,7 +26206,8 @@
     "Weaknesses": [
       "Dark",
       " Ghost"
-    ]
+    ],
+    "XP": 1800
   },
   "Milotic": {
     "AC": "17",
@@ -26030,7 +26301,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 5900
   },
   "Miltank": {
     "AC": "17",
@@ -26126,7 +26398,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 5900
   },
   "Mime Jr.": {
     "AC": "14",
@@ -26236,7 +26509,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 200
   },
   "Minun": {
     "AC": "15",
@@ -26326,7 +26600,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 2300
   },
   "Misdreavus": {
     "AC": "15",
@@ -26424,7 +26699,8 @@
     "Weaknesses": [
       "Bug",
       " Poison"
-    ]
+    ],
+    "XP": 2900
   },
   "Mismagius": {
     "AC": "16",
@@ -26512,7 +26788,8 @@
     "Weaknesses": [
       "Bug",
       " Poison"
-    ]
+    ],
+    "XP": 8400
   },
   "Moltres": {
     "AC": "16",
@@ -26607,7 +26884,8 @@
       " Fire",
       " Grass",
       " Steel"
-    ]
+    ],
+    "XP": 13000
   },
   "Monferno": {
     "AC": "14",
@@ -26712,7 +26990,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 1800
   },
   "Mothim": {
     "AC": "13",
@@ -26811,7 +27090,8 @@
       "Bug",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 1100
   },
   "Mr. Mime": {
     "AC": "17",
@@ -26931,7 +27211,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 5000
   },
   "Mudkip": {
     "AC": "13",
@@ -27021,7 +27302,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Muk": {
     "AC": "16",
@@ -27123,7 +27405,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 5900
   },
   "Munchlax": {
     "AC": "13",
@@ -27221,7 +27504,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 700
   },
   "Murkrow": {
     "AC": "13",
@@ -27326,7 +27610,8 @@
       "Dark",
       " Ghost",
       " Grass"
-    ]
+    ],
+    "XP": 450
   },
   "Natu": {
     "AC": "13",
@@ -27429,7 +27714,8 @@
       "Fighting",
       " Grass",
       " Psychic"
-    ]
+    ],
+    "XP": 100
   },
   "Nidoking": {
     "AC": "15",
@@ -27533,7 +27819,8 @@
       " Fire",
       " Bug",
       " Poison"
-    ]
+    ],
+    "XP": 8400
   },
   "Nidoqueen": {
     "AC": "16",
@@ -27639,7 +27926,8 @@
       " Fire",
       " Bug",
       " Poison"
-    ]
+    ],
+    "XP": 10000
   },
   "Nidoran F": {
     "AC": "12",
@@ -27732,7 +28020,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 50
   },
   "Nidoran M": {
     "AC": "12",
@@ -27820,7 +28109,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 50
   },
   "Nidorina": {
     "AC": "14",
@@ -27911,7 +28201,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 1100
   },
   "Nidorino": {
     "AC": "14",
@@ -28002,7 +28293,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 1100
   },
   "Nincada": {
     "AC": "13",
@@ -28087,7 +28379,8 @@
       "Fighting",
       " Ground",
       " Poison"
-    ]
+    ],
+    "XP": 50
   },
   "Ninetales": {
     "AC": "17",
@@ -28168,7 +28461,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 2900
   },
   "Ninjask": {
     "AC": "15",
@@ -28265,7 +28559,8 @@
       "Bug",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 2300
   },
   "Noctowl": {
     "AC": "15",
@@ -28365,7 +28660,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 2300
   },
   "Nosepass": {
     "AC": "17",
@@ -28467,7 +28763,8 @@
       " Flying",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 1100
   },
   "Numel": {
     "AC": "12",
@@ -28562,7 +28859,8 @@
       " Fire",
       " Poison",
       " Steel"
-    ]
+    ],
+    "XP": 50
   },
   "Nuzleaf": {
     "AC": "12",
@@ -28668,7 +28966,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 1100
   },
   "Octillery": {
     "AC": "15",
@@ -28768,7 +29067,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 2300
   },
   "Oddish": {
     "AC": "13",
@@ -28853,7 +29153,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Omanyte": {
     "AC": "15",
@@ -28950,7 +29251,8 @@
       " Ice",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 450
   },
   "Omastar": {
     "AC": "16",
@@ -29047,7 +29349,8 @@
       " Ice",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 7200
   },
   "Onix": {
     "AC": "17",
@@ -29162,7 +29465,8 @@
       " Normal",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 5900
   },
   "Pachirisu": {
     "AC": "16",
@@ -29250,7 +29554,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 2300
   },
   "Palkia": {
     "AC": "20",
@@ -29351,7 +29656,8 @@
       "Fire",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Paras": {
     "AC": "13",
@@ -29448,7 +29754,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Parasect": {
     "AC": "15",
@@ -29547,7 +29854,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 2900
   },
   "Pelipper": {
     "AC": "16",
@@ -29648,7 +29956,8 @@
       " Fire",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 2900
   },
   "Persian": {
     "AC": "15",
@@ -29750,7 +30059,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 2900
   },
   "Phanpy": {
     "AC": "13",
@@ -29835,7 +30145,8 @@
     "Weaknesses": [
       "Poison",
       " Rock"
-    ]
+    ],
+    "XP": 100
   },
   "Phione": {
     "AC": "16",
@@ -29915,7 +30226,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Pichu": {
     "AC": "11",
@@ -29990,7 +30302,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 25
   },
   "Pidgeot": {
     "AC": "16",
@@ -30076,7 +30389,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 5900
   },
   "Pidgeotto": {
     "AC": "13",
@@ -30162,7 +30476,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 700
   },
   "Pidgey": {
     "AC": "12",
@@ -30248,7 +30563,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 50
   },
   "Pikachu": {
     "AC": "13",
@@ -30339,7 +30655,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 100
   },
   "Piloswine": {
     "AC": "14",
@@ -30434,7 +30751,8 @@
     ],
     "Weaknesses": [
       "Poison"
-    ]
+    ],
+    "XP": 3900
   },
   "Pineco": {
     "AC": "13",
@@ -30526,7 +30844,8 @@
       "Grass",
       " Ground",
       " Fighting"
-    ]
+    ],
+    "XP": 200
   },
   "Pinsir": {
     "AC": "16",
@@ -30624,7 +30943,8 @@
       "Grass",
       " Ground",
       " Fighting"
-    ]
+    ],
+    "XP": 5000
   },
   "Piplup": {
     "AC": "13",
@@ -30717,7 +31037,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Plusle": {
     "AC": "14",
@@ -30806,7 +31127,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 2300
   },
   "Politoed": {
     "AC": "16",
@@ -30891,7 +31213,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 8400
   },
   "Poliwag": {
     "AC": "13",
@@ -30979,7 +31302,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Poliwhirl": {
     "AC": "14",
@@ -31071,7 +31395,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 700
   },
   "Poliwrath": {
     "AC": "16",
@@ -31168,7 +31493,8 @@
       " Rock",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 8400
   },
   "Ponyta": {
     "AC": "14",
@@ -31259,7 +31585,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 100
   },
   "Poochyena": {
     "AC": "11",
@@ -31353,7 +31680,8 @@
     "Weaknesses": [
       "Dark",
       " Ghost"
-    ]
+    ],
+    "XP": 50
   },
   "Porygon": {
     "AC": "14",
@@ -31446,7 +31774,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 2300
   },
   "Porygon-Z": {
     "AC": "15",
@@ -31545,7 +31874,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 11500
   },
   "Porygon2": {
     "AC": "16",
@@ -31636,7 +31966,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 8400
   },
   "Primeape": {
     "AC": "15",
@@ -31744,7 +32075,8 @@
       "Bug",
       " Dark",
       " Rock"
-    ]
+    ],
+    "XP": 2300
   },
   "Prinplup": {
     "AC": "14",
@@ -31837,7 +32169,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Probopass": {
     "AC": "20",
@@ -31944,7 +32277,8 @@
       " Normal",
       " Psychic",
       " Rock"
-    ]
+    ],
+    "XP": 10000
   },
   "Psyduck": {
     "AC": "13",
@@ -32042,7 +32376,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Pupitar": {
     "AC": "14",
@@ -32143,7 +32478,8 @@
       " Normal",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 2900
   },
   "Purugly": {
     "AC": "15",
@@ -32238,7 +32574,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 3900
   },
   "Quagsire": {
     "AC": "14",
@@ -32339,7 +32676,8 @@
       " Poison",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 2300
   },
   "Quilava": {
     "AC": "14",
@@ -32431,7 +32769,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 1800
   },
   "Qwilfish": {
     "AC": "15",
@@ -32537,7 +32876,8 @@
       " Poison",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Raichu": {
     "AC": "15",
@@ -32609,7 +32949,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 2900
   },
   "Raikou": {
     "AC": "17",
@@ -32698,7 +33039,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 13000
   },
   "Rainy Castform": {
     "AC": "15",
@@ -32790,7 +33132,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Ralts": {
     "AC": "11",
@@ -32894,7 +33237,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 50
   },
   "Rampardos": {
     "AC": "13",
@@ -33000,7 +33344,8 @@
       " Flying",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 3900
   },
   "Rapidash": {
     "AC": "16",
@@ -33092,7 +33437,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 7200
   },
   "Raticate": {
     "AC": "15",
@@ -33188,7 +33534,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 1800
   },
   "Rattata": {
     "AC": "12",
@@ -33278,7 +33625,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 50
   },
   "Rayquaza": {
     "AC": "17",
@@ -33391,7 +33739,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Regice": {
     "AC": "20",
@@ -33485,7 +33834,8 @@
     ],
     "Weaknesses": [
       "Ice"
-    ]
+    ],
+    "XP": 11500
   },
   "Regigigas": {
     "AC": "20",
@@ -33569,7 +33919,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 13000
   },
   "Regirock": {
     "AC": "20",
@@ -33664,7 +34015,8 @@
       " Flying",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 11500
   },
   "Registeel": {
     "AC": "20",
@@ -33770,7 +34122,8 @@
       " Psychic",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 11500
   },
   "Relicanth": {
     "AC": "16",
@@ -33872,7 +34225,8 @@
       " Ice",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 3900
   },
   "Remoraid": {
     "AC": "12",
@@ -33965,7 +34319,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Rhydon": {
     "AC": "15",
@@ -34079,7 +34434,8 @@
       " Normal",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 7200
   },
   "Rhyhorn": {
     "AC": "13",
@@ -34189,7 +34545,8 @@
       " Normal",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 700
   },
   "Rhyperior": {
     "AC": "18",
@@ -34306,7 +34663,8 @@
       " Normal",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 11500
   },
   "Riolu": {
     "AC": "12",
@@ -34397,7 +34755,8 @@
       "Bug",
       " Dark",
       " Rock"
-    ]
+    ],
+    "XP": 100
   },
   "Roselia": {
     "AC": "14",
@@ -34494,7 +34853,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Roserade": {
     "AC": "16",
@@ -34575,7 +34935,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 8400
   },
   "Rotom": {
     "AC": "14",
@@ -34667,7 +35028,8 @@
       " Flying",
       " Poison",
       " Steel"
-    ]
+    ],
+    "XP": 3900
   },
   "Rotom Fan": {
     "AC": "16",
@@ -34759,7 +35121,8 @@
       " Flying",
       " Grass",
       " Steel"
-    ]
+    ],
+    "XP": 3900
   },
   "Rotom Frost": {
     "AC": "16",
@@ -34851,7 +35214,8 @@
       "Flying",
       " Electric",
       " Ice"
-    ]
+    ],
+    "XP": 3900
   },
   "Rotom Heat": {
     "AC": "16",
@@ -34947,7 +35311,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 3900
   },
   "Rotom Mow": {
     "AC": "16",
@@ -35040,7 +35405,8 @@
       " Grass",
       " Water",
       " Steel"
-    ]
+    ],
+    "XP": 3900
   },
   "Rotom Wash": {
     "AC": "16",
@@ -35132,7 +35498,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 3900
   },
   "Sableye": {
     "AC": "18",
@@ -35238,7 +35605,8 @@
     ],
     "Weaknesses": [
       "Poison"
-    ]
+    ],
+    "XP": 2900
   },
   "Salamence": {
     "AC": "16",
@@ -35341,7 +35709,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 11500
   },
   "Sandshrew": {
     "AC": "14",
@@ -35439,7 +35808,8 @@
     "Weaknesses": [
       "Poison",
       " Rock"
-    ]
+    ],
+    "XP": 100
   },
   "Sandslash": {
     "AC": "16",
@@ -35542,7 +35912,8 @@
     "Weaknesses": [
       "Poison",
       " Rock"
-    ]
+    ],
+    "XP": 2900
   },
   "Sceptile": {
     "AC": "16",
@@ -35644,7 +36015,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 10000
   },
   "Scizor": {
     "AC": "19",
@@ -35748,7 +36120,8 @@
       " Normal",
       " Psychic",
       " Steel"
-    ]
+    ],
+    "XP": 11500
   },
   "Scyther": {
     "AC": "16",
@@ -35849,7 +36222,8 @@
       "Bug",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 3900
   },
   "Seadra": {
     "AC": "15",
@@ -35933,7 +36307,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 3900
   },
   "Seaking": {
     "AC": "15",
@@ -36020,7 +36395,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 5000
   },
   "Sealeo": {
     "AC": "14",
@@ -36112,7 +36488,8 @@
     "Weaknesses": [
       "Ice",
       " Water"
-    ]
+    ],
+    "XP": 5000
   },
   "Seedot": {
     "AC": "12",
@@ -36195,7 +36572,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Seel": {
     "AC": "14",
@@ -36289,7 +36667,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Sentret": {
     "AC": "11",
@@ -36383,7 +36762,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 25
   },
   "Seviper": {
     "AC": "14",
@@ -36482,7 +36862,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 1800
   },
   "Sharpedo": {
     "AC": "15",
@@ -36588,7 +36969,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 5900
   },
   "Shaymin Land": {
     "AC": "18",
@@ -36673,7 +37055,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Shaymin Sky": {
     "AC": "16",
@@ -36760,7 +37143,8 @@
       "Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Shedinja": {
     "AC": "12",
@@ -36853,7 +37237,8 @@
       " Grass",
       " Ground",
       " Poison"
-    ]
+    ],
+    "XP": 200
   },
   "Shelgon": {
     "AC": "15",
@@ -36942,7 +37327,8 @@
       " Fire",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 2900
   },
   "Shellder": {
     "AC": "14",
@@ -37029,7 +37415,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Shellos": {
     "AC": "13",
@@ -37112,7 +37499,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 450
   },
   "Shieldon": {
     "AC": "16",
@@ -37215,7 +37603,8 @@
       " Normal",
       " Psychic",
       " Rock"
-    ]
+    ],
+    "XP": 700
   },
   "Shiftry": {
     "AC": "14",
@@ -37316,7 +37705,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 5000
   },
   "Shinx": {
     "AC": "11",
@@ -37404,7 +37794,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 50
   },
   "Shroomish": {
     "AC": "13",
@@ -37493,7 +37884,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Shuckle": {
     "AC": "22",
@@ -37586,7 +37978,8 @@
     "Weaknesses": [
       "Normal",
       " Poison"
-    ]
+    ],
+    "XP": 1100
   },
   "Shuppet": {
     "AC": "13",
@@ -37686,7 +38079,8 @@
     "Weaknesses": [
       "Bug",
       " Poison"
-    ]
+    ],
+    "XP": 200
   },
   "Silcoon": {
     "AC": "11",
@@ -37728,7 +38122,8 @@
       "Grass",
       " Ground",
       " Fighting"
-    ]
+    ],
+    "XP": 200
   },
   "Skarmory": {
     "AC": "17",
@@ -37829,7 +38224,8 @@
       " Normal",
       " Psychic",
       " Steel"
-    ]
+    ],
+    "XP": 5900
   },
   "Skiploom": {
     "AC": "14",
@@ -37926,7 +38322,8 @@
       "Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 2300
   },
   "Skitty": {
     "AC": "12",
@@ -38029,7 +38426,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 50
   },
   "Skorupi": {
     "AC": "15",
@@ -38133,7 +38531,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 450
   },
   "Skuntank": {
     "AC": "14",
@@ -38233,7 +38632,8 @@
       " Grass",
       " Ghost",
       " Poison"
-    ]
+    ],
+    "XP": 3900
   },
   "Slaking": {
     "AC": "16",
@@ -38329,7 +38729,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 10000
   },
   "Slakoth": {
     "AC": "12",
@@ -38416,7 +38817,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 50
   },
   "Slowbro": {
     "AC": "16",
@@ -38529,7 +38931,8 @@
       " Psychic",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 7200
   },
   "Slowking": {
     "AC": "16",
@@ -38645,7 +39048,8 @@
       " Psychic",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 7200
   },
   "Slowpoke": {
     "AC": "12",
@@ -38756,7 +39160,8 @@
       " Psychic",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Slugma": {
     "AC": "11",
@@ -38850,7 +39255,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 25
   },
   "Smeargle": {
     "AC": "12",
@@ -38911,7 +39317,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 200
   },
   "Smoochum": {
     "AC": "12",
@@ -39014,7 +39421,8 @@
     "Weaknesses": [
       "Ice",
       " Psychic"
-    ]
+    ],
+    "XP": 450
   },
   "Sneasel": {
     "AC": "15",
@@ -39126,7 +39534,8 @@
       "Dark",
       " Ghost",
       " Ice"
-    ]
+    ],
+    "XP": 1100
   },
   "Snorlax": {
     "AC": "15",
@@ -39221,7 +39630,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 11500
   },
   "Snorunt": {
     "AC": "13",
@@ -39307,7 +39717,8 @@
     ],
     "Weaknesses": [
       "Ice"
-    ]
+    ],
+    "XP": 50
   },
   "Snover": {
     "AC": "13",
@@ -39401,7 +39812,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 200
   },
   "Snowy Castform": {
     "AC": "15",
@@ -39492,7 +39904,8 @@
     ],
     "Weaknesses": [
       "Ice"
-    ]
+    ],
+    "XP": 1800
   },
   "Snubbull": {
     "AC": "12",
@@ -39598,7 +40011,8 @@
       "Bug",
       " Dark",
       " Fighting"
-    ]
+    ],
+    "XP": 50
   },
   "Solrock": {
     "AC": "15",
@@ -39715,7 +40129,8 @@
       " Normal",
       " Poison",
       " Psychic"
-    ]
+    ],
+    "XP": 3900
   },
   "Spearow": {
     "AC": "12",
@@ -39802,7 +40217,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 50
   },
   "Spheal": {
     "AC": "12",
@@ -39896,7 +40312,8 @@
     "Weaknesses": [
       "Ice",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Spinarak": {
     "AC": "12",
@@ -39992,7 +40409,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 50
   },
   "Spinda": {
     "AC": "14",
@@ -40083,7 +40501,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 450
   },
   "Spiritomb": {
     "AC": "17",
@@ -40179,7 +40598,8 @@
     ],
     "Weaknesses": [
       "Poison"
-    ]
+    ],
+    "XP": 7200
   },
   "Spoink": {
     "AC": "14",
@@ -40278,7 +40698,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 100
   },
   "Squirtle": {
     "AC": "14",
@@ -40363,7 +40784,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Stantler": {
     "AC": "14",
@@ -40462,7 +40884,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 1800
   },
   "Staraptor": {
     "AC": "15",
@@ -40545,7 +40968,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 8400
   },
   "Staravia": {
     "AC": "13",
@@ -40629,7 +41053,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 700
   },
   "Starly": {
     "AC": "11",
@@ -40713,7 +41138,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 25
   },
   "Starmie": {
     "AC": "17",
@@ -40806,7 +41232,8 @@
       " Psychic",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 5000
   },
   "Staryu": {
     "AC": "14",
@@ -40906,7 +41333,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Steelix": {
     "AC": "21",
@@ -41022,7 +41450,8 @@
       " Psychic",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 11500
   },
   "Stunky": {
     "AC": "13",
@@ -41120,7 +41549,8 @@
       " Grass",
       " Ghost",
       " Poison"
-    ]
+    ],
+    "XP": 100
   },
   "Sudowoodo": {
     "AC": "15",
@@ -41223,7 +41653,8 @@
       " Flying",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 2300
   },
   "Suicune": {
     "AC": "18",
@@ -41314,7 +41745,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 13000
   },
   "Sunflora": {
     "AC": "14",
@@ -41410,7 +41842,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 2900
   },
   "Sunkern": {
     "AC": "11",
@@ -41504,7 +41937,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Sunny Castform": {
     "AC": "15",
@@ -41599,7 +42033,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 1800
   },
   "Surskit": {
     "AC": "12",
@@ -41685,7 +42120,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Swablu": {
     "AC": "14",
@@ -41780,7 +42216,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 100
   },
   "Swalot": {
     "AC": "15",
@@ -41873,7 +42310,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 5900
   },
   "Swampert": {
     "AC": "16",
@@ -41969,7 +42407,8 @@
       " Poison",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 10000
   },
   "Swellow": {
     "AC": "15",
@@ -42057,7 +42496,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 2300
   },
   "Swinub": {
     "AC": "12",
@@ -42151,7 +42591,8 @@
     ],
     "Weaknesses": [
       "Poison"
-    ]
+    ],
+    "XP": 50
   },
   "Taillow": {
     "AC": "12",
@@ -42237,7 +42678,8 @@
     "Weaknesses": [
       "Bug",
       " Grass"
-    ]
+    ],
+    "XP": 50
   },
   "Tangela": {
     "AC": "15",
@@ -42334,7 +42776,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Tangrowth": {
     "AC": "17",
@@ -42440,7 +42883,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 8400
   },
   "Tauros": {
     "AC": "16",
@@ -42537,7 +42981,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 5900
   },
   "Teddiursa": {
     "AC": "13",
@@ -42630,7 +43075,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 100
   },
   "Tentacool": {
     "AC": "14",
@@ -42734,7 +43180,8 @@
       " Poison",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 450
   },
   "Tentacruel": {
     "AC": "17",
@@ -42839,7 +43286,8 @@
       " Poison",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 3900
   },
   "Togekiss": {
     "AC": "18",
@@ -42932,7 +43380,8 @@
       " Dark",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 11500
   },
   "Togepi": {
     "AC": "13",
@@ -43030,7 +43479,8 @@
       "Bug",
       " Dark",
       " Fighting"
-    ]
+    ],
+    "XP": 200
   },
   "Togetic": {
     "AC": "16",
@@ -43143,7 +43593,8 @@
       " Dark",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 3900
   },
   "Torchic": {
     "AC": "12",
@@ -43235,7 +43686,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 100
   },
   "Torkoal": {
     "AC": "16",
@@ -43337,7 +43789,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 3900
   },
   "Torterra": {
     "AC": "16",
@@ -43434,7 +43887,8 @@
     "Weaknesses": [
       "Ground",
       " Rock"
-    ]
+    ],
+    "XP": 10000
   },
   "Totodile": {
     "AC": "13",
@@ -43530,7 +43984,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Toxicroak": {
     "AC": "15",
@@ -43642,7 +44097,8 @@
       " Grass",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 3900
   },
   "Trapinch": {
     "AC": "12",
@@ -43735,7 +44191,8 @@
     "Weaknesses": [
       "Poison",
       " Rock"
-    ]
+    ],
+    "XP": 50
   },
   "Treecko": {
     "AC": "13",
@@ -43830,7 +44287,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Tropius": {
     "AC": "15",
@@ -43927,7 +44385,8 @@
       "Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 7200
   },
   "Turtwig": {
     "AC": "13",
@@ -44017,7 +44476,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 100
   },
   "Typhlosion": {
     "AC": "16",
@@ -44118,7 +44578,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 10000
   },
   "Tyranitar": {
     "AC": "17",
@@ -44239,7 +44700,8 @@
       " Ghost",
       " Normal",
       " Poison"
-    ]
+    ],
+    "XP": 11500
   },
   "Tyrogue": {
     "AC": "11",
@@ -44309,7 +44771,8 @@
       "Bug",
       " Dark",
       " Rock"
-    ]
+    ],
+    "XP": 50
   },
   "Umbreon": {
     "AC": "16",
@@ -44403,7 +44866,8 @@
     "Weaknesses": [
       "Dark",
       " Ghost"
-    ]
+    ],
+    "XP": 5000
   },
   "Unown": {
     "AC": "13",
@@ -44444,7 +44908,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 200
   },
   "Ursaring": {
     "AC": "15",
@@ -44541,7 +45006,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 2300
   },
   "Uxie": {
     "AC": "20",
@@ -44634,7 +45100,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 13000
   },
   "Vaporeon": {
     "AC": "15",
@@ -44727,7 +45194,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 3900
   },
   "Venomoth": {
     "AC": "15",
@@ -44824,7 +45292,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 3900
   },
   "Venonat": {
     "AC": "13",
@@ -44916,7 +45385,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 100
   },
   "Venusaur": {
     "AC": "16",
@@ -45012,7 +45482,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 10000
   },
   "Vespiquen": {
     "AC": "17",
@@ -45111,7 +45582,8 @@
       "Bug",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 3900
   },
   "Vibrava": {
     "AC": "13",
@@ -45202,7 +45674,8 @@
       "Fire",
       " Poison",
       " Rock"
-    ]
+    ],
+    "XP": 2900
   },
   "Victreebel": {
     "AC": "14",
@@ -45288,7 +45761,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 8400
   },
   "Vigoroth": {
     "AC": "15",
@@ -45381,7 +45855,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 2300
   },
   "Vileplume": {
     "AC": "16",
@@ -45462,7 +45937,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 10000
   },
   "Volbeat": {
     "AC": "16",
@@ -45561,7 +46037,8 @@
       "Grass",
       " Ground",
       " Fighting"
-    ]
+    ],
+    "XP": 2900
   },
   "Voltorb": {
     "AC": "14",
@@ -45652,7 +46129,8 @@
       "Electric",
       " Flying",
       " Steel"
-    ]
+    ],
+    "XP": 100
   },
   "Vulpix": {
     "AC": "13",
@@ -45749,7 +46227,8 @@
       " Grass",
       " Ice",
       " Steel"
-    ]
+    ],
+    "XP": 50
   },
   "Wailmer": {
     "AC": "12",
@@ -45843,7 +46322,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 700
   },
   "Wailord": {
     "AC": "13",
@@ -45935,7 +46415,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 5000
   },
   "Walrein": {
     "AC": "16",
@@ -46030,7 +46511,8 @@
     "Weaknesses": [
       "Ice",
       " Water"
-    ]
+    ],
+    "XP": 11500
   },
   "Wartortle": {
     "AC": "15",
@@ -46111,7 +46593,8 @@
       " Ice",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Weavile": {
     "AC": "16",
@@ -46226,7 +46709,8 @@
       "Dark",
       " Ghost",
       " Ice"
-    ]
+    ],
+    "XP": 7200
   },
   "Weedle": {
     "AC": "11",
@@ -46276,7 +46760,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 25
   },
   "Weepinbell": {
     "AC": "13",
@@ -46369,7 +46854,8 @@
       " Fighting",
       " Grass",
       " Water"
-    ]
+    ],
+    "XP": 1800
   },
   "Weezing": {
     "AC": "16",
@@ -46464,7 +46950,8 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 5900
   },
   "Whiscash": {
     "AC": "15",
@@ -46561,7 +47048,8 @@
       " Poison",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 2300
   },
   "Whismur": {
     "AC": "10",
@@ -46646,7 +47134,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 25
   },
   "Wigglytuff": {
     "AC": "15",
@@ -46738,7 +47227,8 @@
     "Weaknesses": [
       "Bug",
       " Dark"
-    ]
+    ],
+    "XP": 2300
   },
   "Wingull": {
     "AC": "12",
@@ -46829,7 +47319,8 @@
       " Fire",
       " Steel",
       " Water"
-    ]
+    ],
+    "XP": 50
   },
   "Wobbuffet": {
     "AC": "13",
@@ -46875,7 +47366,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 2300
   },
   "Wooper": {
     "AC": "11",
@@ -46968,7 +47460,8 @@
       " Poison",
       " Rock",
       " Steel"
-    ]
+    ],
+    "XP": 50
   },
   "Wormadam Plant Cloak": {
     "AC": "15",
@@ -47067,7 +47560,8 @@
       " Grass",
       " Ground",
       " Water"
-    ]
+    ],
+    "XP": 2300
   },
   "Wormadam Sand Cloak": {
     "AC": "16",
@@ -47164,7 +47658,8 @@
       "Fighting",
       " Ground",
       " Poison"
-    ]
+    ],
+    "XP": 2300
   },
   "Wormadam Trash Cloak": {
     "AC": "15",
@@ -47264,7 +47759,8 @@
       " Normal",
       " Psychic",
       " Steel"
-    ]
+    ],
+    "XP": 2300
   },
   "Wurmple": {
     "AC": "11",
@@ -47314,7 +47810,8 @@
       "Grass",
       " Ground",
       " Fighting"
-    ]
+    ],
+    "XP": 25
   },
   "Wynaut": {
     "AC": "12",
@@ -47364,7 +47861,8 @@
     "Weaknesses": [
       "Fighting",
       " Psychic"
-    ]
+    ],
+    "XP": 50
   },
   "Xatu": {
     "AC": "15",
@@ -47473,7 +47971,8 @@
       "Fighting",
       " Grass",
       " Psychic"
-    ]
+    ],
+    "XP": 2900
   },
   "Yanma": {
     "AC": "13",
@@ -47567,7 +48066,8 @@
       "Bug",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 1800
   },
   "Yanmega": {
     "AC": "15",
@@ -47665,7 +48165,8 @@
       "Bug",
       " Fighting",
       " Grass"
-    ]
+    ],
+    "XP": 10000
   },
   "Zangoose": {
     "AC": "14",
@@ -47766,7 +48267,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 2300
   },
   "Zapdos": {
     "AC": "17",
@@ -47861,7 +48363,8 @@
       " Flying",
       " Grass",
       " Steel"
-    ]
+    ],
+    "XP": 13000
   },
   "Zigzagoon": {
     "AC": "12",
@@ -47951,7 +48454,8 @@
     ],
     "Weaknesses": [
       "None"
-    ]
+    ],
+    "XP": 50
   },
   "Zubat": {
     "AC": "12",
@@ -48052,6 +48556,7 @@
       " Fighting",
       " Grass",
       " Poison"
-    ]
+    ],
+    "XP": 50
   }
 }
