@@ -102,6 +102,6 @@
     "NPCs": [                   
         "Captain of the Guard",
         "The Villain"
-    ]
-
+    ],
+    "Allow Pokemon": true
 }

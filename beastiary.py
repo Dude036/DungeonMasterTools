@@ -9,7 +9,16 @@ from numpy.random import randint
 import os
 import simplejson as json
 
-Beasts = json.load(open('beasts.json'), encoding='utf-8')
+with open("generate.json", 'r') as inf:
+    settings = json.load(inf)
+
+Beasts = {}
+with open('beasts.json', 'r') as inf:
+    Beasts.update(json.load(inf, encoding='utf-8'))
+if settings["Allow Pokemon"]:
+    with open('pokemon.json', 'r') as inf:
+        Beasts.update(json.load(inf, encoding='utf-8'))
+
 Levels = {
     '0.13': 50,
     '0.17': 65,
@@ -100,12 +109,9 @@ def print_monster(picked_monster):
 
     abilities = re.match(
         r'Str\s+([\d\-]*),\s+Dex\s+([\d\-]*),\s+Con\s+([\d\-]*),\s+Int\s+([\d\-]*),\s+Wis\s+([\d\-]*),\s+Cha\s+([\d\-]*)',
-        monster['AbilitiyScores'])
-    armor = re.match(r'(\-?\d+), touch (\-?\d+), flat-footed (\-?\d+)',
-                     monster['AC'])
-    saves = re.match(
-        r'Fort ([+-]\d+[\S ]*), Ref ([+-]\d+[\S ]*), Will ([+-]\d+[\S ]*)',
-        monster['Saves'])
+        monster['AbilityScores'])
+    armor = re.match(r'(\-?\d+), touch (\-?\d+), flat-footed (\-?\d+)', monster['AC'])
+    saves = re.match(r'Fort ([+-]\d+[\S ]*), Ref ([+-]\d+[\S ]*), Will ([+-]\d+[\S ]*)', monster['Saves'])
     # -5 + int(n / 2)
     if saves is None or armor is None or abilities is None:
         print(name)

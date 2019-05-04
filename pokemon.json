@@ -1,7 +1,7 @@
 {
   "Abomasnow": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 15, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 15, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -104,7 +104,7 @@
   },
   "Abra": {
     "AC": "12",
-    "AbilitiyScores": "Str 9, Dex 13, Con 8, Int 12, Wis 12, Cha 10",
+    "AbilityScores": "Str 9, Dex 13, Con 8, Int 12, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -185,7 +185,7 @@
   },
   "Absol": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 20, Con 15, Int 8, Wis 16, Cha 10",
+    "AbilityScores": "Str 15, Dex 20, Con 15, Int 8, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -300,7 +300,7 @@
   },
   "Aerodactyl": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 20, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 20, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -412,7 +412,7 @@
   },
   "Aggron": {
     "AC": "18",
-    "AbilitiyScores": "Str 20, Dex 14, Con 18, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 20, Dex 14, Con 18, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -533,7 +533,7 @@
   },
   "Aipom": {
     "AC": "14",
-    "AbilitiyScores": "Str 13, Dex 15, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 15, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -630,7 +630,7 @@
   },
   "Alakazam": {
     "AC": "17",
-    "AbilitiyScores": "Str 12, Dex 16, Con 12, Int 16, Wis 16, Cha 10",
+    "AbilityScores": "Str 12, Dex 16, Con 12, Int 16, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -729,7 +729,7 @@
   },
   "Altaria": {
     "AC": "17",
-    "AbilitiyScores": "Str 18, Dex 16, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 16, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -836,7 +836,7 @@
   },
   "Ambipom": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 19, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 19, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -931,7 +931,7 @@
   },
   "Ampharos": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 15, Con 16, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 17, Dex 15, Con 16, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -1023,7 +1023,7 @@
   },
   "Anorith": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 16, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 16, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -1115,7 +1115,7 @@
   },
   "Arbok": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 16, Con 12, Int 8, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 16, Con 12, Int 8, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -1217,7 +1217,7 @@
   },
   "Arcanine": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 18, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 18, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -1302,7 +1302,7 @@
   },
   "Arceus": {
     "AC": "25",
-    "AbilitiyScores": "Str 25, Dex 25, Con 25, Int 30, Wis 30, Cha 25",
+    "AbilityScores": "Str 25, Dex 25, Con 25, Int 30, Wis 30, Cha 25",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -1424,7 +1424,7 @@
   },
   "Ariados": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 12, Con 17, Int 6, Wis 12, Cha 8",
+    "AbilityScores": "Str 15, Dex 12, Con 17, Int 6, Wis 12, Cha 8",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -1526,7 +1526,7 @@
   },
   "Armaldo": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 14, Con 17, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 14, Con 17, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -1621,7 +1621,7 @@
   },
   "Aron": {
     "AC": "14",
-    "AbilitiyScores": "Str 13, Dex 10, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 10, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -1723,7 +1723,7 @@
   },
   "Articuno": {
     "AC": "18",
-    "AbilitiyScores": "Str 18, Dex 16, Con 18, Int 6, Wis 14, Cha 16",
+    "AbilityScores": "Str 18, Dex 16, Con 18, Int 6, Wis 14, Cha 16",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -1816,7 +1816,7 @@
   },
   "Azelf": {
     "AC": "16",
-    "AbilitiyScores": "Str 14, Dex 16, Con 17, Int 18, Wis 28, Cha 16",
+    "AbilityScores": "Str 14, Dex 16, Con 17, Int 18, Wis 28, Cha 16",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -1915,7 +1915,7 @@
   },
   "Azumarill": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 13, Con 12, Int 6, Wis 12, Cha 13",
+    "AbilityScores": "Str 15, Dex 13, Con 12, Int 6, Wis 12, Cha 13",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -2016,7 +2016,7 @@
   },
   "Azurill": {
     "AC": "11",
-    "AbilitiyScores": "Str 11, Dex 10, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 11, Dex 10, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.125,
     "DefensiveAbilities": {
@@ -2096,7 +2096,7 @@
   },
   "Bagon": {
     "AC": "12",
-    "AbilitiyScores": "Str 13, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -2187,7 +2187,7 @@
   },
   "Baltoy": {
     "AC": "14",
-    "AbilitiyScores": "Str 13, Dex 12, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 12, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -2300,7 +2300,7 @@
   },
   "Banette": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 15, Con 14, Int 8, Wis 16, Cha 10",
+    "AbilityScores": "Str 16, Dex 15, Con 14, Int 8, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -2402,7 +2402,7 @@
   },
   "Barboach": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 13, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 13, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -2495,7 +2495,7 @@
   },
   "Bastiodon": {
     "AC": "20",
-    "AbilitiyScores": "Str 20, Dex 10, Con 20, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 20, Dex 10, Con 20, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -2599,7 +2599,7 @@
   },
   "Bayleef": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 14, Con 11, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 14, Con 11, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -2691,7 +2691,7 @@
   },
   "Beautifly": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 16, Con 13, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 16, Con 13, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -2783,7 +2783,7 @@
   },
   "Beedrill": {
     "AC": "14",
-    "AbilitiyScores": "Str 12, Dex 16, Con 13, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 12, Dex 16, Con 13, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -2882,7 +2882,7 @@
   },
   "Beldum": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 10, Con 14, Int 8, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 10, Con 14, Int 8, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -2936,7 +2936,7 @@
   },
   "Bellossom": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 14, Con 17, Int 6, Wis 12, Cha 15",
+    "AbilityScores": "Str 16, Dex 14, Con 17, Int 6, Wis 12, Cha 15",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -3020,7 +3020,7 @@
   },
   "Bellsprout": {
     "AC": "11",
-    "AbilitiyScores": "Str 10, Dex 12, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 12, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -3116,7 +3116,7 @@
   },
   "Bibarel": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 15, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 15, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -3221,7 +3221,7 @@
   },
   "Bidoof": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 9, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 9, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -3313,7 +3313,7 @@
   },
   "Blastoise": {
     "AC": "17",
-    "AbilitiyScores": "Str 17, Dex 14, Con 19, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 17, Dex 14, Con 19, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -3411,7 +3411,7 @@
   },
   "Blaziken": {
     "AC": "15",
-    "AbilitiyScores": "Str 17, Dex 19, Con 14, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 17, Dex 19, Con 14, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -3521,7 +3521,7 @@
   },
   "Blissey": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 13, Con 20, Int 6, Wis 14, Cha 16",
+    "AbilityScores": "Str 14, Dex 13, Con 20, Int 6, Wis 14, Cha 16",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -3628,7 +3628,7 @@
   },
   "Bonsly": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 8, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 15, Dex 8, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -3723,7 +3723,7 @@
   },
   "Breloom": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 15, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 15, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -3828,7 +3828,7 @@
   },
   "Bronzong": {
     "AC": "17",
-    "AbilitiyScores": "Str 18, Dex 11, Con 18, Int 8, Wis 18, Cha 10",
+    "AbilityScores": "Str 18, Dex 11, Con 18, Int 8, Wis 18, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -3947,7 +3947,7 @@
   },
   "Bronzor": {
     "AC": "15",
-    "AbilitiyScores": "Str 12, Dex 8, Con 16, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 12, Dex 8, Con 16, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -4062,7 +4062,7 @@
   },
   "Budew": {
     "AC": "13",
-    "AbilitiyScores": "Str 10, Dex 11, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 10, Dex 11, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -4145,7 +4145,7 @@
   },
   "Buizel": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 16, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 16, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -4236,7 +4236,7 @@
   },
   "Bulbasaur": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -4332,7 +4332,7 @@
   },
   "Buneary": {
     "AC": "13",
-    "AbilitiyScores": "Str 14, Dex 15, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 14, Dex 15, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -4423,7 +4423,7 @@
   },
   "Burmy": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 10, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 10, Dex 10, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -4475,7 +4475,7 @@
   },
   "Butterfree": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 15, Con 10, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 14, Dex 15, Con 10, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -4559,7 +4559,7 @@
   },
   "Cacnea": {
     "AC": "12",
-    "AbilitiyScores": "Str 12, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -4658,7 +4658,7 @@
   },
   "Cacturne": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 15, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 15, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -4763,7 +4763,7 @@
   },
   "Camerupt": {
     "AC": "14",
-    "AbilitiyScores": "Str 16, Dex 14, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 14, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -4865,7 +4865,7 @@
   },
   "Carnivine": {
     "AC": "14",
-    "AbilitiyScores": "Str 16, Dex 14, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 16, Dex 14, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -4957,7 +4957,7 @@
   },
   "Carvanha": {
     "AC": "11",
-    "AbilitiyScores": "Str 10, Dex 14, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 14, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -5056,7 +5056,7 @@
   },
   "Cascoon": {
     "AC": "11",
-    "AbilitiyScores": "Str 10, Dex 8, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 8, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -5099,7 +5099,7 @@
   },
   "Castform": {
     "AC": "15",
-    "AbilitiyScores": "Str 13, Dex 13, Con 13, Int 8, Wis 13, Cha 13",
+    "AbilityScores": "Str 13, Dex 13, Con 13, Int 8, Wis 13, Cha 13",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -5188,7 +5188,7 @@
   },
   "Caterpie": {
     "AC": "11",
-    "AbilitiyScores": "Str 9, Dex 10, Con 8, Int 6, Wis 10, Cha 14",
+    "AbilityScores": "Str 9, Dex 10, Con 8, Int 6, Wis 10, Cha 14",
     "Alignment": "N",
     "CR": 0.125,
     "DefensiveAbilities": {
@@ -5236,7 +5236,7 @@
   },
   "Celebi": {
     "AC": "18",
-    "AbilitiyScores": "Str 16, Dex 20, Con 16, Int 16, Wis 20, Cha 20",
+    "AbilityScores": "Str 16, Dex 20, Con 16, Int 16, Wis 20, Cha 20",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -5341,7 +5341,7 @@
   },
   "Chansey": {
     "AC": "13",
-    "AbilitiyScores": "Str 11, Dex 10, Con 16, Int 6, Wis 12, Cha 16",
+    "AbilityScores": "Str 11, Dex 10, Con 16, Int 6, Wis 12, Cha 16",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -5451,7 +5451,7 @@
   },
   "Charizard": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 19, Con 15, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 16, Dex 19, Con 15, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -5561,7 +5561,7 @@
   },
   "Charmander": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 14, Con 11, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 14, Con 11, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -5656,7 +5656,7 @@
   },
   "Charmeleon": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 16, Con 11, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 16, Con 11, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -5749,7 +5749,7 @@
   },
   "Chatot": {
     "AC": "13",
-    "AbilitiyScores": "Str 11, Dex 16, Con 13, Int 6, Wis 12, Cha 14",
+    "AbilityScores": "Str 11, Dex 16, Con 13, Int 6, Wis 12, Cha 14",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -5842,7 +5842,7 @@
   },
   "Cherrim": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 16, Con 17, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 16, Con 17, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -5929,7 +5929,7 @@
   },
   "Cherubi": {
     "AC": "12",
-    "AbilitiyScores": "Str 11, Dex 10, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 11, Dex 10, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -6014,7 +6014,7 @@
   },
   "Chikorita": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 11, Con 10, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 14, Dex 11, Con 10, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -6108,7 +6108,7 @@
   },
   "Chimchar": {
     "AC": "13",
-    "AbilitiyScores": "Str 11, Dex 14, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 11, Dex 14, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -6209,7 +6209,7 @@
   },
   "Chimecho": {
     "AC": "16",
-    "AbilitiyScores": "Str 13, Dex 17, Con 16, Int 8, Wis 16, Cha 10",
+    "AbilityScores": "Str 13, Dex 17, Con 16, Int 8, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -6303,7 +6303,7 @@
   },
   "Chinchou": {
     "AC": "13",
-    "AbilitiyScores": "Str 9, Dex 14, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 9, Dex 14, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -6400,7 +6400,7 @@
   },
   "Chingling": {
     "AC": "13",
-    "AbilitiyScores": "Str 11, Dex 11, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 11, Dex 11, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -6486,7 +6486,7 @@
   },
   "Clamperl": {
     "AC": "14",
-    "AbilitiyScores": "Str 13, Dex 10, Con 15, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 10, Con 15, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -6553,7 +6553,7 @@
   },
   "Claydol": {
     "AC": "18",
-    "AbilitiyScores": "Str 16, Dex 15, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 15, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -6667,7 +6667,7 @@
   },
   "Clefable": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 15, Con 12, Int 6, Wis 14, Cha 14",
+    "AbilityScores": "Str 14, Dex 15, Con 12, Int 6, Wis 14, Cha 14",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -6760,7 +6760,7 @@
   },
   "Clefairy": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 12, Con 10, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 12, Dex 12, Con 10, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -6875,7 +6875,7 @@
   },
   "Cleffa": {
     "AC": "11",
-    "AbilitiyScores": "Str 10, Dex 9, Con 10, Int 6, Wis 10, Cha 14",
+    "AbilityScores": "Str 10, Dex 9, Con 10, Int 6, Wis 10, Cha 14",
     "Alignment": "N",
     "CR": 0.125,
     "DefensiveAbilities": {
@@ -6961,7 +6961,7 @@
   },
   "Cloyster": {
     "AC": "18",
-    "AbilitiyScores": "Str 15, Dex 12, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 12, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -7045,7 +7045,7 @@
   },
   "Combee": {
     "AC": "13",
-    "AbilitiyScores": "Str 10, Dex 13, Con 10, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 13, Con 10, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -7099,7 +7099,7 @@
   },
   "Combusken": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 15, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 15, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -7202,7 +7202,7 @@
   },
   "Corphish": {
     "AC": "12",
-    "AbilitiyScores": "Str 13, Dex 10, Con 11, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 10, Con 11, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -7301,7 +7301,7 @@
   },
   "Corsola": {
     "AC": "16",
-    "AbilitiyScores": "Str 14, Dex 12, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 14, Dex 12, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -7412,7 +7412,7 @@
   },
   "Cradily": {
     "AC": "17",
-    "AbilitiyScores": "Str 18, Dex 13, Con 19, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 13, Con 19, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -7508,7 +7508,7 @@
   },
   "Cranidos": {
     "AC": "12",
-    "AbilitiyScores": "Str 15, Dex 13, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 15, Dex 13, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -7610,7 +7610,7 @@
   },
   "Crawdaunt": {
     "AC": "14",
-    "AbilitiyScores": "Str 16, Dex 13, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 13, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -7719,7 +7719,7 @@
   },
   "Cresselia": {
     "AC": "20",
-    "AbilitiyScores": "Str 16, Dex 16, Con 23, Int 18, Wis 20, Cha 18",
+    "AbilityScores": "Str 16, Dex 16, Con 23, Int 18, Wis 20, Cha 18",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -7808,7 +7808,7 @@
   },
   "Croagunk": {
     "AC": "12",
-    "AbilitiyScores": "Str 11, Dex 13, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 11, Dex 13, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -7918,7 +7918,7 @@
   },
   "Crobat": {
     "AC": "17",
-    "AbilitiyScores": "Str 16, Dex 20, Con 16, Int 6, Wis 14, Cha 8",
+    "AbilityScores": "Str 16, Dex 20, Con 16, Int 6, Wis 14, Cha 8",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -8021,7 +8021,7 @@
   },
   "Croconaw": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 13, Con 15, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 15, Dex 13, Con 15, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -8117,7 +8117,7 @@
   },
   "Cubone": {
     "AC": "14",
-    "AbilitiyScores": "Str 12, Dex 11, Con 12, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 12, Dex 11, Con 12, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -8216,7 +8216,7 @@
   },
   "Cyndaquil": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 14, Con 11, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 14, Con 11, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -8309,7 +8309,7 @@
   },
   "Darkrai": {
     "AC": "17",
-    "AbilitiyScores": "Str 17, Dex 20, Con 16, Int 18, Wis 18, Cha 15",
+    "AbilityScores": "Str 17, Dex 20, Con 16, Int 18, Wis 18, Cha 15",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -8413,7 +8413,7 @@
   },
   "Delcatty": {
     "AC": "14",
-    "AbilitiyScores": "Str 12, Dex 16, Con 12, Int 6, Wis 12, Cha 14",
+    "AbilityScores": "Str 12, Dex 16, Con 12, Int 6, Wis 12, Cha 14",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -8494,7 +8494,7 @@
   },
   "Delibird": {
     "AC": "13",
-    "AbilitiyScores": "Str 11, Dex 15, Con 10, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 11, Dex 15, Con 10, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -8568,7 +8568,7 @@
   },
   "Deoxys": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 20, Con 16, Int 20, Wis 20, Cha 12",
+    "AbilityScores": "Str 15, Dex 20, Con 16, Int 20, Wis 20, Cha 12",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -8675,7 +8675,7 @@
   },
   "Dewgong": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 16, Con 14, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 17, Dex 16, Con 14, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -8771,7 +8771,7 @@
   },
   "Dialga": {
     "AC": "20",
-    "AbilitiyScores": "Str 20, Dex 19, Con 20, Int 20, Wis 24, Cha 16",
+    "AbilityScores": "Str 20, Dex 19, Con 20, Int 20, Wis 24, Cha 16",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -8880,7 +8880,7 @@
   },
   "Diglett": {
     "AC": "12",
-    "AbilitiyScores": "Str 12, Dex 12, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 12, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -8972,7 +8972,7 @@
   },
   "Ditto": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 12, Con 12, Int 8, Wis 12, Cha 12",
+    "AbilityScores": "Str 12, Dex 12, Con 12, Int 8, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -9014,7 +9014,7 @@
   },
   "Dodrio": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 19, Con 13, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 19, Con 13, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -9108,7 +9108,7 @@
   },
   "Doduo": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 15, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 15, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -9199,7 +9199,7 @@
   },
   "Donphan": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 12, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 12, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -9293,7 +9293,7 @@
   },
   "Dragonair": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 15, Con 12, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 15, Dex 15, Con 12, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -9389,7 +9389,7 @@
   },
   "Dragonite": {
     "AC": "17",
-    "AbilitiyScores": "Str 19, Dex 18, Con 16, Int 6, Wis 14, Cha 14",
+    "AbilityScores": "Str 19, Dex 18, Con 16, Int 6, Wis 14, Cha 14",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -9503,7 +9503,7 @@
   },
   "Drapion": {
     "AC": "17",
-    "AbilitiyScores": "Str 18, Dex 17, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 17, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -9615,7 +9615,7 @@
   },
   "Dratini": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 12, Con 10, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 12, Dex 12, Con 10, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -9712,7 +9712,7 @@
   },
   "Drifblim": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 16, Con 20, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 16, Con 20, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -9815,7 +9815,7 @@
   },
   "Drifloon": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 14, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 14, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -9917,7 +9917,7 @@
   },
   "Drowzee": {
     "AC": "14",
-    "AbilitiyScores": "Str 13, Dex 10, Con 12, Int 6, Wis 14, Cha 8",
+    "AbilityScores": "Str 13, Dex 10, Con 12, Int 6, Wis 14, Cha 8",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -10021,7 +10021,7 @@
   },
   "Dugtrio": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 18, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 18, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -10120,7 +10120,7 @@
   },
   "Dunsparce": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 14, Con 14, Int 6, Wis 10, Cha 8",
+    "AbilityScores": "Str 15, Dex 14, Con 14, Int 6, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -10229,7 +10229,7 @@
   },
   "Dusclops": {
     "AC": "18",
-    "AbilitiyScores": "Str 16, Dex 12, Con 16, Int 8, Wis 16, Cha 10",
+    "AbilityScores": "Str 16, Dex 12, Con 16, Int 8, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -10338,7 +10338,7 @@
   },
   "Dusknoir": {
     "AC": "19",
-    "AbilitiyScores": "Str 20, Dex 13, Con 17, Int 8, Wis 16, Cha 10",
+    "AbilityScores": "Str 20, Dex 13, Con 17, Int 8, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -10447,7 +10447,7 @@
   },
   "Duskull": {
     "AC": "13",
-    "AbilitiyScores": "Str 11, Dex 8, Con 14, Int 8, Wis 12, Cha 10",
+    "AbilityScores": "Str 11, Dex 8, Con 14, Int 8, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -10547,7 +10547,7 @@
   },
   "Dustox": {
     "AC": "15",
-    "AbilitiyScores": "Str 12, Dex 14, Con 14, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 12, Dex 14, Con 14, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -10645,7 +10645,7 @@
   },
   "Eevee": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 13, Con 10, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 13, Dex 13, Con 10, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -10731,7 +10731,7 @@
   },
   "Ekans": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 13, Con 11, Int 8, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 13, Con 11, Int 8, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -10829,7 +10829,7 @@
   },
   "Electabuzz": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 18, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 18, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -10920,7 +10920,7 @@
   },
   "Electivire": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 18, Con 17, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 17, Dex 18, Con 17, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -11017,7 +11017,7 @@
   },
   "Electrike": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 14, Con 11, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 14, Con 11, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -11107,7 +11107,7 @@
   },
   "Electrode": {
     "AC": "17",
-    "AbilitiyScores": "Str 14, Dex 17, Con 15, Int 6, Wis 12, Cha 8",
+    "AbilityScores": "Str 14, Dex 17, Con 15, Int 6, Wis 12, Cha 8",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -11198,7 +11198,7 @@
   },
   "Elekid": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 16, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 16, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -11287,7 +11287,7 @@
   },
   "Empoleon": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 15, Con 18, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 17, Dex 15, Con 18, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -11396,7 +11396,7 @@
   },
   "Entei": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 19, Con 16, Int 6, Wis 14, Cha 14",
+    "AbilityScores": "Str 18, Dex 19, Con 16, Int 6, Wis 14, Cha 14",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -11491,7 +11491,7 @@
   },
   "Espeon": {
     "AC": "16",
-    "AbilitiyScores": "Str 14, Dex 18, Con 13, Int 6, Wis 15, Cha 14",
+    "AbilityScores": "Str 14, Dex 18, Con 13, Int 6, Wis 15, Cha 14",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -11586,7 +11586,7 @@
   },
   "Exeggcute": {
     "AC": "14",
-    "AbilitiyScores": "Str 13, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -11690,7 +11690,7 @@
   },
   "Exeggutor": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 14, Con 14, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 16, Dex 14, Con 14, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -11788,7 +11788,7 @@
   },
   "Exploud": {
     "AC": "14",
-    "AbilitiyScores": "Str 16, Dex 16, Con 15, Int 6, Wis 12, Cha 14",
+    "AbilityScores": "Str 16, Dex 16, Con 15, Int 6, Wis 12, Cha 14",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -11888,7 +11888,7 @@
   },
   "Farfetch'd": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 14, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 14, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -11987,7 +11987,7 @@
   },
   "Fearow": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 16, Con 10, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 16, Con 10, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -12075,7 +12075,7 @@
   },
   "Feebas": {
     "AC": "12",
-    "AbilitiyScores": "Str 9, Dex 15, Con 9, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 9, Dex 15, Con 9, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -12147,7 +12147,7 @@
   },
   "Feraligatr": {
     "AC": "16",
-    "AbilitiyScores": "Str 19, Dex 16, Con 17, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 19, Dex 16, Con 17, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -12247,7 +12247,7 @@
   },
   "Finneon": {
     "AC": "14",
-    "AbilitiyScores": "Str 11, Dex 14, Con 13, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 11, Dex 14, Con 13, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -12339,7 +12339,7 @@
   },
   "Flaaffy": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 13, Con 14, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 13, Dex 13, Con 14, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 4,
     "DefensiveAbilities": {
@@ -12426,7 +12426,7 @@
   },
   "Flareon": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 15, Con 13, Int 6, Wis 12, Cha 14",
+    "AbilityScores": "Str 18, Dex 15, Con 13, Int 6, Wis 12, Cha 14",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -12522,7 +12522,7 @@
   },
   "Floatzel": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 20, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 20, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -12620,7 +12620,7 @@
   },
   "Flygon": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 19, Con 17, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 17, Dex 19, Con 17, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -12721,7 +12721,7 @@
   },
   "Forretress": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 12, Con 20, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 17, Dex 12, Con 20, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -12824,7 +12824,7 @@
   },
   "Froslass": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 18, Con 16, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 15, Dex 18, Con 16, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -12928,7 +12928,7 @@
   },
   "Furret": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 16, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 16, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -13027,7 +13027,7 @@
   },
   "Gabite": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 16, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 16, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -13118,7 +13118,7 @@
   },
   "Gallade": {
     "AC": "16",
-    "AbilitiyScores": "Str 20, Dex 18, Con 18, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 20, Dex 18, Con 18, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -13236,7 +13236,7 @@
   },
   "Garchomp": {
     "AC": "17",
-    "AbilitiyScores": "Str 18, Dex 20, Con 17, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 18, Dex 20, Con 17, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -13336,7 +13336,7 @@
   },
   "Gardevoir": {
     "AC": "16",
-    "AbilitiyScores": "Str 14, Dex 18, Con 10, Int 12, Wis 16, Cha 12",
+    "AbilityScores": "Str 14, Dex 18, Con 10, Int 12, Wis 16, Cha 12",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -13445,7 +13445,7 @@
   },
   "Gastly": {
     "AC": "12",
-    "AbilitiyScores": "Str 9, Dex 13, Con 11, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 9, Dex 13, Con 11, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -13549,7 +13549,7 @@
   },
   "Gastrodon": {
     "AC": "14",
-    "AbilitiyScores": "Str 16, Dex 13, Con 20, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 13, Con 20, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -13643,7 +13643,7 @@
   },
   "Gengar": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 18, Con 14, Int 8, Wis 16, Cha 10",
+    "AbilityScores": "Str 14, Dex 18, Con 14, Int 8, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -13751,7 +13751,7 @@
   },
   "Geodude": {
     "AC": "13",
-    "AbilitiyScores": "Str 14, Dex 9, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 14, Dex 9, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -13858,7 +13858,7 @@
   },
   "Gible": {
     "AC": "12",
-    "AbilitiyScores": "Str 12, Dex 11, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 11, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -13949,7 +13949,7 @@
   },
   "Girafarig": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 17, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 15, Dex 17, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -14052,7 +14052,7 @@
   },
   "Giratina Altered Forme": {
     "AC": "22",
-    "AbilitiyScores": "Str 20, Dex 16, Con 25, Int 18, Wis 22, Cha 16",
+    "AbilityScores": "Str 20, Dex 16, Con 25, Int 18, Wis 22, Cha 16",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -14161,7 +14161,7 @@
   },
   "Giratina Origin Forme": {
     "AC": "20",
-    "AbilitiyScores": "Str 22, Dex 18, Con 25, Int 18, Wis 22, Cha 16",
+    "AbilityScores": "Str 22, Dex 18, Con 25, Int 18, Wis 22, Cha 16",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -14269,7 +14269,7 @@
   },
   "Glaceon": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 16, Con 17, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 16, Con 17, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -14361,7 +14361,7 @@
   },
   "Glalie": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 16, Con 16, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 16, Dex 16, Con 16, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -14453,7 +14453,7 @@
   },
   "Glameow": {
     "AC": "13",
-    "AbilitiyScores": "Str 10, Dex 15, Con 12, Int 6, Wis 10, Cha 14",
+    "AbilityScores": "Str 10, Dex 15, Con 12, Int 6, Wis 10, Cha 14",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -14548,7 +14548,7 @@
   },
   "Gligar": {
     "AC": "16",
-    "AbilitiyScores": "Str 14, Dex 15, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 14, Dex 15, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -14659,7 +14659,7 @@
   },
   "Gliscor": {
     "AC": "17",
-    "AbilitiyScores": "Str 18, Dex 17, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 17, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -14771,7 +14771,7 @@
   },
   "Gloom": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 12, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 12, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -14864,7 +14864,7 @@
   },
   "Golbat": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 18, Con 14, Int 6, Wis 14, Cha 8",
+    "AbilityScores": "Str 14, Dex 18, Con 14, Int 6, Wis 14, Cha 8",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -14968,7 +14968,7 @@
   },
   "Goldeen": {
     "AC": "13",
-    "AbilitiyScores": "Str 11, Dex 13, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 11, Dex 13, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -15057,7 +15057,7 @@
   },
   "Golduck": {
     "AC": "16",
-    "AbilitiyScores": "Str 14, Dex 15, Con 14, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 14, Dex 15, Con 14, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -15157,7 +15157,7 @@
   },
   "Golem": {
     "AC": "16",
-    "AbilitiyScores": "Str 19, Dex 13, Con 18, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 19, Dex 13, Con 18, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -15262,7 +15262,7 @@
   },
   "Gorebyss": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 15, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 15, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -15355,7 +15355,7 @@
   },
   "Granbull": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 13, Con 12, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 15, Dex 13, Con 12, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -15468,7 +15468,7 @@
   },
   "Graveler": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 10, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 10, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -15573,7 +15573,7 @@
   },
   "Grimer": {
     "AC": "12",
-    "AbilitiyScores": "Str 14, Dex 9, Con 16, Int 6, Wis 10, Cha 8",
+    "AbilityScores": "Str 14, Dex 9, Con 16, Int 6, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -15674,7 +15674,7 @@
   },
   "Grotle": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 11, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 11, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -15763,7 +15763,7 @@
   },
   "Groudon": {
     "AC": "18",
-    "AbilitiyScores": "Str 24, Dex 22, Con 20, Int 10, Wis 18, Cha 12",
+    "AbilityScores": "Str 24, Dex 22, Con 20, Int 10, Wis 18, Cha 12",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -15865,7 +15865,7 @@
   },
   "Grovyle": {
     "AC": "14",
-    "AbilitiyScores": "Str 13, Dex 17, Con 11, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 17, Con 11, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -15964,7 +15964,7 @@
   },
   "Growlithe": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 14, Con 10, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 14, Con 10, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -16062,7 +16062,7 @@
   },
   "Grumpig": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 16, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 16, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -16166,7 +16166,7 @@
   },
   "Gulpin": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 10, Con 15, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 10, Con 15, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -16259,7 +16259,7 @@
   },
   "Gyarados": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 16, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 16, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -16362,7 +16362,7 @@
   },
   "Happiny": {
     "AC": "11",
-    "AbilitiyScores": "Str 9, Dex 8, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 9, Dex 8, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -16439,7 +16439,7 @@
   },
   "Hariyama": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 12, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 12, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -16540,7 +16540,7 @@
   },
   "Haunter": {
     "AC": "14",
-    "AbilitiyScores": "Str 12, Dex 15, Con 13, Int 6, Wis 15, Cha 10",
+    "AbilityScores": "Str 12, Dex 15, Con 13, Int 6, Wis 15, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -16646,7 +16646,7 @@
   },
   "Heatran": {
     "AC": "20",
-    "AbilitiyScores": "Str 19, Dex 15, Con 19, Int 10, Wis 14, Cha 16",
+    "AbilityScores": "Str 19, Dex 15, Con 19, Int 10, Wis 14, Cha 16",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -16748,7 +16748,7 @@
   },
   "Heracross": {
     "AC": "18",
-    "AbilitiyScores": "Str 18, Dex 16, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 18, Dex 16, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -16854,7 +16854,7 @@
   },
   "Hippopotas": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 10, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 14, Dex 10, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -16940,7 +16940,7 @@
   },
   "Hippowdon": {
     "AC": "18",
-    "AbilitiyScores": "Str 18, Dex 13, Con 19, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 18, Dex 13, Con 19, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -17030,7 +17030,7 @@
   },
   "Hitmonchan": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 14, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 14, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -17126,7 +17126,7 @@
   },
   "Hitmonlee": {
     "AC": "16",
-    "AbilitiyScores": "Str 14, Dex 16, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 16, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -17223,7 +17223,7 @@
   },
   "Hitmontop": {
     "AC": "16",
-    "AbilitiyScores": "Str 15, Dex 15, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 15, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -17316,7 +17316,7 @@
   },
   "Ho-oh": {
     "AC": "19",
-    "AbilitiyScores": "Str 22, Dex 20, Con 18, Int 12, Wis 16, Cha 16",
+    "AbilityScores": "Str 22, Dex 20, Con 18, Int 12, Wis 16, Cha 16",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -17424,7 +17424,7 @@
   },
   "Honchkrow": {
     "AC": "13",
-    "AbilitiyScores": "Str 16, Dex 17, Con 15, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 16, Dex 17, Con 15, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -17524,7 +17524,7 @@
   },
   "Hoothoot": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 11, Con 10, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 10, Dex 11, Con 10, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -17624,7 +17624,7 @@
   },
   "Hoppip": {
     "AC": "13",
-    "AbilitiyScores": "Str 10, Dex 12, Con 12, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 10, Dex 12, Con 12, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -17724,7 +17724,7 @@
   },
   "Horsea": {
     "AC": "13",
-    "AbilitiyScores": "Str 11, Dex 14, Con 10, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 11, Dex 14, Con 10, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -17811,7 +17811,7 @@
   },
   "Houndoom": {
     "AC": "17",
-    "AbilitiyScores": "Str 15, Dex 17, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 17, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -17918,7 +17918,7 @@
   },
   "Houndour": {
     "AC": "12",
-    "AbilitiyScores": "Str 11, Dex 14, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 11, Dex 14, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -18024,7 +18024,7 @@
   },
   "Huntail": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 14, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 17, Dex 14, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -18114,7 +18114,7 @@
   },
   "Hypno": {
     "AC": "16",
-    "AbilitiyScores": "Str 14, Dex 15, Con 13, Int 8, Wis 16, Cha 8",
+    "AbilityScores": "Str 14, Dex 15, Con 13, Int 8, Wis 16, Cha 8",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -18220,7 +18220,7 @@
   },
   "Igglybuff": {
     "AC": "10",
-    "AbilitiyScores": "Str 9, Dex 10, Con 10, Int 6, Wis 10, Cha 14",
+    "AbilityScores": "Str 9, Dex 10, Con 10, Int 6, Wis 10, Cha 14",
     "Alignment": "N",
     "CR": 0.125,
     "DefensiveAbilities": {
@@ -18302,7 +18302,7 @@
   },
   "Illumise": {
     "AC": "16",
-    "AbilitiyScores": "Str 14, Dex 16, Con 15, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 14, Dex 16, Con 15, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -18401,7 +18401,7 @@
   },
   "Infernape": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 20, Con 15, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 15, Dex 20, Con 15, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -18512,7 +18512,7 @@
   },
   "Ivysaur": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 14, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 14, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -18606,7 +18606,7 @@
   },
   "Jigglypuff": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 12, Con 10, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 12, Dex 12, Con 10, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -18717,7 +18717,7 @@
   },
   "Jirachi": {
     "AC": "18",
-    "AbilitiyScores": "Str 18, Dex 18, Con 18, Int 18, Wis 18, Cha 18",
+    "AbilityScores": "Str 18, Dex 18, Con 18, Int 18, Wis 18, Cha 18",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -18826,7 +18826,7 @@
   },
   "Jolteon": {
     "AC": "16",
-    "AbilitiyScores": "Str 15, Dex 18, Con 13, Int 6, Wis 12, Cha 14",
+    "AbilityScores": "Str 15, Dex 18, Con 13, Int 6, Wis 12, Cha 14",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -18920,7 +18920,7 @@
   },
   "Jumpluff": {
     "AC": "16",
-    "AbilitiyScores": "Str 14, Dex 18, Con 16, Int 6, Wis 14, Cha 12",
+    "AbilityScores": "Str 14, Dex 18, Con 16, Int 6, Wis 14, Cha 12",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -19016,7 +19016,7 @@
   },
   "Jynx": {
     "AC": "15",
-    "AbilitiyScores": "Str 12, Dex 16, Con 12, Int 8, Wis 12, Cha 14",
+    "AbilityScores": "Str 12, Dex 16, Con 12, Int 8, Wis 12, Cha 14",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -19126,7 +19126,7 @@
   },
   "Kabuto": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 12, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 14, Dex 12, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -19223,7 +19223,7 @@
   },
   "Kabutops": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 16, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 16, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -19325,7 +19325,7 @@
   },
   "Kadabra": {
     "AC": "14",
-    "AbilitiyScores": "Str 11, Dex 15, Con 10, Int 14, Wis 14, Cha 10",
+    "AbilityScores": "Str 11, Dex 15, Con 10, Int 14, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -19426,7 +19426,7 @@
   },
   "Kakuna": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 9, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 9, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -19473,7 +19473,7 @@
   },
   "Kangaskhan": {
     "AC": "18",
-    "AbilitiyScores": "Str 19, Dex 18, Con 15, Int 6, Wis 12, Cha 8",
+    "AbilityScores": "Str 19, Dex 18, Con 15, Int 6, Wis 12, Cha 8",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -19575,7 +19575,7 @@
   },
   "Kecleon": {
     "AC": "16",
-    "AbilitiyScores": "Str 15, Dex 10, Con 15, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 15, Dex 10, Con 15, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -19676,7 +19676,7 @@
   },
   "Kingdra": {
     "AC": "17",
-    "AbilitiyScores": "Str 18, Dex 18, Con 14, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 18, Dex 18, Con 14, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -19761,7 +19761,7 @@
   },
   "Kingler": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 15, Con 15, Int 6, Wis 12, Cha 8",
+    "AbilityScores": "Str 17, Dex 15, Con 15, Int 6, Wis 12, Cha 8",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -19858,7 +19858,7 @@
   },
   "Kirlia": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 14, Con 10, Int 10, Wis 14, Cha 12",
+    "AbilityScores": "Str 10, Dex 14, Con 10, Int 10, Wis 14, Cha 12",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -19963,7 +19963,7 @@
   },
   "Koffing": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 10, Con 14, Int 6, Wis 10, Cha 8",
+    "AbilityScores": "Str 15, Dex 10, Con 14, Int 6, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -20058,7 +20058,7 @@
   },
   "Krabby": {
     "AC": "13",
-    "AbilitiyScores": "Str 14, Dex 12, Con 12, Int 6, Wis 10, Cha 8",
+    "AbilityScores": "Str 14, Dex 12, Con 12, Int 6, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -20154,7 +20154,7 @@
   },
   "Kricketot": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 8, Con 10, Int 6, Wis 10, Cha 14",
+    "AbilityScores": "Str 10, Dex 8, Con 10, Int 6, Wis 10, Cha 14",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -20203,7 +20203,7 @@
   },
   "Kricketune": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 14, Con 12, Int 6, Wis 12, Cha 16",
+    "AbilityScores": "Str 12, Dex 14, Con 12, Int 6, Wis 12, Cha 16",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -20294,7 +20294,7 @@
   },
   "Kyogre": {
     "AC": "19",
-    "AbilitiyScores": "Str 24, Dex 18, Con 20, Int 10, Wis 18, Cha 16",
+    "AbilityScores": "Str 24, Dex 18, Con 20, Int 10, Wis 18, Cha 16",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -20385,7 +20385,7 @@
   },
   "Lairon": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 11, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 11, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -20487,7 +20487,7 @@
   },
   "Lanturn": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 14, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 14, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -20585,7 +20585,7 @@
   },
   "Lapras": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 14, Con 12, Int 6, Wis 12, Cha 14",
+    "AbilityScores": "Str 17, Dex 14, Con 12, Int 6, Wis 12, Cha 14",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -20685,7 +20685,7 @@
   },
   "Larvitar": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 12, Con 15, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 12, Con 15, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -20789,7 +20789,7 @@
   },
   "Latias": {
     "AC": "20",
-    "AbilitiyScores": "Str 18, Dex 20, Con 20, Int 10, Wis 18, Cha 14",
+    "AbilityScores": "Str 18, Dex 20, Con 20, Int 10, Wis 18, Cha 14",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -20902,7 +20902,7 @@
   },
   "Latios": {
     "AC": "17",
-    "AbilitiyScores": "Str 18, Dex 20, Con 18, Int 10, Wis 18, Cha 14",
+    "AbilityScores": "Str 18, Dex 20, Con 18, Int 10, Wis 18, Cha 14",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -21014,7 +21014,7 @@
   },
   "Leafeon": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 17, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 17, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -21112,7 +21112,7 @@
   },
   "Ledian": {
     "AC": "16",
-    "AbilitiyScores": "Str 14, Dex 15, Con 14, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 14, Dex 15, Con 14, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -21211,7 +21211,7 @@
   },
   "Ledyba": {
     "AC": "13",
-    "AbilitiyScores": "Str 10, Dex 12, Con 12, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 10, Dex 12, Con 12, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -21307,7 +21307,7 @@
   },
   "Lickilicky": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 13, Con 18, Int 6, Wis 14, Cha 14",
+    "AbilityScores": "Str 18, Dex 13, Con 18, Int 6, Wis 14, Cha 14",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -21410,7 +21410,7 @@
   },
   "Lickitung": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 12, Con 15, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 15, Dex 12, Con 15, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -21512,7 +21512,7 @@
   },
   "Lileep": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 9, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 15, Dex 9, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -21606,7 +21606,7 @@
   },
   "Linoone": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 17, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 17, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -21701,7 +21701,7 @@
   },
   "Lombre": {
     "AC": "14",
-    "AbilitiyScores": "Str 13, Dex 13, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 13, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 4,
     "DefensiveAbilities": {
@@ -21797,7 +21797,7 @@
   },
   "Lopunny": {
     "AC": "17",
-    "AbilitiyScores": "Str 16, Dex 17, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 17, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -21897,7 +21897,7 @@
   },
   "Lotad": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -21990,7 +21990,7 @@
   },
   "Loudred": {
     "AC": "12",
-    "AbilitiyScores": "Str 14, Dex 13, Con 13, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 14, Dex 13, Con 13, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -22085,7 +22085,7 @@
   },
   "Lucario": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 17, Con 14, Int 10, Wis 14, Cha 10",
+    "AbilityScores": "Str 14, Dex 17, Con 14, Int 10, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -22200,7 +22200,7 @@
   },
   "Ludicolo": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 15, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 15, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -22283,7 +22283,7 @@
   },
   "Lugia": {
     "AC": "21",
-    "AbilitiyScores": "Str 20, Dex 18, Con 22, Int 12, Wis 16, Cha 16",
+    "AbilityScores": "Str 20, Dex 18, Con 22, Int 12, Wis 16, Cha 16",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -22391,7 +22391,7 @@
   },
   "Lumineon": {
     "AC": "16",
-    "AbilitiyScores": "Str 13, Dex 18, Con 16, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 13, Dex 18, Con 16, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -22482,7 +22482,7 @@
   },
   "Lunatone": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 16, Con 16, Int 6, Wis 16, Cha 10",
+    "AbilityScores": "Str 14, Dex 16, Con 16, Int 6, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -22599,7 +22599,7 @@
   },
   "Luvdisc": {
     "AC": "14",
-    "AbilitiyScores": "Str 10, Dex 16, Con 12, Int 6, Wis 14, Cha 14",
+    "AbilityScores": "Str 10, Dex 16, Con 12, Int 6, Wis 14, Cha 14",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -22687,7 +22687,7 @@
   },
   "Luxio": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 14, Con 14, Int 6, Wis 12, Cha 14",
+    "AbilityScores": "Str 13, Dex 14, Con 14, Int 6, Wis 12, Cha 14",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -22773,7 +22773,7 @@
   },
   "Luxray": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 18, Con 16, Int 6, Wis 14, Cha 16",
+    "AbilityScores": "Str 14, Dex 18, Con 16, Int 6, Wis 14, Cha 16",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -22858,7 +22858,7 @@
   },
   "Machamp": {
     "AC": "15",
-    "AbilitiyScores": "Str 18, Dex 16, Con 16, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 18, Dex 16, Con 16, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -22958,7 +22958,7 @@
   },
   "Machoke": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 13, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 13, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -23059,7 +23059,7 @@
   },
   "Machop": {
     "AC": "12",
-    "AbilitiyScores": "Str 14, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 14, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -23162,7 +23162,7 @@
   },
   "Magby": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 16, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 16, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -23253,7 +23253,7 @@
   },
   "Magcargo": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 11, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 17, Dex 11, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -23359,7 +23359,7 @@
   },
   "Magikarp": {
     "AC": "12",
-    "AbilitiyScores": "Str 9, Dex 14, Con 13, Int 6, Wis 8, Cha 10",
+    "AbilityScores": "Str 9, Dex 14, Con 13, Int 6, Wis 8, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -23409,7 +23409,7 @@
   },
   "Magmar": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 18, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 18, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -23502,7 +23502,7 @@
   },
   "Magmortar": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 18, Con 17, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 17, Dex 18, Con 17, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -23602,7 +23602,7 @@
   },
   "Magnemite": {
     "AC": "14",
-    "AbilitiyScores": "Str 10, Dex 12, Con 14, Int 8, Wis 10, Cha 8",
+    "AbilityScores": "Str 10, Dex 12, Con 14, Int 8, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -23705,7 +23705,7 @@
   },
   "Magneton": {
     "AC": "16",
-    "AbilitiyScores": "Str 13, Dex 15, Con 17, Int 8, Wis 12, Cha 8",
+    "AbilityScores": "Str 13, Dex 15, Con 17, Int 8, Wis 12, Cha 8",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -23810,7 +23810,7 @@
   },
   "Magnezone": {
     "AC": "17",
-    "AbilitiyScores": "Str 20, Dex 16, Con 17, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 20, Dex 16, Con 17, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -23913,7 +23913,7 @@
   },
   "Makuhita": {
     "AC": "11",
-    "AbilitiyScores": "Str 12, Dex 10, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 10, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -24011,7 +24011,7 @@
   },
   "Mamoswine": {
     "AC": "15",
-    "AbilitiyScores": "Str 17, Dex 16, Con 19, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 17, Dex 16, Con 19, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -24106,7 +24106,7 @@
   },
   "Manaphy": {
     "AC": "18",
-    "AbilitiyScores": "Str 18, Dex 18, Con 18, Int 14, Wis 18, Cha 20",
+    "AbilityScores": "Str 18, Dex 18, Con 18, Int 14, Wis 18, Cha 20",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -24197,7 +24197,7 @@
   },
   "Manectric": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 19, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 19, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -24288,7 +24288,7 @@
   },
   "Mankey": {
     "AC": "12",
-    "AbilitiyScores": "Str 12, Dex 14, Con 11, Int 6, Wis 10, Cha 8",
+    "AbilityScores": "Str 12, Dex 14, Con 11, Int 6, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -24395,7 +24395,7 @@
   },
   "Mantine": {
     "AC": "17",
-    "AbilitiyScores": "Str 18, Dex 15, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 15, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -24494,7 +24494,7 @@
   },
   "Mantyke": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 12, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 14, Dex 12, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -24589,7 +24589,7 @@
   },
   "Mareep": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 12, Con 13, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 10, Dex 12, Con 13, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -24675,7 +24675,7 @@
   },
   "Marill": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 11, Con 12, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 12, Dex 11, Con 12, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -24774,7 +24774,7 @@
   },
   "Marowak": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 12, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 12, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -24877,7 +24877,7 @@
   },
   "Marshtomp": {
     "AC": "14",
-    "AbilitiyScores": "Str 16, Dex 13, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 16, Dex 13, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -24973,7 +24973,7 @@
   },
   "Masquerain": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 16, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 16, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -25068,7 +25068,7 @@
   },
   "Mawile": {
     "AC": "17",
-    "AbilitiyScores": "Str 16, Dex 11, Con 14, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 16, Dex 11, Con 14, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -25184,7 +25184,7 @@
   },
   "Medicham": {
     "AC": "16",
-    "AbilitiyScores": "Str 14, Dex 16, Con 14, Int 10, Wis 14, Cha 10",
+    "AbilityScores": "Str 14, Dex 16, Con 14, Int 10, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -25291,7 +25291,7 @@
   },
   "Meditite": {
     "AC": "13",
-    "AbilitiyScores": "Str 9, Dex 12, Con 12, Int 8, Wis 12, Cha 10",
+    "AbilityScores": "Str 9, Dex 12, Con 12, Int 8, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -25392,7 +25392,7 @@
   },
   "Meganium": {
     "AC": "17",
-    "AbilitiyScores": "Str 18, Dex 16, Con 16, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 18, Dex 16, Con 16, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -25487,7 +25487,7 @@
   },
   "Meowth": {
     "AC": "13",
-    "AbilitiyScores": "Str 10, Dex 15, Con 10, Int 8, Wis 10, Cha 12",
+    "AbilityScores": "Str 10, Dex 15, Con 10, Int 8, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -25584,7 +25584,7 @@
   },
   "Mesprit": {
     "AC": "18",
-    "AbilitiyScores": "Str 15, Dex 16, Con 16, Int 16, Wis 18, Cha 28",
+    "AbilityScores": "Str 15, Dex 16, Con 16, Int 16, Wis 18, Cha 28",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -25679,7 +25679,7 @@
   },
   "Metagross": {
     "AC": "18",
-    "AbilitiyScores": "Str 20, Dex 15, Con 18, Int 16, Wis 16, Cha 10",
+    "AbilityScores": "Str 20, Dex 15, Con 18, Int 16, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -25788,7 +25788,7 @@
   },
   "Metang": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 12, Con 15, Int 12, Wis 14, Cha 10",
+    "AbilityScores": "Str 17, Dex 12, Con 15, Int 12, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -25897,7 +25897,7 @@
   },
   "Metapod": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 9, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 9, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -25940,7 +25940,7 @@
   },
   "Mew": {
     "AC": "18",
-    "AbilitiyScores": "Str 14, Dex 22, Con 18, Int 16, Wis 20, Cha 20",
+    "AbilityScores": "Str 14, Dex 22, Con 18, Int 16, Wis 20, Cha 20",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -25994,7 +25994,7 @@
   },
   "Mewtwo": {
     "AC": "18",
-    "AbilitiyScores": "Str 19, Dex 24, Con 18, Int 20, Wis 20, Cha 18",
+    "AbilityScores": "Str 19, Dex 24, Con 18, Int 20, Wis 20, Cha 18",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -26111,7 +26111,7 @@
   },
   "Mightyena": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 15, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 15, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -26211,7 +26211,7 @@
   },
   "Milotic": {
     "AC": "17",
-    "AbilitiyScores": "Str 15, Dex 18, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 18, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -26306,7 +26306,7 @@
   },
   "Miltank": {
     "AC": "17",
-    "AbilitiyScores": "Str 17, Dex 17, Con 14, Int 6, Wis 14, Cha 11",
+    "AbilityScores": "Str 17, Dex 17, Con 14, Int 6, Wis 14, Cha 11",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -26403,7 +26403,7 @@
   },
   "Mime Jr.": {
     "AC": "14",
-    "AbilitiyScores": "Str 12, Dex 12, Con 11, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 12, Dex 12, Con 11, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -26514,7 +26514,7 @@
   },
   "Minun": {
     "AC": "15",
-    "AbilitiyScores": "Str 13, Dex 17, Con 16, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 13, Dex 17, Con 16, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -26605,7 +26605,7 @@
   },
   "Misdreavus": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 15, Con 14, Int 6, Wis 14, Cha 12",
+    "AbilityScores": "Str 14, Dex 15, Con 14, Int 6, Wis 14, Cha 12",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -26704,7 +26704,7 @@
   },
   "Mismagius": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 18, Con 16, Int 6, Wis 12, Cha 16",
+    "AbilityScores": "Str 16, Dex 18, Con 16, Int 6, Wis 12, Cha 16",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -26793,7 +26793,7 @@
   },
   "Moltres": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 18, Con 16, Int 6, Wis 14, Cha 16",
+    "AbilityScores": "Str 18, Dex 18, Con 16, Int 6, Wis 14, Cha 16",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -26889,7 +26889,7 @@
   },
   "Monferno": {
     "AC": "14",
-    "AbilitiyScores": "Str 12, Dex 16, Con 13, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 12, Dex 16, Con 13, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -26995,7 +26995,7 @@
   },
   "Mothim": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 15, Con 13, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 15, Con 13, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 4,
     "DefensiveAbilities": {
@@ -27095,7 +27095,7 @@
   },
   "Mr. Mime": {
     "AC": "17",
-    "AbilitiyScores": "Str 12, Dex 15, Con 8, Int 12, Wis 14, Cha 12",
+    "AbilityScores": "Str 12, Dex 15, Con 8, Int 12, Wis 14, Cha 12",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -27216,7 +27216,7 @@
   },
   "Mudkip": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 11, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 11, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -27307,7 +27307,7 @@
   },
   "Muk": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 13, Con 20, Int 6, Wis 12, Cha 8",
+    "AbilityScores": "Str 17, Dex 13, Con 20, Int 6, Wis 12, Cha 8",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -27410,7 +27410,7 @@
   },
   "Munchlax": {
     "AC": "13",
-    "AbilitiyScores": "Str 14, Dex 8, Con 20, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 14, Dex 8, Con 20, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -27509,7 +27509,7 @@
   },
   "Murkrow": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 16, Con 12, Int 6, Wis 14, Cha 8",
+    "AbilityScores": "Str 12, Dex 16, Con 12, Int 6, Wis 14, Cha 8",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -27615,7 +27615,7 @@
   },
   "Natu": {
     "AC": "13",
-    "AbilitiyScores": "Str 10, Dex 14, Con 11, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 10, Dex 14, Con 11, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -27719,7 +27719,7 @@
   },
   "Nidoking": {
     "AC": "15",
-    "AbilitiyScores": "Str 18, Dex 16, Con 16, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 18, Dex 16, Con 16, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -27824,7 +27824,7 @@
   },
   "Nidoqueen": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 16, Con 18, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 16, Dex 16, Con 18, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -27931,7 +27931,7 @@
   },
   "Nidoran F": {
     "AC": "12",
-    "AbilitiyScores": "Str 12, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -28025,7 +28025,7 @@
   },
   "Nidoran M": {
     "AC": "12",
-    "AbilitiyScores": "Str 12, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -28114,7 +28114,7 @@
   },
   "Nidorina": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 13, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 13, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 4,
     "DefensiveAbilities": {
@@ -28206,7 +28206,7 @@
   },
   "Nidorino": {
     "AC": "14",
-    "AbilitiyScores": "Str 13, Dex 14, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 14, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 4,
     "DefensiveAbilities": {
@@ -28298,7 +28298,7 @@
   },
   "Nincada": {
     "AC": "13",
-    "AbilitiyScores": "Str 10, Dex 10, Con 10, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 10, Con 10, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -28384,7 +28384,7 @@
   },
   "Ninetales": {
     "AC": "17",
-    "AbilitiyScores": "Str 14, Dex 18, Con 11, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 14, Dex 18, Con 11, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -28466,7 +28466,7 @@
   },
   "Ninjask": {
     "AC": "15",
-    "AbilitiyScores": "Str 13, Dex 20, Con 10, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 20, Con 10, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -28564,7 +28564,7 @@
   },
   "Noctowl": {
     "AC": "15",
-    "AbilitiyScores": "Str 13, Dex 16, Con 10, Int 6, Wis 16, Cha 10",
+    "AbilityScores": "Str 13, Dex 16, Con 10, Int 6, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -28665,7 +28665,7 @@
   },
   "Nosepass": {
     "AC": "17",
-    "AbilitiyScores": "Str 16, Dex 9, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 16, Dex 9, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 4,
     "DefensiveAbilities": {
@@ -28768,7 +28768,7 @@
   },
   "Numel": {
     "AC": "12",
-    "AbilitiyScores": "Str 11, Dex 10, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 11, Dex 10, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -28864,7 +28864,7 @@
   },
   "Nuzleaf": {
     "AC": "12",
-    "AbilitiyScores": "Str 12, Dex 14, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 12, Dex 14, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 4,
     "DefensiveAbilities": {
@@ -28971,7 +28971,7 @@
   },
   "Octillery": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 14, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 14, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -29072,7 +29072,7 @@
   },
   "Oddish": {
     "AC": "13",
-    "AbilitiyScores": "Str 11, Dex 11, Con 12, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 11, Dex 11, Con 12, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -29158,7 +29158,7 @@
   },
   "Omanyte": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 11, Con 15, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 14, Dex 11, Con 15, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -29256,7 +29256,7 @@
   },
   "Omastar": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 14, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 17, Dex 14, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -29354,7 +29354,7 @@
   },
   "Onix": {
     "AC": "17",
-    "AbilitiyScores": "Str 18, Dex 13, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 13, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -29470,7 +29470,7 @@
   },
   "Pachirisu": {
     "AC": "16",
-    "AbilitiyScores": "Str 13, Dex 18, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 18, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -29559,7 +29559,7 @@
   },
   "Palkia": {
     "AC": "20",
-    "AbilitiyScores": "Str 20, Dex 20, Con 19, Int 20, Wis 24, Cha 16",
+    "AbilityScores": "Str 20, Dex 20, Con 19, Int 20, Wis 24, Cha 16",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -29661,7 +29661,7 @@
   },
   "Paras": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 9, Con 15, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 9, Con 15, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -29759,7 +29759,7 @@
   },
   "Parasect": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 12, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 12, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -29859,7 +29859,7 @@
   },
   "Pelipper": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 15, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 15, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -29961,7 +29961,7 @@
   },
   "Persian": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 18, Con 10, Int 8, Wis 12, Cha 14",
+    "AbilityScores": "Str 14, Dex 18, Con 10, Int 8, Wis 12, Cha 14",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -30064,7 +30064,7 @@
   },
   "Phanpy": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 10, Con 12, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 13, Dex 10, Con 12, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -30150,7 +30150,7 @@
   },
   "Phione": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 16, Con 16, Int 14, Wis 16, Cha 20",
+    "AbilityScores": "Str 16, Dex 16, Con 16, Int 14, Wis 16, Cha 20",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -30231,7 +30231,7 @@
   },
   "Pichu": {
     "AC": "11",
-    "AbilitiyScores": "Str 9, Dex 12, Con 10, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 9, Dex 12, Con 10, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.125,
     "DefensiveAbilities": {
@@ -30307,7 +30307,7 @@
   },
   "Pidgeot": {
     "AC": "16",
-    "AbilitiyScores": "Str 14, Dex 20, Con 12, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 14, Dex 20, Con 12, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -30394,7 +30394,7 @@
   },
   "Pidgeotto": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 14, Con 10, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 14, Con 10, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -30481,7 +30481,7 @@
   },
   "Pidgey": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 12, Con 10, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 12, Con 10, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -30568,7 +30568,7 @@
   },
   "Pikachu": {
     "AC": "13",
-    "AbilitiyScores": "Str 11, Dex 15, Con 10, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 11, Dex 15, Con 10, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -30660,7 +30660,7 @@
   },
   "Piloswine": {
     "AC": "14",
-    "AbilitiyScores": "Str 16, Dex 13, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 13, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -30756,7 +30756,7 @@
   },
   "Pineco": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 8, Con 17, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 8, Con 17, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -30849,7 +30849,7 @@
   },
   "Pinsir": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 15, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 15, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -30948,7 +30948,7 @@
   },
   "Piplup": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 12, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 12, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -31042,7 +31042,7 @@
   },
   "Plusle": {
     "AC": "14",
-    "AbilitiyScores": "Str 13, Dex 18, Con 15, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 13, Dex 18, Con 15, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -31132,7 +31132,7 @@
   },
   "Politoed": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 15, Con 14, Int 8, Wis 16, Cha 10",
+    "AbilityScores": "Str 17, Dex 15, Con 14, Int 8, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -31218,7 +31218,7 @@
   },
   "Poliwag": {
     "AC": "13",
-    "AbilitiyScores": "Str 10, Dex 14, Con 11, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 14, Con 11, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -31307,7 +31307,7 @@
   },
   "Poliwhirl": {
     "AC": "14",
-    "AbilitiyScores": "Str 12, Dex 15, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 12, Dex 15, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -31400,7 +31400,7 @@
   },
   "Poliwrath": {
     "AC": "16",
-    "AbilitiyScores": "Str 19, Dex 17, Con 14, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 19, Dex 17, Con 14, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -31498,7 +31498,7 @@
   },
   "Ponyta": {
     "AC": "14",
-    "AbilitiyScores": "Str 12, Dex 15, Con 10, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 15, Con 10, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -31590,7 +31590,7 @@
   },
   "Poochyena": {
     "AC": "11",
-    "AbilitiyScores": "Str 12, Dex 13, Con 10, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 13, Con 10, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -31685,7 +31685,7 @@
   },
   "Porygon": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 12, Con 16, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 15, Dex 12, Con 16, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -31779,7 +31779,7 @@
   },
   "Porygon-Z": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 18, Con 18, Int 12, Wis 16, Cha 10",
+    "AbilityScores": "Str 16, Dex 18, Con 18, Int 12, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -31879,7 +31879,7 @@
   },
   "Porygon2": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 15, Con 18, Int 6, Wis 14, Cha 12",
+    "AbilityScores": "Str 16, Dex 15, Con 18, Int 6, Wis 14, Cha 12",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -31971,7 +31971,7 @@
   },
   "Primeape": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 16, Con 13, Int 6, Wis 12, Cha 8",
+    "AbilityScores": "Str 16, Dex 16, Con 13, Int 6, Wis 12, Cha 8",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -32080,7 +32080,7 @@
   },
   "Prinplup": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 12, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 12, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -32174,7 +32174,7 @@
   },
   "Probopass": {
     "AC": "20",
-    "AbilitiyScores": "Str 20, Dex 12, Con 19, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 20, Dex 12, Con 19, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -32282,7 +32282,7 @@
   },
   "Psyduck": {
     "AC": "13",
-    "AbilitiyScores": "Str 11, Dex 12, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 11, Dex 12, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -32381,7 +32381,7 @@
   },
   "Pupitar": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 10, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 10, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -32483,7 +32483,7 @@
   },
   "Purugly": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 18, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 18, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -32579,7 +32579,7 @@
   },
   "Quagsire": {
     "AC": "14",
-    "AbilitiyScores": "Str 16, Dex 11, Con 12, Int 6, Wis 14, Cha 12",
+    "AbilityScores": "Str 16, Dex 11, Con 12, Int 6, Wis 14, Cha 12",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -32681,7 +32681,7 @@
   },
   "Quilava": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 15, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 15, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -32774,7 +32774,7 @@
   },
   "Qwilfish": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 16, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 16, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -32881,7 +32881,7 @@
   },
   "Raichu": {
     "AC": "15",
-    "AbilitiyScores": "Str 12, Dex 18, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 12, Dex 18, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -32954,7 +32954,7 @@
   },
   "Raikou": {
     "AC": "17",
-    "AbilitiyScores": "Str 18, Dex 20, Con 15, Int 6, Wis 14, Cha 14",
+    "AbilityScores": "Str 18, Dex 20, Con 15, Int 6, Wis 14, Cha 14",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -33044,7 +33044,7 @@
   },
   "Rainy Castform": {
     "AC": "15",
-    "AbilitiyScores": "Str 13, Dex 13, Con 13, Int 8, Wis 13, Cha 13",
+    "AbilityScores": "Str 13, Dex 13, Con 13, Int 8, Wis 13, Cha 13",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -33137,7 +33137,7 @@
   },
   "Ralts": {
     "AC": "11",
-    "AbilitiyScores": "Str 9, Dex 12, Con 10, Int 10, Wis 12, Cha 10",
+    "AbilityScores": "Str 9, Dex 12, Con 10, Int 10, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -33242,7 +33242,7 @@
   },
   "Rampardos": {
     "AC": "13",
-    "AbilitiyScores": "Str 17, Dex 15, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 17, Dex 15, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -33349,7 +33349,7 @@
   },
   "Rapidash": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 18, Con 14, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 16, Dex 18, Con 14, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -33442,7 +33442,7 @@
   },
   "Raticate": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 15, Con 13, Int 6, Wis 12, Cha 8",
+    "AbilityScores": "Str 15, Dex 15, Con 13, Int 6, Wis 12, Cha 8",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -33539,7 +33539,7 @@
   },
   "Rattata": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 14, Con 11, Int 6, Wis 10, Cha 8",
+    "AbilityScores": "Str 10, Dex 14, Con 11, Int 6, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -33630,7 +33630,7 @@
   },
   "Rayquaza": {
     "AC": "17",
-    "AbilitiyScores": "Str 22, Dex 24, Con 20, Int 12, Wis 16, Cha 12",
+    "AbilityScores": "Str 22, Dex 24, Con 20, Int 12, Wis 16, Cha 12",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -33744,7 +33744,7 @@
   },
   "Regice": {
     "AC": "20",
-    "AbilitiyScores": "Str 18, Dex 20, Con 18, Int 8, Wis 16, Cha 10",
+    "AbilityScores": "Str 18, Dex 20, Con 18, Int 8, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -33839,7 +33839,7 @@
   },
   "Regigigas": {
     "AC": "20",
-    "AbilitiyScores": "Str 25, Dex 19, Con 22, Int 10, Wis 12, Cha 16",
+    "AbilityScores": "Str 25, Dex 19, Con 22, Int 10, Wis 12, Cha 16",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -33924,7 +33924,7 @@
   },
   "Regirock": {
     "AC": "20",
-    "AbilitiyScores": "Str 20, Dex 18, Con 20, Int 8, Wis 14, Cha 10",
+    "AbilityScores": "Str 20, Dex 18, Con 20, Int 8, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -34020,7 +34020,7 @@
   },
   "Registeel": {
     "AC": "20",
-    "AbilitiyScores": "Str 18, Dex 20, Con 20, Int 8, Wis 14, Cha 10",
+    "AbilityScores": "Str 18, Dex 20, Con 20, Int 8, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -34127,7 +34127,7 @@
   },
   "Relicanth": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 13, Con 18, Int 6, Wis 8, Cha 10",
+    "AbilityScores": "Str 18, Dex 13, Con 18, Int 6, Wis 8, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -34230,7 +34230,7 @@
   },
   "Remoraid": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 14, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 14, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -34324,7 +34324,7 @@
   },
   "Rhydon": {
     "AC": "15",
-    "AbilitiyScores": "Str 18, Dex 13, Con 17, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 13, Con 17, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -34439,7 +34439,7 @@
   },
   "Rhyhorn": {
     "AC": "13",
-    "AbilitiyScores": "Str 15, Dex 10, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 15, Dex 10, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -34550,7 +34550,7 @@
   },
   "Rhyperior": {
     "AC": "18",
-    "AbilitiyScores": "Str 20, Dex 13, Con 20, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 20, Dex 13, Con 20, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -34668,7 +34668,7 @@
   },
   "Riolu": {
     "AC": "12",
-    "AbilitiyScores": "Str 11, Dex 13, Con 11, Int 8, Wis 12, Cha 10",
+    "AbilityScores": "Str 11, Dex 13, Con 11, Int 8, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -34760,7 +34760,7 @@
   },
   "Roselia": {
     "AC": "14",
-    "AbilitiyScores": "Str 13, Dex 16, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 16, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -34858,7 +34858,7 @@
   },
   "Roserade": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 18, Con 16, Int 8, Wis 16, Cha 10",
+    "AbilityScores": "Str 16, Dex 18, Con 16, Int 8, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -34940,7 +34940,7 @@
   },
   "Rotom": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 17, Con 14, Int 8, Wis 10, Cha 10",
+    "AbilityScores": "Str 15, Dex 17, Con 14, Int 8, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -35033,7 +35033,7 @@
   },
   "Rotom Fan": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 16, Con 14, Int 10, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 16, Con 14, Int 10, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -35126,7 +35126,7 @@
   },
   "Rotom Frost": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 16, Con 14, Int 10, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 16, Con 14, Int 10, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -35219,7 +35219,7 @@
   },
   "Rotom Heat": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 16, Con 14, Int 10, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 16, Con 14, Int 10, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -35316,7 +35316,7 @@
   },
   "Rotom Mow": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 16, Con 14, Int 10, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 16, Con 14, Int 10, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -35410,7 +35410,7 @@
   },
   "Rotom Wash": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 16, Con 14, Int 10, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 16, Con 14, Int 10, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -35503,7 +35503,7 @@
   },
   "Sableye": {
     "AC": "18",
-    "AbilitiyScores": "Str 12, Dex 10, Con 14, Int 8, Wis 16, Cha 10",
+    "AbilityScores": "Str 12, Dex 10, Con 14, Int 8, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -35610,7 +35610,7 @@
   },
   "Salamence": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 20, Con 16, Int 8, Wis 14, Cha 10",
+    "AbilityScores": "Str 18, Dex 20, Con 16, Int 8, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -35714,7 +35714,7 @@
   },
   "Sandshrew": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 10, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 14, Dex 10, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -35813,7 +35813,7 @@
   },
   "Sandslash": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 14, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 14, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -35917,7 +35917,7 @@
   },
   "Sceptile": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 20, Con 13, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 17, Dex 20, Con 13, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -36020,7 +36020,7 @@
   },
   "Scizor": {
     "AC": "19",
-    "AbilitiyScores": "Str 20, Dex 18, Con 15, Int 6, Wis 12, Cha 8",
+    "AbilityScores": "Str 20, Dex 18, Con 15, Int 6, Wis 12, Cha 8",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -36125,7 +36125,7 @@
   },
   "Scyther": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 18, Con 12, Int 6, Wis 10, Cha 8",
+    "AbilityScores": "Str 17, Dex 18, Con 12, Int 6, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -36227,7 +36227,7 @@
   },
   "Seadra": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 17, Con 13, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 17, Con 13, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -36312,7 +36312,7 @@
   },
   "Seaking": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 17, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 17, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -36400,7 +36400,7 @@
   },
   "Sealeo": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 14, Con 17, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 14, Con 17, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -36493,7 +36493,7 @@
   },
   "Seedot": {
     "AC": "12",
-    "AbilitiyScores": "Str 8, Dex 9, Con 12, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 8, Dex 9, Con 12, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -36577,7 +36577,7 @@
   },
   "Seel": {
     "AC": "14",
-    "AbilitiyScores": "Str 13, Dex 11, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 11, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -36672,7 +36672,7 @@
   },
   "Sentret": {
     "AC": "11",
-    "AbilitiyScores": "Str 12, Dex 10, Con 10, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 12, Dex 10, Con 10, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.125,
     "DefensiveAbilities": {
@@ -36767,7 +36767,7 @@
   },
   "Seviper": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 15, Con 15, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 15, Dex 15, Con 15, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -36867,7 +36867,7 @@
   },
   "Sharpedo": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 20, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 20, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -36974,7 +36974,7 @@
   },
   "Shaymin Land": {
     "AC": "18",
-    "AbilitiyScores": "Str 18, Dex 18, Con 18, Int 10, Wis 18, Cha 18",
+    "AbilityScores": "Str 18, Dex 18, Con 18, Int 10, Wis 18, Cha 18",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -37060,7 +37060,7 @@
   },
   "Shaymin Sky": {
     "AC": "16",
-    "AbilitiyScores": "Str 20, Dex 16, Con 18, Int 10, Wis 20, Cha 18",
+    "AbilityScores": "Str 20, Dex 16, Con 18, Int 10, Wis 20, Cha 18",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -37148,7 +37148,7 @@
   },
   "Shedinja": {
     "AC": "12",
-    "AbilitiyScores": "Str 13, Dex 14, Con 0, Int 8, Wis 18, Cha 10",
+    "AbilityScores": "Str 13, Dex 14, Con 0, Int 8, Wis 18, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -37242,7 +37242,7 @@
   },
   "Shelgon": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 12, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 12, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -37332,7 +37332,7 @@
   },
   "Shellder": {
     "AC": "14",
-    "AbilitiyScores": "Str 12, Dex 10, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 10, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -37420,7 +37420,7 @@
   },
   "Shellos": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 10, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 10, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -37504,7 +37504,7 @@
   },
   "Shieldon": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 9, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 17, Dex 9, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -37608,7 +37608,7 @@
   },
   "Shiftry": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 15, Con 16, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 15, Dex 15, Con 16, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -37710,7 +37710,7 @@
   },
   "Shinx": {
     "AC": "11",
-    "AbilitiyScores": "Str 11, Dex 13, Con 11, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 11, Dex 13, Con 11, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -37799,7 +37799,7 @@
   },
   "Shroomish": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 10, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 10, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -37889,7 +37889,7 @@
   },
   "Shuckle": {
     "AC": "22",
-    "AbilitiyScores": "Str 10, Dex 8, Con 12, Int 6, Wis 16, Cha 10",
+    "AbilityScores": "Str 10, Dex 8, Con 12, Int 6, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 4,
     "DefensiveAbilities": {
@@ -37983,7 +37983,7 @@
   },
   "Shuppet": {
     "AC": "13",
-    "AbilitiyScores": "Str 10, Dex 12, Con 11, Int 8, Wis 12, Cha 10",
+    "AbilityScores": "Str 10, Dex 12, Con 11, Int 8, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -38084,7 +38084,7 @@
   },
   "Silcoon": {
     "AC": "11",
-    "AbilitiyScores": "Str 10, Dex 8, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 8, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -38127,7 +38127,7 @@
   },
   "Skarmory": {
     "AC": "17",
-    "AbilitiyScores": "Str 19, Dex 14, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 19, Dex 14, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -38229,7 +38229,7 @@
   },
   "Skiploom": {
     "AC": "14",
-    "AbilitiyScores": "Str 13, Dex 15, Con 14, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 13, Dex 15, Con 14, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -38327,7 +38327,7 @@
   },
   "Skitty": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 12, Con 11, Int 6, Wis 10, Cha 14",
+    "AbilityScores": "Str 10, Dex 12, Con 11, Int 6, Wis 10, Cha 14",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -38431,7 +38431,7 @@
   },
   "Skorupi": {
     "AC": "15",
-    "AbilitiyScores": "Str 13, Dex 13, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 13, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -38536,7 +38536,7 @@
   },
   "Skuntank": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 16, Con 18, Int 6, Wis 12, Cha 8",
+    "AbilityScores": "Str 15, Dex 16, Con 18, Int 6, Wis 12, Cha 8",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -38637,7 +38637,7 @@
   },
   "Slaking": {
     "AC": "16",
-    "AbilitiyScores": "Str 20, Dex 17, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 20, Dex 17, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -38734,7 +38734,7 @@
   },
   "Slakoth": {
     "AC": "12",
-    "AbilitiyScores": "Str 13, Dex 9, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 9, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -38822,7 +38822,7 @@
   },
   "Slowbro": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 12, Con 18, Int 6, Wis 16, Cha 10",
+    "AbilityScores": "Str 16, Dex 12, Con 18, Int 6, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -38936,7 +38936,7 @@
   },
   "Slowking": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 13, Con 18, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 17, Dex 13, Con 18, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -39053,7 +39053,7 @@
   },
   "Slowpoke": {
     "AC": "12",
-    "AbilitiyScores": "Str 12, Dex 8, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 12, Dex 8, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -39165,7 +39165,7 @@
   },
   "Slugma": {
     "AC": "11",
-    "AbilitiyScores": "Str 10, Dex 9, Con 15, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 9, Con 15, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.125,
     "DefensiveAbilities": {
@@ -39260,7 +39260,7 @@
   },
   "Smeargle": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 13, Con 10, Int 6, Wis 10, Cha 14",
+    "AbilityScores": "Str 10, Dex 13, Con 10, Int 6, Wis 10, Cha 14",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -39322,7 +39322,7 @@
   },
   "Smoochum": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 14, Con 11, Int 8, Wis 10, Cha 14",
+    "AbilityScores": "Str 10, Dex 14, Con 11, Int 8, Wis 10, Cha 14",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -39426,7 +39426,7 @@
   },
   "Sneasel": {
     "AC": "15",
-    "AbilitiyScores": "Str 13, Dex 16, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 16, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 4,
     "DefensiveAbilities": {
@@ -39539,7 +39539,7 @@
   },
   "Snorlax": {
     "AC": "15",
-    "AbilitiyScores": "Str 18, Dex 12, Con 20, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 18, Dex 12, Con 20, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -39635,7 +39635,7 @@
   },
   "Snorunt": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -39722,7 +39722,7 @@
   },
   "Snover": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 11, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 11, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -39817,7 +39817,7 @@
   },
   "Snowy Castform": {
     "AC": "15",
-    "AbilitiyScores": "Str 13, Dex 13, Con 13, Int 8, Wis 13, Cha 13",
+    "AbilityScores": "Str 13, Dex 13, Con 13, Int 8, Wis 13, Cha 13",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -39909,7 +39909,7 @@
   },
   "Snubbull": {
     "AC": "12",
-    "AbilitiyScores": "Str 13, Dex 10, Con 10, Int 6, Wis 10, Cha 14",
+    "AbilityScores": "Str 13, Dex 10, Con 10, Int 6, Wis 10, Cha 14",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -40016,7 +40016,7 @@
   },
   "Solrock": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 14, Con 16, Int 6, Wis 16, Cha 10",
+    "AbilityScores": "Str 16, Dex 14, Con 16, Int 6, Wis 16, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -40134,7 +40134,7 @@
   },
   "Spearow": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 14, Con 10, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 14, Con 10, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -40222,7 +40222,7 @@
   },
   "Spheal": {
     "AC": "12",
-    "AbilitiyScores": "Str 12, Dex 10, Con 15, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 10, Con 15, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -40317,7 +40317,7 @@
   },
   "Spinarak": {
     "AC": "12",
-    "AbilitiyScores": "Str 11, Dex 10, Con 15, Int 6, Wis 10, Cha 8",
+    "AbilityScores": "Str 11, Dex 10, Con 15, Int 6, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -40414,7 +40414,7 @@
   },
   "Spinda": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 14, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 14, Dex 14, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -40506,7 +40506,7 @@
   },
   "Spiritomb": {
     "AC": "17",
-    "AbilitiyScores": "Str 18, Dex 15, Con 13, Int 10, Wis 18, Cha 12",
+    "AbilityScores": "Str 18, Dex 15, Con 13, Int 10, Wis 18, Cha 12",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -40603,7 +40603,7 @@
   },
   "Spoink": {
     "AC": "14",
-    "AbilitiyScores": "Str 10, Dex 13, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 13, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -40703,7 +40703,7 @@
   },
   "Squirtle": {
     "AC": "14",
-    "AbilitiyScores": "Str 12, Dex 11, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 11, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -40789,7 +40789,7 @@
   },
   "Stantler": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 17, Con 12, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 17, Con 12, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -40889,7 +40889,7 @@
   },
   "Staraptor": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 18, Con 17, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 16, Dex 18, Con 17, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -40973,7 +40973,7 @@
   },
   "Staravia": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 15, Con 13, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 12, Dex 15, Con 13, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -41058,7 +41058,7 @@
   },
   "Starly": {
     "AC": "11",
-    "AbilitiyScores": "Str 9, Dex 13, Con 10, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 9, Dex 13, Con 10, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.125,
     "DefensiveAbilities": {
@@ -41143,7 +41143,7 @@
   },
   "Starmie": {
     "AC": "17",
-    "AbilitiyScores": "Str 14, Dex 17, Con 13, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 14, Dex 17, Con 13, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -41237,7 +41237,7 @@
   },
   "Staryu": {
     "AC": "14",
-    "AbilitiyScores": "Str 10, Dex 14, Con 11, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 10, Dex 14, Con 11, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -41338,7 +41338,7 @@
   },
   "Steelix": {
     "AC": "21",
-    "AbilitiyScores": "Str 20, Dex 15, Con 20, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 20, Dex 15, Con 20, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -41455,7 +41455,7 @@
   },
   "Stunky": {
     "AC": "13",
-    "AbilitiyScores": "Str 11, Dex 14, Con 14, Int 6, Wis 10, Cha 8",
+    "AbilityScores": "Str 11, Dex 14, Con 14, Int 6, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -41554,7 +41554,7 @@
   },
   "Sudowoodo": {
     "AC": "15",
-    "AbilitiyScores": "Str 18, Dex 10, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 10, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -41658,7 +41658,7 @@
   },
   "Suicune": {
     "AC": "18",
-    "AbilitiyScores": "Str 20, Dex 18, Con 15, Int 6, Wis 14, Cha 14",
+    "AbilityScores": "Str 20, Dex 18, Con 15, Int 6, Wis 14, Cha 14",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -41750,7 +41750,7 @@
   },
   "Sunflora": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 12, Con 16, Int 6, Wis 14, Cha 12",
+    "AbilityScores": "Str 14, Dex 12, Con 16, Int 6, Wis 14, Cha 12",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -41847,7 +41847,7 @@
   },
   "Sunkern": {
     "AC": "11",
-    "AbilitiyScores": "Str 9, Dex 9, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 9, Dex 9, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -41942,7 +41942,7 @@
   },
   "Sunny Castform": {
     "AC": "15",
-    "AbilitiyScores": "Str 13, Dex 13, Con 13, Int 8, Wis 13, Cha 13",
+    "AbilityScores": "Str 13, Dex 13, Con 13, Int 8, Wis 13, Cha 13",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -42038,7 +42038,7 @@
   },
   "Surskit": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 13, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 13, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -42125,7 +42125,7 @@
   },
   "Swablu": {
     "AC": "14",
-    "AbilitiyScores": "Str 12, Dex 11, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 11, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -42221,7 +42221,7 @@
   },
   "Swalot": {
     "AC": "15",
-    "AbilitiyScores": "Str 16, Dex 14, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 14, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -42315,7 +42315,7 @@
   },
   "Swampert": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 16, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 16, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -42412,7 +42412,7 @@
   },
   "Swellow": {
     "AC": "15",
-    "AbilitiyScores": "Str 13, Dex 20, Con 10, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 20, Con 10, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -42501,7 +42501,7 @@
   },
   "Swinub": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 11, Con 13, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 10, Dex 11, Con 13, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -42596,7 +42596,7 @@
   },
   "Taillow": {
     "AC": "12",
-    "AbilitiyScores": "Str 9, Dex 15, Con 10, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 9, Dex 15, Con 10, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -42683,7 +42683,7 @@
   },
   "Tangela": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 14, Con 15, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 15, Dex 14, Con 15, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -42781,7 +42781,7 @@
   },
   "Tangrowth": {
     "AC": "17",
-    "AbilitiyScores": "Str 17, Dex 14, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 17, Dex 14, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -42888,7 +42888,7 @@
   },
   "Tauros": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 18, Con 16, Int 8, Wis 10, Cha 8",
+    "AbilityScores": "Str 17, Dex 18, Con 16, Int 8, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -42986,7 +42986,7 @@
   },
   "Teddiursa": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 11, Con 11, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 13, Dex 11, Con 11, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -43080,7 +43080,7 @@
   },
   "Tentacool": {
     "AC": "14",
-    "AbilitiyScores": "Str 14, Dex 14, Con 14, Int 6, Wis 10, Cha 8",
+    "AbilityScores": "Str 14, Dex 14, Con 14, Int 6, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 2,
     "DefensiveAbilities": {
@@ -43185,7 +43185,7 @@
   },
   "Tentacruel": {
     "AC": "17",
-    "AbilitiyScores": "Str 17, Dex 18, Con 15, Int 6, Wis 10, Cha 8",
+    "AbilityScores": "Str 17, Dex 18, Con 15, Int 6, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -43291,7 +43291,7 @@
   },
   "Togekiss": {
     "AC": "18",
-    "AbilitiyScores": "Str 15, Dex 16, Con 16, Int 10, Wis 18, Cha 15",
+    "AbilityScores": "Str 15, Dex 16, Con 16, Int 10, Wis 18, Cha 15",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -43385,7 +43385,7 @@
   },
   "Togepi": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 8, Con 12, Int 6, Wis 12, Cha 14",
+    "AbilityScores": "Str 13, Dex 8, Con 12, Int 6, Wis 12, Cha 14",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -43484,7 +43484,7 @@
   },
   "Togetic": {
     "AC": "16",
-    "AbilitiyScores": "Str 15, Dex 12, Con 12, Int 6, Wis 14, Cha 14",
+    "AbilityScores": "Str 15, Dex 12, Con 12, Int 6, Wis 14, Cha 14",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -43598,7 +43598,7 @@
   },
   "Torchic": {
     "AC": "12",
-    "AbilitiyScores": "Str 12, Dex 14, Con 11, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 14, Con 11, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -43691,7 +43691,7 @@
   },
   "Torkoal": {
     "AC": "16",
-    "AbilitiyScores": "Str 19, Dex 10, Con 16, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 19, Dex 10, Con 16, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -43794,7 +43794,7 @@
   },
   "Torterra": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 14, Con 18, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 18, Dex 14, Con 18, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -43892,7 +43892,7 @@
   },
   "Totodile": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 11, Con 13, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 11, Con 13, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -43989,7 +43989,7 @@
   },
   "Toxicroak": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 17, Con 17, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 17, Con 17, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -44102,7 +44102,7 @@
   },
   "Trapinch": {
     "AC": "12",
-    "AbilitiyScores": "Str 15, Dex 8, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 15, Dex 8, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -44196,7 +44196,7 @@
   },
   "Treecko": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 14, Con 11, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 14, Con 11, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -44292,7 +44292,7 @@
   },
   "Tropius": {
     "AC": "15",
-    "AbilitiyScores": "Str 18, Dex 14, Con 20, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 18, Dex 14, Con 20, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -44390,7 +44390,7 @@
   },
   "Turtwig": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 10, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 13, Dex 10, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -44481,7 +44481,7 @@
   },
   "Typhlosion": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 20, Con 13, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 17, Dex 20, Con 13, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -44583,7 +44583,7 @@
   },
   "Tyranitar": {
     "AC": "17",
-    "AbilitiyScores": "Str 20, Dex 17, Con 20, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 20, Dex 17, Con 20, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -44705,7 +44705,7 @@
   },
   "Tyrogue": {
     "AC": "11",
-    "AbilitiyScores": "Str 12, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 12, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -44776,7 +44776,7 @@
   },
   "Umbreon": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 16, Con 12, Int 6, Wis 15, Cha 14",
+    "AbilityScores": "Str 17, Dex 16, Con 12, Int 6, Wis 15, Cha 14",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -44871,7 +44871,7 @@
   },
   "Unown": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 12, Con 12, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 12, Dex 12, Con 12, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 1,
     "DefensiveAbilities": {
@@ -44913,7 +44913,7 @@
   },
   "Ursaring": {
     "AC": "15",
-    "AbilitiyScores": "Str 17, Dex 13, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 17, Dex 13, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -45011,7 +45011,7 @@
   },
   "Uxie": {
     "AC": "20",
-    "AbilitiyScores": "Str 16, Dex 17, Con 14, Int 28, Wis 16, Cha 18",
+    "AbilityScores": "Str 16, Dex 17, Con 14, Int 28, Wis 16, Cha 18",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -45105,7 +45105,7 @@
   },
   "Vaporeon": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 15, Con 16, Int 6, Wis 12, Cha 14",
+    "AbilityScores": "Str 15, Dex 15, Con 16, Int 6, Wis 12, Cha 14",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -45199,7 +45199,7 @@
   },
   "Venomoth": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 17, Con 12, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 14, Dex 17, Con 12, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -45297,7 +45297,7 @@
   },
   "Venonat": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 11, Con 11, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 11, Con 11, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -45390,7 +45390,7 @@
   },
   "Venusaur": {
     "AC": "16",
-    "AbilitiyScores": "Str 19, Dex 17, Con 14, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 19, Dex 17, Con 14, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -45487,7 +45487,7 @@
   },
   "Vespiquen": {
     "AC": "17",
-    "AbilitiyScores": "Str 16, Dex 15, Con 17, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 15, Con 17, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 8,
     "DefensiveAbilities": {
@@ -45587,7 +45587,7 @@
   },
   "Vibrava": {
     "AC": "13",
-    "AbilitiyScores": "Str 14, Dex 15, Con 14, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 15, Con 14, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -45679,7 +45679,7 @@
   },
   "Victreebel": {
     "AC": "14",
-    "AbilitiyScores": "Str 16, Dex 16, Con 18, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 16, Dex 16, Con 18, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 12,
     "DefensiveAbilities": {
@@ -45766,7 +45766,7 @@
   },
   "Vigoroth": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 16, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 15, Dex 16, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -45860,7 +45860,7 @@
   },
   "Vileplume": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 14, Con 16, Int 6, Wis 14, Cha 14",
+    "AbilityScores": "Str 16, Dex 14, Con 16, Int 6, Wis 14, Cha 14",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -45942,7 +45942,7 @@
   },
   "Volbeat": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 14, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 16, Dex 14, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -46042,7 +46042,7 @@
   },
   "Voltorb": {
     "AC": "14",
-    "AbilitiyScores": "Str 12, Dex 14, Con 12, Int 6, Wis 10, Cha 8",
+    "AbilityScores": "Str 12, Dex 14, Con 12, Int 6, Wis 10, Cha 8",
     "Alignment": "N",
     "CR": 0.5,
     "DefensiveAbilities": {
@@ -46134,7 +46134,7 @@
   },
   "Vulpix": {
     "AC": "13",
-    "AbilitiyScores": "Str 10, Dex 13, Con 10, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 10, Dex 13, Con 10, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -46232,7 +46232,7 @@
   },
   "Wailmer": {
     "AC": "12",
-    "AbilitiyScores": "Str 12, Dex 14, Con 17, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 14, Con 17, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 3,
     "DefensiveAbilities": {
@@ -46327,7 +46327,7 @@
   },
   "Wailord": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 15, Con 20, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 15, Con 20, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 9,
     "DefensiveAbilities": {
@@ -46420,7 +46420,7 @@
   },
   "Walrein": {
     "AC": "16",
-    "AbilitiyScores": "Str 18, Dex 15, Con 20, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 18, Dex 15, Con 20, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 14,
     "DefensiveAbilities": {
@@ -46516,7 +46516,7 @@
   },
   "Wartortle": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 12, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 14, Dex 12, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -46598,7 +46598,7 @@
   },
   "Weavile": {
     "AC": "16",
-    "AbilitiyScores": "Str 17, Dex 20, Con 16, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 17, Dex 20, Con 16, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 11,
     "DefensiveAbilities": {
@@ -46714,7 +46714,7 @@
   },
   "Weedle": {
     "AC": "11",
-    "AbilitiyScores": "Str 9, Dex 10, Con 12, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 9, Dex 10, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.125,
     "DefensiveAbilities": {
@@ -46765,7 +46765,7 @@
   },
   "Weepinbell": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 14, Con 15, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 14, Con 15, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -46859,7 +46859,7 @@
   },
   "Weezing": {
     "AC": "16",
-    "AbilitiyScores": "Str 16, Dex 14, Con 18, Int 6, Wis 12, Cha 8",
+    "AbilityScores": "Str 16, Dex 14, Con 18, Int 6, Wis 12, Cha 8",
     "Alignment": "N",
     "CR": 10,
     "DefensiveAbilities": {
@@ -46955,7 +46955,7 @@
   },
   "Whiscash": {
     "AC": "15",
-    "AbilitiyScores": "Str 13, Dex 12, Con 18, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 13, Dex 12, Con 18, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -47053,7 +47053,7 @@
   },
   "Whismur": {
     "AC": "10",
-    "AbilitiyScores": "Str 9, Dex 9, Con 12, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 9, Dex 9, Con 12, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 0.125,
     "DefensiveAbilities": {
@@ -47139,7 +47139,7 @@
   },
   "Wigglytuff": {
     "AC": "15",
-    "AbilitiyScores": "Str 14, Dex 13, Con 14, Int 6, Wis 14, Cha 14",
+    "AbilityScores": "Str 14, Dex 13, Con 14, Int 6, Wis 14, Cha 14",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -47232,7 +47232,7 @@
   },
   "Wingull": {
     "AC": "12",
-    "AbilitiyScores": "Str 9, Dex 15, Con 10, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 9, Dex 15, Con 10, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -47324,7 +47324,7 @@
   },
   "Wobbuffet": {
     "AC": "13",
-    "AbilitiyScores": "Str 13, Dex 9, Con 18, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 13, Dex 9, Con 18, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -47371,7 +47371,7 @@
   },
   "Wooper": {
     "AC": "11",
-    "AbilitiyScores": "Str 10, Dex 10, Con 12, Int 6, Wis 12, Cha 12",
+    "AbilityScores": "Str 10, Dex 10, Con 12, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -47465,7 +47465,7 @@
   },
   "Wormadam Plant Cloak": {
     "AC": "15",
-    "AbilitiyScores": "Str 12, Dex 12, Con 15, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 12, Dex 12, Con 15, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -47565,7 +47565,7 @@
   },
   "Wormadam Sand Cloak": {
     "AC": "16",
-    "AbilitiyScores": "Str 12, Dex 11, Con 16, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 12, Dex 11, Con 16, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -47663,7 +47663,7 @@
   },
   "Wormadam Trash Cloak": {
     "AC": "15",
-    "AbilitiyScores": "Str 12, Dex 13, Con 14, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 12, Dex 13, Con 14, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -47764,7 +47764,7 @@
   },
   "Wurmple": {
     "AC": "11",
-    "AbilitiyScores": "Str 9, Dex 8, Con 10, Int 6, Wis 10, Cha 12",
+    "AbilityScores": "Str 9, Dex 8, Con 10, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
     "CR": 0.125,
     "DefensiveAbilities": {
@@ -47815,7 +47815,7 @@
   },
   "Wynaut": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 8, Con 14, Int 6, Wis 14, Cha 10",
+    "AbilityScores": "Str 10, Dex 8, Con 14, Int 6, Wis 14, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -47866,7 +47866,7 @@
   },
   "Xatu": {
     "AC": "15",
-    "AbilitiyScores": "Str 13, Dex 17, Con 12, Int 8, Wis 15, Cha 10",
+    "AbilityScores": "Str 13, Dex 17, Con 12, Int 8, Wis 15, Cha 10",
     "Alignment": "N",
     "CR": 7,
     "DefensiveAbilities": {
@@ -47976,7 +47976,7 @@
   },
   "Yanma": {
     "AC": "13",
-    "AbilitiyScores": "Str 12, Dex 17, Con 14, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 12, Dex 17, Con 14, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 5,
     "DefensiveAbilities": {
@@ -48071,7 +48071,7 @@
   },
   "Yanmega": {
     "AC": "15",
-    "AbilitiyScores": "Str 15, Dex 18, Con 17, Int 6, Wis 12, Cha 10",
+    "AbilityScores": "Str 15, Dex 18, Con 17, Int 6, Wis 12, Cha 10",
     "Alignment": "N",
     "CR": 13,
     "DefensiveAbilities": {
@@ -48170,7 +48170,7 @@
   },
   "Zangoose": {
     "AC": "14",
-    "AbilitiyScores": "Str 15, Dex 17, Con 15, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 15, Dex 17, Con 15, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 6,
     "DefensiveAbilities": {
@@ -48272,7 +48272,7 @@
   },
   "Zapdos": {
     "AC": "17",
-    "AbilitiyScores": "Str 17, Dex 19, Con 16, Int 6, Wis 14, Cha 16",
+    "AbilityScores": "Str 17, Dex 19, Con 16, Int 6, Wis 14, Cha 16",
     "Alignment": "N",
     "CR": 15,
     "DefensiveAbilities": {
@@ -48368,7 +48368,7 @@
   },
   "Zigzagoon": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 14, Con 10, Int 6, Wis 10, Cha 10",
+    "AbilityScores": "Str 10, Dex 14, Con 10, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
@@ -48459,7 +48459,7 @@
   },
   "Zubat": {
     "AC": "12",
-    "AbilitiyScores": "Str 10, Dex 14, Con 12, Int 6, Wis 12, Cha 8",
+    "AbilityScores": "Str 10, Dex 14, Con 12, Int 6, Wis 12, Cha 8",
     "Alignment": "N",
     "CR": 0.25,
     "DefensiveAbilities": {
