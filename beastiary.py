@@ -18,6 +18,8 @@ with open('beasts.json', 'r') as inf:
 if settings["Allow Pokemon"]:
     with open('pokemon.json', 'r') as inf:
         Beasts.update(json.load(inf, encoding='utf-8'))
+with open('pokemon_moves.json', 'r') as inf:
+    Poke_moves = json.load(inf, encoding='utf-8')
 
 Levels = {
     '0.13': 50,
