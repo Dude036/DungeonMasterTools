@@ -1076,5 +1076,6 @@ def print_treasure(monster_name='', monster_cr=0.0):
 
 
 if __name__ == '__main__':
-    monster_search = "Aashaq's Wyvern"
-    print_treasure(monster_search)
+    monster_name = ''
+    monster_cr = '7.0'
+    print_treasure(monster_name, monster_cr)
