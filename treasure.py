@@ -1040,7 +1040,13 @@ def print_treasure(monster_name='', monster_cr=0.0):
         # Choose a random monster
         monster_name = choice(list(Beasts.keys()))
         monster = Beasts[monster_name]
-    elif monster_cr in ['0.13', '0.17', '0.25', '0.33', '0.5', '1.0', '2.0', '3.0', '4.0', '5.0', '6.0', '7.0', '8.0', '9.0', '10.0', '11.0', '12.0', '13.0', '14.0', '15.0', '16.0', '17.0', '18.0', '19.0', '20.0', '21.0', '22.0', '23.0', '24.0', '25.0', '26.0', '27.0', '28.0', '29.0', '30.0', '35.0', '37.0', '39.0']:
+    elif monster_cr in [
+            '0.13', '0.17', '0.25', '0.33', '0.5', '1.0', '2.0', '3.0', '4.0',
+            '5.0', '6.0', '7.0', '8.0', '9.0', '10.0', '11.0', '12.0', '13.0',
+            '14.0', '15.0', '16.0', '17.0', '18.0', '19.0', '20.0', '21.0',
+            '22.0', '23.0', '24.0', '25.0', '26.0', '27.0', '28.0', '29.0',
+            '30.0', '35.0', '37.0', '39.0'
+    ]:
         # Choose a monster based on CR
         monster_name = choice(list(Beasts.keys()))
         monster = Beasts[monster_name]
@@ -1067,7 +1073,8 @@ def print_treasure(monster_name='', monster_cr=0.0):
            'style="width:100%;"><tbody><tr><th style="text-align:left;">Item</th><th style="text-align:left;">' + \
            'Cost</th><th style="text-align:left;">Rarity</th></tr>'
 
-    treasure = treasure_calculator(monster['Treasure'], monster['Type'], monster['CR'])
+    treasure = treasure_calculator(monster['Treasure'], monster['Type'],
+                                   monster['CR'])
     for t in treasure:
         html += str(t)
     html += '</tr></table></body></html>'

@@ -95,7 +95,6 @@ def create(l):
     return d
 
 
-
 def normalize_dict(v):
     d = {}
     total = sum(v.values())
@@ -103,4 +102,3 @@ def normalize_dict(v):
         # print(x, v[x])
         d[x] = v[x] / total
     return d
-

@@ -5,7 +5,6 @@ from os import linesep
 from re import match
 import simplejson as json
 
-
 if __name__ == '__main__':
     generator = json.loads(open('generate.json', 'r').read())
     Weapons = [

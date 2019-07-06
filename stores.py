@@ -11,7 +11,6 @@ with open('spells.json', 'r') as inf:
 with open('wondrous.json', 'r') as inf:
     MasterWondrous = json.load(inf, encoding='utf-8')
 
-
 MasterID = 1
 
 
@@ -189,16 +188,14 @@ class Weapon(object):
             self.add_masterwork(determine_rarity([1, 9]))
 
     def __choose_type(self, requirement=None):
-        if requirement == None:
+        if requirement is None:
             # Make a pick with each weapon type
             if randint(2):
                 self.Class = choice(list(possible_melee.keys()))
-                self.Name = choice(list(
-                    possible_melee[self.Class])).title()
+                self.Name = choice(list(possible_melee[self.Class])).title()
             else:
                 self.Class = choice(list(possible_ranged.keys()))
-                self.Name = choice(list(
-                    possible_ranged[self.Class])).title()
+                self.Name = choice(list(possible_ranged[self.Class])).title()
         # Existing requirement
         elif requirement in list(possible_melee.keys()):
             self.Class = requirement
@@ -261,7 +258,7 @@ class Weapon(object):
         if self.Rarity > 4:
             self.Rarity %= 4
 
-        if self.Rarity == 1:    # Uncommon Materials
+        if self.Rarity == 1:  # Uncommon Materials
             m = self.__verify_metal(uncommon_material)
 
         elif self.Rarity == 2:  # Rare Materials
@@ -273,7 +270,7 @@ class Weapon(object):
         elif self.Rarity == 4:  # Legendary Materials
             m = self.__verify_metal(legendary_material)
 
-        else:                   # Common Materials
+        else:  # Common Materials
             m = self.__verify_metal(common_material)
 
         self.Name = m[0] + ' ' + self.Name
@@ -311,10 +308,8 @@ class Weapon(object):
             self.Crit = '18-20 x3'
 
     def __weigh(self, metal, cl):
-        self.Cost = weapon_cost_and_weight[self.Class][0] * cl[metal]['Cost'] * (
-            self.Rarity + 1)**(self.Rarity)
-        self.Weight = round(
-            weapon_cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 14, 1)
+        self.Cost = weapon_cost_and_weight[self.Class][0] * cl[metal]['Cost'] * (self.Rarity + 1)**self.Rarity
+        self.Weight = round(weapon_cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 14, 1)
 
     def add_enchantment(self, ench):
         if self.Enchantment is None:
@@ -1497,8 +1492,7 @@ class Scroll(object):
                     iSpell=self.Spell, rechargable=False)
 
         if naming:
-            self.Name = Scroll_Name_Potential[randint(len(
-                Scroll_Name_Potential))] + self.Spell
+            self.Name = Scroll_Name_Potential[randint(len(Scroll_Name_Potential))] + self.Spell
         else:
             self.Name = self.Spell
             self.Add = '+'
@@ -1540,9 +1534,8 @@ class Enchant(object):
         if self.Spell is not None:
             self.Level = find_spell_level(self.Spell)
         else:
-            self.Level = int(choice(
-                list(level_likelihood.keys()),
-                p=list(level_likelihood.values())))
+            self.Level = int(
+                choice(list(level_likelihood.keys()), p=list(level_likelihood.values())))
             if self.Level == 0:
                 self.Spell = choice(level_0)
             elif self.Level == 1:
@@ -1773,8 +1766,7 @@ class Wand(object):
             if find_spell_level(spell) == level:
                 self.Spell = spell
                 self.Enchantment = Enchant(iSpell=self.Spell)
-        self.Name = Wand_Name_Potential[randint(len(
-            Wand_Name_Potential))] + self.Spell
+        self.Name = Wand_Name_Potential[randint(len(Wand_Name_Potential))] + self.Spell
 
     def __str__(self):
         # print(self.Enchantment.Level)
@@ -1848,56 +1840,56 @@ class Food(object):
         if meal_option <= 10:
             self.Descriptor = "Meat, Bread"
             s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
-                len(Food_m2))] + " " + Food_m3[randint(len(
-                    Food_m3))] + " with a "
+                len(Food_m2))] + " " + Food_m3[randint(
+                    len(Food_m3))] + " with a "
             s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
                 len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
         elif meal_option == 11:
             self.Descriptor = "Meat, Bread, Fruit"
             s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
-                len(Food_m2))] + " " + Food_m3[randint(len(
-                    Food_m3))] + " with a "
+                len(Food_m2))] + " " + Food_m3[randint(
+                    len(Food_m3))] + " with a "
             s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
                 len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
-            s += " and a side of " + Food_f1[randint(len(
-                Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+            s += " and a side of " + Food_f1[randint(
+                len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
 
         elif meal_option == 12:
             self.Descriptor = "Meat, Bread, Vegetable"
             s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
-                len(Food_m2))] + " " + Food_m3[randint(len(
-                    Food_m3))] + " with a "
+                len(Food_m2))] + " " + Food_m3[randint(
+                    len(Food_m3))] + " with a "
             s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
                 len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
-            s += " and a side of " + Food_v1[randint(len(
-                Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
+            s += " and a side of " + Food_v1[randint(
+                len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
         elif meal_option == 13:
             self.Descriptor = "Vegetable, Bread, Fruit"
             s += Food_v1[randint(len(Food_v1))] + ' ' + Food_v2[randint(
                 len(Food_v2))] + " with a "
             s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
                 len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
-            s += " and a side of " + Food_f1[randint(len(
-                Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+            s += " and a side of " + Food_f1[randint(
+                len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
         elif meal_option == 14:
             self.Descriptor = "Meat, Fruit, Vegetable"
             s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
                 len(Food_m2))] + " " + Food_m3[randint(len(Food_m3))]
-            s += " with " + Food_f1[randint(len(
-                Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
-            s += " and " + Food_v1[randint(len(
-                Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
+            s += " with " + Food_f1[randint(
+                len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+            s += " and " + Food_v1[randint(
+                len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
         else:
             self.Descriptor = "Meat, Fruit, Vegetable, Bread"
             s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
-                len(Food_m2))] + " " + Food_m3[randint(len(
-                    Food_m3))] + " with a "
+                len(Food_m2))] + " " + Food_m3[randint(
+                    len(Food_m3))] + " with a "
             s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
                 len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
-            s += " with " + Food_f1[randint(len(
-                Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
-            s += " and " + Food_v1[randint(len(
-                Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
+            s += " with " + Food_f1[randint(
+                len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+            s += " and " + Food_v1[randint(
+                len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
         self.String = s
         if meal_option == 0:
             self.Cost = (len(s) * random_sample() + .5) // 10

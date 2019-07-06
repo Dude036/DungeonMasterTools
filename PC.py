@@ -84,7 +84,7 @@ playable = {
         "WIS": 4,
         "CHA": 5
     },
-    "Rogue": {   
+    "Rogue": {
         "STR": 5,
         "DEX": 0,
         "CON": 1,
@@ -232,7 +232,6 @@ class PC(object):
             info += '<td style="text-align: center;">' + str(
                 s) + ' (' + add + ')</td>'
         info += '</tbody></table>'
-
 
         # Add Weapons
         info += '<ul style="columns: 2;padding: 10px;">'
