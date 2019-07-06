@@ -942,11 +942,15 @@
   "Cleric":{
     "1":{
       "Feats":[
-
+        "<p><b>Aura</b>: A cleric of a chaotic, evil, good, or lawful deity has a particularly powerful aura corresponding to the deity’s alignment (see <a style=\"font-style: italic;\" href=\"https://www.d20pfsrd.com/magic/all-spells/d/detect-evil\">detect evil</a> for details).</p>",
+        "<p><b>Channel Energy</b>: Regardless of alignment, any cleric can release a wave of energy by channeling the power of her faith through her holy (or unholy) symbol. This energy can be used to cause or heal damage, depending on the type of energy channeled and the creatures targeted.</p><p>A good cleric (or a neutral cleric who worships a good deity) channels positive energy and can choose to deal damage to <a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Undead\">undead</a> creatures or to heal living creatures. An evil cleric (or a neutral cleric who worships an evil deity) channels negative energy and can choose to deal damage to living creatures or to heal <a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Undead\">undead</a> creatures. A neutral cleric of a neutral deity (or one who is not devoted to a particular deity) must choose whether she channels positive or negative energy. Once this choice is made, it cannot be reversed. This decision also determines whether the cleric can cast spontaneous cure or inflict spells (see spontaneous casting).</p><p>Channeling energy causes a burst that affects all creatures of one type (either <a href=\"https://www.d20pfsrd.com/bestiary/rules-for-monsters/creature-types#TOC-Undead\">undead</a> or living) in a 30-foot radius centered on the cleric. The amount of damage dealt or healed is equal to 1d6 points of damage plus 1d6 points of damage for every two cleric levels beyond 1st (2d6 at 3rd, 3d6 at 5th, and so on). Creatures that take damage from channeled energy receive a <a href=\"https://www.d20pfsrd.com/gamemastering/combat#TOC-Will\" rel=\"nofollow\">Will</a> save to halve the damage. The DC of this save is equal to 10 + 1/2 the cleric’s level + the cleric’s <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\" rel=\"nofollow\">Charisma</a> modifier. Creatures healed by channel energy cannot exceed their maximum hit point total—all excess healing is lost. A cleric may channel energy a number of times per day equal to 3 + her <a href=\"https://www.d20pfsrd.com/basics-ability-scores/ability-scores#TOC-Charisma-Cha-\" rel=\"nofollow\">Charisma</a> modifier. This is a standard action that does not provoke an attack of opportunity. A cleric can choose whether or not to include herself in this effect.</p><p>A cleric must be able to present her holy symbol to use this ability.</p>",
+        "<p><b>Domains</b>: A cleric’s deity influences her alignment, what magic she can perform, her values, and how others see her. A cleric chooses two <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric/domains\">domains</a> from among those belonging to her deity. A cleric can select an alignment <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric/domains\">domain</a> (Chaos, Evil, Good, or Law) only if her alignment matches that <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric/domains\">domain</a>. If a cleric is not devoted to a particular deity, she still selects two <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric/domains\">domains</a> to represent her spiritual inclinations and abilities (subject to GM approval). The restriction on alignment <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric/domains\">domains</a> still applies.</p><p>Each <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric/domains\">domain</a> grants a number of <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric/domains\">domain</a> powers, dependent upon the level of the cleric, as well as a number of bonus spells. A cleric gains one <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric/domains\">domain</a> spell slot for each level of cleric spell she can cast, from 1st on up. Each day, a cleric can prepare one of the spells from her two <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric/domains\">domain</a>s in that slot. If a <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric/domains\">domain</a> spell is not on the cleric spell list, a cleric can prepare it only in her <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric/domains\">domain</a> spell slot. Domain spells cannot be used to cast spells spontaneously.</p><p>In addition, a cleric gains the listed powers from both of her domains, if she is of a high enough level. Unless otherwise noted, activating a domain power is a standard action.</p><p>A complete listing of cleric domains can be found here: <a href=\"https://www.d20pfsrd.com/classes/core-classes/cleric/domains\"><b>Cleric Domains</b></a></p>",
+        "<p><b>Orisons</b>: Clerics can prepare a number of orisons, or 0-level spells, each day, as noted on <b>Table: Cleric</b> under “Spells per day.” These spells are treated like any other spell, but they are not expended when cast and may be used again.</p>",
+        "<p><b>Spontaneous Casting</b>: A good cleric (or a neutral cleric of a good deity) can channel stored spell energy into healing spells that she did not prepare ahead of time. The cleric can \\\"lose\\\" any prepared spell that is not an orison or domain spell in order to cast any cure spell of the same spell level or lower (a cure spell is any spell with \\\"cure\\\" in its name).</p><p>An evil cleric (or a neutral cleric of an evil deity) can’t convert prepared spells to cure spells but can convert them to inflict spells (an inflict spell is one with \\\"inflict\\\" in its name).</p><p>A cleric who is neither good nor evil and whose deity is neither good nor evil can convert spells to either cure spells or inflict spells (player’s choice). Once the player makes this choice, it cannot be reversed. This choice also determines whether the cleric channels positive or negative energy (see channel energy).</p>"
       ],
       "Spells":{
-        "0":0,
-        "1":0,
+        "0":3,
+        "1":2,
         "2":0,
         "3":0,
         "4":0,
@@ -957,9 +961,9 @@
         "9":0
       },
       "Saves":{
-        "Fort":0,
+        "Fort":2,
         "Ref":0,
-        "Will":0,
+        "Will":2,
         "BAB":0
       }
     },
@@ -968,8 +972,8 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
+        "0":4,
+        "1":3,
         "2":0,
         "3":0,
         "4":0,
@@ -980,10 +984,10 @@
         "9":0
       },
       "Saves":{
-        "Fort":0,
+        "Fort":3,
         "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Will":3,
+        "BAB":1
       }
     },
     "3":{
@@ -991,9 +995,9 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
+        "0":4,
+        "1":3,
+        "2":2,
         "3":0,
         "4":0,
         "5":0,
@@ -1003,10 +1007,10 @@
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":3,
+        "Ref":1,
+        "Will":3,
+        "BAB":2
       }
     },
     "4":{
@@ -1014,9 +1018,9 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
+        "0":4,
+        "1":4,
+        "2":3,
         "3":0,
         "4":0,
         "5":0,
@@ -1026,10 +1030,10 @@
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":4,
+        "Ref":1,
+        "Will":4,
+        "BAB":3
       }
     },
     "5":{
@@ -1037,10 +1041,10 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
+        "0":4,
+        "1":4,
+        "2":3,
+        "3":2,
         "4":0,
         "5":0,
         "6":0,
@@ -1049,10 +1053,10 @@
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":4,
+        "Ref":1,
+        "Will":4,
+        "BAB":3
       }
     },
     "6":{
@@ -1060,10 +1064,10 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
+        "0":4,
+        "1":4,
+        "2":4,
+        "3":3,
         "4":0,
         "5":0,
         "6":0,
@@ -1072,10 +1076,10 @@
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":5,
+        "Ref":2,
+        "Will":5,
+        "BAB":4
       }
     },
     "7":{
@@ -1083,11 +1087,11 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
+        "0":4,
+        "1":5,
+        "2":4,
+        "3":3,
+        "4":2,
         "5":0,
         "6":0,
         "7":0,
@@ -1095,10 +1099,10 @@
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":5,
+        "Ref":2,
+        "Will":5,
+        "BAB":5
       }
     },
     "8":{
@@ -1106,11 +1110,11 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
+        "0":4,
+        "1":5,
+        "2":4,
+        "3":4,
+        "4":3,
         "5":0,
         "6":0,
         "7":0,
@@ -1118,10 +1122,10 @@
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":6,
+        "Ref":2,
+        "Will":6,
+        "BAB":6
       }
     },
     "9":{
@@ -1129,22 +1133,22 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
-        "5":0,
+        "0":4,
+        "1":5,
+        "2":5,
+        "3":4,
+        "4":3,
+        "5":2,
         "6":0,
         "7":0,
         "8":0,
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":6,
+        "Ref":2,
+        "Will":6,
+        "BAB":6
       }
     },
     "10":{
@@ -1152,22 +1156,22 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
-        "5":0,
+        "0":4,
+        "1":5,
+        "2":5,
+        "3":4,
+        "4":4,
+        "5":3,
         "6":0,
         "7":0,
         "8":0,
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":7,
+        "Ref":3,
+        "Will":7,
+        "BAB":7
       }
     },
     "11":{
@@ -1175,22 +1179,22 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
-        "5":0,
-        "6":0,
+        "0":4,
+        "1":5,
+        "2":5,
+        "3":5,
+        "4":4,
+        "5":3,
+        "6":2,
         "7":0,
         "8":0,
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":7,
+        "Ref":3,
+        "Will":7,
+        "BAB":8
       }
     },
     "12":{
@@ -1198,22 +1202,22 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
-        "5":0,
-        "6":0,
+        "0":4,
+        "1":5,
+        "2":5,
+        "3":5,
+        "4":4,
+        "5":4,
+        "6":3,
         "7":0,
         "8":0,
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":8,
+        "Ref":4,
+        "Will":8,
+        "BAB":9
       }
     },
     "13":{
@@ -1221,22 +1225,22 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
-        "5":0,
-        "6":0,
-        "7":0,
+        "0":4,
+        "1":5,
+        "2":5,
+        "3":5,
+        "4":5,
+        "5":4,
+        "6":3,
+        "7":2,
         "8":0,
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":8,
+        "Ref":4,
+        "Will":8,
+        "BAB":9
       }
     },
     "14":{
@@ -1244,22 +1248,22 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
-        "5":0,
-        "6":0,
-        "7":0,
+        "0":4,
+        "1":5,
+        "2":5,
+        "3":5,
+        "4":5,
+        "5":4,
+        "6":4,
+        "7":3,
         "8":0,
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":9,
+        "Ref":4,
+        "Will":9,
+        "BAB":10
       }
     },
     "15":{
@@ -1267,22 +1271,22 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
-        "5":0,
-        "6":0,
-        "7":0,
-        "8":0,
+        "0":4,
+        "1":5,
+        "2":5,
+        "3":5,
+        "4":5,
+        "5":5,
+        "6":4,
+        "7":3,
+        "8":2,
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":9,
+        "Ref":5,
+        "Will":9,
+        "BAB":11
       }
     },
     "16":{
@@ -1290,22 +1294,22 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
-        "5":0,
-        "6":0,
-        "7":0,
-        "8":0,
+        "0":4,
+        "1":5,
+        "2":5,
+        "3":5,
+        "4":5,
+        "5":5,
+        "6":4,
+        "7":4,
+        "8":3,
         "9":0
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":10,
+        "Ref":5,
+        "Will":10,
+        "BAB":12
       }
     },
     "17":{
@@ -1313,22 +1317,22 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
-        "5":0,
-        "6":0,
-        "7":0,
-        "8":0,
-        "9":0
+        "0":4,
+        "1":5,
+        "2":5,
+        "3":5,
+        "4":5,
+        "5":5,
+        "6":5,
+        "7":4,
+        "8":3,
+        "9":2
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":10,
+        "Ref":5,
+        "Will":10,
+        "BAB":12
       }
     },
     "18":{
@@ -1336,22 +1340,22 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
-        "5":0,
-        "6":0,
-        "7":0,
-        "8":0,
-        "9":0
+        "0":4,
+        "1":5,
+        "2":5,
+        "3":5,
+        "4":5,
+        "5":5,
+        "6":5,
+        "7":4,
+        "8":4,
+        "9":3
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":11,
+        "Ref":6,
+        "Will":11,
+        "BAB":13
       }
     },
     "19":{
@@ -1359,22 +1363,22 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
-        "5":0,
-        "6":0,
-        "7":0,
-        "8":0,
-        "9":0
+        "0":4,
+        "1":5,
+        "2":5,
+        "3":5,
+        "4":5,
+        "5":5,
+        "6":5,
+        "7":5,
+        "8":4,
+        "9":4
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":11,
+        "Ref":6,
+        "Will":11,
+        "BAB":14
       }
     },
     "20":{
@@ -1382,22 +1386,22 @@
 
       ],
       "Spells":{
-        "0":0,
-        "1":0,
-        "2":0,
-        "3":0,
-        "4":0,
-        "5":0,
-        "6":0,
-        "7":0,
-        "8":0,
-        "9":0
+        "0":4,
+        "1":5,
+        "2":5,
+        "3":5,
+        "4":5,
+        "5":5,
+        "6":5,
+        "7":5,
+        "8":5,
+        "9":5
       },
       "Saves":{
-        "Fort":0,
-        "Ref":0,
-        "Will":0,
-        "BAB":0
+        "Fort":12,
+        "Ref":6,
+        "Will":12,
+        "BAB":15
       }
     }
   },
