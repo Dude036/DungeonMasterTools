@@ -99,6 +99,30 @@ def roll_hp(string):
     return string
 
 
+def pokemon_moves(name='', tm=0):
+    html = '<table><td style="width: 50%"><span class="text-md">'
+    # weapon[1] + ' (' + weapon[2] + ')</span></td></table><br/>'
+    if name == '' and tm == 0:
+        return None
+    elif tm == 0:
+        try:
+            move = Poke_moves[name]
+            html += '<a href"' + move['link'] + '">' + name.title() + '</a>(PP: ' + str(move['pp']) + ')<i>' + \
+                    move['type'] + '</i>/span><br /><span class="text-sm emp">' + move['school'] + ' | ' + move['range']
+        except KeyError:
+            return None
+    else:
+        pass
+    return html
+
+
+def get_monster_type(dictionary):
+    if "Pokemon" in list(dictionary.keys()):
+        return 'Pokemon'
+    else:
+        return "Pathfinder"
+
+
 def print_monster(picked_monster):
     if 'beasts' not in os.listdir(os.getcwd()):
         try:
@@ -108,18 +132,18 @@ def print_monster(picked_monster):
 
     name = picked_monster[0]
     monster = picked_monster[1]
+    monster_type = get_monster_type(monster)
 
     abilities = re.match(
         r'Str\s+([\d\-]*),\s+Dex\s+([\d\-]*),\s+Con\s+([\d\-]*),\s+Int\s+([\d\-]*),\s+Wis\s+([\d\-]*),\s+Cha\s+([\d\-]*)',
         monster['AbilityScores'])
-    armor = re.match(r'(\-?\d+), touch (\-?\d+), flat-footed (\-?\d+)', monster['AC'])
-    saves = re.match(r'Fort ([+-]\d+[\S ]*), Ref ([+-]\d+[\S ]*), Will ([+-]\d+[\S ]*)', monster['Saves'])
-    # -5 + int(n / 2)
-    if saves is None or armor is None or abilities is None:
-        print(name)
-        print('\tS:\t', saves)
-        print('\tR:\t', armor)
-        print('\tA:\t', abilities)
+
+    if monster_type == 'Pokemon':
+        armor = monster['AC']
+        saves = None
+    else:
+        armor = re.match(r'(\-?\d+), touch (\-?\d+), flat-footed (\-?\d+)', monster['AC'])
+        saves = re.match(r'Fort ([+-]\d+[\S ]*), Ref ([+-]\d+[\S ]*), Will ([+-]\d+[\S ]*)', monster['Saves'])
 
     html = '<!DOCTYPE html><html><head><meta content="width=device-width" name="viewport"/><title></title><style>' + \
            'body {max-width:800px;margin-left:auto;margin-right:auto;padding-left:5px;padding-right:5px;} html' + \
@@ -136,7 +160,7 @@ def print_monster(picked_monster):
            """""""'none'){\na.style.display = 'block';} else {a.style.display = 'none';}}</script>""" + \
            '<body><table class="wrapper-box" style="margin-bottom:60px;"><tr><td><span class="text-lg bold">' + \
            name + '</span>-<span class="text-md bold">CR ' + monster['CR'] + '</span>&emsp;<span>(EXP: ' + \
-           str(format(Levels[monster['CR']], ',d')) + ')</span><p>'
+           str(monster['CR']) + ')</span><p>'
     for line in monster['Description'].split('.'):
         html += '<p>' + line + '</p>'
     html += '<div><ul style="column-count: 2; list-style-type: none;margin: 5px"><li style="padding-top: 6px;' + \
@@ -146,10 +170,12 @@ def print_monster(picked_monster):
             '<span style="font-weight:bold;">Size:</span>' + monster['Size'] + '</li><li><table><th>AC:</th><td>' + \
             armor.group(1) + '</td><th>Touch:</th><td>' + armor.group(2) + '</td><th>Flat:</th><td>' + armor.group(3) +\
             '</td></table></li><li><table><th>Attack:' + '</th><td>' + monster['BaseAtk'] + '</td><th>CMB:</th><td>' + \
-            monster['CMB'] + '</td><th>CMD:</th><td>' + monster['CMD'] + '</td></table></li><li><table><th>Fort:' + \
-            '</th><td>' + saves.group(1) + '</td><th>Ref:</th><td>' + saves.group(2) + '</td><th>Will:</th><td>' + \
-            saves.group(3) + '</td></table></li></ul></div><table class="inventory-table" style="width: 100%;">' + \
-            '<tr><th>STR</th><th>DEX</th><th>CON</th><th>INT</th><th>WIS</th><th>CHA</th></tr><tr>'
+            monster['CMB'] + '</td><th>CMD:</th><td>' + monster['CMD'] + '</td></table></li>'
+    if saves is not None:
+        html += '<li><table><th>Fort:</th><td>' + saves.group(1) + '</td><th>Ref:</th><td>' + saves.group(2) + \
+            '</td><th>Will:</th><td>' + saves.group(3) + '</td></table></li>'
+    html += '</ul></div><table class="inventory-table"style="width: 100%;"><tr><th>STR</th><th>DEX</th><th>CON</th>' + \
+            '<th>INT</th><th>WIS</th><th>CHA</th></tr><tr>'
 
     for a in range(6):
         if abilities is None:
@@ -167,32 +193,35 @@ def print_monster(picked_monster):
     html += '</tr></table><ul style="columns: 2;padding: 10px;">'
 
     total_weapons = 0
+    if monster_type == 'Pokemon':
+        for moves in monster['Moves']['Start']:
+            pass
+    else:
+        if monster['Melee'] != '':
+            all_weapons = re.findall(
+                r'(\d{0,3}\s*[\w ]+)[\s]+([\+\-\d\/]+)[\s]+\(([\w\d\-\+\\\/\.\,\'\; ]+)\)',
+                monster['Melee'])
+            if all_weapons:
+                for weapon in all_weapons:
+                    html += '<table><td style="width: 50%"><span class="text-md">' + weapon[0].strip().title() + \
+                            '</span><br /><span class="text-sm emp">' + weapon[1] + ' (' + weapon[2] + \
+                            ')</span></td></table><br/>'
+                    total_weapons += 1
+            else:
+                print(name, '\t', monster['Melee'])
 
-    if monster['Melee'] != '':
-        all_weapons = re.findall(
-            r'(\d{0,3}\s*[\w ]+)[\s]+([\+\-\d\/]+)[\s]+\(([\w\d\-\+\\\/\.\,\'\; ]+)\)',
-            monster['Melee'])
-        if all_weapons:
-            for weapon in all_weapons:
-                html += '<table><td style="width: 50%"><span class="text-md">' + weapon[0].strip().title() + \
-                        '</span><br /><span class="text-sm emp">' + weapon[1] + ' (' + weapon[2] + \
-                        ')</span></td></table><br/>'
-                total_weapons += 1
-        else:
-            print(name, '\t', monster['Melee'])
-
-    if monster['Ranged'] != '':
-        all_weapons = re.findall(
-            r'(\d{0,3}\s*[\w ]+)[\s]+([\+\-\d\/]+)[\s]+\(([\w\d\-\+\\\/\.\,\'\; ]+)\)',
-            monster['Ranged'])
-        if all_weapons:
-            for weapon in all_weapons:
-                html += '<table><td style="width: 50%"><span class="text-md">' + weapon[0].strip().title() + \
-                        '</span><br /><span class="text-sm emp">' + weapon[1] + ' (' + weapon[2] \
-                        + ')</span></td></table>' + '<br/>'
-                total_weapons += 1
-        else:
-            print(name, '\t', monster['Ranged'])
+        if monster['Ranged'] != '':
+            all_weapons = re.findall(
+                r'(\d{0,3}\s*[\w ]+)[\s]+([\+\-\d\/]+)[\s]+\(([\w\d\-\+\\\/\.\,\'\; ]+)\)',
+                monster['Ranged'])
+            if all_weapons:
+                for weapon in all_weapons:
+                    html += '<table><td style="width: 50%"><span class="text-md">' + weapon[0].strip().title() + \
+                            '</span><br /><span class="text-sm emp">' + weapon[1] + ' (' + weapon[2] \
+                            + ')</span></td></table>' + '<br/>'
+                    total_weapons += 1
+            else:
+                print(name, '\t', monster['Ranged'])
 
     if total_weapons % 2 == 1:
         html += '<table><td style="width: 50%"><span class="text-md"></span><br /><span class="text-sm emp"></span>' + \
@@ -200,8 +229,11 @@ def print_monster(picked_monster):
     html += '</ul><p><strong>Treasure:</strong></p><table class="inventory-table" style="width:100%;"><tbody><tr>' + \
             '<th style="text-align:left;">Item</th><th style="text-align:left;">Cost</th><th style="text-align:left;">' + \
             'Rarity</th></tr>'
-    treasure = treasure_calculator(monster['Treasure'], monster['Type'],
-                                   monster['CR'])
+
+    if monster_type == 'Pokemon':
+        treasure = treasure_calculator(monster['Treasure'], "humanoid", monster['CR'])
+    else:
+        treasure = treasure_calculator(monster['Treasure'], monster['Type'], monster['CR'])
     for t in treasure:
         html += str(t)
     html += '</tr></table></body></html>'
