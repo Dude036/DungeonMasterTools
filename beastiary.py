@@ -26,40 +26,40 @@ Levels = {
     '0.17': 65,
     '0.25': 100,
     '0.33': 135,
-    '0.50': 200,
-    '1.00': 400,
-    '2.00': 600,
-    '3.00': 800,
-    '4.00': 1200,
-    '5.00': 1600,
-    '6.00': 2400,
-    '7.00': 3200,
-    '8.00': 4800,
-    '9.00': 6400,
-    '10.00': 9600,
-    '11.00': 12800,
-    '12.00': 19200,
-    '13.00': 25600,
-    '14.00': 38400,
-    '15.00': 51200,
-    '16.00': 76800,
-    '17.00': 102400,
-    '18.00': 153600,
-    '19.00': 204800,
-    '20.00': 307200,
-    '21.00': 409600,
-    '22.00': 615000,
-    '23.00': 820000,
-    '24.00': 1230000,
-    '25.00': 1640000,
-    '26.00': 2457600,
-    '27.00': 3276800,
-    '28.00': 4915200,
-    '29.00': 6553600,
-    '30.00': 9830400,
-    '35.00': 52480000,
-    '37.00': 104960000,
-    '39.00': 209920000,
+    '0.5':  200,
+    '1.0':  400,
+    '2.0':  600,
+    '3.0':  800,
+    '4.0':  1200,
+    '5.0':  1600,
+    '6.0':  2400,
+    '7.0':  3200,
+    '8.0':  4800,
+    '9.0':  6400,
+    '10.0': 9600,
+    '11.0': 12800,
+    '12.0': 19200,
+    '13.0': 25600,
+    '14.0': 38400,
+    '15.0': 51200,
+    '16.0': 76800,
+    '17.0': 102400,
+    '18.0': 153600,
+    '19.0': 204800,
+    '20.0': 307200,
+    '21.0': 409600,
+    '22.0': 615000,
+    '23.0': 820000,
+    '24.0': 1230000,
+    '25.0': 1640000,
+    '26.0': 2457600,
+    '27.0': 3276800,
+    '28.0': 4915200,
+    '29.0': 6553600,
+    '30.0': 9830400,
+    '35.0': 52480000,
+    '37.0': 104960000,
+    '39.0': 209920000,
 }
 index = 0
 
@@ -96,7 +96,7 @@ def roll_hp(string):
         total += randint(int(m.group(2))) + 1
     if len(m.groups()) == 3:
         total += int(m.group(3))
-    return string
+    return str(total)
 
 
 def pokemon_moves(name='', tm=0):
@@ -145,6 +145,7 @@ def print_monster(picked_monster):
         armor = re.match(r'(\-?\d+), touch (\-?\d+), flat-footed (\-?\d+)', monster['AC'])
         saves = re.match(r'Fort ([+-]\d+[\S ]*), Ref ([+-]\d+[\S ]*), Will ([+-]\d+[\S ]*)', monster['Saves'])
 
+    # Base HTML
     html = '<!DOCTYPE html><html><head><meta content="width=device-width" name="viewport"/><title></title><style>' + \
            'body {max-width:800px;margin-left:auto;margin-right:auto;padding-left:5px;padding-right:5px;} html' + \
            '{font-family:Arial;}h1, h2 {color:black;text-align:center;} .center{text-align:center;} .bold' + \
@@ -159,21 +160,33 @@ def print_monster(picked_monster):
            '<script>function show_hide(ident){\nvar a = document.getElementById(ident);\nif (a.style.display ===' + \
            """""""'none'){\na.style.display = 'block';} else {a.style.display = 'none';}}</script>""" + \
            '<body><table class="wrapper-box" style="margin-bottom:60px;"><tr><td><span class="text-lg bold">' + \
-           name + '</span>-<span class="text-md bold">CR ' + monster['CR'] + '</span>&emsp;<span>(EXP: ' + \
-           str(monster['CR']) + ')</span><p>'
+           name + '</span>-<span class="text-md bold">CR ' + str(monster['CR']) + '</span>&emsp;<span>(EXP: '
+
+    html += str(Levels[str(float(monster['CR']))]) + ')</span><p>'
     for line in monster['Description'].split('.'):
         html += '<p>' + line + '</p>'
-    html += '<div><ul style="column-count: 2; list-style-type: none;margin: 5px"><li style="padding-top: 6px;' + \
-            'padding-bottom: 6px;"><span style="font-weight:bold;">HP:</span>' + roll_hp(monster['HD']) + ' (' + \
-            monster['HD'] + ')</li><li style="padding-top: 6px;padding-bottom: 6px;"><span style="font-weight:' + \
-            'bold;">Speed:</span>' + monster['Speed'] + '</li><li style="padding-top: 6px;padding-bottom: 6px;">' + \
-            '<span style="font-weight:bold;">Size:</span>' + monster['Size'] + '</li><li><table><th>AC:</th><td>' + \
-            armor.group(1) + '</td><th>Touch:</th><td>' + armor.group(2) + '</td><th>Flat:</th><td>' + armor.group(3) +\
-            '</td></table></li><li><table><th>Attack:' + '</th><td>' + monster['BaseAtk'] + '</td><th>CMB:</th><td>' + \
-            monster['CMB'] + '</td><th>CMD:</th><td>' + monster['CMD'] + '</td></table></li>'
-    if saves is not None:
-        html += '<li><table><th>Fort:</th><td>' + saves.group(1) + '</td><th>Ref:</th><td>' + saves.group(2) + \
-            '</td><th>Will:</th><td>' + saves.group(3) + '</td></table></li>'
+
+    # Add basic Stats
+    if monster_type == 'Pathfinder':
+        html += '<div><ul style="column-count: 2; list-style-type: none;margin: 5px"><li style="padding-top: 6px;' + \
+                'padding-bottom: 6px;"><span style="font-weight:bold;">HP:</span>' + roll_hp(monster['HD']) + ' (' + \
+                monster['HD'] + ')</li><li style="padding-top: 6px;padding-bottom: 6px;"><span style="font-weight:' + \
+                'bold;">Speed:</span>' + monster['Speed'] + '</li><li style="padding-top: 6px;padding-bottom: 6px;">' + \
+                '<span style="font-weight:bold;">Size:</span>' + monster['Size'] + '</li><li><table><th>AC:</th><td>' + \
+                armor.group(1) + '</td><th>Touch:</th><td>' + armor.group(2) + '</td><th>Flat:</th><td>' + armor.group(3) +\
+                '</td></table></li><li><table><th>Attack:' + '</th><td>' + monster['BaseAtk'] + '</td><th>CMB:</th><td>' + \
+                monster['CMB'] + '</td><th>CMD:</th><td>' + monster['CMD'] + '</td></table></li>'
+        if saves is not None:
+            html += '<li><table><th>Fort:</th><td>' + saves.group(1) + '</td><th>Ref:</th><td>' + saves.group(2) + \
+                '</td><th>Will:</th><td>' + saves.group(3) + '</td></table></li>'
+    elif monster_type == 'Pokemon':
+        html += '<div><ul style="column-count: 2; list-style-type: none;margin: 5px"><li style="padding-top: 6px;' + \
+                'padding-bottom: 6px;"><span style="font-weight:bold;">HP:</span>' + roll_hp(monster['HD']) + ' (' + \
+                monster['HD'] + ')</li><li style="padding-top: 6px;padding-bottom: 6px;"><span style="font-weight:' + \
+                'bold;">Speed:</span>' + monster['Speed'] + '</li><li style="padding-top: 6px;padding-bottom: 6px;">' + \
+                '<span style="font-weight:bold;">Size:</span>' + monster['Size'] + '</li>'
+
+    # Add Base Stats
     html += '</ul></div><table class="inventory-table"style="width: 100%;"><tr><th>STR</th><th>DEX</th><th>CON</th>' + \
             '<th>INT</th><th>WIS</th><th>CHA</th></tr><tr>'
 
@@ -194,8 +207,13 @@ def print_monster(picked_monster):
 
     total_weapons = 0
     if monster_type == 'Pokemon':
-        for moves in monster['Moves']['Start']:
-            pass
+        # print('Pokemon Moves')
+        for move in monster['Moves']['Start']:
+            move_info = Poke_moves[move]
+            html += '<table><td style="width: 50%"><span class="text-md"><a href="' + move_info['link'] + '">' + \
+                    move + '</a> <i>(PP: ' + str(move_info['pp']) + ')</i></span><br /><span class="text-sm emp">' + \
+                    '<b>Type:</b>' + move_info['type'] + '<b>Time:</b> ' + move_info['casting_time'] + \
+                    '<b>Range:</b> ' + move_info['range'] + '</span>' + move_info['description'] + '</td></table><br/>'
     else:
         if monster['Melee'] != '':
             all_weapons = re.findall(
@@ -278,6 +296,7 @@ def print_treasure(picked_monster):
 
 if __name__ == '__main__':
     import time
+    import shutil
 
     print('########################')
     print('# Running all monsters #')
@@ -286,6 +305,7 @@ if __name__ == '__main__':
 
     if 'beasts' not in os.listdir(os.getcwd()):
         try:
+            shutil.rmtree('beasts')
             os.mkdir(os.getcwd() + '/beasts')
         except OSError:
             print("Beasts directory creation failed")
