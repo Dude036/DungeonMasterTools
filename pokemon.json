@@ -114,7 +114,7 @@
     },
     "Description": "<p>It can teleport itself to safety while it\u2019s asleep, but when it wakes, it doesn\u2019t know where it is, so it panics.</p>",
     "Evolution": "Abra can evolve into Kadabra at level 6 and above. When it evolves, its health increases by double its level, and it gains 10 points to add to its ability scores (max 20).",
-    "HD": "1d6+-1",
+    "HD": "1d6+1",
     "Languages": "Poke",
     "Moves": {
       "Start": [
@@ -436,7 +436,7 @@
       "Start": [
         "Harden",
         "Headbutt",
-        "Mud-Slap",
+        "Mud Slap",
         "Tackle",
         "Metal Claw",
         "Rock Tomb",
@@ -1660,7 +1660,7 @@
       "Start": [
         "Harden",
         "Tackle",
-        "Mud-Slap"
+        "Mud Slap"
       ]
     },
     "Pokedex": "304",
@@ -2018,7 +2018,7 @@
     "AC": "11",
     "AbilityScores": "Str 11, Dex 10, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
-    "CR": 0.125,
+    "CR": 0.13,
     "DefensiveAbilities": {
       "Huge Power": "Once per short rest, this Pok\u00c3\u00a9mon may double the damage it does on a single move that requires an attack roll. The player must announce that they are using this ability before the attack roll.",
       "Sap Sipper": "This Pok\u00c3\u00a9mon is immune to grass-type moves. If hit by a grass type move, it takes no damage and instead absorbs the energy, granting advantage on its next attack.",
@@ -2200,7 +2200,7 @@
     "Moves": {
       "10": [
         "Power Trick",
-        "Self-Destruct",
+        "Self Destruct",
         "Extrasensory"
       ],
       "14": [
@@ -2212,7 +2212,7 @@
         "Explosion"
       ],
       "2": [
-        "Mud-Slap",
+        "Mud Slap",
         "Heal Block",
         "Rock Tomb"
       ],
@@ -2440,7 +2440,7 @@
         "Magnitude"
       ],
       "Start": [
-        "Mud-Slap"
+        "Mud Slap"
       ]
     },
     "Pokedex": "339",
@@ -5190,14 +5190,14 @@
     "AC": "11",
     "AbilityScores": "Str 9, Dex 10, Con 8, Int 6, Wis 10, Cha 14",
     "Alignment": "N",
-    "CR": 0.125,
+    "CR": 0.13,
     "DefensiveAbilities": {
       "Run Away": "While this Pok\u00c3\u00a9mon is active, the trainer automatically succeeds on their DEX roll to run away from a wild Pok\u00c3\u00a9mon encounter.",
       "Shield Dust": "Once per long rest, this Pok\u00c3\u00a9mon can ignore a negative status condition that results from an enemy move."
     },
     "Description": "<p>It\u2019s easy to catch, and it grows quickly, making it one of the top recommendations for novice Pok\u00e9mon Trainers.</p>",
     "Evolution": "Caterpie can evolve into Metapod at level 4 and above. When it evolves, its health increases by double its level, and it gains 5 points to add to its ability scores (max 20).",
-    "HD": "1d6+-1",
+    "HD": "1d6+1",
     "Languages": "Poke",
     "Moves": {
       "2": [
@@ -6566,7 +6566,7 @@
     "Moves": {
       "10": [
         "Power Trick",
-        "Self-Destruct",
+        "Self Destruct",
         "Extrasensory"
       ],
       "14": [
@@ -6583,7 +6583,7 @@
         "Hyper Beam",
         "Rapid Spin",
         "Teleport",
-        "Mud-Slap",
+        "Mud Slap",
         "Heal Block",
         "Rock Tomb",
         "Psybeam",
@@ -6877,7 +6877,7 @@
     "AC": "11",
     "AbilityScores": "Str 10, Dex 9, Con 10, Int 6, Wis 10, Cha 14",
     "Alignment": "N",
-    "CR": 0.125,
+    "CR": 0.13,
     "DefensiveAbilities": {
       "Cute Charm": "Once per short rest, you can impose disadvantage on an enemy attack roll of your choice.",
       "Friend Guard": "Once per long rest, when an ally within 15 feet of this Pok\u00c3\u00a9mon is hit by an attack, it may choose to halve the damage dealt.",
@@ -7846,7 +7846,7 @@
       ],
       "Start": [
         "Astonish",
-        "Mud-Slap"
+        "Mud Slap"
       ]
     },
     "Pokedex": "453",
@@ -8911,7 +8911,7 @@
         "Astonish"
       ],
       "6": [
-        "Mud-Slap",
+        "Mud Slap",
         "Magnitude",
         "Bulldoze"
       ],
@@ -10048,7 +10048,7 @@
         "Fissure"
       ],
       "6": [
-        "Mud-Slap",
+        "Mud Slap",
         "Magnitude",
         "Bulldoze"
       ],
@@ -11122,7 +11122,7 @@
     "Moves": {
       "10": [
         "Swift",
-        "Self-Destruct"
+        "Self Destruct"
       ],
       "14": [
         "Light Screen"
@@ -12085,7 +12085,7 @@
     },
     "Description": "<p>Although unattractive and unpopular, this Pok\u00e9mon\u2019s marvelous vitality has made it a subject of research.</p>",
     "Evolution": "Feebas can evolve into Milotic at level 10 and above while holding a Prism Scale. When it evolves, its health increases by double its level, and it gains 18 points to add to its ability scores (max 20).",
-    "HD": "1d6+-1",
+    "HD": "1d6+1",
     "Languages": "Poke",
     "Moves": {
       "2": [
@@ -12648,7 +12648,7 @@
         "Feint Attack",
         "Sand Attack",
         "Sonic Boom",
-        "Mud-Slap",
+        "Mud Slap",
         "Bulldoze",
         "Sand Tomb",
         "Rock Slide",
@@ -12753,7 +12753,7 @@
         "Protect",
         "Tackle",
         "Toxic Spikes",
-        "Self-Destruct",
+        "Self Destruct",
         "Bug Bite",
         "Take Down",
         "Rapid Spin",
@@ -13577,7 +13577,7 @@
       ],
       "Start": [
         "Harden",
-        "Mud-Slap",
+        "Mud Slap",
         "Mud Sport",
         "Water Pulse",
         "Mud Bomb"
@@ -13766,7 +13766,7 @@
     "Moves": {
       "10": [
         "Bulldoze",
-        "Self-Destruct"
+        "Self Destruct"
       ],
       "14": [
         "Stealth Rock",
@@ -15189,7 +15189,7 @@
         "Rock Throw",
         "Smack Down",
         "Bulldoze",
-        "Self-Destruct"
+        "Self Destruct"
       ]
     },
     "Pokedex": "076",
@@ -15483,7 +15483,7 @@
     "Moves": {
       "10": [
         "Bulldoze",
-        "Self-Destruct"
+        "Self Destruct"
       ],
       "14": [
         "Stealth Rock",
@@ -15602,7 +15602,7 @@
       ],
       "2": [
         "Harden",
-        "Mud-Slap"
+        "Mud Slap"
       ],
       "6": [
         "Disable",
@@ -18222,7 +18222,7 @@
     "AC": "10",
     "AbilityScores": "Str 9, Dex 10, Con 10, Int 6, Wis 10, Cha 14",
     "Alignment": "N",
-    "CR": 0.125,
+    "CR": 0.13,
     "DefensiveAbilities": {
       "Competitive": "This Pok\u00c3\u00a9mon adds its proficiency bonus to damage rolls while poisoned, burned, confused, or paralyzed.",
       "Cute Charm": "Once per short rest, you can impose disadvantage on an enemy attack roll of your choice.",
@@ -19975,7 +19975,7 @@
     "Languages": "Poke",
     "Moves": {
       "10": [
-        "Self-Destruct",
+        "Self Destruct",
         "Haze"
       ],
       "14": [
@@ -20419,7 +20419,7 @@
       "Start": [
         "Harden",
         "Headbutt",
-        "Mud-Slap",
+        "Mud Slap",
         "Tackle",
         "Metal Claw",
         "Rock Tomb"
@@ -24040,7 +24040,7 @@
         "Peck",
         "Powder Snow",
         "Scary Face",
-        "Mud-slap",
+        "Mud Slap",
         "Endure",
         "Mud Bomb",
         "Hail",
@@ -24908,7 +24908,7 @@
       "Start": [
         "Growl",
         "Mud Shot",
-        "Mud-Slap",
+        "Mud Slap",
         "Tackle",
         "Water Gun",
         "Foresight"
@@ -27105,7 +27105,7 @@
     },
     "Description": "<p>Mr. Mime is a master of pantomime. Its gestures and motions convince watchers that something unseeable actually exists. Once the watchers are convinced, the unseeable thing exists as if it were real.</p>",
     "Evolution": "",
-    "HD": "5d8+-5",
+    "HD": "5d8+5",
     "Languages": "Poke",
     "Moves": {
       "10": [
@@ -27241,7 +27241,7 @@
         "Endeavor"
       ],
       "2": [
-        "Mud-Slap",
+        "Mud Slap",
         "Foresight"
       ],
       "6": [
@@ -27336,7 +27336,7 @@
       ],
       "Start": [
         "Harden",
-        "Mud-Slap",
+        "Mud Slap",
         "Poison Gas",
         "Pound",
         "Disable",
@@ -28324,7 +28324,7 @@
         "Fury Swipes"
       ],
       "6": [
-        "Mud-Slap",
+        "Mud Slap",
         "Metal Claw"
       ],
       "Start": [
@@ -30233,7 +30233,7 @@
     "AC": "11",
     "AbilityScores": "Str 9, Dex 12, Con 10, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
-    "CR": 0.125,
+    "CR": 0.13,
     "DefensiveAbilities": {
       "Lightning Rod": "If an ally within 30 feet is attacked with an electric type move, this Pok\u00c3\u00a9mon can choose to use a reaction to redirect that attack to themselves instead. This does not work on area of effect moves.",
       "Static": "When this Pok\u00c3\u00a9mon is hit by a melee attack, roll a d4. On a result of 4, the attacker takes an amount of electric damage equal to this Pokemon's proficiency bonus."
@@ -30693,7 +30693,7 @@
         "Odor Sleuth",
         "Peck",
         "Powder Snow",
-        "Mud-Slap",
+        "Mud Slap",
         "Endure",
         "Mud Bomb",
         "Icy Wind"
@@ -30782,7 +30782,7 @@
         "Double-Edge"
       ],
       "2": [
-        "Self-Destruct",
+        "Self Destruct",
         "Bug Bite",
         "Take Down"
       ],
@@ -36674,7 +36674,7 @@
     "AC": "11",
     "AbilityScores": "Str 12, Dex 10, Con 10, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
-    "CR": 0.125,
+    "CR": 0.13,
     "DefensiveAbilities": {
       "Frisk": "Upon entering a battle, a single opponent\u00e2\u20ac\u2122s held item is revealed, if it has one.",
       "Keen Eye": "This Pok\u00c3\u00a9mon ignores disadvantage when it relates to sight.",
@@ -37157,7 +37157,7 @@
     },
     "Description": "<p>Shedinja is a peculiar Pok\u00e9mon. It seems to appear unsought in a Pok\u00e9 Ball after a Nincada evolves. This bizarre Pok\u00e9mon is entirely immobile\u2014it doesn\u2019t even breathe.</p>",
     "Evolution": "",
-    "HD": "5d0+-25",
+    "HD": "5d10+25",
     "Languages": "Poke",
     "Moves": {
       "10": [
@@ -37451,7 +37451,7 @@
         "Rain Dance"
       ],
       "Start": [
-        "Mud-Slap",
+        "Mud Slap",
         "Mud Sport",
         "Harden"
       ]
@@ -39167,7 +39167,7 @@
     "AC": "11",
     "AbilityScores": "Str 10, Dex 9, Con 15, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
-    "CR": 0.125,
+    "CR": 0.13,
     "DefensiveAbilities": {
       "Flame Body": "The flames from this Pok\u00c3\u00a9mon's body shine dim light in a 15 ft radius. In addition, when hit by a melee attack, roll a d10. On a 10, the attacker is burned.",
       "Magma Armor": "This Pok\u00c3\u00a9mon is immune to freezing.",
@@ -41060,7 +41060,7 @@
     "AC": "11",
     "AbilityScores": "Str 9, Dex 13, Con 10, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
-    "CR": 0.125,
+    "CR": 0.13,
     "DefensiveAbilities": {
       "Keen Eye": "This Pok\u00c3\u00a9mon ignores disadvantage when it relates to sight.",
       "Reckless": "When attacking with moves with recoil damage, this Pok\u00c3\u00a9mon doubles its STAB bonus."
@@ -42339,7 +42339,7 @@
       "Start": [
         "Growl",
         "Mud Shot",
-        "Mud-Slap",
+        "Mud Slap",
         "Tackle",
         "Water Gun",
         "Foresight",
@@ -42530,7 +42530,7 @@
       "2": [
         "Mud Sport",
         "Powder Snow",
-        "Mud-Slap"
+        "Mud Slap"
       ],
       "6": [
         "Endure",
@@ -44023,7 +44023,7 @@
       ],
       "Start": [
         "Astonish",
-        "Mud-Slap",
+        "Mud Slap",
         "Poison Sting",
         "Taunt"
       ]
@@ -44130,7 +44130,7 @@
         "Fissure"
       ],
       "2": [
-        "Mud-Slap",
+        "Mud Slap",
         "Bulldoze",
         "Sand Tomb"
       ],
@@ -45616,7 +45616,7 @@
         "Feint Attack",
         "Sand Attack",
         "Sonic Boom",
-        "Mud-Slap",
+        "Mud Slap",
         "Bulldoze",
         "Sand Tomb",
         "Rock Slide",
@@ -46057,7 +46057,7 @@
     "Moves": {
       "10": [
         "Swift",
-        "Self-Destruct"
+        "Self Destruct"
       ],
       "14": [
         "Light Screen",
@@ -46716,7 +46716,7 @@
     "AC": "11",
     "AbilityScores": "Str 9, Dex 10, Con 12, Int 6, Wis 10, Cha 10",
     "Alignment": "N",
-    "CR": 0.125,
+    "CR": 0.13,
     "DefensiveAbilities": {
       "Run Away": "While this Pok\u00c3\u00a9mon is active, the trainer automatically succeeds on their DEX roll to run away from a wild Pok\u00c3\u00a9mon encounter.",
       "Shield Dust": "Once per long rest, this Pok\u00c3\u00a9mon can ignore a negative status condition that results from an enemy move."
@@ -46871,7 +46871,7 @@
     "Languages": "Poke",
     "Moves": {
       "10": [
-        "Self-Destruct",
+        "Self Destruct",
         "Haze"
       ],
       "14": [
@@ -46987,7 +46987,7 @@
         "Magnitude"
       ],
       "Start": [
-        "Mud-Slap",
+        "Mud Slap",
         "Mud Sport",
         "Thrash",
         "Tickle",
@@ -47055,7 +47055,7 @@
     "AC": "10",
     "AbilityScores": "Str 9, Dex 9, Con 12, Int 6, Wis 12, Cha 12",
     "Alignment": "N",
-    "CR": 0.125,
+    "CR": 0.13,
     "DefensiveAbilities": {
       "Rattled": "When this Pok\u00c3\u00a9mon is hit by a damaging Dark, Bug, or Ghost move, it makes its next attack at advantage.",
       "Soundproof": "This Pok\u00c3\u00a9mon is immune to sound-based moves."
@@ -47766,7 +47766,7 @@
     "AC": "11",
     "AbilityScores": "Str 9, Dex 8, Con 10, Int 6, Wis 10, Cha 12",
     "Alignment": "N",
-    "CR": 0.125,
+    "CR": 0.13,
     "DefensiveAbilities": {
       "Run Away": "While this Pok\u00c3\u00a9mon is active, the trainer automatically succeeds on their DEX roll to run away from a wild Pok\u00c3\u00a9mon encounter.",
       "Shield Dust": "Once per long rest, this Pok\u00c3\u00a9mon can ignore a negative status condition that results from an enemy move."
@@ -47904,7 +47904,7 @@
         "Peck",
         "Tailwind",
         "Teleport",
-        "Lucky chant"
+        "Lucky Chant"
       ]
     },
     "Pokedex": "178",
