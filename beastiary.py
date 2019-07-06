@@ -18,8 +18,8 @@ with open('beasts.json', 'r') as inf:
 if settings["Allow Pokemon"]:
     with open('pokemon.json', 'r') as inf:
         Beasts.update(json.load(inf, encoding='utf-8'))
-with open('pokemon_moves.json', 'r') as inf:
-    Poke_moves = json.load(inf, encoding='utf-8')
+    with open('pokemon_moves.json', 'r') as inf:
+        Poke_moves = json.load(inf, encoding='utf-8')
 
 Levels = {
     '0.13': 50,
@@ -88,7 +88,7 @@ def roll_hp(string):
     if '+' in string:
         m = re.match(r'(\d+)d(\d+)\+(\d+)', string)
     elif '-' in string:
-        m = re.match(r'(\d+)d(\d+)\-(\d+)', string)
+        m = re.match(r'(\d+)d(\d+)(\-\d+)', string)
     else:
         m = re.match(r'(\d+)d(\d+)', string)
     total = 0
@@ -117,10 +117,10 @@ def pokemon_moves(name='', tm=0):
 
 
 def get_monster_type(dictionary):
-    if "Pokemon" in list(dictionary.keys()):
+    if "Pokedex" in list(dictionary.keys()):
         return 'Pokemon'
     else:
-        return "Pathfinder"
+        return 'Pathfinder'
 
 
 def print_monster(picked_monster):
