@@ -1017,6 +1017,7 @@ def scroll(g):
 
 
 if __name__ == '__main__':
+    # TODO: Add a way to generate Treasure based on input
     for category in [
             Coins, Coins_and_Gems, Art_Objects, Coins_and_Objects,
             Armor_and_Weapons, Combatant_Gear, Spellcaster_Gear, Lair_Treasure,
