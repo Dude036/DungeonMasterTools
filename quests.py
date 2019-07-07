@@ -64,7 +64,7 @@ class QuestBoard(object):
                     print(q.Other, ":: Specific Monster :: created for",
                           q.Title)
                 else:
-                    m = pick_monster(cr=str(q.Level) + '.00')
+                    m = pick_monster(cr=str(q.Level) + '.0')
                     print_monster(m)
                     questHTML += '<iframe src="beasts/' + m[
                         0] + '.html" height="500" width="100%" style="padding: 10px"></iframe><br />'
