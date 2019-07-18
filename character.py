@@ -55,7 +55,7 @@ def create_person(pop):
     appear = body + ' and looks ' + face.lower() + ' with ' + hair.lower(
     ) + ' hair and ' + eyes.lower() + ' eyes. '
 
-    back = 'I\'m a ' + gender + ' ' + race[0] + ', from '
+    back = 'I\'m a ' + gender + ' ' + race + ', from '
     back += back_location[randint(len(back_location))] + ' who '
     back += back_story[randint(len(back_story))]
 
