@@ -6,7 +6,7 @@ First, you'll need to install *Python 3* and *pip*. Once you have *pip* installe
 
     pip install -r requirements.txt
 
-_Window's Users_: You may have to modify the above command with the ```--user``` arguement if not under an admin account.
+_Window's Users_: You may have to modify the above command with the ```--user``` argument if not under an admin account.
 
 ### Running the Application
 
@@ -137,7 +137,7 @@ After you've modified your settings, run the main application to generate a town
 | beastiary.py       | Build all monsters into the beasts folder to verify they all look fine. |
 | name_generator.py  | Generate several names of each possible race to verify sound and error check names. |
 | PC.py              | Print to the console a Playable character in HTML. |
-| quests.py          | Generate a threaded task to average out several thousand quest rewards from level 1 to 55. **WARNING:** This will take a VERY long time and heat up your computer immensly. I do NOT reccomend you do this. |
+| quests.py          | Generate a threaded task to average out several thousand quest rewards from level 1 to 55. **WARNING:** This will take a VERY long time and heat up your computer immensely. I do NOT recommend you do this. |
 | test_scripts.py    | Unit Tests to verify all things are working correctly. |
-| town_generator.py  | Generato a Sample town. |
+| town_generator.py  | Generate a Sample town. |
 | treasure.py        | Generate solely the treasure from a monster based on CR or on the name of the Monster. |
