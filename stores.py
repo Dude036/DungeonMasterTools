@@ -310,8 +310,7 @@ class Weapon(object):
     def __weigh(self, metal, cl):
         dice_incriment = int(eval(self.Dice.split('d')[1]) / 2) * 2**eval(self.Dice.split('d')[0])
         crit_val = (self.__crit() // 20)
-        info = [weapon_cost_and_weight[self.Class][0], dice_incriment * crit_val]
-        cost_factor = max(info)
+        cost_factor = max([weapon_cost_and_weight[self.Class][0], dice_incriment * crit_val])
 
         self.Cost = round(cost_factor * cl[metal]['Cost'] * (self.Rarity + 1)**self.Rarity, 2)
         self.Weight = round(weapon_cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 14, 1)
