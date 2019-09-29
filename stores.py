@@ -2398,7 +2398,9 @@ def create_enchanter_shop(owner, rarity, quan, inflate=1):
         a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5,
                   rarity)
     for _ in range(quan):
-        a.Stock.append(Scroll(randint(rarity[0], rarity[1]), naming=False))
+        item = Scroll(randint(rarity[0], rarity[1]), naming=False)
+        item.Cost *= inflate
+        a.Stock.append(item)
     return a
 
 
