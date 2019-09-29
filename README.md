@@ -141,3 +141,12 @@ After you've modified your settings, run the main application to generate a town
 | test_scripts.py    | Unit Tests to verify all things are working correctly. |
 | town_generator.py  | Generate a Sample town. |
 | treasure.py        | Generate solely the treasure from a monster based on CR or on the name of the Monster. |
+
+### Contributing
+
+If you're interesting in contributing to this repository, I'm currently trying to get a character generator fully flushed out. I need to get all the data HTML friendly for basically all the classes in both Pathfinder and D&D 5e. The files that need those are `5e_class_feats.json` and `pathfinder_class_feats.json`.
+
+The next big task is to get settings files setup for generating things for D&D and Pathfinder. D&D doesn't have canon rules for weapon creation, so that may be a little difficult to determine the best course of action.
+
+I would also like to refactor some code, so `stores.py` isn't so bloated.
+
