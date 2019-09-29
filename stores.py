@@ -165,7 +165,7 @@ class Store(object):
 
 class Weapon(object):
     """
-    Cost shoudl be in GP
+    Cost should be in GP
     Rarity [0, 4] - Common, Uncommon, Rare, Very Rare, Legendary
         Rarity will also determine what types of material to use as well as the
             price for an item. Also note, that the prices are how much they cost
@@ -238,7 +238,7 @@ class Weapon(object):
         elif self.Class == 'Bows':
             self.Damage = [
                 'Ra', 'P',
-                choice(['30', '40', '50', '60', '70', '80', '90', '100']) +
+                choice(['30', '40', '50', '60', '70', '80', '90', '100', '110', '120']) +
                 ' ft.'
             ]
         elif self.Class == 'Crossbow':
@@ -249,7 +249,7 @@ class Weapon(object):
         elif self.Class == 'Thrown':
             self.Damage = [
                 'Ar', 'P', 'S',
-                choice(['5', '10', '15', '20', '25', '30', '35', '40']) +
+                choice(['15', '20', '25', '30', '35', '40']) +
                 ' ft.'
             ]
         return
@@ -274,12 +274,11 @@ class Weapon(object):
             m = self.__verify_metal(common_material)
 
         self.Name = m[0] + ' ' + self.Name
-        self.__crit()
         self.__weigh(m[0], m[1])
 
     def __verify_metal(self, cl):
         metal = None
-        while metal == None:
+        while metal is None:
             metal = choice(list(cl.keys()))
             # print(metal, '=', cl[metal])
             t = 0
@@ -294,21 +293,27 @@ class Weapon(object):
 
     def __crit(self):
         chance = randint(100) + self.Rarity * 10
-        if chance < 75:
+        if chance < 80:
             self.Crit = 'x2'
-        elif chance < 80:
-            self.Crit = '19-20 x2'
         elif chance < 92:
-            self.Crit = '18-20 x2'
+            self.Crit = '19-20 x2'
         elif chance < 97:
+            self.Crit = '18-20 x2'
+        elif chance < 100:
             self.Crit = 'x3'
-        elif chance < 99:
+        elif chance < 130:
             self.Crit = '19-20 x3'
         else:
             self.Crit = '18-20 x3'
+        return chance
 
     def __weigh(self, metal, cl):
-        self.Cost = weapon_cost_and_weight[self.Class][0] * cl[metal]['Cost'] * (self.Rarity + 1)**self.Rarity
+        dice_incriment = int(eval(self.Dice.split('d')[1]) / 2) * 2**eval(self.Dice.split('d')[0])
+        crit_val = (self.__crit() // 20)
+        info = [weapon_cost_and_weight[self.Class][0], dice_incriment * crit_val]
+        cost_factor = max(info)
+
+        self.Cost = round(cost_factor * cl[metal]['Cost'] * (self.Rarity + 1)**self.Rarity, 2)
         self.Weight = round(weapon_cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 14, 1)
 
     def add_enchantment(self, ench):
@@ -323,11 +328,9 @@ class Weapon(object):
             mlevel %= 9
         if self.Masterwork == 0:
             self.Masterwork = int(mlevel)
-            self.Cost += (1 + mlevel) * (1 + mlevel) * 1000
+            self.Cost += (1 + mlevel) * 1000
             self.Name = "+" + str(mlevel) + ' ' + self.Name
             self.Dice += "+" + str(mlevel)
-        # else:
-        #     print("This Item is already Masterwork")
 
     def __str__(self):
         global MasterID
@@ -2510,4 +2513,24 @@ def create_gunsmith(owner, rarity, quan, inflate=1):
 
 
 if __name__ == '__main__':
-    print(determine_cost(random_sample() * 1000000))
+    from pprint import pprint
+    totals = {}
+    cap = 10000
+    for i in range(5):
+        dice = weapon = largest = average = 0
+        smallest = 99999
+        for _ in range(cap):
+            item = Weapon(i)
+            if item.info.index(max(item.info)) == 0:
+                weapon += 1
+            else:
+                dice += 1
+            if largest < max(item.info):
+                largest = max(item.info)
+            elif smallest > min(item.info):
+                smallest = min(item.info)
+            average += item.Cost
+        average /= cap
+        totals[i] = {"Dice": dice, "Weapon": weapon, "Max": largest, "Min": smallest, "Average": average / cap}
+
+    pprint(totals)

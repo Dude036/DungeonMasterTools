@@ -150,3 +150,4 @@ The next big task is to get settings files setup for generating things for D&D a
 
 I would also like to refactor some code, so `stores.py` isn't so bloated.
 
+I'd also like to rework weapon damage types. Adding potentially different damage types, and add some variation on material. i.e. Hot Siccate should also deal fire damage for an average half if it's damage.
