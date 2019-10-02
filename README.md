@@ -10,18 +10,18 @@ _Window's Users_: You may have to modify the above command with the ```--user```
 
 ### Running the Application
 
-There are two setting files right now. Settings.json contains the settings for creating the town's population. The four lines in the file are as such;
+There are two setting files right now. `settings.json` contains the settings for creating the town's population. The four lines in the file are as such;
 
     "Race": "Human", [The main race from the town. (Any race from the PFSRD)]
     "Population": 5000, [The population of town. (1 to infinite)]
     "Variance": 10, [The degree of change from the main race to all other races. (0% to 100%)]
     "Exotic": 5 [The amount of other races in the town. (0 to 32)]
 
-**Generate.json** contains all the information about the town. Some stores have unique aspects, but each setting explains itself. The last two categories in the JSON are "NPCs" and "Occupations". The difference between the two is that "NPCs" have weapons and stats, while the "Occupation" doesn't. 
+`generate.json` contains all the information about the town. Some stores have unique aspects, but each setting explains itself. The last two categories in the JSON are "NPCs" and "Occupations". The difference between the two is that "NPCs" have weapons and stats, while the "Occupation" doesn't. 
 
 These two should contain the name of the position. They will be filled with people based on the **settings.json** file.
 
-Inflation is compatible with both floats and integers. Floats with mean it's exact Percentage of inflation, 1.0 == 100%. An integer will mean some arbitrary amount. The higher the number, the more nominal it will be.
+Inflation is compatible with both floats and integers. Floats with mean it's exact Percentage of inflation, `1.0` == 100%. An integer will mean some arbitrary amount. The higher the number, the more nominal it will be.
 
 Below has the initial settings file with brackets after. Inside the brackets is the possible range of each setting.
 
