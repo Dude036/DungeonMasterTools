@@ -170,7 +170,9 @@ class PC(object):
         ]
 
         # Spell enabled character - 1 in 3
-        if randint(3) == 0:
+        # if randint(3) == 0:
+        # Spells for Classes that cast spells
+        if self.Class in ['Bard', 'Cleric', 'Druid', 'Magus', 'Paladin', 'Ranger', 'Sorcerer', 'Summoner', 'Warpriest', 'Wizard']:
             self.Spells = []
             for x in range(4 + self.Level * 2):
                 s = choice(list(MasterSpells.keys()))
