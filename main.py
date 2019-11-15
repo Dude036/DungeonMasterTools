@@ -106,7 +106,8 @@ if __name__ == '__main__':
 
     town_name = town_generator.generate(Weapons, Armor, Potion, Enchant,
                                         Enchanter, Books, Tavern, Jewel, Food,
-                                        General, Brothel, Gunsmith, Quests)
+                                        General, Brothel, Gunsmith, Quests, 
+                                        generator['Town Name'], generator["Dump Json"])
 
     for p in generator['Occupations']:
         town_generator.write_people(

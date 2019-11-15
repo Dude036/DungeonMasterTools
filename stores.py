@@ -162,6 +162,17 @@ class Store(object):
             i.add_enchantment(Enchantment)
         self.Stock.append(i)
 
+    def to_dict(self):
+        d = {
+            "Shopkeeper": self.Shopkeeper,
+            "Store_name": self.Store_name,
+            "Quality": self.Quality,
+            "Stock Quantity": len(self.Stock),
+            "Stock Type": str(type(self.Stock[0]).__name__),
+            "Inflation": self.Inflation
+        }
+        return d
+
 
 class Weapon(object):
     """

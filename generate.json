@@ -1,4 +1,5 @@
 {
+    "Town Name": "",
     "Weapon Shops": {
         "# of Stores": 2,
         "Rarity Low": 0,
@@ -103,5 +104,6 @@
         "Captain of the Guard",
         "The Villain"
     ],
-    "Allow Pokemon": true
+    "Allow Pokemon": true,
+    "Dump Json": false
 }

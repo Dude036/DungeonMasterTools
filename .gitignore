@@ -4,3 +4,4 @@ __pycache__/
 *.html
 *.pyc
 *.csv
+*.town.json

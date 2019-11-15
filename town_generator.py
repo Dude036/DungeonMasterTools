@@ -85,11 +85,11 @@ def write_people(person, position):
     townHTML += '</div></td></tr></table><br />'
 
 
-def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
+def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu, name='', dump_json=False):
     """ [# of Stores, Rarity Low, Rarity High, Quan High, Quan Low] """
     global townHTML
     from names import TownNamer
-    town_name = str(TownNamer())
+    town_name = str(TownNamer()) if name == '' else name
     townHTML += "<h1>" + town_name + "</h1><p>Description</p>"
     if sum([w[0], a[0], p[0], e[0], en[0], b[0], t[0], j[0], f[0], g[0], br[0], gu[0]]) > 0:
         townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
@@ -101,7 +101,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(w[3], w[4]),
             inflate=w[5])
         write_store(store)
-        full_town[i] = store.__dict__
+        full_town[i] = store.to_dict()
         i += 1
 
     for _ in range(a[0]):
@@ -110,7 +110,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(a[3], a[4]),
             inflate=a[5])
         write_store(store)
-        full_town[i] = store.__dict__
+        full_town[i] = store.to_dict()
         i += 1
 
     for _ in range(p[0]):
@@ -119,7 +119,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(p[3], p[4]),
             inflate=p[5])
         write_store(store)
-        full_town[i] = store.__dict__
+        full_town[i] = store.to_dict()
         i += 1
 
     for _ in range(e[0]):
@@ -128,7 +128,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(e[3], e[4]),
             inflate=e[5])
         write_store(store)
-        full_town[i] = store.__dict__
+        full_town[i] = store.to_dict()
         i += 1
 
     for _ in range(en[0]):
@@ -137,7 +137,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(en[3], en[4]),
             inflate=en[5])
         write_store(store)
-        full_town[i] = store.__dict__
+        full_town[i] = store.to_dict()
         i += 1
 
     for _ in range(b[0]):
@@ -147,7 +147,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(b[1], b[2]),
             inflate=b[3])
         write_store(store, False)
-        full_town[i] = store.__dict__
+        full_town[i] = store.to_dict()
         i += 1
 
     for _ in range(t[0]):
@@ -166,7 +166,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(j[3], j[4]),
             inflate=j[5])
         write_store(store)
-        full_town[i] = store.__dict__
+        full_town[i] = store.to_dict()
         i += 1
 
     for _ in range(f[0]):
@@ -185,7 +185,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             g[5],
             inflate=g[6])
         write_store(store)
-        full_town[i] = store.__dict__
+        full_town[i] = store.to_dict()
         i += 1
 
     for _ in range(br[0]):
@@ -194,7 +194,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(br[1], br[2]),
             inflate=br[3])
         write_store(store)
-        full_town[i] = store.__dict__
+        full_town[i] = store.to_dict()
         i += 1
 
     for _ in range(gu[0]):
@@ -203,7 +203,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
             randint(gu[3], gu[4]),
             inflate=gu[5])
         write_store(store)
-        full_town[i] = store.__dict__
+        full_town[i] = store.to_dict()
         i += 1
 
     for _ in range(qu[0]):
@@ -214,9 +214,8 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu):
         i += 1
 
     # Dump the class information into a json file
-    dump_json = False
     if dump_json:
-        json.dump(full_town, open(town_name + ".json", 'w'), indent=4, sort_keys=True, default=lambda x: x.__dict__)
+        json.dump(full_town, open(town_name + ".town.json", 'w'), indent=4, sort_keys=True, default=lambda x: x.__dict__)
     return town_name
 
 
