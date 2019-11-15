@@ -15,12 +15,15 @@ if __name__ == '__main__':
 	if not info.endswith(".town.json"):
 		info += ".town.json"
 
-
 	# Try and find if the file exists
 	if not os.path.exists(info):
 		print("______________ File Doesn't Exist ______________")
 	else:
 		town_dict = json.load(open(info, 'r'))
+		# Build Town
+		town_generator.townHTML += "<h1>" + info.split('.')[0] + "</h1><p>Description</p>"
+		town_generator.townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
+
 		for key, value in town_dict.items():
 			if "Stock" not in value.keys():
 				new_store = Store(None, None, 0.0, None)
@@ -28,6 +31,8 @@ if __name__ == '__main__':
 			else:
 				new_store = Inn(None, None, 0.0, 0, 0)
 				new_store.from_dict(value)
+
+			# Setup Shop keeper
 			new_store.Shopkeeper = Character(None, None, None, None, None, None, None)
 			new_store.Shopkeeper.from_dict(value["Shopkeeper"])
 			
@@ -36,8 +41,7 @@ if __name__ == '__main__':
 			else:
 				town_generator.write_store(new_store)
 
-
-		town_generator.townHTML += "<h1>" + info.split('.')[0] + "</h1><p>Description</p>"
-		town_generator.townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
+		# Questboard?
+		# Add people here.
 		town_generator.write_html(info.split('.')[0])
 
