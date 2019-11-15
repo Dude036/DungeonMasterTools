@@ -167,11 +167,20 @@ class Store(object):
             "Shopkeeper": self.Shopkeeper,
             "Store_name": self.Store_name,
             "Quality": self.Quality,
-            "Stock Quantity": len(self.Stock),
-            "Stock Type": str(type(self.Stock[0]).__name__),
+            "Stock_quantity": len(self.Stock),
+            "Stock_type": str(type(self.Stock[0]).__name__),
             "Inflation": self.Inflation
         }
         return d
+
+    def from_dict(self, new_self):
+        new_stock = []
+        new_class = eval(new_self.pop("Stock_type"))
+        new_quan = new_self.pop("Stock_quantity")
+        self.Stock = []
+
+        self.__dict__.update(new_self)
+        self.fill_store(new_class, new_quan)
 
 
 class Weapon(object):
@@ -1841,6 +1850,10 @@ class Inn(object):
             f = Food(self.Quality)
             f.Cost *= self.Inflation
             self.Stock.append(f)
+
+    def from_dict(self, new_self):
+        self.__dict__.update(new_self)
+
 
 
 class Food(object):
