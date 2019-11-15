@@ -39,6 +39,9 @@ class Character(object):
                 info += """<p>"""
         return info
 
+    def from_dict(self, new_self):
+        self.__dict__.update(new_self)
+
 
 def create_person(pop):
     if pop is None:

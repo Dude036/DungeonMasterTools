@@ -4,6 +4,7 @@ import simplejson as json
 from stores import Store, Inn
 from quests import QuestBoard
 import sys
+from character import Character
 
 
 if __name__ == '__main__':
@@ -27,6 +28,8 @@ if __name__ == '__main__':
 			else:
 				new_store = Inn(None, None, 0.0, 0, 0)
 				new_store.from_dict(value)
+			new_store.Shopkeeper = Character(None, None, None, None, None, None, None)
+			new_store.Shopkeeper.from_dict(value["Shopkeeper"])
 			
 			if "(Library)" in new_store.Store_name or "(Inn)" in new_store.Store_name:
 				town_generator.write_store(new_store, False)
