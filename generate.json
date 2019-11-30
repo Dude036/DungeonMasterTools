@@ -54,7 +54,7 @@
         "Inflation": 1
     },
     "Jewel Shops": {
-        "# of Stores": 2,
+        "# of Stores": 1,
         "Rarity Low": 0,
         "Rarity High": 4,
         "Quantity Low": 15,
@@ -90,6 +90,12 @@
         "Quantity High": 20,
         "Inflation": 1
     },
+    "Variety": {
+        "# of Stores": 1,
+        "Quantity Low": 15,
+        "Quantity High": 20,
+        "Inflation": 1
+    },
     "Quest Boards": {
         "# of Stores": 1,
         "Level Low": 0,
@@ -104,6 +110,6 @@
         "Captain of the Guard",
         "The Villain"
     ],
-    "Allow Pokemon": true,
+    "Allow Pokemon": false,
     "Dump Json": false
 }

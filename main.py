@@ -97,6 +97,12 @@ if __name__ == '__main__':
         generator["Gunsmiths"]["Quantity High"],
         generator["Gunsmiths"]["Inflation"]
     ]
+    Variety = [
+        generator["Variety"]["# of Stores"],
+        generator["Variety"]["Quantity Low"],
+        generator["Variety"]["Quantity High"],
+        generator["Variety"]["Inflation"]
+    ]
     Quests = [
         generator["Quest Boards"]["# of Stores"],
         generator["Quest Boards"]["Level Low"],
@@ -106,7 +112,7 @@ if __name__ == '__main__':
 
     town_name = town_generator.generate(Weapons, Armor, Potion, Enchant,
                                         Enchanter, Books, Tavern, Jewel, Food,
-                                        General, Brothel, Gunsmith, Quests, 
+                                        General, Brothel, Gunsmith, Variety, Quests, 
                                         generator['Town Name'], generator["Dump Json"])
 
     for p in generator['Occupations']:

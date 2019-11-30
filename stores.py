@@ -1855,7 +1855,6 @@ class Inn(object):
         self.__dict__.update(new_self)
 
 
-
 class Food(object):
     String = Descriptor = ''
     Cost = 0
@@ -2384,6 +2383,47 @@ class Whore(object):
         return '<tr><td style="width:50%;"><span class="text-md">' + self.Person.Name + ' (' + self.Person.Race + ')' +\
                '</span><br /><span class="text-sm emp">' + self.Person.Appearance + '; Age ' + str(self.Person.Age) + \
                '</span></td><td>' + determine_cost(self.Cost) + '</td><td>' + self.Person.Gender + '</td></tr>'
+
+
+def create_variety_shop(owner, quan, inflate=1):
+    if isinstance(inflate, float):
+        inflation = (sum(random_sample(inflate)) / inflate) + .5
+    else:
+        inflation = inflate
+
+    a = Store(owner, "Travelling Salesmen (Variety)", inflation, [0, 0])
+    for _ in range(quan):
+        item = None
+        num = randint(0, 12)
+
+        if num == 0:
+            item = Weapon(randint(1, 5))
+        elif num == 1:
+            item = Armor(randint(1, 5))
+        elif num == 2:
+            item = Firearm(randint(1, 5))
+        elif num == 3:
+            item = Ring(randint(1, 10))
+        elif num == 4:
+            item = Scroll(randint(1, 10))
+        elif num == 5:
+            item = Wand(randint(1, 10))
+        elif num == 6:
+            item = Potion(randint(1, 10))
+        elif num == 7:
+            item = Book(randint(1, 10))
+        elif num == 8:
+            item = Wondrous()
+        elif num == 9:
+            item = Food(randint(1, 10))
+        elif num == 10:
+            item = Drink(randint(1, 10))
+        elif num == 11:
+            item = Jewel(randint(1, 10))
+
+        a.Stock.append(item)
+
+    return a
 
 
 def create_book_shop(owner, genres, quan, inflate=1):

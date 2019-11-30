@@ -85,7 +85,7 @@ def write_people(person, position):
     townHTML += '</div></td></tr></table><br />'
 
 
-def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu, name='', dump_json=False):
+def generate(w, a, p, e, en, b, t, j, f, g, br, gu, v, qu, name='', dump_json=False):
     """ [# of Stores, Rarity Low, Rarity High, Quan High, Quan Low] """
     global townHTML
     from names import TownNamer
@@ -202,6 +202,15 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, qu, name='', dump_json=False
             create_person(create_variance()), [gu[1], gu[2]],
             randint(gu[3], gu[4]),
             inflate=gu[5])
+        write_store(store)
+        full_town[i] = store.to_dict()
+        i += 1
+
+    for _ in range(v[0]):
+        store = create_variety_shop(
+            create_person(create_variance()),
+            randint(v[1], v[2]),
+            inflate=v[3])
         write_store(store)
         full_town[i] = store.to_dict()
         i += 1
