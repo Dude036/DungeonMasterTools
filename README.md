@@ -115,6 +115,12 @@ Below has the initial settings file with brackets after. Inside the brackets is 
         "Quantity High": 20,    // [Quantity Low to Infinte]
         "Inflation": 1          // [0.0 to Infinte]
     },
+    "Variety": {
+        "# of Stores": 1,       // [0 to Infinte]
+        "Quantity Low": 15,     // [0 to Infinte]
+        "Quantity High": 20,    // [Quantity Low to Infinte]
+        "Inflation": 1          // [0.0 to Infinte]
+    },
     "Quest Boards": {
         "# of Stores": 1,       // [0 to Infinte]
         "Level Low": 0,         // [0 to 20]
