@@ -52,14 +52,14 @@ playable = {
         "WIS": 3,
         "CHA": 5
     },
-    "Magus": {
-        "STR": 3,
-        "DEX": 0,
-        "CON": 2,
-        "INT": 1,
-        "WIS": 4,
-        "CHA": 5
-    },
+    # "Magus": {
+    #     "STR": 3,
+    #     "DEX": 0,
+    #     "CON": 2,
+    #     "INT": 1,
+    #     "WIS": 4,
+    #     "CHA": 5
+    # },
     "Monk": {
         "STR": 1,
         "DEX": 0,
@@ -100,22 +100,22 @@ playable = {
         "WIS": 3,
         "CHA": 0
     },
-    "Summoner": {
-        "STR": 5,
-        "DEX": 1,
-        "CON": 2,
-        "INT": 4,
-        "WIS": 3,
-        "CHA": 0
-    },
-    "Warpriest": {
-        "STR": 0,
-        "DEX": 3,
-        "CON": 2,
-        "INT": 4,
-        "WIS": 1,
-        "CHA": 5
-    },
+    # "Summoner": {
+    #     "STR": 5,
+    #     "DEX": 1,
+    #     "CON": 2,
+    #     "INT": 4,
+    #     "WIS": 3,
+    #     "CHA": 0
+    # },
+    # "Warpriest": {
+    #     "STR": 0,
+    #     "DEX": 3,
+    #     "CON": 2,
+    #     "INT": 4,
+    #     "WIS": 1,
+    #     "CHA": 5
+    # },
     "Wizard": {
         "STR": 5,
         "DEX": 3,
@@ -131,8 +131,8 @@ class_feats = json.load(open("pathfinder_class_feats.json", 'r'), encoding='utf-
 
 class PC(object):
     """Characters are the centerpiece of stories"""
-    Name = Gender = Race = Appearance = Class = ''
-    Traits = Story = Feats = []
+    Name = Gender = Race = Appearance = Class = Feats = ''
+    Traits = Story = []
     Age = Level = 0
     Spells = None
     Stats = []
@@ -202,9 +202,9 @@ class PC(object):
             self.Stats[playable[self.Class]['WIS']],
             self.Stats[playable[self.Class]['CHA']]
         ]
-        # for level in range(1, self.Level + 1):
-        #     for item in class_feats[self.Class][str(level)]:
-        #         self.Feats.append(item)
+
+        for level in range(0, self.Level + 1):
+            self.Feats += class_feats[self.Class][level]
 
     def __str__(self):
         info = self.Name + '<div><div class="bold text-md" style="text-indent: 50px">' + self.Class + ' ' + \
@@ -245,10 +245,15 @@ class PC(object):
             info += '<table><td style="width: 50%"><span class="text-md">' + weapon.Name.title() + \
                     '</span><br /><span class="text-sm emp">' + weapon.Dice + ' (' + weapon.Crit + \
                     ') ' + dam + '</span></td></table><br/>'
+        info += '</ul>'
+
+        # Add Feats
+        info += self.Feats
+        info += "</tbody></table></br>"
 
         # Add Spells
         if self.Spells is not None:
-            info += '</ul><table class="inventory-table" style="width:100%;"><tr><th style="text-align:left;' \
+            info += '<table class="inventory-table" style="width:100%;"><tr><th style="text-align:left;' \
                     'background-color:gray;color:white;padding:5px;">Spell</th><th style="text-align:left;' \
                     'background-color:gray;color:white;padding:5px;">Class</th><th style="text-align:left;' \
                     'background-color:gray;color:white;padding:5px;">Level</th></tr>'
