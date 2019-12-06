@@ -110,6 +110,12 @@ if __name__ == '__main__':
         generator["Quest Boards"]["Quantity"]
     ]
 
+    if "Town Name" not in generator.keys():
+        generator['Town Name'] = ''
+
+    if "Dump Json" not in generator.keys():
+        generator['Dump Json'] = False
+
     town_name = town_generator.generate(Weapons, Armor, Potion, Enchant,
                                         Enchanter, Books, Tavern, Jewel, Food,
                                         General, Brothel, Gunsmith, Variety, Quests, 
