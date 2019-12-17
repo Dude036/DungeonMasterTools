@@ -65,5 +65,7 @@ if __name__ == '__main__':
 				person = Character(None, None, None, None, None, None, None)
 				person.from_dict(value)
 				town_generator.write_people(person, key)
+
+		print("Finished parsing People")
 		town_generator.write_html(info.split('.')[0])
 
