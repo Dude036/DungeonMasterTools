@@ -34,7 +34,7 @@ if __name__ == '__main__':
 				board = QuestBoard(value['Low'], value['High'], value['Quantity'], value['TownName'])
 				town_generator.townHTML += str(board)
 				continue
-			if "Stock" not in value.keys():
+			if 'Rooms' not in value.keys():
 				new_store = Store(None, None, 0.0, None)
 				new_store.from_dict(value)
 			else:
@@ -50,7 +50,7 @@ if __name__ == '__main__':
 			else:
 				town_generator.write_store(new_store)
 
-		print("Finished parsing shops")
+		print("\nFinished parsing shops")
 		# Questboard
 		for pair in Q:
 			# print(pair.keys(), pair.values())
@@ -66,6 +66,6 @@ if __name__ == '__main__':
 				person.from_dict(value)
 				town_generator.write_people(person, key)
 
-		print("Finished parsing People")
+		print("\nFinished parsing People")
 		town_generator.write_html(info.split('.')[0])
 

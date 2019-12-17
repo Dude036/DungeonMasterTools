@@ -1852,6 +1852,12 @@ class Inn(object):
             self.Stock.append(f)
 
     def from_dict(self, new_self):
+        rooms = new_self.pop('Rooms')
+        if rooms:
+            num_rooms = max([v['Beds'] for v in rooms])
+            self.__fill_rooms(num_rooms)
+        stock = new_self.pop('Stock')
+        self.__fill_stock(len(stock))
         self.__dict__.update(new_self)
 
 
