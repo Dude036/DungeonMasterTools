@@ -116,16 +116,17 @@ if __name__ == '__main__':
     if "Dump Json" not in generator.keys():
         generator['Dump Json'] = False
 
-    town_name = town_generator.generate(Weapons, Armor, Potion, Enchant,
+    town_name = town_generator.generate_shops(Weapons, Armor, Potion, Enchant,
                                         Enchanter, Books, Tavern, Jewel, Food,
                                         General, Brothel, Gunsmith, Variety, Quests, 
                                         generator['Town Name'], generator["Dump Json"])
+    town_generator.generate_people(generator['Occupations'], generator['NPCs'], town_name, generator["Dump Json"])
 
-    for p in generator['Occupations']:
-        town_generator.write_people(
-            town_generator.create_person(town_generator.create_variance()), p)
-    for npc in generator['NPCs']:
-        town_generator.write_npc(PC(), npc)
-
-    print("Writing the town ", town_name)
-    town_generator.write_html(town_name)
+    # for p in generator['Occupations']:
+    #     town_generator.write_people(
+    #         town_generator.create_person(town_generator.create_variance()), p)
+    # for npc in generator['NPCs']:
+    #     town_generator.write_npc(PC(), npc)
+    #
+    # print("Writing the town ", town_name)
+    # town_generator.write_html(town_name)

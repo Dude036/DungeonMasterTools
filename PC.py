@@ -274,6 +274,10 @@ class PC(object):
 
         return info
 
+    def from_dict(self, new_self):
+        new_self.pop('Weapon')
+        self.__dict__.update(new_self)
+
 
 if __name__ == '__main__':
     print(PC())

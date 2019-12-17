@@ -85,7 +85,7 @@ def write_people(person, position):
     townHTML += '</div></td></tr></table><br />'
 
 
-def generate(w, a, p, e, en, b, t, j, f, g, br, gu, v, qu, name='', dump_json=False):
+def generate_shops(w, a, p, e, en, b, t, j, f, g, br, gu, v, qu, name='', dump_json=False):
     """ [# of Stores, Rarity Low, Rarity High, Quan High, Quan Low] """
     global townHTML
     from names import TownNamer
@@ -217,8 +217,7 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, v, qu, name='', dump_json=Fa
 
     for _ in range(qu[0]):
         q = quests.QuestBoard(qu[1], qu[2], qu[3], town_name)
-        board = str(q)
-        townHTML += board
+        townHTML += str(q)
         full_town[i] = q.__dict__
         i += 1
 
@@ -226,6 +225,29 @@ def generate(w, a, p, e, en, b, t, j, f, g, br, gu, v, qu, name='', dump_json=Fa
     if dump_json:
         json.dump(full_town, open(town_name + ".town.json", 'w'), indent=4, sort_keys=True, default=lambda x: x.__dict__)
     return town_name
+
+
+def generate_people(pc, npc, town_name, dump_json=False):
+    full_town = {}
+    if dump_json:
+        full_town = json.load(open(town_name + '.town.json', 'r'))
+
+    for p in pc:
+        person = create_person(create_variance())
+        write_people(person, p)
+        full_town[p] = person
+
+    for p in npc:
+        person = PC.PC()
+        write_npc(person, p)
+        full_town[p] = person
+
+    if dump_json:
+        json.dump(full_town, open(town_name + ".town.json", 'w'), indent=4, sort_keys=True, default=lambda x: x.__dict__)
+
+    print("Writing the town ", town_name)
+    write_html(town_name)
+
 
 
 if __name__ == '__main__':

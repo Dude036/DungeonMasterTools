@@ -22,6 +22,9 @@ class Character(object):
         self.Traits = cTraits
         self.Story = cStory
 
+    def from_dict(self, new_self):
+        self.__dict__.update(new_self)
+
     def __str__(self):
         info = self.Name + """<div>""" + \
                """<ul><li><span style="font-weight:bold;">Race:</span> """ + self.Race + \

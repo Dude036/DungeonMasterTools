@@ -29,6 +29,7 @@ questHTML = '<!DOCTYPE html><html><head><meta name="viewport" content="width=dev
 class QuestBoard(object):
     Low = High = Quantity = 0
     Board = []
+    TownName = ''
 
     def __init__(self, low, high, quan, town_name):
         if low > high:
