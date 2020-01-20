@@ -2388,7 +2388,8 @@ class Whore(object):
             print(self.Person.Gender)
         return '<tr><td style="width:50%;"><span class="text-md">' + self.Person.Name + ' (' + self.Person.Race + ')' +\
                '</span><br /><span class="text-sm emp">' + self.Person.Appearance + '; Age ' + str(self.Person.Age) + \
-               '</span></td><td>' + determine_cost(self.Cost) + '</td><td>' + self.Person.Gender + '</td></tr>'
+               '</span></td><td>' + determine_cost(self.Cost) + '</td><td>' + self.Person.Gender + ' wanting ' +\
+               self.Person.Orientation + '</td></tr>'
 
 
 def create_variety_shop(owner, quan, inflate=1):

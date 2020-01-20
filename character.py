@@ -8,12 +8,12 @@ from traits import *
 
 class Character(object):
     """Characters are the centerpiece of stories"""
-    Name = Gender = Race = Appearance = ''
+    Name = Gender = Race = Appearance = Orientation = ''
     Traits = Story = []
     Age = 0
 
     def __init__(self, cName, cRace, cGender, cAge, cAppearance, cTraits,
-                 cStory):
+                 cStory, cOrientation):
         self.Name = cName
         self.Race = cRace
         self.Gender = cGender
@@ -21,6 +21,7 @@ class Character(object):
         self.Appearance = cAppearance
         self.Traits = cTraits
         self.Story = cStory
+        self.Orientation = cOrientation
 
     def from_dict(self, new_self):
         self.__dict__.update(new_self)
@@ -50,7 +51,8 @@ def create_person(pop):
     if pop is None:
         pop = create_variance()
     race = choice(list(pop.keys()), 1, p=list(pop.values()))[0]
-    gender = choice(['Male', 'Female'])
+    gender = choice(['Male', 'Female'], p=[0.5, 0.5])
+    orientation = choice(['Male', 'Female'], p=[0.042, 0.958] if gender == 'male' else [0.958, 0.042])
     name = ng.name_parser(race, gender)
     age = randint(ages[race][0], ages[race][1])
 
@@ -81,4 +83,4 @@ def create_person(pop):
         back,
     ]
 
-    return Character(name, race, gender, age, appear, trait, story)
+    return Character(name, race, gender, age, appear, trait, story, orientation)
