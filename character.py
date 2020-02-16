@@ -13,7 +13,7 @@ class Character(object):
     Age = 0
 
     def __init__(self, cName, cRace, cGender, cAge, cAppearance, cTraits,
-                 cStory, cOrientation):
+                 cStory, cOrientation=''):
         self.Name = cName
         self.Race = cRace
         self.Gender = cGender
@@ -21,7 +21,7 @@ class Character(object):
         self.Appearance = cAppearance
         self.Traits = cTraits
         self.Story = cStory
-        self.Orientation = cOrientation
+        self.Orientation = cOrientation if cOrientation == '' else choice(['Male', 'Female'])
 
     def from_dict(self, new_self):
         self.__dict__.update(new_self)
