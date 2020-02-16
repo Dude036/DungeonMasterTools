@@ -1,3 +1,11 @@
+class Aarakocra:
+    n1 = ["", "", "", "", "", "c", "cl", "cr", "d", "g", "gr", "h", "k", "kh", "kl", "kr", "q", "qh", "ql", "qr", "r", "rh", "s", "y", "z"]
+    n2 = ["a", "e", "i", "u", "a", "e", "i", "u", "a", "e", "i", "u", "a", "e", "i", "u", "a", "e", "i", "u", "a", "e", "i", "u", "a", "e", "i", "u", "ae", "aia", "ee", "oo", "ou", "ua", "uie"]
+    n3 = ["c", "cc", "k", "kk", "l", "ll", "q", "r", "rr"]
+    n4 = ["a", "e", "i", "a", "e", "i", "a", "e", "i", "a", "e", "i", "a", "e", "i", "aa", "ea", "ee", "ia", "ie"]
+    n5 = ["", "", "", "", "c", "ck", "d", "f", "g", "hk", "k", "l", "r", "rr", "rc", "rk", "rrk", "s", "ss"]
+
+
 class Aasimer:
     m1 = [
         "", "", "", "", "", "b", "c", "cr", "d", "gr", "k", "kr", "l", "m",
@@ -44,6 +52,14 @@ class Aasimer:
     s4 = ["", "", "", "l", "m", "n", "r"]
 
 
+class Bugbear:
+    n1 = ["b","br","chr","d","g","gh","hr","kh","n","r","st","t","th","v","z","zh"]
+    n2 = ["a","e","i","o","u"]
+    n3 = ["d","dd","dr","g","gh","gg","gr","rr","rd","rg","rn","t","tt","tr","v","vr","z","zz"]
+    n4 = ["a","i","o","u"]
+    n5 = ["k","lk","mkk","n","nn","nk","r","rk","rr","th"]
+
+
 class Catfolk:
     f1 = [
         "br", "c", "cr", "dr", "f", "g", "gr", "j", "k", "kr", "m", "n", "p",
@@ -73,6 +89,23 @@ class Catfolk:
     m4 = ["", "", "", "", "", "", "", "", "", "", "h", "s"]
 
 
+class Centaur:
+    m1 = ["", "", "", "b", "d", "dw", "g", "gh", "gw", "j", "k", "kh", "m", "n", "rh", "t", "th", "v", "vr", "z", "d", "g", "k", "l", "m", "n", "r", "th", "v"]
+    m2 = ["ae", "ai", "a", "e", "i", "o", "a", "e", "o", "a", "e", "i", "o", "a", "e", "o"]
+    m3 = ["f'r", "l'n", "l'd", "m'v", "m'z", "n'z", "n'v", "n'r", "sh'r", "s'r", "s'z", "s'l", "z'r", "z'h", "d", "dr", "g", "gl", "gr", "k", "kr", "kl", "l", "ll", "ld", "ldr", "ln", "lr", "lv", "lz", "lzr", "m", "mr", "n", "nn", "nd", "nv", "r", "rl", "th", "z", "zl", "zr"]
+    m4 = ["", "", "", "d", "g", "h", "l", "ld", "lk", "n", "nd", "r", "rd", "s", "t", "th"]
+
+    f1 = ["b", "d", "f", "h", "l", "m", "n", "ph", "r", "s", "sh", "v", "z", "l", "n", "r", "v", "z"]
+    f2 = ["ea", "ia", "ae", "a", "e", "a", "e", "i", "a", "e", "a", "e", "i", "a", "e", "a", "e", "i", "o", "a", "e", "a", "e", "i", "a", "e", "a", "e", "i", "a", "e", "a", "e", "i", "o"]
+    f3 = ["d", "dh", "dr", "fr", "fl", "fn", "g", "gl", "gr", "ld", "ldr", "lg", "ln", "lr", "lth", "lv", "lz", "n", "nr", "nv", "r", "rl", "rn", "rg", "rs", "rz", "rsh", "z", "zh", "zr", "zl"]
+    f4 = ["g", "h", "l", "n", "r", "s", "sh", "t", "th"]
+
+    s1 = ["Aspen", "Autumn", "Birch", "Bloom", "Boulder", "Brook", "Brown", "Bright", "Brush", "Burrow", "Cedar", "Crater", "Creek", "Drift", "Dust", "Earthen", "Elm", "Fall", "Flood", "Fog", "Forest", "Grass", "Green", "Grove", "Hail", "Hazel", "Hill", "Hollow", "Ice", "Iron", "Laurel", "Maple", "Moon", "Moss", "Mountain", "Oaken", "Peak", "Pine", "Plain", "Rain", "Ridge", "River", "Rock", "Snow", "Spring", "Star", "Stone", "Storm", "Summer", "Sun", "Thorn", "Timber", "Valley", "Vine", "Willow", "Winter", "Wood", "Yew"]
+    s2 = ["bark", "basker", "bearer", "binder", "blade", "blesser", "blossom", "blossoms", "booster", "borne", "braid", "braider", "braids", "breaker", "bringer", "bruiser", "caller", "carver", "catcher", "chanter", "charger", "chaser", "cleanser", "conqueror", "crest", "dancer", "darter", "defender", "divider", "dreamer", "drinker", "eyes", "fader", "fighter", "force", "forcer", "former", "gatherer", "glow", "groom", "groomer", "guard", "heart", "herald", "hold", "hoof", "laugh", "leaf", "leaper", "leaves", "limp", "love", "mane", "mangle", "march", "mask", "mind", "muse", "pass", "pelt", "petals", "prowl", "prowler", "push", "reign", "rest", "reveler", "ride", "rise", "roamer", "roar", "run", "runner", "rush", "rusher", "scorn", "screamer", "seeker", "shadow", "shield", "shifter", "shine", "sign", "sleep", "slumber", "smile", "smirk", "spark", "spell", "stare", "strength", "tail", "temper", "thread", "trampler", "tree", "twister", "voice", "volley", "wander", "wanderer", "watch", "watcher", "whisper", "whisperer", "wish"]
+    s3 = ['']
+    s4 = ['']
+
+
 class Changeling:
     n1 = [
         "", "", "", "b", "d", "f", "h", "j", "l", "m", "n", "p", "r", "s", "t",
@@ -85,6 +118,10 @@ class Changeling:
     n3 = [
         "c", "g", "gs", "k", "ks", "kt", "m", "n", "rx", "rt", "rs", "s", "sk",
         "t", "ts", "x", "z"
+    ]
+    n4 = [
+        "a", "i", "o", "u", "a", "i", "o", "u", "a", "i", "o", "u", "a", "i",
+        "o", "u", "ee", "ie", "ea", "ae", "ai", "oo", "ou"
     ]
 
 
@@ -274,6 +311,23 @@ class Dhampir:
         'Windsor', 'Winterbourne', 'Winthrop', 'Wordsworth', 'Yardley',
         'Yeardley', 'York', 'Yorke'
     ]
+
+
+class Dragonborn:
+    m1 = ["Ali", "Ar", "Ba", "Bal", "Bel", "Bha", "Bren", "Caer", "Calu", "Dur", "Do", "Dra", "Era", "Faer", "Fro", "Gre", "Ghe", "Gora", "He", "Hi", "Ior", "Jin", "Jar", "Kil", "Kriv", "Lor", "Lumi", "Mar", "Mor", "Med", "Nar", "Nes", "Na", "Oti", "Orla", "Pri", "Pa", "Qel", "Ravo", "Ras", "Rho", "Sa", "Sha", "Sul", "Taz", "To", "Trou", "Udo", "Uro", "Vor", "Vyu", "Vrak", "Wor", "Wu", "Wra", "Wul", "Xar", "Yor", "Zor", "Zra"]
+    m2 = ['']
+    m3 = ['']
+    m4 = ["barum", "bor", "broth", "ciar", "crath", "daar", "dhall", "dorim", "farn", "fras", "gar", "ghull", "grax", "hadur", "hazar", "jhan", "jurn", "kax", "kris", "kul", "lasar", "lin", "mash", "morn", "naar", "prax", "qiroth", "qrin", "qull", "rakas", "rash", "rinn", "roth", "sashi", "seth", "skan", "trin", "turim", "varax", "vroth", "vull", "warum", "wunax", "xan", "xiros", "yax", "ythas", "zavur", "zire", "ziros"]
+
+    f1 = ["Ari", "A", "Bi", "Bel", "Cris", "Ca", "Drys", "Da", "Erli", "Esh", "Fae", "Fen", "Gur", "Gri", "Hin", "Ha", "Irly", "Irie", "Jes", "Jo", "Ka", "Kel", "Ko", "Lilo", "Lora", "Mal", "Mi", "Na", "Nes", "Nys", "Ori", "O", "Ophi", "Phi", "Per", "Qi", "Quil", "Rai", "Rashi", "So", "Su", "Tha", "Ther", "Uri", "Ushi", "Val", "Vyra", "Welsi", "Wra", "Xy", "Xis", "Ya", "Yr", "Zen", "Zof"]
+    f2 = ['']
+    f3 = ['']
+    f4 = ["birith", "bis", "bith", "coria", "cys", "dalynn", "drish", "drith", "faeth", "fyire", "gil", "gissa", "gwen", "hime", "hymm", "karyn", "kira", "larys", "liann", "lyassa", "meila", "myse", "norae", "nys", "patys", "pora", "qorel", "qwen", "rann", "riel", "rina", "rinn", "rish", "rith", "saadi", "shann", "sira", "thibra", "thyra", "vayla", "vyre", "vys", "wophyl", "wyn", "xiris", "xora", "yassa", "yries", "zita", "zys"]
+
+    s5 = ["", "", "", "", "c", "cl", "cr", "d", "dr", "f", "g", "k", "kl", "kr", "l", "m", "my", "n", "ny", "pr", "sh", "t", "th", "v", "y", "d", "j", "l", "ll", "m", "n", "nd", "rg", "r", "rr", "rd",  "c", "d", "k", "l", "n", "r", "s", "sh", "th"]
+    s6 = ["a", "e", "i", "a", "e", "i", "o", "u", "a", "e", "i", "a", "e", "i", "o", "u", "a", "e", "i", "a", "e", "i", "o", "u", "aa", "ia", "ea", "ua", "uu"]
+    s7 = ["c", "cc", "ch", "lm", "lk", "lx", "ld", "lr", "ldr", "lt", "lth", "mb", "mm", "mp", "mph", "mr", "mt", "nk", "nx", "nc", "p", "ph", "r", "rd", "rj", "rn", "rrh", "rth", "st", "tht", "x"]
+    s8 = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "c", "cm", "cn", "d", "j", "k", "km", "l", "n", "nd", "ndr", "nk", "nsht", "nth", "r", "s", "sht", "shkm", "st", "t", "th", "x"]
 
 
 class Drow:
@@ -584,6 +638,25 @@ class Fetchling:
     ]
 
 
+class Firbolg:
+    m1 = ["Ad", "Ae", "Bal", "Bei", "Car", "Cra", "Dae", "Dor", "El", "Ela", "Er", "Far", "Fen", "Gen", "Glyn", "Hei", "Her", "Ian", "Ili", "Kea", "Kel", "Leo", "Lu", "Mira", "Mor", "Nae", "Nor", "Olo", "Oma", "Pa", "Per", "Pet", "Qi", "Qin", "Ralo", "Ro", "Sar", "Syl", "The", "Tra", "Ume", "Uri", "Va", "Vir", "Waes", "Wran", "Yel", "Yin", "Zin", "Zum"]
+    m2 = ["balar", "beros", "can", "ceran", "dan", "dithas", "faren", "fir", "geiros", "golor", "hice", "horn", "jeon", "jor", "kas", "kian", "lamin", "lar", "len", "maer", "maris", "menor", "myar", "nan", "neiros", "nelis", "norin", "peiros", "petor", "qen", "quinal", "ran", "ren", "ric", "ris", "ro", "salor", "sandoral", "toris", "tumal", "valur", "ven", "warin", "wraek", "xalim", "xidor", "yarus", "ydark", "zeiros", "zumin"]
+    m3 = ['']
+    m4 = ['']
+
+    f1 = ["Ad", "Ara", "Bi", "Bry", "Cai", "Chae", "Da", "Dae", "Eil", "En", "Fa", "Fae", "Gil", "Gre", "Hele", "Hola", "Iar", "Ina", "Jo", "Key", "Kris", "Lia", "Lora", "Mag", "Mia", "Neri", "Ola", "Ori", "Phi", "Pres", "Qi", "Qui", "Rava", "Rey", "Sha", "Syl", "Tor", "Tris", "Ula", "Uri", "Val", "Ven", "Wyn", "Wysa", "Xil", "Xyr", "Yes", "Ylla", "Zin", "Zyl"]
+    f2 = ["banise", "bella", "caryn", "cyne", "di", "dove", "fiel", "fina", "gella", "gwyn", "hana", "harice", "jyre", "kalyn", "krana", "lana", "lee", "leth", "lynn", "moira", "mys", "na", "nala", "phine", "phyra", "qirelle", "ra", "ralei", "rel", "rie", "rieth", "rona", "rora", "roris", "satra", "stina", "sys", "thana", "thyra", "tris", "varis", "vyre", "wenys", "wynn", "xina", "xisys", "ynore", "yra", "zana", "zorwyn"]
+    f3 = ['']
+    f4 = ['']
+
+
+class Genasi:
+    a1 = ["Ablaze", "Alight", "Ardor", "Ardour", "Arson", "Ash", "Austral", "Bake", "Beacon", "Blaze", "Blight", "Boil", "Bonfire", "Brand", "Broil", "Burn", "Calcine", "Candle", "Cauterize", "Char", "Charcoal", "Cinder", "Coal", "Combust", "Conflagration", "Cremate", "Crisp", "Dante", "Dantean", "Ember", "Enkindle", "Explosion", "Fervor", "Fever", "Fiery", "Flame", "Flare", "Flash", "Flicker", "Flux", "Forge", "Frizzle", "Fry", "Fuego", "Fuel", "Fume", "Furnace", "Glare", "Gleam", "Glint", "Glow", "Grill", "Heat", "Hell", "Hellfire", "Hot", "Igneous", "Ignite", "Ignition", "Incendiary", "Incinerate", "Infernal", "Inferno", "Kiln", "Kindle", "Lantern", "Lava", "Light", "Lit", "Magma", "Melt", "Nether", "Oven", "Parch", "Phoenix", "Piping", "Pyre", "Pyro", "Roast", "Scald", "Scorch", "Scoria", "Sear", "Seethe", "Shine", "Singe", "Sizzle", "Smoke", "Smolder", "Soot", "Spark", "Sultry", "Sun", "Swelter", "Thermal", "Thermo", "Tinder", "Toast", "Torch", "Torrid", "Volcano", "Warmth", "Wildfire", "Wither"];
+    w2 = ["Agua", "Aqua", "Azure", "Basin", "Bath", "Bathe", "Beck", "Bore", "Branch", "Brine", "Brook", "Cleanse", "Course", "Creek", "Current", "Dabble", "Damp", "Deluge", "Dew", "Dewdrop", "Douse", "Downpour", "Drain", "Drench", "Drift", "Drip", "Drizzle", "Drop", "Droplet", "Drown", "Eagre", "Estuary", "Expanse", "Flood", "Flow", "Flux", "Fog", "Fountain", "Geyser", "Gush", "Hose", "Hydra", "Hydrogen", "Influx", "Jet", "Lagoon", "Lake", "Lakelet", "Liquid", "Mere", "Mist", "Monsoon", "Neptune", "Ocean", "Paddle", "Plash", "Plunge", "Pond", "Pool", "Precip", "Puddle", "Quagmire", "Rain", "Rill", "Rinse", "Ripple", "River", "Rivulet", "Run", "Runnel", "Rush", "Sea", "Seiche", "Shower", "Soak", "Spatter", "Splash", "Spout", "Spring", "Sprinkle", "Storm", "Stream", "Streamlet", "Surf", "Surge", "Swish", "Tear", "Teardrop", "Tempest", "Tidal", "Tide", "Torrent", "Tributary", "Tsunami", "Typhoon", "Vapor", "Wash", "Wave", "Well", "Wet"];
+    e3 = ["Adamant", "Agate", "Alabaster", "Amethyst", "Azurite", "Basalt", "Bedrock", "Block", "Boulder", "Brick", "Callous", "Citrine", "Clay", "Cliff", "Cobble", "Cobblestone", "Crag", "Crystal", "Dense", "Diamond", "Emerald", "Flint", "Fossil", "Fossilstone", "Garnet", "Gem", "Geo", "Geode", "Granite", "Gravel", "Grime", "Ground", "Hill", "Hunk", "Ingot", "Jade", "Jewel", "Lapis", "Lazuli", "Limestone", "Lodge", "Lump", "Malachite", "Marble", "Marmoreal", "Mason", "Masonry", "Mineral", "Monolith", "Moonstone", "Mountain", "Nugget", "Obsidian", "Onyx", "Opal", "Ore", "Pebble", "Pellet", "Peridot", "Precious", "Quarry", "Quartz", "Quartzite", "Rock", "Rocky", "Rough", "Rubble", "Ruby", "Rugged", "Sand", "Sandstone", "Sapphire", "Sediment", "Shelf", "Slab", "Slate", "Soapstone", "Solid", "Spinel", "Stone", "Stony", "Sturdy", "Terra", "Tile", "Topaz", "Travertine", "Turf", "Umber", "Wedge", "Zircon"];
+    f4 = ["Aerate", "Aerial", "Air", "Ascend", "Atmosphere", "Aura", "Aviate", "Azure", "Blast", "Blow", "Breath", "Breeze", "Celeste", "Celestial", "Chinook", "Cruise", "Current", "Cyclone", "Draft", "Drift", "Eddy", "Empyrean", "Fan", "Float", "Flow", "Flurry", "Flute", "Flutter", "Fly", "Funnel", "Gale", "Gasp", "Glide", "Gust", "Heave", "Heaven", "Hiss", "Hover", "Hurricane", "Lift", "Mistral", "Murmur", "Oxygen", "Ozone", "Pipe", "Pneumatic", "Puff", "Rise", "Sail", "Shriek", "Sigh", "Sky", "Soar", "Squall", "Storm", "Stratosphere", "Surge", "Tempest", "Tornado", "Troposphere", "Tumult", "Turbine", "Turbulence", "Twister", "Vent", "Waft", "Wheeze", "Whiff", "Whirl", "Whirlwind", "Whisk", "Whistle", "Wind", "Wing", "Zephyr"]
+
+
 class Gillman:
     m1 = [
         'Aqilus', 'Porcus', 'Nater', 'Filtys', 'Merpus ', 'Tertis', 'Osharus',
@@ -686,6 +759,18 @@ class Gillman:
         'Vivianna', 'Vivianne', 'Vivien', 'Wade', 'Waverly', 'Winnifred',
         'Wynnifred', 'Yara', 'Yardenah', 'Yaritza', 'Yarrow', 'Yoki', 'Zhaleh'
     ]
+
+
+class Gith:
+    m1 = ["Am", "Ar", "Ara", "Aza", "Bar", "Bra", "Bran", "Bru", "Da", "Dar", "Dor", "Dra", "Dro", "Du", "Fa", "Far", "Fer", "Fur", "Gan", "Gra", "Gran", "Gre", "Gro", "Gru", "Hra", "Hu", "Ka", "Kar", "Kha", "Kra", "Kro", "Ma", "Mar", "Mu", "Na", "Nar", "Nir", "Nu", "On", "Or", "Ora", "Oro", "Ra", "Ran", "Rhu", "Rin", "Ru", "Sa", "Sha", "Shra", "Sra", "Un", "Una", "Ur", "Ura", "Zar", "Zra"];
+    m2 = ['']
+    m3 = ['']
+    m4 = ["d", "dahn", "dak", "dar", "dh", "dran", "gahr", "gh", "gor", "k", "kahr", "kar", "khar", "kiak", "kk", "kran", "lag", "lahr", "lian", "lid", "lis", "llak", "loth", "mag", "mak", "miak", "mir", "nag", "nak", "niar", "nod", "rad", "rag", "rak", "ram", "rath", "rek", "rg", "rm", "rth", "ruk", "tar", "th", "tig", "zad", "zag", "zak", "zar", "zeg", "zirg", "zth"];
+    
+    f1 = ["Ad", "Alm", "Ar", "Arw", "Ash", "Dah", "Dhar", "Dolm", "Dran", "Ell", "Erzh", "Esz", "Ezh", "Genr", "Grel", "Grin", "Halm", "Han", "Harn", "Heln", "Ihr", "Iln", "Imm", "Iz", "Kan", "Kharm", "Khaz", "Krez", "Laz", "Lez", "Lhash", "Lir", "Magd", "Marm", "Meir", "Mir", "Nagr", "Nah", "Nalm", "Nash", "Niar", "Ohn", "Or", "Rasz", "Rez", "Sham", "Sharm", "Shund", "Sil", "Um", "Ur", "Uw"];
+    f2 = ['']
+    f3 = ['']
+    f4 = ["a", "ah", "aka", "al", "alin", "alla", "ane", "anith", "anya", "arah", "arin", "aya", "ayah", "ayis", "eah", "eka", "ekus", "el", "ela", "elna", "elya", "elzal", "ena", "enah", "era", "erah", "erath", "erra", "eth", "eya", "ihn", "ila", "ilias", "ilzin", "in", "ina", "ines", "ira", "iren", "iris", "ith", "iza", "mina", "mira", "nel", "nera", "nia", "niya", "ya", "yara"];
 
 
 class Gnome:
@@ -802,6 +887,21 @@ class Goblin:
     ]
     s3 = ['']
     s4 = ['']
+
+
+class Goliath:
+    f1 = ["Age", "Ane", "Are", "Daa", "Dau", "Di", "Ga", "Gal", "Gau", "Ge", "Gel", "Ila", "Ina", "Ka", "Kau", "Ke", "Ki", "Kuo", "La", "Lau", "Le", "Lo", "Maa", "Man", "Mau", "Me", "Na", "Nal", "Nau", "Ni", "No", "Ola", "One", "Ore", "Ori", "Pa", "Paa", "Pau", "Pe", "Tha", "Thau", "The", "Thu", "Vaa", "Vau", "Ve", "Vo", "Vu", "Za", "Zaa", "Zau", "Zo"]
+    f2 = ['']
+    f3 = ['']
+    f4 = ["gea", "geo", "ggeo", "ghu", "gia", "gu", "kea", "keo", "kha", "ki", "kia", "kio", "kko", "la", "lai", "lane", "lea", "leo", "lo", "lu", "ma", "meo", "mi", "mia", "ne", "nea", "neo", "ni", "nia", "nna", "nnio", "nu", "peo", "peu", "pu", "rea", "rheo", "ri", "ria", "rra", "rrea", "the", "thea", "thi", "thia", "thio", "thu", "vea", "vi", "via", "vu"]
+    m1 = ["Ag", "Apa", "Ar", "Au", "Aug", "Aur", "Eag", "Eg", "Erg", "Ga", "Gau", "Gea", "Gha", "Gra", "Ila", "Ili", "Ira", "Kana", "Kava", "Kaza", "Keo", "Khu", "Kora", "Kra", "La", "Lau", "Laza", "Loro", "Ma", "Mara", "Mau", "Mea", "Mo", "Na", "Nara", "Nau", "Neo", "Pa", "Pu", "Tara", "Tau", "Tha", "Thava", "Tho", "Va", "Vara", "Vau", "Vaura", "Vega", "Vi", "Vo", "Za", "Zau"]
+    m2 = ['']
+    m3 = ['']
+    m4 = ["dak", "dath", "dhan", "gak", "gal", "gan", "gath", "ghan", "gith", "glath", "gun", "kan", "kein", "khal", "kin", "kon", "lath", "lig", "lok", "mahg", "mahk", "mahl", "mak", "man", "mith", "mul", "nak", "nath", "nihl", "noth", "path", "phak", "rad", "rath", "rein", "rhak", "rhan", "riak", "rian", "rin", "rok", "roth", "thag", "thak", "tham", "thi", "thok", "veith", "vek", "vhal", "vhik", "vith", "voi", "zak", "ziath"]
+    s1 = ["Adept", "Bear", "Brave", "Bright", "Dawn", "Day", "Deer", "Dream", "Flint", "Fearless", "Flower", "Food", "Fright", "Goat", "Hard", "Hide", "High", "Honest", "Horn", "Keen", "Lone", "Long", "Low", "Lumber", "Master", "Mind", "Mountain", "Night", "Rain", "River", "Rock", "Root", "Silent", "Sky", "Sly", "Smart", "Steady", "Stone", "Storm", "Strong", "Swift", "Thread", "Thunder", "Tree", "Tribe", "True", "Truth", "Wander", "Wild", "Wise", "Wound"]
+    s2 = ["aid", "bearer", "breaker", "caller", "carver", "chaser", "climber", "cook", "dream", "drifter", "eye", "finder", "fist", "friend", "frightener", "guard", "hand", "hauler", "heart", "herder", "hunter", "jumper", "killer", "lander", "leader", "leaper", "logger", "maker", "mender", "picker", "runner", "shot", "smasher", "speaker", "stalker", "striker", "tanner", "twister", "vigor", "walker", "wanderer", "warrior", "watcher", "weaver", "worker"]
+    s3 = [" Agu-Ul", " Agu-V", " Anakal", " Apuna-M", " Athun", " Egena-V", " Egum", " Elan", " Ganu-M", " Gathak", " Gean", " Inul", " Kalag", " Kaluk", " Katho-Ol", " Kolae-G", " Kolak", " Kulan", " Kulum", " Lakum", " Maluk", " Munak", " Muthal", " Nalak", " Nola-K", " Nugal", " Nulak", " Ogol", " Oveth", " Thenal", " Thul", " Thunuk", " Ugun", " Uthenu-K", " Vaimei-L", " Valu-N", " Vathun", " Veom", " Vuma-Th", " Vunak"]
+    s4 = ["aga", "ageane", "akane", "akanu", "akume", "alathi", "amino", "amune", "anathi", "atake", "athai", "athala", "atho", "avea", "avi", "avone", "eaku", "ekali", "elo", "iaga", "iago", "iala", "iano", "igala", "igane", "igano", "igo", "igone", "ileana", "ithino", "olake", "ugate", "ugoni", "ukane", "ukate", "ukena", "ulane", "upine", "utha", "uthea"]
 
 
 class Grippli:
@@ -942,7 +1042,7 @@ class Human:
         "o", "y", "y", "au", "ie", "ae"
     ]
     f3 = [
-        "bj", "d", "df", "dg", "dh", "dl", "dn", "dr", "fl", "g", "gd", "gn",
+        "br", "d", "df", "dg", "dh", "dl", "dn", "dr", "fl", "g", "gd", "gn",
         "gv", "ld", "lk", "ll", "llg", "lv", "m", "n", "nd", "nfr", "ng", "nj",
         "nng", "nnv", "r", "rd", "rf", "rg", "rgr", "rl", "rn", "sfr", "sg",
         "sl", "str", "th", "thr"
@@ -1125,6 +1225,110 @@ class Ifrit:
     f4 = ["", "", "", "", "", "", "", "", "h", "n", "s"]
 
 
+class Kalashtar:
+    m1 = ["b","c","ch","d","g","gh","h","k","kh","l","m","n","s","t","v","z"]
+    m2 = ["a","e","o","a","e","o","i"]
+    m3 = ["l","n","r","s","v","w","y","z"]
+    m4 = ["","","","","","d","l","lk","n","ns","nt","s","ss","sh","th"]
+
+    f1 = ["d","h","g","gh","k","kh","m","n","r","sh","sht","t","v","z"]
+    f2 = ["dr","kr","l","ld","ldr","lr","n","r","rr","v","z"]
+    f3 = ["ai","ei","ia","a","e","i","a","e","i","a","e","i","a","e","i","a","e","i"]
+    f4 = ["","","","","","d","l","lk","n","ns","nt","s","ss","sh","th"]
+
+
+class Kenku:
+    n1 = [
+        "Angler", "Baker", "Barker", "Basher", "Bather", "Beggar", "Biter",
+        "Boiler", "Bomber", "Bonker", "Bouncer", "Braker", "Brander", "Breaker",
+        "Broiler", "Bruiser", "Bubbler", "Burner", "Butcher", "Buzzer", "Cackler",
+        "Carver", "Caster", "Chimer", "Chitter", "Chomper", "Chopper", "Clamor",
+        "Clamper", "Clanger", "Clapper", "Clawer", "Cleaver", "Clicker",
+        "Clinger", "Clinker", "Clipper", "Clubber", "Clucker", "Cobbler",
+        "Cooker", "Cougher", "Crackler", "Crinkler", "Croaker", "Cruncher",
+        "Crusher", "Cutter", "Dangler", "Deflater", "Digger", "Dipper", "Doodler",
+        "Dragger", "Drawer", "Dribbler", "Driller", "Dripper", "Drummer",
+        "Duster", "Enchanter", "Engraver", "Etcher", "Exploder", "Flapper",
+        "Flipper", "Flopper", "Flusher", "Forger", "Fryer", "Giggler", "Gnasher",
+        "Gnawer", "Gouger", "Greaser", "Griller", "Grinder", "Growler", "Gusher",
+        "Hammer", "Hammerer", "Hiccup", "Hummer", "Impaler", "Inscriber", "Itcher",
+        "Jangler", "Jingler", "Knocker", "Lasher", "Locker", "Lugger", "Mangler",
+        "Masher", "Mauler", "Mewer", "Mimer", "Molder", "Nailer", "Neigher",
+        "Nestler", "Nibbler", "Paddler", "Piercer", "Piper", "Plunger", "Presser",
+        "Prodder", "Puffer", "Raker", "Rasper", "Rattler", "Ripper", "Roarer",
+        "Roaster", "Ruffler", "Rustler", "Scooper", "Scorcher", "Scratcher",
+        "Scribbler", "Scrubber", "Shaker", "Shaver", "Shearer", "Shoveler",
+        "Shrieker", "Sifter", "Singer", "Sketcher", "Slammer", "Slicer", "Smasher",
+        "Snapper", "Sneezer", "Snorer", "Spitter", "Splasher", "Splitter",
+        "Squeaker", "Squealer", "Squisher", "Stamper", "Stomper", "Strangler",
+        "Striker", "Strummer", "Swatter", "Sweeper", "Swiper", "Tinkerer",
+        "Trampler", "Walloper", "Whacker", "Whipper", "Whistler", "Albatross Call",
+        "Albatross Flap", "Alligator Hiss", "Alligator Roar", "Ape Call",
+        "Ape Hoot", "Ape Scratch", "Aper", "Badger Growl", "Badger Run",
+        "Badger Scratch", "Barker", "Bat Flap", "Bat Screech", "Bat Swoop",
+        "Bear Growl", "Bear Roar", "Bear Rustle", "Bear Step", "Bear Stomp",
+        "Beaver Call", "Beaver Chew", "Beaver Nibble", "Beaver Rustle", "Bee Buzzer",
+        "Bison Breath", "Bison Call", "Bison Stomp", "Bleater", "Boar Charge",
+        "Boar Grunt", "Boar Rustle", "Boar Squeal", "Boar Stamp", "Boarer",
+        "Cackler", "Cat Call", "Cat Hiss", "Cat Purr", "Cat Rustle", "Cat Scratch",
+        "Catter", "Chirper", "Cow Moo", "Cow Step", "Cow Stomp", "Cower",
+        "Coyote Cackle", "Coyote Howl", "Coyote Yelp", "Coyote Yowl",
+        "Cricket Chirp", "Cricketer", "Croaker", "Crocodile Hiss", "Crocodile Roar",
+        "Crocodiler", "Crow Call", "Crow Rustle", "Crower", "Deer Clash",
+        "Deer Rustle", "Deer Scratch", "Deer Stomp", "Dino Chew", "Dino Growl",
+        "Dino Roar", "Dino Snort", "Dino Stomp", "Dog Bark", "Dog Growl", "Dog Howl",
+        "Dog Run", "Dog Sneeze", "Dog Step", "Dog Wiggle", "Dog Yelp", "Dog Yip",
+        "Dog Yowl", "Dogger", "Donkey Call", "Donkey Stomp", "Dove Rustle",
+        "Dove Swoop", "Dover", "Dragon Bite", "Dragon Breath", "Dragon Chew",
+        "Dragon Roar", "Dragon Swoop", "Duck Quacker", "Duck Rustle", "Ducker",
+        "Eagle Screech", "Elephant Roar", "Elephant Stampede", "Elephant Stomp",
+        "Falcon Rustle", "Falcon Swoop", "Fox Rustle", "Fox Yelp", "Fox Yowl",
+        "Foxer", "Frog Croak", "Frog Splash", "Frogger", "Gecko Croak",
+        "Giraffe Smash", "Giraffe Snort", "Giraffe Stomp", "Goat Baa", "Goat Bleat",
+        "Goat Chew", "Goater", "Goose Hiss", "Goose Honk", "Growler",
+        "Hamster Squeak", "Hee-Haw", "Hisser", "Hog Oink", "Hog Snort", "Honker",
+        "Hooter", "Horse Blow", "Horse Neigh", "Horse Sneeze", "Horse Snort",
+        "Horse Stamp", "Horse Whinny", "Horser", "Howler", "Hyena Cackle",
+        "Hyena Laugh", "Jackal Call", "Jackal Laugh", "Jackal Rustle", "Lion Growl",
+        "Lion Roar", "Monker", "Monkey Howl", "Monkey Rustle", "Monkey Scream",
+        "Mouse Peep", "Mouse Rustle", "Mouse Squeak", "Mouser", "Nightingale Song",
+        "Nightingaler", "Oinker", "Owl Call", "Owl Hoot", "Owl Rustle", "Owl Swoop",
+        "Owler", "Panda Sneeze", "Panther Growl", "Panther Roar", "Parrot",
+        "Parrot Bite", "Parrot Call", "Parrot Nibble", "Parrot Rustle", "Parrot Squawk",
+        "Parroter", "Pheasant Call", "Pheasant Rustle", "Pig Snort", "Pigeon Coo",
+        "Pigeon Rustle", "Pigeoner", "Quacker", "Quail Call", "Quail Rustle", "Quailer",
+        "Rabbit Scream", "Rabbit Yelp", "Ram Ram", "Ram Stamp", "Rammer", "Rat",
+        "Rat Rustle", "Rat Squeak", "Rat Yelp", "Ratter", "Raven Rustle", "Rhino Snort",
+        "Rhino Stamp", "Rook Rustle", "Rooker", "Screamer", "Screecher", "Seal Bark",
+        "Seal Flop", "Sealer", "Sheep Baa", "Sheep Bleat", "Singer", "Snake Hiss",
+        "Snake Rattle", "Snake Slither", "Snaker", "Snorter", "Squawker", "Squeaker",
+        "Squirrel Chatter", "Squirrel Chitter", "Squirrel Nibble", "Squirrel Rustle",
+        "Squirreler", "Stampede", "Swan Cry", "Swan Flap", "Swan Hiss", "Swan Honk",
+        "Swanner", "Toad Croak", "Trumpet", "Trumpeter", "Turkey Call",
+        "Turkey Gobble", "Tweeter", "Vulture Scream", "Warbler", "Whale Song",
+        "Wolf Growl", "Wolf Howl", "Wolf Yelp", "Wolfer", "Wolverine Growl",
+        "Wolverine Yelp", "Net Cast", "Net Splash", "Anchor Splash", "Anchor Chain",
+        "Anchor Drop", "Leather Smack", "Leather Flick", "Leather Drop", "Hide Smack",
+        "Hide Flick", "Hide Drop", "Paint Drop", "Paint Stroke", "Paint Squeeze",
+        "Brush Stroke", "Brush Flick", "Hammer Crash", "Hammer Drop", "Hammer Clank",
+        "Nail Drop", "Nail Tingle", "Saw Drop", "Saw Wobble", "Saw Pull", "Spade Dig",
+        "Spade Drop", "Hoe Dig", "Hoe Scrape", "Hoe Scratch", "Mallet Crash",
+        "Mallet Smash", "Mallet Drop", "Chisel Tick", "Chisel Cut", "Chisel Carve",
+        "Armor Clank", "Armor Crash", "Steel Clank", "Steel Crash", "Steel Drop",
+        "Furnace Roar", "Furnace Door", "Hatchet Cut", "Hatchet Drop", "Hatchet Split",
+        "Hatchet Chop", "Wood Chop", "Wood Crack", "Wood Creak", "Wood Drop",
+        "Tree Fall", "Tree Creak", "Fire Crackle", "Fire Roar", "Potion Bubble",
+        "Potion Crash", "Potion Gush", "Potion Swirl", "Potion Splash",
+        "Kettle Bubble", "Kettle Splash", "Kettle Bubble", "Cauldron Swirl",
+        "Cauldron Stir", "Cauldron Bubble", "Cauldron Splash", "Bell Ring", "Bell Drop",
+        "Crier Bell", "Bowstring Flick", "Bowstring Stretch", "Blacksmith Clank",
+        "Lute Pluck", "Lute String", "Glass Shatter", "Fruit Squish", "Crate Smash",
+        "Crate Crack", "Crate Creak", "Ship Creak", "Sail Slap", "Rope Slap",
+        "Rope Whip", "Book Drop", "Book Slam", "Page Turn", "Grain Trash", "Grain Mill",
+        "Cork Pop", "Wood Scrape", "Sail Flick"
+    ]
+
+
 class Kitsune:
     f1 = [
         '',
@@ -1287,6 +1491,18 @@ class Lizardfolk:
     ]
 
 
+class Loxodon:
+    m1 = ["", "", "", "b", "br", "ch", "d", "dr", "g", "h", "k", "n", "r", "s", "sv", "t", "thr", "v", "vr", "z"]
+    m2 = ["oo", "a", "e", "i", "o", "a", "e", "i", "o", "a", "e", "i", "o", "oo", "e", "o", "u", "o", "u", "e", "o", "u", "o", "u"]
+    m3 = ["b", "br", "d", "dj", "dr", "g", "h", "j", "k", "m", "nd", "ndr", "nj", "nr", "nt", "l", "ld", "ldr", "lr", "r", "rd", "s", "t", "y"]
+    m4 = ["l", "m", "n", "r", "j", "l", "m", "n", "s", "v", "z", "zh"]
+
+    f1 = ["", "", "", "b", "d", "f", "j", "k", "l", "ly", "m", "r", "s", "sh", "t", "v", "y", "z"]
+    f2 = ["oo", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "oo", "a", "i", "u", "a", "i", "u", "a", "i", "u", "e", "e"]
+    f3 = ["d", "f", "fy", "j", "l", "ln", "lr", "lt", "ly", "n", "nc", "nt", "ny", "r", "rj", "s", "sn", "sm", "sr", "t", "tr", "v"]
+    f4 = ["j", "l", "n", "r", "v", "z", "", "", "", "", "", "j", "l", "m", "n", "r", "s", "y"]
+
+
 class Merfolk:
     f1 = ["d", "g", "j", "n", "s", "t", "v", "z"]
     f2 = ["a", "e", "i", "o", "a", "e", "i", "o", "u"]
@@ -1340,6 +1556,23 @@ class Merfolk:
     s2 = ['']
     s3 = ['']
     s4 = ['']
+
+
+class Minotaur:
+    m1 = ["Aam", "Ane", "Are", "Ase", "Den", "Duo", "Duu", "Em", "Enti", "Era", "Este", "Fas", "Fen", "Hene", "Hes", "Hila", "Hine", "Ias", "Ire", "Ki", "Kia", "Kuo", "Laan", "Line", "Loo", "Mira", "Mou", "Muu", "Nan", "Nea", "Neo", "Noo", "Nuo", "Oen", "Oes", "Raas", "Ras", "Reo", "Rina", "Sees", "Seo", "Sina", "Tee", "Tes", "Tia", "Tina", "Uova", "Veo", "Vi", "Via", "Weo", "Wina"]
+    m2 = ['']
+    m3 = ['']
+    m4 = ["dane", "dera", "din", "dra", "fa", "fen", "fin", "kane", "kea", "ken", "kia", "la", "las", "len", "lian", "lin", "lo", "mas", "me", "mi", "min", "mira", "na", "nan", "nas", "nim", "nore", "nu", "pe", "pen", "ra", "ren", "res", "rin", "ris", "ru", "sen", "sia", "ta", "ter", "tin", "tra", "tred", "tri", "trin", "tris", "ven", "vena", "vera", "vin", "za", "zara", "zin"]
+
+    f1 = ["Ar", "Are", "Aste", "Bar", "Bjor", "Bran", "Car", "Cod", "Da", "Djar", "Djun", "Doen", "Dor", "Drin", "Dur", "Far", "Foos", "Gar", "Goe", "Gra", "Gran", "Gun", "Har", "Hir", "Hun", "Ja", "Jar", "Kar", "Kin", "Kir", "Koo", "Koor", "Kran", "Krum", "Kur", "Man", "Min", "Mir", "Mun", "Nar", "Noe", "Noo", "Pod", "Rak", "Te", "Tir", "Toon", "Trak", "Tur", "Zam", "Zar", "Zun"]
+    f2 = ['']
+    f3 = ['']
+    f4 = ["ban", "baran", "bur", "dak", "daran", "diar", "dor", "drin", "fajar", "faruk", "fran", "furan", "gajan", "garak", "giran", "gur", "jar", "kan", "kar", "karat", "kun", "kurat", "kus", "manuk", "marin", "maruk", "narak", "nark", "narun", "nir", "nus", "paran", "piran", "raduk", "rak", "rakar", "ranak", "rapak", "ras", "rat", "rilak", "rios", "ron", "rus", "rut", "tagar", "taruk", "tiran", "toron", "turok", "tus", "vrak"]
+
+    s1 = ["Agile", "Bear", "Bold", "Boulder", "Brave", "Bright", "Fearless", "Fist", "Glory", "Goblin", "Great", "Heavy", "Honor", "Iron", "Jagged", "Keen", "Nimble", "Orc", "Rock", "Rugged", "Sharp", "Silent", "Single", "Steady", "Steel", "Stone", "Storm", "Stout", "Strong", "Swift", "Thick", "Thunder", "Tough", "Truth", "Valiant", "Vigil", "Wolf"]
+    s2 = ['']
+    s3 = ['']
+    s4 = ["bane", "body", "eye", "fighter", "fist", "fury", "hand", "heart", "hide", "hoof", "horn", "horns", "hunter", "leader", "mind", "pelt", "roar", "runner", "skin", "skull", "slash", "slayer", "speaker", "step", "striker", "vigor", "walker", "warrior"]
 
 
 class Nagaji:
@@ -1518,6 +1751,23 @@ class Samsarans:
         "q", "z"
     ]
     m4 = ["", "", "d", "g", "k", "l", "m", "n", "r", "s", "sh", "wr", "x"]
+
+
+class Shifter:
+    m1 = ["Acor", "Almond", "Ash", "Astro", "Badger", "Barb", "Basalt", "Basil", "Beast", "Birch", "Blast", "Blaze", "Bluff", "Bog", "Boulder", "Bramble", "Breach", "Briar", "Brock", "Brook", "Burst", "Canyon", "Char", "Chasm", "Cinder", "Claw", "Cliff", "Cloud", "Coal", "Cobalt", "Cobble", "Comet", "Cosmo", "Crag", "Crater", "Dash", "Drake", "Drift", "Dune", "Dusk", "Dust", "Echo", "Fang", "Flame", "Flare", "Flax", "Flint", "Flood", "Foam", "Fog", "Forest", "Fox", "Frost", "Frostbite", "Fume", "Fury", "Gale", "Glare", "Gorge", "Grime", "Grit", "Grove", "Gulch", "Gust", "Kindle", "Light", "Lumber", "Magma", "Mahogany", "Marsh", "Mercury", "Midnight", "Mire", "Moss", "Mountain", "Nebula", "Newt", "Nightfall", "Nightshade", "Nimbus", "North", "Nova", "Nyx", "Oak", "Ocean", "Onyx", "Pitch", "Pyre", "Pyro", "Quicksilver", "Ravine", "Ridge", "Rift", "River", "Rock", "Rubble", "Scar", "Shrub", "Silver", "Smoke", "Soot", "Spark", "Spike", "Spine", "Steam", "Steel", "Stone", "Storm", "Surge", "Talon", "Thicket", "Thistle", "Thorn", "Thunder", "Tide", "Tiger", "Timber", "Tinder", "Tor", "Torrent", "Vapor", "Vermin", "Vine", "Void", "Wave", "Willow", "Wolf", "Woods"]
+    f1 = ["Abyss", "Almond", "Amber", "Amethyst", "Anemone", "Aqua", "Aurora", "Autumn", "Birch", "Bloom", "Blossom", "Breeze", "Briar", "Brook", "Canyon", "Chestnut", "Cloud", "Coral", "Coyote", "Crest", "Cricket", "Crystal", "Dawn", "Dew", "Dewdrop", "Diamond", "Elm", "Ember", "Emerald", "Evening", "Feather", "Fern", "Flare", "Floe", "Flora", "Floret", "Flow", "Fluff", "Galaxy", "Gem", "Hail", "Harley", "Haze", "Hazel", "Horizon", "Ice", "Indigo", "Iris", "Isle", "Ivy", "Jade", "Jasmine", "Juniper", "Karma", "Lake", "Lavender", "Leaf", "Lily", "Luna", "Magenta", "Maple", "Marigold", "Meadow", "Midnight", "Mist", "Moon", "Moss", "Nebula", "Nutmeg", "Ocean", "Olive", "Opal", "Orchid", "Pearl", "Petal", "Pine", "Pinecone", "Plume", "Poison", "Pyro", "Quill", "Rain", "Raven", "Rill", "River", "Robin", "Rose", "Rosemary", "Ruby", "Saffron", "Sage", "Sapphire", "Scarlet", "Shade", "Silver", "Sky", "Snow", "Snowflake", "Spring", "Star", "Stardust", "Sugar", "Summer", "Sun", "Sunrise", "Sunset", "Sunshine", "Swill", "Thistle", "Tidal", "Tiger", "Tinder", "Topaz", "Twig", "Twilight", "Urchin", "Vapor", "Violet", "Whirl", "Willow", "Wind", "Wing", "Winter"]
+
+
+class SimicHybrid:
+    m1 = ["Ad", "Ae", "Bal", "Bei", "Car", "Cra", "Dae", "Dor", "El", "Ela", "Er", "Far", "Fen", "Gen", "Glyn", "Hei", "Her", "Ian", "Ili", "Kea", "Kel", "Leo", "Lu", "Mira", "Mor", "Nae", "Nor", "Olo", "Oma", "Pa", "Per", "Pet", "Qi", "Qin", "Ralo", "Ro", "Sar", "Syl", "The", "Tra", "Ume", "Uri", "Va", "Vir", "Waes", "Wran", "Yel", "Yin", "Zin", "Zum"]
+    m2 = ['']
+    m3 = ['']
+    m4 = ["balar", "beros", "can", "ceran", "dan", "dithas", "faren", "fir", "geiros", "golor", "hice", "horn", "jeon", "jor", "kas", "kian", "lamin", "lar", "len", "maer", "maris", "menor", "myar", "nan", "neiros", "nelis", "norin", "peiros", "petor", "qen", "quinal", "ran", "ren", "ric", "ris", "ro", "salor", "sandoral", "toris", "tumal", "valur", "ven", "warin", "wraek", "xalim", "xidor", "yarus", "ydark", "zeiros", "zumin"]
+
+    f1 = ["Ad", "Ara", "Bi", "Bry", "Cai", "Chae", "Da", "Dae", "Eil", "En", "Fa", "Fae", "Gil", "Gre", "Hele", "Hola", "Iar", "Ina", "Jo", "Key", "Kris", "Lia", "Lora", "Mag", "Mia", "Neri", "Ola", "Ori", "Phi", "Pres", "Qi", "Qui", "Rava", "Rey", "Sha", "Syl", "Tor", "Tris", "Ula", "Uri", "Val", "Ven", "Wyn", "Wysa", "Xil", "Xyr", "Yes", "Ylla", "Zin", "Zyl"]
+    f2 = ['']
+    f3 = ['']
+    f4 = ["banise", "bella", "caryn", "cyne", "di", "dove", "fiel", "fina", "gella", "gwyn", "hana", "harice", "jyre", "kalyn", "krana", "lana", "lee", "leth", "lynn", "moira", "mys", "na", "nala", "phine", "phyra", "qirelle", "ra", "ralei", "rel", "rie", "rieth", "rona", "rora", "roris", "satra", "stina", "sys", "thana", "thyra", "tris", "varis", "vyre", "wenys", "wynn", "xina", "xisys", "ynore", "yra", "zana", "zorwyn"]
 
 
 class Strix:
@@ -1789,6 +2039,80 @@ class Sylph:
     ]
 
 
+class Tabaxi:
+    n1 = [
+        "Afternoon Nap (Nap)", "Animal in the Woods (Woods)", "Answered Riddle (Riddle)",
+        "Art of Shadows (Art)", "Aura of Passion (Aura)", "Aurora of Winter (Aurora)",
+        "Autumn Harvest (Autumn)", "Beats of a Heart (Beats)", "Beauty of Summer (Summer)",
+        "Beauty's Eye (Beauty)", "Belly of a Beast (Beast)", "Berry Bush (Bush)",
+        "Big Heart (Big)", "Bird Feather (Bird)", "Bite Marks (Bite)",
+        "Blank Board (Board)", "Blank Canvas (Canvas)", "Blazing Fire (Blaze)",
+        "Blossoms in Summer (Blossom)", "Branch of a River (River)",
+        "Breath of Fresh Air (Breath)", "Broken Chain (Chain)",
+        "Bubble of a Cauldron (Bubble)", "Burden of Chains (Chains)",
+        "Burning Desire (Desire)", "Burning Fire (Fire)", "Bush in the Forest (Forest)",
+        "Bushy Branch (Branch)", "Busy Bee (Bee)", "Cadence of Water (Cadence)",
+        "Cake of Chocolate (Cake)", "Call of a Bird (Bird)", "Call of the Owl (Owl)",
+        "Call to Action (Action)", "Candle in the Dark (Candle)", "Cannon on Deck (Cannon)",
+        "Carriage on the Road (Road)", "Clanking Bottle (Clank)", "Cloaking Dagger (Dagger)",
+        "Cloud in the Sky (Sky)", "Coursing River (River)", "Cover of Clouds (Cover)",
+        "Crescent Moon (Moon)", "Dangling Button (Button)", "Dangling Lace (Lace)",
+        "Daydream at Night (Dream)", "Dew on the Grass (Dew)", "Dream of Days (Dream)",
+        "Drifting Cloud (Cloud)", "Drifting Snowflake (Snowflake)", "Drop in a Pond (Drop)",
+        "Dust of Chalk (Dust)", "Dust on the Road (Dust)", "Eclipse of the Moon (Eclipse)",
+        "Edge of the World (Edge)", "End of Winter (Winter)", "Endless Time (Time)",
+        "Fall of Water (Water)", "Fallen Twig (Twig)", "Fang of a Snake (Fang)",
+        "Feather in the Wind (Feather)", "Fire in the Distance (Fire)", "Fish in the River (River)",
+        "Flame of Passion (Passion)", "Flame of the Spirit (Flame)", "Flickering Fire (Fire)",
+        "Flickering Flame (Flame)", "Flight of a Robin (Robin)", "Flow of the River (Flow)",
+        "Flower in the Field (Flower)", "Flower of Ivory (Ivory)", "Forgotten Link (Link)",
+        "Four-Leaf Clover (Clover)", "Fragrance of Spring (Spring)", "Friend of Foe (Friend)",
+        "Gale of the Storm (Gale)", "Game of Chance (Game)", "Garden of Flowers (Flower)",
+        "Gift of a Guest (Gift)", "Glow of the Sun (Sun)", "Grass of Spring (Grass)",
+        "Guest at Home (Guest)", "Guide of Life (Guide)", "Hawk Feather (Hawk)",
+        "Hen of the Flock (Hen)", "Hidden Depths (Depth)", "Hidden Treasure (Treasure)",
+        "Hide of the Beast (Hide)", "High Noon (Noon)", "Honey of Bees (Honey)",
+        "Hot Flame (Flame)", "Hot as Fire (Fire)", "Ice in Summer (Ice)", "Ice on the Lake (Ice)",
+        "Ink on Skin (Ink)", "Jewel of the Mountain (Jewel)", "Kite in the Wind (Kite)",
+        "Leaf on the Water (Leaf)", "Leaping Frog (Frog)", "Light in the Morning (Light)",
+        "Lightning After Thunder (Lightning)", "Little Flower (Little)",
+        "Lock on an Open Door (Lock)", "Locket on a Heart (Locket)", "Looping Coil (Coil)",
+        "Loose String (String)", "Luck of the Draw (Luck)", "Marble in the Sky (Marble)",
+        "Mark of Life (Mark)", "Melting of Snow (Snow)", "Mirror's Reflection (Mirror)",
+        "Mist in the Morning (Mist)", "Mountain Boulder (Boulder)", "Needle in Hay (Needle)",
+        "Night of Dreams (Night)", "Open Gates (Gate)", "Owl in the Morning (Owl)",
+        "Page of a Book (Page)", "Paint on a Canvas (Paint)", "Patch in the Forest (Patch)",
+        "Paw of a Bear (Paw)", "Peak of Mountains (Peak)", "Piece of the Puzzle (Piece)",
+        "Plume in the Wind (Plume)", "Plume of Smoke (Smoke)", "Poem of Summer (Poem)",
+        "Print of a Boot (Boot)", "Print of an Animal (Animal)", "Quill in the Grass (Quill)",
+        "Rain in Summer (Rain)", "Rain of Fall (Rain)", "Rainbow After Rain (Rainbow)",
+        "Rays of the Sun (Ray)", "Remnants of History (Remnant)", "Rhythm of Drums (Rhythm)",
+        "Ringing of Bells (Bell)", "Rinkling Chains (Chains)", "Roar of a Bear (Roar)",
+        "Rope in a Knot (Knot)", "Rustling of a Deer (Deer)", "Sailing Ship (Ship)",
+        "Sand of the Beach (Sand)", "Sands of Time (Sand)", "Scarf in Summer (Scarf)",
+        "Scratch on Wood (Scratch)", "Screech of Bats (Bat)", "Sea of Opportunity (Sea)",
+        "Second Chance (Chance)", "Serpent Scale (Scale)", "Shadow of a Star (Shadow)",
+        "Shadows in the Wind (Shadow)", "Sky Full of Stars (Sky)", "Sky of a Sunset (Sky)",
+        "Sleight Hand (Hand)", "Smooth as Silk (Silk)", "Snapping Branch (Snap)",
+        "Snow of the Mountain (Snow)", "Solstice of Summer (Solstice)", "Song of Paradise (Song)",
+        "Sound of the Drum (Drum)", "Spark of Life (Spark)", "Sparkle of Light (Sparkle)",
+        "Spell of Rain (Spell)", "Spots of a Leopard (Spot)", "Spring Blossom (Spring)",
+        "Spring Winds (Spring)", "Star in the Morning (Star)", "Steady Rock (Rock)",
+        "Stitch of Fabric (Stitch)", "Stone in Water (Stone)", "Storm at Sea (Sea)",
+        "Storm on the Horizon (Storm)", "Strength of Love (Love)",
+        "Stripes of a Tiger (Tiger)", "Stroke of a Brush (Brush)",
+        "Summer Afternoon (Summer)", "Sunshine at Night (Sunshine)", "Tale of Wonder (Tale)",
+        "Taste of Fruit (Taste)", "Three Tree (Three)", "Thrill of Life (Thrill)",
+        "Thunder in the Morning (Thunder)", "Ticking Clock (Clock)", "Tome of Secrets (Tome)",
+        "Top Card (Card)", "Trail in the Woods (Trail)", "Tree Blossom (Blossom)",
+        "Tree in the Woods (Tree)", "Tricking Treat (Trick)", "Two River (River)",
+        "Unpulled Cart (Cart)", "Unread Book (Book)", "Veil of Shadows (Veil)",
+        "Veil of a Mask (Veil)", "Wave on the Shore (Wave)", "Windy Shore (Shore)",
+        "Wing of an Angel (Angel)", "Winter Breath (Winter)", "Wish Upon a Star (Wish)",
+        "Wonder of the World (Wonder)"
+    ]
+
+
 class Tian:
     f1 = [
         "", "", "", "b", "c", "ch", "d", "dh", "g", "gh", "h", "j", "k", "kh",
@@ -1886,6 +2210,13 @@ class Tian:
         "yumi", "yuri", "zami", "zu", "zue", "zuki", "zuko", "zumi", "zuru",
         "zusa"
     ]
+
+
+class Tortle:
+    n1 = ["", "", "", "", "b", "d", "g", "j", "k", "kr", "l", "n", "pl", "q", "s", "t", "w", "x", "y"]
+    n2 = ["ue", "uo", "ua", "ia", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "y", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u"]
+    n3 = ["b", "d", "k", "l", "lb", "ld", "lk", "m", "n", "nn", "nl", "nq", "nqw", "qw", "p", "pp", "r", "rdl", "rt", "rtl", "z", "zl"]
+    n4 = ["", "", "", "", "", "c", "d", "g", "k", "l", "ll", "m", "n", "r", "t", "tt"]
 
 
 class Tengu:
@@ -2042,6 +2373,18 @@ class Vanara:
     n3 = ["ia", "ia", "a", "ia"]
 
 
+class Vedalken:
+    m1 = ["","","","","","","b","bh","d","dh","dr","f","k","kh","l","m","n","nh","p","r","tr","y","z"]
+    m2 = ["a","e","i","o","u"]
+    m3 = ["b","bl","d","dr","dv","g","gg","gl","l","ld","ll","lv","m","n","pl","r","rd","rv","t","th","tl","thv","tr","v","vl","vr"]
+    m4 = ["l","ll","n","r","v","z","c","d","l","ll","n","r","sh","t","tt","v","z"]
+
+    f1 = ["","","","","","b","bl","br","d","dr","f","gr","h","k","kl","l","m","n","p","r","s","sl","tr","y","z","zl"]
+    f2 = ["ai","ie","ia","ei","a","e","i","o","u","ia","ai","aa",]
+    f3 = ["d","dd","dr","dv","g","gr","gg","l","ld","lg","ll","ln","lv","r","rr","rv","s","ss","str","tr","v","y","z"]
+    f4 = ["l","ll","n","nn","s","v","y","z","","","","","","","h","l","ll","n","nn","s","sh","ss"]
+
+
 class Vishkanya:
     f1 = [
         "Aakash", "Abhi", "Abhinav", "Acarya", "Aditya", "Ajatasatru",
@@ -2132,6 +2475,66 @@ class Vishkanya:
     ]
 
 
+class Warforged:
+    n1 = [
+        "Abider", "Achiever", "Actor", "Adapter", "Adviser", "Aegis",
+        "Agent", "Animal", "Apparatus", "Armament", "Artist",
+        "Audience", "Author", "Awakener", "Basher", "Bastion",
+        "Battler", "Bear", "Beast", "Beauty", "Beetle", "Bender",
+        "Binder", "Blade", "Book", "Booster", "Boot", "Bouncer",
+        "Brain", "Brander", "Brawler", "Breaker", "Bringer",
+        "Browser", "Bruiser", "Buffet", "Bug", "Builder", "Bulwark",
+        "Calmer", "Candle", "Cannon", "Carer", "Carriage", "Carrier",
+        "Cart", "Carver", "Case", "Caster", "Catcher", "Chain",
+        "Chains", "Challenger", "Champion", "Chaperon", "Charger",
+        "Chaser", "Chopper", "Claymore", "Cleaver", "Climber",
+        "Clock", "Club", "Clubber", "Coil", "Commander",
+        "Controller", "Cook", "Counter", "Creator", "Creature",
+        "Creese", "Crew", "Croaker", "Crow", "Crumbler", "Crusher",
+        "Curator", "Curtana", "Custodian", "Cutlas", "Cutlass",
+        "Cutter", "Dagger", "Data", "Dealer", "Decipherer",
+        "Defender", "Definer", "Delver", "Designer", "Destroyer",
+        "Diagnoser", "Director", "Dirk", "Diver", "Doctor",
+        "Dozer", "Dreamer", "Drifter", "Driver", "Drone", "Echo",
+        "Edge", "Enchanter", "Epee", "Eraser", "Estoc", "Etcher",
+        "Examiner", "Expert", "Falchion", "Familiar", "Fighter",
+        "Figure", "Fire", "Five", "Flail", "Flame", "Fluke", "Foil",
+        "Follower", "Forger", "Four", "Friend", "Fumbler", "Gasher",
+        "Gauger", "Ghost", "Giant", "Gift", "Glaive", "Glancer",
+        "Griller", "Grunter", "Guardian", "Guest", "Guide",
+        "Hacker", "Hammer", "Handler", "Heart", "Help", "Hook",
+        "Horn", "Host", "Hummer", "Hunter", "Image", "Inspector",
+        "Iron", "Judge", "Junior", "Jury", "Katana", "Kid", "Killer",
+        "Knife", "Knocker", "Kris", "Launcher", "Leaper", "Lifter",
+        "Lock", "Locket", "Lurker", "Mace", "Machine", "Mark",
+        "Marker", "Mask", "Masker", "Mauler", "Melter", "Menace",
+        "Mentor", "Merger", "Metal", "Mime", "Mistake", "Model",
+        "Molder", "Murderer", "Nameless", "Needle", "Nemo", "Novice",
+        "Nurse", "Observer", "Officer", "Ogler", "One", "Ornament",
+        "Painter", "Passenger", "Patient", "Patriot", "Pierce",
+        "Pilot", "Pious", "Player", "Porter", "Preacher", "Pretender",
+        "Prize", "Probe", "Protector", "Prowler", "Punisher", "Query",
+        "Ravager", "Reader", "Reckoner", "Relic", "Render", "Rescuer",
+        "Responder", "Reviewer", "Rider", "Rune", "Saber", "Sabre",
+        "Safeguard", "Salvager", "Saviour", "Scimitar", "Scorcher",
+        "Scratcher", "Scrubber", "Searcher", "Security", "Seeker",
+        "Senior", "Senser", "Sentinel", "Sentry", "Servant", "Shaper",
+        "Shepherd", "Shield", "Shielder", "Shredder", "Slasher",
+        "Slicer", "Smasher", "Smiter", "Snooper", "Spark", "Sparkle",
+        "Special", "Spirit", "Sprinter", "Sprite", "Squasher",
+        "Stalker", "Status", "Steel", "Steeple", "Stick", "Sticks",
+        "Stitcher", "Striker", "Student", "Stumbler", "Subject",
+        "Suit", "Sunderer", "Supporter", "Surveyor", "Sword",
+        "Tackler", "Taunter", "Teacher", "Teaser", "Tempter",
+        "Tester", "Thief", "Thinker", "Three", "Thunder", "Tinkerer",
+        "Titan", "Toad", "Toledo", "Tutor", "Twister", "Two",
+        "Undoer", "Unit", "Unmaker", "Unsung", "Vessel", "Victor",
+        "Visitor", "Voice", "Walker", "Ward", "Warden", "Watcher",
+        "Whisperer", "Wielder", "Winker", "Winner", "Wonderer",
+        "Wrestler", "Zealot", "Zero"
+    ]
+
+
 class Wayangs:
     f1 = [
         "Ahurei", "Aia", "Aiani", "Aifeuna", "Amo", "Arii-fataia", "Ariipaea",
@@ -2170,6 +2573,13 @@ class Wayangs:
         "Tetupua", "Teuira", "Tevurua", "Tevurua-hoiatua", "Tevuruahoratua",
         "Tiipaarii", "Tupuetefa", "Ura", "Vavea"
     ]
+
+
+class Yuanti:
+    n1 = ["", "", "", "", "", "h", "m", "n", "s", "sh", "ss", "ssh", "sz", "t", "th", "y", "z", "zh", "zs"]
+    n2 = ["a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "oa", "ui", "a", "i", "u", "a", "i", "u", "a", "i", "u", "a", "i", "u", "a", "i", "u", "a", "i", "u", "ie", "ia", "ei", "ee", "iu", "ui"]
+    n3 = ["h", "hl", "htl", "hl", "hs", "hsh", "k", "kh", "kl", "ktl", "ks", "l", "lk", "ls", "ltl", "lts", "lsh", "m", "n", "s", "sh", "ss", "st", "stl", "sz", "sk", "t", "tl", "ts", "tsh", "tsz", "tz", "tstl", "zs", "zh", "zsh", "zt", "ztl"]
+    n4 = ["h", "hs", "hl", "l", "ll", "s", "sh", "ss", "shl", "t", "th", "y", "z", "zh", "", "", "", "", "", "", "", "", "h", "h", "l", "ll", "s", "ss", "sh"]
 
 
 # Store Generators

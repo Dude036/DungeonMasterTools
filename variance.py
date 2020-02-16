@@ -7,12 +7,21 @@ from tqdm import tqdm
 import simplejson as json
 
 RACES = [
-    'Dwarf', 'Elf', 'Gnome', 'Halfling', 'Human', 'Half-Elf', 'Half-Orc',
-    'Orc', 'Aasimer', 'Catfolk', 'Changeling', 'Dhampir', 'Drow', 'Duergar',
-    'Fetchling', 'Gillman', 'Goblin', 'Grippli', 'Hobgoblin', 'Ifrit',
-    'Kitsune', 'Kobold', 'Lizardfolk', 'Merfolk', 'Nagaji', 'Oread', 'Ratfolk',
+    # Pathfinder Races
+    'Aasimer', 'Catfolk', 'Changeling', 'Dhampir', 'Drow', 'Duergar', 'Dwarf',
+    'Elf', 'Fetchling', 'Gillman', 'Gnome', 'Goblin', 'Grippli', 'Half-Elf',
+    'Half-Orc', 'Halfling', 'Hobgoblin', 'Human', 'Ifrit', 'Kitsune',
+    'Kobold', 'Lizardfolk', 'Merfolk', 'Nagaji', 'Orc', 'Oread', 'Ratfolk',
     'Samsarans', 'Strix', 'Suli', 'Svirfneblin', 'Sylph', 'Tengu', 'Tiefling',
-    'Undine', 'Vanara', 'Vishkanya', 'Wayangs'
+    'Undine', 'Vanara', 'Vishkanya', 'Wayangs',
+    # D&D 5e races
+    'Aarakocra', 'Air Genasi', 'Bugbear', 'Centaur', 'Dragonborn',
+    'Earth Genasi', 'Firbolg', 'Fire Genasi', 'Gith', 'Goliath',
+    # 'Grung', # Has yet to have a general name generator
+    'Kalashtar', 'Kenku',
+    # 'Locathah',  # Has yet to have a general name generator
+    'Loxodon', 'Minotaur', 'Shifter', 'Simic Hybrid', 'Tabaxi', 'Tortle',
+    'Triton', 'Vedalken', 'Warforged', 'Water Genasi', 'Yuan-ti Pureblood'
 ]
 
 settings = None
