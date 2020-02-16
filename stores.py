@@ -76,7 +76,7 @@ def determine_cost(c):
         if int((c * 100) % 10) > 0:
             s += str(int((c * 100) % 10)) + " cp"
     if len(s) == 0:
-        s = "1 cp"
+        s = "0 cp"
     return s
 
 
