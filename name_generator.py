@@ -249,8 +249,6 @@ def name_parser(race, gender):
         elif race == 'Yuan-ti Pureblood':
             name = default_unisex(Yuanti, 4)
 
-
-
     elif race == 'Vanara':
         name = vanara(gender)
     elif race == 'Suli':

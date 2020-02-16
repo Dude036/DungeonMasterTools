@@ -760,6 +760,7 @@ appearance = {
 }
 
 ages = {
+    # Pathfinder Races
     'Aasimer': [35, 70],
     'Catfolk': [35, 70],
     'Changeling': [35, 70],
@@ -799,6 +800,30 @@ ages = {
     'Vanara': [30, 60],
     'Vishkanya': [35, 70],
     'Wayangs': [100, 200],
+    # 5e Races
+    'Aarakocra': [5, 30],
+    'Air Genasi': [20, 100],
+    'Bugbear': [20, 70],
+    'Centaur': [15, 70],
+    'Dragonborn': [10, 80],
+    'Earth Genasi': [20, 100],
+    'Firbolg': [30, 500],
+    'Fire Genasi': [20, 100],
+    'Gith': [50, 1000],
+    'Goliath': [15, 80],
+    'Kalashtar': [35, 70],
+    'Kenku': [12, 60],
+    'Loxodon': [60, 450],
+    'Minotaur': [20, 120],
+    'Shifter': [10, 70],
+    'Simic Hybrid': [20, 60],
+    'Tabaxi': [10, 60],
+    'Tortle': [50, 360],
+    'Triton': [20, 200],
+    'Vedalken': [40, 500],
+    'Warforged': [5, 1000],
+    'Water Genasi': [20, 100],
+    'Yuan-ti Pureblood': [12, 120],
 }
 
 back_location = [

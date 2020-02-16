@@ -652,9 +652,9 @@ class Firbolg:
 
 class Genasi:
     a1 = ["Ablaze", "Alight", "Ardor", "Ardour", "Arson", "Ash", "Austral", "Bake", "Beacon", "Blaze", "Blight", "Boil", "Bonfire", "Brand", "Broil", "Burn", "Calcine", "Candle", "Cauterize", "Char", "Charcoal", "Cinder", "Coal", "Combust", "Conflagration", "Cremate", "Crisp", "Dante", "Dantean", "Ember", "Enkindle", "Explosion", "Fervor", "Fever", "Fiery", "Flame", "Flare", "Flash", "Flicker", "Flux", "Forge", "Frizzle", "Fry", "Fuego", "Fuel", "Fume", "Furnace", "Glare", "Gleam", "Glint", "Glow", "Grill", "Heat", "Hell", "Hellfire", "Hot", "Igneous", "Ignite", "Ignition", "Incendiary", "Incinerate", "Infernal", "Inferno", "Kiln", "Kindle", "Lantern", "Lava", "Light", "Lit", "Magma", "Melt", "Nether", "Oven", "Parch", "Phoenix", "Piping", "Pyre", "Pyro", "Roast", "Scald", "Scorch", "Scoria", "Sear", "Seethe", "Shine", "Singe", "Sizzle", "Smoke", "Smolder", "Soot", "Spark", "Sultry", "Sun", "Swelter", "Thermal", "Thermo", "Tinder", "Toast", "Torch", "Torrid", "Volcano", "Warmth", "Wildfire", "Wither"];
-    w2 = ["Agua", "Aqua", "Azure", "Basin", "Bath", "Bathe", "Beck", "Bore", "Branch", "Brine", "Brook", "Cleanse", "Course", "Creek", "Current", "Dabble", "Damp", "Deluge", "Dew", "Dewdrop", "Douse", "Downpour", "Drain", "Drench", "Drift", "Drip", "Drizzle", "Drop", "Droplet", "Drown", "Eagre", "Estuary", "Expanse", "Flood", "Flow", "Flux", "Fog", "Fountain", "Geyser", "Gush", "Hose", "Hydra", "Hydrogen", "Influx", "Jet", "Lagoon", "Lake", "Lakelet", "Liquid", "Mere", "Mist", "Monsoon", "Neptune", "Ocean", "Paddle", "Plash", "Plunge", "Pond", "Pool", "Precip", "Puddle", "Quagmire", "Rain", "Rill", "Rinse", "Ripple", "River", "Rivulet", "Run", "Runnel", "Rush", "Sea", "Seiche", "Shower", "Soak", "Spatter", "Splash", "Spout", "Spring", "Sprinkle", "Storm", "Stream", "Streamlet", "Surf", "Surge", "Swish", "Tear", "Teardrop", "Tempest", "Tidal", "Tide", "Torrent", "Tributary", "Tsunami", "Typhoon", "Vapor", "Wash", "Wave", "Well", "Wet"];
-    e3 = ["Adamant", "Agate", "Alabaster", "Amethyst", "Azurite", "Basalt", "Bedrock", "Block", "Boulder", "Brick", "Callous", "Citrine", "Clay", "Cliff", "Cobble", "Cobblestone", "Crag", "Crystal", "Dense", "Diamond", "Emerald", "Flint", "Fossil", "Fossilstone", "Garnet", "Gem", "Geo", "Geode", "Granite", "Gravel", "Grime", "Ground", "Hill", "Hunk", "Ingot", "Jade", "Jewel", "Lapis", "Lazuli", "Limestone", "Lodge", "Lump", "Malachite", "Marble", "Marmoreal", "Mason", "Masonry", "Mineral", "Monolith", "Moonstone", "Mountain", "Nugget", "Obsidian", "Onyx", "Opal", "Ore", "Pebble", "Pellet", "Peridot", "Precious", "Quarry", "Quartz", "Quartzite", "Rock", "Rocky", "Rough", "Rubble", "Ruby", "Rugged", "Sand", "Sandstone", "Sapphire", "Sediment", "Shelf", "Slab", "Slate", "Soapstone", "Solid", "Spinel", "Stone", "Stony", "Sturdy", "Terra", "Tile", "Topaz", "Travertine", "Turf", "Umber", "Wedge", "Zircon"];
-    f4 = ["Aerate", "Aerial", "Air", "Ascend", "Atmosphere", "Aura", "Aviate", "Azure", "Blast", "Blow", "Breath", "Breeze", "Celeste", "Celestial", "Chinook", "Cruise", "Current", "Cyclone", "Draft", "Drift", "Eddy", "Empyrean", "Fan", "Float", "Flow", "Flurry", "Flute", "Flutter", "Fly", "Funnel", "Gale", "Gasp", "Glide", "Gust", "Heave", "Heaven", "Hiss", "Hover", "Hurricane", "Lift", "Mistral", "Murmur", "Oxygen", "Ozone", "Pipe", "Pneumatic", "Puff", "Rise", "Sail", "Shriek", "Sigh", "Sky", "Soar", "Squall", "Storm", "Stratosphere", "Surge", "Tempest", "Tornado", "Troposphere", "Tumult", "Turbine", "Turbulence", "Twister", "Vent", "Waft", "Wheeze", "Whiff", "Whirl", "Whirlwind", "Whisk", "Whistle", "Wind", "Wing", "Zephyr"]
+    w1 = ["Agua", "Aqua", "Azure", "Basin", "Bath", "Bathe", "Beck", "Bore", "Branch", "Brine", "Brook", "Cleanse", "Course", "Creek", "Current", "Dabble", "Damp", "Deluge", "Dew", "Dewdrop", "Douse", "Downpour", "Drain", "Drench", "Drift", "Drip", "Drizzle", "Drop", "Droplet", "Drown", "Eagre", "Estuary", "Expanse", "Flood", "Flow", "Flux", "Fog", "Fountain", "Geyser", "Gush", "Hose", "Hydra", "Hydrogen", "Influx", "Jet", "Lagoon", "Lake", "Lakelet", "Liquid", "Mere", "Mist", "Monsoon", "Neptune", "Ocean", "Paddle", "Plash", "Plunge", "Pond", "Pool", "Precip", "Puddle", "Quagmire", "Rain", "Rill", "Rinse", "Ripple", "River", "Rivulet", "Run", "Runnel", "Rush", "Sea", "Seiche", "Shower", "Soak", "Spatter", "Splash", "Spout", "Spring", "Sprinkle", "Storm", "Stream", "Streamlet", "Surf", "Surge", "Swish", "Tear", "Teardrop", "Tempest", "Tidal", "Tide", "Torrent", "Tributary", "Tsunami", "Typhoon", "Vapor", "Wash", "Wave", "Well", "Wet"];
+    e1 = ["Adamant", "Agate", "Alabaster", "Amethyst", "Azurite", "Basalt", "Bedrock", "Block", "Boulder", "Brick", "Callous", "Citrine", "Clay", "Cliff", "Cobble", "Cobblestone", "Crag", "Crystal", "Dense", "Diamond", "Emerald", "Flint", "Fossil", "Fossilstone", "Garnet", "Gem", "Geo", "Geode", "Granite", "Gravel", "Grime", "Ground", "Hill", "Hunk", "Ingot", "Jade", "Jewel", "Lapis", "Lazuli", "Limestone", "Lodge", "Lump", "Malachite", "Marble", "Marmoreal", "Mason", "Masonry", "Mineral", "Monolith", "Moonstone", "Mountain", "Nugget", "Obsidian", "Onyx", "Opal", "Ore", "Pebble", "Pellet", "Peridot", "Precious", "Quarry", "Quartz", "Quartzite", "Rock", "Rocky", "Rough", "Rubble", "Ruby", "Rugged", "Sand", "Sandstone", "Sapphire", "Sediment", "Shelf", "Slab", "Slate", "Soapstone", "Solid", "Spinel", "Stone", "Stony", "Sturdy", "Terra", "Tile", "Topaz", "Travertine", "Turf", "Umber", "Wedge", "Zircon"];
+    f1 = ["Aerate", "Aerial", "Air", "Ascend", "Atmosphere", "Aura", "Aviate", "Azure", "Blast", "Blow", "Breath", "Breeze", "Celeste", "Celestial", "Chinook", "Cruise", "Current", "Cyclone", "Draft", "Drift", "Eddy", "Empyrean", "Fan", "Float", "Flow", "Flurry", "Flute", "Flutter", "Fly", "Funnel", "Gale", "Gasp", "Glide", "Gust", "Heave", "Heaven", "Hiss", "Hover", "Hurricane", "Lift", "Mistral", "Murmur", "Oxygen", "Ozone", "Pipe", "Pneumatic", "Puff", "Rise", "Sail", "Shriek", "Sigh", "Sky", "Soar", "Squall", "Storm", "Stratosphere", "Surge", "Tempest", "Tornado", "Troposphere", "Tumult", "Turbine", "Turbulence", "Twister", "Vent", "Waft", "Wheeze", "Whiff", "Whirl", "Whirlwind", "Whisk", "Whistle", "Wind", "Wing", "Zephyr"]
 
 
 class Gillman:
@@ -2113,6 +2113,48 @@ class Tabaxi:
     ]
 
 
+class Tengu:
+    f1 = [
+        "", "", "", "", "", "b", "ch", "gr", "j", "k", "kr", "p", "pr", "q",
+        "qr", "r", "s", "t", "tr", "tch", "x", "v", "z"
+    ]
+    f2 = [
+        "a", "e", "o", "u", "a", "e", "o", "u", "a", "e", "o", "u", "a", "e",
+        "o", "u", "i", "i", "a", "e", "o", "u", "au", "ai", "oi", "ou"
+    ]
+    f3 = [
+        "ch", "j", "k", "kk", "l", "ll", "m", "n", "nn", "p", "pp", "q", "r",
+        "rr", "s", "t", "v", "y", "x", "z", "zz"
+    ]
+    f4 = [
+        "", "", "", "", "", "", "", "", "", "", "ck", "gh", "k", "l", "n", "r"
+    ]
+    m1 = [
+        "", "", "", "", "", "ch", "d", "g", "gh", "k", "kh", "m", "n", "p",
+        "q", "r", "s", "sh", "t", "th", "v", "z", "zh"
+    ]
+    m2 = [
+        "a", "e", "o", "u", "a", "e", "o", "u", "a", "e", "o", "u", "a", "e",
+        "o", "u", "i", "i", "a", "e", "o", "u", "ai", "io", "ee", "ae"
+    ]
+    m3 = [
+        "b", "ch", "g", "j", "k", "ky", "lk", "l", "ll", "ly", "m", "mk", "nk",
+        "ny", "p", "py", "r", "rr", "rk", "s", "t", "ty", "tch", "v", "vy",
+        "z", "zz"
+    ]
+    m4 = ["", "", "", "", "", "", "", "", "", "", "k", "l", "n", "r"]
+    s1 = [
+        "", "", "", "", "", "b", "ch", "d", "g", "j", "k", "kr", "m", "n", "p",
+        "pr", "q", "r", "s", "t", "tch", "v", "z"
+    ]
+    s2 = ["a", "e", "i", "o", "u", "a", "o", "e", "a", "o", "e", "u"]
+    s3 = [
+        "ch", "g", "j", "k", "kk", "ky", "l", "ll", "m", "n", "ng", "nk", "p",
+        "pp", "q", "r", "rr", "s", "t", "tch", "v", "y", "z", "zz"
+    ]
+    s4 = ["", "", "ck", "k", "l", "n", "r", "t"]
+
+
 class Tian:
     f1 = [
         "", "", "", "b", "c", "ch", "d", "dh", "g", "gh", "h", "j", "k", "kh",
@@ -2212,55 +2254,6 @@ class Tian:
     ]
 
 
-class Tortle:
-    n1 = ["", "", "", "", "b", "d", "g", "j", "k", "kr", "l", "n", "pl", "q", "s", "t", "w", "x", "y"]
-    n2 = ["ue", "uo", "ua", "ia", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "y", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u"]
-    n3 = ["b", "d", "k", "l", "lb", "ld", "lk", "m", "n", "nn", "nl", "nq", "nqw", "qw", "p", "pp", "r", "rdl", "rt", "rtl", "z", "zl"]
-    n4 = ["", "", "", "", "", "c", "d", "g", "k", "l", "ll", "m", "n", "r", "t", "tt"]
-
-
-class Tengu:
-    f1 = [
-        "", "", "", "", "", "b", "ch", "gr", "j", "k", "kr", "p", "pr", "q",
-        "qr", "r", "s", "t", "tr", "tch", "x", "v", "z"
-    ]
-    f2 = [
-        "a", "e", "o", "u", "a", "e", "o", "u", "a", "e", "o", "u", "a", "e",
-        "o", "u", "i", "i", "a", "e", "o", "u", "au", "ai", "oi", "ou"
-    ]
-    f3 = [
-        "ch", "j", "k", "kk", "l", "ll", "m", "n", "nn", "p", "pp", "q", "r",
-        "rr", "s", "t", "v", "y", "x", "z", "zz"
-    ]
-    f4 = [
-        "", "", "", "", "", "", "", "", "", "", "ck", "gh", "k", "l", "n", "r"
-    ]
-    m1 = [
-        "", "", "", "", "", "ch", "d", "g", "gh", "k", "kh", "m", "n", "p",
-        "q", "r", "s", "sh", "t", "th", "v", "z", "zh"
-    ]
-    m2 = [
-        "a", "e", "o", "u", "a", "e", "o", "u", "a", "e", "o", "u", "a", "e",
-        "o", "u", "i", "i", "a", "e", "o", "u", "ai", "io", "ee", "ae"
-    ]
-    m3 = [
-        "b", "ch", "g", "j", "k", "ky", "lk", "l", "ll", "ly", "m", "mk", "nk",
-        "ny", "p", "py", "r", "rr", "rk", "s", "t", "ty", "tch", "v", "vy",
-        "z", "zz"
-    ]
-    m4 = ["", "", "", "", "", "", "", "", "", "", "k", "l", "n", "r"]
-    s1 = [
-        "", "", "", "", "", "b", "ch", "d", "g", "j", "k", "kr", "m", "n", "p",
-        "pr", "q", "r", "s", "t", "tch", "v", "z"
-    ]
-    s2 = ["a", "e", "i", "o", "u", "a", "o", "e", "a", "o", "e", "u"]
-    s3 = [
-        "ch", "g", "j", "k", "kk", "ky", "l", "ll", "m", "n", "ng", "nk", "p",
-        "pp", "q", "r", "rr", "s", "t", "tch", "v", "y", "z", "zz"
-    ]
-    s4 = ["", "", "ck", "k", "l", "n", "r", "t"]
-
-
 class Tiefling:
     f1 = [
         "", "", "", "", "", "b", "cr", "d", "g", "h", "k", "kr", "m", "r", "s",
@@ -2312,6 +2305,28 @@ class Tiefling:
         "", "", "", "", "", "", "", "", "", "", "d", "ld", "lt", "m", "n",
         "nd", "r", "rd", "s", "t", "th"
     ]
+
+
+class Tortle:
+    n1 = ["", "", "", "", "b", "d", "g", "j", "k", "kr", "l", "n", "pl", "q", "s", "t", "w", "x", "y"]
+    n2 = ["ue", "uo", "ua", "ia", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u", "y", "a", "e", "i", "o", "u", "a", "e", "i", "o", "u"]
+    n3 = ["b", "d", "k", "l", "lb", "ld", "lk", "m", "n", "nn", "nl", "nq", "nqw", "qw", "p", "pp", "r", "rdl", "rt", "rtl", "z", "zl"]
+    n4 = ["", "", "", "", "", "c", "d", "g", "k", "l", "ll", "m", "n", "r", "t", "tt"]
+
+
+class Triton:
+    m1 = ["c", "d", "dh", "j", "jh", "k", "kh", "m", "n", "r", "v", "z"]
+    m2 = ["a", "e", "i", "o", "u"]
+    m3 = ["d", "dd", "g", "gl", "hn", "hl", "hr", "l", "lg", "lm", "ld", "ln", "lz", "m", "mn", "mr", "n", "nn", "nd", "nl", "nr", "nv", "r", "rl", "rn", "rv", "rz", "v", "vn", "z"]
+    m4 = ["", "", "", "", "", "", "", "", "b", "bh", "d", "dh", "f", "fl", "h", "l", "m", "n", "s", "sh", "vl", "w", "wh", "y"]
+    f1 = ["a", "e", "o", "u", "a", "e", "o", "u", "i"]
+    f2 = ["d", "dd", "dr", "gr", "gl", "hl", "hn", "l", "lr", "lt", "lth", "ml", "nl", "nth", "nr", "r", "rn", "rl", "rr", "s", "sh", "st", "sl", "sn", "t", "th", "tr", "thr", "tl", "thl"]
+    f3 = ["d", "h", "l", "m", "n", "r"]
+    f4 = ["e", "y", "y", "y", "y", "y", "y"]
+    s1 = ["", "", "", "b", "bh", "d", "dh", "j", "g", "l", "m", "n", "p", "r", "s", "v", "z"]
+    s2 = ["a", "u", "a", "u", "a", "u", "e", "o", "a", "o", "a", "o", "e", "u"]
+    s3 = ["b", "d", "g", "gh", "hl", "hn", "hm", "hr", "l", "n", "m", "r", "v"]
+    s4 = ["d", "g", "l", "ll", "ln", "lm", "lv", "m", "mn", "n", "ns", "nz", "r", "rs", "s", "sn", "x", "z"]
 
 
 class Undine:

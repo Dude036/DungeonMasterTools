@@ -50,9 +50,14 @@ def load_settings():
     elif settings["Variance"] < 0 or settings["Variance"] > 100:
         print("Invalid Core Population Variance")
         exit()
-    elif settings["Exotic"] < 0 or settings["Exotic"] > 38:
-        print("Invalid Exotic Race Count")
-        exit()
+    elif type(settings["Exotic"]) == type(0):
+        if settings["Exotic"] < 0 or settings["Exotic"] > 62:
+            print("Invalid Exotic Race Count")
+            exit()
+    else:
+        if settings['Exotic'] == []:
+            print("Invalid Exotic Race Count")
+            exit()
 
 
 def custom_settings(ra, po, va, ex):
@@ -84,10 +89,13 @@ def create_variance():
         # Add Exotics
         races = RACES
         races.remove(settings['Race'])
-        choices = choice(races, settings['Exotic'], replace=False)
-        for i in choices:
-            pop[i] = round(settings['Population'] *
-                           (settings['Variance'] / 100) / settings['Exotic'])
+        if type(settings['Exotic']) == type([]):
+            for i in settings['Exotic']:
+                pop[i] = round(settings['Population'] * (settings['Variance'] / 100) / len(settings['Exotic']))
+        else:
+            choices = choice(races, settings['Exotic'], replace=False)
+            for i in choices:
+                pop[i] = round(settings['Population'] * (settings['Variance'] / 100) / settings['Exotic'])
 
     global_pop = normalize_dict(pop)
     return global_pop
