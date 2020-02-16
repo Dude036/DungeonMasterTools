@@ -15,7 +15,9 @@ There are two setting files right now. `settings.json` contains the settings for
     "Race": "Human", [The main race from the town. (Any race from the PFSRD)]
     "Population": 5000, [The population of town. (1 to infinite)]
     "Variance": 10, [The degree of change from the main race to all other races. (0% to 100%)]
-    "Exotic": 5 [The amount of other races in the town. (0 to 32)]
+    "Exotic": 5 [The amount of other races in the town. (0 to 32), List of races to pull from]
+
+The Exotic setting has two potential options. A number, which will randomly pick between any other race, other than the main race, or a list of races, which should also be in the list of possible races, which can be found in `variance.py`.
 
 `generate.json` contains all the information about the town. Some stores have unique aspects, but each setting explains itself. The last two categories in the JSON are "NPCs" and "Occupations". The difference between the two is that "NPCs" have weapons and stats, while the "Occupation" doesn't. 
 
@@ -157,3 +159,7 @@ The next big task is to get settings files setup for generating things for D&D a
 I would also like to refactor some code, so `stores.py` isn't so bloated.
 
 I'd also like to rework weapon damage types. Adding potentially different damage types, and add some variation on material. i.e. Hot Siccate should also deal fire damage for an average half if it's damage.
+
+Slaves, however dark to add, is a potential commodidity.
+
+Add a list of potential types of government types.
