@@ -26,10 +26,16 @@ if __name__ == '__main__':
 		town_generator.townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
 
 		Q = []
+		S = []
 		for key, value in town_dict.items():
 			if not key.isdigit():
 				Q.append({key: value})
-				continue
+			else:
+				S.append({eval(key): value})
+		S.sort(key=lambda x: list(x.keys())[0])
+
+		for pair in S:
+			key, value = list(pair.keys())[0], list(pair.values())[0]
 			if 'TownName' in value:
 				board = QuestBoard(value['Low'], value['High'], value['Quantity'], value['TownName'])
 				town_generator.townHTML += str(board)

@@ -174,13 +174,20 @@ class Store(object):
         return d
 
     def from_dict(self, new_self):
-        new_stock = []
-        new_class = eval(new_self.pop("Stock_type"))
+        new_class = new_self.pop("Stock_type")
+        add_trinket = False
+        if new_class == 'General':
+            add_trinket = True
+        new_class = eval(new_class)
         new_quan = new_self.pop("Stock_quantity")
         self.Stock = []
 
         self.__dict__.update(new_self)
         self.fill_store(new_class, new_quan)
+        if add_trinket:
+            for _ in range(2):
+                self.Stock.append(General(0, True))
+
 
 
 class Weapon(object):
