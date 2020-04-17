@@ -332,7 +332,7 @@ class Weapon(object):
         crit_val = (self.__crit() // 20)
         cost_factor = max([weapon_cost_and_weight[self.Class][0], dice_incriment * crit_val])
 
-        self.Cost = round(cost_factor * cl[metal]['Cost'] * (self.Rarity + 1)**self.Rarity, 2)
+        self.Cost = float(round(cost_factor * cl[metal]['Cost'] * (self.Rarity + 1)**self.Rarity, 2))
         self.Weight = round(weapon_cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 14, 1)
 
     def add_enchantment(self, ench):
@@ -386,6 +386,10 @@ class Weapon(object):
                 l[self.Enchantment.Level] + """</td></tr>"""
             MasterID += 1
         return s
+
+    def __iter__(self):
+        for item in [self.Weight, self.Cost, self.Rarity, self.Masterwork, self.Name, self.Dice, self.Crit, self.Class, self.Damage, self.Enchantment]:
+            yield item
 
     def to_string(self):
         ench = ''

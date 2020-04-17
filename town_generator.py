@@ -243,7 +243,10 @@ def generate_people(pc, npc, town_name, dump_json=False):
         full_town[p] = person
 
     if dump_json:
-        json.dump(full_town, open(town_name + ".town.json", 'w'), indent=4, sort_keys=True, default=lambda x: x.__dict__)
+        try:
+            json.dump(full_town, open(town_name + ".town.json", 'w'), indent=4, sort_keys=True, default=lambda x: x.__dict__)
+        except Exception as e:
+            raise e
 
     print("Writing the town ", town_name)
     write_html(town_name)

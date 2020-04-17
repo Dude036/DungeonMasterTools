@@ -143,7 +143,7 @@ class PC(object):
             new_char = create_person(None)
 
         self.Name = new_char.Name
-        self.Level = randint(1, 21)
+        self.Level = int(randint(1, 21))
         self.Race = new_char.Race
         self.Gender = new_char.Gender
         self.Age = new_char.Age
@@ -159,14 +159,14 @@ class PC(object):
 
         self.Weapon = [
             Weapon(
-                randint(0, 5),
+                int(randint(0, 5)),
                 iClass=choice([
                     'Heavy Axe', 'Light Axe', 'Heavy Blade', 'Light Blade',
                     'Close', 'Double', 'Flail', 'Hammer', 'Monk', 'Polearm',
                     'Spear'
                 ])),
             Weapon(
-                randint(0, 5), iClass=choice(['Bows', 'Crossbow', 'Thrown']))
+                int(randint(0, 5)), iClass=choice(['Bows', 'Crossbow', 'Thrown']))
         ]
 
         # Spell enabled character - 1 in 3
@@ -189,7 +189,7 @@ class PC(object):
                 temp.append(randint(1, 7))
             temp.sort(reverse=True)
             temp.pop()
-            self.Stats.append(sum(temp))
+            self.Stats.append(int(sum(temp)))
 
     def choose_class(self):
         self.Class = choice(list(playable.keys()))
@@ -277,6 +277,11 @@ class PC(object):
     def from_dict(self, new_self):
         new_self.pop('Weapon')
         self.__dict__.update(new_self)
+
+    def __iter__(self):
+        for item in [self.Name, self.Gender, self.Race, self.Appearance, self.Class, self.Feats, self.Traits, self.Story, self.Age, self.Level, self.Spells, self.Stats, self.Weapon]:
+            yield item
+        
 
 
 if __name__ == '__main__':

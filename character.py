@@ -54,7 +54,7 @@ def create_person(pop):
     gender = choice(['Male', 'Female'], p=[0.5, 0.5])
     orientation = choice(['Male', 'Female'], p=[0.042, 0.958] if gender == 'male' else [0.958, 0.042])
     name = ng.name_parser(race, gender)
-    age = randint(ages[race][0], ages[race][1])
+    age = int(randint(ages[race][0], ages[race][1]))
 
     face = appearance['Face'][randint(len(appearance['Face']))]
     hair = appearance['Hair'][randint(len(appearance['Hair']))]
