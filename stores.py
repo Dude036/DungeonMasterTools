@@ -168,25 +168,50 @@ class Store(object):
             "Store_name": self.Store_name,
             "Quality": self.Quality,
             "Stock_quantity": len(self.Stock),
-            "Stock_type": str(type(self.Stock[0]).__name__),
             "Inflation": self.Inflation
         }
+        if "Variety" in self.Store_name:
+            d["Stock_type"] = "Variety"
+        else:
+            d["Stock_type"] = str(type(self.Stock[0]).__name__)
         return d
 
     def from_dict(self, new_self):
         new_class = new_self.pop("Stock_type")
-        add_trinket = False
-        if new_class == 'General':
-            add_trinket = True
-        new_class = eval(new_class)
         new_quan = new_self.pop("Stock_quantity")
-        self.Stock = []
 
         self.__dict__.update(new_self)
-        self.fill_store(new_class, new_quan)
-        if add_trinket:
-            for _ in range(2):
+        if new_class == 'Variety':
+            num = randint(0, 12)
+            if num == 0:
+                self.Stock.append(Weapon(randint(1, 5)))
+            elif num == 1:
+                self.Stock.append(Armor(randint(1, 5)))
+            elif num == 2:
+                self.Stock.append(Firearm(randint(1, 5)))
+            elif num == 3:
+                self.Stock.append(Ring(randint(1, 10)))
+            elif num == 4:
+                self.Stock.append(Scroll(randint(1, 10)))
+            elif num == 5:
+                self.Stock.append(Wand(randint(1, 10)))
+            elif num == 6:
+                self.Stock.append(Potion(randint(1, 10)))
+            elif num == 7:
+                self.Stock.append(Book(randint(1, 10)))
+            elif num == 8:
+                self.Stock.append(Wondrous())
+            elif num == 9:
+                self.Stock.append(Jewel(randint(1, 10)))
+            elif num == 10:
+                self.Stock.append(General(randint(1, 5)))
+            elif num == 11:
                 self.Stock.append(General(0, True))
+        else:
+            self.fill_store(eval(new_class), new_quan)
+            if new_class == 'General':
+                for _ in range(2):
+                    self.Stock.append(General(0, True))
 
 
 
@@ -2433,11 +2458,11 @@ def create_variety_shop(owner, quan, inflate=1):
         elif num == 8:
             item = Wondrous()
         elif num == 9:
-            item = Food(randint(1, 10))
-        elif num == 10:
-            item = Drink(randint(1, 10))
-        elif num == 11:
             item = Jewel(randint(1, 10))
+        elif num == 10:
+            item = General(randint(1, 5))
+        elif num == 11:
+            item = General(0, True)
 
         a.Stock.append(item)
 
