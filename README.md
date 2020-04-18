@@ -156,10 +156,10 @@ If you're interesting in contributing to this repository, I'm currently trying t
 
 The next big task is to get settings files setup for generating things for D&D and Pathfinder. D&D doesn't have canon rules for weapon creation, so that may be a little difficult to determine the best course of action.
 
-I would also like to refactor some code, so `stores.py` isn't so bloated.
+I would also like to refactor some code, so `stores.py` isn't so bloated. The goal is to create a parent item class, and have the Store contain them.
 
 I'd also like to rework weapon damage types. Adding potentially different damage types, and add some variation on material. i.e. Hot Siccate should also deal fire damage for an average half if it's damage.
 
-Slaves, however dark to add, is a potential commodidity.
+Slaves, however dark to add, is a potential commodity.
 
 Add a list of potential types of government types.
