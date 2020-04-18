@@ -182,31 +182,32 @@ class Store(object):
 
         self.__dict__.update(new_self)
         if new_class == 'Variety':
-            num = randint(0, 12)
-            if num == 0:
-                self.Stock.append(Weapon(randint(1, 5)))
-            elif num == 1:
-                self.Stock.append(Armor(randint(1, 5)))
-            elif num == 2:
-                self.Stock.append(Firearm(randint(1, 5)))
-            elif num == 3:
-                self.Stock.append(Ring(randint(1, 10)))
-            elif num == 4:
-                self.Stock.append(Scroll(randint(1, 10)))
-            elif num == 5:
-                self.Stock.append(Wand(randint(1, 10)))
-            elif num == 6:
-                self.Stock.append(Potion(randint(1, 10)))
-            elif num == 7:
-                self.Stock.append(Book(randint(1, 10)))
-            elif num == 8:
-                self.Stock.append(Wondrous())
-            elif num == 9:
-                self.Stock.append(Jewel(randint(1, 10)))
-            elif num == 10:
-                self.Stock.append(General(randint(1, 5)))
-            elif num == 11:
-                self.Stock.append(General(0, True))
+            for _ in range(new_quan):
+                num = randint(0, 12)
+                if num == 0:
+                    self.Stock.append(Weapon(randint(1, 5)))
+                elif num == 1:
+                    self.Stock.append(Armor(randint(1, 5)))
+                elif num == 2:
+                    self.Stock.append(Firearm(randint(1, 5)))
+                elif num == 3:
+                    self.Stock.append(Ring(randint(1, 10)))
+                elif num == 4:
+                    self.Stock.append(Scroll(randint(1, 10)))
+                elif num == 5:
+                    self.Stock.append(Wand(randint(1, 10)))
+                elif num == 6:
+                    self.Stock.append(Potion(randint(1, 10)))
+                elif num == 7:
+                    self.Stock.append(Book(randint(1, 10)))
+                elif num == 8:
+                    self.Stock.append(Wondrous())
+                elif num == 9:
+                    self.Stock.append(Jewel(randint(1, 10)))
+                elif num == 10:
+                    self.Stock.append(General(randint(1, 5)))
+                elif num == 11:
+                    self.Stock.append(General(0, True))
         else:
             self.fill_store(eval(new_class), new_quan)
             if new_class == 'General':
@@ -2430,9 +2431,9 @@ class Whore(object):
 
 def create_variety_shop(owner, quan, inflate=1):
     if isinstance(inflate, float):
-        inflation = (sum(random_sample(inflate)) / inflate) + .5
-    else:
         inflation = inflate
+    else:
+        inflation = (sum(random_sample(inflate)) / inflate) + .5
 
     a = Store(owner, "Travelling Salesmen (Variety)", inflation, [0, 0])
     for _ in range(quan):
