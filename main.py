@@ -5,7 +5,8 @@ from os import linesep
 from re import match
 import simplejson as json
 
-if __name__ == '__main__':
+
+def main():
     generator = json.loads(open('generate.json', 'r').read())
     Weapons = [
         generator['Weapon Shops']["# of Stores"],
@@ -117,7 +118,11 @@ if __name__ == '__main__':
         generator['Dump Json'] = False
 
     town_name = town_generator.generate_shops(Weapons, Armor, Potion, Enchant,
-                                        Enchanter, Books, Tavern, Jewel, Food,
-                                        General, Brothel, Gunsmith, Variety, Quests, 
-                                        generator['Town Name'], generator["Dump Json"])
+                                              Enchanter, Books, Tavern, Jewel, Food,
+                                              General, Brothel, Gunsmith, Variety, Quests,
+                                              generator['Town Name'], generator["Dump Json"])
     town_generator.generate_people(generator['Occupations'], generator['NPCs'], town_name, generator["Dump Json"])
+
+
+if __name__ == '__main__':
+    main()
