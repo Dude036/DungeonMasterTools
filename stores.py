@@ -215,7 +215,6 @@ class Store(object):
                     self.Stock.append(General(0, True))
 
 
-
 class Weapon(object):
     """
     Cost should be in GP
@@ -2410,7 +2409,7 @@ class Wondrous(object):
         return self.Name + ' (' + determine_cost(self.Cost) + ')'
 
 
-class Whore(object):
+class Person(object):
     Person = None
     Cost = 0
 
@@ -2604,7 +2603,7 @@ def create_brothel(owner, quan, inflate=1):
     else:
         a = Store(owner, name, (sum(random_sample(inflate)) / inflate) + .5,
                   [0, 0])
-    a.fill_store(Whore, quan)
+    a.fill_store(Person, quan)
     return a
 
 
