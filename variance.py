@@ -70,9 +70,11 @@ def custom_settings(ra, po, va, ex):
     }
 
 
-def create_variance():
+def create_variance(predef={}):
     global settings
     global global_pop
+    if predef != {}:
+        settings = predef
     if settings is None:
         load_settings()
     if global_pop is not None:

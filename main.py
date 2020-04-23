@@ -3,10 +3,17 @@ import town_generator
 from PC import PC
 from os import linesep
 from re import match
+from variance import create_variance
 import simplejson as json
+import sys
 
 if __name__ == '__main__':
-    generator = json.loads(open('generate.json', 'r').read())
+    if len(sys.argv) == 1:
+        generator = json.loads(open('generate.json', 'r').read())
+    else:
+        print(sys.argv[1], sys.argv[2])
+        generator = json.loads(sys.argv[1])
+        create_variance(json.loads(sys.argv[2]))
     Weapons = [
         generator['Weapon Shops']["# of Stores"],
         generator['Weapon Shops']["Rarity Low"],
@@ -121,12 +128,3 @@ if __name__ == '__main__':
                                         General, Brothel, Gunsmith, Variety, Quests, 
                                         generator['Town Name'], generator["Dump Json"])
     town_generator.generate_people(generator['Occupations'], generator['NPCs'], town_name, generator["Dump Json"])
-
-    # for p in generator['Occupations']:
-    #     town_generator.write_people(
-    #         town_generator.create_person(town_generator.create_variance()), p)
-    # for npc in generator['NPCs']:
-    #     town_generator.write_npc(PC(), npc)
-    #
-    # print("Writing the town ", town_name)
-    # town_generator.write_html(town_name)
