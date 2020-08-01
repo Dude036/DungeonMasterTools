@@ -367,8 +367,7 @@ rare_material = {
         'Cost': 2,
         'Type': [
             'LA',
-            'MA',
-            'HA',
+            'MA'
         ],
     },
     'Ironwood': {
@@ -1099,13 +1098,13 @@ odd_price = {
 die_values = {
     'Heavy Axe': [10, 12],
     'Light Axe': [8, 10],
-    'Heavy Blade': [6, 8, 10],
+    'Heavy Blade': [8, 10, 12],
     'Light Blade': [6, 8],
     'Close': [4, 6, 8],
     'Double': [4, 6, 8, 10],
     'Flail': [4, 6, 8],
     'Hammer': [4, 6, 8],
-    'Monk': [4, 6, 8, 10],
+    'Monk': [4, 6, 8, 10, 12],
     'Polearm': [6, 8, 10],
     'Spear': [6, 8],
     'Bows': [8, 10],
