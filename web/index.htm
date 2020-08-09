@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dungeon Masters Toolkit</title>
+    <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+
+    // Expose this function to Python
+    eel.expose(say_hello_js);
+    function say_hello_js(x) { console.log("Hello from " + x); }
+
+    // Call JS function
+    say_hello_js("Javascript World!");
+    // Call Python function
+    eel.say_hello_py("Javascript World!");
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <h1>Dungeon Masters Toolkit</h1>
+    
+  </body>
+</html>
