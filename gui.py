@@ -1,10 +1,16 @@
 import eel
+from names import TownNamer
 
 
 # Expose this function to Javascript
 @eel.expose
 def say_hello_py(x):
     print('Hello from ', x)
+
+
+@eel.expose
+def random_name_py():
+    return { "Name": TownNamer() }
 
 
 @eel.expose
@@ -25,4 +31,4 @@ if __name__ == '__main__':
     eel.say_hello_js('Python World!')
 
     # start
-    eel.start('index.htm', size=(850, 650))
+    eel.start('index.htm', size=(850, 750))

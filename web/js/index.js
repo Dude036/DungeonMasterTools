@@ -98,6 +98,66 @@ function normal(name, rarity) {
 }
 
 
+// Validate Odd Stores
+function odd(name) {
+	var base = {
+        "# of Stores": parseInt(document.getElementById(name + "Stores").value),
+	};
+	var correct = true;
+	var errors = "";
+	switch(name) {
+		case "Tavern":
+			base["Rooms"] = parseInt(document.getElementById(name + "Rooms").value);
+
+		case "General":
+			base["Trinkets"] = parseInt(document.getElementById(name + "Trinkets").value);
+
+		case "Books":
+		case "Food":
+		case "Brothel":
+		case "Variety":
+			var q_low  = parseInt(document.getElementById(name + "QuantityLow").value);
+			var q_high = parseInt(document.getElementById(name + "QuantityHigh").value);
+			if (q_low > q_high) {
+				correct = false;
+				errors += "Quantity Low is higher than Quantity High. ";
+			}
+			
+			// Validate Inflation
+			var check = document.getElementById(name + "Exact").checked;
+			var inflate  = parseFloat(document.getElementById(name + "Inflation").value);
+			if (check) {
+				inflate /= 100
+			} else {
+				inflate = Math.floor(inflate / 100);
+			}
+			base["Quantity Low"] = q_low
+			base["Quantity High"] = q_high
+			base["Inflation"] = inflate
+			break;
+
+		case "Quest":
+			var l_low  = parseInt(document.getElementById(name + "LevelLow").value);
+			var l_high = parseInt(document.getElementById(name + "LevelHigh").value);
+			if (l_low > l_high) {
+				correct = false;
+				errors += "Level Low is higher than Level High. ";
+			}
+
+			base["Level Low"] = l_low;
+			base["Level High"] = l_high;
+			base["Quantity"] = parseInt(document.getElementById(name + "Quantity").value);
+			break;
+	}
+	if (name == "General") {
+		delete base["Rooms"];
+	}
+
+	document.getElementById(name + "Error").innerHTML = errors;
+	return correct ? base : null;
+}
+
+
 // Function to Validate the form
 function validate() {
 	// Generate basic Info
@@ -130,6 +190,7 @@ function validate() {
 	/*********************/
 	/* Validate Stores   */
 	/*********************/
+	// Normal generations
 	for (var i = normal_types.length - 1; i >= 0; i--) {
 		var ret = normal(normal_types[i], normal_rarity[i]);
 		if (!ret) {
@@ -139,6 +200,15 @@ function validate() {
 		}
 	}
 
+	// Odd generators
+	for (var i = normal_types.length - 1; i >= 0; i--) {
+		var ret = odd(odd_types[i]);
+		if (!ret) {
+			correct = false;
+		} else {
+			generate[generate_names[odd_types[i]]] = ret;
+		}
+	}
 
 	/*********************/
 	/* Validate People   */
@@ -191,6 +261,15 @@ function changing_races() {
 	old_race.removeAttribute("disabled");
 	chosen_race = new_race.id;
 }
+
+
+// Use Eel function to get a random town name
+function random_name_js() {
+	var town_element = document.getElementById("TownName");
+	let new_name = await eel.random_name_py()();
+	town_element.value = new_name;
+}
+
 
 // Show/Hide all of the exotic race pickings
 function show_hide(ident){
