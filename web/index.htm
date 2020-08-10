@@ -4,6 +4,7 @@
     <title>Dungeon Masters Toolkit</title>
     <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
     <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
 
     // Expose this function to Python
@@ -20,6 +21,700 @@
   </head>
   <body>
     <h1>Dungeon Masters Toolkit</h1>
-    
+    <form>      
+      <table class="wrapper-box">
+        <tr>
+          <td>
+            <span class="text-lg bold">
+              Settings
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Race">Race:</label>
+          </td>
+          <td>
+            <select id="Race" name="Race" onchange="changing_races()">
+              <option value="Aasimer">Aasimer</option>
+              <option value="Catfolk">Catfolk</option>
+              <option value="Changeling">Changeling</option>
+              <option value="Dhampir">Dhampir</option>
+              <option value="Drow">Drow</option>
+              <option value="Duergar">Duergar</option>
+              <option value="Dwarf">Dwarf</option>
+              <option value="Elf">Elf</option>
+              <option value="Fetchling">Fetchling</option>
+              <option value="Gillman">Gillman</option>
+              <option value="Gnome">Gnome</option>
+              <option value="Goblin">Goblin</option>
+              <option value="Grippli">Grippli</option>
+              <option value="Half-Elf">Half-Elf</option>
+              <option value="Half-Orc">Half-Orc</option>
+              <option value="Halfling">Halfling</option>
+              <option value="Hobgoblin">Hobgoblin</option>
+              <option value="Human" selected>Human</option>
+              <option value="Ifrit">Ifrit</option>
+              <option value="Kitsune">Kitsune</option>
+              <option value="Kobold">Kobold</option>
+              <option value="Lizardfolk">Lizardfolk</option>
+              <option value="Merfolk">Merfolk</option>
+              <option value="Nagaji">Nagaji</option>
+              <option value="Orc">Orc</option>
+              <option value="Oread">Oread</option>
+              <option value="Ratfolk">Ratfolk</option>
+              <option value="Samsarans">Samsarans</option>
+              <option value="Strix">Strix</option>
+              <option value="Suli">Suli</option>
+              <option value="Svirfneblin">Svirfneblin</option>
+              <option value="Sylph">Sylph</option>
+              <option value="Tengu">Tengu</option>
+              <option value="Tiefling">Tiefling</option>
+              <option value="Undine">Undine</option>
+              <option value="Vanara">Vanara</option>
+              <option value="Vishkanya">Vishkanya</option>
+              <option value="Wayangs">Wayangs</option>
+              <option value="Aarakocra">Aarakocra</option>
+              <option value="Air Genasi">Air Genasi</option>
+              <option value="Bugbear">Bugbear</option>
+              <option value="Centaur">Centaur</option>
+              <option value="Dragonborn">Dragonborn</option>
+              <option value="Earth Genasi">Earth Genasi</option>
+              <option value="Firbolg">Firbolg</option>
+              <option value="Fire Genasi">Fire Genasi</option>
+              <option value="Gith">Gith</option>
+              <option value="Goliath">Goliath</option>
+              <option value="Kalashtar">Kalashtar</option>
+              <option value="Kenku">Kenku</option>
+              <option value="Loxodon">Loxodon</option>
+              <option value="Minotaur">Minotaur</option>
+              <option value="Shifter">Shifter</option>
+              <option value="Simic Hybrid">Simic Hybrid</option>
+              <option value="Tabaxi">Tabaxi</option>
+              <option value="Tortle">Tortle</option>
+              <option value="Triton">Triton</option>
+              <option value="Vedalken">Vedalken</option>
+              <option value="Warforged">Warforged</option>
+              <option value="Water Genasi">Water Genasi</option>
+              <option value="Yuan-ti Pureblood">Yuan-ti Pureblood</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Population">Population:</label>
+          </td>
+          <td>
+            <input type="number" id="Population" name="Population" value="5000" min="0">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Variance">Variance:</label>
+          </td>
+          <td>
+            <input type="number" id="Variance" name="Variance" value="10" min="0" max="100">%
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Exotic Races: <span onclick="show_hide('exotic_list');" style="color: blue;"><b>+</b></span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div id="exotic_list" style="display: none;">
+              <table class="wrapper-box">
+                <tr>
+                  <td>
+                    <input type="checkbox" id="Aasimer" value="Aasimer">
+                    <label for="Aasimer"> Aasimer</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Catfolk" value="Catfolk">
+                    <label for="Catfolk"> Catfolk</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Changeling" value="Changeling">
+                    <label for="Changeling"> Changeling</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Dhampir" value="Dhampir">
+                    <label for="Dhampir"> Dhampir</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Drow" value="Drow">
+                    <label for="Drow"> Drow</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="Duergar" value="Duergar">
+                    <label for="Duergar"> Duergar</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Dwarf" value="Dwarf">
+                    <label for="Dwarf"> Dwarf</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Elf" value="Elf">
+                    <label for="Elf"> Elf</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Fetchling" value="Fetchling">
+                    <label for="Fetchling"> Fetchling</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Gillman" value="Gillman">
+                    <label for="Gillman"> Gillman</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="Gnome" value="Gnome">
+                    <label for="Gnome"> Gnome</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Goblin" value="Goblin">
+                    <label for="Goblin"> Goblin</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Grippli" value="Grippli">
+                    <label for="Grippli"> Grippli</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Half-Elf" value="Half-Elf">
+                    <label for="Half-Elf"> Half-Elf</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Half-Orc" value="Half-Orc">
+                    <label for="Half-Orc"> Half-Orc</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="Halfling" value="Halfling">
+                    <label for="Halfling"> Halfling</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Hobgoblin" value="Hobgoblin">
+                    <label for="Hobgoblin"> Hobgoblin</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Human" value="Human"  disabled>
+                    <label for="Human"> Human</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Ifrit" value="Ifrit">
+                    <label for="Ifrit"> Ifrit</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Kitsune" value="Kitsune">
+                    <label for="Kitsune"> Kitsune</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="Kobold" value="Kobold">
+                    <label for="Kobold"> Kobold</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Lizardfolk" value="Lizardfolk">
+                    <label for="Lizardfolk"> Lizardfolk</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Merfolk" value="Merfolk">
+                    <label for="Merfolk"> Merfolk</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Nagaji" value="Nagaji">
+                    <label for="Nagaji"> Nagaji</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Orc" value="Orc">
+                    <label for="Orc"> Orc</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="Oread" value="Oread">
+                    <label for="Oread"> Oread</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Ratfolk" value="Ratfolk">
+                    <label for="Ratfolk"> Ratfolk</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Samsarans" value="Samsarans">
+                    <label for="Samsarans"> Samsarans</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Strix" value="Strix">
+                    <label for="Strix"> Strix</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Suli" value="Suli">
+                    <label for="Suli"> Suli</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="Svirfneblin" value="Svirfneblin">
+                    <label for="Svirfneblin"> Svirfneblin</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Sylph" value="Sylph">
+                    <label for="Sylph"> Sylph</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Tengu" value="Tengu">
+                    <label for="Tengu"> Tengu</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Tiefling" value="Tiefling">
+                    <label for="Tiefling"> Tiefling</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Undine" value="Undine">
+                    <label for="Undine"> Undine</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="Vanara" value="Vanara">
+                    <label for="Vanara"> Vanara</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Vishkanya" value="Vishkanya">
+                    <label for="Vishkanya"> Vishkanya</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Wayangs" value="Wayangs">
+                    <label for="Wayangs"> Wayangs</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Aarakocra" value="Aarakocra">
+                    <label for="Aarakocra"> Aarakocra</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Air Genasi" value="Air Genasi">
+                    <label for="Air Genasi"> Air Genasi</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="Bugbear" value="Bugbear">
+                    <label for="Bugbear"> Bugbear</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Centaur" value="Centaur">
+                    <label for="Centaur"> Centaur</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Dragonborn" value="Dragonborn">
+                    <label for="Dragonborn"> Dragonborn</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Earth Genasi" value="Earth Genasi">
+                    <label for="Earth Genasi"> Earth Genasi</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Firbolg" value="Firbolg">
+                    <label for="Firbolg"> Firbolg</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="Fire Genasi" value="Fire Genasi">
+                    <label for="Fire Genasi"> Fire Genasi</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Gith" value="Gith">
+                    <label for="Gith"> Gith</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Goliath" value="Goliath">
+                    <label for="Goliath"> Goliath</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Kalashtar" value="Kalashtar">
+                    <label for="Kalashtar"> Kalashtar</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Kenku" value="Kenku">
+                    <label for="Kenku"> Kenku</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="Loxodon" value="Loxodon">
+                    <label for="Loxodon"> Loxodon</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Minotaur" value="Minotaur">
+                    <label for="Minotaur"> Minotaur</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Shifter" value="Shifter">
+                    <label for="Shifter"> Shifter</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Simic Hybrid" value="Simic Hybrid">
+                    <label for="Simic Hybrid"> Simic Hybrid</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Tabaxi" value="Tabaxi">
+                    <label for="Tabaxi"> Tabaxi</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="Tortle" value="Tortle">
+                    <label for="Tortle"> Tortle</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Triton" value="Triton">
+                    <label for="Triton"> Triton</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Vedalken" value="Vedalken">
+                    <label for="Vedalken"> Vedalken</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Warforged" value="Warforged">
+                    <label for="Warforged"> Warforged</label>
+                  </td>
+                  <td>
+                    <input type="checkbox" id="Water Genasi" value="Water Genasi">
+                    <label for="Water Genasi"> Water Genasi</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" id="Yuan-ti Pureblood" value="Yuan-ti Pureblood">
+                    <label for="Yuan-ti Pureblood"> Yuan-ti Pureblood</label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table class="wrapper-box">
+        <tr>
+          <td>
+            <span class="text-lg bold">
+              Town
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="TownName">Town Name:</label>
+          </td>
+          <td>
+            <input type="text" id="TownName" name="TownName" value="" style="padding: 3px;">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    Weapons
+                  </span>
+                </td>
+                <td>
+                  <div id="WeaponError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="WeaponStores"># of Weapon Stores:</label>
+                </td>
+                <td>
+                  <input type="number" id="WeaponStores" name="WeaponStores" value="2" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="WeaponRarityLow">Rarity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="WeaponRarityLow" name="WeaponRarityLow" value="0" min="0" max="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="WeaponRarityHigh">Rarity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="WeaponRarityHigh" name="WeaponRarityHigh" value="4" min="0" max="4">
+                </td>
+              </tr><tr>
+                <td>
+                  <label for="WeaponQuantityLow">Quantity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="WeaponQuantityLow" name="WeaponQuantityLow" value="0" min="0" max="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="WeaponQuantityHigh">Quantity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="WeaponQuantityHigh" name="WeaponQuantityHigh" value="4" min="0" max="4">
+                </td>
+              </tr><tr>
+                <td>
+                  <label for="WeaponInflation">Inflation:</label>
+                </td>
+                <td>
+                  <input type="number" id="WeaponInflation" name="WeaponInflation" value="100" min="0">%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="WeaponExact">Exact Percentage:</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="WeaponExact" name="WeaponExact">
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    Armor
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    Potions
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    Enchant
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    Enchanter
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    Library
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    Tavern
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    Jewel
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    Restaurants
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    General
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    Brothel
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    Gunsmith
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    Variety
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="wrapper-box">
+              <tr>
+                <td>
+                  <span class="text-lg bold">
+                    Quest Board
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table class="wrapper-box">
+        <tr>
+          <td>
+            <span class="text-lg bold">
+              People
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="text-md bold">Occupations</span>
+            <br/>
+            <textarea id="People_List" rows="10" cols="107"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="text-md bold">NPCs</span>
+            <br/>
+            <textarea id="NPC_List" rows="10" cols="107"></textarea>
+          </td>
+        </tr>
+      </table>
+      <table class="wrapper-box">
+        <tr>
+          <td>
+            <span class="text-lg bold">
+              Miscellaneous
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Allow Pokemon
+          </td>
+          <td>
+            <select id="Pokemon" name="Pokemon">
+              <option value="True">True</option>
+              <option value="False" selected>False</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Dump JSON
+          </td>
+          <td>
+            <select id="DumpJson" name="DumpJson" class="DumpJson">
+              <option value="True" selected>True</option>
+              <option value="False">False</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <br/>
+      <center>
+        <input type="button" value="Submit" onclick="validate();">
+      </center>
+    </form>
   </body>
 </html>

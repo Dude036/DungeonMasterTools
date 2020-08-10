@@ -109,7 +109,7 @@ table tr td {
 	float: left;
 }
 
-</style><style type="text/css">.inventory-table td {
+.inventory-table td {
 	border-bottom: 1px solid black;
 }
 
@@ -117,4 +117,10 @@ table tr td {
 	width: 100%;
 	border: 2px solid black;
 	padding: 5px;
+	margin-bottom: 35px;
+}
+
+.error {
+	color: #FF0000;
+	font-weight: bold; 
 }
