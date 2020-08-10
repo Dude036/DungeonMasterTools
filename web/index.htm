@@ -453,12 +453,13 @@
                 <td>
                   <input type="number" id="WeaponRarityHigh" name="WeaponRarityHigh" value="4" min="0" max="4">
                 </td>
-              </tr><tr>
+              </tr>
+              <tr>
                 <td>
                   <label for="WeaponQuantityLow">Quantity Low:</label>
                 </td>
                 <td>
-                  <input type="number" id="WeaponQuantityLow" name="WeaponQuantityLow" value="0" min="0" max="4">
+                  <input type="number" id="WeaponQuantityLow" name="WeaponQuantityLow" value="15" min="0">
                 </td>
               </tr>
               <tr>
@@ -466,9 +467,10 @@
                   <label for="WeaponQuantityHigh">Quantity High:</label>
                 </td>
                 <td>
-                  <input type="number" id="WeaponQuantityHigh" name="WeaponQuantityHigh" value="4" min="0" max="4">
+                  <input type="number" id="WeaponQuantityHigh" name="WeaponQuantityHigh" value="25" min="0">
                 </td>
-              </tr><tr>
+              </tr>
+              <tr>
                 <td>
                   <label for="WeaponInflation">Inflation:</label>
                 </td>
@@ -496,6 +498,66 @@
                     Armor
                   </span>
                 </td>
+                <td>
+                  <div id="ArmorError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="ArmorStores"># of Armor Stores:</label>
+                </td>
+                <td>
+                  <input type="number" id="ArmorStores" name="ArmorStores" value="2" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="ArmorRarityLow">Rarity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="ArmorRarityLow" name="ArmorRarityLow" value="0" min="0" max="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="ArmorRarityHigh">Rarity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="ArmorRarityHigh" name="ArmorRarityHigh" value="4" min="0" max="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="ArmorQuantityLow">Quantity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="ArmorQuantityLow" name="ArmorQuantityLow" value="15" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="ArmorQuantityHigh">Quantity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="ArmorQuantityHigh" name="ArmorQuantityHigh" value="25" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="ArmorInflation">Inflation:</label>
+                </td>
+                <td>
+                  <input type="number" id="ArmorInflation" name="ArmorInflation" value="100" min="0">%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="ArmorExact">Exact Percentage:</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="ArmorExact" name="ArmorExact">
+                </td>
               </tr>
             </table>
           </td>
@@ -509,6 +571,66 @@
                     Potions
                   </span>
                 </td>
+                <td>
+                  <div id="PotionError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="PotionStores"># of Potion Stores:</label>
+                </td>
+                <td>
+                  <input type="number" id="PotionStores" name="PotionStores" value="1" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="PotionRarityLow">Rarity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="PotionRarityLow" name="PotionRarityLow" value="0" min="0" max="9">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="PotionRarityHigh">Rarity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="PotionRarityHigh" name="PotionRarityHigh" value="9" min="0" max="9">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="PotionQuantityLow">Quantity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="PotionQuantityLow" name="PotionQuantityLow" value="15" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="PotionQuantityHigh">Quantity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="PotionQuantityHigh" name="PotionQuantityHigh" value="25" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="PotionInflation">Inflation:</label>
+                </td>
+                <td>
+                  <input type="number" id="PotionInflation" name="PotionInflation" value="100" min="0">%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="PotionExact">Exact Percentage:</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="PotionExact" name="PotionExact">
+                </td>
               </tr>
             </table>
           </td>
@@ -519,8 +641,68 @@
               <tr>
                 <td>
                   <span class="text-lg bold">
-                    Enchant
+                    Enchantments
                   </span>
+                </td>
+                <td>
+                  <div id="EnchantError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchantStores"># of Enchant Stores:</label>
+                </td>
+                <td>
+                  <input type="number" id="EnchantStores" name="EnchantStores" value="1" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchantRarityLow">Rarity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="EnchantRarityLow" name="EnchantRarityLow" value="0" min="0" max="9">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchantRarityHigh">Rarity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="EnchantRarityHigh" name="EnchantRarityHigh" value="9" min="0" max="9">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchantQuantityLow">Quantity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="EnchantQuantityLow" name="EnchantQuantityLow" value="15" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchantQuantityHigh">Quantity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="EnchantQuantityHigh" name="EnchantQuantityHigh" value="25" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchantInflation">Inflation:</label>
+                </td>
+                <td>
+                  <input type="number" id="EnchantInflation" name="EnchantInflation" value="100" min="0">%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchantExact">Exact Percentage:</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="EnchantExact" name="EnchantExact">
                 </td>
               </tr>
             </table>
@@ -535,6 +717,66 @@
                     Enchanter
                   </span>
                 </td>
+                <td>
+                  <div id="EnchanterError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchanterStores"># of Enchanter Stores:</label>
+                </td>
+                <td>
+                  <input type="number" id="EnchanterStores" name="EnchanterStores" value="1" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchanterRarityLow">Rarity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="EnchanterRarityLow" name="EnchanterRarityLow" value="0" min="0" max="9">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchanterRarityHigh">Rarity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="EnchanterRarityHigh" name="EnchanterRarityHigh" value="9" min="0" max="9">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchanterQuantityLow">Quantity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="EnchanterQuantityLow" name="EnchanterQuantityLow" value="15" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchanterQuantityHigh">Quantity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="EnchanterQuantityHigh" name="EnchanterQuantityHigh" value="25" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchanterInflation">Inflation:</label>
+                </td>
+                <td>
+                  <input type="number" id="EnchanterInflation" name="EnchanterInflation" value="100" min="0">%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="EnchanterExact">Exact Percentage:</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="EnchanterExact" name="EnchanterExact">
+                </td>
               </tr>
             </table>
           </td>
@@ -547,6 +789,50 @@
                   <span class="text-lg bold">
                     Library
                   </span>
+                </td>
+                <td>
+                  <div id="BooksError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="BooksStores"># of Book Stores:</label>
+                </td>
+                <td>
+                  <input type="number" id="BooksStores" name="BooksStores" value="1" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="BooksQuantityLow">Quantity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="BooksQuantityLow" name="BooksQuantityLow" value="15" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="BooksQuantityHigh">Quantity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="BooksQuantityHigh" name="BooksQuantityHigh" value="25" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="BooksInflation">Inflation:</label>
+                </td>
+                <td>
+                  <input type="number" id="BooksInflation" name="BooksInflation" value="100" min="0">%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="BooksExact">Exact Percentage:</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="BooksExact" name="BooksExact">
                 </td>
               </tr>
             </table>
@@ -561,6 +847,58 @@
                     Tavern
                   </span>
                 </td>
+                <td>
+                  <div id="TavernError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="TavernStores"># of Taverns:</label>
+                </td>
+                <td>
+                  <input type="number" id="TavernStores" name="TavernStores" value="1" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="TavernRooms"># of Rooms:</label>
+                </td>
+                <td>
+                  <input type="number" id="TavernRooms" name="TavernRooms" value="3" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="TavernQuantityLow">Menu Quantity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="TavernQuantityLow" name="TavernQuantityLow" value="15" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="TavernQuantityHigh">Menu Quantity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="TavernQuantityHigh" name="TavernQuantityHigh" value="25" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="TavernInflation">Inflation:</label>
+                </td>
+                <td>
+                  <input type="number" id="TavernInflation" name="TavernInflation" value="100" min="0">%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="TavernExact">Exact Percentage:</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="TavernExact" name="TavernExact">
+                </td>
               </tr>
             </table>
           </td>
@@ -571,8 +909,68 @@
               <tr>
                 <td>
                   <span class="text-lg bold">
-                    Jewel
+                    Jewels
                   </span>
+                </td>
+                <td>
+                  <div id="JewelError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="JewelStores"># of Jewellery Stores:</label>
+                </td>
+                <td>
+                  <input type="number" id="JewelStores" name="JewelStores" value="1" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="JewelRarityLow">Rarity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="JewelRarityLow" name="JewelRarityLow" value="0" min="0" max="5">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="JewelRarityHigh">Rarity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="JewelRarityHigh" name="JewelRarityHigh" value="5" min="0" max="5">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="JewelQuantityLow">Quantity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="JewelQuantityLow" name="JewelQuantityLow" value="15" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="JewelQuantityHigh">Quantity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="JewelQuantityHigh" name="JewelQuantityHigh" value="25" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="JewelInflation">Inflation:</label>
+                </td>
+                <td>
+                  <input type="number" id="JewelInflation" name="JewelInflation" value="100" min="0">%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="JewelExact">Exact Percentage:</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="JewelExact" name="JewelExact">
                 </td>
               </tr>
             </table>
@@ -587,6 +985,50 @@
                     Restaurants
                   </span>
                 </td>
+                <td>
+                  <div id="FoodError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="FoodStores"># of Restarants:</label>
+                </td>
+                <td>
+                  <input type="number" id="FoodStores" name="FoodStores" value="1" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="FoodQuantityLow">Quantity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="FoodQuantityLow" name="FoodQuantityLow" value="15" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="FoodQuantityHigh">Quantity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="FoodQuantityHigh" name="FoodQuantityHigh" value="25" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="FoodInflation">Inflation:</label>
+                </td>
+                <td>
+                  <input type="number" id="FoodInflation" name="FoodInflation" value="100" min="0">%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="FoodExact">Exact Percentage:</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="FoodExact" name="FoodExact">
+                </td>
               </tr>
             </table>
           </td>
@@ -599,6 +1041,74 @@
                   <span class="text-lg bold">
                     General
                   </span>
+                </td>
+                <td>
+                  <div id="GeneralError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GeneralStores"># of General Stores:</label>
+                </td>
+                <td>
+                  <input type="number" id="GeneralStores" name="GeneralStores" value="1" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GeneralRarityLow">Rarity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="GeneralRarityLow" name="GeneralRarityLow" value="0" min="0" max="9">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GeneralRarityHigh">Rarity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="GeneralRarityHigh" name="GeneralRarityHigh" value="9" min="0" max="9">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GeneralQuantityLow">Quantity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="GeneralQuantityLow" name="GeneralQuantityLow" value="15" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GeneralQuantityHigh">Quantity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="GeneralQuantityHigh" name="GeneralQuantityHigh" value="25" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GeneralTrinkets">Trinkets:</label>
+                </td>
+                <td>
+                  <input type="number" id="GeneralTrinkets" name="GeneralTrinkets" value="3" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GeneralInflation">Inflation:</label>
+                </td>
+                <td>
+                  <input type="number" id="GeneralInflation" name="GeneralInflation" value="100" min="0">%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GeneralExact">Exact Percentage:</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="GeneralExact" name="GeneralExact">
                 </td>
               </tr>
             </table>
@@ -613,6 +1123,50 @@
                     Brothel
                   </span>
                 </td>
+                <td>
+                  <div id="BrothelError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="BrothelStores"># of Brothels:</label>
+                </td>
+                <td>
+                  <input type="number" id="BrothelStores" name="BrothelStores" value="1" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="BrothelQuantityLow">Quantity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="BrothelQuantityLow" name="BrothelQuantityLow" value="15" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="BrothelQuantityHigh">Quantity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="BrothelQuantityHigh" name="BrothelQuantityHigh" value="25" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="BrothelInflation">Inflation:</label>
+                </td>
+                <td>
+                  <input type="number" id="BrothelInflation" name="BrothelInflation" value="100" min="0">%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="BrothelExact">Exact Percentage:</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="BrothelExact" name="BrothelExact">
+                </td>
               </tr>
             </table>
           </td>
@@ -625,6 +1179,66 @@
                   <span class="text-lg bold">
                     Gunsmith
                   </span>
+                </td>
+                <td>
+                  <div id="GunsError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GunsStores"># of Gunsmith Stores:</label>
+                </td>
+                <td>
+                  <input type="number" id="GunsStores" name="GunsStores" value="1" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GunsRarityLow">Rarity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="GunsRarityLow" name="GunsRarityLow" value="0" min="0" max="9">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GunsRarityHigh">Rarity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="GunsRarityHigh" name="GunsRarityHigh" value="9" min="0" max="9">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GunsQuantityLow">Quantity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="GunsQuantityLow" name="GunsQuantityLow" value="15" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GunsQuantityHigh">Quantity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="GunsQuantityHigh" name="GunsQuantityHigh" value="25" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GunsInflation">Inflation:</label>
+                </td>
+                <td>
+                  <input type="number" id="GunsInflation" name="GunsInflation" value="100" min="0">%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="GunsExact">Exact Percentage:</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="GunsExact" name="GunsExact">
                 </td>
               </tr>
             </table>
@@ -639,6 +1253,50 @@
                     Variety
                   </span>
                 </td>
+                <td>
+                  <div id="VarietyError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="VarietyStores"># of Variety Stores:</label>
+                </td>
+                <td>
+                  <input type="number" id="VarietyStores" name="VarietyStores" value="1" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="VarietyQuantityLow">Quantity Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="VarietyQuantityLow" name="VarietyQuantityLow" value="15" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="VarietyQuantityHigh">Quantity High:</label>
+                </td>
+                <td>
+                  <input type="number" id="VarietyQuantityHigh" name="VarietyQuantityHigh" value="25" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="VarietyInflation">Inflation:</label>
+                </td>
+                <td>
+                  <input type="number" id="VarietyInflation" name="VarietyInflation" value="100" min="0">%
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="VarietyExact">Exact Percentage:</label>
+                </td>
+                <td>
+                  <input type="checkbox" id="VarietyExact" name="VarietyExact">
+                </td>
               </tr>
             </table>
           </td>
@@ -651,6 +1309,42 @@
                   <span class="text-lg bold">
                     Quest Board
                   </span>
+                </td>
+                <td>
+                  <div id="QuestError" class="error">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="QuestStores"># of Quest Boards:</label>
+                </td>
+                <td>
+                  <input type="number" id="QuestStores" name="QuestStores" value="1" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="QuestQuantityLow">Level Low:</label>
+                </td>
+                <td>
+                  <input type="number" id="QuestLevelLow" name="QuestLevelLow" value="0" min="0" max="20">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="QuestLevelHigh">Level High:</label>
+                </td>
+                <td>
+                  <input type="number" id="QuestLevelHigh" name="QuestLevelHigh" value="20" min="0" max="20">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="QuestQuantity">Quantity:</label>
+                </td>
+                <td>
+                  <input type="number" id="QuestQuantity" name="QuestQuantity" value="10" min="0">
                 </td>
               </tr>
             </table>
