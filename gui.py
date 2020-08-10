@@ -1,5 +1,6 @@
 import eel
 from names import TownNamer
+from pprint import pprint
 
 
 # Expose this function to Javascript
@@ -16,8 +17,10 @@ def random_name_py():
 @eel.expose
 def submit(settings, generate):
     print("Form has been submitted.")
-    print("Settings:", settings)
-    print("Generate:", generate)
+    print("Settings:")
+    pprint(settings)
+    print("Generate:")
+    pprint(generate)
 
 
 if __name__ == '__main__':
