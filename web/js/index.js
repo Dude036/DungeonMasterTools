@@ -4,21 +4,102 @@
 
 // Field Variables
 var chosen_race = "Human";
+var normal_types = [
+	"Weapon",
+	"Armor",
+	"Potion",
+	"Enchant",
+	"Enchanter",
+	"Jewel",
+	"Guns",
+]
+var normal_rarity = [ 4, 4, 9, 9, 9, 5, 4 ]
 
-// Clear all errors to start the new run
-function clear_errors() {
-	var areas = document.getElementsByClassName("error");
-	for (var i = areas.length - 1; i >= 0; i--) {
-		areas[i].innerHTML = "";
+var odd_types = [
+	"Books",
+	"Tavern",
+	"Food",
+	"General",
+	"Brothel",
+	"Variety",
+	"Quest",
+]
+
+var generate_names = {
+	"Weapon": "Weapon Stores",
+	"Armor": "Armor Stores",
+	"Potion": "Potion Stores",
+	"Enchant": "Enchant Stores",
+	"Enchanter": "Enchanter Stores",
+	"Jewel": "Jewel Stores",
+	"Guns": "Gunsmiths",
+	"Books": "Books Shops",
+	"Tavern": "Tavern Shops",
+	"Food": "Food Shops",
+	"General": "General Shops",
+	"Brothel": "Brothels",
+	"Variety": "Variety",
+	"Quest": "Quest Boards",
+}
+
+
+// Validate Normal Stores
+function normal(name, rarity) {
+	// Setup base to eventually modify
+	var correct = true;
+	var errors = "";
+
+	// Validate Rarity
+	var r_low  = parseInt(document.getElementById(name + "RarityLow").value);
+	var r_high = parseInt(document.getElementById(name + "RarityHigh").value);
+	if (r_low > r_high) {
+		correct = false;
+		errors += "Rarity Low is higher than Rarity High. ";
 	}
+	if (r_low > rarity) {
+		correct = false;
+		errors += "Rarity Low cannot exceed " + rarity + ". ";
+	}
+	if (r_high > rarity) {
+		correct = false;
+		errors += "Rarity High cannot exceed " + rarity + ". ";
+	}
+
+	// Validate Quantity
+	var q_low  = parseInt(document.getElementById(name + "QuantityLow").value);
+	var q_high = parseInt(document.getElementById(name + "QuantityHigh").value);
+	if (q_low > q_high) {
+		correct = false;
+		errors += "Quantity Low is higher than Quantity High. ";
+	}
+
+	// Validate Inflation
+	var check = document.getElementById(name + "Exact").checked;
+	var inflate  = parseFloat(document.getElementById(name + "Inflation").value);
+	if (check) {
+		inflate /= 100
+	} else {
+		inflate = Math.floor(inflate / 100);
+	}
+
+	// Accumulate into JSON object
+	var base = {
+        "# of Stores": parseInt(document.getElementById(name + "Stores").value),
+        "Rarity Low": r_low,
+        "Rarity High": r_high,
+        "Quantity Low": q_low,
+        "Quantity High": q_high,
+        "Inflation": inflate
+	};
+	
+	// Update Error Codes and return
+	document.getElementById(name + "Error").innerHTML = errors;
+	return correct ? base : null;
 }
 
 
 // Function to Validate the form
 function validate() {
-	// Cleanup
-	clear_errors();
-
 	// Generate basic Info
 	var settings = {};
 	var generate = {};
@@ -49,6 +130,14 @@ function validate() {
 	/*********************/
 	/* Validate Stores   */
 	/*********************/
+	for (var i = normal_types.length - 1; i >= 0; i--) {
+		var ret = normal(normal_types[i], normal_rarity[i]);
+		if (!ret) {
+			correct = false;
+		} else {
+			generate[generate_names[normal_types[i]]] = ret;
+		}
+	}
 
 
 	/*********************/
@@ -74,7 +163,9 @@ function validate() {
 	console.log(settings);
 	console.log(generate);
 	// If there are no errors, submit everything
-	if (correct) { eel.submit(settings, generate); }
+	if (correct) {
+		eel.submit(settings, generate);
+	}
 }
 
 
