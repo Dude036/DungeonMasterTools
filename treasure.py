@@ -150,8 +150,7 @@ Art_Objects = {
     2500:
     ["5 grade 2 art objects", "2 grade 3 art objects", "grade 4 art object"],
     5000: ["grade 5 art object"],
-    7500:
-    ["grade 3 art object", "2 grade 4 art objects", "grade 5 art object"],
+    7500: ["grade 3 art object", "2 grade 4 art objects", "grade 5 art object"],
     10000: ["grade 6 art object"],
     15000: ["grade 5 art object", "grade 6 art object"],
     20000: ["2 grade 5 art objects", "grade 6 art object"],
@@ -185,10 +184,8 @@ Coins_and_Objects = {
         "greater minor scroll"
     ],
     750: ["greater minor scroll", "lesser minor wand"],
-    1000: [
-        "6d8 *6 gp", "4d12 *2 pp", "lesser medium potion",
-        "lesser medium scroll"
-    ],
+    1000:
+    ["6d8 *6 gp", "4d12 *2 pp", "lesser medium potion", "lesser medium scroll"],
     1250: ["lesser medium potion", "lesser minor wand"],
     1500: ["greater minor wand"],
     1750: ["greater medium potion", "greater medium scroll"],
@@ -204,8 +201,9 @@ Coins_and_Objects = {
     7500: ["lesser major scroll", "lesser medium wand"],
     8000: ["2 greater major potions", "2 greater major scrolls"],
     10000: ["10d20 *10 gp", "9d12 *4 pp", "greater medium wand"],
-    12500:
-    ["greater major potion", "greater major scroll", "lesser medium wand"],
+    12500: [
+        "greater major potion", "greater major scroll", "lesser medium wand"
+    ],
     15000: ["lesser major wand"],
     17500: [
         "3 greater major potions", "2 lesser major scrolls",
@@ -267,29 +265,26 @@ Combatant_Gear = {
     350: ["masterwork medium armor", "lesser minor potion"],
     400: ["masterwork weapon", "lesser minor potion"],
     500: ["masterwork weapon", "greater minor potion"],
-    750: [
-        "masterwork medium armor", "masterwork weapon",
-        "2 lesser minor potions "
-    ],
+    750:
+    ["masterwork medium armor", "masterwork weapon", "2 lesser minor potions "],
     1000: ["masterwork heavy armor"],
     1500:
     ["masterwork heavy armor", "masterwork weapon", "greater minor potion"],
     2000:
     ["lesser minor armor", "masterwork weapon", "2 greater minor potions "],
-    3000:
-    ["masterwork medium armor", "lesser minor weapon", "greater minor potion"],
+    3000: [
+        "masterwork medium armor", "lesser minor weapon", "greater minor potion"
+    ],
     4000: [
-        "lesser minor armor", "masterwork weapon",
-        "lesser minor wondrous item", "greater minor potion"
+        "lesser minor armor", "masterwork weapon", "lesser minor wondrous item",
+        "greater minor potion"
     ],
     5000: [
         "masterwork medium armor", "lesser minor weapon",
         "lesser minor wondrous item", "greater minor potion"
     ],
-    6000: [
-        "lesser minor armor", "lesser minor weapon",
-        "lesser minor wondrous item"
-    ],
+    6000:
+    ["lesser minor armor", "lesser minor weapon", "lesser minor wondrous item"],
     7500: ["greater minor armor", "lesser minor weapon", "lesser minor ring"],
     10000: [
         "greater minor armor", "lesser minor weapon", "lesser minor ring",
@@ -350,10 +345,8 @@ Spellcaster_Gear = {
     500: ["3 lesser minor potions", "3 greater minor scrolls"],
     750: ["greater minor potion", "lesser minor wand"],
     1000: ["3 greater minor scrolls", "lesser minor wand"],
-    1500:
-    ["lesser medium potion", "lesser medium scroll", "lesser minor wand"],
-    2000:
-    ["masterwork weapon", "2 lesser medium scrolls", "lesser minor wand"],
+    1500: ["lesser medium potion", "lesser medium scroll", "lesser minor wand"],
+    2000: ["masterwork weapon", "2 lesser medium scrolls", "lesser minor wand"],
     2500: ["2 greater medium potions", "greater minor wand"],
     3000:
     ["greater medium potion", "2 lesser medium scrolls", "greater minor wand"],
@@ -369,12 +362,10 @@ Spellcaster_Gear = {
         "lesser minor ring", "lesser minor wondrous item",
         "greater medium potion", "greater minor wand"
     ],
-    7500: [
-        "2 greater medium potions", "lesser minor scroll", "lesser medium wand"
-    ],
-    10000: [
-        "lesser minor ring", "lesser minor wondrous item", "lesser medium wand"
-    ],
+    7500:
+    ["2 greater medium potions", "lesser minor scroll", "lesser medium wand"],
+    10000:
+    ["lesser minor ring", "lesser minor wondrous item", "lesser medium wand"],
     12500: [
         "lesser minor ring", "greater minor wondrous item",
         "2 greater medium scrolls", "2 greater minor wands"
@@ -477,8 +468,8 @@ Lair_Treasure = {
     ],
     100000: [
         "", "lesser major ring", "lesser major wondrous item",
-        "3 greater major potions", "greater major scroll",
-        "lesser medium wand", "2 grade 5 gemstones", "grade 6 gemstone"
+        "3 greater major potions", "greater major scroll", "lesser medium wand",
+        "2 grade 5 gemstones", "grade 6 gemstone"
     ],
 }
 Treasure_Horde = {
@@ -1000,8 +991,7 @@ def scroll(g):
     quantity = 0
     for p in primary:
         for s in secondary:
-            match = re.match(
-                re.compile('([\d ])*' + p + ' ' + s + ' [\d]+'), g)
+            match = re.match(re.compile('([\d ])*' + p + ' ' + s + ' [\d]+'), g)
             if match is not None:
                 quantity = int(match.group(1).strip())
                 category = (p, s)

@@ -12,8 +12,15 @@ class Character(object):
     Traits = Story = []
     Age = 0
 
-    def __init__(self, cName, cRace, cGender, cAge, cAppearance, cTraits,
-                 cStory, cOrientation=''):
+    def __init__(self,
+                 cName,
+                 cRace,
+                 cGender,
+                 cAge,
+                 cAppearance,
+                 cTraits,
+                 cStory,
+                 cOrientation=''):
         self.Name = cName
         self.Race = cRace
         self.Gender = cGender
@@ -21,7 +28,8 @@ class Character(object):
         self.Appearance = cAppearance
         self.Traits = cTraits
         self.Story = cStory
-        self.Orientation = cOrientation if cOrientation == '' else choice(['Male', 'Female'])
+        self.Orientation = cOrientation if cOrientation == '' else choice(
+            ['Male', 'Female'])
 
     def from_dict(self, new_self):
         self.__dict__.update(new_self)
@@ -52,7 +60,9 @@ def create_person(pop):
         pop = create_variance()
     race = choice(list(pop.keys()), 1, p=list(pop.values()))[0]
     gender = choice(['Male', 'Female'], p=[0.5, 0.5])
-    orientation = choice(['Male', 'Female'], p=[0.042, 0.958] if gender == 'male' else [0.958, 0.042])
+    orientation = choice(
+        ['Male', 'Female'],
+        p=[0.042, 0.958] if gender == 'male' else [0.958, 0.042])
     name = ng.name_parser(race, gender)
     age = int(randint(ages[race][0], ages[race][1]))
 

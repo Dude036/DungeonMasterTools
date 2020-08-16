@@ -125,7 +125,9 @@ playable = {
         "CHA": 4
     }
 }
-class_feats = json.load(open("pathfinder_class_feats.json", 'r'), encoding='utf-8')
+class_feats = json.load(
+    open("pathfinder_class_feats.json", 'r'), encoding='utf-8')
+
 # class_feats = json.load(open("5e_class_feats.json", 'r'), encoding='utf-8')
 
 
@@ -166,17 +168,22 @@ class PC(object):
                     'Spear'
                 ])),
             Weapon(
-                int(randint(0, 5)), iClass=choice(['Bows', 'Crossbow', 'Thrown']))
+                int(randint(0, 5)),
+                iClass=choice(['Bows', 'Crossbow', 'Thrown']))
         ]
 
         # Spell enabled character - 1 in 3
         # if randint(3) == 0:
         # Spells for Classes that cast spells
-        if self.Class in ['Bard', 'Cleric', 'Druid', 'Magus', 'Paladin', 'Ranger', 'Sorcerer', 'Summoner', 'Warpriest', 'Wizard']:
+        if self.Class in [
+                'Bard', 'Cleric', 'Druid', 'Magus', 'Paladin', 'Ranger',
+                'Sorcerer', 'Summoner', 'Warpriest', 'Wizard'
+        ]:
             self.Spells = []
             for x in range(4 + self.Level * 2):
                 s = choice(list(MasterSpells.keys()))
-                if s not in self.Spells and MasterSpells[s]['link'] not in MasterSpellBlacklist:
+                if s not in self.Spells and MasterSpells[s][
+                        'link'] not in MasterSpellBlacklist:
                     self.Spells.append(s)
             # Sort spells
             # self.Spells.sort(key=lambda x: MasterSpells[x]['school'])
@@ -279,9 +286,12 @@ class PC(object):
         self.__dict__.update(new_self)
 
     def __iter__(self):
-        for item in [self.Name, self.Gender, self.Race, self.Appearance, self.Class, self.Feats, self.Traits, self.Story, self.Age, self.Level, self.Spells, self.Stats, self.Weapon]:
+        for item in [
+                self.Name, self.Gender, self.Race, self.Appearance, self.Class,
+                self.Feats, self.Traits, self.Story, self.Age, self.Level,
+                self.Spells, self.Stats, self.Weapon
+        ]:
             yield item
-        
 
 
 if __name__ == '__main__':

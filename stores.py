@@ -290,8 +290,10 @@ class Weapon(object):
         elif self.Class == 'Bows':
             self.Damage = [
                 'Ra', 'P',
-                choice(['30', '40', '50', '60', '70', '80', '90', '100', '110', '120']) +
-                ' ft.'
+                choice([
+                    '30', '40', '50', '60', '70', '80', '90', '100', '110',
+                    '120'
+                ]) + ' ft.'
             ]
         elif self.Class == 'Crossbow':
             self.Damage = [
@@ -301,8 +303,7 @@ class Weapon(object):
         elif self.Class == 'Thrown':
             self.Damage = [
                 'Ar', 'P', 'S',
-                choice(['15', '20', '25', '30', '35', '40']) +
-                ' ft.'
+                choice(['15', '20', '25', '30', '35', '40']) + ' ft.'
             ]
         return
 
@@ -360,12 +361,18 @@ class Weapon(object):
         return chance
 
     def __weigh(self, metal, cl):
-        dice_incriment = int(eval(self.Dice.split('d')[1]) / 2) * 2**eval(self.Dice.split('d')[0])
+        dice_incriment = int(eval(self.Dice.split('d')[1]) / 2) * 2**eval(
+            self.Dice.split('d')[0])
         crit_val = (self.__crit() // 20)
-        cost_factor = max([weapon_cost_and_weight[self.Class][0], dice_incriment * crit_val])
+        cost_factor = max(
+            [weapon_cost_and_weight[self.Class][0], dice_incriment * crit_val])
 
-        self.Cost = float(round(cost_factor * cl[metal]['Cost'] * (self.Rarity + 1)**self.Rarity, 2))
-        self.Weight = round(weapon_cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 14, 1)
+        self.Cost = float(
+            round(
+                cost_factor * cl[metal]['Cost'] * (self.Rarity + 1)**
+                self.Rarity, 2))
+        self.Weight = round(
+            weapon_cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 14, 1)
 
     def add_enchantment(self, ench):
         if self.Enchantment is None:
@@ -420,7 +427,10 @@ class Weapon(object):
         return s
 
     def __iter__(self):
-        for item in [self.Weight, self.Cost, self.Rarity, self.Masterwork, self.Name, self.Dice, self.Crit, self.Class, self.Damage, self.Enchantment]:
+        for item in [
+                self.Weight, self.Cost, self.Rarity, self.Masterwork, self.Name,
+                self.Dice, self.Crit, self.Class, self.Damage, self.Enchantment
+        ]:
             yield item
 
     def to_string(self):
@@ -1167,33 +1177,34 @@ class Firearm(object):
         if rarity > 4:
             rarity %= 4
         self.Rarity = rarity
-        self.Crit = 'x' + str(choice([3, 4, 5, 6], p=[.5625, .25, .125, 0.0625]))
+        self.Crit = 'x' + str(
+            choice([3, 4, 5, 6], p=[.5625, .25, .125, 0.0625]))
         self.__choose_metal()
         self.Name += choice(self.possible[self.Class])
 
         if self.Class == 'Pistol':
             self.Capacity = int(choice([1, 2, 4, 6]))
             self.Range = 10 + randint(1, 4) * 5 * (self.Rarity + 1)
-            self.Dice = str(int(
-                (self.Rarity + 2) / 2)) + 'd' + str(choice([4, 6, 8], p=[.625, .25, .125]))
+            self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
+                choice([4, 6, 8], p=[.625, .25, .125]))
 
         elif self.Class == 'Rifle':
             self.Capacity = int(10 + randint(1, 8) * 5)
             self.Range = 10 + randint(1, 6) * 5 * (self.Rarity + 1)
-            self.Dice = str(int(
-                (self.Rarity + 2) / 2)) + 'd' + str(choice([6, 8, 10], p=[.625, .25, .125]))
+            self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
+                choice([6, 8, 10], p=[.625, .25, .125]))
 
         elif self.Class == 'Shotgun':
             self.Capacity = int(choice([1, 2]))
             self.Range = randint(3, 6) * 5 * (self.Rarity + 1)
-            self.Dice = str(int(
-                (self.Rarity + 2) / 2)) + 'd' + str(choice([6, 8, 10], p=[.625, .25, .125]))
+            self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
+                choice([6, 8, 10], p=[.625, .25, .125]))
 
         elif self.Class == 'Sniper':
             self.Capacity = int(choice([1, 2, 4]))
             self.Range = 30 + randint(3, 7) * 10 * (self.Rarity + 1)
-            self.Dice = str(int(
-                (self.Rarity + 2) / 2)) + 'd' + str(choice([10, 12, 20], p=[.625, .25, .125]))
+            self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
+                choice([10, 12, 20], p=[.625, .25, .125]))
 
         if iName is not None:
             self.Name = iName
@@ -1218,7 +1229,8 @@ class Firearm(object):
                 self.Name += metal + ' '
             else:
                 metal = None
-        self.Cost = self.cost_and_weight[self.Class][0] * cl[metal]['Cost'] * (self.Rarity + 1)**self.Rarity * (int(self.Crit[1])/2)
+        self.Cost = self.cost_and_weight[self.Class][0] * cl[metal]['Cost'] * (
+            self.Rarity + 2)**self.Rarity * (int(self.Crit[1]) / 2)
         self.Weight = round(
             self.cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 4, 1)
 
@@ -1412,7 +1424,7 @@ class Armor(object):
 
     def __choose_type(self):
         if self.Class not in ['Light', 'Medium', 'Heavy', 'Shield'
-                              ] or self.Class is None:
+                             ] or self.Class is None:
             self.Class = choice(['Light', 'Medium', 'Heavy', 'Shield'])
         if self.Class == 'Light':
             c = choice(list(self.light_armor.keys()))
@@ -1547,11 +1559,11 @@ class Scroll(object):
         else:
             if find_spell_level(spell) == level:
                 self.Spell = spell
-                self.Enchantment = Enchant(
-                    iSpell=self.Spell, rechargable=False)
+                self.Enchantment = Enchant(iSpell=self.Spell, rechargable=False)
 
         if naming:
-            self.Name = Scroll_Name_Potential[randint(len(Scroll_Name_Potential))] + self.Spell
+            self.Name = Scroll_Name_Potential[randint(
+                len(Scroll_Name_Potential))] + self.Spell
         else:
             self.Name = self.Spell
             self.Add = '+'
@@ -1594,7 +1606,9 @@ class Enchant(object):
             self.Level = find_spell_level(self.Spell)
         else:
             self.Level = int(
-                choice(list(level_likelihood.keys()), p=list(level_likelihood.values())))
+                choice(
+                    list(level_likelihood.keys()),
+                    p=list(level_likelihood.values())))
             if self.Level == 0:
                 self.Spell = choice(level_0)
             elif self.Level == 1:
@@ -1619,7 +1633,8 @@ class Enchant(object):
         self.__lp()
 
         if rechargable:
-            self.Uses = int(choice([2, 4, 6, 8, 10, 12], p=[.35, .3, .15, .1, .05, .05]))
+            self.Uses = int(
+                choice([2, 4, 6, 8, 10, 12], p=[.35, .3, .15, .1, .05, .05]))
             self.Cost += self.Uses * (self.Level + 1)**self.Level
             self.__describe(rechargable)
         else:
@@ -1747,10 +1762,10 @@ class Potion(object):
         else:
             if find_spell_level(spell) == level:
                 self.Spell = spell
-                self.Enchantment = Enchant(
-                    iSpell=self.Spell, rechargable=False)
+                self.Enchantment = Enchant(iSpell=self.Spell, rechargable=False)
 
-        self.Name = Potion_Name_Potential[randint(len(Potion_Name_Potential))] + self.Spell
+        self.Name = Potion_Name_Potential[randint(
+            len(Potion_Name_Potential))] + self.Spell
 
     def __str__(self):
         # print(self.Enchantment.Level)
@@ -1825,7 +1840,8 @@ class Wand(object):
             if find_spell_level(spell) == level:
                 self.Spell = spell
                 self.Enchantment = Enchant(iSpell=self.Spell)
-        self.Name = Wand_Name_Potential[randint(len(Wand_Name_Potential))] + self.Spell
+        self.Name = Wand_Name_Potential[randint(
+            len(Wand_Name_Potential))] + self.Spell
 
     def __str__(self):
         # print(self.Enchantment.Level)
@@ -2154,10 +2170,10 @@ class Art(object):
         'a god', 'a goddess'
     ]
     object = [
-        'ring', 'tankard', 'goblet', 'cup', 'drinking horn', 'crown',
-        'circlet', 'tiara', 'pendant', 'necklace', 'amulet', 'medallion',
-        'bowl', 'plate', 'jewelry box', 'music box', 'brooch', 'chess set',
-        'mask', 'holy text', 'hourglass', 'vase'
+        'ring', 'tankard', 'goblet', 'cup', 'drinking horn', 'crown', 'circlet',
+        'tiara', 'pendant', 'necklace', 'amulet', 'medallion', 'bowl', 'plate',
+        'jewelry box', 'music box', 'brooch', 'chess set', 'mask', 'holy text',
+        'hourglass', 'vase'
     ]
     magic = [
         'It glows with a soft blue light', 'It glows with a soft green light',
@@ -2288,8 +2304,7 @@ class Art(object):
         return s
 
     def to_string(self):
-        return self.Description.title() + ' (' + determine_cost(
-            self.Cost) + ')'
+        return self.Description.title() + ' (' + determine_cost(self.Cost) + ')'
 
 
 class Ring(object):
@@ -2490,8 +2505,7 @@ def create_enchantment_shop(owner, rarity, quan, inflate=1):
     if isinstance(inflate, float):
         a = Store(owner, name, inflate, rarity)
     else:
-        a = Store(owner, name, (sum(random_sample(inflate))) + .5,
-                  rarity)
+        a = Store(owner, name, (sum(random_sample(inflate))) + .5, rarity)
     if quan <= 2:
         quan = 3
     remain = randint(quan)
@@ -2505,8 +2519,7 @@ def create_enchanter_shop(owner, rarity, quan, inflate=1):
     if isinstance(inflate, float):
         a = Store(owner, name, inflate, rarity)
     else:
-        a = Store(owner, name, (sum(random_sample(inflate))) + .5,
-                  rarity)
+        a = Store(owner, name, (sum(random_sample(inflate))) + .5, rarity)
     for _ in range(quan):
         item = Scroll(randint(rarity[0], rarity[1]), naming=False)
         item.Cost *= inflate
@@ -2519,8 +2532,7 @@ def create_weapon_shop(owner, rarity, quan, inflate=1):
     if isinstance(inflate, float):
         a = Store(owner, name, inflate, rarity)
     else:
-        a = Store(owner, name, (sum(random_sample(inflate))) + .5,
-                  rarity)
+        a = Store(owner, name, (sum(random_sample(inflate))) + .5, rarity)
     if quan <= 2:
         quan = 3
     a.fill_store(Weapon, quan)
@@ -2532,8 +2544,7 @@ def create_armor_shop(owner, rarity, quan, inflate=1):
     if isinstance(inflate, float):
         a = Store(owner, name, inflate, rarity)
     else:
-        a = Store(owner, name, (sum(random_sample(inflate))) + .5,
-                  rarity)
+        a = Store(owner, name, (sum(random_sample(inflate))) + .5, rarity)
     if quan <= 2:
         quan = 3
     a.fill_store(Armor, quan)
@@ -2545,8 +2556,7 @@ def create_potion_shop(owner, rarity, quan, inflate=1):
     if isinstance(inflate, float):
         a = Store(owner, name, inflate, rarity)
     else:
-        a = Store(owner, name, (sum(random_sample(inflate))) + .5,
-                  rarity)
+        a = Store(owner, name, (sum(random_sample(inflate))) + .5, rarity)
     a.fill_store(Potion, quan)
     return a
 
@@ -2557,8 +2567,7 @@ def create_tavern(owner, rooms, quan, inflate=1):
     if isinstance(inflate, float):
         a = Inn(owner, name, inflate, rooms, quan)
     else:
-        a = Inn(owner, name, (sum(random_sample(inflate))), rooms,
-                quan)
+        a = Inn(owner, name, (sum(random_sample(inflate))), rooms, quan)
     return a
 
 
@@ -2567,8 +2576,7 @@ def create_jewel_shop(owner, rarity, quan, inflate=1):
     if isinstance(inflate, float):
         a = Store(owner, name, inflate, rarity)
     else:
-        a = Store(owner, name, (sum(random_sample(inflate))) + .5,
-                  rarity)
+        a = Store(owner, name, (sum(random_sample(inflate))) + .5, rarity)
     a.fill_store(Jewel, quan)
     return a
 
@@ -2589,8 +2597,7 @@ def create_general_store(owner, rarity, quan, trink, inflate=1):
     if isinstance(inflate, float):
         a = Store(owner, name, inflate, rarity)
     else:
-        a = Store(owner, name, (sum(random_sample(inflate))) + .5,
-                  rarity)
+        a = Store(owner, name, (sum(random_sample(inflate))) + .5, rarity)
     a.fill_store(General, quan)
     for _ in range(trink):
         a.Stock.append(General(0, True))
@@ -2602,8 +2609,7 @@ def create_brothel(owner, quan, inflate=1):
     if isinstance(inflate, float):
         a = Store(owner, name, inflate, [0, 0])
     else:
-        a = Store(owner, name, (sum(random_sample(inflate))) + .5,
-                  [0, 0])
+        a = Store(owner, name, (sum(random_sample(inflate))) + .5, [0, 0])
     a.fill_store(Person, quan)
     return a
 
@@ -2613,8 +2619,7 @@ def create_gunsmith(owner, rarity, quan, inflate=1):
     if isinstance(inflate, float):
         a = Store(owner, name, inflate, rarity)
     else:
-        a = Store(owner, name, (sum(random_sample(inflate))) + .5,
-                  rarity)
+        a = Store(owner, name, (sum(random_sample(inflate))) + .5, rarity)
     a.fill_store(Firearm, quan)
     return a
 
@@ -2631,7 +2636,7 @@ if __name__ == '__main__':
             weapon = largest = average = crit = 0
             smallest = 99999999
             rang = 0
-            dice = { 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 20: 0 }
+            dice = {4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 20: 0}
             for _ in range(cap):
                 item = Firearm(i, iClass=t)
                 if item.Cost < smallest:
@@ -2641,16 +2646,39 @@ if __name__ == '__main__':
                 d_amount = item.Dice[2:]
                 if '+' in d_amount:
                     dice[int(d_amount.split('+')[0])] += 1
-                    damage.append(int(item.Dice[0]) * ((int(d_amount.split('+')[0]) // 2) +.5) + int(d_amount.split('+')[1]))
+                    damage.append(
+                        int(item.Dice[0]) * (
+                            (int(d_amount.split('+')[0]) // 2) + .5) +
+                        int(d_amount.split('+')[1]))
                     # print(int(item.Dice[0]), ((int(d_amount.split('+')[0]) // 2) +.5))
                 else:
                     dice[int(item.Dice[2:])] += 1
-                    damage.append(int(item.Dice[0]) * ((int(item.Dice[2:]) // 2) +.5))
+                    damage.append(
+                        int(item.Dice[0]) * ((int(item.Dice[2:]) // 2) + .5))
                 average += item.Cost
                 cost_list.append(item.Cost)
                 crit += int(item.Crit[1:])
                 rang += item.Range
-            totals[i] = { "Damage Average": round(sum(damage) / cap, 2), "Cost Max": largest, "Cost Min": smallest, "Cost Median": median(cost_list), "Cost Average": round(average / cap, 2), "Range": rang / cap, "Critical": crit / cap, "Dice": dice }
+            totals[i] = {
+                "Average GP per Damage":
+                round(median(cost_list) / (sum(damage) / cap), 2),
+                "Damage Average":
+                round(sum(damage) / cap, 2),
+                "Cost Max":
+                largest,
+                "Cost Min":
+                smallest,
+                "Cost Median":
+                median(cost_list),
+                "Cost Average":
+                round(average / cap, 2),
+                "Range":
+                rang / cap,
+                "Critical":
+                crit / cap,
+                "Dice":
+                dice
+            }
 
         print(t)
         pprint(totals)

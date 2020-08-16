@@ -8,20 +8,70 @@ import simplejson as json
 
 RACES = [
     # Pathfinder Races
-    'Aasimer', 'Catfolk', 'Changeling', 'Dhampir', 'Drow', 'Duergar', 'Dwarf',
-    'Elf', 'Fetchling', 'Gillman', 'Gnome', 'Goblin', 'Grippli', 'Half-Elf',
-    'Half-Orc', 'Halfling', 'Hobgoblin', 'Human', 'Ifrit', 'Kitsune',
-    'Kobold', 'Lizardfolk', 'Merfolk', 'Nagaji', 'Orc', 'Oread', 'Ratfolk',
-    'Samsarans', 'Strix', 'Suli', 'Svirfneblin', 'Sylph', 'Tengu', 'Tiefling',
-    'Undine', 'Vanara', 'Vishkanya', 'Wayangs',
+    'Aasimer',
+    'Catfolk',
+    'Changeling',
+    'Dhampir',
+    'Drow',
+    'Duergar',
+    'Dwarf',
+    'Elf',
+    'Fetchling',
+    'Gillman',
+    'Gnome',
+    'Goblin',
+    'Grippli',
+    'Half-Elf',
+    'Half-Orc',
+    'Halfling',
+    'Hobgoblin',
+    'Human',
+    'Ifrit',
+    'Kitsune',
+    'Kobold',
+    'Lizardfolk',
+    'Merfolk',
+    'Nagaji',
+    'Orc',
+    'Oread',
+    'Ratfolk',
+    'Samsarans',
+    'Strix',
+    'Suli',
+    'Svirfneblin',
+    'Sylph',
+    'Tengu',
+    'Tiefling',
+    'Undine',
+    'Vanara',
+    'Vishkanya',
+    'Wayangs',
     # D&D 5e races
-    'Aarakocra', 'Air Genasi', 'Bugbear', 'Centaur', 'Dragonborn',
-    'Earth Genasi', 'Firbolg', 'Fire Genasi', 'Gith', 'Goliath',
+    'Aarakocra',
+    'Air Genasi',
+    'Bugbear',
+    'Centaur',
+    'Dragonborn',
+    'Earth Genasi',
+    'Firbolg',
+    'Fire Genasi',
+    'Gith',
+    'Goliath',
     # 'Grung', # Has yet to have a general name generator
-    'Kalashtar', 'Kenku',
+    'Kalashtar',
+    'Kenku',
     # 'Locathah',  # Has yet to have a general name generator
-    'Loxodon', 'Minotaur', 'Shifter', 'Simic Hybrid', 'Tabaxi', 'Tortle',
-    'Triton', 'Vedalken', 'Warforged', 'Water Genasi', 'Yuan-ti Pureblood'
+    'Loxodon',
+    'Minotaur',
+    'Shifter',
+    'Simic Hybrid',
+    'Tabaxi',
+    'Tortle',
+    'Triton',
+    'Vedalken',
+    'Warforged',
+    'Water Genasi',
+    'Yuan-ti Pureblood'
 ]
 
 settings = None
@@ -93,11 +143,15 @@ def create_variance(predef={}):
         races.remove(settings['Race'])
         if type(settings['Exotic']) == type([]):
             for i in settings['Exotic']:
-                pop[i] = round(settings['Population'] * (settings['Variance'] / 100) / len(settings['Exotic']))
+                pop[i] = round(
+                    settings['Population'] * (settings['Variance'] / 100) / len(
+                        settings['Exotic']))
         else:
             choices = choice(races, settings['Exotic'], replace=False)
             for i in choices:
-                pop[i] = round(settings['Population'] * (settings['Variance'] / 100) / settings['Exotic'])
+                pop[i] = round(
+                    settings['Population'] * (settings['Variance'] / 100) /
+                    settings['Exotic'])
 
     global_pop = normalize_dict(pop)
     return global_pop

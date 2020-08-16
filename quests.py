@@ -178,8 +178,7 @@ class Quest(object):
                         ' authorities.\nRace: ' + self.Reporter.Race + '\nAge: ' + str(self.Reporter.Age) + \
                         '\nAppearance: ' + self.Reporter.Appearance
         elif r == 4:
-            timing = str(randint(1, 13)) + ':' + str(
-                choice(['00', 15, 30, 45]))
+            timing = str(randint(1, 13)) + ':' + str(choice(['00', 15, 30, 45]))
             self.Title = 'Search Party: ' + self.Other.Name
             self.Hook = 'NOTICE: ' + self.Reporter.Name + ' has gone missing. ' + self.Other.Name + ' has organized' + \
                         ' a searching party. If you have any information, report it to the authorities.\nIf you ' + \

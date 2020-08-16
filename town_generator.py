@@ -85,13 +85,31 @@ def write_people(person, position):
     townHTML += '</div></td></tr></table><br />'
 
 
-def generate_shops(w, a, p, e, en, b, t, j, f, g, br, gu, v, qu, name='', dump_json=False):
+def generate_shops(w,
+                   a,
+                   p,
+                   e,
+                   en,
+                   b,
+                   t,
+                   j,
+                   f,
+                   g,
+                   br,
+                   gu,
+                   v,
+                   qu,
+                   name='',
+                   dump_json=False):
     """ [# of Stores, Rarity Low, Rarity High, Quan High, Quan Low] """
     global townHTML
     from names import TownNamer
     town_name = str(TownNamer()) if name == '' else name
     townHTML += "<h1>" + town_name + "</h1><p>Description</p>"
-    if sum([w[0], a[0], p[0], e[0], en[0], b[0], t[0], j[0], f[0], g[0], br[0], gu[0]]) > 0:
+    if sum([
+            w[0], a[0], p[0], e[0], en[0], b[0], t[0], j[0], f[0], g[0], br[0],
+            gu[0]
+    ]) > 0:
         townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
     full_town = {}
     i = 0
@@ -171,9 +189,7 @@ def generate_shops(w, a, p, e, en, b, t, j, f, g, br, gu, v, qu, name='', dump_j
 
     for _ in range(f[0]):
         store = create_restaurant(
-            create_person(create_variance()),
-            randint(f[1], f[2]),
-            inflate=f[3])
+            create_person(create_variance()), randint(f[1], f[2]), inflate=f[3])
         write_store(store)
         full_town[i] = store.__dict__
         i += 1
@@ -208,9 +224,7 @@ def generate_shops(w, a, p, e, en, b, t, j, f, g, br, gu, v, qu, name='', dump_j
 
     for _ in range(v[0]):
         store = create_variety_shop(
-            create_person(create_variance()),
-            randint(v[1], v[2]),
-            inflate=v[3])
+            create_person(create_variance()), randint(v[1], v[2]), inflate=v[3])
         write_store(store)
         full_town[i] = store.to_dict()
         i += 1
@@ -223,7 +237,12 @@ def generate_shops(w, a, p, e, en, b, t, j, f, g, br, gu, v, qu, name='', dump_j
 
     # Dump the class information into a json file
     if dump_json:
-        json.dump(full_town, open(town_name + ".town.json", 'w'), indent=4, sort_keys=True, default=lambda x: x.__dict__)
+        json.dump(
+            full_town,
+            open(town_name + ".town.json", 'w'),
+            indent=4,
+            sort_keys=True,
+            default=lambda x: x.__dict__)
     return town_name
 
 
@@ -244,13 +263,17 @@ def generate_people(pc, npc, town_name, dump_json=False):
 
     if dump_json:
         try:
-            json.dump(full_town, open(town_name + ".town.json", 'w'), indent=4, sort_keys=True, default=lambda x: x.__dict__)
+            json.dump(
+                full_town,
+                open(town_name + ".town.json", 'w'),
+                indent=4,
+                sort_keys=True,
+                default=lambda x: x.__dict__)
         except Exception as e:
             raise e
 
     print("Writing the town ", town_name)
     write_html(town_name)
-
 
 
 if __name__ == '__main__':
@@ -289,8 +312,7 @@ if __name__ == '__main__':
         write_store(
             create_book_shop(
                 create_person(create_variance()),
-                choice(
-                    Books.Genres, randint(len(Books.Genres)), replace=False),
+                choice(Books.Genres, randint(len(Books.Genres)), replace=False),
                 randint(15, 25),
                 inflate=4), False)
 

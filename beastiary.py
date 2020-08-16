@@ -142,8 +142,11 @@ def print_monster(picked_monster):
         armor = monster['AC']
         saves = None
     else:
-        armor = re.match(r'(\-?\d+), touch (\-?\d+), flat-footed (\-?\d+)', monster['AC'])
-        saves = re.match(r'Fort ([+-]\d+[\S ]*), Ref ([+-]\d+[\S ]*), Will ([+-]\d+[\S ]*)', monster['Saves'])
+        armor = re.match(r'(\-?\d+), touch (\-?\d+), flat-footed (\-?\d+)',
+                         monster['AC'])
+        saves = re.match(
+            r'Fort ([+-]\d+[\S ]*), Ref ([+-]\d+[\S ]*), Will ([+-]\d+[\S ]*)',
+            monster['Saves'])
 
     # Base HTML
     html = '<!DOCTYPE html><html><head><meta content="width=device-width" name="viewport"/><title></title><style>' + \
@@ -249,9 +252,11 @@ def print_monster(picked_monster):
             'Rarity</th></tr>'
 
     if monster_type == 'Pokemon':
-        treasure = treasure_calculator(monster['Treasure'], "humanoid", monster['CR'])
+        treasure = treasure_calculator(monster['Treasure'], "humanoid",
+                                       monster['CR'])
     else:
-        treasure = treasure_calculator(monster['Treasure'], monster['Type'], monster['CR'])
+        treasure = treasure_calculator(monster['Treasure'], monster['Type'],
+                                       monster['CR'])
     for t in treasure:
         html += str(t)
     html += '</tr></table></body></html>'

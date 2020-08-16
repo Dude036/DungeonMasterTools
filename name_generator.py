@@ -2,20 +2,62 @@ from numpy.random import randint
 from names import *
 
 d_name = [
-    'Aasimer', 'Centaur', 'Dragonborn', 'Drow', 'Duergar', 'Dwarf', 'Elf', 'Goblin', 'Goliath',
-    'Human', 'Half-Orc', 'Half-Elf', 'Merfolk', 'Orc', 'Simic Hybrid', 'Svirfneblin',
-    'Tian', 'Tengu', 'Tiefling', 'Triton',
+    'Aasimer',
+    'Centaur',
+    'Dragonborn',
+    'Drow',
+    'Duergar',
+    'Dwarf',
+    'Elf',
+    'Goblin',
+    'Goliath',
+    'Human',
+    'Half-Orc',
+    'Half-Elf',
+    'Merfolk',
+    'Orc',
+    'Simic Hybrid',
+    'Svirfneblin',
+    'Tian',
+    'Tengu',
+    'Tiefling',
+    'Triton',
 ]
 d_single = [
-    'Catfolk', 'Firbolg', 'Fetchling', 'Gith', 'Gnome', 'Halfling', 'Hobgoblin', 'Ifrit', 'Kalashtar',
-    'Kitsune', 'Kobold', 'Lizardfolk', 'Loxodon', 'Minotaur', 'Nagaji', 'Oread', 'Ratfolk', 'Samsarans',
-    'Sylph', 'Undine', 'Vedalken',
+    'Catfolk',
+    'Firbolg',
+    'Fetchling',
+    'Gith',
+    'Gnome',
+    'Halfling',
+    'Hobgoblin',
+    'Ifrit',
+    'Kalashtar',
+    'Kitsune',
+    'Kobold',
+    'Lizardfolk',
+    'Loxodon',
+    'Minotaur',
+    'Nagaji',
+    'Oread',
+    'Ratfolk',
+    'Samsarans',
+    'Sylph',
+    'Undine',
+    'Vedalken',
 ]
 d_premade = [
-    'Dhampir', 'Gillman', 'Grippli', 'Shifter', 'Strix', 'Vishkanya', 'Wayangs',
+    'Dhampir',
+    'Gillman',
+    'Grippli',
+    'Shifter',
+    'Strix',
+    'Vishkanya',
+    'Wayangs',
 ]
 d_unisex = [
-    'Aarakocra', 'Bugbear', 'Changeling', 'Kenku', 'Tabaxi', 'Tortle', 'Warforged', 'Yuan-ti Pureblood'
+    'Aarakocra', 'Bugbear', 'Changeling', 'Kenku', 'Tabaxi', 'Tortle',
+    'Warforged', 'Yuan-ti Pureblood'
 ]
 
 
@@ -258,4 +300,3 @@ def name_parser(race, gender):
     else:
         name = None
     return name
-

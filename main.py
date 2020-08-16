@@ -101,8 +101,7 @@ def main():
     Variety = [
         generator["Variety"]["# of Stores"],
         generator["Variety"]["Quantity Low"],
-        generator["Variety"]["Quantity High"],
-        generator["Variety"]["Inflation"]
+        generator["Variety"]["Quantity High"], generator["Variety"]["Inflation"]
     ]
     Quests = [
         generator["Quest Boards"]["# of Stores"],
@@ -117,11 +116,12 @@ def main():
     if "Dump Json" not in generator.keys():
         generator['Dump Json'] = False
 
-    town_name = town_generator.generate_shops(Weapons, Armor, Potion, Enchant,
-                                              Enchanter, Books, Tavern, Jewel, Food,
-                                              General, Brothel, Gunsmith, Variety, Quests,
-                                              generator['Town Name'], generator["Dump Json"])
-    town_generator.generate_people(generator['Occupations'], generator['NPCs'], town_name, generator["Dump Json"])
+    town_name = town_generator.generate_shops(
+        Weapons, Armor, Potion, Enchant, Enchanter, Books, Tavern, Jewel, Food,
+        General, Brothel, Gunsmith, Variety, Quests, generator['Town Name'],
+        generator["Dump Json"])
+    town_generator.generate_people(generator['Occupations'], generator['NPCs'],
+                                   town_name, generator["Dump Json"])
 
 
 if __name__ == '__main__':
