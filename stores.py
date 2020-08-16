@@ -1150,10 +1150,10 @@ class Firearm(object):
         ],
     }
     cost_and_weight = {
-        'Pistol': [1000, .8],
-        'Rifle': [2500, 2],
-        'Sniper': [10000, 5],
-        'Shotgun': [5000, 3],
+        'Pistol': [100, .8],
+        'Rifle': [250, 2],
+        'Sniper': [1000, 5],
+        'Shotgun': [500, 3],
     }
     Weight = Cost = Rarity = Masterwork = Range = Capacity = 0
     Name = Dice = Crit = Class = ''
@@ -1162,36 +1162,38 @@ class Firearm(object):
     def __init__(self, rarity, iClass=None, iName=None):
         if iClass is None or iClass not in list(self.possible.keys()):
             self.Class = choice(list(self.possible.keys()))
+        else:
+            self.Class = iClass
         if rarity > 4:
             rarity %= 4
         self.Rarity = rarity
-        self.Crit = 'x' + str(randint(2, 5))
+        self.Crit = 'x' + str(choice([3, 4, 5, 6], p=[.5625, .25, .125, 0.0625]))
         self.__choose_metal()
         self.Name += choice(self.possible[self.Class])
 
         if self.Class == 'Pistol':
-            self.Capacity = int(choice([1, 2, 4, 6, 8]))
+            self.Capacity = int(choice([1, 2, 4, 6]))
             self.Range = 10 + randint(1, 4) * 5 * (self.Rarity + 1)
             self.Dice = str(int(
-                (self.Rarity + 2) / 2)) + 'd' + str(choice([4, 6, 8]))
+                (self.Rarity + 2) / 2)) + 'd' + str(choice([4, 6, 8], p=[.625, .25, .125]))
 
         elif self.Class == 'Rifle':
             self.Capacity = int(10 + randint(1, 8) * 5)
             self.Range = 10 + randint(1, 6) * 5 * (self.Rarity + 1)
             self.Dice = str(int(
-                (self.Rarity + 2) / 2)) + 'd' + str(choice([4, 6, 8, 10]))
+                (self.Rarity + 2) / 2)) + 'd' + str(choice([6, 8, 10], p=[.625, .25, .125]))
 
         elif self.Class == 'Shotgun':
-            self.Capacity = int(choice([1, 2, 4, 6, 8, 10, 12]))
+            self.Capacity = int(choice([1, 2]))
             self.Range = randint(3, 6) * 5 * (self.Rarity + 1)
             self.Dice = str(int(
-                (self.Rarity + 2) / 2)) + 'd' + str(choice([6, 8, 10, 12]))
+                (self.Rarity + 2) / 2)) + 'd' + str(choice([6, 8, 10], p=[.625, .25, .125]))
 
         elif self.Class == 'Sniper':
             self.Capacity = int(choice([1, 2, 4]))
             self.Range = 30 + randint(3, 7) * 10 * (self.Rarity + 1)
             self.Dice = str(int(
-                (self.Rarity + 2) / 2)) + 'd' + str(choice([8, 10, 12]))
+                (self.Rarity + 2) / 2)) + 'd' + str(choice([10, 12, 20], p=[.625, .25, .125]))
 
         if iName is not None:
             self.Name = iName
@@ -1216,8 +1218,7 @@ class Firearm(object):
                 self.Name += metal + ' '
             else:
                 metal = None
-        self.Cost = self.cost_and_weight[self.Class][0] * cl[metal]['Cost'] * (
-            self.Rarity + 1)**self.Rarity
+        self.Cost = self.cost_and_weight[self.Class][0] * cl[metal]['Cost'] * (self.Rarity + 1)**self.Rarity * (int(self.Crit[1])/2)
         self.Weight = round(
             self.cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 4, 1)
 
@@ -1258,7 +1259,7 @@ class Firearm(object):
         if self.Enchantment is None:
             s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name.title() + ' (' + self.Class + \
             ') </span><br /><span class="text-sm emp">' + 'Damage: ' + self.Dice + ' (' + self.Crit + ') Weight: ' + \
-            str(self.Weight) + ' lbs. Range:' + str(self.Range) + "ft.</span></td><td>" + determine_cost(self.Cost) + \
+            str(self.Weight) + ' lbs. Range:' + str(self.Range) + "ft. Mag: " + str(self.Capacity) + "</span></td><td>" + determine_cost(self.Cost) + \
             """</td><td>""" + master + r[self.Rarity] + """</td></tr>"""
         else:
             s = """<tr><td style="width:50%;"><span class="text-md" onclick="show_hide('""" + str(MasterID) + \
@@ -2620,23 +2621,37 @@ def create_gunsmith(owner, rarity, quan, inflate=1):
 
 if __name__ == '__main__':
     from pprint import pprint
+    from numpy import median
     totals = {}
-    cap = 10000
-    for i in range(5):
-        dice = weapon = largest = average = 0
-        smallest = 99999
-        for _ in range(cap):
-            item = Weapon(i)
-            if item.info.index(max(item.info)) == 0:
-                weapon += 1
-            else:
-                dice += 1
-            if largest < max(item.info):
-                largest = max(item.info)
-            elif smallest > min(item.info):
-                smallest = min(item.info)
-            average += item.Cost
-        average /= cap
-        totals[i] = {"Dice": dice, "Weapon": weapon, "Max": largest, "Min": smallest, "Average": average / cap}
+    cap = 1000
+    for t in ['Pistol', 'Rifle', 'Shotgun', 'Sniper']:
+        for i in range(5):
+            cost_list = []
+            damage = []
+            weapon = largest = average = crit = 0
+            smallest = 99999999
+            rang = 0
+            dice = { 4: 0, 6: 0, 8: 0, 10: 0, 12: 0, 20: 0 }
+            for _ in range(cap):
+                item = Firearm(i, iClass=t)
+                if item.Cost < smallest:
+                    smallest = item.Cost
+                elif item.Cost > largest:
+                    largest = item.Cost
+                d_amount = item.Dice[2:]
+                if '+' in d_amount:
+                    dice[int(d_amount.split('+')[0])] += 1
+                    damage.append(int(item.Dice[0]) * ((int(d_amount.split('+')[0]) // 2) +.5) + int(d_amount.split('+')[1]))
+                    # print(int(item.Dice[0]), ((int(d_amount.split('+')[0]) // 2) +.5))
+                else:
+                    dice[int(item.Dice[2:])] += 1
+                    damage.append(int(item.Dice[0]) * ((int(item.Dice[2:]) // 2) +.5))
+                average += item.Cost
+                cost_list.append(item.Cost)
+                crit += int(item.Crit[1:])
+                rang += item.Range
+            totals[i] = { "Damage Average": round(sum(damage) / cap, 2), "Cost Max": largest, "Cost Min": smallest, "Cost Median": median(cost_list), "Cost Average": round(average / cap, 2), "Range": rang / cap, "Critical": crit / cap, "Dice": dice }
 
-    pprint(totals)
+        print(t)
+        pprint(totals)
+        print()
