@@ -27,116 +27,118 @@ Inflation is compatible with both floats and integers. Floats with mean it's exa
 
 Below has the initial settings file with brackets after. Inside the brackets is the possible range of each setting.
 
-    "Weapon Shops": {
-        "# of Stores": 2,       // [0 to Infinte]
-        "Rarity Low": 0,        // [0 to 4]
-        "Rarity High": 4,       // [Rarity Low to 4]
-        "Quantity Low": 15,     // [0 to Infinte]
-        "Quantity High": 25,    // [Quantity Low to Infinte]
-        "Inflation": 1          // [0.0 to Infinte]
-    },
-    "Armor Shops": {
-        "# of Stores": 2,       // [0 to Infinte]
-        "Rarity Low": 0,        // [0 to 4]
-        "Rarity High": 4,       // [Rarity Low to 4]
-        "Quantity Low": 15,     // [0 to Infinte]
-        "Quantity High": 25,    // [Quantity Low to Infinte]
-        "Inflation": 1          // [0.0 to Infinte]
-    },
-    "Potion Shops": {
-        "# of Stores": 1,       // [0 to Infinite]
-        "Rarity Low": 0,        // [0 to 9]
-        "Rarity High": 9,       // [Rarity Low to 9]
-        "Quantity Low": 15,     // [0 to Infinte]
-        "Quantity High": 20,    // [Quantity Low to Infinte]
-        "Inflation": 1          // [0.0 to Infinite]
-    },
-    "Enchant Shops": {
-        "# of Stores": 1,       // [0 to Infinite]
-        "Rarity Low": 0,        // [0 to 9]
-        "Rarity High": 9,       // [Rarity Low to 9]
-        "Quantity Low": 15,     // [0 to Infinte]
-        "Quantity High": 20,    // [Quantity Low to Infinte]
-        "Inflation": 1          // [0.0 to Infinite]
-    },
-    "Enchanter Shops": {
-        "# of Stores": 1,       // [0 to Infinite]
-        "Rarity Low": 0,        // [0 to 9]
-        "Rarity High": 9,       // [Rarity Low to 9]
-        "Quantity Low": 15,     // [0 to Infinte]
-        "Quantity High": 20,    // [Quantity Low to Infinte]
-        "Inflation": 1          // [0.0 to Infinite]
-    },
-    "Book Shops": {
-        "# of Stores": 1,       // [0 to Infinite]
-        "Quantity Low": 15,     // [0 to Infinite]
-        "Quantity High": 25,    // [Quantity Low to Infinite]
-        "Inflation": 1          // [0.0 to Infinite]
-    },
-    "Tavern Shops": {
-        "# of Stores": 1,       // [0 to Infinite]
-        "Rooms": 3,             // [0 to Infinite]
-        "Quantity Low": 10,     // [0 to Infinite]
-        "Quantity High": 15,    // [Quantity Low to Infinite]
-        "Inflation": 1          // [0.0 to Infinite]
-    },
-    "Jewel Shops": {
-        "# of Stores": 2,       // [0 to Infinte]
-        "Rarity Low": 0,        // [0 to 5]
-        "Rarity High": 4,       // [Rarity Low to 5]
-        "Quantity Low": 15,     // [0 to Infinte]
-        "Quantity High": 25,    // [Quantity Low to Infinte]
-        "Inflation": 1          // [0.0 to Infinte]
-    },
-    "Food Shops": {
-        "# of Stores": 1,       // [0 to Infinite]
-        "Quantity Low": 15,     // [0 to Infinite]
-        "Quantity High": 30,    // [Quantity Low to Infinite]
-        "Inflation": 1          // [0.0 to Infinite
-    },
-    "General Shops": {
-        "# of Stores": 1,       // [0 to Infinite]
-        "Rarity Low": 0,        // [0 to Infinite]
-        "Rarity High": 3,       // [Rarity High to Infinite]
-        "Quantity Low": 30,     // [0 to Infinite]
-        "Quantity High": 40,    // [Rarity Low to Infinite]
-        "Trinkets": 2,          // [0 to Infinite]
-        "Inflation": 1          // [0.0 to Infinite]
-    },
-    "Brothels": {
-        "# of Stores": 1,       // [0 to Infinite]
-        "Quantity Low": 15,     // [0 to Infinite]
-        "Quantity High": 20,    // [Quantity Low to Infinite]
-        "Inflation": 1          // [0.0 to Infinite]
-    },
-    "Gunsmiths": {
-        "# of Stores": 1,       // [0 to Infinte]
-        "Rarity Low": 0,        // [0 to 4]
-        "Rarity High": 4,       // [Rarity Low to 4]
-        "Quantity Low": 15,     // [0 to Infinte]
-        "Quantity High": 20,    // [Quantity Low to Infinte]
-        "Inflation": 1          // [0.0 to Infinte]
-    },
-    "Variety": {
-        "# of Stores": 1,       // [0 to Infinte]
-        "Quantity Low": 15,     // [0 to Infinte]
-        "Quantity High": 20,    // [Quantity Low to Infinte]
-        "Inflation": 1          // [0.0 to Infinte]
-    },
-    "Quest Boards": {
-        "# of Stores": 1,       // [0 to Infinte]
-        "Level Low": 0,         // [0 to 20]
-        "Level High": 5,        // [Level Low to 20]
-        "Quantity": 10          // [0 to Infinite]
-    },
-    "Occupations": [            // Encapsulate with "", and seperate with ,
-        "The King",
-        "The Cleric"
-    ],
-    "NPCs": [                   // Encapsulate with "", and seperate with ,
-        "Captain of the Guard",
-        "The Villain"
-    ]
+```json
+"Weapon Shops": {
+    "# of Stores": 2,       // [0 to Infinte]
+    "Rarity Low": 0,        // [0 to 4]
+    "Rarity High": 4,       // [Rarity Low to 4]
+    "Quantity Low": 15,     // [0 to Infinte]
+    "Quantity High": 25,    // [Quantity Low to Infinte]
+    "Inflation": 1          // [0.0 to Infinte]
+},
+"Armor Shops": {
+    "# of Stores": 2,       // [0 to Infinte]
+    "Rarity Low": 0,        // [0 to 4]
+    "Rarity High": 4,       // [Rarity Low to 4]
+    "Quantity Low": 15,     // [0 to Infinte]
+    "Quantity High": 25,    // [Quantity Low to Infinte]
+    "Inflation": 1          // [0.0 to Infinte]
+},
+"Potion Shops": {
+    "# of Stores": 1,       // [0 to Infinite]
+    "Rarity Low": 0,        // [0 to 9]
+    "Rarity High": 9,       // [Rarity Low to 9]
+    "Quantity Low": 15,     // [0 to Infinte]
+    "Quantity High": 20,    // [Quantity Low to Infinte]
+    "Inflation": 1          // [0.0 to Infinite]
+},
+"Enchant Shops": {
+    "# of Stores": 1,       // [0 to Infinite]
+    "Rarity Low": 0,        // [0 to 9]
+    "Rarity High": 9,       // [Rarity Low to 9]
+    "Quantity Low": 15,     // [0 to Infinte]
+    "Quantity High": 20,    // [Quantity Low to Infinte]
+    "Inflation": 1          // [0.0 to Infinite]
+},
+"Enchanter Shops": {
+    "# of Stores": 1,       // [0 to Infinite]
+    "Rarity Low": 0,        // [0 to 9]
+    "Rarity High": 9,       // [Rarity Low to 9]
+    "Quantity Low": 15,     // [0 to Infinte]
+    "Quantity High": 20,    // [Quantity Low to Infinte]
+    "Inflation": 1          // [0.0 to Infinite]
+},
+"Book Shops": {
+    "# of Stores": 1,       // [0 to Infinite]
+    "Quantity Low": 15,     // [0 to Infinite]
+    "Quantity High": 25,    // [Quantity Low to Infinite]
+    "Inflation": 1          // [0.0 to Infinite]
+},
+"Tavern Shops": {
+    "# of Stores": 1,       // [0 to Infinite]
+    "Rooms": 3,             // [0 to Infinite]
+    "Quantity Low": 10,     // [0 to Infinite]
+    "Quantity High": 15,    // [Quantity Low to Infinite]
+    "Inflation": 1          // [0.0 to Infinite]
+},
+"Jewel Shops": {
+    "# of Stores": 2,       // [0 to Infinte]
+    "Rarity Low": 0,        // [0 to 5]
+    "Rarity High": 4,       // [Rarity Low to 5]
+    "Quantity Low": 15,     // [0 to Infinte]
+    "Quantity High": 25,    // [Quantity Low to Infinte]
+    "Inflation": 1          // [0.0 to Infinte]
+},
+"Food Shops": {
+    "# of Stores": 1,       // [0 to Infinite]
+    "Quantity Low": 15,     // [0 to Infinite]
+    "Quantity High": 30,    // [Quantity Low to Infinite]
+    "Inflation": 1          // [0.0 to Infinite
+},
+"General Shops": {
+    "# of Stores": 1,       // [0 to Infinite]
+    "Rarity Low": 0,        // [0 to Infinite]
+    "Rarity High": 3,       // [Rarity High to Infinite]
+    "Quantity Low": 30,     // [0 to Infinite]
+    "Quantity High": 40,    // [Rarity Low to Infinite]
+    "Trinkets": 2,          // [0 to Infinite]
+    "Inflation": 1          // [0.0 to Infinite]
+},
+"Brothels": {
+    "# of Stores": 1,       // [0 to Infinite]
+    "Quantity Low": 15,     // [0 to Infinite]
+    "Quantity High": 20,    // [Quantity Low to Infinite]
+    "Inflation": 1          // [0.0 to Infinite]
+},
+"Gunsmiths": {
+    "# of Stores": 1,       // [0 to Infinte]
+    "Rarity Low": 0,        // [0 to 4]
+    "Rarity High": 4,       // [Rarity Low to 4]
+    "Quantity Low": 15,     // [0 to Infinte]
+    "Quantity High": 20,    // [Quantity Low to Infinte]
+    "Inflation": 1          // [0.0 to Infinte]
+},
+"Variety": {
+    "# of Stores": 1,       // [0 to Infinte]
+    "Quantity Low": 15,     // [0 to Infinte]
+    "Quantity High": 20,    // [Quantity Low to Infinte]
+    "Inflation": 1          // [0.0 to Infinte]
+},
+"Quest Boards": {
+    "# of Stores": 1,       // [0 to Infinte]
+    "Level Low": 0,         // [0 to 20]
+    "Level High": 5,        // [Level Low to 20]
+    "Quantity": 10          // [0 to Infinite]
+},
+"Occupations": [            // Encapsulate with "", and seperate with ,
+    "The King",
+    "The Cleric"
+],
+"NPCs": [                   // Encapsulate with "", and seperate with ,
+    "Captain of the Guard",
+    "The Villain"
+]
+```
 
 After you've modified your settings, run the main application to generate a town. There are a few testing protocols that can be run that I have used for testing. Here are those;
 
@@ -161,3 +163,10 @@ If you're interesting in contributing to this repository, here are a few things 
 * I'd also like to rework weapon damage types. Adding potentially different damage types, and add some variation on material. i.e. Hot Siccatite should also deal fire damage for an average half if it's damage.
 * Slaves, however dark to add, is a potential commodity that could be traded. I already have code for a whorehouse, so it's not too far of a leap for slave traders
 * Per request by Mike, he requested a better system of Guilds when creating quests, with shops potentially for guild members.
+
+Be sure to run the following line in the main directory before pushing or pulling anything: 
+
+```
+yapf -i -p *.py
+```
+
