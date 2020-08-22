@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 
-import pickle
-import numpy as np
 from numpy.random import choice, randint
-from tqdm import tqdm
 import simplejson as json
 
 RACES = [
@@ -105,7 +102,7 @@ def load_settings():
             print("Invalid Exotic Race Count")
             exit()
     else:
-        if settings['Exotic'] == []:
+        if not settings['Exotic']:
             print("Invalid Exotic Race Count")
             exit()
 
@@ -155,17 +152,6 @@ def create_variance(predef={}):
 
     global_pop = normalize_dict(pop)
     return global_pop
-
-
-def create(l):
-    v = np.array(l)
-    if len(v.shape) < 2:
-        print("Too little or irregular dimensions")
-        exit()
-    d = {}
-    for x in v:
-        d[x[0]] = int(x[1])
-    return d
 
 
 def normalize_dict(v):
