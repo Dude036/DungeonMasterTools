@@ -6,7 +6,6 @@ def special_masterwork(Weapon, Trait=None):
     if Trait is not None and Trait in masterwork_traits:
         Weapon.Special = Trait
     else:
-        selection = int((random() * 1000))
         # Get all potential options for our weapon type
         special_options = [
             'Anarchic', 'Axiomatic', 'Bane', 'Beaming', 'Benevolent',
@@ -90,9 +89,9 @@ def special_masterwork(Weapon, Trait=None):
 
     # Add text to weapon Quality
     if Weapon.Special == 'Adaptive':
-        Weapon.Text = '<p>This weapon has a very high tensile strength, requiring a STR of ' + str(
-            randint(10, 31)
-        ) + ' to be able to wield it correct. When wielding this Weapon, you use your Strength modifier instead of Dexterity when calculating to Hit or Dexterity.</p>'
+        Weapon.Text = '<p>This weapon has a very high tensile strength, requiring a STR of ' + str(randint(10, 31)) + \
+                      ' to be able to wield it correct. When wielding this Weapon, you use your Strength modifier' + \
+                      ' instead of Dexterity when calculating to Hit or Dexterity.</p>'
 
     elif Weapon.Special == 'Advancing':
         Weapon.Text = '<p>This weapon is designed for a frontline fighter. As a free action, you can move an additional 10 ft. of movement, but have a -2 to hit on the turn you take that movement in.</p>'
@@ -493,10 +492,10 @@ def special_masterwork(Weapon, Trait=None):
         Weapon.Text = "<p>'This weapon was designed to be destroyed. On a critical hit, deal an additional 1d10 Force Damage per crit multiplier level. (x2 = 1d10 | x5 = 4d10). This damage is NOT included in the weapon's critical.</p>"
 
     elif Weapon.Special == 'Shock':
-        Weapon.Text = '<p>This weapon crackles with electricity. Attacks made with thise weapon deal 1d6 points of Lightning damage.</p>'
+        Weapon.Text = '<p>This weapon crackles with electricity. Attacks made with thise weapon deal an additional 1d6 points of Lightning damage.</p>'
 
     elif Weapon.Special == 'Shocking Burst':
-        Weapon.Text = "<p>This weapon crackles with electricity. Attacks made with thise weapon deal 1d6 points of Lightning damage. If the wielder makes a critical hit against a creature, the damage becomes 1d10, instead of 1d6. If this weapon's critical is greater than x2, it deals 1d10 extra damage for every number above 2. x3 = 2d10; x7 = 6d10</p>"
+        Weapon.Text = "<p>This weapon crackles with electricity. Attacks made with thise weapon deal an additional 1d6 points of Lightning damage. If the wielder makes a critical hit against a creature, the damage becomes 1d10, instead of 1d6. If this weapon's critical is greater than x2, it deals 1d10 extra damage for every number above 2. x3 = 2d10; x7 = 6d10</p>"
 
     elif Weapon.Special == 'Shrinking':
         Weapon.Text = '<p>This weapon shrinks itself, and its wielder. Once per long rest, you may cast Reduce on yourself for the full duration. You may also speak the command word, and reduce the weapon to the size of a dagger. The weapon gains the stats of a regualr Dagger of the same material. When the command word is spoken again, the weapon returns to its normal time.</p>'
@@ -549,7 +548,7 @@ def special_masterwork(Weapon, Trait=None):
         Weapon.Text = "<p>This weapon is designed to be thrown. If this weapon increases it's throw distance by 10 ft. If the weapon doesn't have throw distance, it is now 10, and gains the Thrown property.</p>"
 
     elif Weapon.Special == 'Thundering':
-        Weapon.Text = "<p>This weapon vibrates with a loud low frequency. Attacks made with thise weapon deal 1d6 points of Thunder damage. If the wielder makes a critical hit against a creature, the damage becomes 1d10, instead of 1d6. If this weapon's critical is greater than x2, it deals 1d10 extra damage for every number above 2. x3 = 2d10; x7 = 6d10</p>"
+        Weapon.Text = "<p>This weapon vibrates with a loud low frequency. Attacks made with these weapon deal an additional 1d6 points of Thunder damage. If the wielder makes a critical hit against a creature, the damage becomes 1d10, instead of 1d6. If this weapon's critical is greater than x2, it deals 1d10 extra damage for every number above 2. x3 = 2d10; x7 = 6d10</p>"
 
     elif Weapon.Special == 'Toxic':
         Weapon.Text = "<p>This weapon is designed to deliver poison. If a poison is applied to this weapon, the poison's DC is increased by 2. On a successful attack, roll 1d4. On a 4, the poisonous dose was not completely expended in the attack and the weapon is still poisoned.</p>"
@@ -583,7 +582,7 @@ def special_masterwork(Weapon, Trait=None):
         ) + " point of damage against enemies of the same nationality.</p>"
 
     elif Weapon.Special == 'Truthful':
-        Weapon.Text = '<p>This weapon pierces through illusionary magics. The wielder gains advantages on saves against illsions. Once per long rest, the wielder may cast See Invisibility on themselves for the full duration.</p>'
+        Weapon.Text = '<p>This weapon pierces through illusionary magics. The wielder gains advantages on saves against illusions. Once per long rest, the wielder may cast See Invisibility on themselves for the full duration.</p>'
 
     elif Weapon.Special == 'Umbral':
         Weapon.Text = '<p>This weapon was crafted in the Underdark. The wielder gains darkvision within 60 ft. If the wielder already has darvision, the range increases by 30 ft. Once per long rest, the weilder may speak the command work of this weapon to cast Darkness centered around the Blade. The weilder is able to see through this darkness as long as he holds onto the weapon. If the weapon is sheathed, dropped, disarmed, or otherwise stowed, the darkness disapates.</p>'
@@ -620,26 +619,6 @@ def special_masterwork(Weapon, Trait=None):
 
     # Add the title of the masterwork quality to the weapon
     Weapon.Name = Weapon.Name[:2] + ' ' + Weapon.Special + Weapon.Name[2:]
+    Weapon.Cost += (1 + Weapon.Masterwork) * 1000
     return Weapon
 
-
-if __name__ == '__main__':
-    from stores import Weapon
-    # Find unused Traits
-    for t in masterwork_traits:
-    	w = Weapon(4)
-    	w.add_masterwork(2)
-    	w = special_masterwork(w, Trait=t)
-    	if w.Text == '':
-    		print(t)
-    	# elif w.Text != '_':
-    	# 	print('\t- ' + t + ':', w.Text)
-
-    # Test Random Traits
-    # for _ in range(1000):
-    #     for j in range(5):
-    #         for i in range(1, 10):
-    #             w = Weapon(j)
-    #             w.add_masterwork(i)
-    #             print(special_masterwork(w))
-    #             print(w.Text, '\n')

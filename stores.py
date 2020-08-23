@@ -4,6 +4,7 @@ from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jewel
 from variance import normalize_dict
 from character import create_person
 import simplejson as json
+from masterwork import special_masterwork
 from resources import *
 
 with open('spells.json', 'r') as inf:
@@ -236,8 +237,10 @@ class Weapon(object):
 
         if randint(1, 101) + self.Rarity * self.Rarity >= 95:
             self.add_enchantment(Enchant())
-        if randint(1, 101) + self.Rarity * self.Rarity >= 95:
+        if randint(1, 101) + self.Rarity * self.Rarity >= 75:
             self.add_masterwork(determine_rarity([1, 9]))
+            if randint(1, 101) + self.Rarity * self.Rarity >= 75:
+                special_masterwork(self)
 
     def __choose_type(self, requirement=None):
         if requirement is None:
@@ -403,9 +406,15 @@ class Weapon(object):
         ]
         dam = ''
         master = "Masterwork " if self.Masterwork > 0 else ""
+        if self.Enchantment is None:
+            enchant_lvl = ''
+            enchanted = ''
+        else:
+            enchant_lvl = ', ' + l[self.Enchantment.Level]
+            enchanted = str(self.Enchantment)
         for c in self.Damage:
             dam += '\'' + c + '\','
-        if self.Enchantment is None:
+        if self.Enchantment is None and self.Special == '':
             s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + \
             ' (' + self.Class + """) </span><br /><span class="text-sm emp">""" + \
             'Damage: ' + self.Dice + ' (' + self.Crit + ') [' + dam + '] Weight: ' + \
@@ -416,9 +425,8 @@ class Weapon(object):
                 """')" style="color:blue;">""" + self.Name + ' (' + self.Class + \
                 """) </span><br /><span class="text-sm emp" id=\"""" + str(MasterID) + \
                 """\" style="display: none;">""" + 'Damage: ' + self.Dice + ' (' + self.Crit + ') [' + dam + \
-                '] Weight: ' + str(self.Weight) + """ lbs""" + str(self.Enchantment) + """"</span></td><td>""" + \
-                determine_cost(self.Cost) + """</td><td>""" + master +  r[self.Rarity] + ', ' + \
-                l[self.Enchantment.Level] + """</td></tr>"""
+                '] Weight: ' + str(self.Weight) + ' lbs. ' + self.Text + enchanted + """</span></td><td>""" + \
+                determine_cost(self.Cost) + '</td><td>' + master + r[self.Rarity] + enchant_lvl + '</td></tr>'
             MasterID += 1
         return s
 
