@@ -106,11 +106,11 @@ function odd(name) {
 	var correct = true;
 	var errors = "";
 	switch(name) {
-		case "Tavern":
-			base["Rooms"] = parseInt(document.getElementById(name + "Rooms").value);
-
 		case "General":
 			base["Trinkets"] = parseInt(document.getElementById(name + "Trinkets").value);
+
+		case "Tavern":
+			base["Rooms"] = parseInt(document.getElementById(name + "Rooms").value);
 
 		case "Books":
 		case "Food":
@@ -236,6 +236,9 @@ function validate() {
 	if (correct) {
 		eel.submit(settings, generate);
 	}
+
+	document.getElementById("wholeForm").style.display = 'none';
+	document.getElementById("mainHeader").innerHTML = 'Form Submitted.';
 }
 
 
@@ -261,17 +264,6 @@ function changing_races() {
 	old_race.removeAttribute("disabled");
 	chosen_race = new_race.id;
 }
-
-
-// Use Eel function to get a random town name
-// function random_name_js() {
-// 	var town_element = document.getElementById("TownName");
-// 	town_element.value = random_town_name();
-// 	let new_name = await eel.random_name_py()( x => {
-// 		town_element.value = x;
-// 		console.log(x);
-// 	});
-// }
 
 
 // Show/Hide all of the exotic race pickings

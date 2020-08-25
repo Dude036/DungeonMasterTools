@@ -10,13 +10,6 @@ def say_hello_py(x):
 
 
 @eel.expose
-def random_name_py():
-    name = TownNamer()
-    print(name)
-    return name
-
-
-@eel.expose
 def submit(settings, generate):
     print("Form has been submitted.")
     print("Settings:")

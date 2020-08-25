@@ -26,8 +26,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <h1>Dungeon Masters Toolkit</h1>
-    <form>      
+    <h1 id="mainHeader">Dungeon Masters Toolkit</h1>
+    <form id="wholeForm">      
       <table class="wrapper-box">
         <tr>
           <td>
@@ -1116,6 +1116,11 @@
                 </td>
                 <td>
                   <input type="checkbox" id="GeneralExact" name="GeneralExact">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input style="display: none;" type="number" id="GeneralRooms" name="GeneralRooms">
                 </td>
               </tr>
             </table>
