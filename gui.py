@@ -11,7 +11,9 @@ def say_hello_py(x):
 
 @eel.expose
 def random_name_py():
-    return {"Name": TownNamer()}
+    name = TownNamer()
+    print(name)
+    return name
 
 
 @eel.expose

@@ -124,3 +124,18 @@ table tr td {
 	color: #FF0000;
 	font-weight: bold; 
 }
+
+.button_eq {
+	border: 1px solid black;
+	background-color: #dddddd;
+	padding: 2px 4px;
+	margin: 0px 5px;
+}
+
+.button_eq:active {
+	background-color: #404040;
+}
+
+.button_eq:hover {
+	background-color: #808080;
+}

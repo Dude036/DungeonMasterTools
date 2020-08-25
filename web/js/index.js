@@ -264,11 +264,14 @@ function changing_races() {
 
 
 // Use Eel function to get a random town name
-function random_name_js() {
-	var town_element = document.getElementById("TownName");
-	let new_name = await eel.random_name_py()();
-	town_element.value = new_name;
-}
+// function random_name_js() {
+// 	var town_element = document.getElementById("TownName");
+// 	town_element.value = random_town_name();
+// 	let new_name = await eel.random_name_py()( x => {
+// 		town_element.value = x;
+// 		console.log(x);
+// 	});
+// }
 
 
 // Show/Hide all of the exotic race pickings
