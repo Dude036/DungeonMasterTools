@@ -1,6 +1,8 @@
 import eel
 from names import TownNamer
 from pprint import pprint
+import simplejson as json
+from main import main
 
 
 # Expose this function to Javascript
@@ -16,7 +18,9 @@ def submit(settings, generate):
     pprint(settings)
     print("Generate:")
     pprint(generate)
-
+    json.dump(generate, open('generate.json', 'w'), indent=4)
+    json.dump(settings, open('settings.json', 'w'), indent=4)
+    main()
 
 if __name__ == '__main__':
     # Set web files folder

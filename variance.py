@@ -101,10 +101,6 @@ def load_settings():
         if settings["Exotic"] < 0 or settings["Exotic"] > 62:
             print("Invalid Exotic Race Count")
             exit()
-    else:
-        if not settings['Exotic']:
-            print("Invalid Exotic Race Count")
-            exit()
 
 
 def custom_settings(ra, po, va, ex):

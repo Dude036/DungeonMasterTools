@@ -26,14 +26,14 @@ var odd_types = [
 ]
 
 var generate_names = {
-	"Weapon": "Weapon Stores",
-	"Armor": "Armor Stores",
-	"Potion": "Potion Stores",
-	"Enchant": "Enchant Stores",
-	"Enchanter": "Enchanter Stores",
-	"Jewel": "Jewel Stores",
+	"Weapon": "Weapon Shops",
+	"Armor": "Armor Shops",
+	"Potion": "Potion Shops",
+	"Enchant": "Enchant Shops",
+	"Enchanter": "Enchanter Shops",
+	"Jewel": "Jewel Shops",
 	"Guns": "Gunsmiths",
-	"Books": "Books Shops",
+	"Books": "Book Shops",
 	"Tavern": "Tavern Shops",
 	"Food": "Food Shops",
 	"General": "General Shops",
@@ -108,6 +108,14 @@ function odd(name) {
 	switch(name) {
 		case "General":
 			base["Trinkets"] = parseInt(document.getElementById(name + "Trinkets").value);
+			var r_low  = parseInt(document.getElementById(name + "RarityLow").value);
+			var r_high = parseInt(document.getElementById(name + "RarityHigh").value);
+			if (r_low > r_high) {
+				correct = false;
+				errors += "Rarity Low is higher than Rarity High. ";
+			}
+			base["Rarity Low"] = parseInt(document.getElementById(name + "RarityLow").value);
+			base["Rarity High"] = parseInt(document.getElementById(name + "RarityHigh").value);
 
 		case "Tavern":
 			base["Rooms"] = parseInt(document.getElementById(name + "Rooms").value);
@@ -151,6 +159,9 @@ function odd(name) {
 	}
 	if (name == "General") {
 		delete base["Rooms"];
+	} else if (name == "Tavern") {
+		delete base["Rarity High"];
+		delete base["Rarity Low"];
 	}
 
 	document.getElementById(name + "Error").innerHTML = errors;
@@ -175,8 +186,8 @@ function validate() {
 	/* Validate Settings */
 	/*********************/
 	settings["Race"] = chosen_race;
-	settings["Population"] = document.getElementById("Population").value;
-	settings["Variance"] = document.getElementById("Variance").value;
+	settings["Population"] = parseInt(document.getElementById("Population").value);
+	settings["Variance"] = parseInt(document.getElementById("Variance").value);
 	var exotic_list = [];
 
 	for (var i = all_inputs.length - 1; i >= 0; i--) {
@@ -214,12 +225,12 @@ function validate() {
 	/* Validate People   */
 	/*********************/
 	var raw_people_info = document.getElementById("People_List").value.split('\n');
-	settings["Occupations"] = raw_people_info.filter((el) => {
+	generate["Occupations"] = raw_people_info.filter((el) => {
 		return el != null && el != "";
 	})
 
 	var raw_npc_info = document.getElementById("NPC_List").value.split('\n');
-	settings["NPCs"] = raw_npc_info.filter((el) => {
+	generate["NPCs"] = raw_npc_info.filter((el) => {
 		return el != null && el != "";
 	})
 
