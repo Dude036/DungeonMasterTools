@@ -8,19 +8,10 @@
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
 
-    // Expose this function to Python
-    eel.expose(say_hello_js);
-    function say_hello_js(x) { console.log("Hello from " + x); }
-
     function random_name_js() {
       var town_element = document.getElementById("TownName");
       town_element.value = random_town_name();
     }
-
-    // Call JS function
-    say_hello_js("Javascript World!");
-    // Call Python function
-    eel.say_hello_py("Javascript World!");
 
     </script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
