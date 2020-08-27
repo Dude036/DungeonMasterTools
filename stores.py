@@ -506,9 +506,9 @@ class Firearm(object):
 
         if randint(1, 101) + self.Rarity * self.Rarity >= 95:
             self.add_enchantment(Enchant())
-        if randint(1, 101) + self.Rarity * self.Rarity >= 1:
+        if randint(1, 101) + self.Rarity * self.Rarity >= 75:
             self.add_masterwork(determine_rarity([1, 9]))
-            if randint(1, 101) + self.Rarity * self.Rarity >= 1:
+            if randint(1, 101) + self.Rarity * self.Rarity >= 75:
                 special_masterwork(self)
 
         self.Misfire = [1]
