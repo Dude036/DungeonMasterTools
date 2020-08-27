@@ -8,6 +8,7 @@ import simplejson as json
 import re
 
 MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
+WeaponID = 0
 
 # A list of what stats are import to what character.
 # This is somewhat just an opinion, so if you feel it's different, then change it.
@@ -214,6 +215,7 @@ class PC(object):
             self.Feats += class_feats[self.Class][level]
 
     def __str__(self):
+        global WeaponID
         info = self.Name + '<div><div class="bold text-md" style="text-indent: 50px">' + self.Class + ' ' + \
                str(self.Level) + '</div><ul><li><span style="font-weight:bold;">Race:</span> ' + self.Race + \
                '</li><li><span style="font-weight:bold;">Gender:</span> ' + self.Gender + \
@@ -249,9 +251,22 @@ class PC(object):
             for d in weapon.Damage:
                 dam += '\'' + d + '\','
             dam += ']'
-            info += '<table><td style="width: 50%"><span class="text-md">' + weapon.Name.title() + \
-                    '</span><br /><span class="text-sm emp">' + weapon.Dice + ' (' + weapon.Crit + \
-                    ') ' + dam + '</span></td></table><br/>'
+            if weapon.Enchantment is None and weapon.Special == '':
+                info += '<table><td style="width: 50%"><span class="text-md">' + weapon.Name.title() + \
+                        '</span><br /><span class="text-sm emp">' + weapon.Dice + ' (' + weapon.Crit + \
+                        ') ' + dam + '</span></td></table><br/>'
+            else:
+                if weapon.Enchantment is None:
+                    enchanted = ''
+                else:
+                    enchanted = str(weapon.Enchantment)
+                info += '<table><td style="width: 50%"><span class="text-md" onclick="show_hide(\'a' + \
+                        str(WeaponID) + '\')" style="color:blue;">' + weapon.Name.title() + \
+                        '</span><br /><span class="text-sm emp" id=\"a' + str(WeaponID) + \
+                        '" style="display: none;">' + weapon.Dice + ' (' + weapon.Crit + \
+                        ') ' + dam + weapon.Text + enchanted + '</span></td></table><br/>'
+                WeaponID += 1
+
         info += '</ul>'
 
         # Add Feats
