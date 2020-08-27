@@ -159,7 +159,6 @@ If you're interesting in contributing to this repository, here are a few things 
 * I'm currently trying to get a character generator fully flushed out. I need to get all the data HTML friendly for basically all the classes in both Pathfinder and D&D 5e. The files that need those are `5e_class_feats.json` and `pathfinder_class_feats.json`.
 * The next big task is to get settings files setup for generating things for D&D and Pathfinder. D&D doesn't have canon rules for weapon creation, so that may be a little difficult to determine the best course of action.
 * I would also like to refactor some code, so `stores.py` isn't so bloated. An idea that I had was to create a parent item class, and have the Store contain Items, with some specializations for each type of item.
-* When making an NPC, the Weapons they get can be enchanted with a spell, but it doesn't show a spell when it's there is one.
 * I'd also like to rework weapon damage types. Adding potentially different damage types, and add some variation on material. i.e. Hot Siccatite should also deal fire damage for an average half if it's damage.
 * Slaves, however dark to add, is a potential commodity that could be traded. I already have code for a whorehouse, so it's not too far of a leap for slave traders
 * Per request by Mike, he requested a better system of Guilds when creating quests, with shops potentially for guild members.
