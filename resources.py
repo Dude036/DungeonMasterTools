@@ -283,7 +283,7 @@ legendary_material = {
     },
 }
 
-masterwork_traits = [
+masterwork_traits_weapon = [
     'Adaptive', 'Advancing', 'Agile', 'Allying', 'Ambushing', 'Anarchic',
     'Anchoring', 'Answering', 'Axiomatic', 'Bane', 'Beaming', 'Benevolent',
     'Bewildering', 'Blood-Hunting', 'Bloodsong', 'Brawling', 'Breaking',
@@ -315,7 +315,7 @@ masterwork_traits = [
     'Vorpal', 'Wounding'
 ]
 
-masterwork_trait_cost = {
+masterwork_trait_cost_weapon = {
     1: [
         'Adaptive', 'Agile', 'Allying', 'Ambushing', 'Answering', 'Bane', 
         'Beaming', 'Benevolent',  'Bewildering', 'Blood-Hunting', 'Bloodsong',
