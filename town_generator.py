@@ -6,6 +6,7 @@ import PC
 from character import create_person
 from variance import create_variance
 import simplejson as json
+from masterwork import find_masterwork_traits
 
 townHTML = '<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width" /><title></title><style>' \
            'body{max-width:800px;margin-left:auto;margin-right:auto;padding-left:5px;padding-right:5px;} html{' \
@@ -52,7 +53,11 @@ def write_store(store, rarity=True):
     for x in range(len(store.Stock)):
         info += str(store.Stock[x])
 
-    info += """</table></td></tr></table><br />"""
+    info += '</table>'
+    if '(Weapon)' in store.Store_name or '(Gunsmith)' in store.Store_name:
+        info += find_masterwork_traits(store.Stock)
+
+    info += '</td></tr></table><br />'
 
     townHTML += info
 

@@ -314,6 +314,49 @@ masterwork_traits = [
     'Unholy', 'Unseen', 'Valiant', 'Vampiric', 'Greater Vampiric', 'Vicious',
     'Vorpal', 'Wounding'
 ]
+
+masterwork_trait_cost = {
+    1: [
+        'Adaptive', 'Agile', 'Allying', 'Ambushing', 'Answering', 'Bane', 
+        'Beaming', 'Benevolent',  'Bewildering', 'Blood-Hunting', 'Bloodsong',
+        'Brawling', 'Breaking', 'Brilliant Energy', 'Called', 'Compassionate',
+        'Lesser Concealed', 'Conductive', 'Conserving', 'Corrosive', 
+        'Countering', 'Courageous', 'Cruel', 'Dazzling Radiance', 'Deadly', 
+        'Debilitating', 'Defending', 'Dispelling', 'Distance', 'Distracting',
+        'Driving', 'Dry Load', 'Fervent', 'Flaming', 'Fortuitous', 'Frost', 
+        'Furious', 'Ghost Touch', 'Grayflame', 'Grounding', 'Growing', 
+        'Guardian', 'Heartseeker', 'Huntsman', 'Impervious', 'Injecting',
+        'Keen', 'Ki Focus', 'Kinslayer', 'Limning', 'Lucky', 'Menacing',
+        'Merciful', 'Mighty Cleaving', 'Mimetic', 'Miserable', 'Neutralizing',
+        'Ominous', 'Patriotic', 'Phantom Ammunition', 'Plummeting', 'Quaking',
+        'Quenching', 'Reliable', 'Returning', 'Rusting', 'Sacred', 'Sapping', 
+        'Seaborne', 'Seeking', 'Shadowshooting','Shock', 'Shrinking', 'Smashing',
+        'Spell Storing', 'Stalking', 'Summon Bane', 'Thawing', 'Throwing',
+        'Thundering', 'Training', 'Underwater', 'Valiant', 'Vampiric', 'Vicious',
+    ],
+    2: [
+        'Advancing', 'Anarchic', 'Anchoring', 'Axiomatic', 'Concealed', 
+        'Corrosive Burst', 'Culling', 'Cyclonic', 'Dazzling', 'Defiant', 
+        'Lesser Designating', 'Dispelling Burst', 'Disruption', 
+        'Greater Distracting', 'Endless Ammunition', 'Flaming Burst', 'Furyborn',
+        'Glitterwake', 'Glorious', 'Heretical', 'Holy', 'Icy Burst', 'Igniting',
+        'Impact', 'Invigorating', 'Ki Intensifying', 'Legbreaker', 'Liberating', 
+        'Lifesurge', 'Negating', 'Peaceful', 'Penetrating', 'Phase Locking', 
+        'Planestriking', 'Sharding', 'Shattering', 'Shocking Burst', 'Silencing',
+        'Sneaky', 'Toxic', 'Treasonous', 'Truthful', 'Unseen', 
+        'Greater Vampiric', 'Wounding',
+    ],
+    3: [
+        'Dueling', 'Exhausting', 'Gory', 'Greater Lucky', 'Redeemed',
+        'Sonic Boom', 'Speed', 'Spell Stealing', 'Tailwind', 'Umbral',
+        'Unholy', 
+    ],
+    4: [
+        'Greater Designating', 'Nimble Shot', 'Greater Reliable', 'Repositioning',
+        'Second Chance'
+    ],
+    5: ['Flying', 'Heart-Piercing', 'Interfering', 'Spell Siphon',  'Vorpal'],
+}
 """
 https://the-eye.eu/public/Books/rpg.rem.uz/Pathfinder/Roleplaying%20Game/PZO1114%20GameMastery%20Guide%20%283rd%20printing%29.pdf
 Level 0 : 12.5 GP
