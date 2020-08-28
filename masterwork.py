@@ -951,18 +951,21 @@ def find_masterwork_traits(stock_list):
         html += '<p>This Seller is capable of making weapons Masterwork. To make a weapon masterwork, you need to ' + \
                 'pay someone time and money to accomplish the goal. It takes 1 day for each 1,000 gp spent on the ' + \
                 'upgrade, rounded down. Here is the following table for costs of each upgrade.</p><table><tr><th>' + \
-                'Upgrade</th><th>Cost</th>'
-        for i in range(1, 11):
-            html += '<tr><td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td></tr>'
-        html += '</table>'
+                'Upgrade</th><th>Cost</th><th>Upgrade</th><th>Cost</th></tr>'
+        for i in range(1, 11, 2):
+            html += '<tr><td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td>'
+            i += 1
+            html += '<td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td></tr>'
+        html += '</table><br>'
 
     if len(trait_list) > 1:
         trait_list.remove('')
-        html += '<table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>Cost</th></tr>'
+        html += '<table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>Money Cost' + \
+                '</th><th>Prerequisite</th></tr>'
         for item in trait_list:
             level = get_masterwork_level(item)
             html += '<tr><td>' + item + '</td><td>' + get_flavor_text(item) + '</td><td>'
-            html += str(2 * level * level * 1000) + '</td></tr>'
+            html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
         html += '</table>'
 
     return html
