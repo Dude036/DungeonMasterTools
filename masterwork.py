@@ -1,5 +1,5 @@
 from numpy.random import random, randint, choice
-from resources import masterwork_traits, masterwork_trait_cost
+from resources import masterwork_traits_weapon, masterwork_trait_cost_weapon
 
 # For Armor, See Here: https://www.d20pfsrd.com/magic-items/magic-armor/magic-armor-and-shield-special-abilities/
 # For Weapons, See Here: https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/
@@ -930,7 +930,7 @@ def get_flavor_text_weapon(name, Weapon=None):
 
 def get_masterwork_level_weapon(name):
     for i in range(1, 6):
-        if name in masterwork_trait_cost[i]:
+        if name in masterwork_trait_cost_weapon[i]:
             return i
 
 
@@ -969,3 +969,7 @@ def find_masterwork_traits_weapon(stock_list):
         html += '</table>'
 
     return html
+
+
+def get_flavor_text_armor(name, Armor=None):
+    pass
