@@ -4,7 +4,7 @@ from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jewel
 from variance import normalize_dict
 from character import create_person
 import simplejson as json
-from masterwork import special_masterwork
+from masterwork import special_masterwork_weapon
 from resources import *
 
 with open('spells.json', 'r') as inf:
@@ -240,7 +240,7 @@ class Weapon(object):
         if randint(1, 101) + self.Rarity * self.Rarity >= 75:
             self.add_masterwork(determine_rarity([1, 9]))
             if randint(1, 101) + self.Rarity * self.Rarity >= 75:
-                special_masterwork(self)
+                special_masterwork_weapon(self)
 
     def __choose_type(self, requirement=None):
         if requirement is None:
@@ -509,7 +509,7 @@ class Firearm(object):
         if randint(1, 101) + self.Rarity * self.Rarity >= 75:
             self.add_masterwork(determine_rarity([1, 9]))
             if randint(1, 101) + self.Rarity * self.Rarity >= 75:
-                special_masterwork(self)
+                special_masterwork_weapon(self)
 
         self.Misfire = [1]
         if self.Class == 'Sniper' or self.Class == 'Shotgun':

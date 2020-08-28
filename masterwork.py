@@ -5,7 +5,7 @@ from resources import masterwork_traits, masterwork_trait_cost
 # For Weapons, See Here: https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/
 
 
-def special_masterwork(Weapon, Trait=None):
+def special_masterwork_weapon(Weapon, Trait=None):
     if Trait is not None and Trait in masterwork_traits:
         Weapon.Special = Trait
     else:
@@ -91,7 +91,7 @@ def special_masterwork(Weapon, Trait=None):
         Weapon.Special = choice(special_options)
 
     # Add text to weapon Quality
-    get_flavor_text(Weapon.Special, Weapon)
+    get_flavor_text_weapon(Weapon.Special, Weapon)
 
     # Add the title of the masterwork quality to the weapon
     Weapon.Name = Weapon.Name[:2] + ' ' + Weapon.Special + Weapon.Name[2:]
@@ -99,7 +99,7 @@ def special_masterwork(Weapon, Trait=None):
     return Weapon
 
 
-def get_flavor_text(name, Weapon=None):
+def get_flavor_text_weapon(name, Weapon=None):
     text = ''
     # Add text to weapon Quality
     if name == 'Adaptive':
@@ -928,13 +928,13 @@ def get_flavor_text(name, Weapon=None):
         return text
 
 
-def get_masterwork_level(name):
+def get_masterwork_level_weapon(name):
     for i in range(1, 6):
         if name in masterwork_trait_cost[i]:
             return i
 
 
-def find_masterwork_traits(stock_list):
+def find_masterwork_traits_weapon(stock_list):
     trait_list = set()
     html = ''
 
@@ -963,8 +963,8 @@ def find_masterwork_traits(stock_list):
         html += '<table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>Money Cost' + \
                 '</th><th>Prerequisite</th></tr>'
         for item in trait_list:
-            level = get_masterwork_level(item)
-            html += '<tr><td>' + item + '</td><td>' + get_flavor_text(item) + '</td><td>'
+            level = get_masterwork_level_weapon(item)
+            html += '<tr><td>' + item + '</td><td>' + get_flavor_text_weapon(item) + '</td><td>'
             html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
         html += '</table>'
 
