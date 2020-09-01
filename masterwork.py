@@ -6,7 +6,7 @@ from resources import masterwork_traits_weapon, masterwork_trait_cost_weapon
 
 
 def special_masterwork_weapon(Weapon, Trait=None):
-    if Trait is not None and Trait in masterwork_traits:
+    if Trait is not None and Trait in masterwork_traits_weapon:
         Weapon.Special = Trait
     else:
         # Get all potential options for our weapon type

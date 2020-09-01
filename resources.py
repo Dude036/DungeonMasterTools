@@ -352,10 +352,71 @@ masterwork_trait_cost_weapon = {
         'Unholy', 
     ],
     4: [
-        'Greater Designating', 'Nimble Shot', 'Greater Reliable', 'Repositioning',
-        'Second Chance'
+        'Greater Designating', 'Nimble Shot', 'Greater Reliable',
+        'Repositioning', 'Second Chance'
     ],
-    5: ['Flying', 'Heart-Piercing', 'Interfering', 'Spell Siphon',  'Vorpal'],
+    5: ['Flying', 'Heart-Piercing', 'Interfering', 'Spell Siphon', 'Vorpal'],
+}
+
+masterwork_traits_armor = [
+    'Adamant', 'Adhesive', 'Advancing', 'Amorphous', 'Animated',
+    'Arrow Catching', 'Arrow Deflection', 'Arrow-Collecting', 'Assiduous',
+    'Balanced', 'Balanced', 'Bashing', 'Bastion', 'Benevolent', 'Billowing',
+    'Bitter', 'Blinding', 'Bloodthirsty', 'Bolstering', 'Brawling', 'Buoyant',
+    'Burdenless', 'Calming', 'Champion', 'Channeling', 'Clangorous',
+    'Cocooning', 'Comfort', 'Corsair', 'Cotraveling', 'Creeping', 'Crusading',
+    'Cushioned', 'Dastard', 'Deathless', 'Deceiving', 'Defiant', 'Delving',
+    'Determination', 'Dread Wing', 'Energy Resistance',
+    'Greater Energy Resistance', 'Improved Energy Resistance', 'Etherealness',
+    'Evolving', 'Expeditious', 'Folding', 'Fortification', 'Frosted',
+    'Ghost Spike', 'Ghost Touch', 'Glamered', 'Grinding', 'Harmonizing',
+    'Heraldic', 'Hosteling', 'Impervious', 'Invulnerability', 'Jarring',
+    'Jawbreaker', 'Jousting', 'Locksmith', 'Malevolent', 'Martyring',
+    'Mastering', 'Mental Focus', 'Merging', 'Mind Buttressing', 'Mirrored',
+    'Phantasmal', 'Phase Lurching', 'Poison-Resistant', 'Poisoning', 'Putrid',
+    'Radiant', 'Radiant Flight', 'Rallying', 'Ramming', 'Rampaging',
+    'Rebounding', 'Reflecting', 'Restful', 'Righteous', 'Sensing', 'Shadow',
+    'Shadow Blending', 'Greater Shadow', 'Improved Shadow', 'Singing', 'Slick',
+    'Greater Slick', 'Improved Slick', 'Spell Dodging', 'Spell Resistance',
+    'Spell Storing', 'Spellrending', 'Spellsink', 'Spirit-Bonded', 'Spiteful',
+    'Stanching', 'Terrain-Striding', 'Titanic', 'Trackless', 'Unbound',
+    'Unbowed', 'Undead Controlling', 'Unrighteous', 'Venom-Eating', 'Vigilant',
+    'Volcanic', 'Vouchsafing', 'Warding', 'Weeping', 'Wild', 'Withstanding',
+    'Wyrmsbreath'
+]
+
+masterwork_traits_cost_armor = {
+    1: [
+        'Adamant', 'Adhesive', 'Advancing', 'Amorphous', 'Animated',
+        'Arrow Catching', 'Arrow Deflection', 'Arrow-Collecting', 'Assiduous',
+        'Balanced', 'Balanced', 'Bashing', 'Bastion', 'Benevolent', 'Billowing',
+        'Bitter', 'Blinding', 'Bloodthirsty', 'Bolstering', 'Brawling',
+        'Buoyant', 'Burdenless', 'Calming', 'Champion', 'Channeling',
+        'Clangorous', 'Cocooning', 'Comfort', 'Corsair', 'Cotraveling',
+        'Creeping', 'Crusading', 'Cushioned', 'Dastard', 'Deathless',
+        'Deceiving', 'Defiant', 'Delving', 'Determination', 'Dread Wing',
+        'Energy Resistance', 'Greater Energy Resistance',
+        'Improved Energy Resistance', 'Etherealness', 'Evolving', 'Expeditious',
+        'Folding', 'Fortification', 'Frosted', 'Ghost Spike', 'Ghost Touch',
+        'Glamered', 'Grinding', 'Harmonizing', 'Heraldic', 'Hosteling',
+        'Impervious', 'Invulnerability', 'Jarring', 'Jawbreaker', 'Jousting',
+        'Locksmith', 'Malevolent', 'Martyring', 'Mastering', 'Mental Focus',
+        'Merging', 'Mind Buttressing', 'Mirrored', 'Phantasmal',
+        'Phase Lurching', 'Poison-Resistant', 'Poisoning', 'Putrid', 'Radiant',
+        'Radiant Flight', 'Rallying', 'Ramming', 'Rampaging', 'Rebounding',
+        'Reflecting', 'Restful', 'Righteous', 'Sensing', 'Shadow',
+        'Shadow Blending', 'Greater Shadow', 'Improved Shadow', 'Singing',
+        'Slick', 'Greater Slick', 'Improved Slick', 'Spell Dodging',
+        'Spell Resistance', 'Spell Storing', 'Spellrending', 'Spellsink',
+        'Spirit-Bonded', 'Spiteful', 'Stanching', 'Terrain-Striding', 'Titanic',
+        'Trackless', 'Unbound', 'Unbowed', 'Undead Controlling', 'Unrighteous',
+        'Venom-Eating', 'Vigilant', 'Volcanic', 'Vouchsafing', 'Warding',
+        'Weeping', 'Wild', 'Withstanding', 'Wyrmsbreath'
+    ],
+    2: [],
+    3: [],
+    4: [],
+    5: [],
 }
 """
 https://the-eye.eu/public/Books/rpg.rem.uz/Pathfinder/Roleplaying%20Game/PZO1114%20GameMastery%20Guide%20%283rd%20printing%29.pdf
