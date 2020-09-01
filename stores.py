@@ -584,7 +584,7 @@ class Firearm(object):
             s = '<tr><td style="width:50%;"><span class="text-md">' + self.Name.title() + ' (' + self.Class + \
                 ') </span><br /><span class="text-sm emp">Damage: ' + self.Dice + ' ' + str(self.Damage) + ' (' + \
                 self.Crit + ') Weight: ' + str(self.Weight) + ' lbs. Range: ' + str(self.Range) + '/' + \
-                str(self.Max_Range) + "ft.</span><br/>" + '<span class="text-xs emp">' + "Mag: " + str(self.Capacity) + \
+                str(self.Max_Range) + "ft.</span><br>" + '<span class="text-xs emp">' + "Mag: " + str(self.Capacity) + \
                 " " + misfire + "</span></td><td>" + determine_cost(self.Cost) + '</td><td>' + master + \
                 r[self.Rarity] + '</td></tr>'
         else:
@@ -593,7 +593,7 @@ class Firearm(object):
                 """) </span><br /><span class="text-sm emp" id=\"""" + str(MasterID) + \
                 """\" style="display: none;">Damage: """ + self.Dice + ' ' + str(self.Damage) + ' (' + self.Crit + \
                 ') Weight: ' + str(self.Weight) + ' lbs. Range: ' + str(self.Range) + ' / ' + str(self.Max_Range) + \
-                ' ft. Mag: ' + str(self.Capacity) + self.Text + enchanted + "</span>" + '</td><td>' + \
+                ' ft. Mag: ' + str(self.Capacity) + ' ' + misfire + self.Text + enchanted + "</span>" + '</td><td>' + \
                 determine_cost(self.Cost) + '</td><td>' + master + r[self.Rarity] + enchant_lvl + '</td></tr>'
             MasterID += 1
         return s
