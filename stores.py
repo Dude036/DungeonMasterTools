@@ -691,7 +691,7 @@ class Armor(object):
     }
 
     Weight = Cost = Rarity = Masterwork = AC = 0
-    Name = Class = ''
+    Name = Class = Special = Text = ''
     Metal = Enchantment = None
 
     def __init__(self, rare, iClass=None, iName=None):

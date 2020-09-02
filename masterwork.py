@@ -485,7 +485,7 @@ def get_flavor_text_weapon(name, Weapon=None):
                'bludgeoning damage.'
 
     elif name == 'Impervious':
-        text = "This weapon has a magical resilience against effect that would damge this weapon. This weapon " + \
+        text = "This weapon has a magical resilience against effect that would damage this weapon. This weapon " + \
                "cannot be rusted (if metallic), or warped (if wooden). It also can only be broken by another " + \
                "Impervious weapon."
 
@@ -738,7 +738,7 @@ def get_flavor_text_weapon(name, Weapon=None):
     elif name == 'Shrinking':
         text = 'This weapon shrinks itself, and its wielder. Once per long rest, you may cast Reduce on yourself ' + \
                'for the full duration. You may also speak the command word, and reduce the weapon to the size of a ' + \
-               'dagger. The weapon gains the stats of a regualr Dagger of the same material. When the command word ' + \
+               'dagger. The weapon gains the stats of a regular Dagger of the same material. When the command word ' + \
                'is spoken again, the weapon returns to its normal time.'
 
     elif name == 'Silencing':
@@ -971,5 +971,448 @@ def find_masterwork_traits_weapon(stock_list):
     return html
 
 
+def special_masterwork_armor(Armor, Trait=None):
+    if Trait is not None and Trait in masterwork_traits_armor:
+        Armor.Special = Trait
+    else:
+        special_options = [
+            'Adhesive', 'Arrow Catching', 'Arrow Deflection', 'Arrow-Collecting', 'Assiduous', 'Bastion', 'Benevolent',
+            'Billowing', 'Bitter', 'Blinding', 'Buoyant', 'Calming', 'Champion', 'Channeling', 'Clangorous',
+            'Cocooning',
+        ]
+
+        if Armor.Class == 'Light':
+            special_options += ['Balanced', 'Bloodthirsty', 'Brawling', 'Burdenless', ]
+        if Armor.Class == 'Medium':
+            special_options += ['Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', ]
+        if Armor.Class == 'Heavy':
+            special_options += ['Adamant', 'Advancing', 'Bolstering', 'Burdenless', ]
+        if Armor.Class == 'Shield':
+            special_options += ['Animated', 'Bashing', 'Bolstering',  ]
+
+        Armor.Special = choice(special_options)
+
+    get_flavor_text_armor(Armor.Special, Armor)
+
+    Armor.Name = Armor.Name[:2] + ' ' + Armor.Special + Armor.Name[2:]
+    Armor.Cost += (1 + Armor.Masterwork) * 1000
+    return Armor
+
+
 def get_flavor_text_armor(name, Armor=None):
-    pass
+    text = ''
+    if name == 'Adamant':
+        text = 'Once per day, for a total of 9 rounds, You gain resistance to all Bludgeoning, Piercing, & ' + \
+               'Slashing damage from nonmagical weapons.'
+
+    elif name == 'Adhesive':
+        text = 'while wearing this armor, you can gain the effects of <a href="https://5e.tools/spells.html#' + \
+               'spider\%20climb_phb">Spider Climb</a> for 10 rounds once per day.'
+
+    elif name == 'Advancing':
+        text = 'Upon slaying an enemy, your movement speed is doubled for that round.'
+
+    elif name == 'Amorphous':
+        text = 'You have advantage on Escaping a Grapple. You also can attempt to Escape as a bonus action.'
+
+    elif name == 'Animated':
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'Once per day, you can throw your shield out, and it operates without you needing to use your ' + \
+               'off hand. You gain the ability to weild a weapon with two hands, or wielding two weapons while '
+               'also benefiting from the Shield. This lasts for 5 consecutive rounds, and can be done ' + t + \
+               ' times a day.'
+
+    elif name == 'Arrow Catching':
+        text = 'This armor grants a +1 to AC against ranged attacks.'
+        if Armor is not None:
+            if Armor.Class == 'Shield':
+                if Armor is None:
+                    t = '[Your Masterwork Quality]'
+                else:
+                    t = str(Armor.Masterwork)
+                text += ' As a reaction to being shot by a projectile, you can attempt to catch it. Roll 1d10+' + \
+                        t + ' and reduce the amount of incoming damage by that amount. You cannot gain HP as a' + \
+                        ' of this trait. You cannot use this ability in combat if you have not acted yet.'
+
+    elif name == 'Arrow Deflection':
+        text = 'This armor grants a +2 to AC against ranged attacks. As a reaction to being shot by a ' + \
+               'projectile, you can attempt to catch it. Roll 1d10+' + t + ' and reduce the amount of ' + \
+               'incoming damage by that amount. You cannot gain HP as a of this trait.'
+
+    elif name == 'Arrow-Collecting':
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'When projectiles are fired at this armor, Roll 1d20. On a ' + t + ' or less, the projectile' + \
+               ' begins orbiting the armor. The armor can hold up to ' + t + ' projectiles. The wearer can ' + \
+               'release all projectiles orbiting the armor as a standard action towards a target. The target' + \
+               ' must be within 30 ft. Make a Ranged Attack with each projectile towards the target. ' + \
+               'All projectiles deal 1d6 damage.'
+
+    elif name == 'Assiduous':
+        text = 'Once per long rest, this armor grants advantage on a saving throw of your choice.'
+
+    elif name == 'Balanced':
+        text = 'Any attempt that a creature makes to knock the wearer of this armor prone has disadvantage. ' + \
+               ' Likewise, any attempt the wearer of this armor makes to avoid being knocked prone has advantage.'
+
+    elif name == 'Bashing':
+        text = 'If you move at least 20 ft in a straight line towards an enemy, you deal an additional 1d6 ' + \
+               'bludgeoning damage against the creature, and all attacks of opportunity have disadvantage ' + \
+               'whlie moving in that straight line.'
+
+    elif name == 'Bastion':
+        text = 'All Allies, including yourself, have advantage against Wisdom, Intelligence, and Charisma ' + \
+               'saving throws while within 15 ft of this armor.'
+
+    elif name == 'Benevolent':
+        text = 'If you are within 30 ft of an ally, you can use your standard action, to give your ally ' + \
+                'your armor\'s AC until the start of your next turn.'
+
+    elif name == 'Billowing':
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'You can use your reaction to avoid taking fall damage. DC20-' + t + ' Dexterity saving ' + \
+               'throw. On a success, you only take half of the calculated fall damage.'
+
+    elif name == 'Bitter':
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'Any natural attacks made against this creature must successed a DC8+' + t + ' to not ' + \
+               'becomed sickened. Creatures who succeed this save are immune to the armor\'s effects for' + \
+               ' 24 hours. Creatures who attempt to swallow the wearer of this armor make the save with disadvantage'
+
+    elif name == 'Blinding':
+        text = 'While fighting in bright sunlight, a creature must make a DC 14 Constitution saving throw. ' + \
+               'On a failed save, the enemy is blinded for 1d4 rounds.'
+
+    elif name == 'Bloodthirsty':
+        text = 'While fighting with this armor, the wearer gains a +1 to AC for 1d4 rounds for each enemy they ' + \
+               'have killed. If the wearer is Raging, they instead gain a +3 for 1d4 rounds.'
+
+    elif name == 'Bolstering':
+        text = 'If you make a successful attack against an enemy, add your proficiency bonus to all saving throws' + \
+               ' made against that enemy. If you already add your proficiency bonus, add it twice.'
+
+    elif name == 'Brawling':
+        text = 'Add your proficiency bonus to attack and damage when making natural attacks / unarmed strikes ' + \
+               'against enemies. If you already add your proficiency bonus, add it twice.'
+
+    elif name == 'Buoyant':
+        text = 'You no longer automatically sink when in water. When wearing this armor, you do not treat water as' + \
+               ' difficult terrain when calculating movement.'
+
+    elif name == 'Burdenless':
+        text = 'Your carrying capacity is now 30 x Strength Score. Your Drag, Lift, or Haul capacity is now 45 x ' + \
+               'Strength Score.'
+
+    elif name == 'Calming':
+        text = 'Once per long rest, you can cast <a href="https://5e.tools/spells.html#calm\%20emotions_phb">Calm ' + \
+               'Emotions</a> using this armor.'
+
+    elif name == 'Champion':
+        text = 'If you do not have the Smite Class ability; Once per day, you can expend your bonus action to deal' + \
+               '2d8 Radiant damage to an enemy. If you have the Smite Class ability, your smites now deal an ' + \
+               'additional 1d8 Radiant damage.'
+
+    elif name == 'Channeling':
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'You may use this armor as your holy symbol when casting divine spells. If you have the Channel ' + \
+               'Divinity class ability, you gain the following method for channeling. All Allies within a 20 ft.' + \
+               ' cone gain 2d6+' + t + ' HP. This ability cannot affect Undead or Constructs.'
+
+    elif name == 'Clangorous':
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'As a standard action, you slam your armor with a weapon. All creatures within 50 ft. make a DC8+' + \
+               t + '+Proficiency Constitution Saving throw. On a failed save, the creature takes a 1d8 Thunder damage.'
+
+    elif name == 'Cocooning':
+        text = 'When you call Unconscious, a thick protective membrane envelops you. All non-targetted spells and ' + \
+               ' environmental effects fail against you. This membrane lasts for 1d10 minutes, or until the wearer' + \
+               ' regains conscienceness. This ability happens only once per long rest.'
+
+    elif name == 'Comfort':
+        text = '_'
+
+    elif name == 'Corsair':
+        text = '_'
+
+    elif name == 'Cotraveling':
+        text = '_'
+
+    elif name == 'Creeping':
+        text = '_'
+
+    elif name == 'Crusading':
+        text = '_'
+
+    elif name == 'Cushioned':
+        text = '_'
+
+    elif name == 'Dastard':
+        text = '_'
+
+    elif name == 'Deathless':
+        text = '_'
+
+    elif name == 'Deceiving':
+        text = '_'
+
+    elif name == 'Defiant':
+        text = '_'
+
+    elif name == 'Delving':
+        text = '_'
+
+    elif name == 'Determination':
+        text = '_'
+
+    elif name == 'Dread Wing':
+        text = '_'
+
+    elif name == 'Energy Resistance':
+        text = '_'
+
+    elif name == 'Greater Energy Resistance':
+        text = '_'
+
+    elif name == 'Improved Energy Resistance':
+        text = '_'
+
+    elif name == 'Etherealness':
+        text = '_'
+
+    elif name == 'Evolving':
+        text = '_'
+
+    elif name == 'Expeditious':
+        text = '_'
+
+    elif name == 'Folding':
+        text = '_'
+
+    elif name == 'Fortification':
+        text = '_'
+
+    elif name == 'Frosted':
+        text = '_'
+
+    elif name == 'Ghost Spike':
+        text = '_'
+
+    elif name == 'Ghost Touch':
+        text = '_'
+
+    elif name == 'Glamered':
+        text = '_'
+
+    elif name == 'Grinding':
+        text = '_'
+
+    elif name == 'Harmonizing':
+        text = '_'
+
+    elif name == 'Heraldic':
+        text = '_'
+
+    elif name == 'Hosteling':
+        text = '_'
+
+    elif name == 'Impervious':
+        text = '_'
+
+    elif name == 'Invulnerability':
+        text = '_'
+
+    elif name == 'Jarring':
+        text = '_'
+
+    elif name == 'Jawbreaker':
+        text = '_'
+
+    elif name == 'Jousting':
+        text = '_'
+
+    elif name == 'Locksmith':
+        text = '_'
+
+    elif name == 'Malevolent':
+        text = '_'
+
+    elif name == 'Martyring':
+        text = '_'
+
+    elif name == 'Mastering':
+        text = '_'
+
+    elif name == 'Mental Focus':
+        text = '_'
+
+    elif name == 'Merging':
+        text = '_'
+
+    elif name == 'Mind Buttressing':
+        text = '_'
+
+    elif name == 'Mirrored':
+        text = '_'
+
+    elif name == 'Phantasmal':
+        text = '_'
+
+    elif name == 'Phase Lurching':
+        text = '_'
+
+    elif name == 'Poison-Resistant':
+        text = '_'
+
+    elif name == 'Poisoning':
+        text = '_'
+
+    elif name == 'Putrid':
+        text = '_'
+
+    elif name == 'Radiant':
+        text = '_'
+
+    elif name == 'Radiant Flight':
+        text = '_'
+
+    elif name == 'Rallying':
+        text = '_'
+
+    elif name == 'Ramming':
+        text = '_'
+
+    elif name == 'Rampaging':
+        text = '_'
+
+    elif name == 'Rebounding':
+        text = '_'
+
+    elif name == 'Reflecting':
+        text = '_'
+
+    elif name == 'Restful':
+        text = '_'
+
+    elif name == 'Righteous':
+        text = '_'
+
+    elif name == 'Sensing':
+        text = '_'
+
+    elif name == 'Shadow':
+        text = '_'
+
+    elif name == 'Shadow Blending':
+        text = '_'
+
+    elif name == 'Greater Shadow':
+        text = '_'
+
+    elif name == 'Improved Shadow':
+        text = '_'
+
+    elif name == 'Singing':
+        text = '_'
+
+    elif name == 'Slick':
+        text = '_'
+
+    elif name == 'Greater Slick':
+        text = '_'
+
+    elif name == 'Improved Slick':
+        text = '_'
+
+    elif name == 'Spell Dodging':
+        text = '_'
+
+    elif name == 'Spell Resistance':
+        text = '_'
+
+    elif name == 'Spell Storing':
+        text = '_'
+
+    elif name == 'Spellrending':
+        text = '_'
+
+    elif name == 'Spellsink':
+        text = '_'
+
+    elif name == 'Spirit-Bonded':
+        text = '_'
+
+    elif name == 'Spiteful':
+        text = '_'
+
+    elif name == 'Stanching':
+        text = '_'
+
+    elif name == 'Terrain-Striding':
+        text = '_'
+
+    elif name == 'Titanic':
+        text = '_'
+
+    elif name == 'Trackless':
+        text = '_'
+
+    elif name == 'Unbound':
+        text = '_'
+
+    elif name == 'Unbowed':
+        text = '_'
+
+    elif name == 'Undead Controlling':
+        text = '_'
+
+    elif name == 'Unrighteous':
+        text = '_'
+
+    elif name == 'Venom-Eating':
+        text = '_'
+
+    elif name == 'Vigilant':
+        text = '_'
+
+    elif name == 'Volcanic':
+        text = '_'
+
+    elif name == 'Vouchsafing':
+        text = '_'
+
+    elif name == 'Warding':
+        text = '_'
+
+    elif name == 'Weeping':
+        text = '_'
+
+    elif name == 'Wild':
+        text = '_'
+
+    elif name == 'Withstanding':
+        text = '_'
+
+    elif name == 'Wyrmsbreath':
+        text = '_'
+
+    if Armor is not None:
+        Armor.Text = '<p>' + text + '</p>'
+    else:
+        return text

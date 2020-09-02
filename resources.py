@@ -387,11 +387,11 @@ masterwork_traits_armor = [
 
 masterwork_traits_cost_armor = {
     1: [
-        'Adamant', 'Adhesive', 'Advancing', 'Amorphous', 'Animated',
-        'Arrow Catching', 'Arrow Deflection', 'Arrow-Collecting', 'Assiduous',
-        'Balanced', 'Balanced', 'Bashing', 'Bastion', 'Benevolent', 'Billowing',
-        'Bitter', 'Blinding', 'Bloodthirsty', 'Bolstering', 'Brawling',
-        'Buoyant', 'Burdenless', 'Calming', 'Champion', 'Channeling',
+        'Advancing', 'Amorphous', 
+        'Arrow Catching', 'Assiduous',
+        'Balanced', 'Balanced', 'Bashing', 'Benevolent', 'Billowing',
+        'Bitter', 'Blinding', 'Bolstering',
+        'Buoyant', 'Calming', 'Champion', 'Channeling',
         'Clangorous', 'Cocooning', 'Comfort', 'Corsair', 'Cotraveling',
         'Creeping', 'Crusading', 'Cushioned', 'Dastard', 'Deathless',
         'Deceiving', 'Defiant', 'Delving', 'Determination', 'Dread Wing',
@@ -413,9 +413,11 @@ masterwork_traits_cost_armor = {
         'Venom-Eating', 'Vigilant', 'Volcanic', 'Vouchsafing', 'Warding',
         'Weeping', 'Wild', 'Withstanding', 'Wyrmsbreath'
     ],
-    2: [],
-    3: [],
-    4: [],
+    2: [
+        'Adamant', 'Adhesive', 'Animated', 'Arrow Deflection', 'Bloodthirsty', 'Burdenless',
+    ],
+    3: ['Arrow-Collecting', 'Brawling', ],
+    4: ['Bastion', ],
     5: [],
 }
 """
