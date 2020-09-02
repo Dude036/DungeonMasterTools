@@ -978,17 +978,17 @@ def special_masterwork_armor(Armor, Trait=None):
         special_options = [
             'Adhesive', 'Arrow Catching', 'Arrow Deflection', 'Arrow-Collecting', 'Assiduous', 'Bastion', 'Benevolent',
             'Billowing', 'Bitter', 'Blinding', 'Buoyant', 'Calming', 'Champion', 'Channeling', 'Clangorous',
-            'Cocooning',
+            'Cocooning', 'Crusading', 'Cushioned', 
         ]
 
         if Armor.Class == 'Light':
-            special_options += ['Balanced', 'Bloodthirsty', 'Brawling', 'Burdenless', ]
+            special_options += ['Balanced', 'Bloodthirsty', 'Brawling', 'Burdenless', 'Creeping', ]
         if Armor.Class == 'Medium':
-            special_options += ['Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', ]
+            special_options += ['Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', ]
         if Armor.Class == 'Heavy':
-            special_options += ['Adamant', 'Advancing', 'Bolstering', 'Burdenless', ]
+            special_options += ['Adamant', 'Advancing', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', ]
         if Armor.Class == 'Shield':
-            special_options += ['Animated', 'Bashing', 'Bolstering',  ]
+            special_options += ['Animated', 'Bashing', 'Bolstering', ]
 
         Armor.Special = choice(special_options)
 
@@ -1021,7 +1021,7 @@ def get_flavor_text_armor(name, Armor=None):
         else:
             t = str(Armor.Masterwork)
         text = 'Once per day, you can throw your shield out, and it operates without you needing to use your ' + \
-               'off hand. You gain the ability to weild a weapon with two hands, or wielding two weapons while '
+               'off hand. You gain the ability to weild a weapon with two hands, or wielding two weapons while ' + \
                'also benefiting from the Shield. This lasts for 5 consecutive rounds, and can be done ' + t + \
                ' times a day.'
 
@@ -1146,28 +1146,25 @@ def get_flavor_text_armor(name, Armor=None):
                ' regains conscienceness. This ability happens only once per long rest.'
 
     elif name == 'Comfort':
-        text = '_'
+        text = 'This armor is comfortable enough to sleep in. You take no penalties from wearing this armor while ' + \
+               'sleeping or resting'
 
     elif name == 'Corsair':
-        text = '_'
-
-    elif name == 'Cotraveling':
-        text = '_'
+        text = 'This armor does not inhibit your movement speed, or other Dexterity based checks, such as stealth.'
 
     elif name == 'Creeping':
-        text = '_'
+        text = 'Once per day, you speak the command word of this armor, and you treat all Stealth checks as if ' + \
+               'you rolled a 17 for the next hour.'
 
     elif name == 'Crusading':
-        text = '_'
+        text = 'This armor grants an additional +2 to AC against all Undead, Aberations, and Evil Dragons.'
 
     elif name == 'Cushioned':
-        text = '_'
-
-    elif name == 'Dastard':
-        text = '_'
+        text = 'All fall damage is treated as if it were 20 feet less while wearing this armor.'
 
     elif name == 'Deathless':
-        text = '_'
+        text = 'Once per long rest, when you fall to 0 HP, you can choose to fall to 1 HP instead. For the next ' + \
+               'minute, your AC ius increased by 1.'
 
     elif name == 'Deceiving':
         text = '_'

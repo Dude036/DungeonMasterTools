@@ -387,13 +387,12 @@ masterwork_traits_armor = [
 
 masterwork_traits_cost_armor = {
     1: [
-        'Advancing', 'Amorphous', 
-        'Arrow Catching', 'Assiduous',
+        'Advancing', 'Amorphous', 'Arrow Catching', 'Assiduous',
         'Balanced', 'Balanced', 'Bashing', 'Benevolent', 'Billowing',
         'Bitter', 'Blinding', 'Bolstering',
         'Buoyant', 'Calming', 'Champion', 'Channeling',
-        'Clangorous', 'Cocooning', 'Comfort', 'Corsair', 'Cotraveling',
-        'Creeping', 'Crusading', 'Cushioned', 'Dastard', 'Deathless',
+        'Clangorous', 'Cocooning', 'Comfort',
+        'Creeping', 'Crusading', 'Cushioned',
         'Deceiving', 'Defiant', 'Delving', 'Determination', 'Dread Wing',
         'Energy Resistance', 'Greater Energy Resistance',
         'Improved Energy Resistance', 'Etherealness', 'Evolving', 'Expeditious',
@@ -414,10 +413,11 @@ masterwork_traits_cost_armor = {
         'Weeping', 'Wild', 'Withstanding', 'Wyrmsbreath'
     ],
     2: [
-        'Adamant', 'Adhesive', 'Animated', 'Arrow Deflection', 'Bloodthirsty', 'Burdenless',
+        'Adamant', 'Adhesive', 'Animated', 'Arrow Deflection', 'Bloodthirsty',
+        'Burdenless', 'Corsair', 
     ],
     3: ['Arrow-Collecting', 'Brawling', ],
-    4: ['Bastion', ],
+    4: ['Bastion', 'Deathless', ],
     5: [],
 }
 """
