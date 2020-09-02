@@ -364,8 +364,8 @@ masterwork_traits_armor = [
     'Balanced', 'Balanced', 'Bashing', 'Bastion', 'Benevolent', 'Billowing',
     'Bitter', 'Blinding', 'Bloodthirsty', 'Bolstering', 'Brawling', 'Buoyant',
     'Burdenless', 'Calming', 'Champion', 'Channeling', 'Clangorous',
-    'Cocooning', 'Comfort', 'Corsair', 'Cotraveling', 'Creeping', 'Crusading',
-    'Cushioned', 'Dastard', 'Deathless', 'Deceiving', 'Defiant', 'Delving',
+    'Cocooning', 'Comfort', 'Creeping', 'Crusading',
+    'Cushioned', 'Deathless', 'Deceiving', 'Defiant', 'Delving',
     'Determination', 'Dread Wing', 'Energy Resistance',
     'Greater Energy Resistance', 'Improved Energy Resistance', 'Etherealness',
     'Evolving', 'Expeditious', 'Folding', 'Fortification', 'Frosted',
@@ -392,8 +392,7 @@ masterwork_traits_cost_armor = {
         'Bitter', 'Blinding', 'Bolstering',
         'Buoyant', 'Calming', 'Champion', 'Channeling',
         'Clangorous', 'Cocooning', 'Comfort',
-        'Creeping', 'Crusading', 'Cushioned',
-        'Deceiving', 'Defiant', 'Delving', 'Determination', 'Dread Wing',
+        'Creeping', 'Crusading', 'Cushioned', 'Deceiving', 'Defiant',
         'Energy Resistance', 'Greater Energy Resistance',
         'Improved Energy Resistance', 'Etherealness', 'Evolving', 'Expeditious',
         'Folding', 'Fortification', 'Frosted', 'Ghost Spike', 'Ghost Touch',
@@ -414,11 +413,11 @@ masterwork_traits_cost_armor = {
     ],
     2: [
         'Adamant', 'Adhesive', 'Animated', 'Arrow Deflection', 'Bloodthirsty',
-        'Burdenless', 'Corsair', 
+        'Burdenless', 'Corsair', 'Delving', 
     ],
-    3: ['Arrow-Collecting', 'Brawling', ],
+    3: ['Arrow-Collecting', 'Brawling', 'Determination', ],
     4: ['Bastion', 'Deathless', ],
-    5: [],
+    5: ['Dread Wing', ],
 }
 """
 https://the-eye.eu/public/Books/rpg.rem.uz/Pathfinder/Roleplaying%20Game/PZO1114%20GameMastery%20Guide%20%283rd%20printing%29.pdf

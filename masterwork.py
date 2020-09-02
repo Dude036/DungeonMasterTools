@@ -978,7 +978,7 @@ def special_masterwork_armor(Armor, Trait=None):
         special_options = [
             'Adhesive', 'Arrow Catching', 'Arrow Deflection', 'Arrow-Collecting', 'Assiduous', 'Bastion', 'Benevolent',
             'Billowing', 'Bitter', 'Blinding', 'Buoyant', 'Calming', 'Champion', 'Channeling', 'Clangorous',
-            'Cocooning', 'Crusading', 'Cushioned', 
+            'Cocooning', 'Crusading', 'Cushioned', 'Deceiving', 'Defiant', 'Delving',
         ]
 
         if Armor.Class == 'Light':
@@ -986,7 +986,7 @@ def special_masterwork_armor(Armor, Trait=None):
         if Armor.Class == 'Medium':
             special_options += ['Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', ]
         if Armor.Class == 'Heavy':
-            special_options += ['Adamant', 'Advancing', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', ]
+            special_options += ['Adamant', 'Advancing', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Dread Wing', ]
         if Armor.Class == 'Shield':
             special_options += ['Animated', 'Bashing', 'Bolstering', ]
 
@@ -1164,22 +1164,36 @@ def get_flavor_text_armor(name, Armor=None):
 
     elif name == 'Deathless':
         text = 'Once per long rest, when you fall to 0 HP, you can choose to fall to 1 HP instead. For the next ' + \
-               'minute, your AC ius increased by 1.'
+               'minute, your AC is increased by 1.'
 
     elif name == 'Deceiving':
-        text = '_'
+        text = 'The wearer of this armor is not detectable via Detect Magic or Detect Evil and Good. The wearer ' + \
+               'is also considered to have an Intelligence of 3 against Detect Thoughts.'
 
     elif name == 'Defiant':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        creatures = choice([
+            'aberrations', 'beasts', 'celestials', 'constructs', 'dragons',
+            'elementals', 'fey', 'fiends', 'giants', 'monstrosities', 'oozes',
+            'plants', 'undead'
+        ])
+        text = 'This armor treats all incoming damage from ' + creatures + ' as if it were ' + t + ' less.'
 
     elif name == 'Delving':
-        text = '_'
+        text = 'You gain a natural burrow movement speed of 10 ft.'
 
     elif name == 'Determination':
-        text = '_'
+        text = 'Once per long rest, when you fall to 0 HP, you can choose to fall to 1 HP instead.'
 
     elif name == 'Dread Wing':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'This armor transforms itself into the wings and the claws of a powerful Dragon. You do not gain the benefits of your AC, but you gain a fly speed of 60 ft. and a natural claw attack. It takes 1 minute to transform between your armored state and the dragon state. Your Claw uses your Strength bonus for damage and attack. The claw does 1d10+Strength modifier+' + t + '. You can transform a number of times equal to 2 x ' + t
 
     elif name == 'Energy Resistance':
         text = '_'
