@@ -393,11 +393,8 @@ masterwork_traits_cost_armor = {
         'Buoyant', 'Calming', 'Champion', 'Channeling',
         'Clangorous', 'Cocooning', 'Comfort',
         'Creeping', 'Crusading', 'Cushioned', 'Deceiving', 'Defiant',
-        'Energy Resistance', 'Greater Energy Resistance',
-        'Improved Energy Resistance', 'Etherealness', 'Evolving', 'Expeditious',
-        'Folding', 'Fortification', 'Frosted', 'Ghost Spike', 'Ghost Touch',
-        'Glamered', 'Grinding', 'Harmonizing', 'Heraldic', 'Hosteling',
-        'Impervious', 'Invulnerability', 'Jarring', 'Jawbreaker', 'Jousting',
+        'Expeditious', 'Light Fortification', 'Frosted',
+        'Glamered', 'Grinding', 'Harmonizing', 'Jawbreaker',
         'Locksmith', 'Malevolent', 'Martyring', 'Mastering', 'Mental Focus',
         'Merging', 'Mind Buttressing', 'Mirrored', 'Phantasmal',
         'Phase Lurching', 'Poison-Resistant', 'Poisoning', 'Putrid', 'Radiant',
@@ -413,11 +410,11 @@ masterwork_traits_cost_armor = {
     ],
     2: [
         'Adamant', 'Adhesive', 'Animated', 'Arrow Deflection', 'Bloodthirsty',
-        'Burdenless', 'Corsair', 'Delving', 
+        'Burdenless', 'Corsair', 'Delving', 'Evolving', 'Hosteling',
     ],
-    3: ['Arrow-Collecting', 'Brawling', 'Determination', ],
-    4: ['Bastion', 'Deathless', ],
-    5: ['Dread Wing', ],
+    3: ['Arrow-Collecting', 'Brawling', 'Determination', 'Energy Resistance', 'Etherealness', 'Medium Fortification', 'Invulnerability', ],
+    4: ['Bastion', 'Deathless', 'Improved Energy Resistance', ],
+    5: ['Dread Wing', 'Greater Energy Resistance', 'Heavy Fortification', ],
 }
 """
 https://the-eye.eu/public/Books/rpg.rem.uz/Pathfinder/Roleplaying%20Game/PZO1114%20GameMastery%20Guide%20%283rd%20printing%29.pdf

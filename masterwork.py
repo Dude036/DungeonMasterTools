@@ -978,17 +978,19 @@ def special_masterwork_armor(Armor, Trait=None):
         special_options = [
             'Adhesive', 'Arrow Catching', 'Arrow Deflection', 'Arrow-Collecting', 'Assiduous', 'Bastion', 'Benevolent',
             'Billowing', 'Bitter', 'Blinding', 'Buoyant', 'Calming', 'Champion', 'Channeling', 'Clangorous',
-            'Cocooning', 'Crusading', 'Cushioned', 'Deceiving', 'Defiant', 'Delving',
+            'Cocooning', 'Crusading', 'Cushioned', 'Deceiving', 'Defiant', 'Delving', 'Energy Resistance',
+            'Improved Energy Resistance', 'Greater Energy Resistance', 'Evolving', 'Light Fortification',
+            'Medium Fortification', 'Heavy Fortification', 'Frosted', 'Harmonizing', 'Invulnerability', 
         ]
 
         if Armor.Class == 'Light':
-            special_options += ['Balanced', 'Bloodthirsty', 'Brawling', 'Burdenless', 'Creeping', ]
+            special_options += ['Balanced', 'Bloodthirsty', 'Brawling', 'Burdenless', 'Creeping', 'Etherealness', 'Expeditious', 'Glamered', 'Grinding', ]
         if Armor.Class == 'Medium':
-            special_options += ['Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', ]
+            special_options += ['Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Etherealness', 'Expeditious', 'Glamered', 'Grinding', ]
         if Armor.Class == 'Heavy':
-            special_options += ['Adamant', 'Advancing', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Dread Wing', ]
+            special_options += ['Adamant', 'Advancing', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Dread Wing', 'Glamered', 'Grinding', ]
         if Armor.Class == 'Shield':
-            special_options += ['Animated', 'Bashing', 'Bolstering', ]
+            special_options += ['Animated', 'Bashing', 'Bolstering', 'Jawbreaker', ]
 
         Armor.Special = choice(special_options)
 
@@ -1193,73 +1195,104 @@ def get_flavor_text_armor(name, Armor=None):
             t = '[Your Masterwork Quality]'
         else:
             t = str(Armor.Masterwork)
-        text = 'This armor transforms itself into the wings and the claws of a powerful Dragon. You do not gain the benefits of your AC, but you gain a fly speed of 60 ft. and a natural claw attack. It takes 1 minute to transform between your armored state and the dragon state. Your Claw uses your Strength bonus for damage and attack. The claw does 1d10+Strength modifier+' + t + '. You can transform a number of times equal to 2 x ' + t
+        text = 'This armor transforms itself into the wings and the claws of a powerful Dragon. You do not gain ' + \
+               'the benefits of your AC, but you gain a fly speed of 60 ft. and a natural claw attack. It takes 1 ' + \
+               'minute to transform between your armored state and the dragon state. Your Claw uses your Strength ' + \
+               'bonus for damage and attack. The claw does 1d10+Strength modifier+' + t + '. You can transform a ' + \
+               'number of times equal to 2 x ' + t
 
     elif name == 'Energy Resistance':
-        text = '_'
+        energy = choice(['Fire', 'Cold', 'Acid', 'Lightning', 'Poison', 'Thunder'])
+        text = 'This armor absorbs the first 10 points of ' + energy + ' damage that you would have otherwise taken'
 
     elif name == 'Greater Energy Resistance':
-        text = '_'
+        energy = choice(['Fire', 'Cold', 'Acid', 'Lightning', 'Poison', 'Thunder'])
+        text = 'This armor absorbs the first 30 points of ' + energy + ' damage that you would have otherwise taken'
 
     elif name == 'Improved Energy Resistance':
-        text = '_'
+        energy = choice(['Fire', 'Cold', 'Acid', 'Lightning', 'Poison', 'Thunder'])
+        text = 'This armor absorbs the first 20 points of ' + energy + ' damage that you would have otherwise taken'
 
     elif name == 'Etherealness':
-        text = '_'
+        text = 'Once per day, as an action, you can speak the command word of this armor and you gain the effects ' + \
+               'of the <a href="https://5e.tools/spells.html#etherealness_phb">Etherealness</a> spell, which last ' + \
+               'for 10 minutes.'
 
     elif name == 'Evolving':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'This armor takes damage, and equips itself to handle more damage. As a bonus action, you can gain ' + \
+               'resistance to a certain elemental type for 1 minute. This effect does not stack with other ' + \
+               'resistances. Once you have selected an elemental type, you cannot change that type until the end ' + \
+               'of the 1 minute. You can do this ' + t + ' times a day.'
 
     elif name == 'Expeditious':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'As a free action, you gain +10 movement speed for the duration of your turn ' + t + ' times a day.'
 
-    elif name == 'Folding':
-        text = '_'
+    elif name == 'Light Fortification':
+        text = 'When an attack scores a critical hit, the enemy attacking, rolls 1d20. On a 5 or less, the ' + \
+               'critical is negated, and the attack does normal damage instead.'
 
-    elif name == 'Fortification':
-        text = '_'
+    elif name == 'Medium Fortification':
+        text = 'When an attack scores a critical hit, the enemy attacking, rolls 1d20. On a 10 or less, the ' + \
+               'critical is negated, and the attack does normal damage instead.'
+
+    elif name == 'Heavy Fortification':
+        text = 'When an attack scores a critical hit, the enemy attacking, rolls 1d20. On a 15 or less, the ' + \
+               'critical is negated, and the attack does normal damage instead.'
 
     elif name == 'Frosted':
-        text = '_'
-
-    elif name == 'Ghost Spike':
-        text = '_'
-
-    elif name == 'Ghost Touch':
-        text = '_'
+        text = 'If an enemy successfully hits you with a natural attack, they take 1d8 cold damage from your armor'
 
     elif name == 'Glamered':
-        text = '_'
+        text = 'This armor can transform to and from a normsal set of clothing as an action.'
 
     elif name == 'Grinding':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'This armor is coverd in spikes. If you grapple a creature, they take 1d6+' + t + ' slashing ' + \
+               'damage for every turn you have a grapple on them.'
 
     elif name == 'Harmonizing':
-        text = '_'
-
-    elif name == 'Heraldic':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'You gain the ability to use the Help action as a Bonus action. You also gain a +' + t + ' to all ' + \
+               'preformance checks made while wearing this armor.'
 
     elif name == 'Hosteling':
-        text = '_'
-
-    elif name == 'Impervious':
-        text = '_'
+        text = 'This armor can house an animal companion. As an action, your animal companion can spend their ' + \
+               'action to enter your armors space. They remain there as if under the effects of <a href="' + \
+               'https://5e.tools/spells.html#leomund\'s\%20tiny\%20hut_phb">Leomund\'s Tiny Hut.</a> If the armor ' + \
+               'is destroyed while there in an animal companion inside of the armor, the animal is thrust out of ' + \
+               'the armor.'
 
     elif name == 'Invulnerability':
-        text = '_'
-
-    elif name == 'Jarring':
-        text = '_'
+        text = 'Once per day, as an action, your armor blocks all attacks made against it. This effect lasts until' + \
+               ' the end of your next turn. Once this effect is over, you gain 1 level of exhaustion. The ' + \
+               'exhaustion is curable by regular means.'
 
     elif name == 'Jawbreaker':
-        text = '_'
-
-    elif name == 'Jousting':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'You can now use your shield to make an attack. Your shield uses your Strength modifier for this ' + \
+               'attack. You attack does 1d8+' + t + " damage. Once you've made an attack with this shield, your " + \
+               "fshield's bonus to your AC is halved until the start of your next turn."
 
     elif name == 'Locksmith':
-        text = '_'
+        text = 'The wearer of this armor treats all Sleight of Hand checks as if they are proficient. If you are ' + \
+               'proficient, you gain expertise with Sleight of Hand checks.'
 
     elif name == 'Malevolent':
         text = '_'
