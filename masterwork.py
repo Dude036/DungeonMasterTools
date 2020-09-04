@@ -950,7 +950,9 @@ def find_masterwork_traits_weapon(stock_list):
     if '' in trait_list:
         html += '<p>This Seller is capable of making weapons Masterwork. To make a weapon masterwork, you need to ' + \
                 'pay someone time and money to accomplish the goal. It takes 1 day for each 1,000 gp spent on the ' + \
-                'upgrade, rounded down. Here is the following table for costs of each upgrade.</p><table><tr><th>' + \
+                'upgrade, rounded down. Here is the following table for costs of each upgrade.</p><p class="' + \
+                'text-sm emp">* Note that upgrading a weapon from one level to another costs its normal amount ' + \
+                'minus the previous amount. I.e. From level 3 to level 4 costs 32,000 - 18,000.</p><table><tr><th>' + \
                 'Upgrade</th><th>Cost</th><th>Upgrade</th><th>Cost</th></tr>'
         for i in range(1, 11, 2):
             html += '<tr><td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td>'
@@ -980,17 +982,28 @@ def special_masterwork_armor(Armor, Trait=None):
             'Billowing', 'Bitter', 'Blinding', 'Buoyant', 'Calming', 'Champion', 'Channeling', 'Clangorous',
             'Cocooning', 'Crusading', 'Cushioned', 'Deceiving', 'Defiant', 'Delving', 'Energy Resistance',
             'Improved Energy Resistance', 'Greater Energy Resistance', 'Evolving', 'Light Fortification',
-            'Medium Fortification', 'Heavy Fortification', 'Frosted', 'Harmonizing', 'Invulnerability', 
+            'Medium Fortification', 'Heavy Fortification', 'Frosted', 'Harmonizing', 'Invulnerability', 'Malevolent',
+            'Mastering', 'Merging', 'Mirrored', 'Poison-Resistant', 'Radiant', 'Rallying', 'Rebounding', 
         ]
 
         if Armor.Class == 'Light':
-            special_options += ['Balanced', 'Bloodthirsty', 'Brawling', 'Burdenless', 'Creeping', 'Etherealness', 'Expeditious', 'Glamered', 'Grinding', ]
+            special_options += [
+                'Balanced', 'Bloodthirsty', 'Brawling', 'Burdenless', 'Creeping', 'Etherealness', 'Expeditious', 
+                'Glamered', 'Grinding', 'Mental Focus', 'Phantasmal', 'Phase Lurching', 'Restful', 
+            ]
         if Armor.Class == 'Medium':
-            special_options += ['Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Etherealness', 'Expeditious', 'Glamered', 'Grinding', ]
+            special_options += [
+                'Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Etherealness', 
+                'Expeditious', 'Glamered', 'Grinding', 'Mental Focus', 'Mind Buttressing', 'Poisoning', 'Putrid',
+                'Restful', 
+            ]
         if Armor.Class == 'Heavy':
-            special_options += ['Adamant', 'Advancing', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Dread Wing', 'Glamered', 'Grinding', ]
+            special_options += [
+                'Adamant', 'Advancing', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Dread Wing', 'Glamered',
+                'Grinding', 'Mind Buttressing', 'Poisoning', 'Putrid', 'Radiant Flight',
+            ]
         if Armor.Class == 'Shield':
-            special_options += ['Animated', 'Bashing', 'Bolstering', 'Jawbreaker', ]
+            special_options += ['Animated', 'Bashing', 'Bolstering', 'Jawbreaker', 'Poisoning', 'Reflecting', ]
 
         Armor.Special = choice(special_options)
 
@@ -1295,64 +1308,118 @@ def get_flavor_text_armor(name, Armor=None):
                'proficient, you gain expertise with Sleight of Hand checks.'
 
     elif name == 'Malevolent':
-        text = '_'
+        text = 'This armor grants proficiency with Intimidation and Deception. If you are already proficient with ' + \
+               'either skill, you gain expertise.'
 
     elif name == 'Martyring':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'If you confirm a critical hit, any ally within 30 feet of you gains 1d8+' + t + ' HP.'
 
     elif name == 'Mastering':
-        text = '_'
+        mans = choice([
+            "Commander's Strike", "Disarming Attack", "Distracting Strike", "Evasive Footwork", "Feinting Attack",
+            "Goading Attack", "Lunging Attack", "Maneuvering Attack", "Menacing Attack", "Parry", "Precision Attack",
+            "Pushing Attack", "Rally", "Riposte", "Sweeping Attack", "Trip Attack"
+        ])
+        if Armor is None:
+            t = '[Half Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork / 2)
+        text = 'This weapon gives the wearer a Battle Master Maneuver. Use the Fighter Battle Master rules for ' + \
+               'this armor. The Maneuver that this armor gets is a "' + mans + '". This armor grants ' + t + \
+               'Superiority Dice.'
 
     elif name == 'Mental Focus':
-        text = '_'
+        text = 'This armor grants advantage on concentration checks made to remain focused on a spell.'
 
     elif name == 'Merging':
-        text = '_'
+        text = 'This armor can meld with its wearer, changing its armor to be natural armor.'
 
     elif name == 'Mind Buttressing':
-        text = '_'
+        text = 'The wearer of this armor has advantage on all saves that result in the Charmed condition.'
 
     elif name == 'Mirrored':
-        text = '_'
+        text = 'This armor allows the wearer to cast Mirror Image on themselves once per day.'
 
     elif name == 'Phantasmal':
-        text = '_'
+        if Armor is None:
+            t = '[Half Your Masterwork Quality, rounded down]'
+        else:
+            t = str(Armor.Masterwork // 2)
+        text = 'The wearer of this armor grants the ability to become ethereal. As a standard action, you command ' + \
+               'the armor and you gain an additional +4 AC against creatures who do not have Blindsight or ' + \
+               'Truesight. You have ' + t + ' minutes worth of this effect, and can use it in 1 minute incriments.' + \
+               'Deactivating this armor also takes a standard action.'
 
     elif name == 'Phase Lurching':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'You can move through solid objects as if they were an empty square. You can move through ' + t + \
+               ' squares, at a distance of 5 ft., per day. Traversing through Stone, Wood, or Common Metals costs ' + \
+               'no additional movement. Moving through Magical Materials, or Lead costs an additional square of ' + \
+               'movement. Moving through an enemy costs 2 additional squares of movement. If you end your movement' + \
+               ' inside of a material, you are shunted out in the closest open square, dealing 4d6 Bludgeoning ' + \
+               'damage per square the wearer passes through.'
 
     elif name == 'Poison-Resistant':
-        text = '_'
+        if Armor is None:
+            t = '[Double Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork * 2)
+        text = 'You gain a +' + t + ' against Poison Saving throws, and you also gain resistance to Poison Damage.'
 
     elif name == 'Poisoning':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'This armor can hold up to ' + t + ' doses of poison in this armor. If a creature makes a natural ' + \
+               'attack against you, they potentially break a vial and ingest, or make contact with it. If the ' + \
+               'enemy would have with you without this armor, the creature needs to make a Dexterity saving throw.' + \
+               ' DC8+Proficiency+' + t + '. On a failed save, the creature breaks the Vial of Poison.'
 
     elif name == 'Putrid':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'Any creature within 10 feet away from you must make a Constitution saving throw, [DC10+' + t + \
+               ']. On a failed save the creature is Poisoned for 1d4+' + t + '. If the creature is succeeds, ' + \
+               'they are immmune to this effect for 24 hours. The wearer of this armor is immune to this effect,' + \
+               ' so long as their Constitution is greater than 10.'
 
     elif name == 'Radiant':
-        text = '_'
+        text = 'As a standard action, your armor glows like the <a href="https://5e.tools/spells.html#light_phb">' + \
+               'Light</a> spell.'
 
     elif name == 'Radiant Flight':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'This armor can transform into Angelic wings. This transformation takes 1 round. You lose all ' + \
+               'benefits of your armor, and gain a flight speed of 60 ft. You can remain in this form for ' + t + \
+               ' minutes a day.'
 
     elif name == 'Rallying':
-        text = '_'
-
-    elif name == 'Ramming':
-        text = '_'
-
-    elif name == 'Rampaging':
-        text = '_'
+        text = 'Any ally within 30 ft can spend their bonus action staring at your armor to gain an additional 1d4' + \
+               ' on all attacks made this round. They cannot gain this benefit again for 1 minute.'
 
     elif name == 'Rebounding':
-        text = '_'
+        text = 'The wearer of this armor has an additional +2 to AC against ranged attacks.'
 
     elif name == 'Reflecting':
-        text = '_'
+        text = 'Once per day, you can redirect a spell targetted at you. Roll 1d20. On 10 or less, the spell hits ' + \
+               'you. On 11 to 17, the spell reflects harmlessly away from you. On 18 to 20, the spell reflects ' + \
+               'back to the caster.'
 
     elif name == 'Restful':
-        text = '_'
+        text = 'The wearer of this armor only needs to spend 2 hours of sleep to gain the benefits of a long rest.'
 
     elif name == 'Righteous':
         text = '_'
