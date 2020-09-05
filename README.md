@@ -169,3 +169,9 @@ Be sure to run the following line in the main directory before pushing or pullin
 yapf -i -p *.py
 ```
 
+Compile to Exe on Windows:
+
+```
+pyinstaller.exe --add-data './*.json;.' --add-data './web/*;web' gui.py
+```
+
