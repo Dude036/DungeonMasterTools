@@ -358,7 +358,7 @@ masterwork_trait_cost_weapon = {
     5: ['Flying', 'Heart-Piercing', 'Interfering', 'Spell Siphon', 'Vorpal'],
 }
 
-masterwork_traits_armor = [
+masterwork_trait_armor = [
     'Adamant', 'Adhesive', 'Advancing', 'Amorphous', 'Animated',
     'Arrow Catching', 'Arrow Deflection', 'Arrow-Collecting', 'Assiduous',
     'Balanced', 'Balanced', 'Bashing', 'Bastion', 'Benevolent', 'Billowing',
@@ -368,57 +368,56 @@ masterwork_traits_armor = [
     'Cushioned', 'Deathless', 'Deceiving', 'Defiant', 'Delving',
     'Determination', 'Dread Wing', 'Energy Resistance',
     'Greater Energy Resistance', 'Improved Energy Resistance', 'Etherealness',
-    'Evolving', 'Expeditious', 'Folding', 'Fortification', 'Frosted',
-    'Ghost Spike', 'Ghost Touch', 'Glamered', 'Grinding', 'Harmonizing',
-    'Heraldic', 'Hosteling', 'Impervious', 'Invulnerability', 'Jarring',
-    'Jawbreaker', 'Jousting', 'Locksmith', 'Malevolent', 'Martyring',
-    'Mastering', 'Mental Focus', 'Merging', 'Mind Buttressing', 'Mirrored',
-    'Phantasmal', 'Phase Lurching', 'Poison-Resistant', 'Poisoning', 'Putrid',
-    'Radiant', 'Radiant Flight', 'Rallying', 'Ramming', 'Rampaging',
-    'Rebounding', 'Reflecting', 'Restful', 'Righteous', 'Sensing', 'Shadow',
-    'Shadow Blending', 'Greater Shadow', 'Improved Shadow', 'Singing', 'Slick',
-    'Greater Slick', 'Improved Slick', 'Spell Dodging', 'Spell Resistance',
-    'Spell Storing', 'Spellrending', 'Spellsink', 'Spirit-Bonded', 'Spiteful',
-    'Stanching', 'Terrain-Striding', 'Titanic', 'Trackless', 'Unbound',
-    'Unbowed', 'Undead Controlling', 'Unrighteous', 'Venom-Eating', 'Vigilant',
-    'Volcanic', 'Vouchsafing', 'Warding', 'Weeping', 'Wild', 'Withstanding',
-    'Wyrmsbreath'
+    'Evolving', 'Expeditious', 'Light Fortification', 'Medium Fortification',
+    'Heavy Fortification', 'Frosted', 'Glamered', 'Grinding', 'Harmonizing',
+    'Hosteling', 'Invulnerability', 'Jawbreaker', 'Locksmith', 'Malevolent',
+    'Martyring', 'Mastering', 'Mental Focus', 'Merging', 'Mind Buttressing',
+    'Mirrored','Phantasmal', 'Phase Lurching', 'Poison-Resistant', 'Poisoning',
+    'Putrid', 'Radiant', 'Radiant Flight', 'Rallying', 'Rebounding',
+    'Reflecting', 'Restful', 'Righteous', 'Sensing', 'Shadow',
+    'Shadow Blending', 'Greater Shadow', 'Improved Shadow', 'Singing',
+    'Spell Dodging', 'Spell Resistance', 'Spell Storing', 'Spellrending',
+    'Spellsink', 'Spirit-Bonded', 'Terrain-Striding', 'Titanic', 'Trackless',
+    'Unbowed', 'Unrighteous', 'Volcanic', 'Warding', 'Weeping', 'Wild',
+    'Withstanding', 'Wyrmsbreath'
 ]
 
-masterwork_traits_cost_armor = {
+masterwork_trait_cost_armor = {
     1: [
-        'Advancing', 'Amorphous', 'Arrow Catching', 'Assiduous',
-        'Balanced', 'Balanced', 'Bashing', 'Benevolent', 'Billowing',
-        'Bitter', 'Blinding', 'Bolstering',
-        'Buoyant', 'Calming', 'Champion', 'Channeling',
-        'Clangorous', 'Cocooning', 'Comfort',
-        'Creeping', 'Crusading', 'Cushioned', 'Deceiving', 'Defiant',
-        'Expeditious', 'Light Fortification', 'Frosted',
-        'Glamered', 'Grinding', 'Harmonizing', 'Jawbreaker',
-        'Locksmith', 'Mind Buttressing', 'Mirrored',
-        'Poison-Resistant', 'Poisoning', 'Putrid', 'Rebounding',
-        'Restful', 'Righteous', 'Sensing', 'Shadow',
-        'Shadow Blending', 'Greater Shadow', 'Improved Shadow', 'Singing',
-        'Slick', 'Greater Slick', 'Improved Slick', 'Spell Dodging',
-        'Spell Resistance', 'Spell Storing', 'Spellrending', 'Spellsink',
-        'Spirit-Bonded', 'Spiteful', 'Stanching', 'Terrain-Striding', 'Titanic',
-        'Trackless', 'Unbound', 'Unbowed', 'Undead Controlling', 'Unrighteous',
-        'Venom-Eating', 'Vigilant', 'Volcanic', 'Vouchsafing', 'Warding',
-        'Weeping', 'Wild', 'Withstanding', 'Wyrmsbreath'
+        'Advancing', 'Amorphous', 'Arrow Catching', 'Assiduous', 'Balanced', 
+        'Balanced', 'Bashing', 'Benevolent', 'Billowing', 'Bitter', 'Blinding',
+        'Bolstering', 'Buoyant', 'Calming', 'Champion', 'Channeling',
+        'Clangorous', 'Cocooning', 'Comfort', 'Creeping', 'Crusading',
+        'Cushioned', 'Deceiving', 'Defiant', 'Expeditious',
+        'Light Fortification', 'Frosted', 'Glamered', 'Grinding',
+        'Harmonizing', 'Jawbreaker', 'Locksmith', 'Mind Buttressing',
+        'Mirrored', 'Poison-Resistant', 'Poisoning', 'Putrid', 'Rebounding',
+        'Restful', 'Sensing', 'Shadow', 'Singing', 'Spell Storing',
+        'Spellrending', 'Spirit-Bonded', 'Terrain-Striding', 'Trackless',
+        'Warding', 'Withstanding'
     ],
     2: [
         'Adamant', 'Adhesive', 'Animated', 'Arrow Deflection', 'Bloodthirsty',
-        'Burdenless', 'Corsair', 'Delving', 'Evolving', 'Hosteling', 'Malevolent',
-        'Mastering', 'Mental Focus', 'Phantasmal', 'Phase Lurching', 'Radiant',
-        'Rallying', 
+        'Burdenless', 'Corsair', 'Delving', 'Evolving', 'Hosteling',
+        'Malevolent', 'Mastering', 'Mental Focus', 'Phantasmal',
+        'Phase Lurching', 'Radiant', 'Rallying', 'Shadow Blending', 
+        'Spell Dodging', 'Lesser Spell Resistance', 'Volcanic', 'Weeping', 
+        'Wyrmsbreath'
     ],
     3: [
         'Arrow-Collecting', 'Brawling', 'Determination', 'Energy Resistance',
         'Etherealness', 'Medium Fortification', 'Invulnerability', 'Merging',
-        'Radiant Flight', 'Reflecting', 
+        'Radiant Flight', 'Reflecting', 'Righteous', 'Sensing',
+        'Improved Shadow', 'Spell Resistance', 'Titanic', 'Unrighteous', 'Wild'
     ],
-    4: ['Bastion', 'Deathless', 'Improved Energy Resistance', 'Martyring', ],
-    5: ['Dread Wing', 'Greater Energy Resistance', 'Heavy Fortification', ],
+    4: [
+        'Bastion', 'Deathless', 'Improved Energy Resistance', 'Martyring',
+        'Greater Shadow', 'Improved Spell Resistance' 
+    ],
+    5: [
+        'Dread Wing', 'Greater Energy Resistance', 'Heavy Fortification',
+        'Greater Spell Resistance', 'Spellsink', 'Unbowed'
+    ],
 }
 """
 https://the-eye.eu/public/Books/rpg.rem.uz/Pathfinder/Roleplaying%20Game/PZO1114%20GameMastery%20Guide%20%283rd%20printing%29.pdf

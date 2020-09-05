@@ -1,5 +1,5 @@
 from numpy.random import random, randint, choice
-from resources import masterwork_traits_weapon, masterwork_trait_cost_weapon
+from resources import masterwork_traits_weapon, masterwork_trait_cost_weapon, masterwork_trait_armor, masterwork_trait_cost_armor
 
 # For Armor, See Here: https://www.d20pfsrd.com/magic-items/magic-armor/magic-armor-and-shield-special-abilities/
 # For Weapons, See Here: https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/
@@ -983,27 +983,34 @@ def special_masterwork_armor(Armor, Trait=None):
             'Cocooning', 'Crusading', 'Cushioned', 'Deceiving', 'Defiant', 'Delving', 'Energy Resistance',
             'Improved Energy Resistance', 'Greater Energy Resistance', 'Evolving', 'Light Fortification',
             'Medium Fortification', 'Heavy Fortification', 'Frosted', 'Harmonizing', 'Invulnerability', 'Malevolent',
-            'Mastering', 'Merging', 'Mirrored', 'Poison-Resistant', 'Radiant', 'Rallying', 'Rebounding', 
+            'Mastering', 'Merging', 'Mirrored', 'Poison-Resistant', 'Radiant', 'Rallying', 'Rebounding', 'Righteous',
+            'Sensing', 'Spell Dodging', 'Spell Resistance', 'Improved Spell Resistance', 'Greater Spell Resistance',
+            'Lesser Spell Resistance', 'Spell Storing', 'Spellrending', 'Unrighteous', 'Warding', 'Weeping', 
         ]
 
         if Armor.Class == 'Light':
             special_options += [
                 'Balanced', 'Bloodthirsty', 'Brawling', 'Burdenless', 'Creeping', 'Etherealness', 'Expeditious', 
-                'Glamered', 'Grinding', 'Mental Focus', 'Phantasmal', 'Phase Lurching', 'Restful', 
+                'Glamered', 'Grinding', 'Mental Focus', 'Phantasmal', 'Phase Lurching', 'Restful', 'Shadow', 
+                'Shadow Blending', 'Improved Shadow',  'Greater Shadow', 'Spellsink', 'Terrain-Striding', 'Wild', 
+                'Withstanding', 
             ]
         if Armor.Class == 'Medium':
             special_options += [
                 'Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Etherealness', 
                 'Expeditious', 'Glamered', 'Grinding', 'Mental Focus', 'Mind Buttressing', 'Poisoning', 'Putrid',
-                'Restful', 
+                'Restful', 'Spirit-Bonded', 'Terrain-Striding', 'Wild', 'Withstanding', 
             ]
         if Armor.Class == 'Heavy':
             special_options += [
                 'Adamant', 'Advancing', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Dread Wing', 'Glamered',
-                'Grinding', 'Mind Buttressing', 'Poisoning', 'Putrid', 'Radiant Flight',
+                'Grinding', 'Mind Buttressing', 'Poisoning', 'Putrid', 'Radiant Flight', 'Titanic', 'Unbowed',
+                'Volcanic', 'Wild', 'Withstanding', 
             ]
         if Armor.Class == 'Shield':
-            special_options += ['Animated', 'Bashing', 'Bolstering', 'Jawbreaker', 'Poisoning', 'Reflecting', ]
+            special_options += [
+                'Animated', 'Bashing', 'Bolstering', 'Jawbreaker', 'Poisoning', 'Reflecting', 'Singing',
+                ]
 
         Armor.Special = choice(special_options)
 
@@ -1422,106 +1429,150 @@ def get_flavor_text_armor(name, Armor=None):
         text = 'The wearer of this armor only needs to spend 2 hours of sleep to gain the benefits of a long rest.'
 
     elif name == 'Righteous':
-        text = '_'
+        text = 'You gain resistance to Radiant damage, and deal an additional 1d6 Radiant damage on all attacks ' + \
+               'made while wearing this armor.'
 
     elif name == 'Sensing':
-        text = '_'
+        text = 'Gain Blindsight for 20 ft.'
 
     elif name == 'Shadow':
-        text = '_'
+        text = 'When in Dim light, the wearer of this armor gains a +5 to Stealth checks. While in Darkness, ' + \
+               'the wearer gains an additional +5 to stealth.'
 
     elif name == 'Shadow Blending':
-        text = '_'
+        text = 'When in Dim light, any creature making an attack against the wearer rolls 1d20. On a 4 or less, ' + \
+               'the enemy misses. When in Darkness, on a 10 or less, the enemy misses.'
 
     elif name == 'Greater Shadow':
-        text = '_'
+        text = 'When in Dim light, the wearer of this armor gains a +15 to Stealth checks. While in Darkness, ' + \
+               'the wearer gains an additional +5 to stealth.'
 
     elif name == 'Improved Shadow':
-        text = '_'
+        text = 'When in Dim light, the wearer of this armor gains a +10 to Stealth checks. While in Darkness, ' + \
+               'the wearer gains an additional +5 to stealth.'
 
     elif name == 'Singing':
-        text = '_'
-
-    elif name == 'Slick':
-        text = '_'
-
-    elif name == 'Greater Slick':
-        text = '_'
-
-    elif name == 'Improved Slick':
-        text = '_'
+        text = 'A bard using this shield can use it as if it were an instrument.'
 
     elif name == 'Spell Dodging':
-        text = '_'
+        text = 'You have advantage on spells that give an area of effect.'
 
     elif name == 'Spell Resistance':
-        text = '_'
+        text = 'You gain an additional +4 to AC against ranged spell attacks.'
+
+    elif name == 'Improved Spell Resistance':
+        text = 'You gain an additional +6 to AC against ranged spell attacks.'
+
+    elif name == 'Greater Spell Resistance':
+        text = 'You gain an additional +8 to AC against ranged spell attacks.'
+
+    elif name == 'Lesser Spell Resistance':
+        text = 'You gain an additional +2 to AC against ranged spell attacks.'
 
     elif name == 'Spell Storing':
-        text = '_'
+        if Armor is not None:
+            if Armor.Masterwork == 1:
+                t = '1st'
+            elif Armor.Masterwork == 2:
+                t = '2nd'
+            elif Armor.Masterwork == 3:
+                t = "3rd"
+            else:
+                t = str(Armor.Masterwork) + 'th'
+        else:
+            t = '[Your Masterwork Quality]'
+        text = "This Armor holds a " + t + " level spell slot. Whatever spell is stored in this Armor, is cast at " + \
+               t + " level. To store a slot in this Armor, you cast the spell as if it was a ritual spell, " + \
+               "regardless of if the spell has a ritual tag or not. Casting the spell from this Armor is no " + \
+               "different from casting the spell normally, other than the spell slot used."
 
     elif name == 'Spellrending':
-        text = '_'
+        text = 'Once per day, on a Critical hit, you can choose a magical effect on the enemy, and remove it ' + \
+               'permenantly. If this magical effect is from a spell, the spell is dispelled. If the magical ' + \
+               'effect is from an item, the item no longer grants that benefit, but remains intact.'
 
     elif name == 'Spellsink':
-        text = '_'
+        if Armor is None:
+            a = '<table><tr><th>Slot Level</th><th>Rounds</th><th>Damage</th></tr><tr><td>1</td><td>1</td><td>16' + \
+                '</td></tr><tr><td>2</td><td>2</td><td>32</td></tr><tr><td>3</td><td>3</td><td>48</td></tr><tr>' + \
+                '<td>4</td><td>4</td><td>64</td></tr><tr><td>5</td><td>5</td><td>80</td></tr><tr><td>6</td><td>6' + \
+                '</td><td>96</td></tr><tr><td>7</td><td>7</td><td>112</td></tr><tr><td>8</td><td>8</td><td>128' + \
+                '</td></tr><tr><td>9</td><td>9</td><td>144</td></tr></table>'
+        else:
+            a = '<table><tr><th>Slot Level</th><th>Rounds</th><th>Damage</th></tr>'
+            i = 1
+            while i >= Armor.Masterwork:
+                a += '<tr><td>' + str(i) + '</td><td>' + str(i) + '</td><td>' + str(i * 16) + '</td></tr>'
+                i += 1
+            a += '</table>'
+        text = 'You armor can convert magical damage into spell slots. On a successful save against a spells that ' + \
+               'deals damage, the damage you would have otherwise taken on a fail is absorbed by your armor. For ' + \
+               'each round this armor isn\'t converting a spell, it loses 1d10 points of damage. You can convert ' + \
+               'damage into a spell slot based on two factors. The time taken, and damage taken. This armor can ' + \
+               'only convert damage into a spell slot up to its Masterwork Quality. Refer to the following chart ' + \
+               ' for time and damage.' + a
 
     elif name == 'Spirit-Bonded':
-        text = '_'
-
-    elif name == 'Spiteful':
-        text = '_'
-
-    elif name == 'Stanching':
-        text = '_'
+        text = 'You gain resistance to Psychic damage.'
 
     elif name == 'Terrain-Striding':
-        text = '_'
+        text = 'Moving through nonmagical difficult terrain costs you no extra movement. You can also pass through' + \
+               ' nonmagical plants without being slowed by them and without taking damage from them if they have ' + \
+               'thorns, spines, or similar hazards.'
 
     elif name == 'Titanic':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'While wearing this armor, you can enlarge yourself to one size category larger for ' + t + \
+               ' minutes. While these minutes do not need to be consecutive, they must be used in 1 minute ' + \
+               'incriments. You can enlarge yourself as a standard action.'
 
     elif name == 'Trackless':
-        text = '_'
-
-    elif name == 'Unbound':
-        text = '_'
+        terrain = choice(['Arctic', 'Coast', 'Desert', 'Forest', 'Grassland', 'Mountain', 'Swamp'])
+        text = 'You leave behind no tracks, and cannot be followed except by magical means. You also gain +5 to ' + \
+               'Stealth & Survival in a ' + terrain + ' terrain.'
 
     elif name == 'Unbowed':
-        text = '_'
-
-    elif name == 'Undead Controlling':
-        text = '_'
+        text = 'When an attack is made against the wearer, as a reaction, the wearer can decide that the armor ' + \
+               'absorbs all the damage instead of the wearer. The Armor then Explodes in a shower of shrapnel, ' + \
+               'dealing 1d6 points of slashing damage per points of Armor Bonus granted by the armor, to all ' + \
+               'creatures within 10 ft of the wearer, except the wearer. A successful DC20 Dexterity Saving throw' + \
+               ' halves the damage. i.e. if the armor grants a +5 to AC, the armor deals 5d6 damage. The armor is ' + \
+               'then permenantly destroyed, and can only be made whole be a Wish spell.'
 
     elif name == 'Unrighteous':
-        text = '_'
-
-    elif name == 'Venom-Eating':
-        text = '_'
-
-    elif name == 'Vigilant':
-        text = '_'
+        text = 'You gain resistance to Necrotic damage, and deal an additional 1d6 Necrotic damage on all attacks ' + \
+               'made while wearing this armor.'
 
     elif name == 'Volcanic':
-        text = '_'
-
-    elif name == 'Vouchsafing':
-        text = '_'
+        text = 'All creatures, except the wearer, within 5 ft of this armor take 1d6 fire damage.'
 
     elif name == 'Warding':
-        text = '_'
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
+        text = 'This armor grants resistance to all damage types for ' + t + ' rounds per day. This effect can be ' + \
+               'toggled as a free action taken on your turn.'
 
     elif name == 'Weeping':
-        text = '_'
+        text = 'All attacks made by the wearer that cause Bleed damage, increase the bleed dice by one size. 1 => ' + \
+               'd2 => d4 => d6 => d8 => d10 => d12 => d20.'
 
     elif name == 'Wild':
-        text = '_'
+        text = 'This armor transforms with its wearer. If the wearer polymorphs or wild shapes, they are granted ' + \
+               'the AC bonus in new form as well.'
 
     elif name == 'Withstanding':
-        text = '_'
+        text = 'This armor negates effect that deal damage additional against this creature\'s type, alignment, or' + \
+               ' other specific property.'
 
     elif name == 'Wyrmsbreath':
-        text = '_'
+        text = 'This weapon grants the weilder the ability to use a breath weapon. The wearer of thie armor may ' + \
+               'cast the spell <a href="https://5e.tools/spells.html#dragon\'s%20breath_xge">Dragon\'s Breath</a>.' + \
+               ' Once cast, roll 1d10. On a 10, the breath weapon is recharged, and able to be used again.'
 
     if Armor is not None:
         Armor.Text = '<p>' + text + '</p>'
