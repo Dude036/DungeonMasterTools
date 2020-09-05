@@ -240,6 +240,7 @@ function validate() {
 	/*********************/
 	generate["Allow Pokemon"] = all_select.Pokemon.value;
 	generate["Dump Json"] = all_select.DumpJson.value;
+	generate["Town Name"] = document.getElementById('TownName').value;
 
 	console.log(settings);
 	console.log(generate);

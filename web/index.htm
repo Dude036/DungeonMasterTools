@@ -13,6 +13,11 @@
       town_element.value = random_town_name();
     }
 
+    eel.expose(town_name_js);
+    function town_name_js(name) {
+      document.getElementById("mainHeader").innerHTML = "The town of '" + name + "' has been created!";
+    }
+
     </script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>

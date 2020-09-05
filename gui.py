@@ -11,7 +11,8 @@ def submit(settings, generate):
     print("Form has been submitted.")
     json.dump(generate, open('generate.json', 'w'), indent=4)
     json.dump(settings, open('settings.json', 'w'), indent=4)
-    main()
+    name = main()
+    eel.town_name_js(name)
 
 
 if __name__ == '__main__':

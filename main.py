@@ -122,6 +122,7 @@ def main():
         generator["Dump Json"])
     town_generator.generate_people(generator['Occupations'], generator['NPCs'],
                                    town_name, generator["Dump Json"])
+    return town_name
 
 
 if __name__ == '__main__':
