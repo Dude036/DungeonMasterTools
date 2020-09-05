@@ -4,7 +4,7 @@ from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jewel
 from variance import normalize_dict
 from character import create_person
 import simplejson as json
-from masterwork import special_masterwork_weapon
+from masterwork import special_masterwork_weapon, special_masterwork_armor
 from resources import *
 
 with open('spells.json', 'r') as inf:
@@ -229,7 +229,7 @@ class Weapon(object):
     Damage = []
     Enchantment = None
 
-    def __init__(self, rare, iClass=None, iName=None):
+    def __init__(self, rare, iClass=None, iName=None, iTrait=None):
         self.Rarity = rare
         self.Name = iName
         self.__choose_type(iClass)
@@ -240,7 +240,7 @@ class Weapon(object):
         if randint(1, 101) + self.Rarity * self.Rarity >= 75:
             self.add_masterwork(determine_rarity([1, 9]))
             if randint(1, 101) + self.Rarity * self.Rarity >= 75:
-                special_masterwork_weapon(self)
+                special_masterwork_weapon(self, iTrait)
 
     def __choose_type(self, requirement=None):
         if requirement is None:
@@ -457,7 +457,7 @@ class Firearm(object):
     Misfire = []
     Damage = []
 
-    def __init__(self, rarity, iClass=None, iName=None):
+    def __init__(self, rarity, iClass=None, iName=None, iTrait=None):
         if iClass is None or iClass not in list(possible_guns.keys()):
             self.Class = choice(list(possible_guns.keys()))
         else:
@@ -509,7 +509,7 @@ class Firearm(object):
         if randint(1, 101) + self.Rarity * self.Rarity >= 75:
             self.add_masterwork(determine_rarity([1, 9]))
             if randint(1, 101) + self.Rarity * self.Rarity >= 75:
-                special_masterwork_weapon(self)
+                special_masterwork_weapon(self, iTrait)
 
         self.Misfire = [1]
         if self.Class == 'Sniper' or self.Class == 'Shotgun':
@@ -687,14 +687,13 @@ class Armor(object):
             30,
             45,
         ],
-        # Wooden cost's 2/3's less
     }
 
     Weight = Cost = Rarity = Masterwork = AC = 0
     Name = Class = Special = Text = ''
     Metal = Enchantment = None
 
-    def __init__(self, rare, iClass=None, iName=None):
+    def __init__(self, rare, iClass=None, iName=None, iTrait=None):
         self.Rarity = rare
         self.Name = iName
         self.Class = iClass
@@ -705,6 +704,8 @@ class Armor(object):
             self.add_enchantment(Enchant())
         if randint(1, 101) + self.Rarity * self.Rarity >= 95:
             self.add_masterwork(determine_rarity([1, 9]))
+            if randint(1, 101) + self.Rarity * self.Rarity >= 75:
+                special_masterwork_armor(self, iTrait)
 
     def __choose_metal(self):
         if self.Rarity > 4:
@@ -787,19 +788,26 @@ class Armor(object):
             "Level 8",
             "Level 9",
         ]
-        master = "Masterwork " if self.Masterwork > 0 else ""
+
         if self.Enchantment is None:
+            enchant_lvl = ''
+            enchanted = ''
+        else:
+            enchant_lvl = ', ' + l[self.Enchantment.Level]
+            enchanted = str(self.Enchantment)
+
+        master = "Masterwork " if self.Masterwork > 0 else ""
+        if self.Enchantment is None and self.Special == '':
             s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + ' (' + self.Class + \
                 """) </span><br /><span class="text-sm emp">""" + 'AC: +' + str(self.AC) + ' Weight: ' + \
                 str(self.Weight) + """ lbs</span></td><td>""" + determine_cost(self.Cost) + """</td><td>""" + \
                 master + r[self.Rarity] + """</td></tr>"""
         else:
-            s = """<tr><td style="width:50%;"><span class="text-md" onclick="show_hide('""" + str(MasterID) + \
-                """')" style="color:blue;">""" + self.Name + ' (' + self.Class + \
-                """) </span><br /><span class="text-sm emp" id=\"""" + str(MasterID) + \
-                """\" style="display: none;">""" + 'AC: +' + str(self.AC) + ' Weight: ' + str(self.Weight) + " lbs " + \
-                str(self.Enchantment) + """</span></td><td>""" + determine_cost(self.Cost) + """</td><td>""" + \
-                master + r[self.Rarity] + ', ' + l[self.Enchantment.Level] + """</td></tr>"""
+            s = '<tr><td style="width:50%;"><span class="text-md" onclick="show_hide(\'' + str(MasterID) + '\')"' + \
+                ' style="color:blue;">' + self.Name + ' (' + self.Class + ') </span><br /><span class="text-sm ' + \
+                'emp" id=\"' + str(MasterID) + '\" style="display: none;">' + 'AC: +' + str(self.AC) + ' Weight: ' + \
+                str(self.Weight) + " lbs " + self.Text + enchanted + '</span></td><td>' + determine_cost(self.Cost) + \
+                '</td><td>' + master + r[self.Rarity] + enchant_lvl + '</td></tr>'
             MasterID += 1
         return s
 

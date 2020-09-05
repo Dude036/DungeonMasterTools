@@ -928,9 +928,9 @@ def get_flavor_text_weapon(name, Weapon=None):
         return text
 
 
-def get_masterwork_level_weapon(name):
+def get_masterwork_level(name, cost_stuff):
     for i in range(1, 6):
-        if name in masterwork_trait_cost_weapon[i]:
+        if name in cost_stuff[i]:
             return i
 
 
@@ -965,7 +965,7 @@ def find_masterwork_traits_weapon(stock_list):
         html += '<table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>Money Cost' + \
                 '</th><th>Prerequisite</th></tr>'
         for item in trait_list:
-            level = get_masterwork_level_weapon(item)
+            level = get_masterwork_level(item, masterwork_trait_cost_weapon)
             html += '<tr><td>' + item + '</td><td>' + get_flavor_text_weapon(item) + '</td><td>'
             html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
         html += '</table>'
@@ -1060,6 +1060,10 @@ def get_flavor_text_armor(name, Armor=None):
                         ' of this trait. You cannot use this ability in combat if you have not acted yet.'
 
     elif name == 'Arrow Deflection':
+        if Armor is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Armor.Masterwork)
         text = 'This armor grants a +2 to AC against ranged attacks. As a reaction to being shot by a ' + \
                'projectile, you can attempt to catch it. Roll 1d10+' + t + ' and reduce the amount of ' + \
                'incoming damage by that amount. You cannot gain HP as a of this trait.'
@@ -1159,8 +1163,8 @@ def get_flavor_text_armor(name, Armor=None):
             t = '[Your Masterwork Quality]'
         else:
             t = str(Armor.Masterwork)
-        text = 'As a standard action, you slam your armor with a weapon. All creatures within 50 ft. make a DC8+' + \
-               t + '+Proficiency Constitution Saving throw. On a failed save, the creature takes a 1d8 Thunder damage.'
+        text = 'As a standard action, you slam your armor with a weapon. All creatures within 50 ft. make a [DC8+' + \
+               t + '+Proficiency] Constitution Saving throw. On a failed save the creature takes a 1d8 Thunder damage.'
 
     elif name == 'Cocooning':
         text = 'When you call Unconscious, a thick protective membrane envelops you. All non-targetted spells and ' + \
@@ -1558,8 +1562,8 @@ def get_flavor_text_armor(name, Armor=None):
                'toggled as a free action taken on your turn.'
 
     elif name == 'Weeping':
-        text = 'All attacks made by the wearer that cause Bleed damage, increase the bleed dice by one size. 1 => ' + \
-               'd2 => d4 => d6 => d8 => d10 => d12 => d20.'
+        text = 'All attacks made by the wearer that cause Bleed damage, increase the bleed dice by one size ' + \
+               'category. 1 => d2 => d4 => d6 => d8 => d10 => d12 => d20.'
 
     elif name == 'Wild':
         text = 'This armor transforms with its wearer. If the wearer polymorphs or wild shapes, they are granted ' + \
@@ -1578,3 +1582,42 @@ def get_flavor_text_armor(name, Armor=None):
         Armor.Text = '<p>' + text + '</p>'
     else:
         return text
+
+
+def find_masterwork_traits_armor(stock_list):
+    trait_list = set()
+    html = ''
+
+    # Find all Traits
+    for item in stock_list:
+        if item.Special != '':
+            trait_list.add(item.Special)
+        if item.Masterwork > 0:
+            trait_list.add('')
+
+    # Convert to List
+    trait_list = list(trait_list)
+    if '' in trait_list:
+        html += '<p>This Seller is capable of making Armor Masterwork. To make a armor masterwork, you need to ' + \
+                'pay someone time and money to accomplish the goal. It takes 1 day for each 1,000 gp spent on the ' + \
+                'upgrade, rounded down. Here is the following table for costs of each upgrade.</p><p class="' + \
+                'text-sm emp">* Note that upgrading a armor from one level to another costs its normal amount ' + \
+                'minus the previous amount. I.e. From level 3 to level 4 costs 32,000 - 18,000.</p><table><tr><th>' + \
+                'Upgrade</th><th>Cost</th><th>Upgrade</th><th>Cost</th></tr>'
+        for i in range(1, 11, 2):
+            html += '<tr><td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td>'
+            i += 1
+            html += '<td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td></tr>'
+        html += '</table><br>'
+
+    if len(trait_list) > 1:
+        trait_list.remove('')
+        html += '<table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>Money Cost' + \
+                '</th><th>Prerequisite</th></tr>'
+        for item in trait_list:
+            level = get_masterwork_level(item, masterwork_trait_cost_armor)
+            html += '<tr><td>' + item + '</td><td>' + get_flavor_text_armor(item) + '</td><td>'
+            html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
+        html += '</table>'
+
+    return html
