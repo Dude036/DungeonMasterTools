@@ -200,8 +200,6 @@ def name_parser(race, gender):
             name = default_name(Merfolk, gender)
         elif race == 'Orc':
             name = default_name(Orc, gender)
-        elif race == 'Simic Hybrid':
-            name = default_name(SimicHybrid, gender, False)
         elif race == 'Svirfneblin':
             name = default_name(Svirfneblin, gender)
         elif race == 'Tian':
@@ -250,6 +248,8 @@ def name_parser(race, gender):
             name = default_single(Ratfolk, gender)
         elif race == 'Samsarans':
             name = default_single(Samsarans)
+        elif race == 'Simic Hybrid':
+            name = default_name(SimicHybrid, gender)
         elif race == 'Sylph':
             name = default_single(Sylph, gender)
         elif race == 'Undine':
