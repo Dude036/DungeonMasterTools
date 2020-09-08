@@ -5,3 +5,5 @@ __pycache__/
 *.pyc
 *.csv
 *.town.json
+dist/
+build/
