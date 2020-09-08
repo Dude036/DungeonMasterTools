@@ -29,6 +29,8 @@ questHTML = '<!DOCTYPE html><html><head><meta name="viewport" content="width=dev
 class QuestBoard(object):
     Low = High = Quantity = 0
     Board = []
+    Members = list()
+    Positions = list()
     TownName = ''
 
     def __init__(self, low, high, quan, town_name):
@@ -56,8 +58,11 @@ class QuestBoard(object):
                 if isinstance(q.Other, Character):
                     # No NPC allocated, create a monster
                     print(q.Other.Name, ':: NPC :: created for', q.Title)
+                    p = PC(q.Other)
+                    self.Members.append(p)
+                    self.Positions.append(q.Title)
                     questHTML += '<table class="wrapper-box"><tr><td><span class="text-md">' + q.Title + ': ' + \
-                                 str(PC(q.Other)) + '</div></td></tr></table><br />'
+                                 str(p) + '</div></td></tr></table><br />'
                 elif q.Other != 'Monster':
                     # Specific Monster
                     print_monster(pick_monster(name=q.Other))

@@ -30,7 +30,7 @@ inventory_head_rarity = '</div><span class="text-lg bold">Inventory <span class=
 inventory_head_type = '</div><span class="text-lg bold">Inventory <span class="text-sm emp"> - Inflation:</span>' \
                       '</span><table style="width:100%;" class="inventory-table"><tr><th style="text-align:left;">' \
                       'Item</th><th style="text-align:left;">Cost</th><th style="text-align:left;">Type</th></tr>'
-characters = []
+characters = positions = []
 Notable = False
 
 
@@ -109,7 +109,7 @@ def generate_shops(w,
                    name='',
                    dump_json=False):
     """ [# of Stores, Rarity Low, Rarity High, Quan High, Quan Low] """
-    global townHTML
+    global characters, positions, townHTML
     from names import TownNamer
     town_name = str(TownNamer()) if name == '' else name
     townHTML += "<h1>" + town_name + "</h1><p>Description</p>"
@@ -238,6 +238,8 @@ def generate_shops(w,
 
     for _ in range(qu[0]):
         q = quests.QuestBoard(qu[1], qu[2], qu[3], town_name)
+        characters = q.Members
+        positions = q.Positions
         townHTML += str(q)
         full_town[i] = q.__dict__
         i += 1
@@ -254,9 +256,14 @@ def generate_shops(w,
 
 
 def generate_people(pc, npc, town_name, dump_json=False):
+    global characters, positions
     full_town = {}
     if dump_json:
         full_town = json.load(open(town_name + '.town.json', 'r'))
+
+    for i in range(len(characters)):
+        write_npc(characters[i], positions[i])
+        full_town[characters[i]] = characters[i]
 
     for p in pc:
         person = create_person(create_variance())
