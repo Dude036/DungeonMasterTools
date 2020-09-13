@@ -414,19 +414,21 @@ class Weapon(object):
             enchanted = str(self.Enchantment)
         for c in self.Damage:
             dam += '\'' + c + '\','
+        throwable = ''
+        if self.Class == 'Thrown':
+            throwable = ' x' + choice([5, 10, 15, 20, 25, 30])
         if self.Enchantment is None and self.Special == '':
-            s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + \
-            ' (' + self.Class + """) </span><br /><span class="text-sm emp">""" + \
-            'Damage: ' + self.Dice + ' (' + self.Crit + ') [' + dam + '] Weight: ' + \
-            str(self.Weight) + """ lbs</span></td><td>""" + determine_cost(self.Cost) + \
-            """</td><td>""" + master + r[self.Rarity] + """</td></tr>"""
+            s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + throwable + ' (' + self.Class + \
+                ') </span' + '><br /><span class="text-sm emp">' + 'Damage: ' + self.Dice + ' (' + self.Crit + ') [' + \
+                dam + '] Weight: ' + str(self.Weight) + """ lbs</span></td><td>""" + determine_cost(self.Cost) + \
+                '</td><td>' + master + r[self.Rarity] + '</td></tr>'
         else:
             s = """<tr><td style="width:50%;"><span class="text-md" onclick="show_hide('""" + str(MasterID) + \
-                """')" style="color:blue;">""" + self.Name + ' (' + self.Class + \
-                """) </span><br /><span class="text-sm emp" id=\"""" + str(MasterID) + \
-                """\" style="display: none;">""" + 'Damage: ' + self.Dice + ' (' + self.Crit + ') [' + dam + \
-                '] Weight: ' + str(self.Weight) + ' lbs. ' + self.Text + enchanted + """</span></td><td>""" + \
-                determine_cost(self.Cost) + '</td><td>' + master + r[self.Rarity] + enchant_lvl + '</td></tr>'
+                """')" style="color:blue;">""" + self.Name + throwable + ' (' + self.Class + ') </span><br />' + \
+                '<span class=' + '"text-sm emp" id=\"' + str(MasterID) + '\" style="display: none;">Damage: ' + \
+                self.Dice + ' (' + self.Crit + ') [' + dam + '] Weight: ' + str(self.Weight) + ' lbs. ' + self.Text + \
+                enchanted + '</span></td><td>' + determine_cost(self.Cost) + '</td><td>' + master + r[self.Rarity] + \
+                enchant_lvl + '</td></tr>'
             MasterID += 1
         return s
 
