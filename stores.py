@@ -416,7 +416,7 @@ class Weapon(object):
             dam += '\'' + c + '\','
         throwable = ''
         if self.Class == 'Thrown':
-            throwable = ' x' + choice([5, 10, 15, 20, 25, 30])
+            throwable = ' x' + str(choice([5, 10, 15, 20, 25, 30]))
         if self.Enchantment is None and self.Special == '':
             s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + throwable + ' (' + self.Class + \
                 ') </span' + '><br /><span class="text-sm emp">' + 'Damage: ' + self.Dice + ' (' + self.Crit + ') [' + \
