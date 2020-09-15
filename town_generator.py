@@ -34,7 +34,7 @@ characters = positions = []
 Notable = False
 
 
-def write_store(store, rarity=True):
+def write_store(store, rarity=True, additional=0):
     global townHTML
     info = store_head + store.Store_name + """</span><br />\n<span class="bold text-md">Proprietor: </span><span""" + \
            """ class="text-md">"""
@@ -55,7 +55,7 @@ def write_store(store, rarity=True):
 
     info += '</table>'
     if '(Weapon)' in store.Store_name or '(Gunsmith)' in store.Store_name:
-        info += find_masterwork_traits_weapon(store.Stock)
+        info += find_masterwork_traits_weapon(store.Stock, additional)
     if '(Armor' in store.Store_name:
         info += find_masterwork_traits_armor(store.Stock)
 
@@ -124,8 +124,8 @@ def generate_shops(w,
         store = create_weapon_shop(
             create_person(create_variance()), [w[1], w[2]],
             randint(w[3], w[4]),
-            inflate=w[5])
-        write_store(store)
+            inflate=w[6])
+        write_store(store, additional=w[5])
         full_town[i] = store.to_dict()
         i += 1
 

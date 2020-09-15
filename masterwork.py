@@ -934,7 +934,7 @@ def get_masterwork_level(name, cost_stuff):
             return i
 
 
-def find_masterwork_traits_weapon(stock_list):
+def find_masterwork_traits_weapon(stock_list, additional_traits=0):
     trait_list = set()
     html = ''
 
@@ -960,7 +960,7 @@ def find_masterwork_traits_weapon(stock_list):
             html += '<td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td></tr>'
         html += '</table><br>'
 
-    if len(trait_list) > 1:
+    if len(trait_list) > 1 or additional_traits > 0:
         trait_list.remove('')
         html += '<table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>Money Cost' + \
                 '</th><th>Prerequisite</th></tr>'
@@ -968,6 +968,14 @@ def find_masterwork_traits_weapon(stock_list):
             level = get_masterwork_level(item, masterwork_trait_cost_weapon)
             html += '<tr><td>' + item + '</td><td>' + get_flavor_text_weapon(item) + '</td><td>'
             html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
+
+    for _ in range(additional_traits):
+        level = randint(1, 6)
+        item = choice(masterwork_trait_cost_weapon[level])
+        html += '<tr><td>' + item + '</td><td>' + get_flavor_text_weapon(item) + '</td><td>'
+        html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
+
+    if len(trait_list) > 1 or additional_traits > 0:
         html += '</table>'
 
     return html

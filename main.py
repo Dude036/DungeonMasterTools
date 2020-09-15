@@ -14,6 +14,7 @@ def main():
         generator['Weapon Shops']["Rarity High"],
         generator['Weapon Shops']["Quantity Low"],
         generator['Weapon Shops']["Quantity High"],
+        generator['Weapon Shops']["Additional Traits"],
         generator['Weapon Shops']["Inflation"]
     ]
     Armor = [
