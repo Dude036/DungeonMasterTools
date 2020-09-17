@@ -185,6 +185,7 @@ function validate() {
 	/*********************/
 	/* Validate Settings */
 	/*********************/
+	settings["System"] = document.getElementById("System").value;
 	settings["Race"] = chosen_race;
 	settings["Population"] = parseInt(document.getElementById("Population").value);
 	settings["Variance"] = parseInt(document.getElementById("Variance").value);
