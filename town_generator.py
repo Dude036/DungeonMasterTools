@@ -54,9 +54,11 @@ def write_store(store, rarity=True, additional=0):
         info += str(store.Stock[x])
 
     info += '</table>'
-    if '(Weapon)' in store.Store_name or '(Gunsmith)' in store.Store_name:
+    if '(Weapon)' in store.Store_name:
         info += find_masterwork_traits_weapon(store.Stock, additional)
-    if '(Armor' in store.Store_name:
+    elif '(Gunsmith)' in store.Store_name:
+        info += find_masterwork_traits_weapon(store.Stock, additional)
+    elif '(Armor' in store.Store_name:
         info += find_masterwork_traits_armor(store.Stock)
 
     info += '</td></tr></table><br />'
@@ -133,8 +135,8 @@ def generate_shops(w,
         store = create_armor_shop(
             create_person(create_variance()), [a[1], a[2]],
             randint(a[3], a[4]),
-            inflate=a[5])
-        write_store(store)
+            inflate=a[6])
+        write_store(store, additional=a[5])
         full_town[i] = store.to_dict()
         i += 1
 
@@ -224,8 +226,8 @@ def generate_shops(w,
         store = create_gunsmith(
             create_person(create_variance()), [gu[1], gu[2]],
             randint(gu[3], gu[4]),
-            inflate=gu[5])
-        write_store(store)
+            inflate=gu[6])
+        write_store(store, additional=gu[5])
         full_town[i] = store.to_dict()
         i += 1
 

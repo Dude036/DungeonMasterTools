@@ -23,6 +23,7 @@ def main():
         generator['Armor Shops']["Rarity High"],
         generator['Armor Shops']["Quantity Low"],
         generator['Armor Shops']["Quantity High"],
+        generator['Armor Shops']["Additional Traits"],
         generator['Armor Shops']["Inflation"]
     ]
     Potion = [
@@ -97,6 +98,7 @@ def main():
         generator["Gunsmiths"]["Rarity High"],
         generator["Gunsmiths"]["Quantity Low"],
         generator["Gunsmiths"]["Quantity High"],
+        generator["Gunsmiths"]["Additional Traits"],
         generator["Gunsmiths"]["Inflation"]
     ]
     Variety = [
