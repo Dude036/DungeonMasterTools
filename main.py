@@ -104,7 +104,8 @@ def main():
     Variety = [
         generator["Variety"]["# of Stores"],
         generator["Variety"]["Quantity Low"],
-        generator["Variety"]["Quantity High"], generator["Variety"]["Inflation"]
+        generator["Variety"]["Quantity High"],
+        generator["Variety"]["Inflation"]
     ]
     Quests = [
         generator["Quest Boards"]["# of Stores"],
