@@ -7,8 +7,13 @@ import simplejson as json
 from masterwork import special_masterwork_weapon, special_masterwork_armor
 from resources import *
 
-with open('spells.json', 'r') as inf:
-    MasterSpells = json.load(inf, encoding='utf-8')
+SpellSource = json.load(open('settings.json', 'r'))['System']
+if SpellSource == 'D&D 5':
+    with open('5e_spells.json', 'r') as inf:
+        MasterSpells = json.load(inf, encoding='utf-8')
+else:
+    with open('spells.json', 'r') as inf:
+        MasterSpells = json.load(inf, encoding='utf-8')
 with open('wondrous.json', 'r') as inf:
     MasterWondrous = json.load(inf, encoding='utf-8')
 
