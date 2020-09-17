@@ -10,7 +10,7 @@ Monster_Types = {
         'Coins & Small Objects',
         'Armor and weapons',
     ],
-    "animal": 
+    "animal": [
         'Coins',
         'Coins and Gems',
         'Coins & Small Objects',
