@@ -11,7 +11,7 @@ SpellSource = json.load(open('settings.json', 'r'))['System']
 if SpellSource == 'D&D 5':
     with open('5e_spells.json', 'r') as inf:
         MasterSpells = json.load(inf, encoding='utf-8')
-else:
+elif SpellSource == 'Pathfinder 1':
     with open('spells.json', 'r') as inf:
         MasterSpells = json.load(inf, encoding='utf-8')
 with open('wondrous.json', 'r') as inf:
