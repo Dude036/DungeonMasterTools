@@ -10,7 +10,7 @@ Monster_Types = {
         'Coins & Small Objects',
         'Armor and weapons',
     ],
-    "animal": [
+    "animal": 
         'Coins',
         'Coins and Gems',
         'Coins & Small Objects',
@@ -944,7 +944,7 @@ def wand(g):
 def gemstone(g):
     l = []
     match = re.match(r'([\d ]*)grade (\d) gemstone[s]?', g)
-    if match.group(1) is '':
+    if match.group(1) == '':
         l.append(Jewel(int(match.group(2)) - 1))
     else:
         for _ in range(int(match.group(1).strip())):
