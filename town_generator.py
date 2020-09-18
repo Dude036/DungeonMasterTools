@@ -36,9 +36,8 @@ Notable = False
 
 def write_store(store, rarity=True, additional=0):
     global townHTML
-    info = store_head + store.Store_name + """</span><br />\n<span class="bold text-md">Proprietor: </span><span""" + \
-           """ class="text-md">"""
-    info += str(store.Shopkeeper)
+    info = store_head + store.Store_name + '</span><br />\n<span class="bold text-md">Proprietor: </span><span' + \
+           ' class="text-md">' + str(store.Shopkeeper)
     if rarity:
         info += inventory_head_rarity
         info = info.replace(
