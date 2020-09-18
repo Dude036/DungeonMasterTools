@@ -300,11 +300,3 @@ def name_parser(race, gender):
     else:
         name = None
     return name
-
-
-if __name__ == '__main__':
-    for _ in range(10):
-        print(name_parser('Human', 'Male'))
-    print('________________________________________')
-    for _ in range(10):
-        print(name_parser('Human', 'Female'))
