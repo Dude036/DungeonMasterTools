@@ -91,6 +91,10 @@ function normal(name, rarity) {
         "Quantity High": q_high,
         "Inflation": inflate
 	};
+
+	if (name == "Weapon" || name == "Armor" || name == "Guns") {
+		base["Additional Traits"] = parseInt(document.getElementById(name + "AdditionalTraits").value);
+	}
 	
 	// Update Error Codes and return
 	document.getElementById(name + "Error").innerHTML = errors;
