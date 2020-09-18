@@ -249,7 +249,7 @@ def name_parser(race, gender):
         elif race == 'Samsarans':
             name = default_single(Samsarans)
         elif race == 'Simic Hybrid':
-            name = default_name(SimicHybrid, gender)
+            name = str(SimicHybrid(gender))
         elif race == 'Sylph':
             name = default_single(Sylph, gender)
         elif race == 'Undine':
