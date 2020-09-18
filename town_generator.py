@@ -59,7 +59,7 @@ def write_store(store, rarity=True, additional=0):
     elif '(Gunsmith)' in store.Store_name:
         info += find_masterwork_traits_weapon(store.Stock, additional)
     elif '(Armor' in store.Store_name:
-        info += find_masterwork_traits_armor(store.Stock)
+        info += find_masterwork_traits_armor(store.Stock, additional)
 
     info += '</td></tr></table><br />'
 

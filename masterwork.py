@@ -948,34 +948,39 @@ def find_masterwork_traits_weapon(stock_list, additional_traits=0):
     # Convert to List
     trait_list = list(trait_list)
     if '' in trait_list:
+        trait_list.remove('')
         html += '<p>This Seller is capable of making weapons Masterwork. To make a weapon masterwork, you need to ' + \
                 'pay someone time and money to accomplish the goal. It takes 1 day for each 1,000 gp spent on the ' + \
                 'upgrade, rounded down. Here is the following table for costs of each upgrade.</p><p class="' + \
                 'text-sm emp">* Note that upgrading a weapon from one level to another costs its normal amount ' + \
-                'minus the previous amount. I.e. From level 3 to level 4 costs 32,000 - 18,000.</p><table><tr><th>' + \
-                'Upgrade</th><th>Cost</th><th>Upgrade</th><th>Cost</th></tr>'
+                'minus the previous amount. I.e. From level 3 to level 4 costs 32,000 - 18,000.</p><table ' + \
+                'style="margin: auto;"><tr><th>Upgrade</th><th>Cost</th><th>Upgrade</th><th>Cost</th></tr>'
         for i in range(1, 11, 2):
             html += '<tr><td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td>'
             i += 1
             html += '<td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td></tr>'
-        html += '</table><br>'
+        html += '</table>'
 
+    added_traits = False
     if len(trait_list) > 1 or additional_traits > 0:
-        trait_list.remove('')
-        html += '<table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>Money Cost' + \
-                '</th><th>Prerequisite</th></tr>'
-        for item in trait_list:
-            level = get_masterwork_level(item, masterwork_trait_cost_weapon)
-            html += '<tr><td>' + item + '</td><td>' + get_flavor_text_weapon(item) + '</td><td>'
-            html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
+        added_traits = True
+        html += '<br/><table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>' + \
+                'Money Cost</th><th>Prerequisite</th></tr>'
+
+    for item in trait_list:
+        added_traits = True
+        level = get_masterwork_level(item, masterwork_trait_cost_weapon)
+        html += '<tr><td>' + item + '</td><td>' + get_flavor_text_weapon(item) + '</td><td>'
+        html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
 
     for _ in range(additional_traits):
-        level = randint(1, 6)
+        added_traits = True
+        level = choice([1, 2, 3, 4, 5], p=[0.5, 0.28125, 0.125, 0.0625, 0.03125])
         item = choice(masterwork_trait_cost_weapon[level])
         html += '<tr><td>' + item + '</td><td>' + get_flavor_text_weapon(item) + '</td><td>'
         html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
 
-    if len(trait_list) > 1 or additional_traits > 0:
+    if added_traits:
         html += '</table>'
 
     return html
@@ -1592,7 +1597,7 @@ def get_flavor_text_armor(name, Armor=None):
         return text
 
 
-def find_masterwork_traits_armor(stock_list):
+def find_masterwork_traits_armor(stock_list, additional_traits=0):
     trait_list = set()
     html = ''
 
@@ -1606,26 +1611,38 @@ def find_masterwork_traits_armor(stock_list):
     # Convert to List
     trait_list = list(trait_list)
     if '' in trait_list:
+        trait_list.remove('')
         html += '<p>This Seller is capable of making Armor Masterwork. To make a armor masterwork, you need to ' + \
                 'pay someone time and money to accomplish the goal. It takes 1 day for each 1,000 gp spent on the ' + \
                 'upgrade, rounded down. Here is the following table for costs of each upgrade.</p><p class="' + \
                 'text-sm emp">* Note that upgrading a armor from one level to another costs its normal amount ' + \
-                'minus the previous amount. I.e. From level 3 to level 4 costs 32,000 - 18,000.</p><table><tr><th>' + \
-                'Upgrade</th><th>Cost</th><th>Upgrade</th><th>Cost</th></tr>'
+                'minus the previous amount. I.e. From level 3 to level 4 costs 32,000 - 18,000.</p><table style' + \
+                '="margin: auto;"><tr><th>Upgrade</th><th>Cost</th><th>Upgrade</th><th>Cost</th></tr>'
         for i in range(1, 11, 2):
             html += '<tr><td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td>'
             i += 1
             html += '<td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td></tr>'
-        html += '</table><br>'
+        html += '</table>'
 
-    if len(trait_list) > 1:
-        trait_list.remove('')
-        html += '<table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>Money Cost' + \
-                '</th><th>Prerequisite</th></tr>'
-        for item in trait_list:
-            level = get_masterwork_level(item, masterwork_trait_cost_armor)
-            html += '<tr><td>' + item + '</td><td>' + get_flavor_text_armor(item) + '</td><td>'
-            html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
+    added_traits = False
+    if len(trait_list) > 1 or additional_traits > 0:
+        added_traits = True
+        html += '<br/><table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>Money' + \
+                ' Cost</th><th>Prerequisite</th></tr>'
+    for item in trait_list:
+        added_traits = True
+        level = get_masterwork_level(item, masterwork_trait_cost_armor)
+        html += '<tr><td>' + item + '</td><td>' + get_flavor_text_armor(item) + '</td><td>'
+        html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
+
+    for _ in range(additional_traits):
+        added_traits = True
+        level = choice([1, 2, 3, 4, 5], p=[0.5, 0.28125, 0.125, 0.0625, 0.03125])
+        item = choice(masterwork_trait_cost_armor[level])
+        html += '<tr><td>' + item + '</td><td>' + get_flavor_text_armor(item) + '</td><td>'
+        html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
+
+    if added_traits:
         html += '</table>'
 
     return html
