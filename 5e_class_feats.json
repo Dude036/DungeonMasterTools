@@ -1,16 +1,15 @@
 {
+  "Artificer": [],
   "Barbarian": [],
   "Bard": [],
   "Cleric": [],
   "Druid": [],
   "Fighter": [],
-  "Magus": [],
   "Monk": [],
   "Paladin": [],
   "Ranger": [],
   "Rogue": [],
   "Sorcerer": [],
-  "Summoner": [],
-  "Warpriest": [],
+  "Warlock": [],
   "Wizard": []
 }
