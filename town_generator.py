@@ -22,7 +22,7 @@ townHTML = '<!DOCTYPE html><html><head><meta name="viewport" content="width=devi
            'getElementById(ident);\nif (a.style.display === \'none\'){\na.style.display = \'block\';} else {' \
            'a.style.display = \'none\';}}</script>'
 
-store_head = """<table class="wrapper-box" style="margin-bottom:60px;"><tr><td><span class="text-lg bold">"""
+store_head = '<div class="wrapper-box" style="margin-bottom:60px;"><span class="text-lg bold">'
 notable_head = '<table class="wrapper-box"><tr><td><span class="bold text-md">'
 inventory_head_rarity = '</div><span class="text-lg bold">Inventory <span class="text-sm emp"> - Inflation:</span>' \
                         '</span><table style="width:100%;" class="inventory-table"><tr><th style="text-align:left;">' \
@@ -60,7 +60,7 @@ def write_store(store, rarity=True, additional=0):
     elif '(Armor' in store.Store_name:
         info += find_masterwork_traits_armor(store.Stock, additional)
 
-    info += '</td></tr></table><br />'
+    info += '</div><br />'
 
     townHTML += info
 
