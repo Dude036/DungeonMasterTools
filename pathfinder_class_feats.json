@@ -1,6 +1,6 @@
 {
   "Barbarian": [
-    "<table class=\"inventory-table\" style=\"width:100%;\"><thead><tr><th>Level</th><th>Base Attack Bonus</th><th>Fort Save</th><th>Ref Save</th><th>Will Save</th><th>Special</th></tr></thead><tbody>",
+    "<table><thead><tr><th>Level</th><th>Base Attack Bonus</th><th>Fort Save</th><th>Ref Save</th><th>Will Save</th><th>Special</th></tr></thead><tbody>",
     "<tr><td>1st</td><td>+1</td><td>+2</td><td>+0</td><td>+0</td><td><a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian#TOC-Fast-Movement-Ex-\">Fast movement</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian#TOC-Rage-Ex-\">rage</a></td></tr>",
     "<tr><td>2nd</td><td>+2</td><td>+3</td><td>+0</td><td>+0</td><td><a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian#TOC-Rage-Powers-Ex-\">Rage power</a>, <a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian#TOC-Uncanny-Dodge-Ex-\">uncanny dodge</a></td></tr>",
     "<tr><td>3rd</td><td>+3</td><td>+3</td><td>+1</td><td>+1</td><td><a href=\"https://www.d20pfsrd.com/classes/core-classes/barbarian#TOC-Trap-Sense-Ex-\">Trap sense</a> +1</td></tr>",
