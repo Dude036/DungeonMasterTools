@@ -191,7 +191,7 @@ def name_parser(race, gender):
         elif race == 'Goliath':
             name = default_name(Goliath, gender, False)
         elif race == 'Human':
-            name = default_name(Human, gender, False)
+            name = str(Human(gender))
         elif race == 'Half-Elf':
             name = default_name(HalfElf, gender)
         elif race == 'Half-Orc':
@@ -300,3 +300,11 @@ def name_parser(race, gender):
     else:
         name = None
     return name
+
+
+if __name__ == '__main__':
+    for _ in range(10):
+        print(name_parser('Human', 'Male'))
+    print('________________________________________')
+    for _ in range(10):
+        print(name_parser('Human', 'Female'))
