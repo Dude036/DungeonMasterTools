@@ -263,9 +263,9 @@ def generate_people(pc, npc, town_name, dump_json=False):
     if dump_json:
         full_town = json.load(open(town_name + '.town.json', 'r'))
 
-    for i in range(len(characters)):
-        write_npc(characters[i], positions[i])
-        full_town[characters[i]] = characters[i]
+    for k in range(len(characters)):
+        write_npc(characters[k], positions[k])
+        full_town[positions[k]] = characters[k]
 
     for p in pc:
         person = create_person(create_variance())
