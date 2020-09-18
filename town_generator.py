@@ -70,7 +70,7 @@ def write_html(name=''):
     global townHTML
     if name == '':
         name = 'test'
-    with open(name + '.html', 'w') as outf:
+    with open(name + '.html', 'w', encoding='utf-8') as outf:
         outf.write(bs(townHTML, 'html5lib').prettify())
 
 
