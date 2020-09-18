@@ -161,6 +161,7 @@ After you've modified your settings, run the main application to generate a town
 | test_scripts.py    | Unit Tests to verify all things are working correctly. |
 | town_generator.py  | Generate a Sample town. |
 | treasure.py        | Generate solely the treasure from a monster based on CR or on the name of the Monster. |
+| gui.py             | Display a GUI to build a town. |
 
 ### Contributing
 
