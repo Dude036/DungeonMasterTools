@@ -155,7 +155,6 @@ After you've modified your settings, run the main application to generate a town
 | File               | Purpose       |
 | ------------------ | ------------- |
 | beastiary.py       | Build all monsters into the beasts folder to verify they all look fine. |
-| name_generator.py  | Generate several names of each possible race to verify sound and error check names. |
 | PC.py              | Print to the console a Playable character in HTML. |
 | quests.py          | Generate a threaded task to average out several thousand quest rewards from level 1 to 55. **WARNING:** This will take a VERY long time and heat up your computer immensely. I do NOT recommend you do this. |
 | test_scripts.py    | Unit Tests to verify all things are working correctly. |
