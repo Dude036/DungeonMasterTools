@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dungeon Masters Bestiary</title>
+    <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="monster.js"></script>
+    <script type="text/javascript">
+      let nameTree;
+      function autofill() {
+        var name = document.getElementById("name").value;
+
+        // Clear List suggestions
+        var list = document.getElementById("suggestion");
+        var temp_list = "";
+
+        // Loop through SUggestions
+        for (let i = 0; i < 5; i++) {
+          temp_list += "<li class=\"suggestion\">" +i.toString() + "</li>";
+        }
+        
+        // Post
+        list.innerHTML = temp_list;
+      }
+
+      function populate_monsters() {
+        
+      }
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1 id="mainHeader">Dungeon Masters Bestiary</h1>
+    <form>
+      <table class="wrapper-box">
+        <tr>
+          <td>
+            Monster Name:
+          </td>
+          <td></td>
+          <td style="width: 250px;">
+            <input type="text" name="name" id="name" oninput="autofill();" style="width: 200px;">
+            <ul class="suggestion" id="suggestion">
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            Or
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            Monster CR:
+          </td>
+          <td></td>
+          <td style="width: 250px;">
+            <select name="crChoice" id="crChoice" style="width: 200px;">
+              <option value="0.13">0.13</option>
+              <option value="0.17">0.17</option>
+              <option value="0.25">0.25</option>
+              <option value="0.33">0.33</option>
+              <option value="0.5">0.5</option>
+              <option value="1.0" selected>1.0</option>
+              <option value="2.0">2.0</option>
+              <option value="3.0">3.0</option>
+              <option value="4.0">4.0</option>
+              <option value="5.0">5.0</option>
+              <option value="6.0">6.0</option>
+              <option value="7.0">7.0</option>
+              <option value="8.0">8.0</option>
+              <option value="9.0">9.0</option>
+              <option value="10.0">10.0</option>
+              <option value="11.0">11.0</option>
+              <option value="12.0">12.0</option>
+              <option value="13.0">13.0</option>
+              <option value="14.0">14.0</option>
+              <option value="15.0">15.0</option>
+              <option value="16.0">16.0</option>
+              <option value="17.0">17.0</option>
+              <option value="18.0">18.0</option>
+              <option value="19.0">19.0</option>
+              <option value="20.0">20.0</option>
+              <option value="21.0">21.0</option>
+              <option value="22.0">22.0</option>
+              <option value="23.0">23.0</option>
+              <option value="24.0">24.0</option>
+              <option value="25.0">25.0</option>
+              <option value="26.0">26.0</option>
+              <option value="27.0">27.0</option>
+              <option value="28.0">28.0</option>
+              <option value="29.0">29.0</option>
+              <option value="30.0">30.0</option>
+              <option value="35.0">35.0</option>
+              <option value="37.0">37.0</option>
+              <option value="39.0">39.0</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Submit">
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
