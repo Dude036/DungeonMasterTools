@@ -14,13 +14,18 @@
         var list = document.getElementById("suggestion");
         var temp_list = "";
 
-        // Loop through SUggestions
-        for (let i = 0; i < 5; i++) {
-          temp_list += "<li class=\"suggestion\">" +i.toString() + "</li>";
-        }
-        
-        // Post
-        list.innerHTML = temp_list;
+        eel.autofill_text(name)().then(names => {
+          console.log(names);
+          var len = names.length > 5 ? 5 : names.length;
+
+          // Loop through Suggestions
+          for (let i = 0; i < len; i++) {
+            temp_list += "<li class=\"suggestion\">" + names[i] + "</li>";
+          }
+          
+          // Post
+          list.innerHTML = temp_list;
+        });
       }
 
       function populate_monsters() {

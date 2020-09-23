@@ -1,10 +1,11 @@
 import eel
 import simplejson as json
+from beastiary import pick_monster, print_monster
 
 
 Names = []
 
-# @eel.expose
+@eel.expose
 def autofill_text(text):
     global Names
     p = len(text)
@@ -51,14 +52,13 @@ def autofill_text(text):
 
 
 if __name__ == '__main__':
+    # Sort the names of all the creatures
     Names = list(json.load(open("pokemon.json", 'r')).keys())
     Names.extend(list(json.load(open("beasts.json", 'r')).keys()))
     Names.sort()
 
-    print(autofill_text('ak'))
+    # Set web files folder
+    eel.init('web')
 
-    # # Set web files folder
-    # eel.init('web')
-
-    # # start
-    # eel.start('monster.htm', size=(865, 750))
+    # start
+    eel.start('monster.htm', size=(865, 750))
