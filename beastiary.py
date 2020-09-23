@@ -13,6 +13,7 @@ with open("generate.json", 'r') as inf:
     settings = json.load(inf)
 
 Beasts = {}
+Poke_moves = {}
 with open('beasts.json', 'r') as inf:
     Beasts.update(json.load(inf, encoding='utf-8'))
 if settings["Allow Pokemon"]:
@@ -123,7 +124,7 @@ def get_monster_type(dictionary):
         return 'Pathfinder'
 
 
-def print_monster(picked_monster):
+def print_monster(picked_monster, to_file=True):
     if 'beasts' not in os.listdir(os.getcwd()):
         try:
             os.mkdir(os.getcwd() + '/beasts')
@@ -260,8 +261,11 @@ def print_monster(picked_monster):
     for t in treasure:
         html += str(t)
     html += '</tr></table></body></html>'
-    with open('beasts/' + name + '.html', 'w') as outf:
-        outf.write(bs(html, 'html5lib').prettify())
+    if to_file:
+        with open('beasts/' + name + '.html', 'w') as outf:
+            outf.write(bs(html, 'html5lib').prettify())
+    else:
+        return bs(html, 'html5lib').prettify()
 
 
 if __name__ == '__main__':
