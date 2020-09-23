@@ -254,7 +254,7 @@ function validate() {
 		eel.submit(settings, generate);
 	}
 
-	document.getElementById("wholeForm").style.display = 'none';
+	// document.getElementById("wholeForm").style.display = 'none';
 	document.getElementById("mainHeader").innerHTML = 'Form Submitted.';
 }
 

@@ -15,9 +15,9 @@
 
     eel.expose(town_name_js);
     function town_name_js(name) {
-      document.getElementById("mainHeader").innerHTML = "The town of '" + name + "' has been created!";
+      document.getElementById("mainHeader").innerHTML = "The town of has been created!";
       var frame = document.getElementById('townFrame');
-      frame.src = '../' + name + '.html';
+      frame.innerHTML = name
       frame.style.display = 'block';
     }
 
@@ -1456,6 +1456,6 @@
         <input type="button" value="Submit" onclick="validate();">
       </center>
     </form>
-    <iframe id="townFrame" src="" style="display: none; margin: auto; width: 100%; height: 550px;"></iframe>
+    <div id="townFrame" style="display: none; margin: auto; width: 100%; height: 550px;"></div>
   </body>
 </html>

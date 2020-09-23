@@ -256,7 +256,7 @@ def generate_shops(w,
     return town_name
 
 
-def generate_people(pc, npc, town_name, dump_json=False):
+def generate_people(pc, npc, town_name, dump_json=False, to_file=True):
     global characters, positions
     full_town = {}
     if dump_json:
@@ -288,8 +288,9 @@ def generate_people(pc, npc, town_name, dump_json=False):
             raise e
 
     print("Writing the town ", town_name)
-    write_html(town_name)
-
+    if to_file:
+        write_html(town_name)
+    return bs(townHTML, 'html5lib').prettify()
 
 if __name__ == '__main__':
     townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
