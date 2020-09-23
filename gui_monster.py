@@ -5,7 +5,7 @@ import simplejson as json
 Names = []
 
 # @eel.expose
-def autofill_text(text: str):
+def autofill_text(text):
     global Names
     p = len(text)
     s = 0
@@ -23,14 +23,31 @@ def autofill_text(text: str):
             break
 
     # Validate if there's a reason to continue looking
-    if s == e:
+    if s >= e:
         print("No suggestion")
         return []
     
+    # Loop to find all potential
     print('Start ', s)
     print('Middle', m)
     print('End   ', e)
-    return []
+    found = set()
+    it = 0
+    for name in reversed(Names[s:m]):
+        it += 1
+        if name.lower().startswith(text):
+            found.add(name)
+        else:
+            break
+    for name in Names[m:e]:
+        it += 1
+        if name.lower().startswith(text):
+            found.add(name)
+        else:
+            break
+
+    print(it)
+    return list(found)
 
 
 if __name__ == '__main__':
@@ -38,7 +55,7 @@ if __name__ == '__main__':
     Names.extend(list(json.load(open("beasts.json", 'r')).keys()))
     Names.sort()
 
-    autofill_text('abra')
+    print(autofill_text('ak'))
 
     # # Set web files folder
     # eel.init('web')
