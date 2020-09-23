@@ -4,7 +4,6 @@
     <title>Dungeon Masters Bestiary</title>
     <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
     <script type="text/javascript" src="/eel.js"></script>
-    <script type="text/javascript" src="monster.js"></script>
     <script type="text/javascript">
       let nameTree;
       function autofill() {
@@ -20,16 +19,12 @@
 
           // Loop through Suggestions
           for (let i = 0; i < len; i++) {
-            temp_list += "<li class=\"suggestion\">" + names[i] + "</li>";
+            temp_list += "<li class=\"suggestion\"><div class=\"button_eq\" onclick=\"document.getElementById('name').value = '" + names[i] + "';\">" + names[i] + "</div></li>";
           }
           
           // Post
           list.innerHTML = temp_list;
         });
-      }
-
-      function populate_monsters() {
-        
       }
     </script>
     <link rel="stylesheet" type="text/css" href="style.css">
