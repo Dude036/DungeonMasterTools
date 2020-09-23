@@ -29,12 +29,14 @@
 
       function submit() {
         var cr_selected = document.getElementById('crChoice');
-        eel.submit(document.getElementById('name').value, cr_selected.options[cr_selected.selectedIndex].value);
+        eel.submit(document.getElementById('name').value, cr_selected.options[cr_selected.selectedIndex].value)().then(text => {
+          document.getElementById('body').innerHTML = text;
+        });
       }
     </script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body>
+  <body id="body">
     <h1 id="mainHeader">Dungeon Masters Bestiary</h1>
     <table class="wrapper-box">
       <tr>

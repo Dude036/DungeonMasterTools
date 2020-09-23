@@ -67,7 +67,8 @@ def submit(name, cr):
         monster = Stats[name]
     
     # Print off final
-    print_monster([name, monster])
+    mon_html = print_monster([name, monster], False)
+    return mon_html
 
 
 if __name__ == '__main__':
