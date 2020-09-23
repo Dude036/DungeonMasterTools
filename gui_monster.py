@@ -1,9 +1,11 @@
 import eel
 import simplejson as json
-from beastiary import pick_monster, print_monster
+from beastiary import pick_monster, print_monster, Beasts, Poke_moves
+from numpy.random import choice
 
 
 Names = []
+Stats = {}
 
 @eel.expose
 def autofill_text(text):
@@ -14,7 +16,7 @@ def autofill_text(text):
     # Binary Search based on starts with
     while e > s:
         m = (s + e) // 2
-        print('Name  ', Names[m])
+        print('Found ', Names[m])
         if Names[m][:p].lower() < text.lower():
             s = m + 1
         elif Names[m][:p].lower() > text.lower():
@@ -29,9 +31,6 @@ def autofill_text(text):
         return []
     
     # Loop to find all potential
-    print('Start ', s)
-    print('Middle', m)
-    print('End   ', e)
     found = set()
     it = 0
     for name in reversed(Names[s:m]):
@@ -51,11 +50,36 @@ def autofill_text(text):
     return list(found)
 
 
+@eel.expose
+def submit(name, cr):
+    global Names, Stats
+    print(type(name), ':', name)
+    print(type(cr), ':', cr)
+
+    if name == '' or name not in Names:
+        print("Unable to find monster, Generating random")
+        name = choice(list(Stats.keys()))
+        monster = Stats[name]
+        while monster['CR'] != cr:
+            name = choice(list(Stats.keys()))
+            monster = Stats[name]
+    else:
+        monster = Stats[name]
+    
+    # Print off final
+    print_monster([name, monster])
+
+
 if __name__ == '__main__':
     # Sort the names of all the creatures
     Names = list(json.load(open("pokemon.json", 'r')).keys())
     Names.extend(list(json.load(open("beasts.json", 'r')).keys()))
     Names.sort()
+
+    # Get all monster Stats
+    Stats.update(json.load(open('beasts.json', 'r'), encoding='utf-8'))
+    Stats.update(json.load(open('pokemon.json', 'r'), encoding='utf-8'))
+    Poke_moves.update(json.load(open('pokemon_moves.json', 'r'), encoding='utf-8'))
 
     # Set web files folder
     eel.init('web')
