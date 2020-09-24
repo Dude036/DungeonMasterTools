@@ -498,14 +498,14 @@ class Firearm(object):
             self.Max_Range = self.Range * 3
 
         elif self.Class == 'Shotgun':
-            self.Capacity = int(choice([1, 2]))
+            self.Capacity = int(choice([1, 2, 3, 4]))
             self.Range = randint(2, 5) * 5 * ((self.Rarity + 1) // 2)
             self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
                 choice([6, 8, 10], p=[.625, .25, .125]))
             self.Max_Range = self.Range * 2
 
         elif self.Class == 'Sniper':
-            self.Capacity = int(choice([1, 2, 4]))
+            self.Capacity = int(choice([1, 2, 4, 6]))
             self.Range = 30 + randint(3, 7) * 10 * (self.Rarity + 1)
             self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
                 choice([10, 12, 20], p=[.625, .25, .125]))
