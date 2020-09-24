@@ -575,40 +575,41 @@ possible_melee = {
         'orc double axe', 'tongi'
     ],
     'Light Axe': [
-        'boarding axe', 'boarding axe', 'butchering axe', 'butchering axe',
-        'collapsible kumade', 'gandasa', 'handaxe', 'handaxe', 'hooked axe',
-        'hooked axe', 'knuckle axe', 'knuckle axe', 'kumade', 'light pick',
-        'mattock', 'throwing axe', 'throwing axe'
+        'boarding axe', 'boarding axe', 'butchering cleaver', 'gandasa',
+        'handaxe', 'handaxe', 'hooked axe', 'hooked axe', 'knuckle axe',
+        'knuckle axe', 'kumade', 'light pick', 'mattock', 'throwing axe',
+        'throwing axe', 'kaiser blade', 'ankus'
     ],
     'Heavy Blade': [
-        'Ankus', 'dueling sword', 'dueling sword', 'bastard sword',
-        'bastard sword', 'chakram', 'double chicken saber',
-        'double walking stick katana', 'elven curve blade', 'elven curve blade',
-        'estoc', 'falcata', 'falchion', 'falchion', 'flambard', 'greatsword',
-        'greatsword', 'great terbutje', 'katana', 'khopesh', 'klar',
-        'longsword', 'longsword', 'nine-ring broadsword', 'nodachi', 'scimitar',
+        'dueling sword', 'dueling sword', 'bastard sword', 'bastard sword',
+        'broadsword', 'broadsword', 'elven curved blade', 'elven curved blade',
+        'estoc', 'estoc', 'falcata', 'falchion', 'falchion', 'flambard',
+        'greatsword', 'greatsword', 'great macuahuitl', 'katana', 'katana',
+        'khopesh', 'longsword', 'longsword', 'macuahuitl',
+        'nine-ring broadsword', 'nodachi', 'nodachi', 'scimitar',
         'scimitar', 'scythe', 'scythe', 'seven-branched sword', 'shotel',
         'temple sword', 'terbutje', 'two-bladed sword', 'two-bladed sword'
     ],
     'Light Blade': [
-        'bayonet', 'butterfly knife', 'butterfly sword', 'chakram', 'dagger',
-        'dagger', 'deer horn knife', 'Drow razor', 'dueling dagger',
-        'dueling dagger', 'gladius', 'hunga munga', 'kama', 'katar', 'kerambit',
-        'kukri', 'machete', 'machete', 'madu', 'manople', 'pata', 'quadrens',
-        'rapier', 'rapier', 'sanpkhang', 'sawtooth sabre', 'scizore',
-        'shortsword', 'shortsword', 'sica', 'sickle', 'sickle', 'spiral rapier',
-        'starknife', 'swordbreaker dagger', 'sword cane', 'sword cane',
-        'wakizashi', 'war razor'
+        'bayonet', 'butterfly knife', 'butterfly knife', 'chakram', 'dagger',
+        'chicken saber', 'dagger', 'deer horn knife', 'drow razor',
+        'dueling dagger', 'dueling dagger', 'gladius', 'gladius',
+        'hunga munga', 'kama', 'kama', 'katar', 'kerambit', 'kerambit', 'kukri',
+        'kukri', 'machete', 'machete', 'manople', 'pata', 'quadrens', 'rapier',
+        'rapier', 'sawtooth sabre', 'scizore', 'shortsword', 'shortsword',
+        'sica', 'sickle', 'sickle', 'spiral rapier', 'starknife',
+        'swordbreaker dagger', 'swordbreaker dagger', 'sword cane',
+        'sword cane', 'tanto', 'tanto', 'wakizashi', 'war razor', 'waveblade'
     ],
     'Close': [
-        'bayonet', 'brass knuckles', 'cestus', 'dan bong', 'emei piercer',
-        'fighting fan', 'gauntlet', 'iron brush', 'katar', 'klar', 'madu',
-        'mere club', 'punching dagger', 'rope gauntlet', 'sap', 'scizore',
-        'spiked gauntlet', 'tekko-kagi', 'tonfa', 'tri-bladed katar', 'stake',
-        'waveblade', 'wushu dart'
+        'bayonet', 'brass knuckles', 'brass knuckles', 'cestus', 'cestus',
+        'emei piercer', 'fighting fan', 'gauntlet', 'gauntlet', 'katar',
+        'klar', 'punching dagger', 'punching dagger', 'rope gauntlet', 'sap',
+        'scizore', 'spiked gauntlet', 'tekko-kagi', 'tonfa',  'tonfa',
+        'tri-bladed katar', 'stake', 'wushu dart'
     ],
     'Double': [
-        'bo staff', 'bo staff', 'Boarding gaff', 'chain-hammer', 'chain spear',
+        'bo staff', 'bo staff', 'Woarding gaff', 'chain-hammer', 'chain spear',
         'dire flail', 'double walking stick katana', 'double-chained kama',
         'dwarven urgrosh', 'gnome battle ladder', 'gnome hooked hammer',
         'kusarigama', 'monk\'s spade', 'monk\'s spade', 'orc double axe',
@@ -626,9 +627,10 @@ possible_melee = {
     'Hammer': [
         'aklys', 'battle aspergillum', 'Chain-hammer', 'club', 'club',
         'gnome piston maul', 'greatclub', 'greatclub', 'heavy mace',
-        'heavy mace', 'lantern staff', 'light hammer', 'light hammer',
-        'light mace', 'light mace', 'mere club', 'planson', 'taiaha', 'tetsubo',
-        'wahaika', 'warhammer', 'warhammer'
+        'heavy mace', 'kanabo', 'kanabo', 'lantern staff',
+        'light hammer', 'light hammer', 'light mace', 'light mace',
+        'mere club', 'planson', 'taiaha', 'tetsubo', 'tetsubo', 'wahaika',
+        'warhammer', 'warhammer'
     ],
     'Monk': [
         'bo staff', 'bo staff', 'brass knuckles', 'butterfly sword', 'cestus',
@@ -646,8 +648,8 @@ possible_melee = {
         'crook', 'crook', 'fauchard', 'glaive', 'glaive', 'glaive-guisarme',
         'glaive-guisarme', 'gnome ripsaw glaive', 'guisarme', 'guisarme',
         'halberd', 'halberd', 'hooked lance', 'lucerne hammer', 'mancatcher',
-        'monk\'s spade', 'naginata', 'nodachi', 'ranseur', 'rhomphaia',
-        'tepoztopilli', 'tiger fork'
+        'monk\'s spade', 'naginata', 'naginata', 'nodachi', 'ranseur',
+        'rhomphaia', 'tepoztopilli', 'tiger fork'
     ],
     'Spear': [
         'amentum', 'boar spear', 'chain spear', 'elven branched spear',
@@ -659,24 +661,26 @@ possible_melee = {
 }
 possible_ranged = {
     'Bows': [
-        'Composite longbow', 'composite shortbow', 'longbow', 'hornbow',
-        'composite hornbow', 'shortbow'
+        'composite longbow', 'composite shortbow', 'composite hornbow',
+        'longbow', 'shortbow', 'hornbow'
     ],
     'Crossbow': [
         'double crossbow', 'hand crossbow', 'hand crossbow', 'heavy crossbow',
         'heavy crossbow', 'launching crossbow', 'light crossbow',
         'light crossbow', 'heavy repeating crossbow',
-        'light repeating crossbow', 'tube arrow shooter'
+        'light repeating crossbow'
     ],
     'Thrown': [
-        'aklys', 'amentum', 'atlatl', 'blowgun', 'bolas', 'boomerang',
-        'brutal bolas', 'Chain-hammer', 'chakram', 'club', 'dagger', 'dart',
-        'deer horn knife', 'dueling dagger', 'flask thrower',
-        'halfling sling staff', 'harpoon', 'hunga munga', 'javelin', 'kestros',
-        'light hammer', 'pilum', 'poisoned sand tube', 'rope dart',
-        'shortspear', 'shuriken', 'sibat', 'sling', 'sling glove', 'spear',
-        'starknife', 'stormshaft javelin', 'throwing axe', 'trident',
-        'wushu dart'
+        'aklys', 'amentum', 'atlatl', 'blowgun', 'bolas', 'bolas', 'boomerang',
+        'boomerang', 'brutal bolas', 'chain-hammer', 'chakram', 'chakram',
+        'club', 'dagger', 'dagger', 'dart', 'dart', 'deer horn knife',
+        'dueling dagger', 'flask thrower', 'halfling sling staff', 'harpoon',
+        'javelin', 'javelin', 'kestros', 'light hammer', 'pilum',
+        'poisoned sand tube', 'rope dart', 'shortspear', 'shortspear',
+        'shuriken', 'shuriken', 'sibat', 'sling', 'sling', 'sling glove',
+        'sling glove', 'spear', 'spear', 'starknife', 'stormshaft javelin',
+        'throwing axe', 'throwing axe', 'trident', 'trident',
+        'tube arrow shooter', 'wushu dart'
     ],
 }
 possible_guns = {
