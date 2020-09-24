@@ -422,15 +422,20 @@ class Weapon(object):
         throwable = ''
         if self.Class == 'Thrown':
             throwable = ' x' + str(choice([5, 10, 15, 20, 25, 30]))
+        clss = self.Class
+        if SpellSource == 'D&D 5' and self.Class in ['Heavy Axe', 'Heavy Blade', 'Flail', 'Polearm', 'Crossbow']:
+            clss = 'Martial'
+        else:
+            clss = 'Simple'
         if self.Enchantment is None and self.Special == '':
-            s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + throwable + ' (' + self.Class + \
-                ') </span' + '><br /><span class="text-sm emp">' + 'Damage: ' + self.Dice + ' (' + self.Crit + ') [' + \
+            s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + throwable + ' (' + clss + \
+                ') </span><br /><span class="text-sm emp">Damage: ' + self.Dice + ' (' + self.Crit + ') [' + \
                 dam + '] Weight: ' + str(self.Weight) + """ lbs</span></td><td>""" + determine_cost(self.Cost) + \
                 '</td><td>' + master + r[self.Rarity] + '</td></tr>'
         else:
             s = """<tr><td style="width:50%;"><span class="text-md" onclick="show_hide('""" + str(MasterID) + \
-                """')" style="color:blue;">""" + self.Name + throwable + ' (' + self.Class + ') </span><br />' + \
-                '<span class=' + '"text-sm emp" id=\"' + str(MasterID) + '\" style="display: none;">Damage: ' + \
+                """')" style="color:blue;">""" + self.Name + throwable + ' (' + clss + ') </span><br />' + \
+                '<span class="text-sm emp" id=\"' + str(MasterID) + '\" style="display: none;">Damage: ' + \
                 self.Dice + ' (' + self.Crit + ') [' + dam + '] Weight: ' + str(self.Weight) + ' lbs. ' + self.Text + \
                 enchanted + '</span></td><td>' + determine_cost(self.Cost) + '</td><td>' + master + r[self.Rarity] + \
                 enchant_lvl + '</td></tr>'
