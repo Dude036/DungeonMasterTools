@@ -491,7 +491,7 @@ class Firearm(object):
             self.Max_Range = 5 * round((self.Range * 2.5) / 5)
 
         elif self.Class == 'Rifle':
-            self.Capacity = int(10 + randint(1, 8) * 5)
+            self.Capacity = int(randint(1, 8) * 5)
             self.Range = 10 + randint(2, 10) * 5 * (self.Rarity + 1)
             self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
                 choice([6, 8, 10], p=[.625, .25, .125]))
