@@ -109,7 +109,28 @@
     "<tr><td>19th</td><td>+6 or 1d12</td><td><a href=\"https://5e.tools/classes.html#druid_phb,state:feature=s18-0\">Ability Score Improvement</a></td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td><td>1</td><td>1</td></tr>",
     "<tr><td>20th</td><td>+6 or 1d12</td><td><a href=\"https://5e.tools/classes.html#druid_phb,state:feature=s19-0\">Archdruid</a></td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>3</td><td>2</td><td>2</td><td>1</td><td>1</td></tr>"
   ],
-  "Fighter": [],
+  "Fighter": [
+    "<table><tr><th>Level</th><th>Proficiency Bonus</th><th>Features</th></tr><tr><td>1st</td><td>+2 or 1d4</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s0-0\">Fighting Style</a>, <a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s0-1\">Second Wind</a></td></tr>",
+    "<tr><td>2nd</td><td>+2 or 1d4</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s1-0\">Action Surge</a></td></tr>",
+    "<tr><td>3rd</td><td>+2 or 1d4</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s2-0\">Martial Archetype</a></td></tr>",
+    "<tr><td>4th</td><td>+2 or 1d4</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s3-0\">Ability Score Improvement</a></td></tr>",
+    "<tr><td>5th</td><td>+3 or 1d6</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s4-0\">Extra Attack</a></td></tr>",
+    "<tr><td>6th</td><td>+3 or 1d6</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s5-0\">Ability Score Improvement</a></td></tr>",
+    "<tr><td>7th</td><td>+3 or 1d6</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s6-0\">Martial Archetype Feature</a></td></tr>",
+    "<tr><td>8th</td><td>+3 or 1d6</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s7-0\">Ability Score Improvement</a></td></tr>",
+    "<tr><td>9th</td><td>+4 or 1d8</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s8-0\">Indomitable</a></td></tr>",
+    "<tr><td>10th</td><td>+4 or 1d8</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s9-0\">Martial Archetype Feature</a></td></tr>",
+    "<tr><td>11th</td><td>+4 or 1d8</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s10-0\">Extra Attack (2)</a></td></tr>",
+    "<tr><td>12th</td><td>+4 or 1d8</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s11-0\">Ability Score Improvement</a></td></tr>",
+    "<tr><td>13th</td><td>+5 or 1d10</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s12-0\">Indomitable (2)</a></td></tr>",
+    "<tr><td>14th</td><td>+5 or 1d10</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s13-0\">Ability Score Improvement</a></td></tr>",
+    "<tr><td>15th</td><td>+5 or 1d10</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s14-0\">Martial Archetype Feature</a></td></tr>",
+    "<tr><td>16th</td><td>+5 or 1d10</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s15-0\">Ability Score Improvement</a></td></tr>",
+    "<tr><td>17th</td><td>+6 or 1d12</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s16-0\">Action Surege (2)</a>, <a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s16-1\">Indomitable (3)</a></td></tr>",
+    "<tr><td>18th</td><td>+6 or 1d12</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s17-0\">Martial Archetype Feature</a></td></tr>",
+    "<tr><td>19th</td><td>+6 or 1d12</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s18-0\">Ability Score Improvement</a></td></tr>",
+    "<tr><td>20th</td><td>+6 or 1d12</td><td><a href=\"https://5e.tools/classes.html#fighter_phb,state:feature=s19-0\">Extra Attack (3)</a></td></tr>"
+  ],
   "Monk": [
     "<table><tr><th>Level</th><th>Proficiency Bonus</th><th>Features</th><th>Matrial Arts</th><th>Ki Points</th><th>Unarmored Movement</th></tr><tr><td>1st</td><td>+2 or 1d4</td><td><a href=\"https://5e.tools/classes.html#monk_phb,state:feature=s0-0\">Unarmored Defense</a>, <a href=\"https://5e.tools/classes.html#monk_phb,state:feature=s0-1\">Martial Arts</a></td><td>1d4</td><td>-</td><td>-</td></tr>",
     "<tr><td>2nd</td><td>+2 or 1d4</td><td><a href=\"https://5e.tools/classes.html#monk_phb,state:feature=s1-0\">Ki</a>, <a href=\"https://5e.tools/classes.html#monk_phb,state:feature=s1-1\">Uarmored Movement</a></td><td>1d4</td><td>2</td><td>+10 ft</td></tr>",
@@ -152,7 +173,8 @@
     "<tr><td>17th</td><td>+6 or 1d12</td><td>-</td><td>CHA+9</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>",
     "<tr><td>18th</td><td>+6 or 1d12</td><td><a href=\"https://5e.tools/classes.html#paladin_phb,state:feature=s17-0\">Aura Improvements</a></td><td>CHA+9</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>",
     "<tr><td>19th</td><td>+6 or 1d12</td><td><a href=\"https://5e.tools/classes.html#paladin_phb,state:feature=s18-0\">Ability Score Improvement</a></td><td>CHA+10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>",
-    "<tr><td>20th</td><td>+6 or 1d12</td><td><a href=\"https://5e.tools/classes.html#paladin_phb,state:feature=s19-0\">Sacred Oath Feature</a></td><td>CHA+10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>"],
+    "<tr><td>20th</td><td>+6 or 1d12</td><td><a href=\"https://5e.tools/classes.html#paladin_phb,state:feature=s19-0\">Sacred Oath Feature</a></td><td>CHA+10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>"
+  ],
   "Ranger": [
     "<table><tr><th rowspan=\"2\">Level</th><th rowspan=\"2\">Proficiency Bonus</th><th rowspan=\"2\">Features</th><th rowspan=\"2\">Spells Known</th><th colspan=\"9\">Spells per Day</th></tr><tr><th><a href=\"https://5e.tools/spells.html#blankhash,flstlevel:1=1,flstclass:ranger=1\">1st</a></th><th><a href=\"https://5e.tools/spells.html#blankhash,flstlevel:2=1,flstclass:ranger=1\">2nd</a></th><th><a href=\"https://5e.tools/spells.html#blankhash,flstlevel:3=1,flstclass:ranger=1\">3rd</a></th><th><a href=\"https://5e.tools/spells.html#blankhash,flstlevel:4=1,flstclass:ranger=1\">4th</a></th><th><a href=\"https://5e.tools/spells.html#blankhash,flstlevel:5=1,flstclass:ranger=1\">5th</a></th></tr><tr><td>1st</td><td>+2 or 1d4</td><td><a href=\"https://5e.tools/classes.html#ranger_phb,state:feature=s0-0\">Favored Enemy</a>, <a href=\"https://5e.tools/classes.html#ranger_phb,state:feature=s0-1\">Natural Explorer</a></td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>",
     "<tr><td>2nd</td><td>+2 or 1d4</td><td><a href=\"https://5e.tools/classes.html#ranger_phb,state:feature=s1-0\">Fighting Style</a>, <a href=\"https://5e.tools/classes.html#ranger_phb,state:feature=s1-1\">Spellcasting</a></td><td>2</td><td>2</td><td>-</td><td>-</td><td>-</td><td>-</td></tr>",
@@ -174,7 +196,7 @@
     "<tr><td>18th</td><td>+6 or 1d12</td><td><a href=\"https://5e.tools/classes.html#ranger_phb,state:feature=s17-0\">Feral Senses</a></td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>",
     "<tr><td>19th</td><td>+6 or 1d12</td><td><a href=\"https://5e.tools/classes.html#ranger_phb,state:feature=s18-0\">Ability Score Improvement</a></td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>",
     "<tr><td>20th</td><td>+6 or 1d12</td><td><a href=\"https://5e.tools/classes.html#ranger_phb,state:feature=s19-0\">Foe Slayer</a></td><td>11</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>"
-    ],
+  ],
   "Rogue": [
     "<table><tr><th>Level</th><th>Proficiency Bonus</th><th>Features</th><th>Sneak Attack</th></tr><tr><td>1st</td><td>+2 or 1d4</td><td><a href=\"https://5e.tools/classes.html#rogue_phb,state:feature=s0-0\">Expertise</a>, <a href=\"https://5e.tools/classes.html#rogue_phb,state:feature=s0-1\">Sneak Attack</a>, <a href=\"https://5e.tools/classes.html#rogue_phb,state:feature=s0-2\">Thieves' Cant</a></td><td>1d6</td></tr>",
     "<tr><td>2nd</td><td>+2 or 1d4</td><td><a href=\"https://5e.tools/classes.html#rogue_phb,state:feature=s1-0\">Cunning Action</a></td><td>1d6</td></tr>",
