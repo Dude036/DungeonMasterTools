@@ -209,11 +209,15 @@ class PC(object):
                 'Artificer', 'Bard', 'Cleric', 'Druid', 'Magus', 'Paladin', 'Ranger',
                 'Sorcerer', 'Summoner', 'Warlock', 'Warpriest', 'Wizard'
         ]:
-            self.Spells = []
+            self.Spells = set()
             for x in range(4 + self.Level * 2):
                 s = choice(list(MasterSpells.keys()))
-                if s not in self.Spells and MasterSpells[s]['link'] not in MasterSpellBlacklist:
-                    self.Spells.append(s)
+                # Not picking a Pokemon Move
+                if MasterSpells[s]['link'] not in MasterSpellBlacklist:
+                    # Available to pick
+                    if self.Class.lower() in MasterSpells[s]['level'].lower():
+                        self.Spells.add(s)
+            self.Spells = list(self.Spells)
 
     def roll(self):
         self.Stats = []
