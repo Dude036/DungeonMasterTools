@@ -7,7 +7,13 @@ from stores import Weapon
 import simplejson as json
 import re
 
-MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
+SpellSource = json.load(open('settings.json', 'r'))['System']
+if SpellSource == 'D&D 5':
+    with open('5e_spells.json', 'r') as inf:
+        MasterSpells = json.load(inf, encoding='utf-8')
+elif SpellSource == 'Pathfinder 1':
+    with open('spells.json', 'r') as inf:
+        MasterSpells = json.load(inf, encoding='utf-8')
 WeaponID = 0
 
 # A list of what stats are import to what character.
@@ -200,17 +206,14 @@ class PC(object):
         # if randint(3) == 0:
         # Spells for Classes that cast spells
         if self.Class in [
-                'Bard', 'Cleric', 'Druid', 'Magus', 'Paladin', 'Ranger',
-                'Sorcerer', 'Summoner', 'Warpriest', 'Wizard'
+                'Artificer', 'Bard', 'Cleric', 'Druid', 'Magus', 'Paladin', 'Ranger',
+                'Sorcerer', 'Summoner', 'Warlock', 'Warpriest', 'Wizard'
         ]:
             self.Spells = []
             for x in range(4 + self.Level * 2):
                 s = choice(list(MasterSpells.keys()))
-                if s not in self.Spells and MasterSpells[s][
-                        'link'] not in MasterSpellBlacklist:
+                if s not in self.Spells and MasterSpells[s]['link'] not in MasterSpellBlacklist:
                     self.Spells.append(s)
-            # Sort spells
-            # self.Spells.sort(key=lambda x: MasterSpells[x]['school'])
 
     def roll(self):
         self.Stats = []
