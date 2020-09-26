@@ -23,6 +23,7 @@ if settings["Allow Pokemon"]:
         Poke_moves = json.load(inf, encoding='utf-8')
 
 Levels = {
+    '0.0': 0,
     '0.13': 50,
     '0.17': 65,
     '0.25': 100,
