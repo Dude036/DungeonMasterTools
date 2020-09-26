@@ -126,10 +126,30 @@ playable = {
         "CHA": 4
     }
 }
-class_feats = json.load(
-    open("pathfinder_class_feats.json", 'r'), encoding='utf-8')
+class_feats = {}
 
-# class_feats = json.load(open("5e_class_feats.json", 'r'), encoding='utf-8')
+system = json.load(open('settings.json', 'r'))['System']
+if system == 'Pathfinder 1':
+    class_feats.update(json.load(open("pathfinder_class_feats.json", 'r'), encoding='utf-8'))
+elif system == 'D&D 5':
+    class_feats.update(json.load(open("5e_class_feats.json", 'r'), encoding='utf-8'))
+    # 5e Specific Classes
+    playable['Warlock'] = {
+        "STR": 4,
+        "DEX": 1,
+        "CON": 2,
+        "INT": 5,
+        "WIS": 3,
+        "CHA": 0
+    }
+    playable['Artificer'] = {
+        "STR": 4,
+        "DEX": 1,
+        "CON": 2,
+        "INT": 0,
+        "WIS": 3,
+        "CHA": 5
+    }
 
 
 class PC(object):
