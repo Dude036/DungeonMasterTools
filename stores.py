@@ -425,7 +425,7 @@ class Weapon(object):
         clss = self.Class
         if SpellSource == 'D&D 5' and self.Class in ['Heavy Axe', 'Heavy Blade', 'Flail', 'Polearm', 'Crossbow']:
             clss = 'Martial'
-        else:
+        elif SpellSource == 'D&D 5':
             clss = 'Simple'
         if self.Enchantment is None and self.Special == '':
             s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + throwable + ' (' + clss + \
