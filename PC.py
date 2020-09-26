@@ -131,6 +131,9 @@ class_feats = {}
 system = json.load(open('settings.json', 'r'))['System']
 if system == 'Pathfinder 1':
     class_feats.update(json.load(open("pathfinder_class_feats.json", 'r'), encoding='utf-8'))
+    # TODO (Josh): Add Alchemist, Arcanist, Bloodrager, Brawler, Cavalier, Gunslinger, Hunter, Investigator, Inquisitor,
+    #  Kineticist, Magus, Medium, Mesmerist, Occultist, Psychic, Shaman, Skald, Slayer, Spiritualist, Swashbuckler,
+    #  Summoner, Warpriest, Witch
 elif system == 'D&D 5':
     class_feats.update(json.load(open("5e_class_feats.json", 'r'), encoding='utf-8'))
     # 5e Specific Classes
