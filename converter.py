@@ -82,7 +82,7 @@ for monster in all_monsters[1:]:
     c_type = ' '.join(lines[1].split(',')[0][2:].split(' ')[1:])
     if 'humanoid' in c_type:
         c_type = 'humanoid'
-    alignment = lines[1][lines[1].rindex(','):-1]
+    alignment = lines[1][lines[1].rindex(',')+2:-1]
     if alignment.lower() == 'unaligned':
         align = alignment
     elif alignment.lower() == 'neutral':
