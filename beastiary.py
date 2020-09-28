@@ -92,12 +92,14 @@ def pick_monster(name='', cr=-1.0):
 
 def roll_hp(string):
     if '+' in string:
-        m = re.match(r'(\d+)d(\d+)\+(\d+)', string)
+        m = re.match(r'(\d+)d(\d+)\s?\+\s?(\d+)', string)
     elif '-' in string:
-        m = re.match(r'(\d+)d(\d+)(\-\d+)', string)
+        m = re.match(r'(\d+)d(\d+)(\s?\-\s?\d+)', string)
     else:
         m = re.match(r'(\d+)d(\d+)', string)
     total = 0
+    if m is None:
+        print(string)
     for _ in range(int(m.group(1))):
         total += randint(int(m.group(2))) + 1
     if len(m.groups()) == 3:
@@ -138,6 +140,7 @@ def print_monster(picked_monster, to_file=True):
 
     name = picked_monster[0]
     monster = picked_monster[1]
+    print("Monster Name:", name)
     monster_type = get_monster_type(monster)
 
     abilities = re.match(
