@@ -195,20 +195,19 @@ for monster in all_monsters[1:]:
         "Description": descrip,
         "Feats": feats,
         "HD": HD,
-        "Immune": "{immune}",
+        "Immune": immune,
         "Languages": lang,
         "Link": link,
         "Melee": melee,
-        # bite +13 (2d6+5 plus grab), 2 stings +13 (1d6+5 plus poison), 2 wings +8 (1d6+2)
         "Ranged": "",
-        "Resist": "{resist}",
+        "Resist": resist,
         "Saves": "Fort +" + CON + ", Ref +" + DEX + ", Will +" + WIS,
         "Size": size,
         "Skills": skills,
         "Speed": speed,
         "Treasure": "standard",
         "Type": c_type,
-        "Weaknesses": "{weak}",
+        "Weaknesses": weak,
         "XP": XP
     }
 
