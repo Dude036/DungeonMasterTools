@@ -7,15 +7,19 @@ def mk_to_html(line):
     done = False
     # Only once
     while not done:
-        print(line)
         done = True
+        # line = line.replace('>', '')
         if '#####' in line:
+            line = re.sub(r'#####', '', line).strip()
             line = '<h4>' + line + '</h4>'
         elif '####' in line:
+            line = re.sub(r'####', '', line).strip()
             line = '<h3>' + line + '</h3>'
         elif '###' in line:
+            line = re.sub(r'###', '', line).strip()
             line = '<h2>' + line + '</h2>'
         elif '##' in line:
+            line = re.sub(r'##', '', line).strip()
             line = '<h1>' + line + '</h1>'
         elif '___' in line:
             line = '<hr>'
@@ -23,17 +27,17 @@ def mk_to_html(line):
         # Multi options
         if '***' in line:
             done = False
-            while '***' not in line:
+            while '***' in line:
                 line = re.sub(r'\*\*\*', '<b><i>', line)
                 line = re.sub(r'\*\*\*', '</b></i>', line)
         if '**' in line:
             done = False
-            while '**' not in line:
+            while '**' in line:
                 line = re.sub(r'\*\*', '<b>', line)
                 line = re.sub(r'\*\*', '</b>', line)
         if '*' in line:
             done = False
-            while '*' not in line:
+            while '*' in line:
                 line = re.sub(r'\*', '<i>', line)
                 line = re.sub(r'\*', '</i>', line)
 
@@ -57,12 +61,12 @@ links = json.load(open("5e_links.json", 'r', encoding='utf-8'))
 creatures = {}
 
 all_lines = ''
-with open('bestiary.md', 'r') as inf:
+with open('bestiary.md', 'r', encoding='utf-8') as inf:
     all_lines = inf.read()
 
 all_monsters = all_lines.split('>## ')
 
-for monster in all_monsters[1:6]:
+for monster in all_monsters[1:]:
     # Parsed Info
     lines = monster.split('\n')
     name = lines[0].strip()
@@ -72,7 +76,7 @@ for monster in all_monsters[1:6]:
     c_type = ' '.join(lines[1].split(',')[0][2:].split(' ')[1:])
     if 'humanoid' in c_type:
         c_type = 'humanoid'
-    alignment = lines[1].split(',')[1].strip()[:-1]
+    alignment = lines[1][lines[1].rindex(','):-1]
     if alignment.lower() == 'unaligned':
         align = alignment
     elif alignment.lower() == 'neutral':
@@ -124,7 +128,7 @@ for monster in all_monsters[1:6]:
     while '>### Actions' not in lines[current]:
         if '>***' in lines[current]:
             t_feat = lines[current][4:]
-            feats += t_feat.replace('.***', ':') + ', '
+            feats += mk_to_html(t_feat) + '<br>'
         current += 1
 
     current += 1
@@ -149,9 +153,25 @@ for monster in all_monsters[1:6]:
             if len(dice_hit) > 0 and cont_text == '':
                 melee = dice_name + ' ' + dice_hit[0] + ' (' + ' + '.join(dice) + ')'
             else:
-                feats = mk_to_html(lines[current][1:] + ', ')
+                feats = mk_to_html(lines[current][1:].strip()) + '<br>'
 
         current += 1
+    
+    # Description
+    descrip = ''
+    current += 1
+    while current < len(lines):
+        if '|' in lines[current]:
+            start = current
+            while '|' in lines[current]:
+                current += 1
+            descrip += mk_table(lines[start:current])
+        else:
+            descrip += mk_to_html(lines[current])
+        current += 1
+
+    # Removing formatting error
+    descrip = re.sub(r'\>\>', '>', descrip)
 
     # Derived Info
     BAB = str(max([eval(STR), eval(DEX)]))
@@ -166,7 +186,7 @@ for monster in all_monsters[1:6]:
         "CMB": "N/A",
         "CMD": "N/A",
         "CR": CR,
-        "Description": "{descrip}",
+        "Description": descrip,
         "Feats": feats,
         "HD": HD,
         "Immune": "{immune}",
@@ -189,7 +209,7 @@ for monster in all_monsters[1:6]:
     print("___________________________________________________________________")
 
 # pprint(creatures)
-json.dump(creatures, open('5e_beasts.json', 'w'), sort_keys=True, indent=4)
+json.dump(creatures, open('5e_beasts.json', 'w', encoding='utf-8'), sort_keys=True, indent=4)
 
 # creatures["{name}"] = {
 #     "AC": "{AC}, touch {AC}, flat-footed {AC}",
