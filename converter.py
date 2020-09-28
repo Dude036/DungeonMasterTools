@@ -181,7 +181,7 @@ for monster in all_monsters[1:]:
 
     # Derived Info
     BAB = str(max([eval(STR), eval(DEX)]))
-
+    treasure = ['half standard', 'standard', 'double standard', 'triple standard']
 
     # Verify
     creatures[name] = {
