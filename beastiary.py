@@ -14,8 +14,12 @@ with open("generate.json", 'r') as inf:
 
 Beasts = {}
 Poke_moves = {}
-with open('beasts.json', 'r') as inf:
-    Beasts.update(json.load(inf, encoding='utf-8'))
+BeastSource = json.load(open('settings.json', 'r'))['System']
+if BeastSource == 'D&D 5':
+    Beasts.update(json.load(open('5e_beasts.json', 'r'), encoding='utf-8'))
+elif BeastSource == 'Pathfinder 1':
+    Beasts.update(json.load(open('beasts.json', 'r'), encoding='utf-8'))
+    
 if settings["Allow Pokemon"]:
     with open('pokemon.json', 'r') as inf:
         Beasts.update(json.load(inf, encoding='utf-8'))
