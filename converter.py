@@ -45,12 +45,18 @@ def mk_to_html(line):
 
 def mk_table(lines):
     html = '<table>'
-    first_line = False
-    for line in lines:
+    skip_line = False
+    for i in range(len(lines)):
         html += '<tr>'
-        for cell in line.split('|'):
+        if skip_line:
+            skip_line = False
+            continue
+        for cell in lines[i].split('|'):
             if cell != '' and cell != '>':
                 html += '<td>' + cell + '</td>'
+            elif len(lines) > i+1 and ':' in lines[i+1] and '-' in lines[i+1]:
+                html += '<th>' + cell + '</th>'
+                skip_line = True
                 
         html += '</tr>'
     html += '</table>'
