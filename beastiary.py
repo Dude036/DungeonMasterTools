@@ -248,7 +248,8 @@ def print_monster(picked_monster, to_file=True):
                             + ')</span></td></table>' + '<br/>'
                     total_weapons += 1
             else:
-                print(name, '\t', monster['Ranged'])
+                errored[name] = monster['Ranged']
+                # print(name, '\t', monster['Ranged'])
 
     if total_weapons % 2 == 1:
         html += '<table><td style="width: 50%"><span class="text-md"></span><br /><span class="text-sm emp"></span>' + \
@@ -298,6 +299,6 @@ if __name__ == '__main__':
         except Exception as e:
             failed[m] = e
 
-    print('These failed:')
-    print(failed)
-    # print(errored)
+    # print('These failed:')
+    # print(failed)
+    print(errored)
