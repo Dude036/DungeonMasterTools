@@ -192,7 +192,12 @@ class Quest(object):
                         '\nAppearance: ' + self.Reporter.Appearance
 
     def __bounty(self):
-        Beasts = json.load(open('beasts.json'), encoding='utf-8')
+        Beasts = {}
+        BeastSource = json.load(open('settings.json', 'r'))['System']
+        if BeastSource == 'D&D 5':
+            Beasts.update(json.load(open('5e_beasts.json', 'r'), encoding='utf-8'))
+        elif BeastSource == 'Pathfinder 1':
+            Beasts.update(json.load(open('beasts.json', 'r'), encoding='utf-8'))
         # Kill a Monster or a Criminal
         r = randint(0, 6)
         if r == 0:
