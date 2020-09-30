@@ -181,6 +181,10 @@ def create_bestiary():
                     dice_name = re.sub(r'\.', '', dice_name)
                 dice = re.findall(r'\(([\dd\+\-\s]*)\)', lines[current])
                 dice_hit = re.findall(r'(\+\d+) to hit', lines[current])
+                if dice == []:
+                    dice = re.findall(r'\*Hit:\* (\d+)', lines[current])
+                    for d in range(len(dice)):
+                        dice[d] = dice[d] + 'd1'
                 if len(dice_hit) > 0 and cont_text == '':
                     # Special Strip rules
                     if 'Form Only)' in dice_name:
@@ -260,4 +264,4 @@ def find_beast_type():
 
 
 create_bestiary()
-find_beast_type()
+# find_beast_type()
