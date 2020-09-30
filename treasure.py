@@ -776,7 +776,7 @@ def determine_treasure(s):
             ' ')[-1] == 'items':
         return wondrous
     else:
-        print(s)
+        return None
 
 
 def potion(g):
