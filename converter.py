@@ -83,8 +83,30 @@ def create_bestiary():
         link = links[lines[0].strip()]
         size = lines[1].split(' ')[0][2:]
         c_type = ' '.join(lines[1].split(',')[0][2:].split(' ')[1:])
+
+        # Refine Type to not include subtype
         if 'humanoid' in c_type:
             c_type = 'humanoid'
+        elif 'fiend' in c_type:
+            c_type = 'fiend'
+        elif 'giant' in c_type:
+            c_type = 'giant'
+        elif 'construct' in c_type:
+            c_type = 'construct'
+        elif 'monstrosity' in c_type:
+            c_type = 'monstrosity'
+        elif 'aberration' in c_type:
+            c_type = 'aberration'
+        elif 'undead' in c_type:
+            c_type = 'undead'
+        elif 'beast' in c_type:
+            c_type = 'beast'
+        elif 'celestial' in c_type:
+            c_type = 'celestial'
+        elif 'fey' in c_type:
+            c_type = 'fey'
+
+
         alignment = lines[1][lines[1].rindex(',')+2:-1]
         if alignment.lower() == 'unaligned':
             align = alignment
