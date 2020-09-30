@@ -158,7 +158,7 @@ def create_bestiary():
         feats = ''
         while '>### Actions' not in lines[current]:
             if '>***' in lines[current]:
-                t_feat = lines[current][4:]
+                t_feat = lines[current][1:]
                 feats += mk_to_html(t_feat) + '<br>'
             current += 1
 
