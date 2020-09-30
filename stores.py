@@ -9,13 +9,11 @@ from resources import *
 
 SpellSource = json.load(open('settings.json', 'r'))['System']
 if SpellSource == 'D&D 5':
-    with open('5e_spells.json', 'r') as inf:
-        MasterSpells = json.load(inf, encoding='utf-8')
+    MasterSpells = json.load(open('5e_spells.json', 'r'), encoding='utf-8')
+    # MasterWondrous = json.load(open('5e_wondrous.json', 'r'), encoding='utf-8')
 elif SpellSource == 'Pathfinder 1':
-    with open('spells.json', 'r') as inf:
-        MasterSpells = json.load(inf, encoding='utf-8')
-with open('wondrous.json', 'r') as inf:
-    MasterWondrous = json.load(inf, encoding='utf-8')
+    MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
+    MasterWondrous = json.load(open('wondrous.json', 'r'), encoding='utf-8')
 
 MasterID = 1
 
