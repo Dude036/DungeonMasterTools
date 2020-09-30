@@ -149,6 +149,8 @@ def create_bestiary():
                     XP = '0'
                 else:
                     CR = str(float(eval(lines[current][17:].split(' ')[0])))
+                    if CR == '0.12':
+                        CR = '0.13'
                     XP = lines[current][17:].split(' ')[1][1:]
                     XP = XP.replace(',', '')
 
