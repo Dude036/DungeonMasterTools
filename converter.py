@@ -206,7 +206,6 @@ def create_bestiary():
 
         # Derived Info
         BAB = str(max([eval(STR), eval(DEX)]))
-        treasure = ['half standard', 'standard', 'double standard', 'triple standard']
 
         # Verify
         creatures[name] = {
@@ -220,19 +219,19 @@ def create_bestiary():
             "Description": descrip,
             "Feats": feats,
             "HD": HD,
-            "Immune": immune,
+            "Immune": immune if immune is not None else "",
             "Languages": lang,
             "Link": link,
             "Melee": melee,
             "Ranged": "",
-            "Resist": resist,
+            "Resist": resist if resist is not None else "",
             "Saves": "Fort +" + CON + ", Ref +" + DEX + ", Will +" + WIS,
             "Size": size,
             "Skills": skills,
             "Speed": speed,
             "Treasure": "standard",
             "Type": c_type,
-            "Weaknesses": weak,
+            "Weaknesses": weak if weak is not None else "",
             "XP": XP
         }
 
@@ -249,7 +248,8 @@ def find_beast_type():
     for key, value in beasts.items():
         all_types.add(value['Type'])
     
-    print(all_types)
+    print(sorted(list(all_types)))
 
 
+create_bestiary()
 find_beast_type()
