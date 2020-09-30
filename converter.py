@@ -28,18 +28,18 @@ def mk_to_html(line):
         if '***' in line:
             done = False
             while '***' in line:
-                line = re.sub(r'\*\*\*', '<b><i>', line)
-                line = re.sub(r'\*\*\*', '</b></i>', line)
+                line = re.sub(r'\*\*\*', '<b><i>', line, 1)
+                line = re.sub(r'\*\*\*', '</b></i>', line, 1)
         if '**' in line:
             done = False
             while '**' in line:
-                line = re.sub(r'\*\*', '<b>', line)
-                line = re.sub(r'\*\*', '</b>', line)
+                line = re.sub(r'\*\*', '<b>', line, 1)
+                line = re.sub(r'\*\*', '</b>', line, 1)
         if '*' in line:
             done = False
             while '*' in line:
-                line = re.sub(r'\*', '<i>', line)
-                line = re.sub(r'\*', '</i>', line)
+                line = re.sub(r'\*', '<i>', line, 1)
+                line = re.sub(r'\*', '</i>', line, 1)
 
     return line
 
