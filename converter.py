@@ -182,11 +182,19 @@ def create_bestiary():
                 dice = re.findall(r'\(([\dd\+\-\s]*)\)', lines[current])
                 dice_hit = re.findall(r'(\+\d+) to hit', lines[current])
                 if len(dice_hit) > 0 and cont_text == '':
-                    melee = dice_name + ' ' + dice_hit[0] + ' (' + ' + '.join(dice) + ')'
+                    # Special Strip rules
+                    if 'Form Only)' in dice_name:
+                        dice_name = dice_name.replace(dice_name[dice_name.index('('):dice_name.index(')')+1], '')
+                    if '(Cantrip)' in dice_name:
+                        dice_name = dice_name.replace(dice_name[dice_name.index('('):dice_name.index(')')+1], '')
+
+                    melee += dice_name.strip() + ' ' + dice_hit[0] + ' (' + ' + '.join(dice) + '), '
                 else:
-                    feats = mk_to_html(lines[current][1:].strip()) + '<br>'
+                    feats += mk_to_html(lines[current][1:].strip()) + '<br>'
 
             current += 1
+        if melee.endswith(', '):
+            melee = melee[:-2]
         
         # Description
         descrip = ''
