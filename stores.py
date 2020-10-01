@@ -1310,8 +1310,8 @@ class Food(object):
         if meal_option == 0:
             self.Cost = (len(s) * random_sample() + .5) // 10
         else:
-            self.Cost = (len(s) *
-                         (sum(random_sample(meal_option)) / meal_option)) // 10
+            self.Cost = (len(s) * sum(random_sample(meal_option))) // 10
+
 
     def __str__(self):
         s = """<tr><td style="width:50%;"><span class="text-md">""" + self.String + """</span></td><td>""" + \
@@ -1336,7 +1336,7 @@ class Drink(object):
         if num == 0:
             self.Cost = (len(s) * random_sample() + .5) / 10
         else:
-            self.Cost = (len(s) * (sum(random_sample(num)) / num)) / 10
+            self.Cost = (len(s) * sum(random_sample(num))) / 10
 
     def __str__(self):
         s = """<tr><td style="width:50%;"><span class="text-md">""" + self.String + """</span></td><td>""" + \
