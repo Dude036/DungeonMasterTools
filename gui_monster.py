@@ -75,10 +75,12 @@ if __name__ == '__main__':
     # Sort the names of all the creatures
     Names = list(json.load(open("pokemon.json", 'r')).keys())
     Names.extend(list(json.load(open("beasts.json", 'r')).keys()))
+    Names.extend(list(json.load(open("5e_beasts.json", 'r')).keys()))
     Names.sort()
 
     # Get all monster Stats
     Stats.update(json.load(open('beasts.json', 'r'), encoding='utf-8'))
+    Stats.update(json.load(open('5e_beasts.json', 'r'), encoding='utf-8'))
     Stats.update(json.load(open('pokemon.json', 'r'), encoding='utf-8'))
     Poke_moves.update(json.load(open('pokemon_moves.json', 'r'), encoding='utf-8'))
 
