@@ -175,7 +175,13 @@ class PC(object):
             new_char = create_person(None)
 
         self.Name = new_char.Name
-        self.Level = int(randint(1, 21))
+        self.Level = choice(
+            [x for x in range(1, 21)],
+            p=[
+                0.139372822, 0.125783972, 0.112891986, 0.100696864, 0.089198606, 0.078397213, 0.068292683, 0.058885017,
+                0.050174216, 0.042160279, 0.034843206, 0.028222997, 0.022299652, 0.017073171, 0.012543554, 0.008710801,
+                0.005574913, 0.003135889, 0.001393728, 0.000348432
+            ])
         self.Race = new_char.Race
         self.Gender = new_char.Gender
         self.Age = new_char.Age
