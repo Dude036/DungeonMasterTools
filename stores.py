@@ -1719,7 +1719,7 @@ class Wondrous(object):
     Cost = CL = Weight = 0
 
     def __init__(self, cl=-1):
-        if cl == -1:
+        if cl == -1 or SpellSource == 'D&D 5':
             pick = choice(list(MasterWondrous.keys()))
             self.Name = pick
             self.Link = MasterWondrous[pick]['Link']
@@ -1728,7 +1728,7 @@ class Wondrous(object):
             self.Aura = MasterWondrous[pick]['Aura']
             self.Slot = MasterWondrous[pick]['Slot']
             self.Weight = MasterWondrous[pick]['Weight']
-        elif SpellSource == 'Pathfinder 1':
+        elif SpellSource == 'Pathfinder 1' and cl != -1:
             i = 0
             while True:
                 pick = choice(list(MasterWondrous.keys()))
@@ -1746,19 +1746,10 @@ class Wondrous(object):
                     cl = int(MasterWondrous[pick]['CL']) + 1
                 else:
                     i += 1
-        else:
-            pick = choice(list(MasterWondrous.keys()))
-            self.Name = pick
-            self.Link = MasterWondrous[pick]['Link']
-            self.Cost = int(MasterWondrous[pick]['Price'])
-            self.CL = int(MasterWondrous[pick]['CL'])
-            self.Aura = MasterWondrous[pick]['Aura']
-            self.Slot = MasterWondrous[pick]['Slot']
-            self.Weight = MasterWondrous[pick]['Weight']
 
     def __str__(self):
         return '<tr><td style="width:50%;"><span class="text-md"><a href="' + self.Link + '">' + self.Name + \
-               '</a></span><br /><span class="text-sm emp">Aura ' + self.Aura + '; CL' + str(self.CL) + '; Weight ' + \
+               '</a></span><br /><span class="text-sm emp">Aura ' + self.Aura + '; CL ' + str(self.CL) + '; Weight ' + \
                self.Weight + '; Slot ' + self.Slot + '</span></td><td>' + determine_cost(self.Cost) + '</td><td>' + \
                'Wondrous Item</td></tr>'
 
