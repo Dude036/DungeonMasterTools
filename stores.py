@@ -1724,11 +1724,11 @@ class Wondrous(object):
             self.Name = pick
             self.Link = MasterWondrous[pick]['Link']
             self.Cost = int(MasterWondrous[pick]['Price'])
-            self.CL = int(MasterWondrous[pick]['CL'])
+            self.CL = MasterWondrous[pick]['CL']
             self.Aura = MasterWondrous[pick]['Aura']
             self.Slot = MasterWondrous[pick]['Slot']
             self.Weight = MasterWondrous[pick]['Weight']
-        else:
+        elif SpellSource == 'Pathfinder 1':
             i = 0
             while True:
                 pick = choice(list(MasterWondrous.keys()))
@@ -1746,6 +1746,15 @@ class Wondrous(object):
                     cl = int(MasterWondrous[pick]['CL']) + 1
                 else:
                     i += 1
+        else:
+            pick = choice(list(MasterWondrous.keys()))
+            self.Name = pick
+            self.Link = MasterWondrous[pick]['Link']
+            self.Cost = int(MasterWondrous[pick]['Price'])
+            self.CL = int(MasterWondrous[pick]['CL'])
+            self.Aura = MasterWondrous[pick]['Aura']
+            self.Slot = MasterWondrous[pick]['Slot']
+            self.Weight = MasterWondrous[pick]['Weight']
 
     def __str__(self):
         return '<tr><td style="width:50%;"><span class="text-md"><a href="' + self.Link + '">' + self.Name + \
