@@ -10,7 +10,7 @@ from resources import *
 SpellSource = json.load(open('settings.json', 'r'))['System']
 if SpellSource == 'D&D 5':
     MasterSpells = json.load(open('5e_spells.json', 'r'), encoding='utf-8')
-    MasterWondrous = json.load(open('wondrous.json', 'r'), encoding='utf-8')
+    MasterWondrous = json.load(open('5e_wondrous.json', 'r'), encoding='utf-8')
 elif SpellSource == 'Pathfinder 1':
     MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
     MasterWondrous = json.load(open('wondrous.json', 'r'), encoding='utf-8')
@@ -1749,7 +1749,7 @@ class Wondrous(object):
 
     def __str__(self):
         return '<tr><td style="width:50%;"><span class="text-md"><a href="' + self.Link + '">' + self.Name + \
-               '</a></span><br /><span class="text-sm emp">Aura ' + self.Aura + '; CL' + str(self.CL) + '; Weight' + \
+               '</a></span><br /><span class="text-sm emp">Aura ' + self.Aura + '; CL' + str(self.CL) + '; Weight ' + \
                self.Weight + '; Slot ' + self.Slot + '</span></td><td>' + determine_cost(self.Cost) + '</td><td>' + \
                'Wondrous Item</td></tr>'
 
