@@ -302,4 +302,4 @@ if __name__ == '__main__':
     print('These failed:')
     print(failed)
     if failed:
-        json.dump(errored, open('wrong.json', 'w'), indent=4, sort_keys=True)
+        json.dump(failed, open('wrong.json', 'w'), indent=4, sort_keys=True, encoding='utf-8')

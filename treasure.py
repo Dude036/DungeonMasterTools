@@ -896,7 +896,7 @@ def wondrous(g):
             match = re.match(
                 re.compile('([\d ]*)' + p + ' ' + s + ' wondrous item[s]?'), g)
             if match is not None:
-                if match.group(1) == '' or match.group(1) == None:
+                if match.group(1) == '' or match.group(1) is None:
                     quantity = 1
                 else:
                     quantity = int(match.group(1).strip())
