@@ -301,5 +301,5 @@ if __name__ == '__main__':
 
     print('These failed:')
     print(failed)
-    if wrong:
+    if failed:
         json.dump(errored, open('wrong.json', 'w'), indent=4, sort_keys=True)
