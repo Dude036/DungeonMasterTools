@@ -1519,7 +1519,7 @@ def get_flavor_text_armor(name, Armor=None):
         else:
             a = '<table><tr><th>Slot Level</th><th>Rounds</th><th>Damage</th></tr>'
             i = 1
-            while i >= Armor.Masterwork:
+            while i <= Armor.Masterwork:
                 a += '<tr><td>' + str(i) + '</td><td>' + str(i) + '</td><td>' + str(i * 16) + '</td></tr>'
                 i += 1
             a += '</table>'
