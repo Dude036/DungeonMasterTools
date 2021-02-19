@@ -947,6 +947,7 @@ def find_masterwork_traits_weapon(stock_list, additional_traits=0):
 
     # Convert to List
     trait_list = list(trait_list)
+    trait_list.sort()
     if '' in trait_list:
         trait_list.remove('')
         html += '<p>This Seller is capable of making weapons Masterwork. To make a weapon masterwork, you need to ' + \
@@ -1004,7 +1005,7 @@ def special_masterwork_armor(Armor, Trait=None):
         if Armor.Class == 'Light':
             special_options += [
                 'Balanced', 'Bloodthirsty', 'Brawling', 'Burdenless', 'Creeping', 'Etherealness', 'Expeditious', 
-                'Glamered', 'Grinding', 'Mental Focus', 'Phantasmal', 'Phase Lurching', 'Restful', 'Shadow', 
+                'Glamered', 'Grinding', 'Mental Focus', 'Phantasmal', 'Phase Lurching', 'Restful', 'Shadow',
                 'Shadow Blending', 'Improved Shadow',  'Greater Shadow', 'Spellsink', 'Terrain-Striding', 'Wild', 
                 'Withstanding', 
             ]
@@ -1610,6 +1611,7 @@ def find_masterwork_traits_armor(stock_list, additional_traits=0):
 
     # Convert to List
     trait_list = list(trait_list)
+    trait_list.sort()
     if '' in trait_list:
         trait_list.remove('')
         html += '<p>This Seller is capable of making Armor Masterwork. To make a armor masterwork, you need to ' + \
