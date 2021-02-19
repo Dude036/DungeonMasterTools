@@ -1,5 +1,5 @@
 from numpy.random import random, randint, choice
-from resources import masterwork_traits_weapon, masterwork_trait_cost_weapon, masterwork_trait_armor, masterwork_trait_cost_armor
+from resources import masterwork_traits_weapon, masterwork_trait_cost_weapon, masterwork_traits_armor, masterwork_trait_cost_armor
 
 # For Armor, See Here: https://www.d20pfsrd.com/magic-items/magic-armor/magic-armor-and-shield-special-abilities/
 # For Weapons, See Here: https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/

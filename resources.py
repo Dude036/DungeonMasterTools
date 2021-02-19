@@ -359,7 +359,7 @@ masterwork_trait_cost_weapon = {
     5: ['Flying', 'Heart-Piercing', 'Interfering', 'Spell Siphon', 'Vorpal'],
 }
 
-masterwork_trait_armor = [
+masterwork_traits_armor = [
     'Adamant', 'Adhesive', 'Advancing', 'Amorphous', 'Animated',
     'Arrow Catching', 'Arrow Deflection', 'Arrow-Collecting', 'Assiduous',
     'Balanced', 'Balanced', 'Bashing', 'Bastion', 'Benevolent', 'Billowing',
