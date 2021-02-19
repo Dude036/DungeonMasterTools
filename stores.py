@@ -384,6 +384,10 @@ class Weapon(object):
         else:
             print("This Item is already enchanted.")
 
+    def add_trait(self, trait):
+        if self.Special == '':
+            special_masterwork_weapon(self, trait)
+
     def add_masterwork(self, mlevel):
         if mlevel < 10:
             if self.Masterwork == 0:
@@ -827,6 +831,10 @@ class Armor(object):
             self.Cost = round(self.Cost + self.Enchantment.Cost)
         else:
             print("This Item is already enchanted.")
+
+    def add_trait(self, trait):
+        if self.Special == '':
+            special_masterwork_armor(self, trait)
 
     def add_masterwork(self, mlevel):
         if mlevel > 10:
@@ -1311,7 +1319,6 @@ class Food(object):
             self.Cost = (len(s) * random_sample() + .5) // 10
         else:
             self.Cost = (len(s) * sum(random_sample(meal_option))) // 10
-
 
     def __str__(self):
         s = """<tr><td style="width:50%;"><span class="text-md">""" + self.String + """</span></td><td>""" + \

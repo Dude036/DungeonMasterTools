@@ -1648,3 +1648,46 @@ def find_masterwork_traits_armor(stock_list, additional_traits=0):
         html += '</table>'
 
     return html
+
+
+if __name__ == '__main__':
+    # Use this to create stores with nothing but masterwork enhancements
+    from stores import Armor, Weapon, Store
+    from character import create_person
+    from town_generator import townHTML, store_head, inventory_head_rarity
+    from bs4 import BeautifulSoup as bs
+
+    # Start with Weapons
+    shop = Store(create_person({'Human': 1.0}), "Sample", 1.0, [0, 4])
+    for trait in masterwork_traits_weapon:
+        w = Weapon(0, iTrait=trait)
+        w.add_masterwork(1)
+        w.add_trait(trait)
+        shop.Stock.append(w)
+    weapon_table = find_masterwork_traits_weapon(shop.Stock, 0)
+    shop.Stock = []
+
+    # Make armor next
+    for trait in masterwork_traits_armor:
+        a = Armor(0, iTrait=trait)
+        a.add_masterwork(1)
+        a.add_trait(trait)
+        shop.Stock.append(a)
+
+    armor_table = find_masterwork_traits_armor(shop.Stock, 0)
+
+    # Compile HTML
+    town_name = "Master Masterwork Trait Table"
+    html_to_write = townHTML + "<h1>" + town_name + "</h1>" + store_head + shop.Store_name
+    html_to_write += '</span><br />\n<span class="bold text-md">Proprietor: </span><span class="text-md">'
+    html_to_write += str(shop.Shopkeeper) + inventory_head_rarity
+
+    # Specify Inflation rate and add Traits
+    html_to_write = html_to_write.replace("Inflation:", "Inflation: 100.0%")
+    html_to_write += weapon_table + "<br/><hr><br/>" + armor_table + "</div><br/>"
+
+    # Write Store to HTML
+    with open('Master Masterwork Traits Table.html', 'w', encoding='utf-8') as outf:
+        outf.write(bs(html_to_write, 'html5lib').prettify())
+
+
