@@ -1289,7 +1289,7 @@ def get_flavor_text_armor(name, Armor=None):
         text = 'If an enemy successfully hits you with a natural attack, they take 1d8 cold damage from your armor'
 
     elif name == 'Glamered':
-        text = 'This armor can transform to and from a normsal set of clothing as an action.'
+        text = 'This armor can transform to and from a normal set of clothing as an action.'
 
     elif name == 'Grinding':
         if Armor is None:
