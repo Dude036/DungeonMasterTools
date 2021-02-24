@@ -1006,8 +1006,8 @@ def special_masterwork_armor(Armor, Trait=None):
             'Medium Fortification', 'Heavy Fortification', 'Frosted', 'Harmonizing', 'Invulnerability', 'Malevolent',
             'Mastering', 'Merging', 'Mirrored', 'Poison-Resistant', 'Radiant', 'Rallying', 'Rebounding', 'Righteous',
             'Sensing', 'Spell Dodging', 'Spell Resistance', 'Improved Spell Resistance', 'Greater Spell Resistance',
-            'Lesser Spell Resistance', 'Spell Storing', 'Spellrending', 'Unrighteous', 'Warding', 'Weeping',
-            'Wyrmsbreath'
+            'Lesser Spell Resistance', 'Spell Storing', 'Spellrending', 'Spirit-Bonded', 'Trackless', 'Unrighteous',
+            'Warding', 'Weeping', 'Wyrmsbreath'
         ]
 
         if Armor.Class == 'Light':
@@ -1019,9 +1019,9 @@ def special_masterwork_armor(Armor, Trait=None):
             ]
         if Armor.Class == 'Medium':
             special_options += [
-                'Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Etherealness', 
+                'Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Etherealness',
                 'Expeditious', 'Glamered', 'Grinding', 'Mental Focus', 'Mind Buttressing', 'Poisoning', 'Putrid',
-                'Restful', 'Spirit-Bonded', 'Terrain-Striding', 'Wild', 'Withstanding', 
+                'Restful', 'Terrain-Striding', 'Wild', 'Withstanding',
             ]
         if Armor.Class == 'Heavy':
             special_options += [
@@ -1032,7 +1032,7 @@ def special_masterwork_armor(Armor, Trait=None):
         if Armor.Class == 'Shield':
             special_options += [
                 'Animated', 'Bashing', 'Bolstering', 'Jawbreaker', 'Poisoning', 'Reflecting', 'Singing',
-                ]
+            ]
 
         Armor.Special = choice(special_options)
 
