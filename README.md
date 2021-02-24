@@ -153,9 +153,10 @@ Below has the initial settings file with brackets after. Inside the brackets is 
 After you've modified your settings, run the main application to generate a town. There are a few testing protocols that can be run that I have used for testing. Here are those;
 
 | File               | Purpose       |
-| ------------------ | ------------- |
+|:------------------:| ------------- |
 | beastiary.py       | Build all monsters into the beasts folder to verify they all look fine. |
 | PC.py              | Print to the console a Playable character in HTML. |
+| masterwork.py      | Creates a shop which showcases all Masterwork traits. |
 | quests.py          | Generate a threaded task to average out several thousand quest rewards from level 1 to 55. **WARNING:** This will take a VERY long time and heat up your computer immensely. I do NOT recommend you do this. |
 | test_scripts.py    | Unit Tests to verify all things are working correctly. |
 | town_generator.py  | Generate a Sample town. |
