@@ -1006,7 +1006,8 @@ def special_masterwork_armor(Armor, Trait=None):
             'Medium Fortification', 'Heavy Fortification', 'Frosted', 'Harmonizing', 'Invulnerability', 'Malevolent',
             'Mastering', 'Merging', 'Mirrored', 'Poison-Resistant', 'Radiant', 'Rallying', 'Rebounding', 'Righteous',
             'Sensing', 'Spell Dodging', 'Spell Resistance', 'Improved Spell Resistance', 'Greater Spell Resistance',
-            'Lesser Spell Resistance', 'Spell Storing', 'Spellrending', 'Unrighteous', 'Warding', 'Weeping', 
+            'Lesser Spell Resistance', 'Spell Storing', 'Spellrending', 'Unrighteous', 'Warding', 'Weeping',
+            'Wyrmsbreath'
         ]
 
         if Armor.Class == 'Light':
@@ -1518,24 +1519,27 @@ def get_flavor_text_armor(name, Armor=None):
 
     elif name == 'Spellsink':
         if Armor is None:
-            a = '<table><tr><th>Slot Level</th><th>Rounds</th><th>Damage</th></tr><tr><td>1</td><td>1</td><td>16' + \
-                '</td></tr><tr><td>2</td><td>2</td><td>32</td></tr><tr><td>3</td><td>3</td><td>48</td></tr><tr>' + \
-                '<td>4</td><td>4</td><td>64</td></tr><tr><td>5</td><td>5</td><td>80</td></tr><tr><td>6</td><td>6' + \
-                '</td><td>96</td></tr><tr><td>7</td><td>7</td><td>112</td></tr><tr><td>8</td><td>8</td><td>128' + \
-                '</td></tr><tr><td>9</td><td>9</td><td>144</td></tr></table>'
+            t = '[Your Masterwork Quality]'
         else:
-            a = '<table><tr><th>Slot Level</th><th>Rounds</th><th>Damage</th></tr>'
+            t = str(Armor.Masterwork)
+        if Armor is None:
+            a = '<table><tr><th>Slot Level</th><th>Damage</th></tr><tr><td>1</td><td>16</td></tr><tr><td>2</td><td>' + \
+                '32</td></tr><tr><td>3</td><td>48</td></tr><tr><td>4</td><td>64</td></tr><tr><td>5</td><td>80</td>' + \
+                '</tr><tr><td>6</td><td>96</td></tr><tr><td>7</td><td>112</td></tr><tr><td>8</td><td>128</td></tr>' + \
+                '<tr><td>9</td><td>144</td></tr></table>'
+        else:
+            a = '<table><tr><th>Slot Level</th><th>Damage</th></tr>'
             i = 1
             while i <= Armor.Masterwork:
-                a += '<tr><td>' + str(i) + '</td><td>' + str(i) + '</td><td>' + str(i * 16) + '</td></tr>'
+                a += '<tr><td>' + str(i) + '</td><td>' + str(i * 16) + '</td></tr>'
                 i += 1
             a += '</table>'
-        text = 'You armor can convert magical damage into spell slots. On a successful save against a spells that ' + \
+        text = 'Your armor can convert magical damage into spell slots. On a successful save against a spells that ' + \
                'deals damage, the damage you would have otherwise taken on a fail is absorbed by your armor. For ' + \
                'each round this armor isn\'t converting a spell, it loses 1d10 points of damage. You can convert ' + \
-               'damage into a spell slot based on two factors. The time taken, and damage taken. This armor can ' + \
-               'only convert damage into a spell slot up to its Masterwork Quality. Refer to the following chart ' + \
-               ' for time and damage.' + a
+               'damage into a spell slot using this number as an action. This armor can only convert damage into ' + \
+               'a spell slot less than or equal to level ' + t + '. Refer to the following chart for damage ' + \
+               'requirements.' + a
 
     elif name == 'Spirit-Bonded':
         text = 'You gain resistance to Psychic damage.'

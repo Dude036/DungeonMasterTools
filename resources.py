@@ -365,7 +365,7 @@ masterwork_traits_armor = [
     'Balanced', 'Balanced', 'Bashing', 'Bastion', 'Benevolent', 'Billowing',
     'Bitter', 'Blinding', 'Bloodthirsty', 'Bolstering', 'Brawling', 'Buoyant',
     'Burdenless', 'Calming', 'Champion', 'Channeling', 'Clangorous',
-    'Cocooning', 'Comfort', 'Creeping', 'Crusading',
+    'Cocooning', 'Comfort', 'Corsair', 'Creeping', 'Crusading',
     'Cushioned', 'Deathless', 'Deceiving', 'Defiant', 'Delving',
     'Determination', 'Dread Wing', 'Energy Resistance',
     'Greater Energy Resistance', 'Improved Energy Resistance', 'Etherealness',
