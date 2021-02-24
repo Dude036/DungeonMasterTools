@@ -127,8 +127,7 @@ def create_variance(predef={}):
         pop[settings['Race']] = 1.0
     else:  # Create Variance
         # Prime race
-        base_pop = settings['Population'] - round(
-            settings['Population'] * (settings['Variance'] / 100))
+        base_pop = settings['Population'] - round(settings['Population'] * (settings['Variance'] / 100))
         pop[settings['Race']] = base_pop
 
         # Add Exotics
@@ -136,15 +135,11 @@ def create_variance(predef={}):
         races.remove(settings['Race'])
         if type(settings['Exotic']) == type([]):
             for i in settings['Exotic']:
-                pop[i] = round(
-                    settings['Population'] * (settings['Variance'] / 100) / len(
-                        settings['Exotic']))
+                pop[i] = round(settings['Population'] * (settings['Variance'] / 100) / len(settings['Exotic']))
         else:
             choices = choice(races, settings['Exotic'], replace=False)
             for i in choices:
-                pop[i] = round(
-                    settings['Population'] * (settings['Variance'] / 100) /
-                    settings['Exotic'])
+                pop[i] = round(settings['Population'] * (settings['Variance'] / 100) / settings['Exotic'])
 
     global_pop = normalize_dict(pop)
     return global_pop

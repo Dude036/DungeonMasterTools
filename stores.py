@@ -20,10 +20,7 @@ MasterID = 1
 
 def find_spell_level(spell):
     l = None
-    a = [
-        level_0, level_1, level_2, level_3, level_4, level_5, level_6, level_7,
-        level_8, level_9
-    ]
+    a = [level_0, level_1, level_2, level_3, level_4, level_5, level_6, level_7, level_8, level_9]
     for level in range(len(a)):
         if spell in a[level]:
             l = level
@@ -268,8 +265,7 @@ class Weapon(object):
             return None
 
         # We have a class of weapon. Get weapon Damage
-        self.Dice = str(int(self.Rarity / 2) + 1) + 'd' + str(
-            choice(die_values[self.Class]))
+        self.Dice = str(int(self.Rarity / 2) + 1) + 'd' + str(choice(die_values[self.Class]))
 
         # Give Damage Types
         if self.Class == 'Heavy Axe' or self.Class == 'Light Axe':
@@ -291,23 +287,11 @@ class Weapon(object):
         elif self.Class == 'Spear':
             self.Damage = ['P']
         elif self.Class == 'Bows':
-            self.Damage = [
-                'Ra', 'P',
-                choice([
-                    '30', '40', '50', '60', '70', '80', '90', '100', '110',
-                    '120'
-                ]) + ' ft.'
-            ]
+            self.Damage = ['Ra', 'P', choice(['30', '40', '50', '60', '70', '80', '90', '100', '110', '120']) + ' ft.']
         elif self.Class == 'Crossbow':
-            self.Damage = [
-                'Ra', 'P',
-                choice(['60', '70', '80', '90', '100', '110', '120']) + ' ft.'
-            ]
+            self.Damage = ['Ra', 'P', choice(['60', '70', '80', '90', '100', '110', '120']) + ' ft.']
         elif self.Class == 'Thrown':
-            self.Damage = [
-                'Ar', 'P', 'S',
-                choice(['15', '20', '25', '30', '35', '40']) + ' ft.'
-            ]
+            self.Damage = ['Ar', 'P', 'S', choice(['15', '20', '25', '30', '35', '40']) + ' ft.']
         return
 
     def __choose_metal(self):
@@ -364,18 +348,12 @@ class Weapon(object):
         return chance
 
     def __weigh(self, metal, cl):
-        dice_incriment = int(eval(self.Dice.split('d')[1]) / 2) * 2**eval(
-            self.Dice.split('d')[0])
+        dice_incriment = int(eval(self.Dice.split('d')[1]) / 2) * 2**eval(self.Dice.split('d')[0])
         crit_val = (self.__crit() // 20)
-        cost_factor = max(
-            [weapon_cost_and_weight[self.Class][0], dice_incriment * crit_val])
+        cost_factor = max([weapon_cost_and_weight[self.Class][0], dice_incriment * crit_val])
 
-        self.Cost = float(
-            round(
-                cost_factor * cl[metal]['Cost'] * (self.Rarity + 1)**
-                self.Rarity, 2))
-        self.Weight = round(
-            weapon_cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 14, 1)
+        self.Cost = float(round(cost_factor * cl[metal]['Cost'] * (self.Rarity + 1)**self.Rarity, 2))
+        self.Weight = round(weapon_cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 14, 1)
 
     def add_enchantment(self, ench):
         if self.Enchantment is None:
@@ -446,8 +424,8 @@ class Weapon(object):
 
     def __iter__(self):
         for item in [
-                self.Weight, self.Cost, self.Rarity, self.Masterwork, self.Name,
-                self.Dice, self.Crit, self.Class, self.Damage, self.Enchantment
+                self.Weight, self.Cost, self.Rarity, self.Masterwork, self.Name, self.Dice, self.Crit, self.Class,
+                self.Damage, self.Enchantment
         ]:
             yield item
 
@@ -479,8 +457,7 @@ class Firearm(object):
         if rarity > 4:
             rarity %= 4
         self.Rarity = rarity
-        self.Crit = 'x' + str(
-            choice([3, 4, 5, 6], p=[.5625, .25, .125, 0.0625]))
+        self.Crit = 'x' + str(choice([3, 4, 5, 6], p=[.5625, .25, .125, 0.0625]))
         self.Damage = ['P']
         self.__choose_metal()
         self.Name += choice(possible_guns[self.Class])
@@ -488,29 +465,25 @@ class Firearm(object):
         if self.Class == 'Pistol':
             self.Capacity = int(choice([1, 2, 4, 6]))
             self.Range = 10 + randint(2, 4) * 5 * (self.Rarity + 1)
-            self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
-                choice([4, 6, 8], p=[.625, .25, .125]))
+            self.Dice = str(int(self.Rarity + 1)) + 'd' + str(choice([4, 6, 8], p=[.625, .25, .125]))
             self.Max_Range = 5 * round((self.Range * 2.5) / 5)
 
         elif self.Class == 'Rifle':
             self.Capacity = int(randint(1, 8) * 5)
             self.Range = 10 + randint(2, 10) * 5 * (self.Rarity + 1)
-            self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
-                choice([6, 8, 10], p=[.625, .25, .125]))
+            self.Dice = str(int(self.Rarity + 1)) + 'd' + str(choice([6, 8, 10], p=[.625, .25, .125]))
             self.Max_Range = self.Range * 3
 
         elif self.Class == 'Shotgun':
             self.Capacity = int(choice([1, 2, 3, 4]))
             self.Range = 10 + randint(2, 5) * 5 * ((self.Rarity + 1) // 2)
-            self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
-                choice([6, 8, 10], p=[.625, .25, .125]))
+            self.Dice = str(int(self.Rarity + 1)) + 'd' + str(choice([6, 8, 10], p=[.625, .25, .125]))
             self.Max_Range = self.Range * 2
 
         elif self.Class == 'Sniper':
             self.Capacity = int(choice([1, 2, 4, 6]))
             self.Range = 30 + randint(3, 7) * 10 * (self.Rarity + 1)
-            self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
-                choice([10, 12, 20], p=[.625, .25, .125]))
+            self.Dice = str(int(self.Rarity + 1)) + 'd' + str(choice([10, 12, 20], p=[.625, .25, .125]))
             self.Max_Range = self.Range * 4
         if self.Class != 'Sniper' and self.Rarity > 0:
             self.Dice = str(int(self.Dice[0]) - 1) + self.Dice[1:]
@@ -537,10 +510,7 @@ class Firearm(object):
         if self.Rarity > 4:
             self.Rarity %= 4
 
-        cl = [
-            common_material, uncommon_material, rare_material,
-            very_rare_material, legendary_material
-        ][self.Rarity]
+        cl = [common_material, uncommon_material, rare_material, very_rare_material, legendary_material][self.Rarity]
         metal = None
         while metal is None:
             metal = choice(list(cl.keys()))
@@ -548,10 +518,9 @@ class Firearm(object):
                 self.Name += metal + ' '
             else:
                 metal = None
-        self.Cost = self.cost_and_weight[self.Class][0] * cl[metal]['Cost'] * (
-            self.Rarity + 2)**self.Rarity * (int(self.Crit[1]) / 2)
-        self.Weight = round(
-            self.cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 4, 1)
+        self.Cost = self.cost_and_weight[self.Class][0] * cl[metal]['Cost'] * (self.Rarity + 2)**self.Rarity * (
+            int(self.Crit[1]) / 2)
+        self.Weight = round(self.cost_and_weight[self.Class][1] * cl[metal]['Weight'] * 4, 1)
 
     def add_enchantment(self, ench):
         if self.Enchantment is None:
@@ -752,14 +721,12 @@ class Armor(object):
             self.Weight = legendary_material[self.Metal]['Weight']
 
     def __choose_type(self):
-        if self.Class not in ['Light', 'Medium', 'Heavy', 'Shield'
-                             ] or self.Class is None:
+        if self.Class not in ['Light', 'Medium', 'Heavy', 'Shield'] or self.Class is None:
             self.Class = choice(['Light', 'Medium', 'Heavy', 'Shield'])
         if self.Class == 'Light':
             c = choice(list(self.light_armor.keys()))
             self.AC += self.light_armor[c][1]
-            self.Cost = round(self.Cost * self.light_armor[c][2] *
-                              (self.Rarity + 1)**self.Rarity)
+            self.Cost = round(self.Cost * self.light_armor[c][2] * (self.Rarity + 1)**self.Rarity)
             self.Weight *= round(self.light_armor[c][3], 1)
             self.Name = c + " " + self.Metal
             if c == 'Leathered' and self.Metal == "Leather":
@@ -767,22 +734,19 @@ class Armor(object):
         elif self.Class == 'Medium':
             c = choice(list(self.medium_armor.keys()))
             self.AC += self.medium_armor[c][1]
-            self.Cost = round(self.Cost * self.medium_armor[c][2] *
-                              (self.Rarity + 1)**self.Rarity)
+            self.Cost = round(self.Cost * self.medium_armor[c][2] * (self.Rarity + 1)**self.Rarity)
             self.Weight *= round(self.medium_armor[c][3], 1)
             self.Name = self.Metal + " " + c
         elif self.Class == 'Heavy':
             c = choice(list(self.heavy_armor.keys()))
             self.AC += self.heavy_armor[c][1]
-            self.Cost = round(self.Cost * self.heavy_armor[c][2] *
-                              (self.Rarity + 1)**self.Rarity)
+            self.Cost = round(self.Cost * self.heavy_armor[c][2] * (self.Rarity + 1)**self.Rarity)
             self.Weight *= round(self.heavy_armor[c][3], 1)
             self.Name = self.Metal + " " + c
         else:
             c = choice(list(self.shield.keys()))
             self.AC += self.shield[c][1]
-            self.Cost = round(
-                self.Cost * self.shield[c][2] * (self.Rarity + 1)**self.Rarity)
+            self.Cost = round(self.Cost * self.shield[c][2] * (self.Rarity + 1)**self.Rarity)
             self.Weight *= round(self.shield[c][3], 1)
             self.Name = self.Metal + " " + c
         # print(c)
@@ -902,8 +866,7 @@ class Scroll(object):
                 self.Enchantment = Enchant(iSpell=self.Spell, rechargable=False)
 
         if naming:
-            self.Name = Scroll_Name_Potential[randint(
-                len(Scroll_Name_Potential))] + self.Spell
+            self.Name = Scroll_Name_Potential[randint(len(Scroll_Name_Potential))] + self.Spell
         else:
             self.Name = self.Spell
             self.Add = '+'
@@ -945,10 +908,7 @@ class Enchant(object):
         if self.Spell is not None:
             self.Level = find_spell_level(self.Spell)
         else:
-            self.Level = int(
-                choice(
-                    list(level_likelihood.keys()),
-                    p=list(level_likelihood.values())))
+            self.Level = int(choice(list(level_likelihood.keys()), p=list(level_likelihood.values())))
             if self.Level == 0:
                 self.Spell = choice(level_0)
             elif self.Level == 1:
@@ -973,8 +933,7 @@ class Enchant(object):
         self.__lp()
 
         if rechargable:
-            self.Uses = int(
-                choice([2, 4, 6, 8, 10, 12], p=[.35, .3, .15, .1, .05, .05]))
+            self.Uses = int(choice([2, 4, 6, 8, 10, 12], p=[.35, .3, .15, .1, .05, .05]))
             self.Cost += self.Uses * (self.Level + 1)**self.Level
             self.__describe(rechargable)
         else:
@@ -1104,8 +1063,7 @@ class Potion(object):
                 self.Spell = spell
                 self.Enchantment = Enchant(iSpell=self.Spell, rechargable=False)
 
-        self.Name = Potion_Name_Potential[randint(
-            len(Potion_Name_Potential))] + self.Spell
+        self.Name = Potion_Name_Potential[randint(len(Potion_Name_Potential))] + self.Spell
 
     def __str__(self):
         # print(self.Enchantment.Level)
@@ -1180,8 +1138,7 @@ class Wand(object):
             if find_spell_level(spell) == level:
                 self.Spell = spell
                 self.Enchantment = Enchant(iSpell=self.Spell)
-        self.Name = Wand_Name_Potential[randint(
-            len(Wand_Name_Potential))] + self.Spell
+        self.Name = Wand_Name_Potential[randint(len(Wand_Name_Potential))] + self.Spell
 
     def __str__(self):
         # print(self.Enchantment.Level)
@@ -1263,57 +1220,39 @@ class Food(object):
         meal_option = randint(15) + rarity
         if meal_option <= 10:
             self.Descriptor = "Meat, Bread"
-            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
-                len(Food_m2))] + " " + Food_m3[randint(
-                    len(Food_m3))] + " with a "
-            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
-                len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(len(Food_m2))] + " " + Food_m3[randint(
+                len(Food_m3))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
         elif meal_option == 11:
             self.Descriptor = "Meat, Bread, Fruit"
-            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
-                len(Food_m2))] + " " + Food_m3[randint(
-                    len(Food_m3))] + " with a "
-            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
-                len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
-            s += " and a side of " + Food_f1[randint(
-                len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(len(Food_m2))] + " " + Food_m3[randint(
+                len(Food_m3))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+            s += " and a side of " + Food_f1[randint(len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
 
         elif meal_option == 12:
             self.Descriptor = "Meat, Bread, Vegetable"
-            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
-                len(Food_m2))] + " " + Food_m3[randint(
-                    len(Food_m3))] + " with a "
-            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
-                len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
-            s += " and a side of " + Food_v1[randint(
-                len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(len(Food_m2))] + " " + Food_m3[randint(
+                len(Food_m3))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+            s += " and a side of " + Food_v1[randint(len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
         elif meal_option == 13:
             self.Descriptor = "Vegetable, Bread, Fruit"
-            s += Food_v1[randint(len(Food_v1))] + ' ' + Food_v2[randint(
-                len(Food_v2))] + " with a "
-            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
-                len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
-            s += " and a side of " + Food_f1[randint(
-                len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+            s += Food_v1[randint(len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+            s += " and a side of " + Food_f1[randint(len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
         elif meal_option == 14:
             self.Descriptor = "Meat, Fruit, Vegetable"
-            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
-                len(Food_m2))] + " " + Food_m3[randint(len(Food_m3))]
-            s += " with " + Food_f1[randint(
-                len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
-            s += " and " + Food_v1[randint(
-                len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(len(Food_m2))] + " " + Food_m3[randint(len(Food_m3))]
+            s += " with " + Food_f1[randint(len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+            s += " and " + Food_v1[randint(len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
         else:
             self.Descriptor = "Meat, Fruit, Vegetable, Bread"
-            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(
-                len(Food_m2))] + " " + Food_m3[randint(
-                    len(Food_m3))] + " with a "
-            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(
-                len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
-            s += " with " + Food_f1[randint(
-                len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
-            s += " and " + Food_v1[randint(
-                len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(len(Food_m2))] + " " + Food_m3[randint(
+                len(Food_m3))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+            s += " with " + Food_f1[randint(len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+            s += " and " + Food_v1[randint(len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
         self.String = s
         if meal_option == 0:
             self.Cost = (len(s) * random_sample() + .5) // 10
@@ -1391,8 +1330,7 @@ class Jewel(object):
 
     def __str__(self):
         l = [
-            'Low Quality Gems', 'Semi Precious Gems',
-            'Medium Quality Gemstones', 'High Quality Gemstones', 'Jewels',
+            'Low Quality Gems', 'Semi Precious Gems', 'Medium Quality Gemstones', 'High Quality Gemstones', 'Jewels',
             'Grand Jewels'
         ]
         s = '<tr><td style="width:50%;"><span class="text-md">' + self.Name + '</span></td><td>' + \
@@ -1441,8 +1379,7 @@ class General(object):
             'Services': 5,
             'Transport': 5,
         }
-        c = choice(
-            list(options.keys()), p=list(normalize_dict(options).values()))
+        c = choice(list(options.keys()), p=list(normalize_dict(options).values()))
         item = choice(list(self.Gear[rarity].keys()))
         while self.Gear[rarity][item]['Class'] != c:
             item = choice(list(self.Gear[rarity].keys()))
@@ -1461,68 +1398,48 @@ class General(object):
 
 
 class Art(object):
-    materials = [[
-        'pewter', 'granite', 'soapstone', 'limestone', 'carved wood', 'ceramic'
-    ], ['pewter', 'alabaster', 'silver', 'marble', 'bronze'],
-                 ['pewter', 'alabaster', 'silver', 'marble', 'brass'],
-                 ['gold', 'adamantine', 'dragonbone', 'crystal']]
+    materials = [['pewter', 'granite', 'soapstone', 'limestone', 'carved wood', 'ceramic'],
+                 ['pewter', 'alabaster', 'silver', 'marble', 'bronze'],
+                 ['pewter', 'alabaster', 'silver', 'marble', 'brass'], ['gold', 'adamantine', 'dragonbone', 'crystal']]
     gems = [[
-        'n azurite', ' banded agate', ' blue quartz', ' hematite',
-        ' lapis lazuli', ' malachite', ' moss agate', 'n obsidian piece',
-        ' tiger eye', ' beryl'
+        'n azurite', ' banded agate', ' blue quartz', ' hematite', ' lapis lazuli', ' malachite', ' moss agate',
+        'n obsidian piece', ' tiger eye', ' beryl'
     ],
             [
-                ' bloodstone', ' carnelian', ' chalcedony', ' citrine',
-                ' jasper', ' moonstone', ' n onyx', ' zircon', ' chrysophase'
+                ' bloodstone', ' carnelian', ' chalcedony', ' citrine', ' jasper', ' moonstone', ' n onyx', ' zircon',
+                ' chrysophase'
             ],
             [
-                'n amber', 'n amethyst', ' piece of coral', ' garnet',
-                ' piece of jade', ' pearl', ' spinel', ' tourmaline'
-            ],
-            [
-                'n alexandrite', 'n aquamarine', ' topaz', ' peridot',
-                ' blue spinel', ' black pearl', ' diamond'
-            ]]
-    filigree = [['copper', 'oak wood', 'tin', 'bronze', 'bone'],
-                ['brass', 'maple wood', 'iron', 'glass', 'bone'],
-                ['gold', 'mahogany wood', 'glass', 'ivory', 'mythril'],
-                ['platinum', 'ironwood', 'mythril', 'ivory']]
+                'n amber', 'n amethyst', ' piece of coral', ' garnet', ' piece of jade', ' pearl', ' spinel',
+                ' tourmaline'
+            ], ['n alexandrite', 'n aquamarine', ' topaz', ' peridot', ' blue spinel', ' black pearl', ' diamond']]
+    filigree = [['copper', 'oak wood', 'tin', 'bronze', 'bone'], ['brass', 'maple wood', 'iron', 'glass', 'bone'],
+                ['gold', 'mahogany wood', 'glass', 'ivory', 'mythril'], ['platinum', 'ironwood', 'mythril', 'ivory']]
     descriptor = [
-        'ugly', 'beautiful', 'ancient', 'old', 'strange', 'antique', 'durable',
-        'sturdy', 'engraved', 'ornate', 'rough', 'ornamental'
+        'ugly', 'beautiful', 'ancient', 'old', 'strange', 'antique', 'durable', 'sturdy', 'engraved', 'ornate', 'rough',
+        'ornamental'
     ]
-    cloth = [
-        'silk', 'wool', 'leather', 'fur', 'angelskin', 'darkleaf',
-        'griffon mane'
-    ]
+    cloth = ['silk', 'wool', 'leather', 'fur', 'angelskin', 'darkleaf', 'griffon mane']
     bad_condition = [
-        'in poor condition', 'of poor craftsmanship', 'of shoddy construction',
-        'in bad shape', 'of low quality'
+        'in poor condition', 'of poor craftsmanship', 'of shoddy construction', 'in bad shape', 'of low quality'
     ]
     figurine = [
-        'a dragon', 'a gryphon', 'a hydra', 'an owlbear', 'a beholder',
-        'a boar', 'a bear', 'a wolf', 'a fox', 'a tiger', 'a lion', 'a horse',
-        'an owl', 'a hawk', 'an eagle', 'a crow', 'a snake', 'a fish',
-        'a shark', 'a goblin', 'a skeleton', 'an orc', 'a minotaur',
-        'a tiefling', 'a warrior', 'a knight', 'a thief', 'a wizard', 'a ship',
-        'a castle', 'a tower', 'a boat', 'a king', 'a queen', 'a princess',
-        'a god', 'a goddess'
+        'a dragon', 'a gryphon', 'a hydra', 'an owlbear', 'a beholder', 'a boar', 'a bear', 'a wolf', 'a fox',
+        'a tiger', 'a lion', 'a horse', 'an owl', 'a hawk', 'an eagle', 'a crow', 'a snake', 'a fish', 'a shark',
+        'a goblin', 'a skeleton', 'an orc', 'a minotaur', 'a tiefling', 'a warrior', 'a knight', 'a thief', 'a wizard',
+        'a ship', 'a castle', 'a tower', 'a boat', 'a king', 'a queen', 'a princess', 'a god', 'a goddess'
     ]
     object = [
-        'ring', 'tankard', 'goblet', 'cup', 'drinking horn', 'crown', 'circlet',
-        'tiara', 'pendant', 'necklace', 'amulet', 'medallion', 'bowl', 'plate',
-        'jewelry box', 'music box', 'brooch', 'chess set', 'mask', 'holy text',
+        'ring', 'tankard', 'goblet', 'cup', 'drinking horn', 'crown', 'circlet', 'tiara', 'pendant', 'necklace',
+        'amulet', 'medallion', 'bowl', 'plate', 'jewelry box', 'music box', 'brooch', 'chess set', 'mask', 'holy text',
         'hourglass', 'vase'
     ]
     magic = [
-        'It glows with a soft blue light', 'It glows with a soft green light',
-        'It glows with a soft red light', 'It glows with a soft amber light',
-        'It glows with a soft violet light', 'It is warm to the touch',
-        'It is hot to the touch', 'It is cool to the touch',
-        'It is cold to the touch', 'It hums with gentle music',
-        'It hums with melodic music', 'It hums with soft music',
-        'It is wreathed in blue flames', 'It is wreathed in green flames',
-        'It is wreathed in red flames', 'It is wreathed in amber flames',
+        'It glows with a soft blue light', 'It glows with a soft green light', 'It glows with a soft red light',
+        'It glows with a soft amber light', 'It glows with a soft violet light', 'It is warm to the touch',
+        'It is hot to the touch', 'It is cool to the touch', 'It is cold to the touch', 'It hums with gentle music',
+        'It hums with melodic music', 'It hums with soft music', 'It is wreathed in blue flames',
+        'It is wreathed in green flames', 'It is wreathed in red flames', 'It is wreathed in amber flames',
         'It is wreathed in violet flames'
     ]
 
@@ -1537,11 +1454,9 @@ class Art(object):
                                    ' of ' + choice(['dwarven', 'elven', 'Dragonborn']) + ' ' + \
                                    choice(['beer', 'wine', 'ale', 'mead'])
             elif c == 1:
-                self.Description = 'Pair of ' + choice(
-                    self.descriptor) + ' ' + choice(self.cloth) + ' gloves'
+                self.Description = 'Pair of ' + choice(self.descriptor) + ' ' + choice(self.cloth) + ' gloves'
             elif c == 2:
-                self.Description = choice(self.descriptor) + ' ' + choice(
-                    self.cloth) + ' ' + choice(['hat', 'ribbon'])
+                self.Description = choice(self.descriptor) + ' ' + choice(self.cloth) + ' ' + choice(['hat', 'ribbon'])
         elif quality == 1:
             c %= 6
             if c == 0:
@@ -1568,9 +1483,7 @@ class Art(object):
                 self.Description = choice(self.descriptor) + ' ' + choice(self.cloth) + ' ' + \
                                    choice(['cloth', 'cloak']) + ' with ' + choice(self.materials[1]) + ' clasps'
             elif c == 1:
-                self.Description = choice(
-                    self.descriptor) + ' belt with a(n) ' + choice(
-                        self.materials[1]) + ' buckle'
+                self.Description = choice(self.descriptor) + ' belt with a(n) ' + choice(self.materials[1]) + ' buckle'
         elif quality == 3:
             c %= 8
             if c == 0:
@@ -1612,9 +1525,7 @@ class Art(object):
                 self.Description = choice(self.descriptor) + ' ' + choice(self.materials[2]) + ' ' + \
                                    choice(self.object) + ', set with a' + choice(self.gems[3])
             elif c == 4:
-                self.Description = choice(
-                    self.materials[3]) + ' framed painting of ' + choice(
-                        self.figurine)
+                self.Description = choice(self.materials[3]) + ' framed painting of ' + choice(self.figurine)
         elif quality == 5:
             c %= 4
             if c == 0:
@@ -1832,9 +1743,7 @@ def create_book_shop(owner, genres, quan, inflate=1):
     if isinstance(inflate, float):
         a = Store(owner, str(Antiques()) + " (Library)", inflate, [0, 9])
     else:
-        a = Store(owner,
-                  str(Antiques()) + " (Library)",
-                  (sum(random_sample(inflate))) + .5, [0, 9])
+        a = Store(owner, str(Antiques()) + " (Library)", (sum(random_sample(inflate))) + .5, [0, 9])
     a.fill_store(Book, quan)
     return a
 
@@ -1986,37 +1895,25 @@ if __name__ == '__main__':
                 if '+' in d_amount:
                     dice[int(d_amount.split('+')[0])] += 1
                     damage.append(
-                        int(item.Dice[0]) * (
-                            (int(d_amount.split('+')[0]) // 2) + .5) +
-                        int(d_amount.split('+')[1]))
+                        int(item.Dice[0]) * ((int(d_amount.split('+')[0]) // 2) + .5) + int(d_amount.split('+')[1]))
                     # print(int(item.Dice[0]), ((int(d_amount.split('+')[0]) // 2) +.5))
                 else:
                     dice[int(item.Dice[2:])] += 1
-                    damage.append(
-                        int(item.Dice[0]) * ((int(item.Dice[2:]) // 2) + .5))
+                    damage.append(int(item.Dice[0]) * ((int(item.Dice[2:]) // 2) + .5))
                 average += item.Cost
                 cost_list.append(item.Cost)
                 crit += int(item.Crit[1:])
                 rang += item.Range
             totals[i] = {
-                "Average GP per Damage":
-                round(median(cost_list) / (sum(damage) / cap), 2),
-                "Damage Average":
-                round(sum(damage) / cap, 2),
-                "Cost Max":
-                largest,
-                "Cost Min":
-                smallest,
-                "Cost Median":
-                median(cost_list),
-                "Cost Average":
-                round(average / cap, 2),
-                "Range":
-                rang / cap,
-                "Critical":
-                crit / cap,
-                "Dice":
-                dice
+                "Average GP per Damage": round(median(cost_list) / (sum(damage) / cap), 2),
+                "Damage Average": round(sum(damage) / cap, 2),
+                "Cost Max": largest,
+                "Cost Min": smallest,
+                "Cost Median": median(cost_list),
+                "Cost Average": round(average / cap, 2),
+                "Range": rang / cap,
+                "Critical": crit / cap,
+                "Dice": dice
             }
 
         print(t)

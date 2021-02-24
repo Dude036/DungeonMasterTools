@@ -31,21 +31,17 @@ class Augment(object):
             self.Name = self.Slot_Special.Name + " Arm"
 
         elif self.Class == 'Arm':
-            self.Slot_Special = Weapon(
-                self.Rarity, iClass=choice(list(possible_melee.keys())))
+            self.Slot_Special = Weapon(self.Rarity, iClass=choice(list(possible_melee.keys())))
             self.Name = self.Slot_Special.Name + " Arm"
 
         elif self.Class == 'Leg':
-            nam = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
-                   13][self.Rarity:self.Rarity + 9]
+            nam = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13][self.Rarity:self.Rarity + 9]
             self.Slot_Special = str(
                 choice(
-                    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
-                    ][self.Rarity:self.Rarity + 9],
+                    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13][self.Rarity:self.Rarity + 9],
                     p=[
-                        0.360000001, 0.252839506, 0.169382716, 0.106666667,
-                        0.061728395, 0.031604938, 0.013333333, 0.003950617,
-                        0.000493827
+                        0.360000001, 0.252839506, 0.169382716, 0.106666667, 0.061728395, 0.031604938, 0.013333333,
+                        0.003950617, 0.000493827
                     ]) * 10)
             self.Slot_Special = '+' + self.Slot_Special + ' Base Movement Speed'
             self.Name = m_name + ' Legs'
@@ -53,12 +49,10 @@ class Augment(object):
         elif self.Class == 'Eye':
             self.Slot_Special = str(
                 choice(
-                    [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
-                    ][self.Rarity:self.Rarity + 9],
+                    [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15][self.Rarity:self.Rarity + 9],
                     p=[
-                        0.360000001, 0.252839506, 0.169382716, 0.106666667,
-                        0.061728395, 0.031604938, 0.013333333, 0.003950617,
-                        0.000493827
+                        0.360000001, 0.252839506, 0.169382716, 0.106666667, 0.061728395, 0.031604938, 0.013333333,
+                        0.003950617, 0.000493827
                     ]) * 10) + " "
             self.Name = m_name + ' Optical Implant'
 
@@ -76,15 +70,12 @@ class Augment(object):
         elif self.Class == 'Brain':
             num = str(
                 choice(
-                    [1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 9,
-                     9][self.Rarity:self.Rarity + 9],
+                    [1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9][self.Rarity:self.Rarity + 9],
                     p=[
-                        0.360000001, 0.252839506, 0.169382716, 0.106666667,
-                        0.061728395, 0.031604938, 0.013333333, 0.003950617,
-                        0.000493827
+                        0.360000001, 0.252839506, 0.169382716, 0.106666667, 0.061728395, 0.031604938, 0.013333333,
+                        0.003950617, 0.000493827
                     ]))
-            self.Slot_Special = "+" + num + " " + choice(
-                ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'])
+            self.Slot_Special = "+" + num + " " + choice(['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'])
             self.Name = m_name + " " + self.Class + " Implant"
 
         elif self.Class == 'Chest':

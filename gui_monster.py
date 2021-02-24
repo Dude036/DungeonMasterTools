@@ -3,9 +3,9 @@ import simplejson as json
 from beastiary import pick_monster, print_monster, Beasts, Poke_moves
 from numpy.random import choice
 
-
 Names = []
 Stats = {}
+
 
 @eel.expose
 def autofill_text(text):
@@ -29,7 +29,7 @@ def autofill_text(text):
     if s >= e:
         print("No suggestion")
         return []
-    
+
     # Loop to find all potential
     found = set()
     it = 0
@@ -65,7 +65,7 @@ def submit(name, cr):
             monster = Stats[name]
     else:
         monster = Stats[name]
-    
+
     # Print off final
     mon_html = print_monster([name, monster], False)
     return mon_html

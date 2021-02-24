@@ -21,8 +21,7 @@ if __name__ == '__main__':
     else:
         town_dict = json.load(open(info, 'r'))
         # Build Town
-        town_generator.townHTML += "<h1>" + info.split(
-            '.')[0] + "</h1><p>Description</p>"
+        town_generator.townHTML += "<h1>" + info.split('.')[0] + "</h1><p>Description</p>"
         town_generator.townHTML += """<h2 class="text-lg bold center">Shops</h2>"""
 
         Q = []
@@ -37,8 +36,7 @@ if __name__ == '__main__':
         for pair in S:
             key, value = list(pair.keys())[0], list(pair.values())[0]
             if 'TownName' in value:
-                board = QuestBoard(value['Low'], value['High'],
-                                   value['Quantity'], value['TownName'])
+                board = QuestBoard(value['Low'], value['High'], value['Quantity'], value['TownName'])
                 town_generator.townHTML += str(board)
                 continue
             if 'Rooms' not in value.keys():
@@ -49,8 +47,7 @@ if __name__ == '__main__':
                 new_store.from_dict(value)
 
             # Setup Shop keeper
-            new_store.Shopkeeper = Character(None, None, None, None, None, None,
-                                             None)
+            new_store.Shopkeeper = Character(None, None, None, None, None, None, None)
             new_store.Shopkeeper.from_dict(value["Shopkeeper"])
 
             if "(Library)" in new_store.Store_name or "(Inn)" in new_store.Store_name:

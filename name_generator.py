@@ -55,10 +55,7 @@ d_premade = [
     'Vishkanya',
     'Wayangs',
 ]
-d_unisex = [
-    'Aarakocra', 'Bugbear', 'Changeling', 'Kenku', 'Tabaxi', 'Tortle',
-    'Warforged', 'Yuan-ti Pureblood'
-]
+d_unisex = ['Aarakocra', 'Bugbear', 'Changeling', 'Kenku', 'Tabaxi', 'Tortle', 'Warforged', 'Yuan-ti Pureblood']
 
 
 def default_name(race, gender='Male', doubled=True):
@@ -68,24 +65,19 @@ def default_name(race, gender='Male', doubled=True):
     # First name
     name = ''
     if gender == 'Male':
-        name += race.m1[randint(len(race.m1))] + race.m2[randint(len(
-            race.m2))] + race.m3[randint(len(race.m3))]
+        name += race.m1[randint(len(race.m1))] + race.m2[randint(len(race.m2))] + race.m3[randint(len(race.m3))]
         if randint(2) == 1 and doubled:
-            name += race.m2[randint(len(race.m2))] + race.m3[randint(
-                len(race.m3))]
+            name += race.m2[randint(len(race.m2))] + race.m3[randint(len(race.m3))]
         name += race.m4[randint(len(race.m4))]
 
     else:  # Female
-        name += race.f1[randint(len(race.f1))] + race.f2[randint(len(
-            race.f2))] + race.f3[randint(len(race.f3))]
+        name += race.f1[randint(len(race.f1))] + race.f2[randint(len(race.f2))] + race.f3[randint(len(race.f3))]
         if randint(2) == 1 and doubled:
-            name += race.f2[randint(len(race.f2))] + race.f3[randint(
-                len(race.f3))]
+            name += race.f2[randint(len(race.f2))] + race.f3[randint(len(race.f3))]
         name += race.f4[randint(len(race.f4))]
 
     # Last name
-    name += ' ' + race.s1[randint(len(race.s1))] + race.s2[randint(
-        len(race.s2))] + race.s3[randint(len(race.s3))]
+    name += ' ' + race.s1[randint(len(race.s1))] + race.s2[randint(len(race.s2))] + race.s3[randint(len(race.s3))]
     if randint(2) == 1 and doubled:
         name += race.s2[randint(len(race.s2))] + race.s3[randint(len(race.s3))]
     name += race.s4[randint(len(race.s4))]
@@ -99,20 +91,16 @@ def default_single(race, gender='Male', doubled=True):
     """
     name = ''
     if gender == 'Male':
-        name += race.m1[randint(len(race.m1))] + race.m2[randint(len(
-            race.m2))] + race.m3[randint(len(race.m3))]
+        name += race.m1[randint(len(race.m1))] + race.m2[randint(len(race.m2))] + race.m3[randint(len(race.m3))]
         name += race.m2[randint(len(race.m2))] + race.m4[randint(len(race.m4))]
         if randint(2) == 1 and doubled:
-            name += race.m3[randint(len(race.m3))] + race.m2[randint(
-                len(race.m2))] + race.m4[randint(len(race.m4))]
+            name += race.m3[randint(len(race.m3))] + race.m2[randint(len(race.m2))] + race.m4[randint(len(race.m4))]
 
     else:  # Female
-        name += race.f1[randint(len(race.f1))] + race.f2[randint(len(
-            race.f2))] + race.f3[randint(len(race.f3))]
+        name += race.f1[randint(len(race.f1))] + race.f2[randint(len(race.f2))] + race.f3[randint(len(race.f3))]
         name += race.f2[randint(len(race.f2))] + race.f4[randint(len(race.f4))]
         if randint(2) == 1 and doubled:
-            name += race.f2[randint(len(race.f2))] + race.f3[randint(
-                len(race.f3))] + race.f4[randint(len(race.f4))]
+            name += race.f2[randint(len(race.f2))] + race.f3[randint(len(race.f3))] + race.f4[randint(len(race.f4))]
 
     return name.title()
 

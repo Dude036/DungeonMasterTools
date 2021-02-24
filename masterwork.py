@@ -11,19 +11,14 @@ def special_masterwork_weapon(Weapon, Trait=None):
     else:
         # Get all potential options for our weapon type
         special_options = [
-            'Anarchic', 'Axiomatic', 'Bane', 'Beaming', 'Benevolent',
-            'Bewildering', 'Breaking', 'Called', 'Compassionate', 'Conductive', 'Corrosive',
-            'Corrosive Burst', 'Cruel', 'Defiant', 'Dispelling', 'Dispelling Burst', 'Distracting',
-            'Greater Distracting', 'Fervent', 'Flaming', 'Flaming Burst',
-            'Flying', 'Frost', 'Furyborn', 'Ghost Touch', 'Heartseeker',
-            'Heretical', 'Holy', 'Huntsman', 'Icy Burst', 'Igniting',
-            'Impervious', 'Kinslayer', 'Limning', 'Lucky', 'Greater Lucky',
-            'Merciful', 'Miserable', 'Negating', 'Patriotic', 'Peaceful',
-            'Phase Locking', 'Planestriking', 'Redeemed', 'Repositioning',
-            'Sacred', 'Shattering', 'Shock', 'Shocking Burst', 'Silencing', 'Sneaky',
-            'Speed', 'Spell Storing', 'Stalking', 'Summon Bane', 'Thawing',
-            'Thundering', 'Toxic', 'Training', 'Treasonous', 'Truthful',
-            'Unholy', 'Valiant'
+            'Anarchic', 'Axiomatic', 'Bane', 'Beaming', 'Benevolent', 'Bewildering', 'Breaking', 'Called',
+            'Compassionate', 'Conductive', 'Corrosive', 'Corrosive Burst', 'Cruel', 'Defiant', 'Dispelling',
+            'Dispelling Burst', 'Distracting', 'Greater Distracting', 'Fervent', 'Flaming', 'Flaming Burst', 'Flying',
+            'Frost', 'Furyborn', 'Ghost Touch', 'Heartseeker', 'Heretical', 'Holy', 'Huntsman', 'Icy Burst', 'Igniting',
+            'Impervious', 'Kinslayer', 'Limning', 'Lucky', 'Greater Lucky', 'Merciful', 'Miserable', 'Negating',
+            'Patriotic', 'Peaceful', 'Phase Locking', 'Planestriking', 'Redeemed', 'Repositioning', 'Sacred',
+            'Shattering', 'Shock', 'Shocking Burst', 'Silencing', 'Sneaky', 'Speed', 'Spell Storing', 'Stalking',
+            'Summon Bane', 'Thawing', 'Thundering', 'Toxic', 'Training', 'Treasonous', 'Truthful', 'Unholy', 'Valiant'
         ]
         if Weapon.Class == 'Bows':
             special_options += ['Adaptive', 'Ambushing']
@@ -33,60 +28,39 @@ def special_masterwork_weapon(Weapon, Trait=None):
             special_options += ['Anchoring', 'Returning', 'Sharding']
         if Weapon.Class == 'Monk' or Weapon.Class == 'Close':
             special_options += ['Brawling', 'Sapping']
-        if Weapon.Class in [
-                'Bows', 'Crossbow', 'Thrown', 'Light Blade', 'Close', 'Spear'
-        ]:
+        if Weapon.Class in ['Bows', 'Crossbow', 'Thrown', 'Light Blade', 'Close', 'Spear']:
             special_options += ['Injecting']
 
         # Firearm Weapons
         if Weapon.Class in ['Pistol', 'Rifle', 'Shotgun', 'Sniper']:
-            special_options += [
-                'Dazzling', 'Dry Load', 'Reliable', 'Greater Reliable',
-                'Sonic Boom'
-            ]
+            special_options += ['Dazzling', 'Dry Load', 'Reliable', 'Greater Reliable', 'Sonic Boom']
 
         # Not a ranged weapon
-        if Weapon.Class not in [
-                'Bows', 'Thrown', 'Crossbow', 'Pistol', 'Rifle', 'Shotgun',
-                'Sniper'
-        ]:
+        if Weapon.Class not in ['Bows', 'Thrown', 'Crossbow', 'Pistol', 'Rifle', 'Shotgun', 'Sniper']:
             special_options += [
-                'Advancing', 'Answering', 'Allying', 'Countering', 'Courageous',
-                'Dazzling Radiance', 'Defending', 'Dueling', 'Exhausting',
-                'Fortuitous', 'Furious', 'Glorious', 'Grayflame', 'Growing',
-                'Guardian', 'Impact', 'Invigorating', 'Ki Focus', 'Ki Intensifying',
-                'Liberating', 'Lifesurge', 'Menacing', 'Mighty Cleaving',
-                'Mimetic', 'Neutralizing', 'Ominous', 'Quenching', 'Rusting',
-                'Seaborne', 'Sharding', 'Shrinking', 'Spell Siphon',
-                'Spell Stealing', 'Throwing', 'Umbral', 'Underwater', 'Unseen',
-                'Vampiric', 'Greater Vampiric', 'Vicious'
+                'Advancing', 'Answering', 'Allying', 'Countering', 'Courageous', 'Dazzling Radiance', 'Defending',
+                'Dueling', 'Exhausting', 'Fortuitous', 'Furious', 'Glorious', 'Grayflame', 'Growing', 'Guardian',
+                'Impact', 'Invigorating', 'Ki Focus', 'Ki Intensifying', 'Liberating', 'Lifesurge', 'Menacing',
+                'Mighty Cleaving', 'Mimetic', 'Neutralizing', 'Ominous', 'Quenching', 'Rusting', 'Seaborne', 'Sharding',
+                'Shrinking', 'Spell Siphon', 'Spell Stealing', 'Throwing', 'Umbral', 'Underwater', 'Unseen', 'Vampiric',
+                'Greater Vampiric', 'Vicious'
             ]
             if Weapon.Class not in ['Heavy Axe', 'Heavy Blade']:
                 special_options += ['Agile']
             if 'S' in Weapon.Damage or 'P' in Weapon.Damage:
-                special_options += [
-                    'Bloodsong', 'Culling', 'Debilitating', 'Gory', 'Keen',
-                    'Wounding'
-                ]
+                special_options += ['Bloodsong', 'Culling', 'Debilitating', 'Gory', 'Keen', 'Wounding']
             if 'B' in Weapon.Damage:
-                special_options += [
-                    'Disruption', 'Legbreaker', 'Quaking', 'Smashing'
-                ]
+                special_options += ['Disruption', 'Legbreaker', 'Quaking', 'Smashing']
             if Weapon.Class in ['Light Axe', 'Light Blade', 'Close', 'Hammer']:
                 special_options += ['Concealed', 'Concealed, Lesser']
-            if Weapon.Class in [
-                    'Heavy Axe', 'Heavy Blade', 'Light Axe', 'Light Blade',
-                    'Polearm'
-            ]:
+            if Weapon.Class in ['Heavy Axe', 'Heavy Blade', 'Light Axe', 'Light Blade', 'Polearm']:
                 special_options += ['Deadly', 'Vorpal']
 
         else:
             special_options += [
-                'Conserving', 'Cyclonic', 'Lesser Designating',
-                'Greater Designating', 'Distance', 'Driving', 'Glitterwake',
-                'Grounding', 'Heart-Piercing', 'Interfering', 'Nimble Shot',
-                'Penetrating', 'Phantom Ammunition', 'Plummeting',
-                'Second Chance', 'Seeking', 'Shadowshooting', 'Tailwind'
+                'Conserving', 'Cyclonic', 'Lesser Designating', 'Greater Designating', 'Distance', 'Driving',
+                'Glitterwake', 'Grounding', 'Heart-Piercing', 'Interfering', 'Nimble Shot', 'Penetrating',
+                'Phantom Ammunition', 'Plummeting', 'Second Chance', 'Seeking', 'Shadowshooting', 'Tailwind'
             ]
 
         Weapon.Special = choice(special_options)
@@ -146,9 +120,8 @@ def get_flavor_text_weapon(name, Weapon=None):
 
     elif name == 'Bane':
         creatures = choice([
-            'aberrations', 'beasts', 'celestials', 'constructs', 'dragons',
-            'elementals', 'fey', 'fiends', 'giants', 'monstrosities', 'oozes',
-            'plants', 'undead'
+            'aberrations', 'beasts', 'celestials', 'constructs', 'dragons', 'elementals', 'fey', 'fiends', 'giants',
+            'monstrosities', 'oozes', 'plants', 'undead'
         ])
         text = 'This weapon is designed to be destructive to a certain type of foe. Deal an additional 2d6 points ' + \
                'of damage against creatures of the ' + creatures + ' type.'
@@ -168,10 +141,8 @@ def get_flavor_text_weapon(name, Weapon=None):
                'Strength (or Dexterity).'
 
     elif name == 'Blood-Hunting':
-        creatures = choice([
-            'aberrations', 'beasts', 'celestials', 'dragons', 'fey', 'fiends',
-            'giants', 'monstrosities'
-        ])
+        creatures = choice(
+            ['aberrations', 'beasts', 'celestials', 'dragons', 'fey', 'fiends', 'giants', 'monstrosities'])
         text = 'This weapon is designed to seek the blood of a certain type of foe. Deal an additional 1d6 points ' + \
                'of damage against creatures of the ' + creatures + ' type.'
 
@@ -190,8 +161,7 @@ def get_flavor_text_weapon(name, Weapon=None):
                'Structures, or Objects.'
 
     elif name == 'Brilliant Energy':
-        damage = choice(
-            ['Acid', 'Cold', 'Fire', 'Force', 'Lightning', 'Poison', 'Thunder'])
+        damage = choice(['Acid', 'Cold', 'Fire', 'Force', 'Lightning', 'Poison', 'Thunder'])
         text = "This weapon was designed to deal " + damage + " damage instead of it's normal damage"
 
     elif name == 'Called':
@@ -585,9 +555,8 @@ def get_flavor_text_weapon(name, Weapon=None):
 
     elif name == 'Miserable':
         creatures = choice([
-            'aberrations', 'beasts', 'celestials', 'constructs', 'dragons',
-            'elementals', 'fey', 'fiends', 'giants', 'monstrosities', 'oozes',
-            'plants', 'undead'
+            'aberrations', 'beasts', 'celestials', 'constructs', 'dragons', 'elementals', 'fey', 'fiends', 'giants',
+            'monstrosities', 'oozes', 'plants', 'undead'
         ])
         text = "This weapon is designed to be destructive to a certain type of foe. Deal an additional 2d6 points " + \
                "of damage against creatures of the " + creatures + " type. This weapon cuts through resistances " + \
@@ -841,22 +810,16 @@ def get_flavor_text_weapon(name, Weapon=None):
 
     elif name == 'Training':
         feat = choice([
-            'Aberrant Dragonmark', 'Actor', 'Alert', 'Athlete',
-            'Bountiful Luck', 'Charger', 'Crossbow Expert', 'Defensive Duelist',
-            'Dragon Fear', 'Dragon Hide', 'Drow High Magic', 'Dual Wielder',
-            'Dungeon Delver', 'Durable', 'Dwarven Fortitude', 'Elemental Adept',
-            'Elven Accuracy', 'Fade Away', 'Fey Teleportation',
-            'Flames of Phlegethos', 'Grappler', 'Great Weapon Master', 'Healer',
-            'Heavily Armored', 'Heavy Armor Master', 'Infernal Constitution',
-            'Inspiring Leader', 'Keen Mind', 'Lightly Armored', 'Linguist',
-            'Lucky', 'Mage Slayer', 'Magic Initiate', 'Martial Adept',
-            'Medium Armor Master', 'Mobile', 'Moderately Armored',
-            'Mounted Combatant', 'Observant', 'Orcish Fury', 'Polearm Master',
-            'Prodigy', 'Resilient', 'Revenant Blade', 'Ritual Caster',
-            'Savage Attacker', 'Second Chance', 'Sentinel', 'Sharpshooter',
-            'Shield Master', 'Skilled', 'Skulker', 'Spell Sniper',
-            'Squat Nimbleness', 'Svirfneblin Magic', 'Tavern Brawler', 'Tough',
-            'War Caster', 'Weapon Master', 'Wood Elf Magic'
+            'Aberrant Dragonmark', 'Actor', 'Alert', 'Athlete', 'Bountiful Luck', 'Charger', 'Crossbow Expert',
+            'Defensive Duelist', 'Dragon Fear', 'Dragon Hide', 'Drow High Magic', 'Dual Wielder', 'Dungeon Delver',
+            'Durable', 'Dwarven Fortitude', 'Elemental Adept', 'Elven Accuracy', 'Fade Away', 'Fey Teleportation',
+            'Flames of Phlegethos', 'Grappler', 'Great Weapon Master', 'Healer', 'Heavily Armored',
+            'Heavy Armor Master', 'Infernal Constitution', 'Inspiring Leader', 'Keen Mind', 'Lightly Armored',
+            'Linguist', 'Lucky', 'Mage Slayer', 'Magic Initiate', 'Martial Adept', 'Medium Armor Master', 'Mobile',
+            'Moderately Armored', 'Mounted Combatant', 'Observant', 'Orcish Fury', 'Polearm Master', 'Prodigy',
+            'Resilient', 'Revenant Blade', 'Ritual Caster', 'Savage Attacker', 'Second Chance', 'Sentinel',
+            'Sharpshooter', 'Shield Master', 'Skilled', 'Skulker', 'Spell Sniper', 'Squat Nimbleness',
+            'Svirfneblin Magic', 'Tavern Brawler', 'Tough', 'War Caster', 'Weapon Master', 'Wood Elf Magic'
         ])
         text = 'This weapon contains a trained feature. This weapon contains the ' + feat + ' feat. You may ' + \
                'consider this feat known, so long as you meet the prerequisites, and have the weapon in your' + \
@@ -1012,26 +975,79 @@ def special_masterwork_armor(Armor, Trait=None):
 
         if Armor.Class == 'Light':
             special_options += [
-                'Balanced', 'Bloodthirsty', 'Brawling', 'Burdenless', 'Creeping', 'Etherealness', 'Expeditious', 
-                'Glamered', 'Grinding', 'Mental Focus', 'Phantasmal', 'Phase Lurching', 'Restful', 'Shadow',
-                'Shadow Blending', 'Improved Shadow',  'Greater Shadow', 'Spellsink', 'Terrain-Striding', 'Wild', 
-                'Withstanding', 
+                'Balanced',
+                'Bloodthirsty',
+                'Brawling',
+                'Burdenless',
+                'Creeping',
+                'Etherealness',
+                'Expeditious',
+                'Glamered',
+                'Grinding',
+                'Mental Focus',
+                'Phantasmal',
+                'Phase Lurching',
+                'Restful',
+                'Shadow',
+                'Shadow Blending',
+                'Improved Shadow',
+                'Greater Shadow',
+                'Spellsink',
+                'Terrain-Striding',
+                'Wild',
+                'Withstanding',
             ]
         if Armor.Class == 'Medium':
             special_options += [
-                'Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Etherealness',
-                'Expeditious', 'Glamered', 'Grinding', 'Mental Focus', 'Mind Buttressing', 'Poisoning', 'Putrid',
-                'Restful', 'Terrain-Striding', 'Wild', 'Withstanding',
+                'Balanced',
+                'Bloodthirsty',
+                'Bolstering',
+                'Burdenless',
+                'Comfort',
+                'Corsair',
+                'Etherealness',
+                'Expeditious',
+                'Glamered',
+                'Grinding',
+                'Mental Focus',
+                'Mind Buttressing',
+                'Poisoning',
+                'Putrid',
+                'Restful',
+                'Terrain-Striding',
+                'Wild',
+                'Withstanding',
             ]
         if Armor.Class == 'Heavy':
             special_options += [
-                'Adamant', 'Advancing', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Dread Wing', 'Glamered',
-                'Grinding', 'Mind Buttressing', 'Poisoning', 'Putrid', 'Radiant Flight', 'Titanic', 'Unbowed',
-                'Volcanic', 'Wild', 'Withstanding', 
+                'Adamant',
+                'Advancing',
+                'Bolstering',
+                'Burdenless',
+                'Comfort',
+                'Corsair',
+                'Dread Wing',
+                'Glamered',
+                'Grinding',
+                'Mind Buttressing',
+                'Poisoning',
+                'Putrid',
+                'Radiant Flight',
+                'Titanic',
+                'Unbowed',
+                'Volcanic',
+                'Wild',
+                'Withstanding',
             ]
         if Armor.Class == 'Shield':
             special_options += [
-                'Animated', 'Bashing', 'Bolstering', 'Jawbreaker', 'Poisoning', 'Reflecting', 'Singing',
+                'Animated',
+                'Bashing',
+                'Bolstering',
+                'Jawbreaker',
+                'Poisoning',
+                'Reflecting',
+                'Singing',
             ]
 
         Armor.Special = choice(special_options)
@@ -1224,9 +1240,8 @@ def get_flavor_text_armor(name, Armor=None):
         else:
             t = str(Armor.Masterwork)
         creatures = choice([
-            'aberrations', 'beasts', 'celestials', 'constructs', 'dragons',
-            'elementals', 'fey', 'fiends', 'giants', 'monstrosities', 'oozes',
-            'plants', 'undead'
+            'aberrations', 'beasts', 'celestials', 'constructs', 'dragons', 'elementals', 'fey', 'fiends', 'giants',
+            'monstrosities', 'oozes', 'plants', 'undead'
         ])
         text = 'This armor treats all incoming damage from ' + creatures + ' as if it were ' + t + ' less.'
 
@@ -1700,5 +1715,3 @@ if __name__ == '__main__':
     # Write Store to HTML
     with open('Master Masterwork Traits Table.html', 'w', encoding='utf-8') as outf:
         outf.write(bs(html_to_write, 'html5lib').prettify())
-
-

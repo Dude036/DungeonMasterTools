@@ -20,7 +20,7 @@ if BeastSource == 'D&D 5':
     Beasts.update(json.load(open('5e_beasts.json', 'r', encoding='utf-8'), encoding='utf-8'))
 elif BeastSource == 'Pathfinder 1':
     Beasts.update(json.load(open('beasts.json', 'r', encoding='utf-8'), encoding='utf-8'))
-    
+
 if settings["Allow Pokemon"]:
     with open('pokemon.json', 'r') as inf:
         Beasts.update(json.load(inf, encoding='utf-8'))
@@ -148,11 +148,8 @@ def print_monster(picked_monster, to_file=True):
         armor = monster['AC']
         saves = None
     else:
-        armor = re.match(r'(\-?\d+), touch (\-?\d+), flat-footed (\-?\d+)',
-                         monster['AC'])
-        saves = re.match(
-            r'Fort ([+-]\d+[\S ]*), Ref ([+-]\d+[\S ]*), Will ([+-]\d+[\S ]*)',
-            monster['Saves'])
+        armor = re.match(r'(\-?\d+), touch (\-?\d+), flat-footed (\-?\d+)', monster['AC'])
+        saves = re.match(r'Fort ([+-]\d+[\S ]*), Ref ([+-]\d+[\S ]*), Will ([+-]\d+[\S ]*)', monster['Saves'])
 
     # Base HTML
     html = '<!DOCTYPE html><html><head><meta content="width=device-width" name="viewport"/><title></title><style>' + \
@@ -210,8 +207,7 @@ def print_monster(picked_monster, to_file=True):
                 add = '+' + str(b)
             else:
                 add = str(b)
-        html += '<td style = "text-align: center;">' + str(
-            abilities.group(a + 1)) + ' (' + add + ')</td>'
+        html += '<td style = "text-align: center;">' + str(abilities.group(a + 1)) + ' (' + add + ')</td>'
     html += '</tr></table><ul style="columns: 2;padding: 10px;">'
 
     total_weapons = 0
@@ -224,9 +220,8 @@ def print_monster(picked_monster, to_file=True):
                     '<b>Range:</b> ' + move_info['range'] + '</span>' + move_info['description'] + '</td></table><br/>'
     else:
         if monster['Melee'] != '':
-            all_weapons = re.findall(
-                r'(\d{0,3}\s*[\w ]+)[\s]+([\+\-\d\/]+)[\s]+\(([\w\d\-\+\\\/\.\,\'\; ]+)\)',
-                monster['Melee'])
+            all_weapons = re.findall(r'(\d{0,3}\s*[\w ]+)[\s]+([\+\-\d\/]+)[\s]+\(([\w\d\-\+\\\/\.\,\'\; ]+)\)',
+                                     monster['Melee'])
             if all_weapons:
                 for weapon in all_weapons:
                     html += '<table><td style="width: 50%"><span class="text-md">' + weapon[0].strip().title() + \
@@ -238,9 +233,8 @@ def print_monster(picked_monster, to_file=True):
                 # print(name, '\t', monster['Melee'])
 
         if monster['Ranged'] != '':
-            all_weapons = re.findall(
-                r'(\d{0,3}\s*[\w ]+)[\s]+([\+\-\d\/]+)[\s]+\(([\w\d\-\+\\\/\.\,\'\; ]+)\)',
-                monster['Ranged'])
+            all_weapons = re.findall(r'(\d{0,3}\s*[\w ]+)[\s]+([\+\-\d\/]+)[\s]+\(([\w\d\-\+\\\/\.\,\'\; ]+)\)',
+                                     monster['Ranged'])
             if all_weapons:
                 for weapon in all_weapons:
                     html += '<table><td style="width: 50%"><span class="text-md">' + weapon[0].strip().title() + \
@@ -259,11 +253,9 @@ def print_monster(picked_monster, to_file=True):
             'Rarity</th></tr>'
 
     if monster_type == 'Pokemon':
-        treasure = treasure_calculator(monster['Treasure'], "humanoid",
-                                       monster['CR'])
+        treasure = treasure_calculator(monster['Treasure'], "humanoid", monster['CR'])
     else:
-        treasure = treasure_calculator(monster['Treasure'], monster['Type'],
-                                       monster['CR'])
+        treasure = treasure_calculator(monster['Treasure'], monster['Type'], monster['CR'])
     for t in treasure:
         html += str(t)
     html += '</tr></table></body></html>'

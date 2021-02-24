@@ -12,15 +12,7 @@ class Character(object):
     Traits = Story = []
     Age = 0
 
-    def __init__(self,
-                 cName,
-                 cRace,
-                 cGender,
-                 cAge,
-                 cAppearance,
-                 cTraits,
-                 cStory,
-                 cOrientation=''):
+    def __init__(self, cName, cRace, cGender, cAge, cAppearance, cTraits, cStory, cOrientation=''):
         self.Name = cName
         self.Race = cRace
         self.Gender = cGender
@@ -28,8 +20,7 @@ class Character(object):
         self.Appearance = cAppearance
         self.Traits = cTraits
         self.Story = cStory
-        self.Orientation = cOrientation if cOrientation == '' else choice(
-            ['Male', 'Female'])
+        self.Orientation = cOrientation if cOrientation == '' else choice(['Male', 'Female'])
 
     def from_dict(self, new_self):
         self.__dict__.update(new_self)
@@ -42,8 +33,7 @@ class Character(object):
                """</li><li><span style="font-weight:bold;">Appearance:</span> """ + str(self.Appearance) + \
                """</li><li><span style="font-weight:bold;">Trait 1:</span> """ + self.Traits[0] + "</li>"
         if len(self.Traits) > 1:
-            info += """<li><span style="font-weight:bold;">Trait 2:</span> """ + self.Traits[
-                1] + "</li>"
+            info += """<li><span style="font-weight:bold;">Trait 2:</span> """ + self.Traits[1] + "</li>"
         info += "</ul><p>"
         for x in range(len(self.Story)):
             info += self.Story[x] + """</p>"""
@@ -60,9 +50,7 @@ def create_person(pop):
         pop = create_variance()
     race = choice(list(pop.keys()), 1, p=list(pop.values()))[0]
     gender = choice(['Male', 'Female'], p=[0.5, 0.5])
-    orientation = choice(
-        ['Male', 'Female'],
-        p=[0.042, 0.958] if gender == 'male' else [0.958, 0.042])
+    orientation = choice(['Male', 'Female'], p=[0.042, 0.958] if gender == 'male' else [0.958, 0.042])
     name = ng.name_parser(race, gender)
     age = int(randint(ages[race][0], ages[race][1]))
 
@@ -70,8 +58,7 @@ def create_person(pop):
     hair = appearance['Hair'][randint(len(appearance['Hair']))]
     eyes = appearance['Eyes'][randint(len(appearance['Eyes']))]
     body = appearance['Body'][randint(len(appearance['Body']))]
-    appear = body + ' and looks ' + face.lower() + ' with ' + hair.lower(
-    ) + ' hair and ' + eyes.lower() + ' eyes. '
+    appear = body + ' and looks ' + face.lower() + ' with ' + hair.lower() + ' hair and ' + eyes.lower() + ' eyes. '
 
     back = 'I\'m a ' + gender + ' ' + race + ', from '
     back += back_location[randint(len(back_location))] + ' who '

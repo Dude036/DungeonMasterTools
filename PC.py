@@ -143,22 +143,8 @@ if system == 'Pathfinder 1':
 elif system == 'D&D 5':
     class_feats.update(json.load(open("5e_class_feats.json", 'r'), encoding='utf-8'))
     # 5e Specific Classes
-    playable['Warlock'] = {
-        "STR": 4,
-        "DEX": 1,
-        "CON": 2,
-        "INT": 5,
-        "WIS": 3,
-        "CHA": 0
-    }
-    playable['Artificer'] = {
-        "STR": 4,
-        "DEX": 1,
-        "CON": 2,
-        "INT": 0,
-        "WIS": 3,
-        "CHA": 5
-    }
+    playable['Warlock'] = {"STR": 4, "DEX": 1, "CON": 2, "INT": 5, "WIS": 3, "CHA": 0}
+    playable['Artificer'] = {"STR": 4, "DEX": 1, "CON": 2, "INT": 0, "WIS": 3, "CHA": 5}
 
 
 class PC(object):
@@ -199,21 +185,18 @@ class PC(object):
             Weapon(
                 int(randint(0, 5)),
                 iClass=choice([
-                    'Heavy Axe', 'Light Axe', 'Heavy Blade', 'Light Blade',
-                    'Close', 'Double', 'Flail', 'Hammer', 'Monk', 'Polearm',
-                    'Spear'
+                    'Heavy Axe', 'Light Axe', 'Heavy Blade', 'Light Blade', 'Close', 'Double', 'Flail', 'Hammer',
+                    'Monk', 'Polearm', 'Spear'
                 ])),
-            Weapon(
-                int(randint(0, 5)),
-                iClass=choice(['Bows', 'Crossbow', 'Thrown']))
+            Weapon(int(randint(0, 5)), iClass=choice(['Bows', 'Crossbow', 'Thrown']))
         ]
 
         # Spell enabled character - 1 in 3
         # if randint(3) == 0:
         # Spells for Classes that cast spells
         if self.Class in [
-                'Artificer', 'Bard', 'Cleric', 'Druid', 'Magus', 'Paladin', 'Ranger',
-                'Sorcerer', 'Summoner', 'Warlock', 'Warpriest', 'Wizard'
+                'Artificer', 'Bard', 'Cleric', 'Druid', 'Magus', 'Paladin', 'Ranger', 'Sorcerer', 'Summoner', 'Warlock',
+                'Warpriest', 'Wizard'
         ]:
             self.Spells = set()
             for x in range(4 + self.Level * 2):
@@ -239,12 +222,9 @@ class PC(object):
         self.Class = choice(list(playable.keys()))
         self.Stats.sort(reverse=True)
         self.Stats = [
-            self.Stats[playable[self.Class]['STR']],
-            self.Stats[playable[self.Class]['DEX']],
-            self.Stats[playable[self.Class]['CON']],
-            self.Stats[playable[self.Class]['INT']],
-            self.Stats[playable[self.Class]['WIS']],
-            self.Stats[playable[self.Class]['CHA']]
+            self.Stats[playable[self.Class]['STR']], self.Stats[playable[self.Class]['DEX']],
+            self.Stats[playable[self.Class]['CON']], self.Stats[playable[self.Class]['INT']],
+            self.Stats[playable[self.Class]['WIS']], self.Stats[playable[self.Class]['CHA']]
         ]
 
         for level in range(0, self.Level + 1):
@@ -259,8 +239,7 @@ class PC(object):
                '</li><li><span style="font-weight:bold;">Appearance:</span> ' + str(self.Appearance) + \
                '</li><li><span style="font-weight:bold;">Trait 1:</span> ' + self.Traits[0] + "</li>"
         if len(self.Traits) > 1:
-            info += '<li><span style="font-weight:bold;">Trait 2:</span> ' + self.Traits[
-                1] + "</li>"
+            info += '<li><span style="font-weight:bold;">Trait 2:</span> ' + self.Traits[1] + "</li>"
         info += "</ul><p>"
         for x in range(len(self.Story)):
             info += self.Story[x] + '</p>'
@@ -276,8 +255,7 @@ class PC(object):
                 add = '+' + str(b)
             else:
                 add = str(b)
-            info += '<td style="text-align: center;">' + str(
-                s) + ' (' + add + ')</td>'
+            info += '<td style="text-align: center;">' + str(s) + ' (' + add + ')</td>'
         info += '</tbody></table>'
 
         # Add Weapons
@@ -338,9 +316,8 @@ class PC(object):
 
     def __iter__(self):
         for item in [
-                self.Name, self.Gender, self.Race, self.Appearance, self.Class,
-                self.Feats, self.Traits, self.Story, self.Age, self.Level,
-                self.Spells, self.Stats, self.Weapon
+                self.Name, self.Gender, self.Race, self.Appearance, self.Class, self.Feats, self.Traits, self.Story,
+                self.Age, self.Level, self.Spells, self.Stats, self.Weapon
         ]:
             yield item
 
