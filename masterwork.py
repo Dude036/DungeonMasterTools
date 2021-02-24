@@ -20,10 +20,10 @@ def special_masterwork_weapon(Weapon, Trait=None):
             'Impervious', 'Kinslayer', 'Limning', 'Lucky', 'Greater Lucky',
             'Merciful', 'Miserable', 'Negating', 'Patriotic', 'Peaceful',
             'Phase Locking', 'Planestriking', 'Redeemed', 'Repositioning',
-            'Sacred', 'Shattering', 'Shock', 'Shocking Burst', 'Sneaky',
+            'Sacred', 'Shattering', 'Shock', 'Shocking Burst', 'Silencing', 'Sneaky',
             'Speed', 'Spell Storing', 'Stalking', 'Summon Bane', 'Thawing',
             'Thundering', 'Toxic', 'Training', 'Treasonous', 'Truthful',
-            'Unholy'
+            'Unholy', 'Valiant'
         ]
         if Weapon.Class == 'Bows':
             special_options += ['Adaptive', 'Ambushing']
@@ -54,12 +54,12 @@ def special_masterwork_weapon(Weapon, Trait=None):
                 'Advancing', 'Answering', 'Allying', 'Countering', 'Courageous',
                 'Dazzling Radiance', 'Defending', 'Dueling', 'Exhausting',
                 'Fortuitous', 'Furious', 'Glorious', 'Grayflame', 'Growing',
-                'Guardian', 'Invigorating', 'Ki Focus', 'Ki Intensifying',
+                'Guardian', 'Impact', 'Invigorating', 'Ki Focus', 'Ki Intensifying',
                 'Liberating', 'Lifesurge', 'Menacing', 'Mighty Cleaving',
                 'Mimetic', 'Neutralizing', 'Ominous', 'Quenching', 'Rusting',
                 'Seaborne', 'Sharding', 'Shrinking', 'Spell Siphon',
                 'Spell Stealing', 'Throwing', 'Umbral', 'Underwater', 'Unseen',
-                'Vampiric', 'Greater Vampiric'
+                'Vampiric', 'Greater Vampiric', 'Vicious'
             ]
             if Weapon.Class not in ['Heavy Axe', 'Heavy Blade']:
                 special_options += ['Agile']
@@ -70,7 +70,7 @@ def special_masterwork_weapon(Weapon, Trait=None):
                 ]
             if 'B' in Weapon.Damage:
                 special_options += [
-                    'Disruption', 'Impact', 'Legbreaker', 'Quaking', 'Smashing'
+                    'Disruption', 'Legbreaker', 'Quaking', 'Smashing'
                 ]
             if Weapon.Class in ['Light Axe', 'Light Blade', 'Close', 'Hammer']:
                 special_options += ['Concealed', 'Concealed, Lesser']
@@ -551,7 +551,8 @@ def get_flavor_text_weapon(name, Weapon=None):
     elif name == 'Limning':
         text = "This weapon was built to kill Fae. On a successful attack, the wielder can choose to cast Faerie" + \
                " Fire on the enemy as a free action. the Faerie Fire lasts for the full duration, but uses the " + \
-               "wielder's concentration. The wielder can do the a number of times equal to their Wisdom modifier."
+               "wielder's concentration. The wielder can do the a number of times equal to their Wisdom modifier " + \
+               "(min 1)."
 
     elif name == 'Lucky':
         text = 'This weapon has a lucky charm attached to it. The wielder has 1 Luck point, that they can use to ' + \
@@ -695,8 +696,13 @@ def get_flavor_text_weapon(name, Weapon=None):
                'expertise in Religion.'
 
     elif name == 'Sapping':
+        if Weapon is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Weapon.Masterwork)
         text = 'This weapon drains the strength of its enemies. Attacks made with this weapon deal 2d6 points of ' + \
-               'non-lethal damage. On a critical, the enemy drops Unconscious for 2d4 rounds.'
+               'non-lethal damage. On a critical, the enemy must make a Constitution Save. DC 8 +' + t + ' + STR. ' + \
+               'On a failed save, the creature gains the Unconscious condition for 1d4 rounds.'
 
     elif name == 'Seaborne':
         text = 'This weapon is at home on the ocean. The wielder of this weapon gains a natural swim speed equal ' + \
