@@ -191,7 +191,7 @@ def get_flavor_text_weapon(name, Weapon=None):
     elif name == 'Brilliant Energy':
         damage = choice(
             ['Acid', 'Cold', 'Fire', 'Force', 'Lightning', 'Poison', 'Thunder'])
-        text = "This weapon was designed to deal " + damage + " damage instead of it's normal damage. You also deal"
+        text = "This weapon was designed to deal " + damage + " damage instead of it's normal damage"
 
     elif name == 'Called':
         text = "This weapon can be teleported back to the wielder's hands. This does not provoke attacks of " + \
@@ -372,8 +372,8 @@ def get_flavor_text_weapon(name, Weapon=None):
                'innate fly speed equal to half their movement speed.'
 
     elif name == 'Fortuitous':
-        text = 'This grants the wielder lightning fast reactions. The wielder of this weapon can make as many ' + \
-               'attacks of opportunity as the like.'
+        text = 'This grants the wielder lightning fast reactions. The wielder of this weapon can make attacks of ' + \
+               'opportunity as a free action.'
 
     elif name == 'Frost':
         text = 'This weapon is covered in ice. Attacks made with this weapon deal an additional 1d6 of cold damage.'
