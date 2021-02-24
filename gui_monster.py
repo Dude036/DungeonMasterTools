@@ -18,13 +18,11 @@ def autofill_text(text):
     # Binary Search based on starts with
     while e > s:
         m = (s + e) // 2
-        print('Found ', Names[m])
         if Names[m][:p].lower() < text.lower():
             s = m + 1
         elif Names[m][:p].lower() > text.lower():
             e = m - 1
         else:
-            print("Breaking")
             break
 
     # Validate if there's a reason to continue looking
@@ -48,7 +46,7 @@ def autofill_text(text):
         else:
             break
 
-    print(it)
+    print("Ran:", it)
     return list(found)
 
 
