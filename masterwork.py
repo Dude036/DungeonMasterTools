@@ -12,8 +12,8 @@ def special_masterwork_weapon(Weapon, Trait=None):
         # Get all potential options for our weapon type
         special_options = [
             'Anarchic', 'Axiomatic', 'Bane', 'Beaming', 'Benevolent',
-            'Bewildering', 'Breaking', 'Called', 'Conductive', 'Corrosive',
-            'Corrosive Burst', 'Dispelling', 'Dispelling Burst', 'Distracting',
+            'Bewildering', 'Breaking', 'Called', 'Compassionate', 'Conductive', 'Corrosive',
+            'Corrosive Burst', 'Cruel', 'Defiant', 'Dispelling', 'Dispelling Burst', 'Distracting',
             'Greater Distracting', 'Fervent', 'Flaming', 'Flaming Burst',
             'Flying', 'Frost', 'Furyborn', 'Ghost Touch', 'Heartseeker',
             'Heretical', 'Holy', 'Huntsman', 'Icy Burst', 'Igniting',
@@ -58,7 +58,8 @@ def special_masterwork_weapon(Weapon, Trait=None):
                 'Liberating', 'Lifesurge', 'Menacing', 'Mighty Cleaving',
                 'Mimetic', 'Neutralizing', 'Ominous', 'Quenching', 'Rusting',
                 'Seaborne', 'Sharding', 'Shrinking', 'Spell Siphon',
-                'Spell Stealing', 'Throwing', 'Umbral', 'Underwater', 'Unseen'
+                'Spell Stealing', 'Throwing', 'Umbral', 'Underwater', 'Unseen',
+                'Vampiric', 'Greater Vampiric'
             ]
             if Weapon.Class not in ['Heavy Axe', 'Heavy Blade']:
                 special_options += ['Agile']
