@@ -13,7 +13,7 @@ _Window's Users_: You may have to modify the above command with the ```--user```
 Once you've installed all of the requirements, you can now proceed to build it and run it. Use the following command to build an executable.
 
 ```
-pyinstaller.exe --add-data './*.json;.' --add-data './web/*;web' gui.py
+pyinstaller.exe --add-data "./*.json;." --add-data "./web/*;web" gui.py
 ```
 
 You'll find executable in the dist/gui folder. If any issue arises while doing this, open up a new issue in GitHub so I can research it.
