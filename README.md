@@ -8,7 +8,17 @@ First, you'll need to install *Python 3* and *pip*. Once you have *pip* installe
 
 _Window's Users_: You may have to modify the above command with the ```--user``` argument if not under an admin account.
 
-### Running the Application
+### Running the Application (Production)
+
+Once you've installed all of the requirements, you can now proceed to build it and run it. Use the following command to build an executable.
+
+```
+pyinstaller.exe --add-data './*.json;.' --add-data './web/*;web' gui.py
+```
+
+You'll find executable in the dist/gui folder. If any issue arises while doing this, open up a new issue in GitHub so I can research it.
+
+### Running the Application (Dev)
 
 There are two setting files right now. `settings.json` contains the settings for creating the town's population. The four lines in the file are as such;
 
@@ -143,35 +153,27 @@ Below has the initial settings file with brackets after. Inside the brackets is 
 After you've modified your settings, run the main application to generate a town. There are a few testing protocols that can be run that I have used for testing. Here are those;
 
 | File               | Purpose       |
-| ------------------ | ------------- |
+|:------------------:| ------------- |
 | beastiary.py       | Build all monsters into the beasts folder to verify they all look fine. |
-| name_generator.py  | Generate several names of each possible race to verify sound and error check names. |
 | PC.py              | Print to the console a Playable character in HTML. |
+| masterwork.py      | Creates a shop which showcases all Masterwork traits. |
 | quests.py          | Generate a threaded task to average out several thousand quest rewards from level 1 to 55. **WARNING:** This will take a VERY long time and heat up your computer immensely. I do NOT recommend you do this. |
 | test_scripts.py    | Unit Tests to verify all things are working correctly. |
 | town_generator.py  | Generate a Sample town. |
 | treasure.py        | Generate solely the treasure from a monster based on CR or on the name of the Monster. |
+| gui.py             | Display a GUI to build a town. |
 
 ### Contributing
 
 If you're interesting in contributing to this repository, here are a few things on my potential todo list.
 
-* I'm currently trying to get a character generator fully flushed out. I need to get all the data HTML friendly for basically all the classes in both Pathfinder and D&D 5e. The files that need those are `5e_class_feats.json` and `pathfinder_class_feats.json`.
-* The next big task is to get settings files setup for generating things for D&D and Pathfinder. D&D doesn't have canon rules for weapon creation, so that may be a little difficult to determine the best course of action.
 * I would also like to refactor some code, so `stores.py` isn't so bloated. An idea that I had was to create a parent item class, and have the Store contain Items, with some specializations for each type of item.
 * I'd also like to rework weapon damage types. Adding potentially different damage types, and add some variation on material. i.e. Hot Siccatite should also deal fire damage for an average half if it's damage.
-* Slaves, however dark to add, is a potential commodity that could be traded. I already have code for a whorehouse, so it's not too far of a leap for slave traders
-* Per request by Mike, he requested a better system of Guilds when creating quests, with shops potentially for guild members.
+* Slaves, however dark to add, is a potential commodity that could be traded. I already have code for a brothel, so it's not too far of a leap for slave traders
 
 Be sure to run the following line in the main directory before pushing or pulling anything: 
 
 ```
 yapf -i -p *.py
-```
-
-Compile to Exe on Windows:
-
-```
-pyinstaller.exe --add-data './*.json;.' --add-data './web/*;web' gui.py
 ```
 

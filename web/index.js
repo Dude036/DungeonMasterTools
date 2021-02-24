@@ -91,6 +91,10 @@ function normal(name, rarity) {
         "Quantity High": q_high,
         "Inflation": inflate
 	};
+
+	if (name == "Weapon" || name == "Armor" || name == "Guns") {
+		base["Additional Traits"] = parseInt(document.getElementById(name + "AdditionalTraits").value);
+	}
 	
 	// Update Error Codes and return
 	document.getElementById(name + "Error").innerHTML = errors;
@@ -185,6 +189,7 @@ function validate() {
 	/*********************/
 	/* Validate Settings */
 	/*********************/
+	settings["System"] = document.getElementById("System").value;
 	settings["Race"] = chosen_race;
 	settings["Population"] = parseInt(document.getElementById("Population").value);
 	settings["Variance"] = parseInt(document.getElementById("Variance").value);
@@ -249,7 +254,7 @@ function validate() {
 		eel.submit(settings, generate);
 	}
 
-	document.getElementById("wholeForm").style.display = 'none';
+	// document.getElementById("wholeForm").style.display = 'none';
 	document.getElementById("mainHeader").innerHTML = 'Form Submitted.';
 }
 

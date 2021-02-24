@@ -16,6 +16,22 @@ Monster_Types = {
         'Coins & Small Objects',
         'Armor and weapons',
     ],
+    "beast": [
+        'Coins',
+        'Coins and Gems',
+        'Coins & Small Objects',
+        'Armor and weapons',
+    ],
+    "celestial": [
+        'Coins',
+        'Coins and Gems',
+        'Art Objects',
+        'Coins & Small Objects',
+        'Combatant Gear',
+        'Spellcaster Gear',
+        'Lair Treasure',
+        'Treasure Horde',
+    ],
     "construct": [
         'Coins and Gems',
         'Art Objects',
@@ -30,11 +46,36 @@ Monster_Types = {
         'Lair Treasure',
         'Treasure Horde',
     ],
+    "elemental": [
+        'Coins & Small Objects',
+        'Armor and weapons',
+        'Combatant Gear',
+        'Spellcaster Gear',
+        'Lair Treasure',
+    ],
     "fey": [
         'Coins and Gems',
         'Art Objects',
         'Coins & Small Objects',
         'Spellcaster Gear',
+    ],
+    "fiend": [
+        'Coins',
+        'Coins and Gems',
+        'Coins & Small Objects',
+        'Armor and weapons',
+        'Combatant Gear',
+        'Spellcaster Gear',
+        'Lair Treasure',
+    ],
+    "giant": [
+        'Coins',
+        'Coins and Gems',
+        'Coins & Small Objects',
+        'Armor and weapons',
+        'Combatant Gear',
+        'Spellcaster Gear',
+        'Lair Treasure',
     ],
     "humanoid": [
         'Coins',
@@ -50,6 +91,14 @@ Monster_Types = {
         'Coins and Gems',
         'Coins & Small Objects',
         'Armor and weapons',
+    ],
+    "monstrosity": [
+        'Coins',
+        'Coins and Gems',
+        'Art Objects',
+        'Coins & Small Objects',
+        'Armor and weapons',
+        'Lair Treasure',
     ],
     "monstrous humanoid": [
         'Coins',
@@ -727,7 +776,7 @@ def determine_treasure(s):
             ' ')[-1] == 'items':
         return wondrous
     else:
-        print(s)
+        return None
 
 
 def potion(g):
@@ -847,7 +896,7 @@ def wondrous(g):
             match = re.match(
                 re.compile('([\d ]*)' + p + ' ' + s + ' wondrous item[s]?'), g)
             if match is not None:
-                if match.group(1) == '' or match.group(1) == None:
+                if match.group(1) == '' or match.group(1) is None:
                     quantity = 1
                 else:
                     quantity = int(match.group(1).strip())
@@ -944,7 +993,7 @@ def wand(g):
 def gemstone(g):
     l = []
     match = re.match(r'([\d ]*)grade (\d) gemstone[s]?', g)
-    if match.group(1) is '':
+    if match.group(1) == '':
         l.append(Jewel(int(match.group(2)) - 1))
     else:
         for _ in range(int(match.group(1).strip())):

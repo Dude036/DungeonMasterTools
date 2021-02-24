@@ -11,7 +11,7 @@ def submit(settings, generate):
     print("Form has been submitted.")
     json.dump(generate, open('generate.json', 'w'), indent=4)
     json.dump(settings, open('settings.json', 'w'), indent=4)
-    name = main()
+    name = main(False)
 
     # Move the files up one folder
     p = os.listdir()

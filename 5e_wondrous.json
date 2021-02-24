@@ -1,0 +1,4306 @@
+{
+    "+1 All-Purpose Tool": {
+        "Aura": "requires attunement by an artificer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b1%20all-purpose%20tool_tce",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "+1 Amulet of the Devout": {
+        "Aura": "requires attunement by a cleric or paladin",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b1%20amulet%20of%20the%20devout_tce",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "+1 Arcane Grimoire": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b1%20arcane%20grimoire_tce",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "+1 Bloodwell Vial": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b1%20bloodwell%20vial_tce",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "0.16 oz."
+    },
+    "+1 Rhythm-Maker's Drum": {
+        "Aura": "requires attunement by a bard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b1%20rhythm-maker's%20drum_tce",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "+2 All-Purpose Tool": {
+        "Aura": "requires attunement by an artificer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b2%20all-purpose%20tool_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "+2 Amulet of the Devout": {
+        "Aura": "requires attunement by a cleric or paladin",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b2%20amulet%20of%20the%20devout_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "+2 Arcane Grimoire": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b2%20arcane%20grimoire_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "+2 Bloodwell Vial": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b2%20bloodwell%20vial_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "0.16 oz."
+    },
+    "+2 Rhythm-Maker's Drum": {
+        "Aura": "requires attunement by a bard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b2%20rhythm-maker's%20drum_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "+3 All-Purpose Tool": {
+        "Aura": "requires attunement by an artificer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b3%20all-purpose%20tool_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "+3 Amulet of the Devout": {
+        "Aura": "requires attunement by a cleric or paladin",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b3%20amulet%20of%20the%20devout_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "+3 Arcane Grimoire": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b3%20arcane%20grimoire_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "+3 Bloodwell Vial": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b3%20bloodwell%20vial_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "0.16 oz."
+    },
+    "+3 Rhythm-Maker's Drum": {
+        "Aura": "requires attunement by a bard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#%2b3%20rhythm-maker's%20drum_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Abracadabrus": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#abracadabrus_idrotf",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "25 lb."
+    },
+    "Acid Absorbing Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#acid%20absorbing%20tattoo_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Alchemical Compendium": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#alchemical%20compendium_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Alchemy Jug": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#alchemy%20jug_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "12 lb."
+    },
+    "Amulet of Health": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#amulet%20of%20health_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Amulet of Proof against Detection and Location": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#amulet%20of%20proof%20against%20detection%20and%20location_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Amulet of Protection from Turning": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#amulet%20of%20protection%20from%20turning_tftyp",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Amulet of the Black Skull": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#amulet%20of%20the%20black%20skull_toa",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Amulet of the Drunkard": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#amulet%20of%20the%20drunkard_egw",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Amulet of the Planes": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#amulet%20of%20the%20planes_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Apparatus of Kwalish": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#apparatus%20of%20kwalish_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": "500 lb."
+    },
+    "Arcane Cannon": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#arcane%20cannon_egw",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Arcane Propulsion Arm": {
+        "Aura": "requires attunement by a creature missing a hand or an arm",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#arcane%20propulsion%20arm_erlw",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Astral Shard": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#astral%20shard_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Astromancy Archive": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#astromancy%20archive_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Atlas of Endless Horizons": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#atlas%20of%20endless%20horizons_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Azorius Keyrune": {
+        "Aura": "requires attunement by a member of the Azorius guild",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#azorius%20keyrune_ggr",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Baba Yaga's Mortar and Pestle": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#baba%20yaga's%20mortar%20and%20pestle_tce",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Badge of the Watch": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#badge%20of%20the%20watch_wdh",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Bag of Beans": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bag%20of%20beans_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "\u00bd lb."
+    },
+    "Bag of Devouring": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bag%20of%20devouring_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "\u00bd lb."
+    },
+    "Bag of Holding": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bag%20of%20holding_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "15 lb."
+    },
+    "Bag of Tricks, Gray": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bag%20of%20tricks%2c%20gray_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "\u00bd lb."
+    },
+    "Bag of Tricks, Rust": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bag%20of%20tricks%2c%20rust_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "\u00bd lb."
+    },
+    "Bag of Tricks, Tan": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bag%20of%20tricks%2c%20tan_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "\u00bd lb."
+    },
+    "Balance of Harmony": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#balance%20of%20harmony_tftyp",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Balloon Pack": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#balloon%20pack_pota",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Banner of the Krig Rune": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#banner%20of%20the%20krig%20rune_skt",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Barrier Tattoo (Large)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#barrier%20tattoo%20(large)_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Barrier Tattoo (Medium)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#barrier%20tattoo%20(medium)_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Barrier Tattoo (Small)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#barrier%20tattoo%20(small)_tce",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Battle Standard of Infernal Power": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#battle%20standard%20of%20infernal%20power_bgdia",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Bead of Force": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bead%20of%20force_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 oz."
+    },
+    "Bead of Nourishment": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bead%20of%20nourishment_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Bead of Refreshment": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bead%20of%20refreshment_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Belashyrra's Beholder Crown": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#belashyrra's%20beholder%20crown_erlw",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Bell Branch": {
+        "Aura": "requires attunement by a druid or warlock",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bell%20branch_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "0.16 oz."
+    },
+    "Belt of Cloud Giant Strength": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#belt%20of%20cloud%20giant%20strength_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Belt of Dwarvenkind": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#belt%20of%20dwarvenkind_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Belt of Fire Giant Strength": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#belt%20of%20fire%20giant%20strength_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Belt of Frost Giant Strength": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#belt%20of%20frost%20giant%20strength_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Belt of Hill Giant Strength": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#belt%20of%20hill%20giant%20strength_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Belt of Stone Giant Strength": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#belt%20of%20stone%20giant%20strength_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Belt of Storm Giant Strength": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#belt%20of%20storm%20giant%20strength_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Black Crystal Tablet": {
+        "Aura": "requires attunement by a creature that has proficiency in the Arcana skill",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#black%20crystal%20tablet_wdmm",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Black Dragon Mask": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#black%20dragon%20mask_hotdq",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Blod Stone": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#blod%20stone_skt",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Blood Fury Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#blood%20fury%20tattoo_tce",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Blue Dragon Mask": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#blue%20dragon%20mask_rotos",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Book of Exalted Deeds": {
+        "Aura": "requires attunement by a creature of good alignment",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#book%20of%20exalted%20deeds_dmg",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Book of Vile Darkness": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#book%20of%20vile%20darkness_dmg",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Boots of Elvenkind": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#boots%20of%20elvenkind_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Boots of False Tracks": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#boots%20of%20false%20tracks_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Boots of Levitation": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#boots%20of%20levitation_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Boots of Speed": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#boots%20of%20speed_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Boots of Striding and Springing": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#boots%20of%20striding%20and%20springing_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Boots of the Winterlands": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#boots%20of%20the%20winterlands_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Boros Keyrune": {
+        "Aura": "requires attunement by a member of the Boros guild",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#boros%20keyrune_ggr",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Bowl of Commanding Water Elementals": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bowl%20of%20commanding%20water%20elementals_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Bracelet of Rock Magic": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bracelet%20of%20rock%20magic_tftyp",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Bracer of Flying Daggers": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bracer%20of%20flying%20daggers_wdh",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Bracers of Archery": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bracers%20of%20archery_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Bracers of Defense": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#bracers%20of%20defense_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Brazier of Commanding Fire Elementals": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#brazier%20of%20commanding%20fire%20elementals_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Breathing Bubble": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#breathing%20bubble_egw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Brooch of Living Essence": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#brooch%20of%20living%20essence_egw",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Brooch of Shielding": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#brooch%20of%20shielding_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Broom of Flying": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#broom%20of%20flying_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Butcher's Bib": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#butcher's%20bib_egw",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Candle of Invocation": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#candle%20of%20invocation_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Candle of the Deep": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#candle%20of%20the%20deep_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cap of Water Breathing": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cap%20of%20water%20breathing_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cape of the Mountebank": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cape%20of%20the%20mountebank_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Carpet of Flying, 3 ft. x 5 ft.": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#carpet%20of%20flying%2c%203%20ft.%20%c3%97%205%20ft._dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Carpet of Flying, 4 ft. x 6 ft.": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#carpet%20of%20flying%2c%204%20ft.%20%c3%97%206%20ft._dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Carpet of Flying, 5 ft. x 7 ft.": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#carpet%20of%20flying%2c%205%20ft.%20%c3%97%207%20ft._dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Carpet of Flying, 6 ft. x 9 ft.": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#carpet%20of%20flying%2c%206%20ft.%20%c3%97%209%20ft._dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cartographer's Map Case": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cartographer's%20map%20case_ai",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cauldron of Plenty": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cauldron%20of%20plenty_idrotf",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "50 lb."
+    },
+    "Cauldron of Rebirth": {
+        "Aura": "requires attunement by a druid or warlock",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cauldron%20of%20rebirth_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "0.16 oz."
+    },
+    "Censer of Controlling Air Elementals": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#censer%20of%20controlling%20air%20elementals_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Charlatan's Die": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#charlatan's%20die_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Charm of Plant Command": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#charm%20of%20plant%20command_gos",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Chest of Preserving": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#chest%20of%20preserving_wdmm",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "25 lb."
+    },
+    "Chime of Opening": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#chime%20of%20opening_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Chronolometer": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#chronolometer_ai",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Circlet of Blasting": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#circlet%20of%20blasting_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Claw of the Wyrm Rune": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#claw%20of%20the%20wyrm%20rune_skt",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Claws of the Umber Hulk": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#claws%20of%20the%20umber%20hulk_pota",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cleansing Stone": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cleansing%20stone_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cloak of Arachnida": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cloak%20of%20arachnida_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cloak of Billowing": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cloak%20of%20billowing_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cloak of Displacement": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cloak%20of%20displacement_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cloak of Elvenkind": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cloak%20of%20elvenkind_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cloak of Invisibility": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cloak%20of%20invisibility_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cloak of Many Fashions": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cloak%20of%20many%20fashions_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cloak of Protection": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cloak%20of%20protection_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cloak of the Bat": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cloak%20of%20the%20bat_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cloak of the Manta Ray": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cloak%20of%20the%20manta%20ray_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Clockwork Amulet": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#clockwork%20amulet_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Clothes of Mending": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#clothes%20of%20mending_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Coiling Grasp Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#coiling%20grasp%20tattoo_tce",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Coin of Decisionry": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#coin%20of%20decisionry_ai",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Coin of Delving": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#coin%20of%20delving_egw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cold Absorbing Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cold%20absorbing%20tattoo_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Common Glamerweave": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#common%20glamerweave_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Concertina": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#concertina_rmbre",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Conch of Teleportation": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#conch%20of%20teleportation_skt",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Crook of Rao": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#crook%20of%20rao_tce",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Crystal Ball": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#crystal%20ball_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Crystal Ball of Mind Reading": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#crystal%20ball%20of%20mind%20reading_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Crystal Ball of Telepathy": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#crystal%20ball%20of%20telepathy_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Crystal Ball of True Seeing": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#crystal%20ball%20of%20true%20seeing_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Crystalline Chronicle": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#crystalline%20chronicle_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Cube of Force": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cube%20of%20force_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cubic Gate": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cubic%20gate_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Cursed Luckstone": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#cursed%20luckstone_gos",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Daern's Instant Fortress": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#daern's%20instant%20fortress_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Danoth's Visor": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#danoth's%20visor_egw",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Dark Shard Amulet": {
+        "Aura": "requires attunement by a warlock",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#dark%20shard%20amulet_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Decanter of Endless Water": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#decanter%20of%20endless%20water_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Deck of Illusions": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#deck%20of%20illusions_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Deck of Many Things": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#deck%20of%20many%20things_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Demonomicon of Iggwilv": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#demonomicon%20of%20iggwilv_tce",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Devastation Orb of Air": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#devastation%20orb%20of%20air_pota",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Devastation Orb of Earth": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#devastation%20orb%20of%20earth_pota",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Devastation Orb of Fire": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#devastation%20orb%20of%20fire_pota",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Devastation Orb of Water": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#devastation%20orb%20of%20water_pota",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Dimensional Loop": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#dimensional%20loop_ai",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Dimensional Shackles": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#dimensional%20shackles_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Dimir Keyrune": {
+        "Aura": "requires attunement by a member of the Dimir guild",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#dimir%20keyrune_ggr",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Dispelling Stone": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#dispelling%20stone_egw",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Docent": {
+        "Aura": "requires attunement by a warforged",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#docent_erlw",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Documancy Satchel": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#documancy%20satchel_ai",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Dodecahedron of Doom": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#dodecahedron%20of%20doom_wdmm",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Draakhorn": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#draakhorn_rot",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Dread Helm": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#dread%20helm_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Driftglobe": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#driftglobe_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Duplicitous Manuscript": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#duplicitous%20manuscript_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Dust of Deliciousness": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#dust%20of%20deliciousness_egw",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Dust of Disappearance": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#dust%20of%20disappearance_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Dust of Dryness": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#dust%20of%20dryness_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Dust of Sneezing and Choking": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#dust%20of%20sneezing%20and%20choking_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Eagle Whistle": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#eagle%20whistle_tftyp",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Ear Horn of Hearing": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ear%20horn%20of%20hearing_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Earworm": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#earworm_erlw",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Efreeti Bottle": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#efreeti%20bottle_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Elder Cartographer's Glossography": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#elder%20cartographer's%20glossography_ai",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Eldritch Claw Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#eldritch%20claw%20tattoo_tce",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Elemental Essence Shard (Air)": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#elemental%20essence%20shard%20(air)_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Elemental Essence Shard (Earth)": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#elemental%20essence%20shard%20(earth)_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Elemental Essence Shard (Fire)": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#elemental%20essence%20shard%20(fire)_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Elemental Essence Shard (Water)": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#elemental%20essence%20shard%20(water)_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Elemental Gem": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#elemental%20gem_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Elemental Gem, Blue Sapphire": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#elemental%20gem%2c%20blue%20sapphire_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Elemental Gem, Emerald": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#elemental%20gem%2c%20emerald_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Elemental Gem, Red Corundum": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#elemental%20gem%2c%20red%20corundum_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Elemental Gem, Yellow Diamond": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#elemental%20gem%2c%20yellow%20diamond_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Enduring Spellbook": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#enduring%20spellbook_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ersatz Eye": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ersatz%20eye_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Everbright Lantern": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#everbright%20lantern_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Eversmoking Bottle": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#eversmoking%20bottle_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Eye of Vecna": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#eye%20of%20vecna_dmg",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Eyes of Charming": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#eyes%20of%20charming_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Eyes of Minute Seeing": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#eyes%20of%20minute%20seeing_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Eyes of the Eagle": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#eyes%20of%20the%20eagle_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Far Gear": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#far%20gear_ai",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Far Realm Shard": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#far%20realm%20shard_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Feather Token": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#feather%20token_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Feather of Diatryma Summoning": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#feather%20of%20diatryma%20summoning_wdh",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Fernian Ash Rod": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#fernian%20ash%20rod_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Fernian Ash Staff": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#fernian%20ash%20staff_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "4 lb."
+    },
+    "Fernian Ash Wand": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#fernian%20ash%20wand_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Fernian Basalt Crystal": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#fernian%20basalt%20crystal_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Fernian Basalt Orb": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#fernian%20basalt%20orb_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Feywild Shard": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#feywild%20shard_tce",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Figurine of Wondrous Power, Bronze Griffon": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#figurine%20of%20wondrous%20power%2c%20bronze%20griffon_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Figurine of Wondrous Power, Ebony Fly": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#figurine%20of%20wondrous%20power%2c%20ebony%20fly_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Figurine of Wondrous Power, Golden Lions": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#figurine%20of%20wondrous%20power%2c%20golden%20lions_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Figurine of Wondrous Power, Ivory Goats": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#figurine%20of%20wondrous%20power%2c%20ivory%20goats_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Figurine of Wondrous Power, Marble Elephant": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#figurine%20of%20wondrous%20power%2c%20marble%20elephant_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Figurine of Wondrous Power, Obsidian Steed": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#figurine%20of%20wondrous%20power%2c%20obsidian%20steed_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Figurine of Wondrous Power, Onyx Dog": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#figurine%20of%20wondrous%20power%2c%20onyx%20dog_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Figurine of Wondrous Power, Serpentine Owl": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#figurine%20of%20wondrous%20power%2c%20serpentine%20owl_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Figurine of Wondrous Power, Silver Raven": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#figurine%20of%20wondrous%20power%2c%20silver%20raven_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Finder's Goggles": {
+        "Aura": "requires attunement by a creature with the Mark of Finding",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#finder's%20goggles_erlw",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Fire Absorbing Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#fire%20absorbing%20tattoo_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Flying Chariot": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#flying%20chariot_mot",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Folding Boat": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#folding%20boat_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "4 lb."
+    },
+    "Force Absorbing Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#force%20absorbing%20tattoo_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Fulminating Treatise": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#fulminating%20treatise_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Gauntlets of Flaming Fury": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#gauntlets%20of%20flaming%20fury_bgdia",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Gauntlets of Ogre Power": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#gauntlets%20of%20ogre%20power_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Gavel of the Venn Rune": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#gavel%20of%20the%20venn%20rune_skt",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Gem of Brightness": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#gem%20of%20brightness_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Gem of Seeing": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#gem%20of%20seeing_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Ghost Lantern": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ghost%20lantern_toa",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Ghost Step Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ghost%20step%20tattoo_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Gloves of Missile Snaring": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#gloves%20of%20missile%20snaring_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Gloves of Swimming and Climbing": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#gloves%20of%20swimming%20and%20climbing_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Gloves of Thievery": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#gloves%20of%20thievery_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Gnomengarde Grenade": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#gnomengarde%20grenade_dc",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Goggles of Night": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#goggles%20of%20night_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Goggles of Object Reading": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#goggles%20of%20object%20reading_egw",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Golgari Keyrune": {
+        "Aura": "requires attunement by a member of the Golgari guild",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#golgari%20keyrune_ggr",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Green Dragon Mask": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#green%20dragon%20mask_rotos",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Grimoire Infinitus": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#grimoire%20infinitus_egw",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Gruul Keyrune": {
+        "Aura": "requires attunement by a member of the Gruul guild",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#gruul%20keyrune_ggr",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Guardian Emblem": {
+        "Aura": "requires attunement by a cleric or paladin",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#guardian%20emblem_tce",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "0.32 oz."
+    },
+    "Hand of Vecna": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#hand%20of%20vecna_dmg",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Hat of Disguise": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#hat%20of%20disguise_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Hat of Vermin": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#hat%20of%20vermin_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Hat of Wizardry": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#hat%20of%20wizardry_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Headband of Intellect": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#headband%20of%20intellect_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Heart Weaver's Primer": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#heart%20weaver's%20primer_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Hell Hound Cloak": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#hell%20hound%20cloak_tftyp",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Helm of Brilliance": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#helm%20of%20brilliance_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Helm of Comprehending Languages": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#helm%20of%20comprehending%20languages_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Helm of Devil Command": {
+        "Aura": "requires attunement by a creature that can speak Infernal",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#helm%20of%20devil%20command_bgdia",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Helm of Telepathy": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#helm%20of%20telepathy_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Helm of Teleportation": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#helm%20of%20teleportation_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Helm of Underwater Action": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#helm%20of%20underwater%20action_gos",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Helm of the Gods": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#helm%20of%20the%20gods_mot",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Helm of the Scavenger": {
+        "Aura": "requires attunement by a spellcaster",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#helm%20of%20the%20scavenger_wdmm",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Heward's Handy Haversack": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#heward's%20handy%20haversack_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Heward's Handy Spice Pouch": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#heward's%20handy%20spice%20pouch_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Holy Symbol of Ravenkind": {
+        "Aura": "requires attunement by a cleric or paladin of good alignment",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#holy%20symbol%20of%20ravenkind_cos",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Hook of Fisher's Delight": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#hook%20of%20fisher's%20delight_idrotf",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Horn of Blasting": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#horn%20of%20blasting_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Horn of Silent Alarm": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#horn%20of%20silent%20alarm_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Horn of Valhalla, Brass": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#horn%20of%20valhalla%2c%20brass_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Horn of Valhalla, Bronze": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#horn%20of%20valhalla%2c%20bronze_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Horn of Valhalla, Iron": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#horn%20of%20valhalla%2c%20iron_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Horn of Valhalla, Silver": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#horn%20of%20valhalla%2c%20silver_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Horn of the Endless Maze": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#horn%20of%20the%20endless%20maze_wdmm",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Horseshoes of Speed": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#horseshoes%20of%20speed_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Horseshoes of a Zephyr": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#horseshoes%20of%20a%20zephyr_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Icon of Ravenloft": {
+        "Aura": "requires attunement by a creature of good alignment",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#icon%20of%20ravenloft_cos",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": "10 lb."
+    },
+    "Illuminator's Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#illuminator's%20tattoo_tce",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Illusionist's Bracers": {
+        "Aura": "requires attunement by a spellcaster",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#illusionist's%20bracers_ggr",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Imbued Wood (Fernian Ash)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#imbued%20wood%20(fernian%20ash)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Imbued Wood (Irian Rosewood)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#imbued%20wood%20(irian%20rosewood)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Imbued Wood (Kythrian Manchineel)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#imbued%20wood%20(kythrian%20manchineel)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Imbued Wood (Lamannian Oak)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#imbued%20wood%20(lamannian%20oak)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Imbued Wood (Mabaran Ebony)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#imbued%20wood%20(mabaran%20ebony)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Imbued Wood (Risian Pine)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#imbued%20wood%20(risian%20pine)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Imbued Wood (Shavarran Birch)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#imbued%20wood%20(shavarran%20birch)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Imbued Wood (Xorian Wenge)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#imbued%20wood%20(xorian%20wenge)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Infernal Puzzle Box": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#infernal%20puzzle%20box_bgdia",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Infernal Tack": {
+        "Aura": "requires attunement by a creature of evil alignment.",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#infernal%20tack_mtf",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Infiltrator's Key": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#infiltrator's%20key_egw",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ingot of the Skold Rune": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ingot%20of%20the%20skold%20rune_skt",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Insignia of Claws": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#insignia%20of%20claws_hotdq",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Instrument of Illusions": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#instrument%20of%20illusions_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Instrument of Scribing": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#instrument%20of%20scribing_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Instrument of the Bards, Anstruth Harp": {
+        "Aura": "requires attunement by a bard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#instrument%20of%20the%20bards%2c%20anstruth%20harp_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Instrument of the Bards, Canaith Mandolin": {
+        "Aura": "requires attunement by a bard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#instrument%20of%20the%20bards%2c%20canaith%20mandolin_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Instrument of the Bards, Cli Lyre": {
+        "Aura": "requires attunement by a bard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#instrument%20of%20the%20bards%2c%20cli%20lyre_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Instrument of the Bards, Doss Lute": {
+        "Aura": "requires attunement by a bard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#instrument%20of%20the%20bards%2c%20doss%20lute_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Instrument of the Bards, Fochlucan Bandore": {
+        "Aura": "requires attunement by a bard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#instrument%20of%20the%20bards%2c%20fochlucan%20bandore_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Instrument of the Bards, Mac-Fuirmidh Cittern": {
+        "Aura": "requires attunement by a bard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#instrument%20of%20the%20bards%2c%20mac-fuirmidh%20cittern_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Instrument of the Bards, Ollamh Harp": {
+        "Aura": "requires attunement by a bard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#instrument%20of%20the%20bards%2c%20ollamh%20harp_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Ioun Stone, Absorption": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20absorption_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ioun Stone, Agility": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20agility_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ioun Stone, Awareness": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20awareness_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ioun Stone, Fortitude": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20fortitude_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ioun Stone, Greater Absorption": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20greater%20absorption_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ioun Stone, Insight": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20insight_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ioun Stone, Intellect": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20intellect_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ioun Stone, Leadership": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20leadership_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ioun Stone, Mastery": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20mastery_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ioun Stone, Protection": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20protection_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ioun Stone, Regeneration": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20regeneration_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ioun Stone, Reserve": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20reserve_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ioun Stone, Strength": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20strength_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ioun Stone, Sustenance": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ioun%20stone%2c%20sustenance_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Irian Quartz Crystal": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#irian%20quartz%20crystal_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Irian Quartz Orb": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#irian%20quartz%20orb_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Irian Rosewood Rod": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#irian%20rosewood%20rod_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Irian Rosewood Staff": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#irian%20rosewood%20staff_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "4 lb."
+    },
+    "Irian Rosewood Wand": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#irian%20rosewood%20wand_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Iron Bands of Bilarro": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#iron%20bands%20of%20bilarro_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Iron Flask": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#iron%20flask_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Izzet Keyrune": {
+        "Aura": "requires attunement by a member of the Izzet guild",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#izzet%20keyrune_ggr",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Keoghtom's Ointment": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#keoghtom's%20ointment_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Keycharm": {
+        "Aura": "requires attunement by a creature with the Mark of Warding",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#keycharm_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Knave's Eye Patch": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#knave's%20eye%20patch_wdh",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Kyrzin's Ooze": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#kyrzin's%20ooze_erlw",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Kythrian Manchineel Rod": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#kythrian%20manchineel%20rod_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Kythrian Manchineel Staff": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#kythrian%20manchineel%20staff_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "4 lb."
+    },
+    "Kythrian Manchineel Wand": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#kythrian%20manchineel%20wand_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Kythrian Skarn Crystal": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#kythrian%20skarn%20crystal_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Kythrian Skarn Orb": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#kythrian%20skarn%20orb_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Lamannian Flint Crystal": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#lamannian%20flint%20crystal_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Lamannian Flint Orb": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#lamannian%20flint%20orb_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Lamannian Oak Rod": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#lamannian%20oak%20rod_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Lamannian Oak Staff": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#lamannian%20oak%20staff_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "4 lb."
+    },
+    "Lamannian Oak Wand": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#lamannian%20oak%20wand_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Lantern of Revealing": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#lantern%20of%20revealing_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Lantern of Tracking": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#lantern%20of%20tracking_idrotf",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Libram of Souls and Flesh": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#libram%20of%20souls%20and%20flesh_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Lifewell Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#lifewell%20tattoo_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Lightning Absorbing Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#lightning%20absorbing%20tattoo_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Living Gloves": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#living%20gloves_erlw",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Living Loot Satchel": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#living%20loot%20satchel_ai",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Loadstone": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#loadstone_tftyp",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Lock of Trickery": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#lock%20of%20trickery_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Lord's Ensemble": {
+        "Aura": "requires attunement by a creature with a humanoid build",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#lord's%20ensemble_wdh",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Lost Crown of Besilmer": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#lost%20crown%20of%20besilmer_pota",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Luba's Tarokka of Souls": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#luba's%20tarokka%20of%20souls_tce",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Luxon Beacon": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#luxon%20beacon_egw",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Lyre of Building": {
+        "Aura": "requires attunement by a bard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#lyre%20of%20building_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Mabaran Ebony Rod": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mabaran%20ebony%20rod_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Mabaran Ebony Staff": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mabaran%20ebony%20staff_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "4 lb."
+    },
+    "Mabaran Ebony Wand": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mabaran%20ebony%20wand_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Mabaran Obsidian Crystal": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mabaran%20obsidian%20crystal_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Mabaran Obsidian Orb": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mabaran%20obsidian%20orb_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Mantle of Spell Resistance": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mantle%20of%20spell%20resistance_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Manual of Bodily Health": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#manual%20of%20bodily%20health_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Manual of Clay Golems": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#manual%20of%20clay%20golems_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Manual of Flesh Golems": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#manual%20of%20flesh%20golems_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Manual of Gainful Exercise": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#manual%20of%20gainful%20exercise_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Manual of Iron Golems": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#manual%20of%20iron%20golems_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Manual of Quickness of Action": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#manual%20of%20quickness%20of%20action_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Manual of Stone Golems": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#manual%20of%20stone%20golems_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Mask of the Beast": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mask%20of%20the%20beast_toa",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Mask of the Dragon Queen": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mask%20of%20the%20dragon%20queen_rot",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Masquerade Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#masquerade%20tattoo_tce",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Medallion of Thoughts": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#medallion%20of%20thoughts_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Mighty Servant of Leuk-o": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mighty%20servant%20of%20leuk-o_tce",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Mirror of Life Trapping": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mirror%20of%20life%20trapping_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "50 lb."
+    },
+    "Mirror of the Past": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mirror%20of%20the%20past_tftyp",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Mizzium Apparatus": {
+        "Aura": "requires attunement by a sorcerer, warlock, or wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mizzium%20apparatus_ggr",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "8 lb."
+    },
+    "Mizzium Mortar": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mizzium%20mortar_ggr",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Moodmark Paint": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#moodmark%20paint_ggr",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Mystery Key": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#mystery%20key_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Nature's Mantle": {
+        "Aura": "requires attunement by a druid or ranger",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#nature's%20mantle_tce",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Navigation Orb": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#navigation%20orb_skt",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Necklace of Adaptation": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#necklace%20of%20adaptation_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Necklace of Fireballs": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#necklace%20of%20fireballs_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Necklace of Prayer Beads": {
+        "Aura": "requires attunement by a cleric, druid, or paladin",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#necklace%20of%20prayer%20beads_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Necrotic Absorbing Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#necrotic%20absorbing%20tattoo_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Night Caller": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#night%20caller_tftyp",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Nightfall Pearl": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#nightfall%20pearl_egw",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Nolzur's Marvelous Pigments": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#nolzur's%20marvelous%20pigments_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Obviator's Lenses": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#obviator's%20lenses_ai",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Occultant Abacus": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#occultant%20abacus_ai",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Opal of the Ild Rune": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#opal%20of%20the%20ild%20rune_skt",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Orb of Direction": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20direction_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Orb of Dragonkind": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20dragonkind_dmg",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Orb of Gonging": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20gonging_wdmm",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Orb of Shielding (Fernian Basalt)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20shielding%20(fernian%20basalt)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Orb of Shielding (Irian Quartz)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20shielding%20(irian%20quartz)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Orb of Shielding (Kythrian Skarn)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20shielding%20(kythrian%20skarn)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Orb of Shielding (Lamannian Flint)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20shielding%20(lamannian%20flint)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Orb of Shielding (Mabaran Obsidian)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20shielding%20(mabaran%20obsidian)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Orb of Shielding (Risian Shale)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20shielding%20(risian%20shale)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Orb of Shielding (Shavarran Chert)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20shielding%20(shavarran%20chert)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Orb of Shielding (Xorian Marble)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20shielding%20(xorian%20marble)_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Orb of Time": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20time_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Orb of the Stein Rune": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20the%20stein%20rune_skt",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Orb of the Veil": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orb%20of%20the%20veil_egw",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Orc Stone": {
+        "Aura": "requires attunement by a recipient only",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orc%20stone_idrotf",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Orrery of the Wanderer": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orrery%20of%20the%20wanderer_ai",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Orzhov Keyrune": {
+        "Aura": "requires attunement by a member of the Orzhov guild",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#orzhov%20keyrune_ggr",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Outer Essence Shard": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#outer%20essence%20shard_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Outer Essence Shard (Chaotic)": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#outer%20essence%20shard%20(chaotic)_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Outer Essence Shard (Evil)": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#outer%20essence%20shard%20(evil)_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Outer Essence Shard (Good)": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#outer%20essence%20shard%20(good)_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Outer Essence Shard (Lawful)": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#outer%20essence%20shard%20(lawful)_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Paper Bird": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#paper%20bird_wdh",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Pearl of Power": {
+        "Aura": "requires attunement by a spellcaster",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#pearl%20of%20power_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Pennant of the Vind Rune": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#pennant%20of%20the%20vind%20rune_skt",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Peregrine Mask": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#peregrine%20mask_ggr",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Perfume of Bewitching": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#perfume%20of%20bewitching_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Periapt of Health": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#periapt%20of%20health_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Periapt of Proof against Poison": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#periapt%20of%20proof%20against%20poison_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Periapt of Wound Closure": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#periapt%20of%20wound%20closure_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Pipe of Remembrance": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#pipe%20of%20remembrance_gos",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Pipe of Smoke Monsters": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#pipe%20of%20smoke%20monsters_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Pipes of Haunting": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#pipes%20of%20haunting_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Pipes of the Sewers": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#pipes%20of%20the%20sewers_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Piwafwi (Cloak of Elvenkind)": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#piwafwi%20(cloak%20of%20elvenkind)_oota",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Piwafwi of Fire Resistance": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#piwafwi%20of%20fire%20resistance_oota",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Planecaller's Codex": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#planecaller's%20codex_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Poison Absorbing Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#poison%20absorbing%20tattoo_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Pole of Angling": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#pole%20of%20angling_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Pole of Collapsing": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#pole%20of%20collapsing_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Portable Hole": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#portable%20hole_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Portfolio Keeper": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#portfolio%20keeper_ai",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Pot of Awakening": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#pot%20of%20awakening_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Pressure Capsule": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#pressure%20capsule_gos",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Professor Orb": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#professor%20orb_wdmm",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Professor Skant": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#professor%20skant_idrotf",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Propeller Helm": {
+        "Aura": "requires attunement by a small humanoid",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#propeller%20helm_wdmm",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Prosthetic Limb": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#prosthetic%20limb_tce",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Protective Verses": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#protective%20verses_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Psi Crystal": {
+        "Aura": "requires attunement by a creature with an intelligence score of 3 or higher",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#psi%20crystal_idrotf",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Psychic Absorbing Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#psychic%20absorbing%20tattoo_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Pyroconverger": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#pyroconverger_ggr",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Pyxis of Pandemonium": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#pyxis%20of%20pandemonium_mot",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Quaal's Feather Token, Anchor": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#quaal's%20feather%20token%2c%20anchor_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Quaal's Feather Token, Bird": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#quaal's%20feather%20token%2c%20bird_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Quaal's Feather Token, Fan": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#quaal's%20feather%20token%2c%20fan_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Quaal's Feather Token, Swan Boat": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#quaal's%20feather%20token%2c%20swan%20boat_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Quaal's Feather Token, Tree": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#quaal's%20feather%20token%2c%20tree_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Quaal's Feather Token, Whip": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#quaal's%20feather%20token%2c%20whip_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Quiver of Ehlonna": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#quiver%20of%20ehlonna_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Radiant Absorbing Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#radiant%20absorbing%20tattoo_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Rakdos Keyrune": {
+        "Aura": "requires attunement by a member of the Rakdos guild",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#rakdos%20keyrune_ggr",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Red Dragon Mask": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#red%20dragon%20mask_rotos",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Reincarnation Dust": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#reincarnation%20dust_egw",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Reveler's Concertina": {
+        "Aura": "requires attunement by a bard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#reveler's%20concertina_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Risian Pine Rod": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#risian%20pine%20rod_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Risian Pine Staff": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#risian%20pine%20staff_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "4 lb."
+    },
+    "Risian Pine Wand": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#risian%20pine%20wand_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Risian Shale Crystal": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#risian%20shale%20crystal_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Risian Shale Orb": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#risian%20shale%20orb_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Robe of Eyes": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#robe%20of%20eyes_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Robe of Scintillating Colors": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#robe%20of%20scintillating%20colors_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Robe of Serpents": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#robe%20of%20serpents_skt",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Robe of Stars": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#robe%20of%20stars_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Robe of Summer": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#robe%20of%20summer_tftyp",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Robe of Useful Items": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#robe%20of%20useful%20items_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Robe of the Archmagi": {
+        "Aura": "requires attunement by a sorcerer, warlock, or wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#robe%20of%20the%20archmagi_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Rope of Climbing": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#rope%20of%20climbing_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Rope of Entanglement": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#rope%20of%20entanglement_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Rope of Mending": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#rope%20of%20mending_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Rotor of Return": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#rotor%20of%20return_ai",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ruby of the War Mage": {
+        "Aura": "requires attunement by a spellcaster",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ruby%20of%20the%20war%20mage_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ruinstone": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ruinstone_dc",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Saddle of the Cavalier": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#saddle%20of%20the%20cavalier_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Scarab of Protection": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#scarab%20of%20protection_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Scribe's Pen": {
+        "Aura": "requires attunement by a creature with the Mark of Scribing",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#scribe's%20pen_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Sekolahian Worshiping Statuette": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#sekolahian%20worshiping%20statuette_gos",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Selesnya Keyrune": {
+        "Aura": "requires attunement by a member of the Selesnya guild",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#selesnya%20keyrune_ggr",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Sending Stone": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#sending%20stone_ai",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Sending Stones": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#sending%20stones_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Shadowfell Brand Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#shadowfell%20brand%20tattoo_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Shadowfell Shard": {
+        "Aura": "requires attunement by a sorcerer",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#shadowfell%20shard_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Shard of the Ise Rune": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#shard%20of%20the%20ise%20rune_skt",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Shavarran Birch Rod": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#shavarran%20birch%20rod_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Shavarran Birch Staff": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#shavarran%20birch%20staff_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "4 lb."
+    },
+    "Shavarran Birch Wand": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#shavarran%20birch%20wand_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Shavarran Chert Crystal": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#shavarran%20chert%20crystal_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Shavarran Chert Orb": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#shavarran%20chert%20orb_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Shield Guardian Amulet": {
+        "Aura": "requires attunement by a humanoid",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#shield%20guardian%20amulet_idrotf",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Shiftweave": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#shiftweave_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Simic Keyrune": {
+        "Aura": "requires attunement by a member of the Simic guild",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#simic%20keyrune_ggr",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Siren Song Lyre": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#siren%20song%20lyre_mot",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Slippers of Spider Climbing": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#slippers%20of%20spider%20climbing_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Smokepowder": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#smokepowder_wdh",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Soul Coin": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#soul%20coin_bgdia",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Sovereign Glue": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#sovereign%20glue_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Speaking Stone": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#speaking%20stone_erlw",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spell Bottle": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spell%20bottle_egw",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spell Gem (Amber)": {
+        "Aura": "attunement optional",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spell%20gem%20(amber)_oota",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spell Gem (Bloodstone)": {
+        "Aura": "attunement optional",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spell%20gem%20(bloodstone)_oota",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spell Gem (Diamond)": {
+        "Aura": "attunement optional",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spell%20gem%20(diamond)_oota",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spell Gem (Jade)": {
+        "Aura": "attunement optional",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spell%20gem%20(jade)_oota",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spell Gem (Lapis lazuli)": {
+        "Aura": "attunement optional",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spell%20gem%20(lapis%20lazuli)_oota",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spell Gem (Obsidian)": {
+        "Aura": "attunement optional",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spell%20gem%20(obsidian)_oota",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spell Gem (Quartz)": {
+        "Aura": "attunement optional",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spell%20gem%20(quartz)_oota",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spell Gem (Ruby)": {
+        "Aura": "attunement optional",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spell%20gem%20(ruby)_oota",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spell Gem (Star ruby)": {
+        "Aura": "attunement optional",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spell%20gem%20(star%20ruby)_oota",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spell Gem (Topaz)": {
+        "Aura": "attunement optional",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spell%20gem%20(topaz)_oota",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spellshard": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spellshard_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spellwrought Tattoo (1st Level)": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spellwrought%20tattoo%20(1st%20level)_tce",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spellwrought Tattoo (2nd Level)": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spellwrought%20tattoo%20(2nd%20level)_tce",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spellwrought Tattoo (3rd Level)": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spellwrought%20tattoo%20(3rd%20level)_tce",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spellwrought Tattoo (4th Level)": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spellwrought%20tattoo%20(4th%20level)_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spellwrought Tattoo (5th Level)": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spellwrought%20tattoo%20(5th%20level)_tce",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spellwrought Tattoo (Cantrip)": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spellwrought%20tattoo%20(cantrip)_tce",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Sphere of Annihilation": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#sphere%20of%20annihilation_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spies' Murmur": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spies'%20murmur_ggr",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Spyglass of Clairvoyance": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#spyglass%20of%20clairvoyance_ai",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Stone of Controlling Earth Elementals": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#stone%20of%20controlling%20earth%20elementals_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Stone of Golorr": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#stone%20of%20golorr_wdh",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Stone of Good Luck": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#stone%20of%20good%20luck_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Stone of Ill Luck": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#stone%20of%20ill%20luck_tftyp",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Stonespeaker Crystal": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#stonespeaker%20crystal_oota",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Stormgirdle": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#stormgirdle_egw",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Talisman of Pure Good": {
+        "Aura": "requires attunement by a creature of good alignment",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#talisman%20of%20pure%20good_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Talisman of Ultimate Evil": {
+        "Aura": "requires attunement by a creature of evil alignment",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#talisman%20of%20ultimate%20evil_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Talisman of the Sphere": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#talisman%20of%20the%20sphere_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Talking Doll": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#talking%20doll_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Tankard of Sobriety": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#tankard%20of%20sobriety_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Teeth of Dahlver-Nar": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#teeth%20of%20dahlver-nar_tce",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "The Codicil of White": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#the%20codicil%20of%20white_idrotf",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Thermal Cube": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#thermal%20cube_idrotf",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Thunder Absorbing Tattoo": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#thunder%20absorbing%20tattoo_tce",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Timepiece of Travel": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#timepiece%20of%20travel_ai",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Tome of Clear Thought": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#tome%20of%20clear%20thought_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Tome of Leadership and Influence": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#tome%20of%20leadership%20and%20influence_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Tome of Understanding": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#tome%20of%20understanding_dmg",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Tome of the Stilled Tongue": {
+        "Aura": "requires attunement by a wizard",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#tome%20of%20the%20stilled%20tongue_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": "5 lb."
+    },
+    "Travel Alchemical Kit": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#travel%20alchemical%20kit_ai",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Uncommon Glamerweave": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#uncommon%20glamerweave_erlw",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Universal Solvent": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#universal%20solvent_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Ventilating Lungs": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ventilating%20lungs_erlw",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Verminshroud": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#verminshroud_egw",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Veteran's Cane": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#veteran's%20cane_xge",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Voting Kit": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#voting%20kit_ai",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Vox Seeker": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#vox%20seeker_egw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Wand Sheath": {
+        "Aura": "requires attunement by a warforged",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#wand%20sheath_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Weird Tank": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#weird%20tank_pota",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Well of Many Worlds": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#well%20of%20many%20worlds_dmg",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Wheel of Stars": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#wheel%20of%20stars_ai",
+        "Price": "50000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Wheel of Wind and Water": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#wheel%20of%20wind%20and%20water_erlw",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Whisper Jar": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#whisper%20jar_ai",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "White Dragon Mask": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#white%20dragon%20mask_rotos",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Wind Fan": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#wind%20fan_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Winged Boots": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#winged%20boots_dmg",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Wings of Flying": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#wings%20of%20flying_dmg",
+        "Price": "5000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Wingwear": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#wingwear_pota",
+        "Price": "500",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Wreath of the Prism": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#wreath%20of%20the%20prism_egw",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Wyrmskull Throne": {
+        "Aura": "N/A",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#wyrmskull%20throne_skt",
+        "Price": "0",
+        "Slot": "None",
+        "Weight": ""
+    },
+    "Xorian Marble Crystal": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#xorian%20marble%20crystal_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Xorian Marble Orb": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#xorian%20marble%20orb_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "3 lb."
+    },
+    "Xorian Wenge Rod": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#xorian%20wenge%20rod_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "2 lb."
+    },
+    "Xorian Wenge Staff": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#xorian%20wenge%20staff_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "4 lb."
+    },
+    "Xorian Wenge Wand": {
+        "Aura": "requires attunement",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#xorian%20wenge%20wand_erlw",
+        "Price": "100",
+        "Slot": "None",
+        "Weight": "1 lb."
+    },
+    "Ythryn Mythallar": {
+        "Aura": "requires attunement by a spellcaster",
+        "CL": "0",
+        "Link": "https://5e.tools/items.html#ythryn%20mythallar_idrotf",
+        "Price": "500000",
+        "Slot": "None",
+        "Weight": ""
+    }
+}

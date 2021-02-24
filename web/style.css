@@ -143,3 +143,9 @@ table tr td {
 .button_eq:hover {
 	background-color: #808080;
 }
+
+.suggestion {
+	padding: 2px 0px;
+	margin: 0px;
+	list-style: none;
+}

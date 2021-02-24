@@ -6,7 +6,7 @@ from re import match
 import simplejson as json
 
 
-def main():
+def main(to_file=True):
     generator = json.loads(open('generate.json', 'r').read())
     Weapons = [
         generator['Weapon Shops']["# of Stores"],
@@ -14,6 +14,7 @@ def main():
         generator['Weapon Shops']["Rarity High"],
         generator['Weapon Shops']["Quantity Low"],
         generator['Weapon Shops']["Quantity High"],
+        generator['Weapon Shops']["Additional Traits"],
         generator['Weapon Shops']["Inflation"]
     ]
     Armor = [
@@ -22,6 +23,7 @@ def main():
         generator['Armor Shops']["Rarity High"],
         generator['Armor Shops']["Quantity Low"],
         generator['Armor Shops']["Quantity High"],
+        generator['Armor Shops']["Additional Traits"],
         generator['Armor Shops']["Inflation"]
     ]
     Potion = [
@@ -96,12 +98,14 @@ def main():
         generator["Gunsmiths"]["Rarity High"],
         generator["Gunsmiths"]["Quantity Low"],
         generator["Gunsmiths"]["Quantity High"],
+        generator["Gunsmiths"]["Additional Traits"],
         generator["Gunsmiths"]["Inflation"]
     ]
     Variety = [
         generator["Variety"]["# of Stores"],
         generator["Variety"]["Quantity Low"],
-        generator["Variety"]["Quantity High"], generator["Variety"]["Inflation"]
+        generator["Variety"]["Quantity High"],
+        generator["Variety"]["Inflation"]
     ]
     Quests = [
         generator["Quest Boards"]["# of Stores"],
@@ -120,9 +124,10 @@ def main():
         Weapons, Armor, Potion, Enchant, Enchanter, Books, Tavern, Jewel, Food,
         General, Brothel, Gunsmith, Variety, Quests, generator['Town Name'],
         generator["Dump Json"])
-    town_generator.generate_people(generator['Occupations'], generator['NPCs'],
-                                   town_name, generator["Dump Json"])
-    return town_name
+    html = town_generator.generate_people(
+        generator['Occupations'], generator['NPCs'], town_name,
+        generator["Dump Json"], to_file)
+    return html
 
 
 if __name__ == '__main__':

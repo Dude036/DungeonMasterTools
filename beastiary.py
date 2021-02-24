@@ -8,13 +8,19 @@ from tqdm import tqdm
 from numpy.random import randint
 import os
 import simplejson as json
+errored = {}
 
 with open("generate.json", 'r') as inf:
     settings = json.load(inf)
 
 Beasts = {}
-with open('beasts.json', 'r') as inf:
-    Beasts.update(json.load(inf, encoding='utf-8'))
+Poke_moves = {}
+BeastSource = json.load(open('settings.json', 'r'))['System']
+if BeastSource == 'D&D 5':
+    Beasts.update(json.load(open('5e_beasts.json', 'r', encoding='utf-8'), encoding='utf-8'))
+elif BeastSource == 'Pathfinder 1':
+    Beasts.update(json.load(open('beasts.json', 'r', encoding='utf-8'), encoding='utf-8'))
+    
 if settings["Allow Pokemon"]:
     with open('pokemon.json', 'r') as inf:
         Beasts.update(json.load(inf, encoding='utf-8'))
@@ -22,6 +28,7 @@ if settings["Allow Pokemon"]:
         Poke_moves = json.load(inf, encoding='utf-8')
 
 Levels = {
+    '0.0': 0,
     '0.13': 50,
     '0.17': 65,
     '0.25': 100,
@@ -72,11 +79,9 @@ def pick_monster(name='', cr=-1.0):
             cr = choice(list(Levels.keys()))
         name = choice(list(Beasts.keys()))
         monster = Beasts[name]
-        # print(monster['CR'])
         while monster['CR'] != cr:
             name = choice(list(Beasts.keys()))
             monster = Beasts[name]
-            # print(monster['CR'])
 
     elif name in list(Beasts.keys()):
         # Check if Monster is in the Dictionary, if not, it'll return None
@@ -86,22 +91,23 @@ def pick_monster(name='', cr=-1.0):
 
 def roll_hp(string):
     if '+' in string:
-        m = re.match(r'(\d+)d(\d+)\+(\d+)', string)
+        m = re.match(r'(\d+)d(\d+)\s?\+\s?(\d+)', string)
     elif '-' in string:
-        m = re.match(r'(\d+)d(\d+)(\-\d+)', string)
+        m = re.match(r'(\d+)d(\d+)(\s?\-\s?\d+)', string)
     else:
         m = re.match(r'(\d+)d(\d+)', string)
     total = 0
+    if m is None:
+        return string
     for _ in range(int(m.group(1))):
         total += randint(int(m.group(2))) + 1
     if len(m.groups()) == 3:
-        total += int(m.group(3))
+        total += int(''.join(m.group(3).split(' ')))
     return str(total)
 
 
 def pokemon_moves(name='', tm=0):
     html = '<table><td style="width: 50%"><span class="text-md">'
-    # weapon[1] + ' (' + weapon[2] + ')</span></td></table><br/>'
     if name == '' and tm == 0:
         return None
     elif tm == 0:
@@ -123,7 +129,7 @@ def get_monster_type(dictionary):
         return 'Pathfinder'
 
 
-def print_monster(picked_monster):
+def print_monster(picked_monster, to_file=True):
     if 'beasts' not in os.listdir(os.getcwd()):
         try:
             os.mkdir(os.getcwd() + '/beasts')
@@ -195,7 +201,7 @@ def print_monster(picked_monster):
 
     for a in range(6):
         if abilities is None:
-            print(name)
+            print(name, 'has no abilities')
         if abilities.group(a + 1) == '-':
             add = '- (-)'
         else:
@@ -210,7 +216,6 @@ def print_monster(picked_monster):
 
     total_weapons = 0
     if monster_type == 'Pokemon':
-        # print('Pokemon Moves')
         for move in monster['Moves']['Start']:
             move_info = Poke_moves[move]
             html += '<table><td style="width: 50%"><span class="text-md"><a href="' + move_info['link'] + '">' + \
@@ -229,7 +234,8 @@ def print_monster(picked_monster):
                             ')</span></td></table><br/>'
                     total_weapons += 1
             else:
-                print(name, '\t', monster['Melee'])
+                errored[name] = monster['Melee']
+                # print(name, '\t', monster['Melee'])
 
         if monster['Ranged'] != '':
             all_weapons = re.findall(
@@ -242,7 +248,8 @@ def print_monster(picked_monster):
                             + ')</span></td></table>' + '<br/>'
                     total_weapons += 1
             else:
-                print(name, '\t', monster['Ranged'])
+                errored[name] = monster['Ranged']
+                # print(name, '\t', monster['Ranged'])
 
     if total_weapons % 2 == 1:
         html += '<table><td style="width: 50%"><span class="text-md"></span><br /><span class="text-sm emp"></span>' + \
@@ -260,8 +267,11 @@ def print_monster(picked_monster):
     for t in treasure:
         html += str(t)
     html += '</tr></table></body></html>'
-    with open('beasts/' + name + '.html', 'w') as outf:
-        outf.write(bs(html, 'html5lib').prettify())
+    if to_file:
+        with open('beasts/' + name + '.html', 'w') as outf:
+            outf.write(bs(html, 'html5lib').prettify())
+    else:
+        return bs(html, 'html5lib').prettify()
 
 
 if __name__ == '__main__':
@@ -282,5 +292,14 @@ if __name__ == '__main__':
 
     time.sleep(.1)
 
+    failed = {}
     for m in tqdm(list(sorted(Beasts.keys()))):
-        print_monster(pick_monster(name=m))
+        try:
+            print_monster(pick_monster(name=m))
+        except Exception as e:
+            failed[m] = e
+
+    print('These failed:')
+    print(failed)
+    if failed:
+        json.dump(failed, open('wrong.json', 'w'), indent=4, sort_keys=True, encoding='utf-8')

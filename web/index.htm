@@ -15,9 +15,9 @@
 
     eel.expose(town_name_js);
     function town_name_js(name) {
-      document.getElementById("mainHeader").innerHTML = "The town of '" + name + "' has been created!";
+      document.getElementById("mainHeader").innerHTML = "The town of has been created!";
       var frame = document.getElementById('townFrame');
-      frame.src = '../' + name + '.html';
+      frame.innerHTML = name
       frame.style.display = 'block';
     }
 
@@ -404,6 +404,17 @@
             </div>
           </td>
         </tr>
+        <tr>
+          <td>
+            <label for="System">Game System:</label>
+          </td>
+          <td>
+            <select id="System" name="System">
+              <option value="D&D 5">D&D 5th Edition</option>
+              <option value="Pathfinder 1">Pathfinder 1st Edition</option>
+            </select>
+          </td>
+        </tr>
       </table>
       <table class="wrapper-box">
         <tr>
@@ -478,6 +489,14 @@
               </tr>
               <tr>
                 <td>
+                  <label for="WeaponAdditionalTraits">Additional Traits:</label>
+                </td>
+                <td>
+                  <input type="number" id="WeaponAdditionalTraits" name="WeaponAdditionalTraits" value="3" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <label for="WeaponInflation">Inflation:</label>
                 </td>
                 <td>
@@ -547,6 +566,14 @@
                 </td>
                 <td>
                   <input type="number" id="ArmorQuantityHigh" name="ArmorQuantityHigh" value="25" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="ArmorAdditionalTraits">Additional Traits:</label>
+                </td>
+                <td>
+                  <input type="number" id="ArmorAdditionalTraits" name="ArmorAdditionalTraits" value="3" min="0">
                 </td>
               </tr>
               <tr>
@@ -1238,6 +1265,14 @@
               </tr>
               <tr>
                 <td>
+                  <label for="GunsAdditionalTraits">Additional Traits:</label>
+                </td>
+                <td>
+                  <input type="number" id="GunsAdditionalTraits" name="GunsAdditionalTraits" value="3" min="0">
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <label for="GunsInflation">Inflation:</label>
                 </td>
                 <td>
@@ -1421,6 +1456,6 @@
         <input type="button" value="Submit" onclick="validate();">
       </center>
     </form>
-    <iframe id="townFrame" src="" style="display: none; margin: auto; width: 100%; height: 550px;"></iframe>
+    <div id="townFrame" style="display: none; margin: auto; width: 100%; height: 550px;"></div>
   </body>
 </html>

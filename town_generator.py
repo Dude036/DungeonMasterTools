@@ -8,37 +8,35 @@ from variance import create_variance
 import simplejson as json
 from masterwork import find_masterwork_traits_weapon, find_masterwork_traits_armor
 
-townHTML = '<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width" /><title></title><style>' \
-           'body{max-width:800px;margin-left:auto;margin-right:auto;padding-left:5px;padding-right:5px;} html{' \
-           'font-family:Arial;}h1, h2 {color:black;text-align:center;} .center{text-align:center;} .bold{font-weight:' \
-           'bold;}.emp{font-style:italic;} table{border:1px solid black;border-spacing:0px;}table tr th {' \
-           'background-color:gray;color:white;padding:5px;}table tr td {margin:0px;padding:5px;}.text-xs{font-size:' \
-           '12px;}.text-sm{font-size:14px;}.text-md{font-size:18px;}.text-lg{font-size:24px;}.text-xl{font-size:' \
-           '32px;}.col-1-3{width:33.3%;float: left;}.col-2-3{width:50%;float:left;}.col-3-3{width:100%;float:left;}' \
-           '.col-1-2{width:50%;float:left;}.col-2-2{width:100%;float:left;}.col-1-4{width:25%;float:left;}.col-2-4{' \
-           'width:33.3%;float:left;}.col-3-4{width:50%;float:left;}.col-4-4{width:100%;float:left;}</style><style ' \
-           'type="text/css">.inventory-table td{border-bottom:1px solid black;}.wrapper-box{width:100%;border:2px ' \
-           'solid black;padding:5px;}</style></head><body><script>function show_hide(ident){\nvar a = document.' \
-           'getElementById(ident);\nif (a.style.display === \'none\'){\na.style.display = \'block\';} else {' \
-           'a.style.display = \'none\';}}</script>'
+townHTML = '<!DOCTYPE html><html><head><meta name="viewport" content="width=device-width" /><title></title><style>body'\
+           '{max-width:800px;margin-left:auto;margin-right:auto;padding-left:5px;padding-right:5px;} html{font-family:'\
+           'Arial;}h1, h2 {color:black;text-align:center;} .center{text-align:center;} .bold{font-weight:bold;} .emp{f'\
+           'ont-style:italic;} table{border:1px solid black;border-spacing:0px;} table tr th {background-color:gray;co'\
+           'lor:white;padding:5px;} table tr td {margin:0px;padding:5px;} .text-xs{font-size:12px;} .text-sm{font-size'\
+           ':14px;} .text-md{font-size:18px;}.text-lg{font-size:24px;} .text-xl{font-size:32px;} .col-1-3{width:33.3%;'\
+           'float: left;} .col-2-3{width:50%;float:left;} .col-3-3{width:100%;float:left;} .col-1-2{width:50%;float:le'\
+           'ft;} .col-2-2{width:100%;float:left;} .col-1-4{width:25%;float:left;} .col-2-4{width:33.3%;float:left;} .c'\
+           'ol-3-4{width:50%;float:left;} .col-4-4{width:100%;float:left;} .inventory-table td{border-bottom:1px solid'\
+           ' black;}.wrapper-box{width:100%;border:2px solid black;padding:5px;}</style></head><body><script>function '\
+           'show_hide(ident){\nvar a = document.getElementById(ident);\nif (a.style.display === \'none\'){\na.style.di'\
+           'splay = \'block\';} else {a.style.display = \'none\';}}</script>'
 
-store_head = """<table class="wrapper-box" style="margin-bottom:60px;"><tr><td><span class="text-lg bold">"""
+store_head = '<div class="wrapper-box" style="margin-bottom:60px;"><span class="text-lg bold">'
 notable_head = '<table class="wrapper-box"><tr><td><span class="bold text-md">'
-inventory_head_rarity = '</div><span class="text-lg bold">Inventory <span class="text-sm emp"> - Inflation:</span>' \
-                        '</span><table style="width:100%;" class="inventory-table"><tr><th style="text-align:left;">' \
-                        'Item</th><th style="text-align:left;">Cost</th><th style="text-align:left;">Rarity</th></tr>'
-inventory_head_type = '</div><span class="text-lg bold">Inventory <span class="text-sm emp"> - Inflation:</span>' \
-                      '</span><table style="width:100%;" class="inventory-table"><tr><th style="text-align:left;">' \
-                      'Item</th><th style="text-align:left;">Cost</th><th style="text-align:left;">Type</th></tr>'
-characters = []
+inventory_head_rarity = '</div><span class="text-lg bold">Inventory <span class="text-sm emp"> - Inflation:</span></sp'\
+                        'an><table style="width:100%;" class="inventory-table"><tr><th style="text-align:left;">Item</'\
+                        'th><th style="text-align:left;">Cost</th><th style="text-align:left;">Rarity</th></tr>'
+inventory_head_type = '</div><span class="text-lg bold">Inventory <span class="text-sm emp"> - Inflation:</span></span'\
+                      '><table style="width:100%;" class="inventory-table"><tr><th style="text-align:left;">Item</th><'\
+                      'th style="text-align:left;">Cost</th><th style="text-align:left;">Type</th></tr>'
+characters = positions = []
 Notable = False
 
 
-def write_store(store, rarity=True):
+def write_store(store, rarity=True, additional=0):
     global townHTML
-    info = store_head + store.Store_name + """</span><br />\n<span class="bold text-md">Proprietor: </span><span""" + \
-           """ class="text-md">"""
-    info += str(store.Shopkeeper)
+    info = store_head + store.Store_name + '</span><br />\n<span class="bold text-md">Proprietor: </span><span' + \
+           ' class="text-md">' + str(store.Shopkeeper)
     if rarity:
         info += inventory_head_rarity
         info = info.replace(
@@ -54,12 +52,14 @@ def write_store(store, rarity=True):
         info += str(store.Stock[x])
 
     info += '</table>'
-    if '(Weapon)' in store.Store_name or '(Gunsmith)' in store.Store_name:
-        info += find_masterwork_traits_weapon(store.Stock)
-    if '(Armor' in store.Store_name:
-        info += find_masterwork_traits_armor(store.Stock)
+    if '(Weapon)' in store.Store_name:
+        info += find_masterwork_traits_weapon(store.Stock, additional)
+    elif '(Gunsmith)' in store.Store_name:
+        info += find_masterwork_traits_weapon(store.Stock, additional)
+    elif '(Armor' in store.Store_name:
+        info += find_masterwork_traits_armor(store.Stock, additional)
 
-    info += '</td></tr></table><br />'
+    info += '</div><br />'
 
     townHTML += info
 
@@ -68,7 +68,7 @@ def write_html(name=''):
     global townHTML
     if name == '':
         name = 'test'
-    with open(name + '.html', 'w') as outf:
+    with open(name + '.html', 'w', encoding='utf-8') as outf:
         outf.write(bs(townHTML, 'html5lib').prettify())
 
 
@@ -109,7 +109,7 @@ def generate_shops(w,
                    name='',
                    dump_json=False):
     """ [# of Stores, Rarity Low, Rarity High, Quan High, Quan Low] """
-    global townHTML
+    global characters, positions, townHTML
     from names import TownNamer
     town_name = str(TownNamer()) if name == '' else name
     townHTML += "<h1>" + town_name + "</h1><p>Description</p>"
@@ -124,8 +124,8 @@ def generate_shops(w,
         store = create_weapon_shop(
             create_person(create_variance()), [w[1], w[2]],
             randint(w[3], w[4]),
-            inflate=w[5])
-        write_store(store)
+            inflate=w[6])
+        write_store(store, additional=w[5])
         full_town[i] = store.to_dict()
         i += 1
 
@@ -133,8 +133,8 @@ def generate_shops(w,
         store = create_armor_shop(
             create_person(create_variance()), [a[1], a[2]],
             randint(a[3], a[4]),
-            inflate=a[5])
-        write_store(store)
+            inflate=a[6])
+        write_store(store, additional=a[5])
         full_town[i] = store.to_dict()
         i += 1
 
@@ -224,8 +224,8 @@ def generate_shops(w,
         store = create_gunsmith(
             create_person(create_variance()), [gu[1], gu[2]],
             randint(gu[3], gu[4]),
-            inflate=gu[5])
-        write_store(store)
+            inflate=gu[6])
+        write_store(store, additional=gu[5])
         full_town[i] = store.to_dict()
         i += 1
 
@@ -238,6 +238,8 @@ def generate_shops(w,
 
     for _ in range(qu[0]):
         q = quests.QuestBoard(qu[1], qu[2], qu[3], town_name)
+        characters = q.Members
+        positions = q.Positions
         townHTML += str(q)
         full_town[i] = q.__dict__
         i += 1
@@ -253,10 +255,15 @@ def generate_shops(w,
     return town_name
 
 
-def generate_people(pc, npc, town_name, dump_json=False):
+def generate_people(pc, npc, town_name, dump_json=False, to_file=True):
+    global characters, positions
     full_town = {}
     if dump_json:
         full_town = json.load(open(town_name + '.town.json', 'r'))
+
+    for k in range(len(characters)):
+        write_npc(characters[k], positions[k])
+        full_town[positions[k]] = characters[k]
 
     for p in pc:
         person = create_person(create_variance())
@@ -280,8 +287,9 @@ def generate_people(pc, npc, town_name, dump_json=False):
             raise e
 
     print("Writing the town ", town_name)
-    write_html(town_name)
-
+    if to_file:
+        write_html(town_name)
+    return bs(townHTML, 'html5lib').prettify()
 
 if __name__ == '__main__':
     townHTML += """<h2 class="text-lg bold center">Shops</h2>"""

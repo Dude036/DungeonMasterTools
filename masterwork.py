@@ -1,5 +1,5 @@
 from numpy.random import random, randint, choice
-from resources import masterwork_traits_weapon, masterwork_trait_cost_weapon, masterwork_trait_armor, masterwork_trait_cost_armor
+from resources import masterwork_traits_weapon, masterwork_trait_cost_weapon, masterwork_traits_armor, masterwork_trait_cost_armor
 
 # For Armor, See Here: https://www.d20pfsrd.com/magic-items/magic-armor/magic-armor-and-shield-special-abilities/
 # For Weapons, See Here: https://www.d20pfsrd.com/magic-items/magic-weapons/magic-weapon-special-abilities/
@@ -12,18 +12,18 @@ def special_masterwork_weapon(Weapon, Trait=None):
         # Get all potential options for our weapon type
         special_options = [
             'Anarchic', 'Axiomatic', 'Bane', 'Beaming', 'Benevolent',
-            'Bewildering', 'Breaking', 'Called', 'Conductive', 'Corrosive',
-            'Corrosive Burst', 'Dispelling', 'Dispelling Burst', 'Distracting',
+            'Bewildering', 'Breaking', 'Called', 'Compassionate', 'Conductive', 'Corrosive',
+            'Corrosive Burst', 'Cruel', 'Defiant', 'Dispelling', 'Dispelling Burst', 'Distracting',
             'Greater Distracting', 'Fervent', 'Flaming', 'Flaming Burst',
             'Flying', 'Frost', 'Furyborn', 'Ghost Touch', 'Heartseeker',
             'Heretical', 'Holy', 'Huntsman', 'Icy Burst', 'Igniting',
             'Impervious', 'Kinslayer', 'Limning', 'Lucky', 'Greater Lucky',
             'Merciful', 'Miserable', 'Negating', 'Patriotic', 'Peaceful',
             'Phase Locking', 'Planestriking', 'Redeemed', 'Repositioning',
-            'Sacred', 'Shattering', 'Shock', 'Shocking Burst', 'Sneaky',
+            'Sacred', 'Shattering', 'Shock', 'Shocking Burst', 'Silencing', 'Sneaky',
             'Speed', 'Spell Storing', 'Stalking', 'Summon Bane', 'Thawing',
             'Thundering', 'Toxic', 'Training', 'Treasonous', 'Truthful',
-            'Unholy'
+            'Unholy', 'Valiant'
         ]
         if Weapon.Class == 'Bows':
             special_options += ['Adaptive', 'Ambushing']
@@ -54,11 +54,12 @@ def special_masterwork_weapon(Weapon, Trait=None):
                 'Advancing', 'Answering', 'Allying', 'Countering', 'Courageous',
                 'Dazzling Radiance', 'Defending', 'Dueling', 'Exhausting',
                 'Fortuitous', 'Furious', 'Glorious', 'Grayflame', 'Growing',
-                'Guardian', 'Invigorating', 'Ki Focus', 'Ki Intensifying',
+                'Guardian', 'Impact', 'Invigorating', 'Ki Focus', 'Ki Intensifying',
                 'Liberating', 'Lifesurge', 'Menacing', 'Mighty Cleaving',
                 'Mimetic', 'Neutralizing', 'Ominous', 'Quenching', 'Rusting',
                 'Seaborne', 'Sharding', 'Shrinking', 'Spell Siphon',
-                'Spell Stealing', 'Throwing', 'Umbral', 'Underwater', 'Unseen'
+                'Spell Stealing', 'Throwing', 'Umbral', 'Underwater', 'Unseen',
+                'Vampiric', 'Greater Vampiric', 'Vicious'
             ]
             if Weapon.Class not in ['Heavy Axe', 'Heavy Blade']:
                 special_options += ['Agile']
@@ -69,7 +70,7 @@ def special_masterwork_weapon(Weapon, Trait=None):
                 ]
             if 'B' in Weapon.Damage:
                 special_options += [
-                    'Disruption', 'Impact', 'Legbreaker', 'Quaking', 'Smashing'
+                    'Disruption', 'Legbreaker', 'Quaking', 'Smashing'
                 ]
             if Weapon.Class in ['Light Axe', 'Light Blade', 'Close', 'Hammer']:
                 special_options += ['Concealed', 'Concealed, Lesser']
@@ -191,7 +192,7 @@ def get_flavor_text_weapon(name, Weapon=None):
     elif name == 'Brilliant Energy':
         damage = choice(
             ['Acid', 'Cold', 'Fire', 'Force', 'Lightning', 'Poison', 'Thunder'])
-        text = "This weapon was designed to deal " + damage + " damage instead of it's normal damage. You also deal"
+        text = "This weapon was designed to deal " + damage + " damage instead of it's normal damage"
 
     elif name == 'Called':
         text = "This weapon can be teleported back to the wielder's hands. This does not provoke attacks of " + \
@@ -372,8 +373,8 @@ def get_flavor_text_weapon(name, Weapon=None):
                'innate fly speed equal to half their movement speed.'
 
     elif name == 'Fortuitous':
-        text = 'This grants the wielder lightning fast reactions. The wielder of this weapon can make as many ' + \
-               'attacks of opportunity as the like.'
+        text = 'This grants the wielder lightning fast reactions. The wielder of this weapon can make attacks of ' + \
+               'opportunity as a free action.'
 
     elif name == 'Frost':
         text = 'This weapon is covered in ice. Attacks made with this weapon deal an additional 1d6 of cold damage.'
@@ -550,7 +551,8 @@ def get_flavor_text_weapon(name, Weapon=None):
     elif name == 'Limning':
         text = "This weapon was built to kill Fae. On a successful attack, the wielder can choose to cast Faerie" + \
                " Fire on the enemy as a free action. the Faerie Fire lasts for the full duration, but uses the " + \
-               "wielder's concentration. The wielder can do the a number of times equal to their Wisdom modifier."
+               "wielder's concentration. The wielder can do the a number of times equal to their Wisdom modifier " + \
+               "(min 1)."
 
     elif name == 'Lucky':
         text = 'This weapon has a lucky charm attached to it. The wielder has 1 Luck point, that they can use to ' + \
@@ -694,8 +696,13 @@ def get_flavor_text_weapon(name, Weapon=None):
                'expertise in Religion.'
 
     elif name == 'Sapping':
+        if Weapon is None:
+            t = '[Your Masterwork Quality]'
+        else:
+            t = str(Weapon.Masterwork)
         text = 'This weapon drains the strength of its enemies. Attacks made with this weapon deal 2d6 points of ' + \
-               'non-lethal damage. On a critical, the enemy drops Unconscious for 2d4 rounds.'
+               'non-lethal damage. On a critical, the enemy must make a Constitution Save. DC 8 +' + t + ' + STR. ' + \
+               'On a failed save, the creature gains the Unconscious condition for 1d4 rounds.'
 
     elif name == 'Seaborne':
         text = 'This weapon is at home on the ocean. The wielder of this weapon gains a natural swim speed equal ' + \
@@ -934,7 +941,7 @@ def get_masterwork_level(name, cost_stuff):
             return i
 
 
-def find_masterwork_traits_weapon(stock_list):
+def find_masterwork_traits_weapon(stock_list, additional_traits=0):
     trait_list = set()
     html = ''
 
@@ -947,27 +954,41 @@ def find_masterwork_traits_weapon(stock_list):
 
     # Convert to List
     trait_list = list(trait_list)
+    trait_list.sort()
     if '' in trait_list:
+        trait_list.remove('')
         html += '<p>This Seller is capable of making weapons Masterwork. To make a weapon masterwork, you need to ' + \
                 'pay someone time and money to accomplish the goal. It takes 1 day for each 1,000 gp spent on the ' + \
                 'upgrade, rounded down. Here is the following table for costs of each upgrade.</p><p class="' + \
                 'text-sm emp">* Note that upgrading a weapon from one level to another costs its normal amount ' + \
-                'minus the previous amount. I.e. From level 3 to level 4 costs 32,000 - 18,000.</p><table><tr><th>' + \
-                'Upgrade</th><th>Cost</th><th>Upgrade</th><th>Cost</th></tr>'
+                'minus the previous amount. I.e. From level 3 to level 4 costs 32,000 - 18,000.</p><table ' + \
+                'style="margin: auto;"><tr><th>Upgrade</th><th>Cost</th><th>Upgrade</th><th>Cost</th></tr>'
         for i in range(1, 11, 2):
             html += '<tr><td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td>'
             i += 1
             html += '<td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td></tr>'
-        html += '</table><br>'
+        html += '</table>'
 
-    if len(trait_list) > 1:
-        trait_list.remove('')
-        html += '<table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>Money Cost' + \
-                '</th><th>Prerequisite</th></tr>'
-        for item in trait_list:
-            level = get_masterwork_level(item, masterwork_trait_cost_weapon)
-            html += '<tr><td>' + item + '</td><td>' + get_flavor_text_weapon(item) + '</td><td>'
-            html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
+    added_traits = False
+    if len(trait_list) > 1 or additional_traits > 0:
+        added_traits = True
+        html += '<br/><table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>' + \
+                'Money Cost</th><th>Prerequisite</th></tr>'
+
+    for item in trait_list:
+        added_traits = True
+        level = get_masterwork_level(item, masterwork_trait_cost_weapon)
+        html += '<tr><td>' + item + '</td><td>' + get_flavor_text_weapon(item) + '</td><td>'
+        html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
+
+    for _ in range(additional_traits):
+        added_traits = True
+        level = choice([1, 2, 3, 4, 5], p=[0.5, 0.28125, 0.125, 0.0625, 0.03125])
+        item = choice(masterwork_trait_cost_weapon[level])
+        html += '<tr><td>' + item + '</td><td>' + get_flavor_text_weapon(item) + '</td><td>'
+        html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
+
+    if added_traits:
         html += '</table>'
 
     return html
@@ -985,21 +1006,22 @@ def special_masterwork_armor(Armor, Trait=None):
             'Medium Fortification', 'Heavy Fortification', 'Frosted', 'Harmonizing', 'Invulnerability', 'Malevolent',
             'Mastering', 'Merging', 'Mirrored', 'Poison-Resistant', 'Radiant', 'Rallying', 'Rebounding', 'Righteous',
             'Sensing', 'Spell Dodging', 'Spell Resistance', 'Improved Spell Resistance', 'Greater Spell Resistance',
-            'Lesser Spell Resistance', 'Spell Storing', 'Spellrending', 'Unrighteous', 'Warding', 'Weeping', 
+            'Lesser Spell Resistance', 'Spell Storing', 'Spellrending', 'Spirit-Bonded', 'Trackless', 'Unrighteous',
+            'Warding', 'Weeping', 'Wyrmsbreath'
         ]
 
         if Armor.Class == 'Light':
             special_options += [
                 'Balanced', 'Bloodthirsty', 'Brawling', 'Burdenless', 'Creeping', 'Etherealness', 'Expeditious', 
-                'Glamered', 'Grinding', 'Mental Focus', 'Phantasmal', 'Phase Lurching', 'Restful', 'Shadow', 
+                'Glamered', 'Grinding', 'Mental Focus', 'Phantasmal', 'Phase Lurching', 'Restful', 'Shadow',
                 'Shadow Blending', 'Improved Shadow',  'Greater Shadow', 'Spellsink', 'Terrain-Striding', 'Wild', 
                 'Withstanding', 
             ]
         if Armor.Class == 'Medium':
             special_options += [
-                'Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Etherealness', 
+                'Balanced', 'Bloodthirsty', 'Bolstering', 'Burdenless', 'Comfort', 'Corsair', 'Etherealness',
                 'Expeditious', 'Glamered', 'Grinding', 'Mental Focus', 'Mind Buttressing', 'Poisoning', 'Putrid',
-                'Restful', 'Spirit-Bonded', 'Terrain-Striding', 'Wild', 'Withstanding', 
+                'Restful', 'Terrain-Striding', 'Wild', 'Withstanding',
             ]
         if Armor.Class == 'Heavy':
             special_options += [
@@ -1010,7 +1032,7 @@ def special_masterwork_armor(Armor, Trait=None):
         if Armor.Class == 'Shield':
             special_options += [
                 'Animated', 'Bashing', 'Bolstering', 'Jawbreaker', 'Poisoning', 'Reflecting', 'Singing',
-                ]
+            ]
 
         Armor.Special = choice(special_options)
 
@@ -1275,7 +1297,7 @@ def get_flavor_text_armor(name, Armor=None):
         text = 'If an enemy successfully hits you with a natural attack, they take 1d8 cold damage from your armor'
 
     elif name == 'Glamered':
-        text = 'This armor can transform to and from a normsal set of clothing as an action.'
+        text = 'This armor can transform to and from a normal set of clothing as an action.'
 
     elif name == 'Grinding':
         if Armor is None:
@@ -1497,24 +1519,27 @@ def get_flavor_text_armor(name, Armor=None):
 
     elif name == 'Spellsink':
         if Armor is None:
-            a = '<table><tr><th>Slot Level</th><th>Rounds</th><th>Damage</th></tr><tr><td>1</td><td>1</td><td>16' + \
-                '</td></tr><tr><td>2</td><td>2</td><td>32</td></tr><tr><td>3</td><td>3</td><td>48</td></tr><tr>' + \
-                '<td>4</td><td>4</td><td>64</td></tr><tr><td>5</td><td>5</td><td>80</td></tr><tr><td>6</td><td>6' + \
-                '</td><td>96</td></tr><tr><td>7</td><td>7</td><td>112</td></tr><tr><td>8</td><td>8</td><td>128' + \
-                '</td></tr><tr><td>9</td><td>9</td><td>144</td></tr></table>'
+            t = '[Your Masterwork Quality]'
         else:
-            a = '<table><tr><th>Slot Level</th><th>Rounds</th><th>Damage</th></tr>'
+            t = str(Armor.Masterwork)
+        if Armor is None:
+            a = '<table><tr><th>Slot Level</th><th>Damage</th></tr><tr><td>1</td><td>16</td></tr><tr><td>2</td><td>' + \
+                '32</td></tr><tr><td>3</td><td>48</td></tr><tr><td>4</td><td>64</td></tr><tr><td>5</td><td>80</td>' + \
+                '</tr><tr><td>6</td><td>96</td></tr><tr><td>7</td><td>112</td></tr><tr><td>8</td><td>128</td></tr>' + \
+                '<tr><td>9</td><td>144</td></tr></table>'
+        else:
+            a = '<table><tr><th>Slot Level</th><th>Damage</th></tr>'
             i = 1
-            while i >= Armor.Masterwork:
-                a += '<tr><td>' + str(i) + '</td><td>' + str(i) + '</td><td>' + str(i * 16) + '</td></tr>'
+            while i <= Armor.Masterwork:
+                a += '<tr><td>' + str(i) + '</td><td>' + str(i * 16) + '</td></tr>'
                 i += 1
             a += '</table>'
-        text = 'You armor can convert magical damage into spell slots. On a successful save against a spells that ' + \
+        text = 'Your armor can convert magical damage into spell slots. On a successful save against a spells that ' + \
                'deals damage, the damage you would have otherwise taken on a fail is absorbed by your armor. For ' + \
                'each round this armor isn\'t converting a spell, it loses 1d10 points of damage. You can convert ' + \
-               'damage into a spell slot based on two factors. The time taken, and damage taken. This armor can ' + \
-               'only convert damage into a spell slot up to its Masterwork Quality. Refer to the following chart ' + \
-               ' for time and damage.' + a
+               'damage into a spell slot using this number as an action. This armor can only convert damage into ' + \
+               'a spell slot less than or equal to level ' + t + '. Refer to the following chart for damage ' + \
+               'requirements.' + a
 
     elif name == 'Spirit-Bonded':
         text = 'You gain resistance to Psychic damage.'
@@ -1584,7 +1609,7 @@ def get_flavor_text_armor(name, Armor=None):
         return text
 
 
-def find_masterwork_traits_armor(stock_list):
+def find_masterwork_traits_armor(stock_list, additional_traits=0):
     trait_list = set()
     html = ''
 
@@ -1597,27 +1622,83 @@ def find_masterwork_traits_armor(stock_list):
 
     # Convert to List
     trait_list = list(trait_list)
+    trait_list.sort()
     if '' in trait_list:
+        trait_list.remove('')
         html += '<p>This Seller is capable of making Armor Masterwork. To make a armor masterwork, you need to ' + \
                 'pay someone time and money to accomplish the goal. It takes 1 day for each 1,000 gp spent on the ' + \
                 'upgrade, rounded down. Here is the following table for costs of each upgrade.</p><p class="' + \
                 'text-sm emp">* Note that upgrading a armor from one level to another costs its normal amount ' + \
-                'minus the previous amount. I.e. From level 3 to level 4 costs 32,000 - 18,000.</p><table><tr><th>' + \
-                'Upgrade</th><th>Cost</th><th>Upgrade</th><th>Cost</th></tr>'
+                'minus the previous amount. I.e. From level 3 to level 4 costs 32,000 - 18,000.</p><table style' + \
+                '="margin: auto;"><tr><th>Upgrade</th><th>Cost</th><th>Upgrade</th><th>Cost</th></tr>'
         for i in range(1, 11, 2):
             html += '<tr><td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td>'
             i += 1
             html += '<td>+' + str(i) + '</td><td>' + str(2 * i * i * 1000) + '</td></tr>'
-        html += '</table><br>'
+        html += '</table>'
 
-    if len(trait_list) > 1:
-        trait_list.remove('')
-        html += '<table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>Money Cost' + \
-                '</th><th>Prerequisite</th></tr>'
-        for item in trait_list:
-            level = get_masterwork_level(item, masterwork_trait_cost_armor)
-            html += '<tr><td>' + item + '</td><td>' + get_flavor_text_armor(item) + '</td><td>'
-            html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
+    added_traits = False
+    if len(trait_list) > 1 or additional_traits > 0:
+        added_traits = True
+        html += '<br/><table class="inventory-table" style="width: 100%;"><tr><th>Name</th><th>Effect</th><th>Money' + \
+                ' Cost</th><th>Prerequisite</th></tr>'
+    for item in trait_list:
+        added_traits = True
+        level = get_masterwork_level(item, masterwork_trait_cost_armor)
+        html += '<tr><td>' + item + '</td><td>' + get_flavor_text_armor(item) + '</td><td>'
+        html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
+
+    for _ in range(additional_traits):
+        added_traits = True
+        level = choice([1, 2, 3, 4, 5], p=[0.5, 0.28125, 0.125, 0.0625, 0.03125])
+        item = choice(masterwork_trait_cost_armor[level])
+        html += '<tr><td>' + item + '</td><td>' + get_flavor_text_armor(item) + '</td><td>'
+        html += str(2 * level * level * 1000) + '</td><td>+' + str(level) + '</td></tr>'
+
+    if added_traits:
         html += '</table>'
 
     return html
+
+
+if __name__ == '__main__':
+    # Use this to create stores with nothing but masterwork enhancements
+    from stores import Armor, Weapon, Store
+    from character import create_person
+    from town_generator import townHTML, store_head, inventory_head_rarity
+    from bs4 import BeautifulSoup as bs
+
+    # Start with Weapons
+    shop = Store(create_person({'Human': 1.0}), "Sample", 1.0, [0, 4])
+    for trait in masterwork_traits_weapon:
+        w = Weapon(0, iTrait=trait)
+        w.add_masterwork(1)
+        w.add_trait(trait)
+        shop.Stock.append(w)
+    weapon_table = find_masterwork_traits_weapon(shop.Stock, 0)
+    shop.Stock = []
+
+    # Make armor next
+    for trait in masterwork_traits_armor:
+        a = Armor(0, iTrait=trait)
+        a.add_masterwork(1)
+        a.add_trait(trait)
+        shop.Stock.append(a)
+
+    armor_table = find_masterwork_traits_armor(shop.Stock, 0)
+
+    # Compile HTML
+    town_name = "Master Masterwork Trait Table"
+    html_to_write = townHTML + "<h1>" + town_name + "</h1>" + store_head + shop.Store_name
+    html_to_write += '</span><br />\n<span class="bold text-md">Proprietor: </span><span class="text-md">'
+    html_to_write += str(shop.Shopkeeper) + inventory_head_rarity
+
+    # Specify Inflation rate and add Traits
+    html_to_write = html_to_write.replace("Inflation:", "Inflation: 100.0%")
+    html_to_write += weapon_table + "<br/><hr><br/>" + armor_table + "</div><br/>"
+
+    # Write Store to HTML
+    with open('Master Masterwork Traits Table.html', 'w', encoding='utf-8') as outf:
+        outf.write(bs(html_to_write, 'html5lib').prettify())
+
+

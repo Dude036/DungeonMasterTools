@@ -1,3 +1,4 @@
+import simplejson as json
 '''
     'Sample' : { 'Weight': 10, 'Cost' : 1, 'Type' : ['B','S','P','LA','MA','HA','2','1','Si','Ma','Ex','Ra','Ar',], },
 B, S, P          - Blunt, Slash, Pierce
@@ -358,13 +359,13 @@ masterwork_trait_cost_weapon = {
     5: ['Flying', 'Heart-Piercing', 'Interfering', 'Spell Siphon', 'Vorpal'],
 }
 
-masterwork_trait_armor = [
+masterwork_traits_armor = [
     'Adamant', 'Adhesive', 'Advancing', 'Amorphous', 'Animated',
     'Arrow Catching', 'Arrow Deflection', 'Arrow-Collecting', 'Assiduous',
     'Balanced', 'Balanced', 'Bashing', 'Bastion', 'Benevolent', 'Billowing',
     'Bitter', 'Blinding', 'Bloodthirsty', 'Bolstering', 'Brawling', 'Buoyant',
     'Burdenless', 'Calming', 'Champion', 'Channeling', 'Clangorous',
-    'Cocooning', 'Comfort', 'Creeping', 'Crusading',
+    'Cocooning', 'Comfort', 'Corsair', 'Creeping', 'Crusading',
     'Cushioned', 'Deathless', 'Deceiving', 'Defiant', 'Delving',
     'Determination', 'Dread Wing', 'Energy Resistance',
     'Greater Energy Resistance', 'Improved Energy Resistance', 'Etherealness',
@@ -433,327 +434,70 @@ Level 8 : 3000 GP
 Level 9 : 4825 GP
 """
 MasterSpellBlacklist = ["https://homebrewery.naturalcrit.com/share/r1TpuSfiz"]
-level_0 = [
-    'Acid Splash', 'Arcane Mark', 'Bleed', 'Create Water', 'Dancing Lights',
-    'Daze', 'Detect Magic', 'Detect Poison', 'Disrupt Undead', 'Flare',
-    'Ghost Sound', 'Guidance', 'Know Direction', 'Light', 'Lullaby',
-    'Mage Hand', 'Mending', 'Message', 'Open/Close', 'Prestidigitation',
-    'Purify Food and Drink', 'Ray of Frost', 'Read Magic', 'Resistance',
-    'Stabilize', 'Summon Instrument', 'Touch of Fatigue', 'Virtue', 'Brand',
-    'Putrefy Food and Drink', 'Sift', 'Spark', 'Unwitting Ally',
-    'Haunted Fey Aspect'
-]
-level_1 = [
-    'Alarm', 'Animal Messenger', 'Animate Dead, Lesser', 'Animate Rope',
-    'Anticipate Peril', 'Bane', 'Bless', 'Bless Water', 'Bless Weapon',
-    'Burning Hands', 'Calm Animals', 'Cause Fear', 'Charm Animal',
-    'Charm Person', 'Chill Touch', 'Color Spray', 'Command',
-    'Comprehend Languages', 'Confusion, Lesser', 'Corrosive Touch',
-    'Cure Light Wounds', 'Curse Water', 'Deathwatch', 'Delay Poison',
-    'Detect Animals or Plants', 'Detect Chaos', 'Detect Evil', 'Detect Good',
-    'Detect Law', 'Detect Secret Doors', 'Detect Snares and Pits',
-    'Detect Undead', 'Diagnose Disease', 'Disguise Self', 'Divine Favor',
-    'Doom', 'Ear-Piercing Scream', 'Endure Elements', 'Enlarge Person',
-    'Entangle', 'Entropic Shield', 'Erase', 'Expeditious Retreat',
-    'Faerie Fire', 'Feather Fall', 'Floating Disk', 'Goodberry', 'Grease',
-    'Hide from Animals', 'Hide from Undead', 'Hideous Laughter', 'Hold Portal',
-    'Hypnotism', 'Identify', 'Inflict Light Wounds', 'Jump', 'Longstrider',
-    'Mage Armor', 'Magic Aura', 'Magic Fang', 'Magic Missile', 'Magic Mouth',
-    'Magic Stone', 'Magic Weapon', 'Mount', 'Obscure Object', 'Obscuring Mist',
-    'Pass without Trace', 'Produce Flame', 'Protection from Chaos',
-    'Protection from Evil', 'Protection from Good', 'Protection from Law',
-    'Ray of Enfeeblement', 'Reduce Person', 'Remove Fear', 'Resist Energy',
-    'Restoration, Lesser', 'Sanctuary', 'Shield', 'Shield of Faith',
-    'Shillelagh', 'Shocking Grasp', 'Silent Image', 'Sleep',
-    'Speak with Animals', 'Summon Monster I', "Summon Nature's Ally I",
-    'True Strike', 'Undetectable Alignment', 'Unseen Servant', 'Ventriloquism',
-    'Alter Winds', 'Ant Haul', 'Aspect of the Falcon', 'Beguiling Gift',
-    "Bomber's Eye", 'Borrow Skill', 'Break', 'Bristle', 'Burst Bonds',
-    'Call Animal', 'Challenge Evil', 'Cloak of Shade', "Crafter's Curse",
-    "Crafter's Fortune", 'Dancing Lantern', 'Detect Aberration',
-    'Expeditious Excavation', 'Feather Step', 'Flare Burst', 'Ghostbane Dirge',
-    'Glide', 'Grace', 'Gravity Bow', "Hero's Defiance", 'Honeyed Tongue',
-    "Hunter's Howl", 'Hydraulic Push', 'Ill Omen', 'Innocence', 'Invigorate',
-    'Keen Senses', "Knight's Calling", 'Lead Blades', 'Mask Dweomer',
-    'Memory Lapse', 'Negate Aroma', 'Rally Point', 'Rejuvenate Eidolon, Lesser',
-    'Residual Tracking', 'Restful Sleep', 'Saving Finale', 'Sculpt Corpse',
-    'Share Language', 'Solid Note', 'Stone Fist', 'Stumble Gap',
-    'Timely Inspiration', 'Tireless Pursuit', 'Touch of Gracelessness',
-    'Touch of the Sea', 'Unfetter', 'Vanish', 'Veil of Positive Energy',
-    'Wrath', 'Abundant Ammunition', 'Adjuring Step', 'Adoration', 'Air Bubble',
-    'Bowstaff', 'Compel Hostility', 'Damp Powder', "Deadeye's Lore",
-    'Fabricate Bullets', 'Illusion of Calm', 'Jury-Rig', 'Liberating Command',
-    'Life Conduit', 'Litany of Sloth', 'Litany of Weakness', 'Lock Gaze',
-    'Longshot', 'Mirror Strike', 'Moment of Greatness', 'Negative Reaction',
-    'Peacebond', 'Reinforce Armaments', 'Returning Weapon', 'See Alignment',
-    'Shock Shield', 'Sun Metal', 'Tactical Acumen', 'Targeted Bomb Admixture',
-    'Unerring Weapon', 'Warding Weapon', 'Weaken Powder'
-]
-level_2 = [
-    'Acid Arrow', 'Aid', 'Align Weapon', 'Alter Self', 'Animal Trance',
-    'Arcane Lock', 'Augury', 'Barkskin', "Bear's Endurance", 'Blinding Ray',
-    'Blindness/Deafness', 'Blur', "Bull's Strength", 'Calm Emotions',
-    "Cat's Grace", 'Chill Metal', 'Command Undead', 'Consecrate',
-    'Continual Flame', 'Cure Moderate Wounds', 'Darkness', 'Darkvision',
-    'Daze Monster', 'Death Knell', 'Desecrate', 'Detect Thoughts',
-    'Disfiguring Touch', "Eagle's Splendor", 'Enthrall',
-    'Excruciating Deformation', 'False Life', 'Find Traps', 'Fire Trap',
-    'Flame Blade', 'Flaming Sphere', 'Fog Cloud', "Fox's Cunning",
-    'Gentle Repose', 'Ghoul Touch', 'Glitterdust', 'Gust of Wind', 'Heat Metal',
-    'Heroism', 'Hold Animal', 'Hold Person', 'Hypnotic Pattern',
-    'Inflict Moderate Wounds', 'Invisibility', 'Knock', 'Levitate',
-    'Locate Object', 'Make Whole', 'Minor Image', 'Mirror Image',
-    'Misdirection', "Owl's Wisdom", 'Phantom Trap', 'Protection from Arrows',
-    'Protection from Energy', 'Pyrotechnics', 'Rage', 'Reduce Animal',
-    'Remove Paralysis', 'Rope Trick', 'Scare', 'Scorching Ray',
-    'See Invisibility', 'Shatter', 'Shield Other', 'Silence', 'Snare',
-    'Soften Earth and Stone', 'Sound Burst', 'Speak with Plants',
-    'Spectral Hand', 'Spider Climb', 'Spike Growth', 'Spiritual Weapon',
-    'Status', 'Suggestion', 'Summon Monster II', "Summon Nature's Ally II",
-    'Summon Swarm', 'Tongues', 'Touch of Idiocy', 'Tree Shape', 'Warp Wood',
-    'Web', 'Whispering Wind', 'Wind Wall', 'Wood Shape', 'Zone of Truth',
-    'Accelerate Poison', 'Alchemical Allocation', 'Allfood', 'Arrow Eruption',
-    'Aspect of the Bear', 'Aura of Greater Courage', 'Bestow Grace',
-    'Blessing of Courage and Life', 'Blood Biography', 'Bloodhound',
-    'Burning Gaze', 'Cacophonous Call', 'Campfire Wall', 'Castigate',
-    'Chameleon Stride', 'Confess', 'Corruption Resistance', 'Create Pit',
-    'Create Treasure Map', 'Dust of Twilight', 'Eagle Eye', 'Elemental Speech',
-    'Elemental Touch', 'Enter Image', 'Evolution Surge, Lesser',
-    'Feast of Ashes', 'Fester', 'Fire Breath', 'Fire of Entanglement',
-    'Flames of the Faithful', 'Follow Aura', 'Gallant Inspiration',
-    'Guiding Star', 'Hidden Speech', 'Hide Campsite', "Hunter's Eye",
-    'Instant Armor', 'Light Lance', 'Lockjaw', 'Natural Rhythm',
-    "Oracle's Burden", "Paladin's Sacrifice", 'Perceive Cues', 'Pox Pustules',
-    'Protective Spirit', 'Righteous Vigor', 'Sacred Bond', 'Saddle Surge',
-    'Scent Trail', 'Slipstream', 'Stone Call', 'Summon Eidolon',
-    'Transmute Potion to Poison', 'Versatile Weapon', 'Vomit Swarm',
-    'Wake of Light', 'Weapon of Awe', 'Ablative Barrier', 'Animal Aspect',
-    'Ant Haul, Communal', 'Bestow Weapon Proficiency', 'Blistering Invective',
-    'Brow Gasher', 'Bullet Shield', 'Certain Grip', 'Destabilize Powder',
-    'Discovery Torch', 'Divine Arrow', 'Effortless Armor',
-    'Endure Elements, Communal', 'Fiery Shuriken', 'Forest Friend',
-    'Frost Fall', 'Instrument of Agony', 'Kinetic Reverberation',
-    'Litany of Defense', 'Litany of Eloquence', 'Litany of Entanglement',
-    'Litany of Righteousness', 'Litany of Warding', 'Locate Weakness',
-    'Magic Siege Engine', 'Mask Dweomer, Communal', 'Mount, Communal',
-    'Pilfering Hand', 'Protection from Chaos, Communal',
-    'Protection from Evil, Communal', 'Protection from Good, Communal',
-    'Protection from Law, Communal', 'Qualm', 'Recoil Fire',
-    'Reinforce Armaments, Communal', 'Reloading Hands',
-    'Returning Weapon, Communal', 'Ricochet Shot', 'Shadow Bomb Admixture',
-    'Share Language, Communal', 'Spontaneous Immolation', 'Stabilize Powder',
-    'Telekinetic Assembly', 'Thunder Fire', 'Touch Injection', 'Twisted Space',
-    'Wilderness Soldiers', 'Frostbite', 'Murderous Command', 'Persuasive Goad',
-    'Pick Your Poison', 'Polypurpose Panacea', 'Ray of Sickening',
-    'Remove Sickness'
-]
-level_3 = [
-    'Animate Dead', 'Arcane Sight', 'Beast Shape I', 'Bestow Curse', 'Blink',
-    'Burst of Nettles', 'Call Lightning', 'Channel Vigor', 'Charm Monster',
-    'Clairaudience/Clairvoyance', 'Command Plants', 'Confusion', 'Contagion',
-    'Create Food and Water', 'Crushing Despair', 'Cure Serious Wounds',
-    'Daylight', 'Deeper Darkness', 'Deep Slumber', 'Diminish Plants',
-    'Discern Lies', 'Dispel Magic', 'Displacement', 'Dominate Animal',
-    'Explosive Runes', 'Fear', 'Fireball', 'Flame Arrow', 'Fly', 'Gaseous Form',
-    'Geas, Lesser', 'Glibness', 'Glyph of Warding', 'Good Hope', 'Halt Undead',
-    'Haste', 'Heal Mount', 'Helping Hand', 'Illusory Script',
-    'Inflict Serious Wounds', 'Invisibility Purge', 'Invisibility Sphere',
-    'Keen Edge', 'Lightning Bolt', 'Magic Circle against Chaos',
-    'Magic Circle against Evil', 'Magic Circle against Good',
-    'Magic Circle against Law', 'Magic Fang, Greater', 'Magic Vestment',
-    'Magic Weapon, Greater', 'Major Image', 'Meld into Stone',
-    'Neutralize Poison', 'Nondetection', 'Phantom Steed', 'Plant Growth',
-    'Poison', 'Prayer', 'Quench', 'Ray of Exhaustion',
-    'Remove Blindness/Deafness', 'Remove Curse', 'Remove Disease',
-    'Repel Vermin', 'Scrying', 'Sculpt Sound', 'Searing Light', 'Secret Page',
-    'Sepia Snake Sigil', 'Shrink Item', 'Sleet Storm', 'Slow',
-    'Speak with Dead', 'Stinking Cloud', 'Stone Shape', 'Summon Monster III',
-    "Summon Nature's Ally III", 'Tiny Hut', 'Vampiric touch', 'Water Breathing',
-    'Water Walk', 'Absorbing Touch', 'Amplify Elixir', 'Aqueous Orb',
-    'Arcane Concordance', 'Aspect of the Stag', 'Banish Seeming',
-    'Bloody Claws', 'Borrow Fortune', 'Cast Out', 'Cloak of Winds',
-    'Coordinated Effort', 'Cup of Dust', 'Defile Armor', 'Devolution',
-    'Divine Transfer', 'Draconic Reservoir', 'Elemental Aura',
-    'Evolution Surge', 'Feather Step, Mass', 'Fire of Judgment',
-    'Ghostbane Dirge, Mass', 'Holy Whisper', 'Hydraulic Torrent',
-    'Instant Enemy', 'Invigorate, Mass', "Jester's Jaunt", 'Life Bubble',
-    'Lily Pad Stride', 'Marks Of Forbiddance', 'Nap Stack', "Nature's Exile",
-    'Pain Strike', 'Purging Finale', 'Rejuvenate Eidolon', 'Retribution',
-    'Reviving Finale', 'Sanctify Armor', 'Screech', 'Seek Thoughts',
-    'Share Senses', 'Shifting Sand', 'Spiked Pit', 'Strong Jaw', 'Thorn Body',
-    'Thundering Drums', 'Tireless Pursuers', 'Twilight Knife', 'Venomous Bolt',
-    'Ward the Faithful', 'Wrathful Mantle', 'Absorb Toxicity',
-    'Animal Aspect, Greater', 'Burst of Speed', 'Chain of Perdition',
-    'Companion Mind Link', 'Darkvision, Communal', 'Daybreak Arrow',
-    'Deadly Juggernaut', 'Delay Poison, Communal', 'Flash Fire',
-    'Healing Thief', 'Hostile Levitation', 'Life Conduit, Improved',
-    'Lightning Lash Bomb Admixture', 'Litany of Escape', 'Litany of Sight',
-    'Named Bullet', 'Obsidian Flow', 'Pellet Blast', 'Phantom Chariot',
-    'Phantom Driver', 'Phantom Steed, Communal',
-    'Protection from Arrows, Communal', 'Protection from Energy, Communal',
-    'Pup Shape', 'Resinous Skin', 'Resist Energy, Communal',
-    'Spider Climb, Communal', 'Tongues, Communal', 'Frigid Touch',
-    'Ghostly Disguise', 'Ghoul Hunger', 'Id Insinuation I', 'Mad Hallucination',
-    'Piercing Shriek', 'Secret Speech', 'Share Memory', 'Symbol of Mirroring',
-    'Touch of Chaos', 'Touch of Evil', 'Touch of Good', 'Touch of Law',
-    'Touch of Madness', 'Unnatural Lust', 'Unshakable Chill',
-    'Water of Maddening'
-]
-level_4 = [
-    'Air Walk', 'Animal Growth', 'Antiplant Shell', 'Arcane Eye',
-    'Beast Shape II', 'Black Tentacles', 'Blight', 'Break Enchantment',
-    'Chaos Hammer', 'Commune with Nature', 'Control Summoned Creature',
-    'Control Water', 'Cure Critical Wounds', 'Death Ward', 'Detect Scrying',
-    'Dimensional Anchor', 'Dimension Door', 'Dismissal', 'Dispel Chaos',
-    'Dispel Evil', 'Divination', 'Divine Power', 'Dominate Person',
-    'Elemental Body I', 'Enervation', 'Enlarge Person, Mass', 'Fire Shield',
-    'Flame Strike', 'Freedom of Movement', 'Giant Vermin',
-    'Globe of Invulnerability, Lesser', 'Hallucinatory Terrain', 'Hold Monster',
-    'Holy Smite', 'Holy Sword', 'Ice Storm', 'Illusory Wall',
-    'Imbue with Spell Ability', 'Inflict Critical Wounds',
-    'Invisibility, Greater', 'Legend Lore', 'Locate Creature',
-    'Mark of Justice', 'Minor Creation', 'Mnemonic Enhancer', 'Modify Memory',
-    "Order's Wrath", 'Phantasmal Killer', 'Planar Ally, Lesser',
-    'Rainbow Pattern', 'Reduce Person, Mass', 'Reincarnate', 'Resilient Sphere',
-    'Restoration', 'Rusting Grasp', 'Secure Shelter', 'Sending',
-    'Shadow Conjuration', 'Shout', 'Solid Fog', 'Spell Immunity',
-    'Spike Stones', 'Stoneskin', 'Summon Monster IV', "Summon Nature's Ally IV",
-    'Tree Stride', 'Unholy Blight', 'Wall of Fire', 'Wall of Ice',
-    'Zone of Silence', 'Acid Pit', 'Aspect of the Wolf', 'Ball Lightning',
-    'Blaze of Glory', 'Blessing of Fervor', 'Blessing of the Salamander',
-    'Bow Spirit', 'Brand, Greater', 'Calcific Touch', "Coward's Lament",
-    'Denounce', 'Detonate', 'Discordant Blast', "Dragon's Breath",
-    'Evolution Surge, Greater', 'Firefall', 'Fire of Vengeance', 'Fluid Form',
-    'Forced Repentance', 'Geyser', 'Grove of Respite', 'Heroic Finale',
-    "King's Castle", 'Moonstruck', 'Oath of Peace', 'Planar Adaptation',
-    'Purified Calling', 'Rebuke', 'Resounding Blow', 'Rest Eternal',
-    'River of Wind', 'Sacrificial Oath', 'Shadow Projection', 'Shared Wrath',
-    'Sleepwalk', 'Spiritual Ally', 'Spite', 'Stay the Hand', 'Threefold Aspect',
-    'Transmogrify', 'Treasure Stitching', 'True Form', 'Universal Formula',
-    'Wandering Star Motes', 'Air Walk, Communal', 'Debilitating Portent',
-    'Find Quarry', 'Hostile Juxtaposition', 'Judgment Light',
-    'Litany of Madness', 'Litany of Thunder', 'Litany of Vengeance',
-    'Magic Siege Engine, Greater', 'Mutagenic Touch', 'Named Bullet, Greater',
-    'Nondetection, Communal', 'Shocking Image', 'Stoneskin, Communal',
-    'Summoner Conduit', 'Telekinetic Charge', 'Terrain Bond',
-    'Viper Bomb Admixture', 'Water Walk, Communal', 'Wreath of Blades',
-    'Leashed Shackles', 'Fire Trail', 'Force Punch', 'Geas',
-    'Id Insinuation II', "Lover's Vengeance", 'Overwhelming Grief',
-    'Reckless Infatuation', 'Shadow Evocation, Lesser', 'Terrible Remorse',
-    'Thorny Entanglement', 'Witness'
-]
-level_5 = [
-    'Atonement', 'Awaken', 'Baleful Polymorph', 'Beast Shape III',
-    'Breath of Life', 'Call Lightning Storm', 'Charm Animal, Mass', 'Cloudkill',
-    'Command, Greater', 'Commune', 'Cone of Cold', 'Contact Other Plane',
-    'Control Winds', 'Cure Light Wounds, Mass', 'Dispel Good', 'Dispel Law',
-    'Dispel Magic, Greater', 'Disrupting Weapon', 'Dream', 'Elemental Body II',
-    'Fabricate', 'False Vision', 'Feeblemind', 'Hallow', 'Heroism, Greater',
-    'Inflict Light Wounds, Mass', 'Insect Plague', 'Interposing Hand',
-    "Mage's Faithful Hound", "Mage's Private Sanctum", 'Magic Jar',
-    'Major Creation', 'Mind Fog', 'Mirage Arcana', 'Mislead', 'Nightmare',
-    'Overland Flight', 'Passwall', 'Permanency', 'Persistent Image',
-    'Planar Binding, Lesser', 'Plane Shift', 'Plant Shape I', 'Polymorph',
-    'Prying Eyes', 'Raise Dead', 'Righteous Might', 'Secret Chest', 'Seeming',
-    'Shadow Evocation', 'Shadow Walk', 'Slay Living', 'Song of Discord',
-    'Spell Resistance', 'Suggestion, Mass', 'Summon Monster V',
-    "Summon Nature's Ally V", 'Symbol of Pain', 'Symbol of Sleep',
-    'Telekinesis', 'Telepathic Bond', 'Teleport', 'Transmute Mud to Rock',
-    'Transmute Rock to Mud', 'True Seeing', 'Unhallow', 'Wall of Force',
-    'Wall of Stone', 'Wall of Thorns', 'Waves of Fatigue', "Bard's Escape",
-    'Cacophonous Call, Mass', 'Castigate, Mass', 'Cleanse', 'Cloak of Dreams',
-    'Deafening Song Bolt', 'Delayed Consumption', 'Elude Time', 'Fire Snake',
-    'Foe to Friend', 'Frozen Note', 'Hungry Pit', 'Pain Strike, Mass',
-    'Phantasmal Web', 'Pillar of Life', 'Rejuvenate Eidolon, Greater',
-    'Resurgent Transformation', 'Snake Staff', 'Stunning Finale', 'Suffocation',
-    'Unwilling Shield', 'Dust Form', 'Energy Siege Shot',
-    'Languid Bomb Admixture', 'Life Conduit, Greater',
-    'Spell Immunity, Communal', 'Symbol of Striking', 'Tar Pool',
-    'Id Insinuation III', 'Sands of Time', 'Shadow Step', 'Sonic Thrust',
-    'Symbol of Slowing'
-]
-level_6 = [
-    'Acid Fog', 'Analyze Dweomer', 'Animate Objects', 'Antilife Shell',
-    'Antimagic Field', 'Banishment', "Bear's Endurance, Mass", 'Beast Shape IV',
-    'Blade Barrier', "Bull's Strength, Mass", "Cat's Grace, Mass",
-    'Chain Lightning', 'Charm Monster, Mass', 'Circle of Death',
-    'Cold Ice Strike', 'Contingency', 'Create Undead',
-    'Cure Moderate Wounds, Mass', 'Disintegrate', "Eagle's Splendor, Mass",
-    'Elemental Body III', 'Eyebite', 'Find the Path', 'Fire Seeds',
-    'Flesh to Stone', 'Forbiddance', 'Forceful Hand', 'Form of the Dragon I',
-    "Fox's Cunning, Mass", 'Freezing Sphere', 'Geas/Quest',
-    'Globe of Invulnerability', 'Glyph of Warding, Greater', 'Guards and Wards',
-    'Harm', 'Heal', "Heroes' Feast", 'Inflict Moderate Wounds, Mass',
-    'Ironwood', 'Irresistible Dance', 'Liveoak', "Mage's Lucubration",
-    'Move Earth', "Owl's Wisdom, Mass", 'Permanent Image', 'Planar Ally',
-    'Planar Binding', 'Plant Shape II', 'Programmed Image', 'Project Image',
-    'Repel Wood', 'Repulsion', 'Scrying, Greater', 'Shout, Greater',
-    'Spellstaff', 'Stone Tell', 'Stone to Flesh', 'Summon Monster VI',
-    "Summon Nature's Ally VI", 'Symbol of Fear', 'Symbol of Persuasion',
-    'Sympathetic Vibration', 'Transformation', 'Transport via Plants',
-    'Undeath to Death', 'Veil', 'Wall of Iron', 'Wind Walk', 'Word of Recall',
-    'Brilliant Inspiration', 'Contagious Flame', 'Deadly Finale',
-    'Enemy Hammer', 'Euphoric Tranquility', 'Fester, Mass',
-    "Fool's Forbiddance", 'Getaway', 'Pied Piping', 'Planar Adaptation, Mass',
-    'Sirocco', 'Swarm Skin', 'Twin Form', 'Caging Bomb Admixture',
-    'Energy Siege Shot, Greater', 'Hostile Juxtaposition, Greater',
-    'Walk through Space', 'Plague Storm', 'Vengeful Outrage', 'Icy Prison',
-    'Id Insinuation IV', 'Lightning Arc', 'Possess Object', 'Rapid Repair',
-    'Soothe Construct', 'Unbreakable Construct'
-]
-level_7 = [
-    'Animate Plants', 'Arcane Sight, Greater', 'Blasphemy', 'Changestaff',
-    'Control Construct', 'Control Undead', 'Control Weather', 'Creeping Doom',
-    'Cure Serious Wounds, Mass', 'Delayed Blast Fireball', 'Destruction',
-    'Dictum', 'Elemental Body IV', 'Ethereal Jaunt', 'Finger of Death',
-    'Fire Storm', 'Forcecage', 'Form of the Dragon II', 'Giant Form I',
-    'Grasping Hand', 'Hold Person, Mass', 'Holy Word',
-    'Inflict Serious Wounds, Mass', 'Insanity', 'Instant Summons',
-    'Invisibility, Mass', 'Limited Wish', "Mage's Magnificent Mansion",
-    "Mage's Sword", 'Phase Door', 'Plant Shape III', 'Polymorph, Greater',
-    'Power Word Blind', 'Prismatic Spray', 'Refuge', 'Regenerate',
-    'Restoration, Greater', 'Resurrection', 'Reverse Gravity', 'Sequester',
-    'Shadow Conjuration, Greater', 'Simulacrum', 'Spell Turning', 'Statue',
-    'Summon Monster VII', "Summon Nature's Ally VII", 'Sunbeam',
-    'Symbol of Stunning', 'Symbol of Weakness', 'Teleport, Greater',
-    'Teleport Object', 'Transmute Metal to Wood', 'Vision',
-    'Waves of Exhaustion', 'Word of Chaos', 'Deflection', 'Expend', 'Firebrand',
-    'Fly, Mass', 'Phantasmal Revenge', 'Rampart', 'Vortex', 'Arcane Cannon',
-    'Jolting Portent', 'Siege of Trees', 'Terraform'
-]
-level_8 = [
-    'Animal Shapes', 'Antipathy', 'Bestow Curse, Greater', 'Binding',
-    'Clenched Fist', 'Cloak of Chaos', 'Clone', 'Control Plants',
-    'Create Greater Undead', 'Cure Critical Wounds, Mass', 'Demand',
-    'Dimensional Lock', 'Discern Location', 'Earthquake',
-    'Form of the Dragon III', 'Giant Form II', 'Holy Aura', 'Horrid Wilting',
-    'Incendiary Cloud', 'Inflict Critical Wounds, Mass', 'Iron Body', 'Maze',
-    'Mind Blank', 'Moment of Prescience', 'Planar Ally, Greater',
-    'Planar Binding, Greater', 'Polar Ray', 'Polymorph Any Object',
-    'Power Word Stun', 'Prismatic Wall', 'Protection from Spells',
-    'Prying Eyes, Greater', 'Repel Metal or Stone', 'Scintillating Pattern',
-    'Screen', 'Shadow Evocation, Greater', 'Shield of Law',
-    'Spell Immunity, Greater', 'Summon Monster VIII',
-    "Summon Nature's Ally VIII", 'Sunburst', 'Symbol of Death',
-    'Symbol of Insanity', 'Sympathy', 'Telekinetic Sphere', 'Temporal Stasis',
-    'Trap the Soul', 'Unholy Aura', 'Whirlwind', 'Divine Vessel', 'Seamantle',
-    'Stormbolts', 'Wall of Lava', 'Frightful Aspect'
-]
-level_9 = [
-    'Astral Projection', 'Crushing Hand', 'Cursed Earth', 'Dominate Monster',
-    'Elemental Swarm', 'Energy Drain', 'Etherealness', 'Foresight', 'Freedom',
-    'Gate', 'Heal, Mass', 'Hold Monster, Mass', 'Implosion', 'Imprisonment',
-    "Mage's Disjunction", 'Meteor Swarm', 'Miracle', 'Power Word Kill',
-    'Prismatic Sphere', 'Shades', 'Shambler', 'Shapechange', 'Soul Bind',
-    'Storm of Vengeance', 'Summon Monster IX', "Summon Nature's Ally IX",
-    'Teleportation Circle', 'Time Stop', 'True Resurrection',
-    'Wail of the Banshee', 'Weird', 'Wish', 'Clashing Rocks', 'Fiery Body',
-    'Suffocation, Mass', 'Tsunami', 'Wall of Suppression', 'Winds of Vengeance',
-    'World Wave', 'Heroic Invocation', 'Mind Blank, Communal',
-    'Siege of Trees, Greater', 'Spell Immunity, Greater Communal',
-    'Icy Prison, Mass', 'Overwhelming Presence', 'Polar Midnight',
-    'Symbol of Scrying', 'Symbol of Strife', 'Symbol of Vulnerability'
-]
+SpellSource = json.load(open('settings.json', 'r'))['System']
+if SpellSource == 'D&D 5':
+    level_0 = [
+        'Acid Splash', 'Blade Ward', 'Booming Blade', 'Chill Touch', 'Control Flames', 'Create Bonfire', 'Dancing Lights', 'Druidcraft', 'Eldritch Blast', 'Encode Thoughts', 'Enter Mindscape', 'Fire Bolt', 'Friends', 'Frostbite', 'Green-Flame Blade', 'Guidance', 'Gust', 'Hand of Radiance (UA)', 'Infestation', 'Infestation (UA)', 'Light', 'Lightning Lure', 'Mage Hand', 'Magic Stone', 'Mending', 'Message', 'Mind Fist', 'Mind Sliver', 'Mind Strike', 'Minor Illusion', 'Mold Earth', 'On/Off (UA)', 'Poison Spray', 'Prestidigitation', 'Primal Savagery', 'Primal Savagery (UA)', 'Produce Flame', 'Psychic Step', 'Ray of Frost', 'Resistance', 'Sacred Flame', 'Sapping Sting', 'Shape Water', 'Shillelagh', 'Shocking Grasp', 'Spare the Dying', 'Sword Burst', 'Thaumaturgy', 'Thorn Whip', 'Thunderclap', 'Toll the Dead', 'Toll the Dead (UA)', 'True Strike', 'Vicious Mockery', 'Virtue (UA)', 'Word of Radiance'
+    ]
+    level_1 = [
+        'Absorb Elements', 'Acid Stream', 'Alarm', 'Animal Friendship', 'Arcane Weapon', 'Armor of Agathys', 'Arms of Hadar', 'Bane', 'Beast Bond', 'Bless', 'Burning Hands', 'Catapult', 'Cause Fear', 'Cause Fear (UA)', 'Ceremony', 'Ceremony (UA)', 'Chaos Bolt', 'Chaos Bolt (UA)', 'Charm Person', 'Chromatic Orb', 'Color Spray', 'Command', 'Compelled Duel', 'Comprehend Languages', 'Create or Destroy Water', 'Cure Wounds', 'Detect Evil and Good', 'Detect Magic', 'Detect Poison and Disease', 'Disguise Self', 'Dissonant Whispers', 'Distort Value', 'Divine Favor', 'Earth Tremor', 'Ensnaring Strike', 'Entangle', 'Expeditious Retreat', 'Faerie Fire', 'False Life', 'Feather Fall', 'Find Familiar', 'Fog Cloud', 'Frost Fingers', 'Gift of Alacrity', 'Goodberry', 'Grease', 'Guiding Bolt', 'Guiding Hand (UA)', 'Hail of Thorns', 'Healing Elixir (UA)', 'Healing Word', 'Hellish Rebuke', 'Heroism', 'Hex', "Hunter's Mark", 'Ice Knife', 'Id Insinuation', 'Identify', 'Illusory Script', 'Infallible Relay (UA)', 'Inflict Wounds', "Jim's Magic Missile", 'Jump', 'Longstrider', 'Mage Armor', 'Magic Missile', 'Magnify Gravity', 'Protection from Evil and Good', 'Puppet (UA)', 'Purify Food and Drink', 'Ray of Sickness', 'Remote Access (UA)', 'Sanctuary', 'Searing Smite', 'Sense Emotion (UA)', 'Shield', 'Shield of Faith', 'Silent Image', 'Sleep', 'Snare', 'Snare (UA)', 'Speak with Animals', 'Sudden Awakening (UA)', "Tasha's Hideous Laughter", "Tenser's Floating Disk", 'Thunderous Smite', 'Thunderwave', 'Unearthly Chorus (UA)', 'Unseen Servant', 'Wild Cunning (UA)', 'Witch Bolt', 'Wrathful Smite', 'Zephyr Strike', 'Zephyr Strike (UA)'
+    ]
+    level_2 = [
+        "Aganazzar's Scorcher", 'Aid', 'Alter Self', 'Animal Messenger', 'Arcane Hacking (UA)', 'Arcane Lock', 'Augury', 'Barkskin', 'Beast Sense', 'Blindness/Deafness', 'Blur', 'Branding Smite', 'Calm Emotions', 'Cloud of Daggers', 'Continual Flame', 'Cordon of Arrows', 'Crown of Madness', 'Darkness', 'Darkvision', 'Detect Thoughts', 'Digital Phantom (UA)', "Dragon's Breath", 'Dust Devil', 'Earthbind', 'Enhance Ability', 'Enlarge/Reduce', 'Enthrall', 'Find Steed', 'Find Traps', 'Find Vehicle (UA)', 'Flame Blade', 'Flaming Sphere', 'Flock of Familiars', "Fortune's Favor", 'Gentle Repose', 'Gift of Gab', 'Gust of Wind', 'Healing Spirit', 'Heat Metal', 'Hold Person', 'Immovable Object', 'Invisibility', "Jim's Glowing Coin", 'Knock', 'Lesser Restoration', 'Levitate', 'Locate Animals or Plants', 'Locate Object', 'Magic Mouth', 'Magic Weapon', "Maximilian's Earthen Grasp", "Melf's Acid Arrow", 'Mental Barrier', 'Mind Spike', 'Mind Thrust', 'Mirror Image', 'Misty Step', 'Moonbeam', "Nystul's Magic Aura", 'Pass without Trace', 'Phantasmal Force', 'Prayer of Healing', 'Protection from Poison', 'Pyrotechnics', 'Ray of Enfeeblement', 'Rope Trick', 'Scorching Ray', 'See Invisibility', 'Shadow Blade', 'Shatter', 'Silence', 'Skywrite', "Snilloc's Snowball Swarm", 'Spider Climb', 'Spike Growth', 'Spiritual Weapon', 'Suggestion', 'Summon Bestial Spirit', 'Thought Shield', 'Warding Bond', 'Warding Wind', 'Web', 'Wristpocket', 'Zone of Truth'
+    ]
+    level_3 = [
+        'Animate Dead', 'Aura of Vitality', 'Beacon of Hope', 'Bestow Curse', 'Blinding Smite', 'Blink', 'Call Lightning', 'Catnap', 'Clairvoyance', 'Conjure Animals', 'Conjure Barrage', 'Conjure Lesser Demon (UA)', 'Counterspell', 'Create Food and Water', "Crusader's Mantle", 'Daylight', 'Dispel Magic', 'Elemental Weapon', 'Enemies Abound', 'Erupting Earth', 'Fast Friends', 'Fear', 'Feign Death', 'Fireball', 'Flame Arrows', 'Fly', "Galder's Tower", 'Gaseous Form', 'Glyph of Warding', 'Haste', 'Haywire (UA)', 'Hunger of Hadar', 'Hypnotic Pattern', 'Incite Greed', 'Invisibility to Cameras (UA)', "Leomund's Tiny Hut", 'Life Transference', 'Lightning Arrow', 'Lightning Bolt', 'Magic Circle', 'Major Image', 'Mass Healing Word', 'Meld into Stone', "Melf's Minute Meteors", 'Motivational Speech', 'Nondetection', 'Phantom Steed', 'Plant Growth', 'Protection from Ballistics (UA)', 'Protection from Energy', 'Psionic Blast', 'Pulse Wave', 'Remove Curse', 'Revivify', 'Sending', 'Sleet Storm', 'Slow', 'Speak with Dead', 'Speak with Plants', 'Spirit Guardians', 'Spirit Shroud', 'Stinking Cloud', 'Summon Fey Spirit', 'Summon Lesser Demons', 'Summon Shadow Spirit', 'Summon Undead Spirit', 'Thunder Step', 'Tidal Wave', 'Tiny Servant', 'Tongues', 'Vampiric Touch', 'Wall of Sand', 'Wall of Water', 'Water Breathing', 'Water Walk', 'Wind Wall'
+    ]
+    level_4 = [
+        'Arcane Eye', 'Aura of Life', 'Aura of Purity', 'Banishment', 'Blight', 'Charm Monster', 'Compulsion', 'Confusion', 'Conjure Barlgura (UA)', 'Conjure Knowbot (UA)', 'Conjure Minor Elementals', 'Conjure Shadow Demon (UA)', 'Conjure Woodland Beings', 'Control Water', 'Death Ward', 'Dimension Door', 'Divination', 'Dominate Beast', 'Ego Whip', 'Elemental Bane', "Evard's Black Tentacles", 'Fabricate', 'Find Greater Steed', 'Fire Shield', 'Freedom of Movement', "Galder's Speedy Courier", 'Giant Insect', 'Grasping Vine', 'Gravity Sinkhole', 'Greater Invisibility', 'Guardian of Faith', 'Guardian of Nature', 'Hallucinatory Terrain', 'Ice Storm', "Leomund's Secret Chest", 'Locate Creature', "Mordenkainen's Faithful Hound", "Mordenkainen's Private Sanctum", "Otiluke's Resilient Sphere", 'Phantasmal Killer', 'Polymorph', 'Shadow of Moil', 'Sickening Radiance', 'Staggering Smite', 'Stone Shape', 'Stoneskin', 'Storm Sphere', 'Summon Aberrant Spirit', 'Summon Elemental Spirit', 'Summon Greater Demon', 'Synchronicity (UA)', 'System Backdoor (UA)', 'Vitriolic Sphere', 'Wall of Fire', 'Watery Sphere'
+    ]
+    level_5 = [
+        'Animate Objects', 'Antilife Shell', 'Awaken', 'Banishing Smite', "Bigby's Hand", 'Circle of Power', 'Cloudkill', 'Commune', 'Commune with City (UA)', 'Commune with Nature', 'Cone of Cold', 'Conjure Elemental', 'Conjure Volley', 'Conjure Vrock (UA)', 'Contact Other Plane', 'Contagion', 'Control Winds', 'Creation', 'Danse Macabre', 'Dawn', 'Destructive Wave', 'Dispel Evil and Good', 'Dominate Person', 'Dream', 'Enervation', 'Far Step', 'Flame Strike', 'Geas', 'Greater Restoration', 'Hallow', 'Hold Monster', 'Holy Weapon', 'Immolation', 'Infernal Calling', 'Insect Plague', 'Intellect Fortress', 'Legend Lore', 'Maelstrom', 'Mass Cure Wounds', 'Mislead', 'Modify Memory', 'Negative Energy Flood', 'Passwall', 'Planar Binding', 'Raise Dead', "Rary's Telepathic Bond", 'Reincarnate', 'Scrying', 'Seeming', 'Shutdown (UA)', 'Skill Empowerment', 'Steel Wind Strike', 'Summon Celestial Spirit', 'Swift Quiver', 'Synaptic Static', 'Telekinesis', 'Teleportation Circle', 'Temporal Shunt', 'Transmute Rock', 'Tree Stride', 'Wall of Force', 'Wall of Light', 'Wall of Stone', 'Wrath of Nature'
+    ]
+    level_6 = [
+        'Arcane Gate', 'Blade Barrier', 'Bones of the Earth', 'Chain Lightning', 'Circle of Death', 'Conjure Fey', 'Contingency', 'Create Homunculus', 'Create Undead', 'Disintegrate', "Drawmij's Instant Summons", 'Druid Grove', 'Eyebite', 'Find the Path', 'Flesh to Stone', 'Forbiddance', 'Globe of Invulnerability', 'Gravity Fissure', 'Guards and Wards', 'Harm', 'Heal', "Heroes' Feast", 'Investiture of Flame', 'Investiture of Ice', 'Investiture of Stone', 'Investiture of Wind', 'Magic Jar', 'Mass Suggestion', 'Mental Prison', 'Move Earth', 'Otherworldly Form', "Otiluke's Freezing Sphere", "Otto's Irresistible Dance", 'Planar Ally', 'Primordial Ward', 'Programmed Illusion', 'Psychic Crush', 'Scatter', 'Soul Cage', 'Summon Fiendish Spirit', 'Sunbeam', "Tenser's Transformation", 'Transport via Plants', 'True Seeing', 'Wall of Ice', 'Wall of Thorns', 'Wind Walk', 'Word of Recall'
+    ]
+    level_7 = [
+        'Conjure Celestial', 'Conjure Hezrou (UA)', 'Create Magen', 'Crown of Stars', 'Delayed Blast Fireball', 'Divine Word', 'Etherealness', 'Finger of Death', 'Fire Storm', 'Forcecage', 'Mirage Arcane', "Mordenkainen's Magnificent Mansion", "Mordenkainen's Sword", 'Plane Shift', 'Power Word Pain', 'Prismatic Spray', 'Project Image', 'Regenerate', 'Resurrection', 'Reverse Gravity', 'Sequester', 'Simulacrum', 'Symbol', 'Teleport', 'Temple of the Gods', 'Tether Essence', 'Whirlwind'
+    ]
+    level_8 = [
+        "Abi-Dalzim's Horrid Wilting", 'Animal Shapes', 'Antimagic Field', 'Antipathy/Sympathy', 'Clone', 'Control Weather', 'Dark Star', 'Demiplane', 'Dominate Monster', 'Earthquake', 'Feeblemind', 'Glibness', 'Holy Aura', 'Illusory Dragon', 'Incendiary Cloud', 'Maddening Darkness', 'Maze', 'Mighty Fortress', 'Mind Blank', 'Power Word Stun', 'Reality Break', 'Sunburst', 'Telepathy', 'Tsunami'
+    ]
+    level_9  = [
+        'Astral Projection', 'Blade of Disaster', 'Foresight', 'Gate', 'Imprisonment', 'Invulnerability', 'Mass Heal', 'Mass Polymorph', 'Meteor Swarm', 'Power Word Heal', 'Power Word Kill', 'Prismatic Wall', 'Psychic Scream', 'Ravenous Void', 'Shapechange', 'Storm of Vengeance', 'Time Ravage', 'Time Stop', 'True Polymorph', 'True Resurrection', 'Weird', 'Wish'
+    ]
+
+elif SpellSource == 'Pathfinder 1':
+    level_0 = [
+        'Acid Splash', 'Arcane Mark', 'Bleed', 'Create Water', 'Dancing Lights', 'Daze', 'Detect Magic', 'Detect Poison', 'Disrupt Undead', 'Flare', 'Ghost Sound', 'Guidance', 'Haunted Fey Aspect', 'Know Direction', 'Light', 'Lullaby', 'Mage Hand', 'Mending', 'Message', 'Open/Close', 'Prestidigitation', 'Purify Food and Drink', 'Ray of Frost', 'Read Magic', 'Resistance', 'Stabilize', 'Summon Instrument', 'Touch of Fatigue', 'Virtue', 'Brand', 'Putrefy Food and Drink', 'Sift', 'Spark', 'Unwitting Ally'
+    ]
+    level_1 = [
+        'Alarm', 'Animal Messenger', 'Animate Dead, Lesser', 'Animate Rope', 'Anticipate Peril', 'Bane', 'Bless', 'Bless Water', 'Bless Weapon', 'Burning Hands', 'Calm Animals', 'Cause Fear', 'Charm Animal', 'Charm Person', 'Chill Touch', 'Color Spray', 'Command', 'Comprehend Languages', 'Confusion, Lesser', 'Corrosive Touch', 'Cure Light Wounds', 'Curse Water', 'Deathwatch', 'Delay Poison', 'Detect Animals or Plants', 'Detect Chaos', 'Detect Evil', 'Detect Good', 'Detect Law', 'Detect Secret Doors', 'Detect Snares and Pits', 'Detect Undead', 'Diagnose Disease', 'Disguise Self', 'Divine Favor', 'Doom', 'Ear-Piercing Scream', 'Endure Elements', 'Enlarge Person', 'Entangle', 'Entropic Shield', 'Erase', 'Expeditious Retreat', 'Faerie Fire', 'Feather Fall', 'Floating Disk', 'Goodberry', 'Grease', 'Hide from Animals', 'Hide from Undead', 'Hideous Laughter', 'Hold Portal', 'Hypnotism', 'Identify', 'Inflict Light Wounds', 'Jump', 'Longstrider', 'Mage Armor', 'Magic Aura', 'Magic Fang', 'Magic Missile', 'Magic Mouth', 'Magic Stone', 'Magic Weapon', 'Mount', 'Obscure Object', 'Obscuring Mist', 'Pass without Trace', 'Produce Flame', 'Protection from Chaos', 'Protection from Evil', 'Protection from Good', 'Protection from Law', 'Ray of Enfeeblement', 'Reduce Person', 'Remove Fear', 'Resist Energy', 'Restoration, Lesser', 'Sanctuary', 'Shield', 'Shield of Faith', 'Shillelagh', 'Shocking Grasp', 'Silent Image', 'Sleep', 'Speak with Animals', 'Summon Monster I', "Summon Nature's Ally I", 'True Strike', 'Undetectable Alignment', 'Unseen Servant', 'Ventriloquism', 'Alter Winds', 'Ant Haul', 'Aspect of the Falcon', 'Beguiling Gift', "Bomber's Eye", 'Borrow Skill', 'Break', 'Bristle', 'Burst Bonds', 'Call Animal', 'Challenge Evil', 'Cloak of Shade', "Crafter's Curse", "Crafter's Fortune", 'Dancing Lantern', 'Detect Aberration', 'Expeditious Excavation', 'Feather Step', 'Flare Burst', 'Ghostbane Dirge', 'Glide', 'Grace', 'Gravity Bow', "Hero's Defiance", 'Honeyed Tongue', "Hunter's Howl", 'Hydraulic Push', 'Ill Omen', 'Innocence', 'Invigorate', 'Keen Senses', "Knight's Calling", 'Lead Blades', 'Mask Dweomer', 'Memory Lapse', 'Negate Aroma', 'Rally Point', 'Rejuvenate Eidolon, Lesser', 'Residual Tracking', 'Restful Sleep', 'Saving Finale', 'Sculpt Corpse', 'Share Language', 'Solid Note', 'Stone Fist', 'Stumble Gap', 'Timely Inspiration', 'Tireless Pursuit', 'Touch of Gracelessness', 'Touch of the Sea', 'Unfetter', 'Vanish', 'Veil of Positive Energy', 'Wrath', 'Abundant Ammunition', 'Adjuring Step', 'Adoration', 'Air Bubble', 'Bowstaff', 'Compel Hostility', 'Damp Powder', "Deadeye's Lore", 'Fabricate Bullets', 'Illusion of Calm', 'Jury-Rig', 'Liberating Command', 'Life Conduit', 'Litany of Sloth', 'Litany of Weakness', 'Lock Gaze', 'Longshot', 'Mirror Strike', 'Moment of Greatness', 'Negative Reaction', 'Peacebond', 'Reinforce Armaments', 'Returning Weapon', 'See Alignment', 'Shock Shield', 'Sun Metal', 'Tactical Acumen', 'Targeted Bomb Admixture', 'Unerring Weapon', 'Warding Weapon', 'Weaken Powder'
+    ]
+    level_2 = [
+        'Acid Arrow', 'Aid', 'Align Weapon', 'Alter Self', 'Animal Trance', 'Arcane Lock', 'Augury', 'Barkskin', "Bear's Endurance", 'Blinding Ray', 'Blindness/Deafness', 'Blur', "Bull's Strength", 'Calm Emotions', "Cat's Grace", 'Chill Metal', 'Command Undead', 'Consecrate', 'Continual Flame', 'Cure Moderate Wounds', 'Darkness', 'Darkvision', 'Daze Monster', 'Death Knell', 'Desecrate', 'Detect Thoughts', 'Disfiguring Touch', "Eagle's Splendor", 'Enthrall', 'Excruciating Deformation', 'False Life', 'Find Traps', 'Fire Trap', 'Flame Blade', 'Flaming Sphere', 'Fog Cloud', "Fox's Cunning", 'Gentle Repose', 'Ghoul Touch', 'Glitterdust', 'Gust of Wind', 'Heat Metal', 'Heroism', 'Hold Animal', 'Hold Person', 'Hypnotic Pattern', 'Inflict Moderate Wounds', 'Invisibility', 'Knock', 'Levitate', 'Locate Object', 'Make Whole', 'Minor Image', 'Mirror Image', 'Misdirection', "Owl's Wisdom", 'Phantom Trap', 'Protection from Arrows', 'Protection from Energy', 'Pyrotechnics', 'Rage', 'Reduce Animal', 'Remove Paralysis', 'Rope Trick', 'Scare', 'Scorching Ray', 'See Invisibility', 'Shatter', 'Shield Other', 'Silence', 'Snare', 'Soften Earth and Stone', 'Sound Burst', 'Speak with Plants', 'Spectral Hand', 'Spider Climb', 'Spike Growth', 'Spiritual Weapon', 'Status', 'Suggestion', 'Summon Monster II', "Summon Nature's Ally II", 'Summon Swarm', 'Tongues', 'Touch of Idiocy', 'Tree Shape', 'Warp Wood', 'Web', 'Whispering Wind', 'Wind Wall', 'Wood Shape', 'Zone of Truth', 'Accelerate Poison', 'Alchemical Allocation', 'Allfood', 'Arrow Eruption', 'Aspect of the Bear', 'Aura of Greater Courage', 'Bestow Grace', 'Blessing of Courage and Life', 'Blood Biography', 'Bloodhound', 'Burning Gaze', 'Cacophonous Call', 'Campfire Wall', 'Castigate', 'Chameleon Stride', 'Confess', 'Corruption Resistance', 'Create Pit', 'Create Treasure Map', 'Dust of Twilight', 'Eagle Eye', 'Elemental Speech', 'Elemental Touch', 'Enter Image', 'Evolution Surge, Lesser', 'Feast of Ashes', 'Fester', 'Fire Breath', 'Fire of Entanglement', 'Flames of the Faithful', 'Follow Aura', 'Gallant Inspiration', 'Guiding Star', 'Hidden Speech', 'Hide Campsite', "Hunter's Eye", 'Instant Armor', 'Light Lance', 'Lockjaw', 'Natural Rhythm', "Oracle's Burden", "Paladin's Sacrifice", 'Perceive Cues', 'Pox Pustules', 'Protective Spirit', 'Righteous Vigor', 'Sacred Bond', 'Saddle Surge', 'Scent Trail', 'Slipstream', 'Stone Call', 'Summon Eidolon', 'Transmute Potion to Poison', 'Versatile Weapon', 'Vomit Swarm', 'Wake of Light', 'Weapon of Awe', 'Ablative Barrier', 'Animal Aspect', 'Ant Haul, Communal', 'Bestow Weapon Proficiency', 'Blistering Invective', 'Brow Gasher', 'Bullet Shield', 'Certain Grip', 'Destabilize Powder', 'Discovery Torch', 'Divine Arrow', 'Effortless Armor', 'Endure Elements, Communal', 'Fiery Shuriken', 'Forest Friend', 'Frost Fall', 'Instrument of Agony', 'Kinetic Reverberation', 'Litany of Defense', 'Litany of Eloquence', 'Litany of Entanglement', 'Litany of Righteousness', 'Litany of Warding', 'Locate Weakness', 'Magic Siege Engine', 'Mask Dweomer, Communal', 'Mount, Communal', 'Pilfering Hand', 'Protection from Chaos, Communal', 'Protection from Evil, Communal', 'Protection from Good, Communal', 'Protection from Law, Communal', 'Qualm', 'Recoil Fire', 'Reinforce Armaments, Communal', 'Reloading Hands', 'Returning Weapon, Communal', 'Ricochet Shot', 'Shadow Bomb Admixture', 'Share Language, Communal', 'Spontaneous Immolation', 'Stabilize Powder', 'Telekinetic Assembly', 'Thunder Fire', 'Touch Injection', 'Twisted Space', 'Wilderness Soldiers', 'Frostbite', 'Murderous Command', 'Persuasive Goad', 'Pick Your Poison', 'Polypurpose Panacea', 'Ray of Sickening', 'Remove Sickness'
+    ]
+    level_3 = [
+        'Animate Dead', 'Arcane Sight', 'Beast Shape I', 'Bestow Curse', 'Blink', 'Burst of Nettles', 'Call Lightning', 'Channel Vigor', 'Charm Monster', 'Clairaudience/Clairvoyance', 'Command Plants', 'Confusion', 'Contagion', 'Create Food and Water', 'Crushing Despair', 'Cure Serious Wounds', 'Daylight', 'Deeper Darkness', 'Deep Slumber', 'Diminish Plants', 'Discern Lies', 'Dispel Magic', 'Displacement', 'Dominate Animal', 'Explosive Runes', 'Fear', 'Fireball', 'Flame Arrow', 'Fly', 'Gaseous Form', 'Geas, Lesser', 'Glibness', 'Glyph of Warding', 'Good Hope', 'Halt Undead', 'Haste', 'Heal Mount', 'Helping Hand', 'Illusory Script', 'Inflict Serious Wounds', 'Invisibility Purge', 'Invisibility Sphere', 'Keen Edge', 'Lightning Bolt', 'Magic Circle against Chaos', 'Magic Circle against Evil', 'Magic Circle against Good', 'Magic Circle against Law', 'Magic Fang, Greater', 'Magic Vestment', 'Magic Weapon, Greater', 'Major Image', 'Meld into Stone', 'Neutralize Poison', 'Nondetection', 'Phantom Steed', 'Plant Growth', 'Poison', 'Prayer', 'Quench', 'Ray of Exhaustion', 'Remove Blindness/Deafness', 'Remove Curse', 'Remove Disease', 'Repel Vermin', 'Scrying', 'Sculpt Sound', 'Searing Light', 'Secret Page', 'Sepia Snake Sigil', 'Shrink Item', 'Sleet Storm', 'Slow', 'Speak with Dead', 'Stinking Cloud', 'Stone Shape', 'Summon Monster III', "Summon Nature's Ally III", 'Tiny Hut', 'Vampiric touch', 'Water Breathing', 'Water Walk', 'Absorbing Touch', 'Amplify Elixir', 'Aqueous Orb', 'Arcane Concordance', 'Aspect of the Stag', 'Banish Seeming', 'Bloody Claws', 'Borrow Fortune', 'Cast Out', 'Cloak of Winds', 'Coordinated Effort', 'Cup of Dust', 'Defile Armor', 'Devolution', 'Divine Transfer', 'Draconic Reservoir', 'Elemental Aura', 'Evolution Surge', 'Feather Step, Mass', 'Fire of Judgment', 'Ghostbane Dirge, Mass', 'Holy Whisper', 'Hydraulic Torrent', 'Instant Enemy', 'Invigorate, Mass', "Jester's Jaunt", 'Life Bubble', 'Lily Pad Stride', 'Marks Of Forbiddance', 'Nap Stack', "Nature's Exile", 'Pain Strike', 'Purging Finale', 'Rejuvenate Eidolon', 'Retribution', 'Reviving Finale', 'Sanctify Armor', 'Screech', 'Seek Thoughts', 'Share Senses', 'Shifting Sand', 'Spiked Pit', 'Strong Jaw', 'Thorn Body', 'Thundering Drums', 'Tireless Pursuers', 'Twilight Knife', 'Venomous Bolt', 'Ward the Faithful', 'Wrathful Mantle', 'Absorb Toxicity', 'Animal Aspect, Greater', 'Burst of Speed', 'Chain of Perdition', 'Companion Mind Link', 'Darkvision, Communal', 'Daybreak Arrow', 'Deadly Juggernaut', 'Delay Poison, Communal', 'Flash Fire', 'Healing Thief', 'Hostile Levitation', 'Life Conduit, Improved', 'Lightning Lash Bomb Admixture', 'Litany of Escape', 'Litany of Sight', 'Named Bullet', 'Obsidian Flow', 'Pellet Blast', 'Phantom Chariot', 'Phantom Driver', 'Phantom Steed, Communal', 'Protection from Arrows, Communal', 'Protection from Energy, Communal', 'Pup Shape', 'Resinous Skin', 'Resist Energy, Communal', 'Spider Climb, Communal', 'Tongues, Communal', 'Frigid Touch', 'Ghostly Disguise', 'Ghoul Hunger', 'Id Insinuation I', 'Mad Hallucination', 'Piercing Shriek', 'Secret Speech', 'Share Memory', 'Symbol of Mirroring', 'Touch of Chaos', 'Touch of Evil', 'Touch of Good', 'Touch of Law', 'Touch of Madness', 'Unnatural Lust', 'Unshakable Chill', 'Water of Maddening'
+    ]
+    level_4 = [
+        'Air Walk', 'Animal Growth', 'Antiplant Shell', 'Arcane Eye', 'Beast Shape II', 'Black Tentacles', 'Blight', 'Break Enchantment', 'Chaos Hammer', 'Commune with Nature', 'Control Summoned Creature', 'Control Water', 'Cure Critical Wounds', 'Death Ward', 'Detect Scrying', 'Dimensional Anchor', 'Dimension Door', 'Dismissal', 'Dispel Chaos', 'Dispel Evil', 'Divination', 'Divine Power', 'Dominate Person', 'Elemental Body I', 'Enervation', 'Enlarge Person, Mass', 'Fire Shield', 'Flame Strike', 'Freedom of Movement', 'Giant Vermin', 'Globe of Invulnerability, Lesser', 'Hallucinatory Terrain', 'Hold Monster', 'Holy Smite', 'Holy Sword', 'Ice Storm', 'Illusory Wall', 'Imbue with Spell Ability', 'Inflict Critical Wounds', 'Invisibility, Greater', 'Legend Lore', 'Locate Creature', 'Mark of Justice', 'Minor Creation', 'Mnemonic Enhancer', 'Modify Memory', "Order's Wrath", 'Phantasmal Killer', 'Planar Ally, Lesser', 'Rainbow Pattern', 'Reduce Person, Mass', 'Reincarnate', 'Resilient Sphere', 'Restoration', 'Rusting Grasp', 'Secure Shelter', 'Sending', 'Shadow Conjuration', 'Shout', 'Solid Fog', 'Spell Immunity', 'Spike Stones', 'Stoneskin', 'Summon Monster IV', "Summon Nature's Ally IV", 'Tree Stride', 'Unholy Blight', 'Wall of Fire', 'Wall of Ice', 'Zone of Silence', 'Acid Pit', 'Aspect of the Wolf', 'Ball Lightning', 'Blaze of Glory', 'Blessing of Fervor', 'Blessing of the Salamander', 'Bow Spirit', 'Brand, Greater', 'Calcific Touch', "Coward's Lament", 'Denounce', 'Detonate', 'Discordant Blast', "Dragon's Breath", 'Evolution Surge, Greater', 'Firefall', 'Fire of Vengeance', 'Fluid Form', 'Forced Repentance', 'Geyser', 'Grove of Respite', 'Heroic Finale', "King's Castle", 'Moonstruck', 'Oath of Peace', 'Planar Adaptation', 'Purified Calling', 'Rebuke', 'Resounding Blow', 'Rest Eternal', 'River of Wind', 'Sacrificial Oath', 'Shadow Projection', 'Shared Wrath', 'Sleepwalk', 'Spiritual Ally', 'Spite', 'Stay the Hand', 'Threefold Aspect', 'Transmogrify', 'Treasure Stitching', 'True Form', 'Universal Formula', 'Wandering Star Motes', 'Air Walk, Communal', 'Debilitating Portent', 'Find Quarry', 'Hostile Juxtaposition', 'Judgment Light', 'Litany of Madness', 'Litany of Thunder', 'Litany of Vengeance', 'Magic Siege Engine, Greater', 'Mutagenic Touch', 'Named Bullet, Greater', 'Nondetection, Communal', 'Shocking Image', 'Stoneskin, Communal', 'Summoner Conduit', 'Telekinetic Charge', 'Terrain Bond', 'Viper Bomb Admixture', 'Water Walk, Communal', 'Wreath of Blades', 'Leashed Shackles', 'Fire Trail', 'Force Punch', 'Geas', 'Id Insinuation II', "Lover's Vengeance", 'Overwhelming Grief', 'Reckless Infatuation', 'Shadow Evocation, Lesser', 'Terrible Remorse', 'Thorny Entanglement', 'Witness'
+    ]
+    level_5 = [
+        'Atonement', 'Awaken', 'Baleful Polymorph', 'Beast Shape III', 'Breath of Life', 'Call Lightning Storm', 'Charm Animal, Mass', 'Cloudkill', 'Command, Greater', 'Commune', 'Cone of Cold', 'Contact Other Plane', 'Control Winds', 'Cure Light Wounds, Mass', 'Dispel Good', 'Dispel Law', 'Dispel Magic, Greater', 'Disrupting Weapon', 'Dream', 'Elemental Body II', 'Fabricate', 'False Vision', 'Feeblemind', 'Hallow', 'Heroism, Greater', 'Inflict Light Wounds, Mass', 'Insect Plague', 'Interposing Hand', "Mage's Faithful Hound", "Mage's Private Sanctum", 'Magic Jar', 'Major Creation', 'Mind Fog', 'Mirage Arcana', 'Mislead', 'Nightmare', 'Overland Flight', 'Passwall', 'Permanency', 'Persistent Image', 'Planar Binding, Lesser', 'Plane Shift', 'Plant Shape I', 'Polymorph', 'Prying Eyes', 'Raise Dead', 'Righteous Might', 'Secret Chest', 'Seeming', 'Shadow Evocation', 'Shadow Walk', 'Slay Living', 'Song of Discord', 'Spell Resistance', 'Suggestion, Mass', 'Summon Monster V', "Summon Nature's Ally V", 'Symbol of Pain', 'Symbol of Sleep', 'Telekinesis', 'Telepathic Bond', 'Teleport', 'Transmute Mud to Rock', 'Transmute Rock to Mud', 'True Seeing', 'Unhallow', 'Wall of Force', 'Wall of Stone', 'Wall of Thorns', 'Waves of Fatigue', "Bard's Escape", 'Cacophonous Call, Mass', 'Castigate, Mass', 'Cleanse', 'Cloak of Dreams', 'Deafening Song Bolt', 'Delayed Consumption', 'Elude Time', 'Fire Snake', 'Foe to Friend', 'Frozen Note', 'Hungry Pit', 'Pain Strike, Mass', 'Phantasmal Web', 'Pillar of Life', 'Rejuvenate Eidolon, Greater', 'Resurgent Transformation', 'Snake Staff', 'Stunning Finale', 'Suffocation', 'Unwilling Shield', 'Dust Form', 'Energy Siege Shot', 'Languid Bomb Admixture', 'Life Conduit, Greater', 'Spell Immunity, Communal', 'Symbol of Striking', 'Tar Pool', 'Id Insinuation III', 'Sands of Time', 'Shadow Step', 'Sonic Thrust', 'Symbol of Slowing'
+    ]
+    level_6 = [
+        'Acid Fog', 'Analyze Dweomer', 'Animate Objects', 'Antilife Shell', 'Antimagic Field', 'Banishment', "Bear's Endurance, Mass", 'Beast Shape IV', 'Blade Barrier', "Bull's Strength, Mass", "Cat's Grace, Mass", 'Chain Lightning', 'Charm Monster, Mass', 'Circle of Death', 'Cold Ice Strike', 'Contingency', 'Create Undead', 'Cure Moderate Wounds, Mass', 'Disintegrate', "Eagle's Splendor, Mass", 'Elemental Body III', 'Eyebite', 'Find the Path', 'Fire Seeds', 'Flesh to Stone', 'Forbiddance', 'Forceful Hand', 'Form of the Dragon I', "Fox's Cunning, Mass", 'Freezing Sphere', 'Geas/Quest', 'Globe of Invulnerability', 'Glyph of Warding, Greater', 'Guards and Wards', 'Harm', 'Heal', "Heroes' Feast", 'Inflict Moderate Wounds, Mass', 'Ironwood', 'Irresistible Dance', 'Liveoak', "Mage's Lucubration", 'Move Earth', "Owl's Wisdom, Mass", 'Permanent Image', 'Planar Ally', 'Planar Binding', 'Plant Shape II', 'Programmed Image', 'Project Image', 'Repel Wood', 'Repulsion', 'Scrying, Greater', 'Shout, Greater', 'Spellstaff', 'Stone Tell', 'Stone to Flesh', 'Summon Monster VI', "Summon Nature's Ally VI", 'Symbol of Fear', 'Symbol of Persuasion', 'Sympathetic Vibration', 'Transformation', 'Transport via Plants', 'Undeath to Death', 'Veil', 'Wall of Iron', 'Wind Walk', 'Word of Recall', 'Brilliant Inspiration', 'Contagious Flame', 'Deadly Finale', 'Enemy Hammer', 'Euphoric Tranquility', 'Fester, Mass', "Fool's Forbiddance", 'Getaway', 'Pied Piping', 'Planar Adaptation, Mass', 'Sirocco', 'Swarm Skin', 'Twin Form', 'Caging Bomb Admixture', 'Energy Siege Shot, Greater', 'Hostile Juxtaposition, Greater', 'Walk through Space', 'Plague Storm', 'Vengeful Outrage', 'Icy Prison', 'Id Insinuation IV', 'Lightning Arc', 'Possess Object', 'Rapid Repair', 'Soothe Construct', 'Unbreakable Construct'
+    ]
+    level_7 = [
+        'Animate Plants', 'Arcane Sight, Greater', 'Blasphemy', 'Changestaff', 'Control Construct', 'Control Undead', 'Control Weather', 'Creeping Doom', 'Cure Serious Wounds, Mass', 'Delayed Blast Fireball', 'Destruction', 'Dictum', 'Elemental Body IV', 'Ethereal Jaunt', 'Finger of Death', 'Fire Storm', 'Forcecage', 'Form of the Dragon II', 'Giant Form I', 'Grasping Hand', 'Hold Person, Mass', 'Holy Word', 'Inflict Serious Wounds, Mass', 'Insanity', 'Instant Summons', 'Invisibility, Mass', 'Limited Wish', "Mage's Magnificent Mansion", "Mage's Sword", 'Phase Door', 'Plant Shape III', 'Polymorph, Greater', 'Power Word Blind', 'Prismatic Spray', 'Refuge', 'Regenerate', 'Restoration, Greater', 'Resurrection', 'Reverse Gravity', 'Sequester', 'Shadow Conjuration, Greater', 'Simulacrum', 'Spell Turning', 'Statue', 'Summon Monster VII', "Summon Nature's Ally VII", 'Sunbeam', 'Symbol of Stunning', 'Symbol of Weakness', 'Teleport, Greater', 'Teleport Object', 'Transmute Metal to Wood', 'Vision', 'Waves of Exhaustion', 'Word of Chaos', 'Deflection', 'Expend', 'Firebrand', 'Fly, Mass', 'Phantasmal Revenge', 'Rampart', 'Vortex', 'Arcane Cannon', 'Jolting Portent', 'Siege of Trees', 'Terraform'
+    ]
+    level_8 = [
+        'Animal Shapes', 'Antipathy', 'Bestow Curse, Greater', 'Binding', 'Clenched Fist', 'Cloak of Chaos', 'Clone', 'Control Plants', 'Create Greater Undead', 'Cure Critical Wounds, Mass', 'Demand', 'Dimensional Lock', 'Discern Location', 'Earthquake', 'Form of the Dragon III', 'Giant Form II', 'Holy Aura', 'Horrid Wilting', 'Incendiary Cloud', 'Inflict Critical Wounds, Mass', 'Iron Body', 'Maze', 'Mind Blank', 'Moment of Prescience', 'Planar Ally, Greater', 'Planar Binding, Greater', 'Polar Ray', 'Polymorph Any Object', 'Power Word Stun', 'Prismatic Wall', 'Protection from Spells', 'Prying Eyes, Greater', 'Repel Metal or Stone', 'Scintillating Pattern', 'Screen', 'Shadow Evocation, Greater', 'Shield of Law', 'Spell Immunity, Greater', 'Summon Monster VIII', "Summon Nature's Ally VIII", 'Sunburst', 'Symbol of Death', 'Symbol of Insanity', 'Sympathy', 'Telekinetic Sphere', 'Temporal Stasis', 'Trap the Soul', 'Unholy Aura', 'Whirlwind', 'Divine Vessel', 'Seamantle', 'Stormbolts', 'Wall of Lava', 'Frightful Aspect'
+    ]
+    level_9 = [
+        'Astral Projection', 'Crushing Hand', 'Cursed Earth', 'Dominate Monster', 'Elemental Swarm', 'Energy Drain', 'Etherealness', 'Foresight', 'Freedom', 'Gate', 'Heal, Mass', 'Hold Monster, Mass', 'Implosion', 'Imprisonment', "Mage's Disjunction", 'Meteor Swarm', 'Miracle', 'Power Word Kill', 'Prismatic Sphere', 'Shades', 'Shambler', 'Shapechange', 'Soul Bind', 'Storm of Vengeance', 'Summon Monster IX', "Summon Nature's Ally IX", 'Teleportation Circle', 'Time Stop', 'True Resurrection', 'Wail of the Banshee', 'Weird', 'Wish', 'Clashing Rocks', 'Fiery Body', 'Suffocation, Mass', 'Tsunami', 'Wall of Suppression', 'Winds of Vengeance', 'World Wave', 'Heroic Invocation', 'Mind Blank, Communal', 'Siege of Trees, Greater', 'Spell Immunity, Greater Communal', 'Icy Prison, Mass', 'Overwhelming Presence', 'Polar Midnight', 'Symbol of Scrying', 'Symbol of Strife', 'Symbol of Vulnerability'
+    ]
 level_likelihood = {
     0: 0.2597402597402597,
     1: 0.21038961038961038,
@@ -831,40 +575,41 @@ possible_melee = {
         'orc double axe', 'tongi'
     ],
     'Light Axe': [
-        'boarding axe', 'boarding axe', 'butchering axe', 'butchering axe',
-        'collapsible kumade', 'gandasa', 'handaxe', 'handaxe', 'hooked axe',
-        'hooked axe', 'knuckle axe', 'knuckle axe', 'kumade', 'light pick',
-        'mattock', 'throwing axe', 'throwing axe'
+        'boarding axe', 'boarding axe', 'butchering cleaver', 'gandasa',
+        'handaxe', 'handaxe', 'hooked axe', 'hooked axe', 'knuckle axe',
+        'knuckle axe', 'kumade', 'light pick', 'mattock', 'throwing axe',
+        'throwing axe', 'kaiser blade', 'ankus'
     ],
     'Heavy Blade': [
-        'Ankus', 'dueling sword', 'dueling sword', 'bastard sword',
-        'bastard sword', 'chakram', 'double chicken saber',
-        'double walking stick katana', 'elven curve blade', 'elven curve blade',
-        'estoc', 'falcata', 'falchion', 'falchion', 'flambard', 'greatsword',
-        'greatsword', 'great terbutje', 'katana', 'khopesh', 'klar',
-        'longsword', 'longsword', 'nine-ring broadsword', 'nodachi', 'scimitar',
+        'dueling sword', 'dueling sword', 'bastard sword', 'bastard sword',
+        'broadsword', 'broadsword', 'elven curved blade', 'elven curved blade',
+        'estoc', 'estoc', 'falcata', 'falchion', 'falchion', 'flambard',
+        'greatsword', 'greatsword', 'great macuahuitl', 'katana', 'katana',
+        'khopesh', 'longsword', 'longsword', 'macuahuitl',
+        'nine-ring broadsword', 'nodachi', 'nodachi', 'scimitar',
         'scimitar', 'scythe', 'scythe', 'seven-branched sword', 'shotel',
         'temple sword', 'terbutje', 'two-bladed sword', 'two-bladed sword'
     ],
     'Light Blade': [
-        'bayonet', 'butterfly knife', 'butterfly sword', 'chakram', 'dagger',
-        'dagger', 'deer horn knife', 'Drow razor', 'dueling dagger',
-        'dueling dagger', 'gladius', 'hunga munga', 'kama', 'katar', 'kerambit',
-        'kukri', 'machete', 'machete', 'madu', 'manople', 'pata', 'quadrens',
-        'rapier', 'rapier', 'sanpkhang', 'sawtooth sabre', 'scizore',
-        'shortsword', 'shortsword', 'sica', 'sickle', 'sickle', 'spiral rapier',
-        'starknife', 'swordbreaker dagger', 'sword cane', 'sword cane',
-        'wakizashi', 'war razor'
+        'bayonet', 'butterfly knife', 'butterfly knife', 'chakram', 'dagger',
+        'chicken saber', 'dagger', 'deer horn knife', 'drow razor',
+        'dueling dagger', 'dueling dagger', 'gladius', 'gladius',
+        'hunga munga', 'kama', 'kama', 'katar', 'kerambit', 'kerambit', 'kukri',
+        'kukri', 'machete', 'machete', 'manople', 'pata', 'quadrens', 'rapier',
+        'rapier', 'sawtooth sabre', 'scizore', 'shortsword', 'shortsword',
+        'sica', 'sickle', 'sickle', 'spiral rapier', 'starknife',
+        'swordbreaker dagger', 'swordbreaker dagger', 'sword cane',
+        'sword cane', 'tanto', 'tanto', 'wakizashi', 'war razor', 'waveblade'
     ],
     'Close': [
-        'bayonet', 'brass knuckles', 'cestus', 'dan bong', 'emei piercer',
-        'fighting fan', 'gauntlet', 'iron brush', 'katar', 'klar', 'madu',
-        'mere club', 'punching dagger', 'rope gauntlet', 'sap', 'scizore',
-        'spiked gauntlet', 'tekko-kagi', 'tonfa', 'tri-bladed katar', 'stake',
-        'waveblade', 'wushu dart'
+        'bayonet', 'brass knuckles', 'brass knuckles', 'cestus', 'cestus',
+        'emei piercer', 'fighting fan', 'gauntlet', 'gauntlet', 'katar',
+        'klar', 'punching dagger', 'punching dagger', 'rope gauntlet', 'sap',
+        'scizore', 'spiked gauntlet', 'tekko-kagi', 'tonfa',  'tonfa',
+        'tri-bladed katar', 'stake', 'wushu dart'
     ],
     'Double': [
-        'bo staff', 'bo staff', 'Boarding gaff', 'chain-hammer', 'chain spear',
+        'bo staff', 'bo staff', 'Woarding gaff', 'chain-hammer', 'chain spear',
         'dire flail', 'double walking stick katana', 'double-chained kama',
         'dwarven urgrosh', 'gnome battle ladder', 'gnome hooked hammer',
         'kusarigama', 'monk\'s spade', 'monk\'s spade', 'orc double axe',
@@ -882,9 +627,10 @@ possible_melee = {
     'Hammer': [
         'aklys', 'battle aspergillum', 'Chain-hammer', 'club', 'club',
         'gnome piston maul', 'greatclub', 'greatclub', 'heavy mace',
-        'heavy mace', 'lantern staff', 'light hammer', 'light hammer',
-        'light mace', 'light mace', 'mere club', 'planson', 'taiaha', 'tetsubo',
-        'wahaika', 'warhammer', 'warhammer'
+        'heavy mace', 'kanabo', 'kanabo', 'lantern staff',
+        'light hammer', 'light hammer', 'light mace', 'light mace',
+        'mere club', 'planson', 'taiaha', 'tetsubo', 'tetsubo', 'wahaika',
+        'warhammer', 'warhammer'
     ],
     'Monk': [
         'bo staff', 'bo staff', 'brass knuckles', 'butterfly sword', 'cestus',
@@ -902,8 +648,8 @@ possible_melee = {
         'crook', 'crook', 'fauchard', 'glaive', 'glaive', 'glaive-guisarme',
         'glaive-guisarme', 'gnome ripsaw glaive', 'guisarme', 'guisarme',
         'halberd', 'halberd', 'hooked lance', 'lucerne hammer', 'mancatcher',
-        'monk\'s spade', 'naginata', 'nodachi', 'ranseur', 'rhomphaia',
-        'tepoztopilli', 'tiger fork'
+        'monk\'s spade', 'naginata', 'naginata', 'nodachi', 'ranseur',
+        'rhomphaia', 'tepoztopilli', 'tiger fork'
     ],
     'Spear': [
         'amentum', 'boar spear', 'chain spear', 'elven branched spear',
@@ -915,248 +661,45 @@ possible_melee = {
 }
 possible_ranged = {
     'Bows': [
-        'Composite longbow', 'composite shortbow', 'longbow', 'hornbow',
-        'composite hornbow', 'shortbow'
+        'composite longbow', 'composite shortbow', 'composite hornbow',
+        'longbow', 'shortbow', 'hornbow'
     ],
     'Crossbow': [
         'double crossbow', 'hand crossbow', 'hand crossbow', 'heavy crossbow',
         'heavy crossbow', 'launching crossbow', 'light crossbow',
         'light crossbow', 'heavy repeating crossbow',
-        'light repeating crossbow', 'tube arrow shooter'
+        'light repeating crossbow'
     ],
     'Thrown': [
-        'aklys', 'amentum', 'atlatl', 'blowgun', 'bolas', 'boomerang',
-        'brutal bolas', 'Chain-hammer', 'chakram', 'club', 'dagger', 'dart',
-        'deer horn knife', 'dueling dagger', 'flask thrower',
-        'halfling sling staff', 'harpoon', 'hunga munga', 'javelin', 'kestros',
-        'light hammer', 'pilum', 'poisoned sand tube', 'rope dart',
-        'shortspear', 'shuriken', 'sibat', 'sling', 'sling glove', 'spear',
-        'starknife', 'stormshaft javelin', 'throwing axe', 'trident',
-        'wushu dart'
+        'aklys', 'amentum', 'atlatl', 'blowgun', 'bolas', 'bolas', 'boomerang',
+        'boomerang', 'brutal bolas', 'chain-hammer', 'chakram', 'chakram',
+        'club', 'dagger', 'dagger', 'dart', 'dart', 'deer horn knife',
+        'dueling dagger', 'flask thrower', 'halfling sling staff', 'harpoon',
+        'javelin', 'javelin', 'kestros', 'light hammer', 'pilum',
+        'poisoned sand tube', 'rope dart', 'shortspear', 'shortspear',
+        'shuriken', 'shuriken', 'sibat', 'sling', 'sling', 'sling glove',
+        'sling glove', 'spear', 'spear', 'starknife', 'stormshaft javelin',
+        'throwing axe', 'throwing axe', 'trident', 'trident',
+        'tube arrow shooter', 'wushu dart'
     ],
 }
 possible_guns = {
     'Pistol': [
-        'Akdal Ghost TR01', 'ALFA Combat', 'ALFA Defender', 'AMT AutoMag II',
-        'AMT AutoMag III', 'AMT AutoMag IV', 'AMT Backup', 'AMT Hardballer',
-        'AMT Lightning pistol', 'AMT Skipper', 'Armatix iP1', 'Arsenal P-M02',
-        'Ashani', 'ASP pistol', 'Paris Theodore', 'Astra 400', 'Astra 600',
-        'Astra Model 900', 'Astra Model 903', 'Astra A-60', 'Astra A-80',
-        'Astra A-100', 'Ballester-Molina', 'Bauer Automatic', 'Bayard 1908',
-        'Anciens Etablissements Pieper', 'Bechowiec-1', 'Bataliony Chiopskie',
-        'Beholla pistol', 'Benelli B76', 'Benelli MP 90S', 'Benelli MP 95E',
-        'Beretta M9', 'Beretta 21A Bobcat', 'Beretta 70', 'Beretta 90two',
-        'Beretta 92', 'Beretta 92G-SD/96G-SD', 'Beretta 93R', 'Beretta 418',
-        'Beretta 950', 'Beretta 3032 Tomcat', 'Beretta 8000', 'Beretta 9000',
-        'Beretta Cheetah', 'Beretta M1923', 'Beretta M1934', 'Beretta M1935',
-        'Beretta M1951', 'Beretta Nano', 'Beretta Pico', 'Beretta Px4 Storm',
-        'Beretta U22 Neos', 'Bersa 83', 'Bersa Thunder 9', 'Bersa Thunder 380',
-        'Bergmann-Bayard', 'Theodor Bergmann', 'Bren Ten', 'FN Herstal',
-        'Browning BDM', 'Browning Buck Mark', 'Browning Hi-Power', 'FN Herstal',
-        'Brugger & Thomet MP9', 'BUL Cherokee', 'BUL Transmark', 'BUL M-5',
-        'BUL Transmark', 'BUL Storm', 'BUL Transmark', 'Calico M950',
-        'Campo Giro', 'Caracal pistol', 'Claridge Hi-Tec/Goncz Pistol',
-        'Colt Delta Elite', 'Colt Mustang', 'Colt OHWS', 'Colt SCAMP',
-        'CZ vz. 27', 'CZ vz. 38', 'CZ vz. 50 / CZ vz. 70', 'CZ 52', 'CZ 85',
-        'CZ 97B', 'Daewoo Precision Industries K5', 'Danuvia VD-01',
-        'Davis Warner Infallible', 'Deer gun', 'Dreyse M1907',
-        'Rheinische Metallwaaren- und Maschinenfabrik AG', 'FB P-64',
-        'FeG 37M Pistol', 'Fegyver- es Gepgyar', 'FEG PA-63',
-        'Fegyver- es Gepgyar', 'RPC Fort', 'Fort-17', 'RPC Fort',
-        'FN Baby Browning', 'FN M1900', 'FN Model 1903', 'FN M1905',
-        'FN Model 1910', 'FN Forty-Nine', 'FN Five-seven', 'FN FNP', 'FN FNS',
-        'FN FNX', 'FP-45 Liberator', 'Fegyver- es Gepgyar',
-        'Gaztanaga Destroyer', 'Gaztanaga', 'Glisenti Model 1910',
-        'Glock Ges.m.b.H.', 'Grand Power K100', 'GSh-18',
-        'Guncrafter Industries Model No. 1', 'Gyrojet', 'Hamada Type pistol',
-        'Harper\'s Ferry Model 1805', 'Harpers Ferry Armory', 'Hi-Point C-9',
-        'Hi-Point CF-380', 'Hi-Point Model JCP', 'Hi-Point Model JHP',
-        'High Standard HDM', 'Howdah pistol', 'HS2000', 'HS Produkt',
-        'Intratec TEC-22', 'Intratec', 'JO.LO.AR.', 'Kahr K series',
-        'Kahr MK series', 'Kahr P series', 'Kahr PM series', 'Kel-Tec P-3AT',
-        'Kel-Tec P-11', 'Kel-Tec P-32', 'Kel-Tec PF-9', 'Kel-Tec PLR-16',
-        'Kel-Tec PMR-30', 'Kimber Aegis', 'Kimber Custom', 'Kimber Eclipse',
-        'Kimel AP-9', 'Kongsberg Colt', 'Korovin', 'Krag-Jorgensen',
-        'KRISS KARD', 'Lahti L-35', 'Valtion Kivaaritehdas', 'Lancaster pistol',
-        'Lercker pistol', 'Italy', 'Liliput pistol', 'Llama M82',
-        'Luger pistol', 'Deutsche Waffen und Munitionsfabriken', 'M15 pistol',
-        'Rock Island Arsenal', 'MAB Model A', 'MAB PA-15 pistol',
-        'MAC Mle 1950', 'MAC-10', 'MAC-11', 'Makarov pistol', 'Makarych',
-        'Mamba Pistol', 'Mars Automatic Pistol', 'Mauser C96', 'Mauser',
-        'Mauser HSc', 'Mauser', 'MGP-15 submachine gun', 'Minebea PM-9',
-        'Minebea', 'Modele 1935 pistol', 'MP-443 Grach', 'Musgrave Pistol',
-        'NAACO Brigadier', 'Obregon pistol', 'Ortgies Semi-Automatic Pistol',
-        'OTs-02 Kiparis', 'OTs-23 Drotik', 'OTs-33 Pernach', 'P9RC',
-        'Fegyver- es Gepgyar', 'PAMAS modele G1', 'Para-Ordnance P14-45',
-        'Para USA', 'Pardini GT9', 'Pindad G2', 'Pindad P3', 'Pindad',
-        'Pindad PS-01', 'Pindad', 'Pistol model 2000', 'Pistole vz. 22',
-        'PP-2000', 'Prilutsky M1914', 'PSM pistol', 'QSW-06', 'QSZ-92',
-        'Remington 1911 R1', 'Remington Model 51', 'Remington R51',
-        'Remington Rider Single Shot Pistol', 'Remington XP-100',
-        'Remington Zig-Zag Derringer', 'Rock Island Armory 1911 series',
-        'Rohrbaugh R9', 'Ruby pistol', 'Ruger Hawkeye', 'Ruger LCP',
-        'Ruger LC9', 'Ruger MP9', 'Ruger SR1911', 'Sauer 38H',
-        'Savage Model 1907', 'Schwarzlose Model 1898',
-        'Schonberger-Laumann 1892', 'SP-21 Barak', 'SPP-1 underwater pistol',
-        'Star Firestar M43', 'Star Model 14', 'Star Model S', 'Star Ultrastar',
-        'Steyr GB', 'Steyr M', 'Steyr TMP', 'Steyr M1912', 'Sugiura pistol',
-        'Tanfoglio Force', 'Tanfoglio', 'Tanfoglio GT27', 'Tanfoglio',
-        'Tanfoglio T95', 'Tanfoglio', 'Taurus PT92', 'Taurus Millennium series',
-        'Taurus PT1911', 'TEC-9', 'Intratec', 'TP-82', 'TT pistol',
-        'Tokarev TT-33', 'Fedor Tokarev', 'Trejo pistol', 'Type 14 Nambu',
-        'Type 64 pistol', 'Type 77 pistol', 'Israel Military Industries',
-        'Vektor CP1', 'Vektor SP1', 'Viper Jaws pistol', 'Volkspistole',
-        'Mauser', 'Walther CCP', 'Walther HP', 'Walther Model 9', 'Walther P5',
-        'Walther P22', 'Walther P38', 'Walther P88', 'Walther P99',
-        'Walther PP', 'Walther PK380', 'Walther PPQ', 'Walther PPS',
-        'Walther TPH', 'Webley Self-Loading Pistol', 'Welrod',
-        'Werder pistol model 1869', 'Johann Ludwig Werder', 'Whitney Wolverine',
-        'Wildey', 'WIST-94', 'Zaragoza Corla', 'Zastava P25', 'Zastava M57',
-        'Zastava M70', 'Zastava M88', 'Zastava PPZ'
+        'derringer', 'flintlock', 'revolver', 'hand cannon', 'handgun',
+        'handgun', 'machine pistol', 'machine pistol', 'matchlock', 'pistol',
+        'pistol', 'pistol', 'revolver', 'wheellock'
     ],
     'Rifle': [
-        '1792 contract rifle', 'Advanced Combat Rifle', 'ArmaLite AR-5',
-        'ArmaLite AR-7', 'ArmaLite AR-10', 'ArmaLite AR-30', 'Barrett REC7',
-        'Barrett XM109', 'Barrett XM500', 'Bendix Hyde carbine', 'Berdan rifle',
-        'Browning BLR', 'Burnside carbine', 'Bushmaster Arm Pistol',
-        'Bushmaster M4-type Carbine', 'Bushmaster M17S', 'CAR-15',
-        'Close Quarters Battle Receiver', 'CMMG Mk47 Mutant',
-        'Advanced Colt Carbine-Monolithic', 'Colt Advanced Piston Carbine',
-        'Colt Lightning Carbine', 'Colt Model 1839 Carbine',
-        'Colt Ring Lever rifles', 'Colt-Burgess rifle', 'Crazy Horse rifle',
-        'Demro TAC-1', 'Frank Wesson Rifles', 'Grendel R31',
-        'Harpers Ferry Model 1803', 'Hawken rifle', 'Henry rifle',
-        'Hi-Point Carbine', 'Hillberg carbine', 'Individual Carbine',
-        'Iver Johnson AMAC-1500', 'Krag-Jorgensen', 'M1 Garand', 'M4 carbine',
-        'M14 rifle', 'M16 rifle', 'M21 Sniper Weapon System',
-        'M27 Infantry Automatic Rifle', 'M86 Rifle', 'M231 Firing Port Weapon',
-        'M1819 Hall rifle', 'M1885 Remington-Lee', 'M1895 Lee Navy',
-        'M1903 Springfield', 'M1917 Enfield', 'M1918 Browning Automatic Rifle',
-        'M1922 Bang rifle', 'M1941 Johnson rifle', 'M1944 Hyde Carbine',
-        'M1947 Johnson auto carbine', 'Marlin Levermatic', 'Marlin Model 20',
-        'Marlin Model 60', 'Marlin Model 70P', 'Marlin Model 336',
-        'Marlin Model 780', 'Marlin Model 795', 'Marlin Model 1894',
-        'Marlin Model Golden 39A', 'Marlin Model XT-22', 'Maynard carbine',
-        'Mk 14 Enhanced Battle Rifle', 'Model 1814 common rifle',
-        'Model 1817 common rifle', 'Mosin-Nagant', 'Mossberg 464',
-        'Mossberg Plinkster', 'Palmer carbine', 'Pedersen rifle',
-        'Precision Sniper Rifle', 'PTR rifle', 'Remington ACR',
-        'Remington Model 5', 'Remington Model 241', 'Remington Model 572',
-        'Remington Model 600', 'Remington Model 660', 'Remington Model 673',
-        'Remington Model 700', 'Remington Model 721', 'Remington Model 750',
-        'Remington Model 760', 'Remington Model 770', 'Remington Model 7400',
-        'Remington Model 7600', 'Remington Rolling Block rifle',
-        'Ruger American Rifle', 'Ruger M77', 'Ruger SR-556', 'Savage Model 99',
-        'Savage Model 110', 'SEAL Recon Rifle',
-        'Sharps & Hankins Model 1862 Carbine', 'Sharps rifle',
-        'Smith & Wesson M&P10', 'Smith & Wesson M&P15',
-        'Smith & Wesson M&P15-22', 'Smith & Wesson Model 1940 Light Rifle',
-        'Spencer repeating rifle', 'Springfield Model 1865',
-        'Springfield Model 1866', 'Springfield Model 1868',
-        'Springfield Model 1869', 'Springfield model 1870',
-        'Springfield model 1870 Remington-Navy', 'Springfield model 1871',
-        'Springfield model 1873', 'Springfield Model 1875',
-        'Springfield Model 1877', 'Springfield model 1880',
-        'Springfield Model 1882', 'Springfield model 1884',
-        'Springfield Model 1886', 'Springfield Model 1888',
-        'Springfield Model 1892-99', 'Springfield Model 1922',
-        'Springfield rifle', 'Starr carbine', 'Stoner 63', 'T48 rifle',
-        'Thompson Autorifle', 'Thompson Light Rifle', 'Tubb 2000',
-        'United States Army Squad Designated Marksman Rifle',
-        'United States Marine Corps Designated Marksman Rifle',
-        'Volcanic Repeating Arms', 'Winchester Hotchkiss',
-        'Winchester Model 67', 'Winchester Model 68', 'Winchester Model 69',
-        'Winchester Model 1886', 'Winchester Model 1890',
-        'Winchester Model 1892', 'Winchester Model 1894',
-        'Winchester Model 1895', 'Winchester Model 1906',
-        'Winchester Model 1907', 'Winchester rifle', 'Winder musket',
-        'AAC Honey Badger', 'AAI ACR', 'Adcor A-556', 'ADS amphibious rifle',
-        'Advanced Combat Rifle', 'Advanced Individual Combat Weapon', 'AG-043',
-        'AK-9', 'AK-12', 'AK-47', 'AK-63', 'AK-74', 'AK-100 (rifle family)',
-        'AK-103', 'AK-104', 'AK-105', 'AKM', 'AKMSU', 'AL-7', 'AMD-65',
-        'AMP-69', 'AMR-69', 'AO-27 rifle', 'AO-35 assault rifle',
-        'AO-38 assault rifle', 'AO-46 (firearm)', 'AO-63 assault rifle',
-        'APS underwater rifle', 'AR-M1', 'Ares Shrike 5.56', 'ArmaLite AR-15',
-        'Armtech C30R', 'AS Val', 'AS-44', 'ASh-12.7',
-        'ASM-DT amphibious rifle', 'Barrett M468', 'Bendix Hyde carbine',
-        'Beretta AS70/90', 'BSA 28P', 'CAR 816', 'CEAM Modele 1950', 'CETME',
-        'CETME rifle', 'Close Quarters Battle Receiver', 'CMMG Mk47 Mutant',
-        'Colt ACR', 'Colt Advanced Piston Carbine',
-        'Conventional Multirole Combat Rifle', 'CornerShot',
-        'Cristobal Carbine', 'CZ 807', 'CZ 2000', 'Dlugov assault rifle',
-        'EM-2 rifle', 'EM-4 rifle', 'EMERK', 'FA-MAS Type 62', 'FB Mini-Beryl',
-        'FB Onyks', 'FB Tantal', 'Featureless rifles', 'Floro PDW',
-        'Gahendra Rifle', 'Grad AR', 'GRAM 63 battle rifle',
-        'Grossfuss Sturmgewehr', 'Heckler & Koch G11', 'Heckler & Koch G36',
-        'Heckler & Koch HK36', 'Heckler & Koch HK416', 'Howa Type 64',
-        'Howa Type 89', 'IWI Tavor 7', 'Interdynamics MKR', 'Interdynamics MKS',
-        'IWI ACE', 'IWI Tavor X95', 'Kalashnikov rifle', 'Kbkg wz. 1960',
-        'L64/65', 'LAPA FA-03', 'Lightweight Small Arms Technologies', 'LR-300',
-        'LSAT rifle', 'LVOA-C', 'LWRC M6', 'M4 carbine', 'M4-WAC-47',
-        'M231 Firing Port Weapon', 'M1944 Hyde Carbine', 'Madsen LAR', 'MPT-76',
-        'MR-C', 'MSBS rifle', 'Multi Caliber Individual Weapon System',
-        'Nesterov assault rifle', 'Norinco Type 86S',
-        'Objective Individual Combat Weapon', 'OTs-12 Tiss', 'OTs-14 Groza',
-        'PAPOP', 'Pindad SS3', 'Pistol Mitraliera model 1963/1965', 'POF Eye',
-        'Project Abakan', 'Pusca Automata model 1986', 'QBZ-03', 'QTS-11',
-        'RK 62', 'RK 95 TP', 'SA M-7', 'SIG Sauer SIG516', 'SIG Sauer SIGM400',
-        'SLEM-1', 'SR-3 Vikhr', 'Steyr ACR', 'STG-556', 'Sturmgewehr 52',
-        'Sturmgewehr 58', 'Thompson Light Rifle', 'TKB-010', 'TKB-011',
-        'TKB-022PM', 'TKB-059', 'TKB-072', 'TKB-0146', 'TKB-408', 'TKB-517',
-        'Type 56 assault rifle', 'Type 58 assault rifle',
-        'Type 63 assault rifle', 'Type 81 assault rifle',
-        'United States Army Squad Designated Marksman Rifle', 'VAHAN (firearm)',
-        'VB Berapi LP06', 'Vepr', 'Vollmer M35', 'Vz. 58',
-        'Maschinenkarabiner 42(W)', 'WASR-series rifles', 'Wimmersperg Spz',
-        'Winchester LMR', 'Zastava M70', 'Zastava M77 B1', 'Zastava M90'
+        'assault rifle', 'carbine', 'carbine', 'rifle', 'rifle', 'rifle',
+        'scoped rifle', 'submachine gun'
     ],
     'Sniper': [
-        'Anzio 20mm rifle', 'Barrett M82', 'Barrett M90', 'Barrett M95',
-        'Barrett Model 98B', 'Barrett MRAD', 'CheyTac Intervention',
-        'Desert Tech HTI', 'Desert Tech SRS', 'EDM Arms Windrunner',
-        'Grizzly Big Boar', 'H-S Precision Pro Series 2000 HTR',
-        'Harris Gun Works M-96', 'Knight\'s Armament Company SR-25',
-        'Longbow T-76', 'M1 Garand', 'M24 Sniper Weapon System',
-        'M25 Sniper Weapon System', 'M39 Enhanced Marksman Rifle', 'M40 rifle',
-        'M110 Semi-Automatic Sniper System', 'M1903 Springfield',
-        'McMillan TAC-50', 'MICOR Leader 50', 'Mk 12 Special Purpose Rifle',
-        'Pauza P-50', 'Precision-guided firearm', 'Remington Model 700',
-        'Remington MSR', 'Remington Semi Automatic Sniper System',
-        'Robar RC-50', 'Savage 10FP', 'Savage 110 BA',
-        'United States Marine Corps Squad Advanced Marksman Rifle',
-        'M2010 Enhanced Sniper Rifle'
+        'long gun', 'scoped sniper', 'scoped sniper', 'sniper', 'sniper',
+        'sniper'
     ],
     'Shotgun': [
-        'Blunderbuss', 'Cynergy Shotgun', 'TOZ-106', 'Ithaca Mag-10',
-        'Remington Model SP-10', 'Winchester Model 1200', 'Marlin Model 55',
-        'Akdal MKA', 'Armsel Striker', 'Atchisson Assault Shotgun',
-        'Baikal MP-153', 'Bandayevsky RB-12', 'Benelli M4', 'Benelli Raffaello',
-        'Benelli Supernova', 'Benelli Vinci', 'Beretta FP', 'Beretta A303',
-        'Beretta DT-10', 'Beretta Xtrema 2',
-        'Browning Double Automatic Shotgun', 'FN Herstal',
-        'Ciener Ultimate Over/Under', 'ENARM Pentagun', 'Fabarm SDASS Tactical',
-        'FN SLP', 'FN TPS', 'FN SC-1', 'Franchi SPAS-12', 'Franchi SPAS-15',
-        'Heckler & Koch FABARM FP6', 'Heckler & Koch HK CAWS',
-        'High Standard Model 10', 'KAC Masterkey', 'Kel-Tec KSG',
-        'M26 Modular Accessory Shotgun System', 'MAG-7', 'MAUL (shotgun)',
-        'Mossberg 930', 'NeoStead', 'Norinco HP9-1', 'Pancor Jackhammer',
-        'Remington Model 10', 'Remington Model 878', 'Remington Model 887',
-        'Remington Spartan 453', 'RMB-93', 'Ruger Gold Label',
-        'Sjogren shotgun', 'TOZ-194', 'USAS-12', 'Valtro PM-5/PM-5-350',
-        'Weatherby Orion', 'Winchester Model', 'Browning BSS', 'Molot Bekas-M',
-        'Browning Auto-5', 'Browning Superposed', 'Remington Model 11',
-        'Remington Model 31', 'Remington Model 58', 'Stevens Model 520/620',
-        'Winchester Model 1897', 'Stoeger Condor', 'Ithaca 37',
-        'Winchester Model 1897', 'Winchester Model 1887', 'Browning Citori',
-        'Cooey 84', 'Remington Model 11-48', 'Remington Model 870',
-        'Remington Model 1912', 'Winchester Model 21', 'Winchester Model 37',
-        'Benelli M1', 'Benelli M3', 'Benelli Nova', 'Beretta AL391',
-        'H&R Ultraslug Hunter', 'Remington Model 11-87', 'Weatherby SA-08',
-        'Mossberg 500', 'Mossberg 590', 'Remington Spartan 100', 'Saiga-12',
-        'Stoeger Coach Gun', 'Blaser F3', 'Beretta 682',
-        'Beretta Silver Pigeon', 'Remington Spartan 310', 'MTs-255',
-        'Remington Model 17', 'Franchi AL-48', 'KS-23', 'RGA-86',
-        'Winchester Model 20', 'Vepr-12'
+        'blunderbuss', 'blunderbuss', 'pump shotgun', 'shotgun', 'shotgun',
+        'shotgun'
     ],
 }
 weapon_cost_and_weight = {

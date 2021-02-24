@@ -7,7 +7,13 @@ from stores import Weapon
 import simplejson as json
 import re
 
-MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
+SpellSource = json.load(open('settings.json', 'r'))['System']
+if SpellSource == 'D&D 5':
+    with open('5e_spells.json', 'r') as inf:
+        MasterSpells = json.load(inf, encoding='utf-8')
+elif SpellSource == 'Pathfinder 1':
+    with open('spells.json', 'r') as inf:
+        MasterSpells = json.load(inf, encoding='utf-8')
 WeaponID = 0
 
 # A list of what stats are import to what character.
@@ -126,10 +132,33 @@ playable = {
         "CHA": 4
     }
 }
-class_feats = json.load(
-    open("pathfinder_class_feats.json", 'r'), encoding='utf-8')
+class_feats = {}
 
-# class_feats = json.load(open("5e_class_feats.json", 'r'), encoding='utf-8')
+system = json.load(open('settings.json', 'r'))['System']
+if system == 'Pathfinder 1':
+    class_feats.update(json.load(open("pathfinder_class_feats.json", 'r'), encoding='utf-8'))
+    # TODO (Josh): Add Alchemist, Arcanist, Bloodrager, Brawler, Cavalier, Gunslinger, Hunter, Investigator, Inquisitor,
+    #  Kineticist, Magus, Medium, Mesmerist, Occultist, Psychic, Shaman, Skald, Slayer, Spiritualist, Swashbuckler,
+    #  Summoner, Warpriest, Witch
+elif system == 'D&D 5':
+    class_feats.update(json.load(open("5e_class_feats.json", 'r'), encoding='utf-8'))
+    # 5e Specific Classes
+    playable['Warlock'] = {
+        "STR": 4,
+        "DEX": 1,
+        "CON": 2,
+        "INT": 5,
+        "WIS": 3,
+        "CHA": 0
+    }
+    playable['Artificer'] = {
+        "STR": 4,
+        "DEX": 1,
+        "CON": 2,
+        "INT": 0,
+        "WIS": 3,
+        "CHA": 5
+    }
 
 
 class PC(object):
@@ -146,7 +175,13 @@ class PC(object):
             new_char = create_person(None)
 
         self.Name = new_char.Name
-        self.Level = int(randint(1, 21))
+        self.Level = choice(
+            [x for x in range(1, 21)],
+            p=[
+                0.139372822, 0.125783972, 0.112891986, 0.100696864, 0.089198606, 0.078397213, 0.068292683, 0.058885017,
+                0.050174216, 0.042160279, 0.034843206, 0.028222997, 0.022299652, 0.017073171, 0.012543554, 0.008710801,
+                0.005574913, 0.003135889, 0.001393728, 0.000348432
+            ])
         self.Race = new_char.Race
         self.Gender = new_char.Gender
         self.Age = new_char.Age
@@ -177,17 +212,18 @@ class PC(object):
         # if randint(3) == 0:
         # Spells for Classes that cast spells
         if self.Class in [
-                'Bard', 'Cleric', 'Druid', 'Magus', 'Paladin', 'Ranger',
-                'Sorcerer', 'Summoner', 'Warpriest', 'Wizard'
+                'Artificer', 'Bard', 'Cleric', 'Druid', 'Magus', 'Paladin', 'Ranger',
+                'Sorcerer', 'Summoner', 'Warlock', 'Warpriest', 'Wizard'
         ]:
-            self.Spells = []
+            self.Spells = set()
             for x in range(4 + self.Level * 2):
                 s = choice(list(MasterSpells.keys()))
-                if s not in self.Spells and MasterSpells[s][
-                        'link'] not in MasterSpellBlacklist:
-                    self.Spells.append(s)
-            # Sort spells
-            # self.Spells.sort(key=lambda x: MasterSpells[x]['school'])
+                # Not picking a Pokemon Move
+                if MasterSpells[s]['link'] not in MasterSpellBlacklist:
+                    # Available to pick
+                    if self.Class.lower() in MasterSpells[s]['level'].lower():
+                        self.Spells.add(s)
+            self.Spells = list(self.Spells)
 
     def roll(self):
         self.Stats = []

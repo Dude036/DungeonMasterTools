@@ -7,10 +7,13 @@ import simplejson as json
 from masterwork import special_masterwork_weapon, special_masterwork_armor
 from resources import *
 
-with open('spells.json', 'r') as inf:
-    MasterSpells = json.load(inf, encoding='utf-8')
-with open('wondrous.json', 'r') as inf:
-    MasterWondrous = json.load(inf, encoding='utf-8')
+SpellSource = json.load(open('settings.json', 'r'))['System']
+if SpellSource == 'D&D 5':
+    MasterSpells = json.load(open('5e_spells.json', 'r'), encoding='utf-8')
+    MasterWondrous = json.load(open('5e_wondrous.json', 'r'), encoding='utf-8')
+elif SpellSource == 'Pathfinder 1':
+    MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
+    MasterWondrous = json.load(open('wondrous.json', 'r'), encoding='utf-8')
 
 MasterID = 1
 
@@ -381,6 +384,10 @@ class Weapon(object):
         else:
             print("This Item is already enchanted.")
 
+    def add_trait(self, trait):
+        if self.Special == '':
+            special_masterwork_weapon(self, trait)
+
     def add_masterwork(self, mlevel):
         if mlevel < 10:
             if self.Masterwork == 0:
@@ -414,19 +421,26 @@ class Weapon(object):
             enchanted = str(self.Enchantment)
         for c in self.Damage:
             dam += '\'' + c + '\','
+        throwable = ''
+        if self.Class == 'Thrown':
+            throwable = ' x' + str(choice([5, 10, 15, 20, 25, 30]))
+        clss = self.Class
+        if SpellSource == 'D&D 5' and self.Class in ['Heavy Axe', 'Heavy Blade', 'Flail', 'Polearm', 'Crossbow']:
+            clss = 'Martial'
+        elif SpellSource == 'D&D 5':
+            clss = 'Simple'
         if self.Enchantment is None and self.Special == '':
-            s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + \
-            ' (' + self.Class + """) </span><br /><span class="text-sm emp">""" + \
-            'Damage: ' + self.Dice + ' (' + self.Crit + ') [' + dam + '] Weight: ' + \
-            str(self.Weight) + """ lbs</span></td><td>""" + determine_cost(self.Cost) + \
-            """</td><td>""" + master + r[self.Rarity] + """</td></tr>"""
+            s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + throwable + ' (' + clss + \
+                ') </span><br /><span class="text-sm emp">Damage: ' + self.Dice + ' (' + self.Crit + ') [' + \
+                dam + '] Weight: ' + str(self.Weight) + """ lbs</span></td><td>""" + determine_cost(self.Cost) + \
+                '</td><td>' + master + r[self.Rarity] + '</td></tr>'
         else:
             s = """<tr><td style="width:50%;"><span class="text-md" onclick="show_hide('""" + str(MasterID) + \
-                """')" style="color:blue;">""" + self.Name + ' (' + self.Class + \
-                """) </span><br /><span class="text-sm emp" id=\"""" + str(MasterID) + \
-                """\" style="display: none;">""" + 'Damage: ' + self.Dice + ' (' + self.Crit + ') [' + dam + \
-                '] Weight: ' + str(self.Weight) + ' lbs. ' + self.Text + enchanted + """</span></td><td>""" + \
-                determine_cost(self.Cost) + '</td><td>' + master + r[self.Rarity] + enchant_lvl + '</td></tr>'
+                """')" style="color:blue;">""" + self.Name + throwable + ' (' + clss + ') </span><br />' + \
+                '<span class="text-sm emp" id=\"' + str(MasterID) + '\" style="display: none;">Damage: ' + \
+                self.Dice + ' (' + self.Crit + ') [' + dam + '] Weight: ' + str(self.Weight) + ' lbs. ' + self.Text + \
+                enchanted + '</span></td><td>' + determine_cost(self.Cost) + '</td><td>' + master + r[self.Rarity] + \
+                enchant_lvl + '</td></tr>'
             MasterID += 1
         return s
 
@@ -479,21 +493,21 @@ class Firearm(object):
             self.Max_Range = 5 * round((self.Range * 2.5) / 5)
 
         elif self.Class == 'Rifle':
-            self.Capacity = int(10 + randint(1, 8) * 5)
+            self.Capacity = int(randint(1, 8) * 5)
             self.Range = 10 + randint(2, 10) * 5 * (self.Rarity + 1)
             self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
                 choice([6, 8, 10], p=[.625, .25, .125]))
             self.Max_Range = self.Range * 3
 
         elif self.Class == 'Shotgun':
-            self.Capacity = int(choice([1, 2]))
-            self.Range = randint(2, 5) * 5 * ((self.Rarity + 1) // 2)
+            self.Capacity = int(choice([1, 2, 3, 4]))
+            self.Range = 10 + randint(2, 5) * 5 * ((self.Rarity + 1) // 2)
             self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
                 choice([6, 8, 10], p=[.625, .25, .125]))
             self.Max_Range = self.Range * 2
 
         elif self.Class == 'Sniper':
-            self.Capacity = int(choice([1, 2, 4]))
+            self.Capacity = int(choice([1, 2, 4, 6]))
             self.Range = 30 + randint(3, 7) * 10 * (self.Rarity + 1)
             self.Dice = str(int(self.Rarity + 1)) + 'd' + str(
                 choice([10, 12, 20], p=[.625, .25, .125]))
@@ -817,6 +831,10 @@ class Armor(object):
             self.Cost = round(self.Cost + self.Enchantment.Cost)
         else:
             print("This Item is already enchanted.")
+
+    def add_trait(self, trait):
+        if self.Special == '':
+            special_masterwork_armor(self, trait)
 
     def add_masterwork(self, mlevel):
         if mlevel > 10:
@@ -1300,8 +1318,7 @@ class Food(object):
         if meal_option == 0:
             self.Cost = (len(s) * random_sample() + .5) // 10
         else:
-            self.Cost = (len(s) *
-                         (sum(random_sample(meal_option)) / meal_option)) // 10
+            self.Cost = (len(s) * sum(random_sample(meal_option))) // 10
 
     def __str__(self):
         s = """<tr><td style="width:50%;"><span class="text-md">""" + self.String + """</span></td><td>""" + \
@@ -1326,7 +1343,7 @@ class Drink(object):
         if num == 0:
             self.Cost = (len(s) * random_sample() + .5) / 10
         else:
-            self.Cost = (len(s) * (sum(random_sample(num)) / num)) / 10
+            self.Cost = (len(s) * sum(random_sample(num))) / 10
 
     def __str__(self):
         s = """<tr><td style="width:50%;"><span class="text-md">""" + self.String + """</span></td><td>""" + \
@@ -1709,16 +1726,16 @@ class Wondrous(object):
     Cost = CL = Weight = 0
 
     def __init__(self, cl=-1):
-        if cl == -1:
+        if cl == -1 or SpellSource == 'D&D 5':
             pick = choice(list(MasterWondrous.keys()))
             self.Name = pick
             self.Link = MasterWondrous[pick]['Link']
             self.Cost = int(MasterWondrous[pick]['Price'])
-            self.CL = int(MasterWondrous[pick]['CL'])
+            self.CL = MasterWondrous[pick]['CL']
             self.Aura = MasterWondrous[pick]['Aura']
             self.Slot = MasterWondrous[pick]['Slot']
             self.Weight = MasterWondrous[pick]['Weight']
-        else:
+        elif SpellSource == 'Pathfinder 1' and cl != -1:
             i = 0
             while True:
                 pick = choice(list(MasterWondrous.keys()))
@@ -1739,7 +1756,7 @@ class Wondrous(object):
 
     def __str__(self):
         return '<tr><td style="width:50%;"><span class="text-md"><a href="' + self.Link + '">' + self.Name + \
-               '</a></span><br /><span class="text-sm emp">Aura ' + self.Aura + '; CL' + str(self.CL) + '; Weight' + \
+               '</a></span><br /><span class="text-sm emp">Aura ' + self.Aura + '; CL ' + str(self.CL) + '; Weight ' + \
                self.Weight + '; Slot ' + self.Slot + '</span></td><td>' + determine_cost(self.Cost) + '</td><td>' + \
                'Wondrous Item</td></tr>'
 

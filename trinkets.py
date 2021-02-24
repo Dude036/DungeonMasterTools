@@ -957,6 +957,7 @@ Trinkets = [
     'A torn, warped copy of "Evard\'s Poetry- 100 Poems for the Aspiring Prince"',
     'Half of a signet ring It looks like it was once the stamp for an ancient royal seal',
     'A much-loved child\'s doll embroidered with gold thread It\'s been through a lot',
+    'The perfect fitting bra, that always gets returned the very next day',
 ]
 
 Gear = {
