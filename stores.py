@@ -3,9 +3,9 @@ from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jewel
     Jewelling, Brothel, Gunsmithing
 from variance import normalize_dict
 from character import create_person
-import simplejson as json
 from masterwork import special_masterwork_weapon, special_masterwork_armor
 from resources import *
+import simplejson as json
 
 SpellSource = json.load(open('settings.json', 'r'))['System']
 if SpellSource == 'D&D 5':
@@ -312,6 +312,15 @@ class Weapon(object):
 
         else:  # Common Materials
             m = self.__verify_metal(common_material)
+
+        if m[0] in ['Cold Iron', 'Cold Siccatite']:
+            self.Damage.append('Cold')
+        elif m[0] in ['Elysian Bronze']:
+            self.Damage.append('Radiant')
+        elif m[0] in ['Hot Siccatite']:
+            self.Damage.append('Fire')
+        elif m[0] in ['Mindglass']:
+            self.Damage.append('Psychic')
 
         self.Name = m[0] + ' ' + self.Name
         self.__weigh(m[0], m[1])
