@@ -19,7 +19,7 @@
 
           // Loop through Suggestions
           for (let i = 0; i < len; i++) {
-            temp_list += "<li class=\"suggestion\"><div class=\"button_eq\" onclick=\"document.getElementById('name').value = '" + names[i] + "';\">" + names[i] + "</div></li>";
+            temp_list += "<li class=\"suggestion\"><div class=\"button_eq\" onclick=\"document.getElementById('name').value = '" + names[i] + "';document.getElementById('suggestion').innerHTML = '';\">" + names[i] + "</div></li>";
           }
           
           // Post
@@ -32,6 +32,31 @@
         eel.submit(document.getElementById('name').value, cr_selected.options[cr_selected.selectedIndex].value)().then(text => {
           document.getElementById('body').innerHTML = text;
         });
+      }
+
+      function print_monster() {
+        var mywindow = window.open('', 'PRINT', 'height=400,width=600');
+
+        mywindow.document.write('<html>');
+        mywindow.document.write(document.getElementById('body').innerHTML);
+        mywindow.document.write('</html>');
+
+        mywindow.document.close(); // necessary for IE >= 10
+        mywindow.focus(); // necessary for IE >= 10*/
+
+        mywindow.print();
+        mywindow.close();
+
+        return true;
+      }
+
+      function show_hide(ident) {
+        var a = document.getElementById(ident);
+        if (a.style.display === 'none') {
+          a.style.display = block;
+        } else {
+          a.style.display = none;
+        }
       }
     </script>
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -110,7 +135,9 @@
         <td>
           <div class="button_eq" style="text-align: center;" onclick="submit();">Submit</div>
         </td>
-        <td></td>
+        <td>
+          <div class="button_eq" style="text-align: center;" onclick="print_monster();">Print</div>
+        </td>
       </tr>
     </table>
     <div id="body"></div>
