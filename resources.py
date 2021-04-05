@@ -1,4 +1,7 @@
 import simplejson as json
+
+MasterID = 1
+
 '''
     'Sample' : { 'Weight': 10, 'Cost' : 1, 'Type' : ['B','S','P','LA','MA','HA','2','1','Si','Ma','Ex','Ra','Ar',], },
 B, S, P          - Blunt, Slash, Pierce
