@@ -1024,7 +1024,7 @@ class Enchant(object):
         return self.Spell + ' (' + determine_cost(self.Cost) + ')'
 
 
-class Book(object):
+class Book(Item):
     g = {
         0: 'Children',
         1: 'Drama',
@@ -1038,22 +1038,10 @@ class Book(object):
         9: 'Tome',
     }
 
-    Name = Genre = ''
-    Cost = 0
-
     def __init__(self, rarity):
-        self.Genre = self.g[rarity]
-        self.Name = str(Books(genre=self.Genre))
+        self.Category = self.g[rarity]
+        self.Title = str(Books(genre=self.Category))
         self.Cost = 0.5 + random_sample()
-
-    def __str__(self):
-        s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + \
-            """</span></td><td>""" + determine_cost(self.Cost) + """</td><td>""" + \
-            self.Genre + """</td></tr>"""
-        return s
-
-    def to_string(self):
-        return self.Name + ' (Book) (' + determine_cost(self.Cost) + ')'
 
 
 class Potion(object):
