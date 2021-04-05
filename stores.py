@@ -1715,23 +1715,18 @@ class Wondrous(object):
         return self.Name + ' (' + determine_cost(self.Cost) + ')'
 
 
-class Person(object):
+class Person(Item):
     Person = None
-    Cost = 0
 
     def __init__(self, useless):
         # Even though this has an argument, It needs it, but it's useless
         self.Person = create_person(None)
+        self.Title = self.Person.Name + ' (' + self.Person.Race + ')'
+        self.Description = self.Person.Appearance + '; Age ' + str(self.Person.Age)
+        self.Category = self.Person.Gender + ' wanting ' + self.Person.Orientation
         self.Cost = random_sample() + .1
-
-    def __str__(self):
-        if self.Cost is None or self.Person.Gender is None:
-            print(self.Cost)
-            print(self.Person.Gender)
-        return '<tr><td style="width:50%;"><span class="text-md">' + self.Person.Name + ' (' + self.Person.Race + ')' +\
-               '</span><br /><span class="text-sm emp">' + self.Person.Appearance + '; Age ' + str(self.Person.Age) + \
-               '</span></td><td>' + determine_cost(self.Cost) + '</td><td>' + self.Person.Gender + ' wanting ' +\
-               self.Person.Orientation + '</td></tr>'
+        self.Expandable = False
+        self.Linkable = False
 
 
 def create_variety_shop(owner, quan, inflate=1):
