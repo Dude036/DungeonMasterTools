@@ -216,6 +216,27 @@ class Store(object):
                     self.Stock.append(General(0, True))
 
 
+class Item:
+    Title = Description = Category = ""
+    Cost = 0
+    Expandable = False
+
+    def __str__(self):
+        global MasterID
+        s = '<tr><td style="width:50%;"><span class="text-md"'
+        if self.Expandable:
+            s += """onclick="show_hide('""" + str(MasterID) + """')" style="color:blue;"""
+        s += '>' + self.Title + '</span>'
+        if self.Description != "":
+            s += '<br /><span class="text-sm emp"'
+            if self.Expandable:
+                s += ' id=\"' + str(MasterID) + '\" style="display: none;"'
+                MasterID += 1
+            s += '>' + self.Description + '</span>'
+        s += '</td><td>' + determine_cost(self.Cost) + '</td><td>' + self.Category + '</td>'
+        return s
+
+
 class Weapon(object):
     """
     Cost should be in GP
