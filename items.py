@@ -1,4 +1,5 @@
-from resources import MasterID
+from resources import MasterID, Food_f1, Food_m1, Food_v1, Food_g1, Food_f2, Food_m2, Food_v2, Food_g2, Food_m3,\
+    Food_g3, Food_spice, Drink_d1, Drink_d2
 from numpy.random import randint, choice, random_sample
 from character import create_person
 from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jeweller, Blacksmith, GeneralStore, Weapons,\
@@ -99,3 +100,76 @@ class Person(Item):
         self.Cost = random_sample() + .1
         self.Expandable = False
         self.Linkable = False
+
+
+class Food(Item):
+    def __init__(self, rarity):
+        s = ""
+        meal_option = randint(15) + rarity
+        if meal_option <= 10:
+            self.Category = "Meat, Bread"
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(len(Food_m2))] + " " + Food_m3[randint(
+                len(Food_m3))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+        elif meal_option == 11:
+            self.Category = "Meat, Bread, Fruit"
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(len(Food_m2))] + " " + Food_m3[randint(
+                len(Food_m3))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+            s += " and a side of " + Food_f1[randint(len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+
+        elif meal_option == 12:
+            self.Category = "Meat, Bread, Vegetable"
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(len(Food_m2))] + " " + Food_m3[randint(
+                len(Food_m3))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+            s += " and a side of " + Food_v1[randint(len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
+        elif meal_option == 13:
+            self.Category = "Vegetable, Bread, Fruit"
+            s += Food_v1[randint(len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+            s += " and a side of " + Food_f1[randint(len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+        elif meal_option == 14:
+            self.Category = "Meat, Fruit, Vegetable"
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(len(Food_m2))] + " " + Food_m3[randint(len(Food_m3))]
+            s += " with " + Food_f1[randint(len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+            s += " and " + Food_v1[randint(len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
+        else:
+            self.Category = "Meat, Fruit, Vegetable, Bread"
+            s += Food_m1[randint(len(Food_m1))] + Food_m2[randint(len(Food_m2))] + " " + Food_m3[randint(
+                len(Food_m3))] + " with a "
+            s += Food_g1[randint(len(Food_g1))] + Food_g2[randint(len(Food_g2))] + " " + Food_g3[randint(len(Food_g3))]
+            s += " with " + Food_f1[randint(len(Food_f1))] + ' ' + Food_f2[randint(len(Food_f2))]
+            s += " and " + Food_v1[randint(len(Food_v1))] + ' ' + Food_v2[randint(len(Food_v2))]
+        self.Title = s
+        if meal_option == 0:
+            self.Cost = (len(s) * random_sample() + .5) // 10
+        else:
+            self.Cost = (len(s) * sum(random_sample(meal_option))) // 10
+
+    def __str__(self):
+        s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Title + """</span></td><td>""" + \
+            determine_cost(self.Cost) + """</td><td>""" + self.Category + """</td></tr>"""
+        return s
+
+
+class Drink(Item):
+    def __init__(self, level):
+        s = ''
+        num = randint(4) + level
+        if num < 2:
+            self.Category = "Non-Alcoholic"
+            s += Drink_d1[randint(len(Drink_d1))]
+        else:
+            self.Category = "Alcoholic"
+            s += Drink_d2[randint(len(Drink_d2))]
+        self.Title = s
+        if num == 0:
+            self.Cost = (len(s) * random_sample() + .5) / 10
+        else:
+            self.Cost = (len(s) * sum(random_sample(num))) / 10
+
+    def __str__(self):
+        s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Title + """</span></td><td>""" + \
+            determine_cost(self.Cost) + """</td><td>""" + self.Category + """</td></tr>"""
+        return s
