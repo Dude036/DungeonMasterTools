@@ -173,3 +173,28 @@ class Drink(Item):
         s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Title + """</span></td><td>""" + \
             determine_cost(self.Cost) + """</td><td>""" + self.Category + """</td></tr>"""
         return s
+
+
+class Jewel(Item):
+    value = [
+        10,
+        50,
+        100,
+        500,
+        1000,
+        5000,
+    ]
+    Rarity = 0
+
+    def __init__(self, rarity):
+        self.Title = Jewelling.j1[randint(len(Jewelling.j1))] + Jewelling.j2[randint(len(Jewelling.j2))] + \
+                     Jewelling.j3[randint(len(Jewelling.j3))]
+        if rarity >= 5:
+            rarity %= 5
+        self.Rarity = rarity
+        self.Cost = self.value[self.Rarity] * (random_sample() + 1)
+        l = [
+            'Low Quality Gems', 'Semi Precious Gems', 'Medium Quality Gemstones', 'High Quality Gemstones', 'Jewels',
+            'Grand Jewels'
+        ]
+        self.Category = l[self.Rarity]

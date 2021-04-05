@@ -1169,39 +1169,6 @@ class Inn(object):
         self.__dict__.update(new_self)
 
 
-class Jewel(object):
-    value = [
-        10,
-        50,
-        100,
-        500,
-        1000,
-        5000,
-    ]
-    Name = ""
-    Cost = Rarity = 0
-
-    def __init__(self, rarity):
-        self.Name = Jewelling.j1[randint(len(Jewelling.j1))] + Jewelling.j2[randint(len(Jewelling.j2))] + \
-                    Jewelling.j3[randint(len(Jewelling.j3))]
-        if rarity >= 5:
-            rarity %= 5
-        self.Rarity = rarity
-        self.Cost = self.value[self.Rarity] * (random_sample() + 1)
-
-    def __str__(self):
-        l = [
-            'Low Quality Gems', 'Semi Precious Gems', 'Medium Quality Gemstones', 'High Quality Gemstones', 'Jewels',
-            'Grand Jewels'
-        ]
-        s = '<tr><td style="width:50%;"><span class="text-md">' + self.Name + '</span></td><td>' + \
-            determine_cost(self.Cost) + '</td><td>' + l[self.Rarity] + '</td></tr>'
-        return s
-
-    def to_string(self):
-        return self.Name + ' (' + determine_cost(self.Cost) + ')'
-
-
 class General(object):
     from trinkets import Trinkets, Gear
     Cost = 0
