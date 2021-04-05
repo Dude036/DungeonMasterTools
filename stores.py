@@ -221,7 +221,7 @@ class Item:
     Description: str = ""
     Category: str = ""
     Link: str = ""
-    Cost: int = 0
+    Cost: float = 0
     Expandable: bool = False
     Linkable: bool = False
 
