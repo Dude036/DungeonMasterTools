@@ -1,9 +1,17 @@
-from resources import MasterID, Food_f1, Food_m1, Food_v1, Food_g1, Food_f2, Food_m2, Food_v2, Food_g2, Food_m3,\
-    Food_g3, Food_spice, Drink_d1, Drink_d2
+from resources import *
 from numpy.random import randint, choice, random_sample
 from character import create_person
 from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jeweller, Blacksmith, GeneralStore, Weapons,\
     Jewelling, Brothel, Gunsmithing
+
+
+SpellSource = json.load(open('settings.json', 'r'))['System']
+if SpellSource == 'D&D 5':
+    MasterSpells = json.load(open('5e_spells.json', 'r'), encoding='utf-8')
+    MasterWondrous = json.load(open('5e_wondrous.json', 'r'), encoding='utf-8')
+elif SpellSource == 'Pathfinder 1':
+    MasterSpells = json.load(open('spells.json', 'r'), encoding='utf-8')
+    MasterWondrous = json.load(open('wondrous.json', 'r'), encoding='utf-8')
 
 
 def determine_cost(c):
@@ -198,3 +206,195 @@ class Jewel(Item):
             'Grand Jewels'
         ]
         self.Category = l[self.Rarity]
+
+
+class Art(Item):
+    materials = [['pewter', 'granite', 'soapstone', 'limestone', 'carved wood', 'ceramic'],
+                 ['pewter', 'alabaster', 'silver', 'marble', 'bronze'],
+                 ['pewter', 'alabaster', 'silver', 'marble', 'brass'], ['gold', 'adamantine', 'dragonbone', 'crystal']]
+    gems = [[
+        'n azurite', ' banded agate', ' blue quartz', ' hematite', ' lapis lazuli', ' malachite', ' moss agate',
+        'n obsidian piece', ' tiger eye', ' beryl'
+    ],
+            [
+                ' bloodstone', ' carnelian', ' chalcedony', ' citrine', ' jasper', ' moonstone', ' n onyx', ' zircon',
+                ' chrysophase'
+            ],
+            [
+                'n amber', 'n amethyst', ' piece of coral', ' garnet', ' piece of jade', ' pearl', ' spinel',
+                ' tourmaline'
+            ], ['n alexandrite', 'n aquamarine', ' topaz', ' peridot', ' blue spinel', ' black pearl', ' diamond']]
+    filigree = [['copper', 'oak wood', 'tin', 'bronze', 'bone'], ['brass', 'maple wood', 'iron', 'glass', 'bone'],
+                ['gold', 'mahogany wood', 'glass', 'ivory', 'mythril'], ['platinum', 'ironwood', 'mythril', 'ivory']]
+    descriptor = [
+        'ugly', 'beautiful', 'ancient', 'old', 'strange', 'antique', 'durable', 'sturdy', 'engraved', 'ornate', 'rough',
+        'ornamental'
+    ]
+    cloth = ['silk', 'wool', 'leather', 'fur', 'angelskin', 'darkleaf', 'griffon mane']
+    bad_condition = [
+        'in poor condition', 'of poor craftsmanship', 'of shoddy construction', 'in bad shape', 'of low quality'
+    ]
+    figurine = [
+        'a dragon', 'a gryphon', 'a hydra', 'an owlbear', 'a beholder', 'a boar', 'a bear', 'a wolf', 'a fox',
+        'a tiger', 'a lion', 'a horse', 'an owl', 'a hawk', 'an eagle', 'a crow', 'a snake', 'a fish', 'a shark',
+        'a goblin', 'a skeleton', 'an orc', 'a minotaur', 'a tiefling', 'a warrior', 'a knight', 'a thief', 'a wizard',
+        'a ship', 'a castle', 'a tower', 'a boat', 'a king', 'a queen', 'a princess', 'a god', 'a goddess'
+    ]
+    object = [
+        'ring', 'tankard', 'goblet', 'cup', 'drinking horn', 'crown', 'circlet', 'tiara', 'pendant', 'necklace',
+        'amulet', 'medallion', 'bowl', 'plate', 'jewelry box', 'music box', 'brooch', 'chess set', 'mask', 'holy text',
+        'hourglass', 'vase'
+    ]
+    magic = [
+        'It glows with a soft blue light', 'It glows with a soft green light', 'It glows with a soft red light',
+        'It glows with a soft amber light', 'It glows with a soft violet light', 'It is warm to the touch',
+        'It is hot to the touch', 'It is cool to the touch', 'It is cold to the touch', 'It hums with gentle music',
+        'It hums with melodic music', 'It hums with soft music', 'It is wreathed in blue flames',
+        'It is wreathed in green flames', 'It is wreathed in red flames', 'It is wreathed in amber flames',
+        'It is wreathed in violet flames'
+    ]
+
+    def __init__(self, quality):
+        if quality > 5:
+            quality %= 6
+        c = randint(10)
+        if quality == 0:
+            c %= 3
+            if c == 0:
+                self.Description = choice(['Silvered', 'Gilded']) + ' ' + choice(['bottle', 'flask', 'jug']) + \
+                                   ' of ' + choice(['dwarven', 'elven', 'Dragonborn']) + ' ' + \
+                                   choice(['beer', 'wine', 'ale', 'mead'])
+            elif c == 1:
+                self.Description = 'Pair of ' + choice(self.descriptor) + ' ' + choice(self.cloth) + ' gloves'
+            elif c == 2:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.cloth) + ' ' + choice(['hat', 'ribbon'])
+        elif quality == 1:
+            c %= 6
+            if c == 0:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[0]) + ' ' + \
+                                   choice(self.figurine) + ', ' + choice(self.bad_condition)
+            elif c == 1:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[0]) + ' ' + \
+                                   choice(self.object) + ', ' + choice(self.bad_condition)
+            elif c == 2:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[0]) + ' ' + \
+                                   choice(self.figurine) + ', inlaid with ' + choice(self.filigree[0])
+            elif c == 3:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[0]) + ' ' + \
+                                   choice(self.object) + ', inlaid with ' + choice(self.filigree[0])
+            elif c == 4:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[0]) + ' ' + \
+                                   choice(self.figurine) + ', set with a' + choice(self.gems[0])
+            elif c == 5:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[0]) + ' ' + \
+                                   choice(self.object) + ', set with a' + choice(self.gems[0])
+        elif quality == 2:
+            c %= 2
+            if c == 0:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.cloth) + ' ' + \
+                                   choice(['cloth', 'cloak']) + ' with ' + choice(self.materials[1]) + ' clasps'
+            elif c == 1:
+                self.Description = choice(self.descriptor) + ' belt with a(n) ' + choice(self.materials[1]) + ' buckle'
+        elif quality == 3:
+            c %= 8
+            if c == 0:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[1]) + ' ' + \
+                                   choice(self.figurine) + ', inlaid with ' + choice(self.filigree[1])
+            elif c == 1:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[1]) + ' ' + \
+                                   choice(self.object) + ', inlaid with ' + choice(self.filigree[1])
+            elif c == 2:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[1]) + ' ' + \
+                                   choice(self.figurine) + ', set with a' + choice(self.gems[2])
+            elif c == 3:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[1]) + ' ' + \
+                                   choice(self.object) + ', set with a' + choice(self.gems[2])
+            elif c == 4:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[2]) + ' ' + \
+                                   choice(self.figurine) + ', inlaid with ' + choice(self.filigree[1])
+            elif c == 5:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[2]) + ' ' + \
+                                   choice(self.object) + ', inlaid with ' + choice(self.filigree[1])
+            elif c == 6:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[2]) + ' ' + \
+                                   choice(self.figurine) + ', set with a' + choice(self.gems[2])
+            elif c == 7:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[2]) + ' ' + \
+                                   choice(self.object) + ', set with a' + choice(self.gems[2])
+        elif quality == 4:
+            c %= 5
+            if c == 0:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[2]) + ' ' + \
+                                   choice(self.figurine) + ', inlaid with ' + choice(self.filigree[2])
+            elif c == 1:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[2]) + ' ' + \
+                                   choice(self.object) + ', inlaid with ' + choice(self.filigree[2])
+            elif c == 2:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[2]) + ' ' + \
+                                   choice(self.figurine) + ', set with a' + choice(self.gems[3])
+            elif c == 3:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[2]) + ' ' + \
+                                   choice(self.object) + ', set with a' + choice(self.gems[3])
+            elif c == 4:
+                self.Description = choice(self.materials[3]) + ' framed painting of ' + choice(self.figurine)
+        elif quality == 5:
+            c %= 4
+            if c == 0:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[3]) + ' ' + \
+                                   choice(self.figurine) + ', inlaid with ' + choice(self.filigree[3]) + ' ' + \
+                                   choice(self.magic)
+            elif c == 1:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[3]) + ' ' + \
+                                   choice(self.object) + ', inlaid with ' + choice(self.filigree[3]) + ' ' + \
+                                   choice(self.magic)
+            elif c == 2:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[3]) + ' ' + \
+                                   choice(self.figurine) + ', set with a' + choice(self.gems[3]) + ' ' + \
+                                   choice(self.magic)
+            elif c == 3:
+                self.Description = choice(self.descriptor) + ' ' + choice(self.materials[3]) + ' ' + \
+                                   choice(self.object) + ', set with a' + choice(self.gems[3]) + ' ' + \
+                                   choice(self.magic)
+        self.Description = self.Description.title()
+        cost_factor = [50, 150, 500, 1000, 5000, 10000, 50000]
+        self.Cost = cost_factor[quality + 1]
+        self.Category = quality+1
+
+
+class Wondrous(Item):
+    Aura = Slot = ''
+    CL = Weight = 0
+
+    def __init__(self, cl=-1):
+        self.Category = "Wondrous Item"
+        self.Linkable = True
+        if cl == -1 or SpellSource == 'D&D 5':
+            pick = choice(list(MasterWondrous.keys()))
+            self.Title = pick
+            self.Link = MasterWondrous[pick]['Link']
+            self.Cost = int(MasterWondrous[pick]['Price'])
+            self.CL = MasterWondrous[pick]['CL']
+            self.Aura = MasterWondrous[pick]['Aura']
+            self.Slot = MasterWondrous[pick]['Slot']
+            self.Weight = MasterWondrous[pick]['Weight']
+        elif SpellSource == 'Pathfinder 1' and cl != -1:
+            i = 0
+            while True:
+                pick = choice(list(MasterWondrous.keys()))
+                if cl == int(MasterWondrous[pick]['CL']):
+                    self.Title = pick
+                    self.Link = MasterWondrous[pick]['Link']
+                    self.Cost = int(MasterWondrous[pick]['Price'])
+                    self.CL = int(MasterWondrous[pick]['CL'])
+                    self.Aura = MasterWondrous[pick]['Aura']
+                    self.Slot = MasterWondrous[pick]['Slot']
+                    self.Weight = MasterWondrous[pick]['Weight']
+                    break
+                elif i == 100:
+                    i = 0
+                    cl = int(MasterWondrous[pick]['CL']) + 1
+                else:
+                    i += 1
+        self.Description = 'Aura ' + self.Aura + '; CL ' + str(self.CL) + '; Weight ' + \
+                           str(self.Weight) + '; Slot ' + self.Slot
+
