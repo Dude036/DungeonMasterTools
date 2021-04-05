@@ -1169,62 +1169,6 @@ class Inn(object):
         self.__dict__.update(new_self)
 
 
-class General(object):
-    from trinkets import Trinkets, Gear
-    Cost = 0
-    Name = Type = Describe = ''
-
-    def __init__(self, level, trinket=False):
-        if not trinket:
-            if level == 0:
-                self.Name = self.__choose_type__('C')
-                self.Cost = self.Gear['C'][self.Name]['Base Price']
-                self.Type = self.Gear['C'][self.Name]['Class']
-            elif level == 1:
-                self.Name = self.__choose_type__('U')
-                self.Cost = self.Gear['U'][self.Name]['Base Price']
-                self.Type = self.Gear['U'][self.Name]['Class']
-            elif level == 2:
-                self.Name = self.__choose_type__('R')
-                self.Cost = self.Gear['R'][self.Name]['Base Price']
-                self.Type = self.Gear['R'][self.Name]['Class']
-            elif level == 3:
-                self.Name = self.__choose_type__('E')
-                self.Cost = self.Gear['E'][self.Name]['Base Price']
-                self.Type = self.Gear['E'][self.Name]['Class']
-        else:
-            self.Name = "Trinket"
-            self.Cost = random_sample() * 10
-            self.Describe = choice(self.Trinkets)
-            self.Type = "Trinket"
-
-    def __choose_type__(self, rarity):
-        options = {
-            'Adventuring Gear/Luxury Items': 250,
-            'Tools & Skill Kits': 200,
-            'Food & Drink & Lodging': 150,
-            'Clothing': 150,
-            'Services': 5,
-            'Transport': 5,
-        }
-        c = choice(list(options.keys()), p=list(normalize_dict(options).values()))
-        item = choice(list(self.Gear[rarity].keys()))
-        while self.Gear[rarity][item]['Class'] != c:
-            item = choice(list(self.Gear[rarity].keys()))
-        return item
-
-    def __str__(self):
-        d = ""
-        if self.Describe != "":
-            d += '<br /><span class="text-sm emp">' + self.Describe + '</span>'
-        s = '<tr><td style="width:50%;"><span class="text-md">' + self.Name + d + '</span></td><td>' + \
-            determine_cost(self.Cost) + '</td><td>' + self.Type + '</td></tr>'
-        return s
-
-    def to_string(self):
-        return self.Name + ' (' + determine_cost(self.Cost) + ')'
-
-
 class Ring(object):
     Spell = Name = ""
     Level = Cost = 0

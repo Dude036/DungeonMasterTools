@@ -3,6 +3,7 @@ from numpy.random import randint, choice, random_sample
 from character import create_person
 from names import Antiques, Books, Enchanter, Potions, Tavern, Restaurant, Jeweller, Blacksmith, GeneralStore, Weapons,\
     Jewelling, Brothel, Gunsmithing
+from variance import normalize_dict
 
 
 SpellSource = json.load(open('settings.json', 'r'))['System']
@@ -398,3 +399,45 @@ class Wondrous(Item):
         self.Description = 'Aura ' + self.Aura + '; CL ' + str(self.CL) + '; Weight ' + \
                            str(self.Weight) + '; Slot ' + self.Slot
 
+
+class General(Item):
+    from trinkets import Trinkets, Gear
+
+    def __init__(self, level, trinket=False):
+        if not trinket:
+            if level == 0:
+                self.Title = self.__choose_type__('C')
+                self.Cost = self.Gear['C'][self.Title]['Base Price']
+                self.Category = self.Gear['C'][self.Title]['Class']
+            elif level == 1:
+                self.Title = self.__choose_type__('U')
+                self.Cost = self.Gear['U'][self.Title]['Base Price']
+                self.Category = self.Gear['U'][self.Title]['Class']
+            elif level == 2:
+                self.Title = self.__choose_type__('R')
+                self.Cost = self.Gear['R'][self.Title]['Base Price']
+                self.Category = self.Gear['R'][self.Title]['Class']
+            elif level == 3:
+                self.Title = self.__choose_type__('E')
+                self.Cost = self.Gear['E'][self.Title]['Base Price']
+                self.Category = self.Gear['E'][self.Title]['Class']
+        else:
+            self.Title = "Trinket"
+            self.Cost = random_sample() * 10
+            self.Description = choice(self.Trinkets)
+            self.Category = "Trinket"
+
+    def __choose_type__(self, rarity):
+        options = {
+            'Adventuring Gear/Luxury Items': 250,
+            'Tools & Skill Kits': 200,
+            'Food & Drink & Lodging': 150,
+            'Clothing': 150,
+            'Services': 5,
+            'Transport': 5,
+        }
+        c = choice(list(options.keys()), p=list(normalize_dict(options).values()))
+        item = choice(list(self.Gear[rarity].keys()))
+        while self.Gear[rarity][item]['Class'] != c:
+            item = choice(list(self.Gear[rarity].keys()))
+        return item
