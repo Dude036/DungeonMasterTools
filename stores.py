@@ -1318,22 +1318,15 @@ class Drink(object):
         return s
 
 
-class Room(object):
-    Name = ""
-    Beds = Cost = 0
-
-    def __init__(self, beds, qual, name=None):
-        self.Beds = beds
-        if name is not None:
-            self.Name = name
-        else:
-            self.Name = str(self.Beds) + " Bed"
+class Room(Item):
+    def __init__(self, beds: int, qual: int):
+        self.Title = str(beds) + " Beds"
         self.Cost = 0.5 * (qual + 1) * beds
-
-    def __str__(self):
-        s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + ' (Room Rental)</span></td><td>' + \
-            determine_cost(self.Cost) + """</td><td>Lodging</td></tr>"""
-        return s
+        self.Description = ""
+        self.Category = "Lodging"
+        self.Link = ""
+        self.Expandable = False
+        self.Linkable = False
 
 
 class Jewel(object):
