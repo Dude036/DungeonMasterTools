@@ -17,9 +17,11 @@ townHTML = '<!DOCTYPE html><html><head><meta name="viewport" content="width=devi
            'float: left;} .col-2-3{width:50%;float:left;} .col-3-3{width:100%;float:left;} .col-1-2{width:50%;float:le'\
            'ft;} .col-2-2{width:100%;float:left;} .col-1-4{width:25%;float:left;} .col-2-4{width:33.3%;float:left;} .c'\
            'ol-3-4{width:50%;float:left;} .col-4-4{width:100%;float:left;} .inventory-table td{border-bottom:1px solid'\
-           ' black;}.wrapper-box{width:100%;border:2px solid black;padding:5px;}</style></head><body><script>function '\
-           'show_hide(ident){\nvar a = document.getElementById(ident);\nif (a.style.display === \'none\'){\na.style.di'\
-           'splay = \'block\';} else {a.style.display = \'none\';}}</script>'
+           ' black;}.wrapper-box{width:100%;border:2px solid black;padding:5px;}.attacks{display: flex; flex-wrap: wra'\
+           'p; align-items: flex-start; width: 100%; padding-top: 10px; padding-bottom: 20px}.attacks table{width: 44%'\
+           '; margin-left: 3%;margin-right: 3%; margin-bottom: 1%;}</style></head><body><script>function show_hide(ide'\
+           'nt){\nvar a = document.getElementById(ident);\nif (a.style.display === \'none\'){\na.style.display = \'blo'\
+           'ck\';} else {a.style.display = \'none\';}}</script>'
 
 store_head = '<div class="wrapper-box" style="margin-bottom:60px;"><span class="text-lg bold">'
 notable_head = '<table class="wrapper-box"><tr><td><span class="bold text-md">'
