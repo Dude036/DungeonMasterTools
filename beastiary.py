@@ -210,7 +210,7 @@ def print_monster(picked_monster, to_file=True):
             else:
                 add = str(b)
         html += '<td style = "text-align: center;">' + str(abilities.group(a + 1)) + ' (' + add + ')</td>'
-    html += '</tr></table><ul style="columns: 2;padding: 10px;">'
+    html += '</tr></table><div class="attacks">'
 
     total_weapons = 0
     if monster_type == 'Pokemon':
@@ -250,7 +250,7 @@ def print_monster(picked_monster, to_file=True):
     if total_weapons % 2 == 1:
         html += '<table><td style="width: 50%"><span class="text-md"></span><br /><span class="text-sm emp"></span>' + \
                 '</td></table>'
-    html += '</ul><p><strong>Treasure:</strong></p><table class="inventory-table" style="width:100%;"><tbody><tr>' + \
+    html += '</div><p><strong>Treasure:</strong></p><table class="inventory-table" style="width:100%;"><tbody><tr>' + \
             '<th style="text-align:left;">Item</th><th style="text-align:left;">Cost</th><th style="text-align:left;">' + \
             'Rarity</th></tr>'
 
