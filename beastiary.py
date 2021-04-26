@@ -161,7 +161,9 @@ def print_monster(picked_monster, to_file=True):
            '.text-xl{font-size:32px;}.col-1-3{width:33.3%;float: left;}.col-2-3{width:50%;float:left;}' + \
            '.col-3-3{width:100%;float:left;}.col-1-2{width:50%;float:left;}.col-2-2{width:100%;float:left;}' + \
            '.col-1-4{width:25%;float:left;}.col-2-4{width:33.3%;float:left;}.col-3-4{width:50%;float:left;}' + \
-           '.col-4-4{width:100%;float:left;}</style><style type="text/css">.inventory-table td{border-bottom:' + \
+           '.col-4-4{width:100%;float:left;}.attacks{display: flex; flex-wrap: wrap; align-items: flex-start; ' + \
+           'width: 100%; padding-top: 10px; padding-bottom: 20px}.attacks table{width: 44%; margin-left: 3%;' + \
+           'margin-right: 3%; margin-bottom: 1%;}</style><style type="text/css">.inventory-table td{border-bottom:' + \
            '1px solid black;}.wrapper-box{width:100%;border:2px solid black;padding:5px;}</style></head>' + \
            '<script>function show_hide(ident){\nvar a = document.getElementById(ident);\nif (a.style.display ===' + \
            """""""'none'){\na.style.display = 'block';} else {a.style.display = 'none';}}</script>""" + \
