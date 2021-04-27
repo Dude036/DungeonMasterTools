@@ -1,7 +1,6 @@
 from numpy.random import randint, choice, random_sample
 from names import Antiques, Enchanter, Potions, Tavern, Restaurant, Jeweller, Blacksmith, GeneralStore, Weapons,\
     Jewelling, Brothel, Gunsmithing
-from variance import normalize_dict
 from masterwork import special_masterwork_weapon, special_masterwork_armor
 from resources import *
 import simplejson as json
