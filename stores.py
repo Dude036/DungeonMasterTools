@@ -581,84 +581,24 @@ class Armor(object):
     }
     medium_armor = {
         # Name	: 			HP, AC, Cost, Weight
-        'Hide': [
-            15,
-            2,
-            15,
-            25,
-        ],
-        'Scale mail': [
-            20,
-            2,
-            50,
-            30,
-        ],
-        'Chainmail': [
-            25,
-            3,
-            150,
-            40,
-        ],
-        'Breastplate': [
-            25,
-            3,
-            200,
-            30,
-        ],
+        'Hide': [15, 2, 15, 25],
+        'Scale mail': [20, 2, 50, 30],
+        'Chainmail': [25, 3, 150, 40],
+        'Breastplate': [25, 3, 200, 30],
     }
     heavy_armor = {
         # Name	: 			HP, AC, Cost, Weight
-        'Splint mail': [
-            30,
-            3,
-            200,
-            45,
-        ],
-        'Banded mail': [
-            30,
-            3,
-            250,
-            35,
-        ],
-        'Half-plate': [
-            35,
-            4,
-            600,
-            50,
-        ],
-        'Full plate': [
-            40,
-            4,
-            1500,
-            50,
-        ],
+        'Splint mail': [30, 3, 200, 45],
+        'Banded mail': [30, 3, 250, 35],
+        'Half-plate': [35, 4, 600, 50],
+        'Full plate': [40, 4, 1500, 60],
     }
     shield = {
         # Name	: 			HP, AC, Cost, Weight
-        'Buckler': [
-            5,
-            1,
-            5,
-            5,
-        ],
-        'Light Shield': [
-            10,
-            1,
-            9,
-            6,
-        ],
-        'Heavy Shield': [
-            20,
-            2,
-            20,
-            15,
-        ],
-        'Tower Shield': [
-            20,
-            4,
-            30,
-            45,
-        ],
+        'Buckler': [5, 1, 5, 5],
+        'Light Shield': [10, 1, 9, 6],
+        'Heavy Shield': [20, 2, 20, 15],
+        'Tower Shield': [20, 4, 50, 45],
     }
 
     Weight = Cost = Rarity = Masterwork = AC = 0
@@ -723,19 +663,19 @@ class Armor(object):
         elif self.Class == 'Medium':
             c = choice(list(self.medium_armor.keys()))
             self.AC += self.medium_armor[c][1]
-            self.Cost = round(self.Cost * self.medium_armor[c][2] * (self.Rarity + 1)**self.Rarity)
+            self.Cost = round(self.Cost * self.medium_armor[c][2] * (self.Rarity + 1.5)**self.Rarity)
             self.Weight *= round(self.medium_armor[c][3], 1)
             self.Name = self.Metal + " " + c
         elif self.Class == 'Heavy':
             c = choice(list(self.heavy_armor.keys()))
             self.AC += self.heavy_armor[c][1]
-            self.Cost = round(self.Cost * self.heavy_armor[c][2] * (self.Rarity + 1)**self.Rarity)
+            self.Cost = round(self.Cost * self.heavy_armor[c][2] * (self.Rarity + 3)**self.Rarity)
             self.Weight *= round(self.heavy_armor[c][3], 1)
             self.Name = self.Metal + " " + c
         else:
             c = choice(list(self.shield.keys()))
             self.AC += self.shield[c][1]
-            self.Cost = round(self.Cost * self.shield[c][2] * (self.Rarity + 1)**self.Rarity)
+            self.Cost = round(self.Cost * self.shield[c][2] * (self.Rarity + 2)**self.Rarity)
             self.Weight *= round(self.shield[c][3], 1)
             self.Name = self.Metal + " " + c
         # print(c)
@@ -755,6 +695,12 @@ class Armor(object):
             "Level 8",
             "Level 9",
         ]
+        md = {
+            'Light': " + DEX",
+            'Medium': " + Half DEX",
+            'Heavy': "",
+            'Shield': ""
+        }
 
         if self.Enchantment is None:
             enchant_lvl = ''
@@ -766,15 +712,15 @@ class Armor(object):
         master = "Masterwork " if self.Masterwork > 0 else ""
         if self.Enchantment is None and self.Special == '':
             s = """<tr><td style="width:50%;"><span class="text-md">""" + self.Name + ' (' + self.Class + \
-                """) </span><br /><span class="text-sm emp">""" + 'AC: +' + str(self.AC) + ' Weight: ' + \
-                str(self.Weight) + """ lbs</span></td><td>""" + determine_cost(self.Cost) + """</td><td>""" + \
+                """) </span><br /><span class="text-sm emp">""" + 'AC: +' + str(self.AC) + md[self.Class] + \
+                ' Weight: ' + str(self.Weight) + " lbs</span></td><td>" + determine_cost(self.Cost) + "</td><td>" + \
                 master + r[self.Rarity] + """</td></tr>"""
         else:
             s = '<tr><td style="width:50%;"><span class="text-md" onclick="show_hide(\'' + str(MasterID) + '\')"' + \
                 ' style="color:blue;">' + self.Name + ' (' + self.Class + ') </span><br /><span class="text-sm ' + \
-                'emp" id=\"' + str(MasterID) + '\" style="display: none;">' + 'AC: +' + str(self.AC) + ' Weight: ' + \
-                str(self.Weight) + " lbs " + self.Text + enchanted + '</span></td><td>' + determine_cost(self.Cost) + \
-                '</td><td>' + master + r[self.Rarity] + enchant_lvl + '</td></tr>'
+                'emp" id=\"' + str(MasterID) + '\" style="display: none;">AC: +' + str(self.AC) + md[self.Class] + \
+                ' Weight: ' + str(self.Weight) + " lbs " + self.Text + enchanted + '</span></td><td>' + \
+                determine_cost(self.Cost) + '</td><td>' + master + r[self.Rarity] + enchant_lvl + '</td></tr>'
             MasterID += 1
         return s
 
