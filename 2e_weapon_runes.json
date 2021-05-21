@@ -1,0 +1,447 @@
+{
+  "Anarchic": {
+    "Description": "<p>An anarchic rune is jagged and asymmetrical, channeling chaotic energy. A weapon with this rune deals an additional 1d6 chaotic damage against lawful targets. If you are lawful, you are enfeebled 2 while carrying or wielding this weapon.</p><p>When you critically succeed at a Strike with this weapon against a lawful creature, roll 1d6. On a 1 or 2, you deal double minimum damage; on a 3 or 4, double your damage normally; on a 5 or 6, you deal double maximum damage</p>",
+    "Level": 11,
+    "Price": 1400,
+    "Rarity": "Common",
+    "Traits": [
+      "Chaotic",
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Ancestral Echoing": {
+    "Description": "<p>The wisdom of this weapon’s past owners flows into your mind, amplifying your own abilities with the weapon. Your proficiency rank with this weapon is one step higher than normal, to a maximum of the highest proficiency rank you have in any weapon. For instance, if you had master proficieny with martial weapons and expert proficiency with advanced weapons, you would have master proficiency with advanced weapon that had this rune.</p><p>In addition, while wielding the ancestral echoing weapon, you have expert proficiency in one Lore skill relevant to one or more of the weapon’s previous owners. This is typically Dwarven Lore but is ultimately determined by the GM depending on the weapon’s history.</p>",
+    "Level": 15,
+    "Price": 9500,
+    "Rarity": "Rare",
+    "Traits": [
+      "Dwarf",
+      "Evocation",
+      "Magical",
+      "Saggorak"
+    ]
+  },
+  "Axiomatic": {
+    "Description": "<p>Complex and symmetrical, an axiomatic rune imbues a weapon with lawful energy. A weapon with this rune deals an additional 1d6 lawful damage against chaotic targets. If you are chaotic, you are enfeebled 2 while carrying or wielding this weapon.</p><p>When you critically succeed at an attack roll with this weapon against a chaotic creature, instead of rolling, count each weapon damage die as average damage rounded up (3 for d4, 4 for d6, 5 for d8, 6 for d10, 7 for d12)</p>",
+    "Level": 11,
+    "Price": 1400,
+    "Rarity": "Common",
+    "Traits": [
+      "Evocation",
+      "Lawful",
+      "Magical"
+    ]
+  },
+  "Bloodbane": {
+    "Description": "<p>A bloodbane clan dagger is especially vicious against the ancestral enemies of the clan. When you damage an appropriate type of creature with the weapon, that creature takes 1 persistent bleed damage. The type of creature depends on the clan that made the dagger, but is typically drow, duergar, giant, or orc.</p><p>In addition, whenever you inflict persistent bleed damage with a bloodbane weapon (whether from its innate ability or in some other way), the weapon leaves ragged wounds. The bleeding creature must succeed at a DC 25 Fortitude save or become sickened 1. The creature is then temporarily immune for 1 hour.</p>",
+    "Level": 8,
+    "Price": 475,
+    "Rarity": "Uncommon",
+    "Traits": [
+      "Dwarf",
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Bloodbane (Greater)": {
+    "Description": "<p>A bloodbane clan dagger is especially vicious against the ancestral enemies of the clan. When you damage an appropriate type of creature with the weapon, that creature takes 1d4 persistent bleed damage. The type of creature depends on the clan that made the dagger, but is typically drow, duergar, giant, or orc.</p><p>In addition, whenever you inflict persistent bleed damage with a bloodbane weapon (whether from its innate ability or in some other way), the weapon leaves ragged wounds. The bleeding creature must succeed at a DC 30 Fortitude save or become sickened 1. The creature is then temporarily immune for 1 hour.</p>",
+    "Level": 13,
+    "Price": 2800,
+    "Rarity": "Uncommon",
+    "Traits": [
+      "Dwarf",
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Conducting": {
+    "Description": "<p>A conducting weapon can channel energy through it. The weapon gains the resonant weapon trait, except that when you Conduct Energy, the weapon deals an additional 1d8 damage of the selected type instead of 1 additional damage per die; if the weapon already had the resonant weapon trait, it deals 1d8 damage plus 1 damage per die instead. On a critical hit, the weapon deals 1d8 persistent damage of the same type.</p>",
+    "Level": 7,
+    "Price": 300,
+    "Rarity": "Common",
+    "Traits": [
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Corrosive": {
+    "Description": "<p>Acid sizzles across the surface of the weapon. When you hit with the weapon, add 1d6 acid damage to the damage dealt. In addition, on a critical hit, the target’s armor (if any) takes 3d6 acid damage (before applying Hardness); if the target has a shield raised, the shield takes this damage instead.</p>",
+    "Level": 8,
+    "Price": 500,
+    "Rarity": "Common",
+    "Traits": [
+      "Acid",
+      "Conjuration",
+      "Magical"
+    ]
+  },
+  "Corrosive (Greater)": {
+    "Description": "<p>Acid sizzles across the surface of the weapon. When you hit with the weapon, add 1d6 acid damage to the damage dealt. The acid damage dealt by this weapon ignores the target’s acid resistance. In addition, on a critical hit, the target’s armor (if any) takes 6d6 acid damage (before applying Hardness); if the target has a shield raised, the shield takes this damage instead.</p>",
+    "Level": 15,
+    "Price": 6500,
+    "Rarity": "Common",
+    "Traits": [
+      "Acid",
+      "Conjuration",
+      "Magical"
+    ]
+  },
+  "Cunning": {
+    "Description": "<p>The weapon performs divination magic on the blood of your foes, granting you insight into their abilities and weaknesses.</p><p><b>Activate:</b> Free action, Envision; <b>Frequency:</b> On your previous action this turn, you used this weapon to hit and damage a creature that has blood or other vital fluids; <b>Effect:</b> You learn the secrets the weapon gleaned from the creature's blood. Attempt to Recall Knowledge about the target of the required attack, gaining an item bonus to the Recall Knowledge skill check equal to the weapon's item bonus to attack rolls from its potency rune. If the required attack was a critical hit, you also gain a +2 circumstance bonus to this check.</p>",
+    "Level": 5,
+    "Price": 140,
+    "Rarity": "Uncommon",
+    "Traits": [
+      "Divination",
+      "Magical"
+    ]
+  },
+  "Dancing": {
+    "Description": "<p><b>Activate:</b> 2 actions, command, Interact; <b>Effect</b></p><p>You Release the weapon and it dances through the air, fighting on its own against the last enemy you attacked, or the nearest enemy to it if your target has been defeated. At the end of your turn each round, the weapon can Fly up to its fly Speed of 40 feet, and then can either Fly again or Strike one creature within its reach.</p><p>The weapon has a space of 5 feet, but it doesn’t block or impede enemies attempting to move though that space, nor does it benefit from or provide flanking. The weapon can’t move through an enemy’s space. The weapon can’t use reactions, and its Fly actions don’t trigger reactions.</p><p>While it’s activated, a dancing weapon makes Strikes with an attack modifier of +24 plus its item bonus to attack rolls. It uses the weapon’s normal damage but has a +0 Strength modifier. The weapon’s abilities that automatically trigger on a hit or critical hit still function, but the weapon can’t be activated or benefit from any of your abilities while dancing.</p><p>Each round, when the weapon is finished using its actions, attempt a DC 6 flat check. On a failure, the activation ends and the weapon falls to the ground. You can’t activate the item again for 10 minutes</p>",
+    "Level": 13,
+    "Price": 2700,
+    "Rarity": "Uncommon",
+    "Traits": [
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Disrupting": {
+    "Description": "<p>A disrupting weapon pulses with positive energy, dealing an extra 1d6 positive damage to undead. On a critical hit, the undead is also enfeebled 1 until the end of your next turn</p>",
+    "Level": 5,
+    "Price": 150,
+    "Rarity": "Common",
+    "Traits": [
+      "Magical",
+      "Necromancy"
+    ]
+  },
+  "Disrupting (Greater)": {
+    "Description": "<p>A disrupting weapon pulses with positive energy, dealing an extra 2d6 positive damage to undead. On a critical hit, the undead creature must attempt a DC 34 Fortitude save with the following effects. This is an incapacitation effect.</p><p><b>Critical Success:</b> It is enfeebled 1 until the end of your next turn.</p><p><b>Success:</b> It is enfeebled 2 until the end of your next turn.</p><p><b>Failure:</b> It is enfeebled 3 until the end of your next turn.</p><p><b>Critical Failure:</b> It is destroyed.</p>",
+    "Level": 14,
+    "Price": 4300,
+    "Rarity": "Common",
+    "Traits": [
+      "Magical",
+      "Necromancy"
+    ]
+  },
+  "Fearsome": {
+    "Description": "<p>When you critically hit with this weapon, the target becomes frightened 1.</p>",
+    "Level": 5,
+    "Price": 160,
+    "Rarity": "Common",
+    "Traits": [
+      "Emotion",
+      "Enchantment",
+      "Fear",
+      "Magical",
+      "Mental"
+    ]
+  },
+  "Fearsome (Greater)": {
+    "Description": "<p>When you critically hit with this weapon, the target becomes frightened 2.</p>",
+    "Level": 12,
+    "Price": 2000,
+    "Rarity": "Common",
+    "Traits": [
+      "Emotion",
+      "Enchantment",
+      "Fear",
+      "Magical",
+      "Mental"
+    ]
+  },
+  "Flaming": {
+    "Description": "<p>This weapon is empowered by flickering flame. The weapon deals an additional 1d6 fire damage on a successful Strike, plus 1d10 persistent fire damage on a critical hit</p>",
+    "Level": 8,
+    "Price": 500,
+    "Rarity": "Common",
+    "Traits": [
+      "Conjuration",
+      "Fire",
+      "Magical"
+    ]
+  },
+  "Flaming (Greater)": {
+    "Description": "<p>This weapon is empowered by flickering flame. The weapon deals an additional 1d6 fire damage on a successful Strike, plus 2d10 persistent fire damage on a critical hit. Damage dealt by this weapon (including persistent damage) ifnores the target’s fire resistance.</p>",
+    "Level": 15,
+    "Price": 6500,
+    "Rarity": "Common",
+    "Traits": [
+      "Conjuration",
+      "Fire",
+      "Magical"
+    ]
+  },
+  "Frost": {
+    "Description": "<p>This weapon is empowered with freezing ice. It deals an additional 1d6 cold damage on a successful Strike. On a critical hit, the target is also slowed 1 until the end of your next turn unless it succeeds at a DC 24 Fortitude save.</p>",
+    "Level": 8,
+    "Price": 500,
+    "Rarity": "Common",
+    "Traits": [
+      "Cold",
+      "Conjuration",
+      "Magical"
+    ]
+  },
+  "Frost (Greater)": {
+    "Description": "<p>This weapon is empowered with freezing ice. It deals an additional 1d6 cold damage on a successful Strike. On a critical hit, the target is also slowed 1 until the end of your next turn unless it succeeds at a DC 34 Fortitude save. Cold damage dealt by this weapon ignores the target’s cold resistance.</p>",
+    "Level": 15,
+    "Price": 6500,
+    "Rarity": "Common",
+    "Traits": [
+      "Cold",
+      "Conjuration",
+      "Magical"
+    ]
+  },
+  "Ghost Touch": {
+    "Description": "<p>The weapon can harm creatures without physical form. A ghost touch weapon is particularly effective against incorporeal creatures, which almost always have a specific vulnerability to ghost touch weapons. Incorporeal creatures can touch, hold, and wield ghost touch weapons (unlike most physical objects).</p>",
+    "Level": 4,
+    "Price": 75,
+    "Rarity": "Common",
+    "Traits": [
+      "Magical",
+      "Transmutation"
+    ]
+  },
+  "Grievous": {
+    "Description": "<p>When your attack roll with this weapon is a critical hit and gains the cricial specialization effct, you gain an additional benefit depending on the weapon group.</p>",
+    "Level": 9,
+    "Price": 700,
+    "Rarity": "Common",
+    "Traits": [
+      "Enchantment",
+      "Magical"
+    ]
+  },
+  "Holy": {
+    "Description": "<p>Holy weapons command powerful celestial energy. A weapon with this rune deals an extra 1d6 good damage against evil targets. If you are evil, you are enfeebled 2 while carrying or wielding this weapon.</p><p><b>Activate:</b> Reaction command; <b>Frequency</b> once per day; <b>Trigger</b> You critically succeed at an attack roll against an evil creature with the weapon; <b>Effect</b> You regain HP equal to double the evil creature’s level. This is a good, positive, healing effect.</p>",
+    "Level": 11,
+    "Price": 1400,
+    "Rarity": "Common",
+    "Traits": [
+      "Evocation",
+      "Good",
+      "Magical"
+    ]
+  },
+  "Keen": {
+    "Description": "<p>The edges of a keen weapon are preternaturally sharp. Attacks with this weapon are a critical hit on a 19 on the die as long as that result is a success. This property has no effect on a 19 if the result would be a failure.</p>",
+    "Level": 13,
+    "Price": 3000,
+    "Rarity": "Uncommon",
+    "Traits": [
+      "Magical",
+      "Transmutation"
+    ]
+  },
+  "Kin-Warding": {
+    "Description": "<p>A kin-warding clan dagger can deflect attacks aimed at your allies. When you use the weapon\u00e2\u20ac\u2122s parry trait, you can point the clan dagger at an adjacent ally instead of defending yourself, creating a shield of runes around them. The runic barrier grants your ally the weapon\u00e2\u20ac\u2122s circumstance bonus to AC, but you do not gain the bonus yourself.</p>",
+    "Level": 3,
+    "Price": 52,
+    "Rarity": "Uncommon",
+    "Traits": [
+      "Abjuration",
+      "Dwarf",
+      "Magical"
+    ]
+  },
+  "Pacifying": {
+    "Description": "<p>This rune turns weapons into instruments of peacemaking.</p><p><b>Activate:</b> Reaction command (mental); <b>Trigger:</b> You damage a creature with a pacifying weapon; <b>Effect:</b> The damaged creature must succeed at a DC 20 Will save or be pacified. A pacified creature takes a –2 penalty to attack rolls on any attacks that aren't nonlethal for 1 minute, and the creature also experiences a clear psychic warning that they should stop dealing lethal damage.</p>",
+    "Level": 5,
+    "Price": 150,
+    "Rarity": "Uncommon",
+    "Traits": [
+      "Enchantment",
+      "Magical"
+    ]
+  },
+  "Returning": {
+    "Description": "<p>When you make a thrown Strike with this weapon, it flies back to your hand after the Strike is complete. If your hands are full when the weapon returns, it falls to the ground in your space.</p>",
+    "Level": 3,
+    "Price": 55,
+    "Rarity": "Common",
+    "Traits": [
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Serrating": {
+    "Description": "<p>A serrating weapon’s bladed edge separates into jagged, swirling shards that spin along the blade. When dealing slashing damage, the weapon deals an additional 1d4 damage.</p><p><b>Activate</b> 1 Action Interact; <b>Effect</b> You brandish the weapon and focus its power, causing the serrated shards to buzz as they spin at a dizzying speed. On your next hit with the weapon this turn that deals slashing damage, the serrating rune adds an additional 1d12 damage instead of the additional 1d4 damage, and then the shards return to their usual speed.</p>",
+    "Level": 10,
+    "Price": 1000,
+    "Rarity": "Uncommon",
+    "Traits": [
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Shifting": {
+    "Description": "<p>With a moment of manipulation, you can shift this weapon into a different weapon with a similar form. <b>Activate</b> 1 Action Interact; <b>Effect</b> The weapon takes the shape of another melee weapon that requires the same number of hands to wield. The weapon’s runes and any precious material it’s made of apply to the weapon’s new shape. Any property runes that can’t apply to the new form are suppressed until the item takes a shape to which they can apply.</p>",
+    "Level": 6,
+    "Price": 225,
+    "Rarity": "Common",
+    "Traits": [
+      "Magical",
+      "Transmutation"
+    ]
+  },
+  "Shock": {
+    "Description": "<p>Electric arcs crisscross this weapon, dealing an extra 1d6 electricity damage on a hit. On a critical hit, electricity arcs out to deal an equal amount of electricity damage to up to two other creatures of your choice within 10 feet of the target.</p>",
+    "Level": 8,
+    "Price": 500,
+    "Rarity": "Common",
+    "Traits": [
+      "Electricity",
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Shock (Greater)": {
+    "Description": "<p>Electric arcs crisscross this weapon, dealing an extra 1d6 electricity damage on a hit. On a critical hit, electricity arcs out to deal an equal amount of electricity damage to up to two other creatures of your choice within 10 feet of the target. Electricity damage dealt by this weapon ignores the target’s electricity resistance (and the other creatures’ on a critical hit).</p>",
+    "Level": 15,
+    "Price": 6500,
+    "Rarity": "Common",
+    "Traits": [
+      "Electricity",
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Speed": {
+    "Description": "<p>Attacks with a speed weapon are supernaturally swift. While wielding a speed weapon, you gain the quickened condition, but you can use the additional action granted only to make a Strike with the etched weapon.</p>",
+    "Level": 16,
+    "Price": 10000,
+    "Rarity": "Rare",
+    "Traits": [
+      "Magical",
+      "Transmutation"
+    ]
+  },
+  "Spell-Storing": {
+    "Description": "<p>A spell-storing rune creates a reservoir of eldritch energy within the etched weapon. A spellcaster can spend 1 minute to cast a spell of 3rd level or lower into the weapon. The spell must have a casting of 2 actions or fewer and must be able to target a creature other than the caster. The spell has no immediate effect—it is instead stored for later. When you wield a spell-storing weapon, you immediately know the name and level of the stored spell.</p><p><b>Activate</b> 1 Action command; <b>Requirements</b> On your previous action this turn, you hit and damaged a creature with this weapon; <b>Effect</b> You unleash the stored spell, which uses the target of the triggering attack as the target of the spell. This empties the spell from the weapon and allows a spell to be cast into it again. If the spell requires a spell attack roll, the result of your attack roll with the weapon determines the degree of success of the spell, and if the spell requires a saving throw, the DC is 30.</p><p><b>Activate</b> 1 Action command; <b>Effect</b> Harmlessly expend the stored spell. This frees the weapon to have a new spell cast into it.</p>",
+    "Level": 13,
+    "Price": 2700,
+    "Rarity": "Uncommon",
+    "Traits": [
+      "Abjuration",
+      "Magical"
+    ]
+  },
+  "Striking": {
+    "Description": "<p>A striking rune stores destructive magic in the weapon, increasing the weapon damage dice it deals to two instead of one.</p><p>You can upgrade the striking rune already etched on this weapon to a stronger version, increasing the values of the existing rune to those of the new rune. You must have the formula of the stronger rune to do so, and the Price of the upgrade is the difference between the two runes’ Prices.</p>",
+    "Level": 4,
+    "Price": 65,
+    "Rarity": "Common",
+    "Traits": [
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Striking (Greater)": {
+    "Description": "<p>A striking rune stores destructive magic in the weapon, increasing the weapon damage dice it deals to three instead of one.</p><p>You can upgrade the striking rune already etched on this weapon to a stronger version, increasing the values of the existing rune to those of the new rune. You must have the formula of the stronger rune to do so, and the Price of the upgrade is the difference between the two runes’ Prices.</p>",
+    "Level": 12,
+    "Price": 1065,
+    "Rarity": "Common",
+    "Traits": [
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Striking (Major)": {
+    "Description": "<p>A striking rune stores destructive magic in the weapon, increasing the weapon damage dice it deals to four instead of one.</p>",
+    "Level": 19,
+    "Price": 31065,
+    "Rarity": "Common",
+    "Traits": [
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Thundering": {
+    "Description": "<p>This weapon lets out a peal of thunder when it hits, dealing an extra 1d6 sonic damage on a successful Strike. On a critical hit, the target has to succeed at a DC 24 Fortitude save or be deafened for 1 minute (or 1 hour on a critical failure).</p>",
+    "Level": 8,
+    "Price": 500,
+    "Rarity": "Common",
+    "Traits": [
+      "Evocation",
+      "Magical",
+      "Sonic"
+    ]
+  },
+  "Thundering (Greater)": {
+    "Description": "<p>This weapon lets out a peal of thunder when it hits, dealing an extra 1d6 sonic damage on a successful Strike. On a critical hit, the target has to succeed at a DC 34 Fortitude save or be deafened permenantly. Sonic damage dealt by this weapon ignores the target's sonic resistance.</p>",
+    "Level": 15,
+    "Price": 6500,
+    "Rarity": "Common",
+    "Traits": [
+      "Evocation",
+      "Magical",
+      "Sonic"
+    ]
+  },
+  "Unholy": {
+    "Description": "<p>An unholy rune instills fiendish power into the etched weapon. A weapon with this rune deals an additional 1d6 evil damage when it hits a good target. If you are good, you are enfeebled 2 while carrying or wielding this weapon.<p></p><b>Activate</b> Reaction command; <b>Frequency</b> once per day; <b>Trigger</b> You critically succeed at an attack roll against a good creature with the weapon; <b>Effect</b> The target takes persistent bleed damage equal to 1d8 per weapon damage die of the etched weapon.</p>",
+    "Level": 11,
+    "Price": 1400,
+    "Rarity": "Common",
+    "Traits": [
+      "Evil",
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Vorpal": {
+    "Description": "<p>Originally created as a means of slaying the legendary jabberwock, vorpal weapons prove equally effective against nearly any foe with a head.</p><b>Activate</b> Reaction envision (death, incapacitation); <b>Trigger</b> You roll a natural 20 on a Strike with the weapon, critically succeed, and deal slashing damage. The target must have a head; <b>Effect</b> The target must succeed at a DC 37 Fortitude save or be decapitated. This kills any creature except ones that don’t require a head to live. For creatures with multiple heads, this usually kills the creature only if you sever its last head.</p>",
+    "Level": 17,
+    "Price": 15000,
+    "Rarity": "Rare",
+    "Traits": [
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Weapon Potency (+1)": {
+    "Description": "<p>Magical enhancements make this weapon strike true. Attack rolls with this weapon gain a +1 item bonus, and the weapon can be etched with one property rune.</p><p>You can upgrade the weapon potency rune already etched on this weapon to a stronger version, increasing the values of the existing rune to those of the new rune. You must have the formula of the stronger rune to do so, and the Price of the upgrade is the difference between the two runes’ Prices.</p>",
+    "Level": 2,
+    "Price": 35,
+    "Rarity": "Common",
+    "Traits": [
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Weapon Potency (+2)": {
+    "Description": "<p>Magical enhancements make this weapon strike true. Attack rolls with this weapon gain a +2 item bonus, and the weapon can be etched with two property runes.</p><p>You can upgrade the weapon potency rune already etched on this weapon to a stronger version, increasing the values of the existing rune to those of the new rune. You must have the formula of the stronger rune to do so, and the Price of the upgrade is the difference between the two runes’ Prices.</p>",
+    "Level": 10,
+    "Price": 935,
+    "Rarity": "Common",
+    "Traits": [
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Weapon Potency (+3)": {
+    "Description": "<p>Magical enhancements make this weapon strike true. Attack rolls with this weapon gain a +3 item bonus, and the weapon can be etched with three property runes.</p>",
+    "Level": 16,
+    "Price": 8935,
+    "Rarity": "Common",
+    "Traits": [
+      "Evocation",
+      "Magical"
+    ]
+  },
+  "Wounding": {
+    "Description": "<p>Weapons with wounding runes are said to thirst for blood. When you hit a creature with a wounding weapon, you deal an extra 1d6 persistent bleed damage. On a critical hit, it instead deals 1d12 persistent bleed damage.</p>",
+    "Level": 7,
+    "Price": 340,
+    "Rarity": "Common",
+    "Traits": [
+      "Magical",
+      "Necromancy"
+    ]
+  }
+}
